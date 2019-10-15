@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Supporting OPAL Developers</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-layers.min.js"></script>
+        <script src="js/init.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/scala.min.js"></script>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css" />
+        <noscript>
+            <link rel="stylesheet" href="css/skel.css" />
+        	<link rel="stylesheet" href="css/style.css" />
+        	<link rel="stylesheet" href="css/style-xlarge.css" />
+        </noscript>
+    </head>
+    <body id="top">
+        <header id="header" class="skel-layers-fixed">
+            <h1><a href="http://www.opal-project.de"><img src="OPALLogo.png" width="13", height="13">&nbsp;OPAL Project</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Getting Started</a></li>
+                    <li><a href="http://www.opal-project.de/library/api/SNAPSHOT/org/opalj/index.html">ScalaDoc</a></li>
+                    <li><a href="http://www.bitbucket.org/delors/opal">Repository</a></li>
+                    <li><a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22de.opal-project%22">Maven Central</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section id="one" class="wrapper style1">
+            <div class="container">
+    			<div class="row">
+                    <div class="3u">
+                        <nav>
+                                                    
+                                <a href="index.html">OPAL</a><br>
+                                                                                
+                                <br><b>Getting Started</b><br>
+                                                                                
+                                <a href="ReadingClassFiles.html">Reading Class Files</a><br>
+                                                                                
+                                <a href="Projects.html">Loading Java Projects</a><br>
+                                                                                
+                                <a href="ClassHierarchy.html">Using the Class Hierarchy</a><br>
+                                                                                
+                                <a href="BytecodeEngineering.html">Engineering Java Bytecode</a><br>
+                                                                                
+                                <a href="TAC.html">3-Address Code/SSA Code</a><br>
+                                                                                
+                                <a href="WritingAnalyses.html">Writing Analyses</a><br>
+                                                                                
+                                <br><b>Tools</b><br>
+                                                                                
+                                <a href="DeveloperTools.html">Supporting OPAL Developers</a><br>
+                                                                                
+                                <a href="Hermes.html">Hermes</a><br>
+                                                                                
+                                <a href="Opium.html">OPIUM</a><br>
+                                                                                
+                                <br><b>Showcases</b><br>
+                                                                                
+                                <a href="UselessBoxing.html">Detecting Useless Boxings</a><br>
+                                                                                
+                                <a href="JDK8Dependencies.html">Package Dependencies in JDK8</a><br>
+                                                                                
+                                <a href="JDK8Complexity.html">Complexity of the JDK8</a><br>
+                                                                                
+                                <br><b>Artifacts</b><br>
+                                                                                
+                                <a href="Artifacts.html">Research Artifacts</a><br>
+                                                                            </nav>
+                        <hr/>
+                        <div class="hide-at-medium">
+                            Please, report issues or problems in the documentation using <a href="https://bitbucket.org/delors/opal/issues?status=new&status=open">OPAL's issue tracker</a>, by going to the <a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link">OPAL gitter chat room</a> or by writing an email to <a href="mailto:eichberg_at_informatik.tu-darmstadt.de">eichberg(at)informatik.tu-darmstadt.de</a>.
+                        </div>
+                    </div>
+    				<div class="9u">
+                        <h1>Facilitating the Development of Static Analyses</h1>
+<p>OPAL comes with a large number of tools to analyze and visualize various aspects related to <em>Java Bytecode</em> projects. These tools can be used as is or can be embedded into other tools. Some of the tools require Graphviz to visualize graphs which depict control- and data-flow information.</p>
+<h2>Invokedynamic Rectifier / Project Serializer</h2>
+<p>If you are a developer of static analyses and suffered from the pain of having to support Invokedynamic (Java 7+) - in other words, Java lambda expressions and method references - then this is the tool for you! OPAL's project serializer rewrites Invokedynamic calls using plain-old standard Java bytecode instructions to facilitate the writing of static analyses! <em><strong>You no longer have to worry about Invokedynamics created by Java compilers.</strong></em></p>
+<p>Currently, we can rewrite Invokedynamics created by standard Java compilers and we are adding support to completely support Scala. Basically, OPAL replaces the Invokedynamic calls using Java's LambdaMetaFactory by a standard Invokestatic call which will create an instance of a newly created class (similar to what LambdaMetaFactory does). The object will encapsulate the relevant state used by the Lambda and implement the Lambda's functional interface. Later on, when the Lambda is evaluated the generated class will forward the call to the implementation method of the Lambda. The tool is currently in a beta version, but we already successfully rewrote JUnit 5 and were able to execute its entire test suite afterwards (originally over 3000 Invokedynamics).</p>
+<p>OPAL's project serializer can be downloaded <a href="https://bitbucket.org/delors/opal/downloads/">here</a>.</p>
+<p>If you want to see it in action, just use OPAL's Invokedynamic rectifier to rewrite your project and study the code afterwards using our Bytecode Disassembler (see below).</p>
+<h2>Java Bytecode Disassembler / Java Class File Finder</h2>
+<p>OPAL has a built-in Java Bytecode Disassembler which is also made available as a <a href="https://bitbucket.org/delors/opal/downloads/">standalone tool</a> and also as a plug-in for the <a href="https://atom.io">ATOM</a> text editor (<a href="https://atom.io/packages/java-bytecode-disassembler">ATOM - Java Bytecode Disassembler</a>) .</p>
+<p>In contrast to most existing Java disassemblers, OPAL generates an HTML document to provide better syntax highlighting and advanced interaction.</p>
+<p>Screenshot of the OPAL Java Bytecode Disassembler in action:
+<img src="images/ATOM-OPAL-Disassembler-2017-07-13.png" alt="ATOM - OPAL Disassembler" /></p>
+<p><em>To use the OPAL Java Bytecode Disassembler Java 8 is required.</em></p>
+<h3>Command Line Tool</h3>
+<pre>
+Usage: java org.opalj.da.Disassembler
+       [-help <tt>will print the help and terminate</tt>]
+       [-o &lt;File&gt; <tt>the name of the file to which the generated html page should be written</tt>]
+       [-open <tt>the generated html page will be opened in a browser</tt>]
+       [-source &lt;File&gt; <tt>a class or jar file or a directory containing jar or class files;
+                     if no source files/folders are specified the current folder will be
+                     searched for class files</tt>]* (<tt><b>can be specified multiple times</b></tt>)
+       [-sourceJDK <tt>the current JDK/JRE is added as a source folder</tt>]
+       [-noDefaultCSS <tt>the generated html page will have no CSS styling</tt>]
+       [-noMethodsFilter <tt>the generated html page will have no embedded means to filter methods
+                       (as a whole, the file will not contain any JavaScript code)</tt>]
+       [-noHeader <tt>the generated output will have no header;
+                 the top level element will be &lt;div class="class_file"&gt;...&lt;/div&gt;
+                 (automatically activates "-noMethodsFilter" and "-noDefaultCSS")</tt>]
+       [-css &lt;Source&gt; <tt>the path (URL) of a CSS file (".csss")
+                     which will be referenced from the generated HTML page</tt>]
+       [-js &lt;Source&gt; <tt>the path (URL) of a JavaScript file (".js")
+                    which will be referenced from the generated HTML page</tt>]
+       [-showProgress <tt>shows the progress when searching for the class file</tt>]
+       [&lt;ClassName&gt; <tt>name of the class for which we want to create the HTML page; if not
+                   specified the first class that is found on the given path is taken; this
+                   is particularly useful if the source identifies a particular ".class" file</tt>]
+</pre>
+<p>Note, that the OPAL Disassembler is fast and can scan thousands of class files per second; this makes it also possible to use it to locate a certain class file. For example, if you want to find the jar which defines a specific class, e.g., <code>java.util.HashMap$Entry</code>, it is sufficient to specify the root folder of the JDK and let it automatically find the class for you. The generated HTML file will contain precise information where the class file was found. This also works if you specify the root of your <code>.ivy</code> or <code>.m2</code> folders.</p>
+<h3>ATOM Plug-in</h3>
+<p>Using the ATOM plug-in, it is in particular possible to click on a type in a disassembled file to also disassemble the target type. This enables you to quickly navigate between &quot;.class&quot; files.</p>
+<h3>Integrated</h3>
+<p>The bytecode Disassembler can be run programmatically as shown next:</p>
+<pre><code>val classFile : org.opalj.da.ClassFile = ...;
+val html = classFile.toXHTML()
+// println(html)
+// org.opalj.io.writeAndOpen(classFile.toXHTML().toString, &quot;ClassFile&quot;, &quot;.html&quot;)
+</code></pre>
+<h2>Running Tools which are part of the OPAL Suite</h2>
+<p>To use the tools, start <code>sbt</code>, change to the <code>project OPAL-DeveloperTools</code> project and call <code>run</code>. Afterwards, you'll see the list of tools which can be run.</p>
+
+                    </div>
+                </div>
+            </div>
+    	</section>
+
+        <footer id="footer">
+    	    <div class="container">
+    			<div class="row double">
+                    <div class="6u">
+                        <div class="row collapse-at-2">
+                            <div class="6u">
+                                <h3>Stay connected and get help!</h3>
+                                <ul class="icons">
+                                    <li><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.opal-project.de%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=TheOpalProject&tw_p=followbutton" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                                    <li><a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="icon fa-users"><span class="label">Gitter</span></a></li>
+                                    <li><a href="https://trello.com/theopalproject" class="icon fa-trello"><span class="label">Trello</span></a></li>
+                                    <li><a href="http://stackoverflow.com/questions/tagged/opal-framework" class="icon fa-stack-overflow"><span class="label">Stackoverflow</span></a></li>
+                                    <li><a href="https://hub.docker.com/r/opalj/sbt_scala_javafx/" class="icon fa-cloud"><span class="label">Docker</span></a></li>
+                                </ul>
+                                <h3>Related</h3>
+                                <ul class="alt">
+                                    <li><a href="https://www.openhub.net/p/OPAL-Project">OPAL on OpenHub</a></li>
+                                </ul>
+                                <h3>Supported By</h3>
+                                <ul class="alt">
+                                    <li><a href="https://www.yourkit.com/"><img src="images/yklogo.png" width="139", height="33"></a><br>
+                                        YourKit supports open source projects with its full-featured Java Profiler.
+                                        YourKit, LLC is the creator of <a href="https://www.yourkit.com/java/profiler/">YourKit Java Profiler</a>
+                                        an innovative and intelligent tool for profiling Java applications.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="6u">
+                                <h3>Core Papers</h3>
+                                <ul class="alt">
+                                    <li><a href="http://ase2018.com">A Unified Lattice Model and Framework for Purity Analyses</a></li>
+                                    <li><a href="https://conf.researchr.org/track/ecoop-issta-2018/SOAP-2018-papers#program">Lattice Based Modularization of Static Analyses</a></li>
+                                    <li><a href="articles/Hermes@SOAP18.pdf">Assessment and Creation of Effective Test Corpora</a></li>
+                                    <li><a href="http://doi.acm.org/10.1145/2950290.2950312">Call Graph Construction for Java Libraries</a></li>
+                                    <li><a href="http://doi.acm.org/10.1145/2614628.2614630">A software product line for static analyses: the OPAL framework</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="6u">
+                        <h3>Research Using OPAL</h3>
+                        <emph>The following papers give you an idea what you can do with OPAL.</emph>
+                        <ul class="alt">
+                            <li><a href="https://2018.splashcon.org/event/splash-2018-oopsla-algebraic-effects-for-the-masses">Algebraic Effects for the Masses</a></li>
+                            <li><a href="http://michael-reif.name/publications/JCG.pdf">Systematic Evaluation of the Unsoundness of Call Graph Construction Algorithms for Java</a></li>
+                            <li><a href="http://doi.acm.org/10.1145/2786805.2786865">Hidden Truths in Dead Software Paths</a></li>
+                            <li><a href="http://doi.acm.org/10.1145/2786805.2786829">Getting to know you. . . Towards a Capability Model for Java</a></li>
+                        </ul>
+                        <h3>Related Presentations</h3>
+                        <ul class="alt">
+                            <li><a href="articles/Your_JDK-Entwicklertag2015.pdf">Your JDK 8</a></li>
+                            <li><a href="articles/FPCF-Slides@SOAP18.pdf">Lattice Based Modularization of Static Analyses</a></li>
+                        </ul>
+                    </div>
+    			</div>
+    			<ul class="copyright">
+                    <li>&copy; The OPAL Project. All rights reserved.</li>
+                    <li><a href="https://bitbucket.org/delors/opal/raw/master/LICENSE">License (BSD 2 Clause)</a></li>
+                    <li><img src="Athene.png" height="27" style="vertical-align:middle"></li>
+    				<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+    			</ul>
+    		</div>
+    	</footer>
+
+    </body>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-49499962-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script>
+        hljs.configure({
+          tabReplace: '    ', // 4 spaces
+          languages: ["scala","java"]
+        })
+        hljs.initHighlightingOnLoad();
+    </script>
+</html>

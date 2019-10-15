@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Hermes</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-layers.min.js"></script>
+        <script src="js/init.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/scala.min.js"></script>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css" />
+        <noscript>
+            <link rel="stylesheet" href="css/skel.css" />
+        	<link rel="stylesheet" href="css/style.css" />
+        	<link rel="stylesheet" href="css/style-xlarge.css" />
+        </noscript>
+    </head>
+    <body id="top">
+        <header id="header" class="skel-layers-fixed">
+            <h1><a href="http://www.opal-project.de"><img src="OPALLogo.png" width="13", height="13">&nbsp;OPAL Project</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Getting Started</a></li>
+                    <li><a href="http://www.opal-project.de/library/api/SNAPSHOT/org/opalj/index.html">ScalaDoc</a></li>
+                    <li><a href="http://www.bitbucket.org/delors/opal">Repository</a></li>
+                    <li><a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22de.opal-project%22">Maven Central</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section id="one" class="wrapper style1">
+            <div class="container">
+    			<div class="row">
+                    <div class="3u">
+                        <nav>
+                                                    
+                                <a href="index.html">OPAL</a><br>
+                                                                                
+                                <br><b>Getting Started</b><br>
+                                                                                
+                                <a href="ReadingClassFiles.html">Reading Class Files</a><br>
+                                                                                
+                                <a href="Projects.html">Loading Java Projects</a><br>
+                                                                                
+                                <a href="ClassHierarchy.html">Using the Class Hierarchy</a><br>
+                                                                                
+                                <a href="BytecodeEngineering.html">Engineering Java Bytecode</a><br>
+                                                                                
+                                <a href="TAC.html">3-Address Code/SSA Code</a><br>
+                                                                                
+                                <a href="WritingAnalyses.html">Writing Analyses</a><br>
+                                                                                
+                                <br><b>Tools</b><br>
+                                                                                
+                                <a href="DeveloperTools.html">Supporting OPAL Developers</a><br>
+                                                                                
+                                <a href="Hermes.html">Hermes</a><br>
+                                                                                
+                                <a href="Opium.html">OPIUM</a><br>
+                                                                                
+                                <br><b>Showcases</b><br>
+                                                                                
+                                <a href="UselessBoxing.html">Detecting Useless Boxings</a><br>
+                                                                                
+                                <a href="JDK8Dependencies.html">Package Dependencies in JDK8</a><br>
+                                                                                
+                                <a href="JDK8Complexity.html">Complexity of the JDK8</a><br>
+                                                                                
+                                <br><b>Artifacts</b><br>
+                                                                                
+                                <a href="Artifacts.html">Research Artifacts</a><br>
+                                                                            </nav>
+                        <hr/>
+                        <div class="hide-at-medium">
+                            Please, report issues or problems in the documentation using <a href="https://bitbucket.org/delors/opal/issues?status=new&status=open">OPAL's issue tracker</a>, by going to the <a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link">OPAL gitter chat room</a> or by writing an email to <a href="mailto:eichberg_at_informatik.tu-darmstadt.de">eichberg(at)informatik.tu-darmstadt.de</a>.
+                        </div>
+                    </div>
+    				<div class="9u">
+                        <h1>Hermes - Building and Evaluating Test Corpora</h1>
+<h2>Overview</h2>
+<p>Hermes enables you to evaluate a given set of Java (bytecode) projects to comprehend their basic properties and to select those projects that have interesting, distinguishing factors when evaluating and testing your static analysis.</p>
+<p>For example, when you want to test that your analysis is able to handle all types of bytecode instructions, then you should take a close look at the results of the respective query (<code>BytecodeInstructions</code>) which reports the usage of Java bytecode instructions for a given project. Additionally, Hermes can automatically select projects for you such that at all instructions are guaranteed to be in the final corpus and that the overall code base of the selected projects is minimal w.r.t. the overall number of methods. This minimal corpus can be computed once all queries are evaluated. To start the computation go to <code>File</code> → <code>Compute Projects for Corpus</code>.</p>
+<p><img src="images/Hermes.png" alt="Hermes - Overview" /></p>
+<p>Hermes can be run in <a href="http://www.opal-project.de/library/api/SNAPSHOT/org/opalj/hermes/HermesCLI$.html">headless mode</a> to just evaluate a set of projects and get back a CSV file with all results or you can start the <a href="http://www.opal-project.de/library/api/SNAPSHOT/org/opalj/hermes/Hermes$.html">UI</a> which enables more advanced exploration of projects.</p>
+<h2>Developing Queries</h2>
+<p>A query is basically a mapping between some feature and those elements of a project that implement/provide/have the respective feature. For example, a feature could be the kind of type (<em>interface</em>, <em>class</em>, <em>enum</em>, <em>annotation</em>) which is defined by a specific class file. The query would then analyze all class files of the project and assign each class file to its respective category. In the context of Hermes, we would consider the query as simultaneously deriving multiple features.</p>
+<p>All queries in Hermes have to inherit from <code>org.opalj.hermes.FeatureQuery</code> and have to implement the two methods: <code>featureIDs</code> and <code>apply</code> as seen in the example blow.</p>
+<pre><code>package org.opalj
+package hermes
+package queries
+
+import org.opalj.br.analyses.Project
+
+object MyQuery extends FeatureQuery {
+
+    override val featureIDs: List[String] = { ??? }
+
+    override def apply[S](
+        projectConfiguration: ProjectConfiguration,
+        project:              Project[S],
+        rawClassFiles:        Traversable[(da.ClassFile, S)]
+    ): TraversableOnce[Feature[S]] = {
+        ???
+}   }
+</code></pre>
+<p>Next, we will discuss a complete query which finds <em>native</em> methods.</p>
+<pre><code>package org.opalj
+package hermes
+package queries
+
+import org.opalj.br.analyses.Project
+
+object NativeMethods extends FeatureQuery {
+
+    // The list returns the unique names of the derived features - the names will be
+    // used in Hermes' UI and in the CVS export to name the columns. It is therefore
+    // recommended to use short, but descriptive names.
+    // Additionally, it is recommend to capitalize the name as used in titles.
+    //
+    // The names of the features returned here have to equal the names used by
+    // the query itself (the `apply` function below)!
+    override val featureIDs: List[String] = List(&quot;Native Methods&quot;)
+
+    override def apply[S](
+        projectConfiguration: ProjectConfiguration,
+        project:              Project[S],
+        rawClassFiles:        Traversable[(da.ClassFile, S)]
+    ): TraversableOnce[Feature[S]] = {
+
+        // To store the location information; i.e., to store the native methods,
+        // we create a new empty LocationsContainer.
+        // Using a LocationsContainer for storing locations is highly recommended,
+        // because it automatically takes care of limiting the overall number of
+        // locations to a pre-configured value. I.e., we don't have to worry about
+        // creating too many locations and filling up the memory.
+        val nativeMethods = new LocationsContainer[S]
+
+        for {
+            // Let's iterate over all class files belonging to the project.
+            (classFile, source) ← project.projectClassFilesWithSources
+
+            // It is highly recommended to regularly check if the query should be aborted;
+            // if so, the reported (intermediate/partial) results will always be thrown away.
+            if !isInterrupted()
+
+            // Locations are immutable and hierarchically organized and therefore it
+            // is generally meaningful to always create instances of location information,
+            // which may be shared, as soon as possible.
+            classLocation = ClassFileLocation(source, classFile)
+            m ← classFile.methods
+            if m.isNative // basically &quot;the query&quot;
+        } {
+            // The current method is native and is added to the set of native methods..
+            nativeMethods += MethodLocation(classLocation, m)
+        }
+
+        // Finally, we create the feature using the same id as
+        // returned by `featureIDs` and the list of native methods.
+        Feature[S](featureIDs.head, nativeMethods)
+    }
+}
+</code></pre>
+<p>In some cases it might be interesting to also derive general project-wide statistic on the fly. In this case, the results should be stored in the project configuration's <code>statistics</code> object. E.g., if you would have computed the average size of the inheritance tree on the fly, you would then store the value in the project's statistics as shown below.</p>
+<pre><code>projectConfiguration.addStatistic(&quot;⟨SizeOfInheritanceTree⟩&quot;,averageSizeOfInheritanceTree)
+</code></pre>
+<p>Here, the string <code>&quot;⟨SizeOfInheritanceTree⟩&quot;</code> uses the mathematical notation &quot;⟨⟩&quot; to denote the average.</p>
+<p>After implementing the query, it is highly recommended to document the query using Markdown. The documentation should describe the derived feature and should also give at least one example in which context the query is useful. E.g., the above query would help to select trivial programs for which a pure Java based analysis would be sufficient. Hermes will use the simple name of the class which implements the query, here <em>NativeMethods</em>, to determine the name of the markdown file: <em>Simple_Name_Of_Class.markdown</em>. The file will be loaded using the class' <code>getResource</code> method. Hence, the markdown file has to be stored along with the class. If you want to document your code in a different way; e.g., using HTML, go to the documentation of <a href="http://www.opal-project.de/library/api/SNAPSHOT/#org.opalj.hermes.FeatureQuery">org.opalj.hermes.FeatureQuery</a></p>
+<h2>Activating Queries</h2>
+<p>After the development of the query, it is necessary to register it, to make it possible for Hermes to execute it. For that, it is either necessary to add the query to the <code>application.conf</code> file, which is part of Hermes, or to create your own config file and add it over there. In both cases the config key has to be:</p>
+<pre><code>org.opalj.hermes.queries.registered = [
+    {query = org.opalj.hermes.queries.NativeMethods, activate = true }
+]
+</code></pre>
+<p>The big advantage of registering all queries in the same place is that it is easily possible to order the queries. The recommended ordering is: <strong>descending execution time</strong>. This will reduce the overall runtime. To get an idea of the execution time, just run Hermes and open the window <em>Feature Execution Times</em>.</p>
+<h2>Starting Hermes</h2>
+<p>Hermes can be be started by specifying the json file which contains the configured projects that should be analysed. If you have checked out OPAL/Hermes from BitBucket you can use the <code>sbt</code> console to start Hermes (the main class is: <code>org.opalj.hermes.Hermes</code>). For example, to get an overview of the properties of some of the test projects which are part of OPAL, you can use the preconfigured project configuration:</p>
+<pre><code>project OPAL-DeveloperTools
+~runMain org.opalj.hermes.Hermes src/main/resources/hermes-test-fixtures.json
+</code></pre>
+<p>If you want to analyze your own library, just use the above file as a template for your project configuration.</p>
+<h2>Contributing to Hermes</h2>
+<h3>New Queries</h3>
+<p>If you want to contribute a new query to Hermes, create a pull request that consists of (1) the query - which has to have the package name <code>org.opalj.hermes.queries</code> - (2) the user-level documentation, and (3) the updated <code>application.conf</code>. The files should be stored in/are found in:</p>
+<ul>
+<li>The documentation (Markdown file):  <strong>Developing_OPAL/tools/src/main/resources/org/opalj/hermes/queries/&lt;QueryName&gt;.markdown</strong></li>
+<li>The query (Scala file): <strong>Developing_OPAL/tools/src/main/scala/org/opalj/hermes/queries/&lt;QueryName&gt;.scala</strong></li>
+<li>Application.conf: <strong>DEVELOPING_OPAL/tools/src/main/resources/application.conf</strong></li>
+</ul>
+
+                    </div>
+                </div>
+            </div>
+    	</section>
+
+        <footer id="footer">
+    	    <div class="container">
+    			<div class="row double">
+                    <div class="6u">
+                        <div class="row collapse-at-2">
+                            <div class="6u">
+                                <h3>Stay connected and get help!</h3>
+                                <ul class="icons">
+                                    <li><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.opal-project.de%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=TheOpalProject&tw_p=followbutton" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                                    <li><a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="icon fa-users"><span class="label">Gitter</span></a></li>
+                                    <li><a href="https://trello.com/theopalproject" class="icon fa-trello"><span class="label">Trello</span></a></li>
+                                    <li><a href="http://stackoverflow.com/questions/tagged/opal-framework" class="icon fa-stack-overflow"><span class="label">Stackoverflow</span></a></li>
+                                    <li><a href="https://hub.docker.com/r/opalj/sbt_scala_javafx/" class="icon fa-cloud"><span class="label">Docker</span></a></li>
+                                </ul>
+                                <h3>Related</h3>
+                                <ul class="alt">
+                                    <li><a href="https://www.openhub.net/p/OPAL-Project">OPAL on OpenHub</a></li>
+                                </ul>
+                                <h3>Supported By</h3>
+                                <ul class="alt">
+                                    <li><a href="https://www.yourkit.com/"><img src="images/yklogo.png" width="139", height="33"></a><br>
+                                        YourKit supports open source projects with its full-featured Java Profiler.
+                                        YourKit, LLC is the creator of <a href="https://www.yourkit.com/java/profiler/">YourKit Java Profiler</a>
+                                        an innovative and intelligent tool for profiling Java applications.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="6u">
+                                <h3>Core Papers</h3>
+                                <ul class="alt">
+                                    <li><a href="http://ase2018.com">A Unified Lattice Model and Framework for Purity Analyses</a></li>
+                                    <li><a href="https://conf.researchr.org/track/ecoop-issta-2018/SOAP-2018-papers#program">Lattice Based Modularization of Static Analyses</a></li>
+                                    <li><a href="articles/Hermes@SOAP18.pdf">Assessment and Creation of Effective Test Corpora</a></li>
+                                    <li><a href="http://doi.acm.org/10.1145/2950290.2950312">Call Graph Construction for Java Libraries</a></li>
+                                    <li><a href="http://doi.acm.org/10.1145/2614628.2614630">A software product line for static analyses: the OPAL framework</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="6u">
+                        <h3>Research Using OPAL</h3>
+                        <emph>The following papers give you an idea what you can do with OPAL.</emph>
+                        <ul class="alt">
+                            <li><a href="https://2018.splashcon.org/event/splash-2018-oopsla-algebraic-effects-for-the-masses">Algebraic Effects for the Masses</a></li>
+                            <li><a href="http://michael-reif.name/publications/JCG.pdf">Systematic Evaluation of the Unsoundness of Call Graph Construction Algorithms for Java</a></li>
+                            <li><a href="http://doi.acm.org/10.1145/2786805.2786865">Hidden Truths in Dead Software Paths</a></li>
+                            <li><a href="http://doi.acm.org/10.1145/2786805.2786829">Getting to know you. . . Towards a Capability Model for Java</a></li>
+                        </ul>
+                        <h3>Related Presentations</h3>
+                        <ul class="alt">
+                            <li><a href="articles/Your_JDK-Entwicklertag2015.pdf">Your JDK 8</a></li>
+                            <li><a href="articles/FPCF-Slides@SOAP18.pdf">Lattice Based Modularization of Static Analyses</a></li>
+                        </ul>
+                    </div>
+    			</div>
+    			<ul class="copyright">
+                    <li>&copy; The OPAL Project. All rights reserved.</li>
+                    <li><a href="https://bitbucket.org/delors/opal/raw/master/LICENSE">License (BSD 2 Clause)</a></li>
+                    <li><img src="Athene.png" height="27" style="vertical-align:middle"></li>
+    				<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+    			</ul>
+    		</div>
+    	</footer>
+
+    </body>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-49499962-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script>
+        hljs.configure({
+          tabReplace: '    ', // 4 spaces
+          languages: ["scala","java"]
+        })
+        hljs.initHighlightingOnLoad();
+    </script>
+</html>
