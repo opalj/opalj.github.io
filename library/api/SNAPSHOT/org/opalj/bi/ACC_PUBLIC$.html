@@ -1,0 +1,1055 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.bi.ACC_PUBLIC</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.bi.ACC PUBLIC" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.bi.ACC PUBLIC" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../index.js"></script>
+      <script type="text/javascript" src="../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../br/index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="../ai/index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.bi" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bi"></a><a id="bi:bi"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Implementation of a library for parsing Java bytecode and creating arbitrary representations." href="index.html"><span class="name">bi</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Implementation of a library for parsing Java bytecode and creating arbitrary
+representations.</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of a library for parsing Java bytecode and creating arbitrary
+representations.</p><p>OPAL's primary representation of Java byte code
+is the <a href="../br/index.html" class="extype" name="org.opalj.br">org.opalj.br</a> representation which is defined in the
+respective package. A second representation that represents bytecode one-by-one
+is found in the <a href="../da/index.html" class="extype" name="org.opalj.da">org.opalj.da</a> package.</p><h4> This Package </h4><p>Common constants and type definitions used across OPAL.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj">opalj</a></dd></dl></div>
+    </li><li name="org.opalj.bi.reader" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reader"></a><a id="reader:reader"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/reader/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="reader/index.html"><span class="name">reader</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.bi">bi</a></dd></dl></div>
+    </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_ABSTRACT$.html" title=""></a>
+                        <a href="ACC_ABSTRACT$.html" title="">ACC_ABSTRACT</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_ANNOTATION$.html" title=""></a>
+                        <a href="ACC_ANNOTATION$.html" title="">ACC_ANNOTATION</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_BRIDGE$.html" title=""></a>
+                        <a href="ACC_BRIDGE$.html" title="">ACC_BRIDGE</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_ENUM$.html" title=""></a>
+                        <a href="ACC_ENUM$.html" title="">ACC_ENUM</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_FINAL$.html" title=""></a>
+                        <a href="ACC_FINAL$.html" title="">ACC_FINAL</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_INTERFACE$.html" title=""></a>
+                        <a href="ACC_INTERFACE$.html" title="">ACC_INTERFACE</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_MANDATED$.html" title=""></a>
+                        <a href="ACC_MANDATED$.html" title="">ACC_MANDATED</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_MODULE$.html" title="Identifies a class as defining a Java 9 module."></a>
+                        <a href="ACC_MODULE$.html" title="Identifies a class as defining a Java 9 module.">ACC_MODULE</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_NATIVE$.html" title=""></a>
+                        <a href="ACC_NATIVE$.html" title="">ACC_NATIVE</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_OPEN$.html" title=""></a>
+                        <a href="ACC_OPEN$.html" title="">ACC_OPEN</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_PRIVATE$.html" title=""></a>
+                        <a href="ACC_PRIVATE$.html" title="">ACC_PRIVATE</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_PROTECTED$.html" title=""></a>
+                        <a href="ACC_PROTECTED$.html" title="">ACC_PROTECTED</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="" title=""></a>
+                        <a href="" title="">ACC_PUBLIC</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_STATIC$.html" title=""></a>
+                        <a href="ACC_STATIC$.html" title="">ACC_STATIC</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_STATIC_PHASE$.html" title=""></a>
+                        <a href="ACC_STATIC_PHASE$.html" title="">ACC_STATIC_PHASE</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_STRICT$.html" title=""></a>
+                        <a href="ACC_STRICT$.html" title="">ACC_STRICT</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_SUPER$.html" title=""></a>
+                        <a href="ACC_SUPER$.html" title="">ACC_SUPER</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_SYNCHRONIZED$.html" title=""></a>
+                        <a href="ACC_SYNCHRONIZED$.html" title="">ACC_SYNCHRONIZED</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_SYNTHETIC$.html" title=""></a>
+                        <a href="ACC_SYNTHETIC$.html" title="">ACC_SYNTHETIC</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_TRANSIENT$.html" title=""></a>
+                        <a href="ACC_TRANSIENT$.html" title="">ACC_TRANSIENT</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_TRANSITIVE$.html" title=""></a>
+                        <a href="ACC_TRANSITIVE$.html" title="">ACC_TRANSITIVE</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_VARARGS$.html" title=""></a>
+                        <a href="ACC_VARARGS$.html" title="">ACC_VARARGS</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ACC_VOLATILE$.html" title=""></a>
+                        <a href="ACC_VOLATILE$.html" title="">ACC_VOLATILE</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="AccessFlag.html" title="A class, field or method declaration's access flags."></a>
+                        <a href="AccessFlag.html" title="A class, field or method declaration's access flags.">AccessFlag</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="AccessFlags$.html" title="Convenience methods related to access flags."></a>
+                        <a href="AccessFlags$.html" title="Convenience methods related to access flags.">AccessFlags</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="AccessFlagsContexts$.html" title="Enumeration of the different contexts in which the JVM Spec."></a>
+                        <a href="AccessFlagsContexts$.html" title="Enumeration of the different contexts in which the JVM Spec.">AccessFlagsContexts</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="AccessFlagsIterator$.html" title="Factory for creating AccessFlagsIterator objects."></a>
+                        <a class="class" href="AccessFlagsIterator.html" title="Enables iterating over a class( file member)'s access flags."></a>
+                        <a href="AccessFlagsIterator.html" title="Enables iterating over a class( file member)'s access flags.">AccessFlagsIterator</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="AccessFlagsMatcher$.html" title="Predefines several access flags matchers."></a>
+                        <a class="trait" href="AccessFlagsMatcher.html" title="Matches a given access flags bit array and enables the construction of complex matchers."></a>
+                        <a href="AccessFlagsMatcher.html" title="Matches a given access flags bit array and enables the construction of complex matchers.">AccessFlagsMatcher</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="AnnotationDefaultAttribute$.html" title="Common properties of AnnotationDefault attributes."></a>
+                        <a href="AnnotationDefaultAttribute$.html" title="Common properties of AnnotationDefault attributes.">AnnotationDefaultAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="AttributesParent$.html" title="Enumeration of all class file structures that can have attributes."></a>
+                        <a href="AttributesParent$.html" title="Enumeration of all class file structures that can have attributes.">AttributesParent</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="BootstrapMethodsAttribute$.html" title=""></a>
+                        <a href="BootstrapMethodsAttribute$.html" title="">BootstrapMethodsAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="CodeAttribute$.html" title=""></a>
+                        <a href="CodeAttribute$.html" title="">CodeAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ConstantPoolTags$.html" title="A constant pool tag identifies the type of a specific entry in the constant pool."></a>
+                        <a href="ConstantPoolTags$.html" title="A constant pool tag identifies the type of a specific entry in the constant pool.">ConstantPoolTags</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ConstantValueAttribute$.html" title=""></a>
+                        <a href="ConstantValueAttribute$.html" title="">ConstantValueAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="DeprecatedAttribute$.html" title=""></a>
+                        <a href="DeprecatedAttribute$.html" title="">DeprecatedAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="EnclosingMethodAttribute$.html" title=""></a>
+                        <a href="EnclosingMethodAttribute$.html" title="">EnclosingMethodAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ExceptionsAttribute$.html" title=""></a>
+                        <a href="ExceptionsAttribute$.html" title="">ExceptionsAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="InnerClassesAttribute$.html" title=""></a>
+                        <a href="InnerClassesAttribute$.html" title="">InnerClassesAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="LineNumberTableAttribute$.html" title=""></a>
+                        <a href="LineNumberTableAttribute$.html" title="">LineNumberTableAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="LocalVariableTableAttribute$.html" title=""></a>
+                        <a href="LocalVariableTableAttribute$.html" title="">LocalVariableTableAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="LocalVariableTypeTableAttribute$.html" title=""></a>
+                        <a href="LocalVariableTypeTableAttribute$.html" title="">LocalVariableTypeTableAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="MethodParametersAttribute$.html" title=""></a>
+                        <a href="MethodParametersAttribute$.html" title="">MethodParametersAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ModuleAttribute$.html" title=""></a>
+                        <a href="ModuleAttribute$.html" title="">ModuleAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ModuleMainClassAttribute$.html" title=""></a>
+                        <a href="ModuleMainClassAttribute$.html" title="">ModuleMainClassAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ModulePackagesAttribute$.html" title=""></a>
+                        <a href="ModulePackagesAttribute$.html" title="">ModulePackagesAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="PrimitiveAccessFlagsMatcher$.html" title="Extractor for the bitmask used by a PrimitiveAccessFlagsMatcher."></a>
+                        <a class="trait" href="PrimitiveAccessFlagsMatcher.html" title=""></a>
+                        <a href="PrimitiveAccessFlagsMatcher.html" title="">PrimitiveAccessFlagsMatcher</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="REF_getField$.html" title=""></a>
+                        <a href="REF_getField$.html" title="">REF_getField</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="REF_getStatic$.html" title=""></a>
+                        <a href="REF_getStatic$.html" title="">REF_getStatic</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="REF_invokeInterface$.html" title=""></a>
+                        <a href="REF_invokeInterface$.html" title="">REF_invokeInterface</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="REF_invokeSpecial$.html" title=""></a>
+                        <a href="REF_invokeSpecial$.html" title="">REF_invokeSpecial</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="REF_invokeStatic$.html" title=""></a>
+                        <a href="REF_invokeStatic$.html" title="">REF_invokeStatic</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="REF_invokeVirtual$.html" title=""></a>
+                        <a href="REF_invokeVirtual$.html" title="">REF_invokeVirtual</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="REF_newInvokeSpecial$.html" title=""></a>
+                        <a href="REF_newInvokeSpecial$.html" title="">REF_newInvokeSpecial</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="REF_putField$.html" title=""></a>
+                        <a href="REF_putField$.html" title="">REF_putField</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="REF_putStatic$.html" title=""></a>
+                        <a href="REF_putStatic$.html" title="">REF_putStatic</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ReferenceKind$.html" title="Factory for ReferenceKind objects."></a>
+                        <a class="class" href="ReferenceKind.html" title="Common super class of the reference_kinds used by the constant pool's CONSTANT_MethodHandle_info structure."></a>
+                        <a href="ReferenceKind.html" title="Common super class of the reference_kinds used by the constant pool's CONSTANT_MethodHandle_info structure.">ReferenceKind</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="RuntimeInvisibleAnnotationsAttribute$.html" title="Common properties of RuntimeInvisibleAnnotations."></a>
+                        <a href="RuntimeInvisibleAnnotationsAttribute$.html" title="Common properties of RuntimeInvisibleAnnotations.">RuntimeInvisibleAnnotationsAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="RuntimeInvisibleParameterAnnotationsAttribute$.html" title="Common properties of the RuntimeInvisibleParameterAnnotations attribute."></a>
+                        <a href="RuntimeInvisibleParameterAnnotationsAttribute$.html" title="Common properties of the RuntimeInvisibleParameterAnnotations attribute.">RuntimeInvisibleParameterAnnotationsAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="RuntimeInvisibleTypeAnnotationsAttribute$.html" title="Common properties of RuntimeInvisibleTypeAnnotations attributes."></a>
+                        <a href="RuntimeInvisibleTypeAnnotationsAttribute$.html" title="Common properties of RuntimeInvisibleTypeAnnotations attributes.">RuntimeInvisibleTypeAnnotationsAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="RuntimeVisibleAnnotationsAttribute$.html" title="Common properties of RuntimeVisibleAnnotations attributes."></a>
+                        <a href="RuntimeVisibleAnnotationsAttribute$.html" title="Common properties of RuntimeVisibleAnnotations attributes.">RuntimeVisibleAnnotationsAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="RuntimeVisibleParameterAnnotationsAttribute$.html" title="Common properties of RuntimeVisibleParameterAnnotations attributes."></a>
+                        <a href="RuntimeVisibleParameterAnnotationsAttribute$.html" title="Common properties of RuntimeVisibleParameterAnnotations attributes.">RuntimeVisibleParameterAnnotationsAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="RuntimeVisibleTypeAnnotationsAttribute$.html" title="Common properties of RuntimeVisibleTypeAnnotations attributes."></a>
+                        <a href="RuntimeVisibleTypeAnnotationsAttribute$.html" title="Common properties of RuntimeVisibleTypeAnnotations attributes.">RuntimeVisibleTypeAnnotationsAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="SignatureAttribute$.html" title=""></a>
+                        <a href="SignatureAttribute$.html" title="">SignatureAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="SourceDebugExtensionAttribute$.html" title=""></a>
+                        <a href="SourceDebugExtensionAttribute$.html" title="">SourceDebugExtensionAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="SourceFileAttribute$.html" title=""></a>
+                        <a href="SourceFileAttribute$.html" title="">SourceFileAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="StackMapTableAttribute$.html" title=""></a>
+                        <a href="StackMapTableAttribute$.html" title="">StackMapTableAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="SyntheticAttribute$.html" title=""></a>
+                        <a href="SyntheticAttribute$.html" title="">SyntheticAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="VisibilityModifier$.html" title="Defines extractor methods related to visibility modifiers."></a>
+                        <a class="trait" href="VisibilityModifier.html" title="Common supertype of all explicit visibility modifiers/access flags."></a>
+                        <a href="VisibilityModifier.html" title="Common supertype of all explicit visibility modifiers/access flags.">VisibilityModifier</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="object value">
+      <div id="definition">
+        <div class="big-circle object">o</div>
+        <p id="owner"><a href="../../index.html" class="extype" name="org">org</a>.<a href="../index.html" class="extype" name="org.opalj">opalj</a>.<a href="index.html" class="extype" name="org.opalj.bi">bi</a></p>
+        <h1>ACC_PUBLIC<span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ACC_PUBLIC</span><span class="result"> extends <a href="VisibilityModifier.html" class="extype" name="org.opalj.bi.VisibilityModifier">VisibilityModifier</a></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/bi/src/main/scala/org/opalj/bi/AccessFlag.scala?at=develop" target="_blank">AccessFlag.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><a href="VisibilityModifier.html" class="extype" name="org.opalj.bi.VisibilityModifier">VisibilityModifier</a>, <a href="AccessFlag.html" class="extype" name="org.opalj.bi.AccessFlag">AccessFlag</a>, <a href="PrimitiveAccessFlagsMatcher.html" class="extype" name="org.opalj.bi.PrimitiveAccessFlagsMatcher">PrimitiveAccessFlagsMatcher</a>, <a href="AccessFlagsMatcher.html" class="extype" name="org.opalj.bi.AccessFlagsMatcher">AccessFlagsMatcher</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="org.opalj.bi.ACC_PUBLIC"><span>ACC_PUBLIC</span></li><li class="in" name="org.opalj.bi.VisibilityModifier"><span>VisibilityModifier</span></li><li class="in" name="org.opalj.bi.AccessFlag"><span>AccessFlag</span></li><li class="in" name="org.opalj.bi.PrimitiveAccessFlagsMatcher"><span>PrimitiveAccessFlagsMatcher</span></li><li class="in" name="org.opalj.bi.AccessFlagsMatcher"><span>AccessFlagsMatcher</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.bi.PrimitiveAccessFlagsMatcher#&amp;&amp;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&amp;&amp;(right:org.opalj.bi.AccessFlagsMatcher):org.opalj.bi.AccessFlagsMatcher"></a><a id="&amp;&amp;(AccessFlagsMatcher):AccessFlagsMatcher"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#&amp;&amp;(right:org.opalj.bi.AccessFlagsMatcher):org.opalj.bi.AccessFlagsMatcher" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $amp$amp" class="name">&amp;&amp;</span><span class="params">(<span name="right">right: <a href="AccessFlagsMatcher.html" class="extype" name="org.opalj.bi.AccessFlagsMatcher">AccessFlagsMatcher</a></span>)</span><span class="result">: <a href="AccessFlagsMatcher.html" class="extype" name="org.opalj.bi.AccessFlagsMatcher">AccessFlagsMatcher</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Creates a new matcher that matches <code>accessFlags</code> vectors where all flags
+defined by this matcher and the given matcher have to be defined.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a new matcher that matches <code>accessFlags</code> vectors where all flags
+defined by this matcher and the given matcher have to be defined.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PrimitiveAccessFlagsMatcher.html" class="extype" name="org.opalj.bi.PrimitiveAccessFlagsMatcher">PrimitiveAccessFlagsMatcher</a> → <a href="AccessFlagsMatcher.html" class="extype" name="org.opalj.bi.AccessFlagsMatcher">AccessFlagsMatcher</a></dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.opalj.bi.AccessFlag#isSet" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isSet(accessFlags:Int):Boolean"></a><a id="isSet(Int):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#isSet(accessFlags:Int):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSet</span><span class="params">(<span name="accessFlags">accessFlags: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Checks if <code>this</code> access flag is set in the given access flags bit vector.</p><div class="fullcomment"><div class="comment cmt"><p>Checks if <code>this</code> access flag is set in the given access flags bit vector.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AccessFlag.html" class="extype" name="org.opalj.bi.AccessFlag">AccessFlag</a></dd><dt>Note</dt><dd><span class="cmt"><p>This method is just a more intuitively named alias for the <a href="AccessFlag.html#unapply(accessFlags:Int):Boolean" class="extmbr" name="org.opalj.bi.AccessFlag#unapply">unapply</a> method.</p></span></dd></dl></div>
+    </li><li name="org.opalj.bi.ACC_PUBLIC#javaName" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="javaName:Some[String]"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#javaName:Some[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">javaName</span><span class="result">: <span class="extype" name="scala.Some">Some</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The Java (source code) name of the access flag if it exists.</p><div class="fullcomment"><div class="comment cmt"><p>The Java (source code) name of the access flag if it exists. E.g., Some(&quot;public&quot;),
+Some(&quot;native&quot;), etc.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.bi.ACC_PUBLIC">ACC_PUBLIC</a> → <a href="VisibilityModifier.html" class="extype" name="org.opalj.bi.VisibilityModifier">VisibilityModifier</a> → <a href="AccessFlag.html" class="extype" name="org.opalj.bi.AccessFlag">AccessFlag</a></dd></dl></div>
+    </li><li name="org.opalj.bi.ACC_PUBLIC#mask" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mask:Int(1)"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#mask:Int(1)" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mask</span><span class="result">: Int(1)</span>
+      </span>
+      
+      <p class="shortcomment cmt">The <code>Int</code> mask of this access flag as defined by the JVM specification.</p><div class="fullcomment"><div class="comment cmt"><p>The <code>Int</code> mask of this access flag as defined by the JVM specification.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.bi.ACC_PUBLIC">ACC_PUBLIC</a> → <a href="AccessFlag.html" class="extype" name="org.opalj.bi.AccessFlag">AccessFlag</a> → <a href="PrimitiveAccessFlagsMatcher.html" class="extype" name="org.opalj.bi.PrimitiveAccessFlagsMatcher">PrimitiveAccessFlagsMatcher</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.opalj.bi.ACC_PUBLIC#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.bi.ACC_PUBLIC">ACC_PUBLIC</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.bi.AccessFlag#unapply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unapply(accessFlags:Int):Boolean"></a><a id="unapply(Int):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#unapply(accessFlags:Int):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unapply</span><span class="params">(<span name="accessFlags">accessFlags: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Facilitates pattern matching against this <code>AccessFlag</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Facilitates pattern matching against this <code>AccessFlag</code>.</p><h4>Example</h4><pre><span class="kw">case</span> ClassFile(ACC_PUBLIC(),...)</pre><p>To create more complex matchers, use the <code>&amp;</code> and <code>!</code> methods.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>True</code> iff &quot; <code>this</code> &quot; flag is set in the given access flags bit vector.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AccessFlag.html" class="extype" name="org.opalj.bi.AccessFlag">AccessFlag</a> → <a href="AccessFlagsMatcher.html" class="extype" name="org.opalj.bi.AccessFlagsMatcher">AccessFlagsMatcher</a></dd></dl></div>
+    </li><li name="org.opalj.bi.PrimitiveAccessFlagsMatcher#unary_!" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unary_!():org.opalj.bi.AccessFlagsMatcher"></a><a id="unary_!():AccessFlagsMatcher"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#unary_!():org.opalj.bi.AccessFlagsMatcher" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: unary_$bang" class="name">unary_!</span><span class="params">()</span><span class="result">: <a href="AccessFlagsMatcher.html" class="extype" name="org.opalj.bi.AccessFlagsMatcher">AccessFlagsMatcher</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Creates a new matcher that matches <code>accessFlags</code> that do not have (all of) the
+accessFlags specified by the given matcher.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a new matcher that matches <code>accessFlags</code> that do not have (all of) the
+accessFlags specified by the given matcher.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PrimitiveAccessFlagsMatcher.html" class="extype" name="org.opalj.bi.PrimitiveAccessFlagsMatcher">PrimitiveAccessFlagsMatcher</a> → <a href="AccessFlagsMatcher.html" class="extype" name="org.opalj.bi.AccessFlagsMatcher">AccessFlagsMatcher</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.bi.AccessFlagsMatcher#||" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="||(right:org.opalj.bi.AccessFlagsMatcher):org.opalj.bi.AccessFlagsMatcher"></a><a id="||(AccessFlagsMatcher):AccessFlagsMatcher"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#||(right:org.opalj.bi.AccessFlagsMatcher):org.opalj.bi.AccessFlagsMatcher" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bar$bar" class="name">||</span><span class="params">(<span name="right">right: <a href="AccessFlagsMatcher.html" class="extype" name="org.opalj.bi.AccessFlagsMatcher">AccessFlagsMatcher</a></span>)</span><span class="result">: <a href="AccessFlagsMatcher.html" class="extype" name="org.opalj.bi.AccessFlagsMatcher">AccessFlagsMatcher</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AccessFlagsMatcher.html" class="extype" name="org.opalj.bi.AccessFlagsMatcher">AccessFlagsMatcher</a></dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/bi/ACC_PUBLIC$.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="org.opalj.bi.VisibilityModifier">
+              <h3>Inherited from <a href="VisibilityModifier.html" class="extype" name="org.opalj.bi.VisibilityModifier">VisibilityModifier</a></h3>
+            </div><div class="parent" name="org.opalj.bi.AccessFlag">
+              <h3>Inherited from <a href="AccessFlag.html" class="extype" name="org.opalj.bi.AccessFlag">AccessFlag</a></h3>
+            </div><div class="parent" name="org.opalj.bi.PrimitiveAccessFlagsMatcher">
+              <h3>Inherited from <a href="PrimitiveAccessFlagsMatcher.html" class="extype" name="org.opalj.bi.PrimitiveAccessFlagsMatcher">PrimitiveAccessFlagsMatcher</a></h3>
+            </div><div class="parent" name="org.opalj.bi.AccessFlagsMatcher">
+              <h3>Inherited from <a href="AccessFlagsMatcher.html" class="extype" name="org.opalj.bi.AccessFlagsMatcher">AccessFlagsMatcher</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

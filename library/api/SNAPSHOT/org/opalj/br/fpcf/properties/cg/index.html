@@ -1,0 +1,901 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.br.fpcf.properties.cg</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.br.fpcf.properties.cg" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.br.fpcf.properties.cg" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../../../../index.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../../../../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../../../index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="../../../../ai/index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.br" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="br"></a><a id="br:br"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="In this representation of Java bytecode references to a Java class file's constant pool and to attributes are replaced by direct references to the corresponding constant pool entries." href="../../../index.html"><span class="name">br</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">In this representation of Java bytecode references to a Java class file's constant
+pool and to attributes are replaced by direct references to the corresponding constant
+pool entries.</p><div class="fullcomment"><div class="comment cmt"><p>In this representation of Java bytecode references to a Java class file's constant
+pool and to attributes are replaced by direct references to the corresponding constant
+pool entries. This facilitates developing analyses and fosters comprehension.</p><p>Based on the fact that indirect
+references to constant pool entries are resolved and replaced by direct references this
+representation is called the resolved representation.</p><p>This representation of Java bytecode is considered as OPAL's standard representation
+for writing Scala based analyses. This representation is engineered such
+that it facilitates writing analyses that use pattern matching.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="org.opalj">opalj</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fpcf"></a><a id="fpcf:fpcf"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html"><span class="name">fpcf</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.properties" visbl="pub" class="indented5 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="properties"></a><a id="properties:properties"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html"><span class="name">properties</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org.opalj.br.fpcf">fpcf</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.properties.cg" visbl="pub" class="indented6 current" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cg"></a><a id="cg:cg"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cg</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.br.fpcf.properties">properties</a></dd></dl></div>
+    </li><li class="current-entities indented6">
+                        <a class="object" href="Callees$.html" title=""></a>
+                        <a class="trait" href="Callees.html" title="Encapsulates all possible callees of a method, as computed by a set of cooperating call graph analyses."></a>
+                        <a href="Callees.html" title="Encapsulates all possible callees of a method, as computed by a set of cooperating call graph analyses.">Callees</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="CalleesPropertyMetaInformation.html" title=""></a>
+                        <a href="CalleesPropertyMetaInformation.html" title="">CalleesPropertyMetaInformation</a>
+                      </li><li class="current-entities indented6">
+                        <a class="object" href="Callers$.html" title=""></a>
+                        <a class="trait" href="Callers.html" title=""></a>
+                        <a href="Callers.html" title="">Callers</a>
+                      </li><li class="current-entities indented6">
+                        <a class="object" href="CallersImplWithOtherCalls$.html" title=""></a>
+                        <a class="class" href="CallersImplWithOtherCalls.html" title=""></a>
+                        <a href="CallersImplWithOtherCalls.html" title="">CallersImplWithOtherCalls</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="CallersImplementation.html" title=""></a>
+                        <a href="CallersImplementation.html" title="">CallersImplementation</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="CallersOnlyWithConcreteCallers.html" title=""></a>
+                        <a href="CallersOnlyWithConcreteCallers.html" title="">CallersOnlyWithConcreteCallers</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="CallersPropertyMetaInformation.html" title="For a given org.opalj.br.DeclaredMethod, and for each call site (represented by the PC), the set of methods that are possible call targets."></a>
+                        <a href="CallersPropertyMetaInformation.html" title="For a given org.opalj.br.DeclaredMethod, and for each call site (represented by the PC), the set of methods that are possible call targets.">CallersPropertyMetaInformation</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="CallersWithUnknownContext.html" title=""></a>
+                        <a href="CallersWithUnknownContext.html" title="">CallersWithUnknownContext</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="CallersWithVMLevelCall.html" title=""></a>
+                        <a href="CallersWithVMLevelCall.html" title="">CallersWithVMLevelCall</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="CallersWithoutUnknownContext.html" title=""></a>
+                        <a href="CallersWithoutUnknownContext.html" title="">CallersWithoutUnknownContext</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="CallersWithoutVMLevelCall.html" title=""></a>
+                        <a href="CallersWithoutVMLevelCall.html" title="">CallersWithoutVMLevelCall</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="ConcreteCallees.html" title="Callees class used for final results where the callees are already aggregated."></a>
+                        <a href="ConcreteCallees.html" title="Callees class used for final results where the callees are already aggregated.">ConcreteCallees</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="EmptyConcreteCallers.html" title=""></a>
+                        <a href="EmptyConcreteCallers.html" title="">EmptyConcreteCallers</a>
+                      </li><li class="current-entities indented6">
+                        <a class="object" href="InstantiatedTypes$.html" title=""></a>
+                        <a class="class" href="InstantiatedTypes.html" title=""></a>
+                        <a href="InstantiatedTypes.html" title="">InstantiatedTypes</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="InstantiatedTypesPropertyMetaInformation.html" title="Represent the set of types that have allocations reachable from the respective entry points."></a>
+                        <a href="InstantiatedTypesPropertyMetaInformation.html" title="Represent the set of types that have allocations reachable from the respective entry points.">InstantiatedTypesPropertyMetaInformation</a>
+                      </li><li class="current-entities indented6">
+                        <a class="object" href="LoadedClasses$.html" title=""></a>
+                        <a class="class" href="LoadedClasses.html" title="Represent the set of types (classes) that were loaded by the VM during execution of the respective org.opalj.br.analyses.Project (which is the entity for this property)."></a>
+                        <a href="LoadedClasses.html" title="Represent the set of types (classes) that were loaded by the VM during execution of the respective org.opalj.br.analyses.Project (which is the entity for this property).">LoadedClasses</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="LoadedClassesMetaInformation.html" title=""></a>
+                        <a href="LoadedClassesMetaInformation.html" title="">LoadedClassesMetaInformation</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="NoCallees$.html" title=""></a>
+                        <a href="NoCallees$.html" title="">NoCallees</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="NoCalleesDueToNotReachableMethod$.html" title=""></a>
+                        <a href="NoCalleesDueToNotReachableMethod$.html" title="">NoCalleesDueToNotReachableMethod</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="NoCallers$.html" title=""></a>
+                        <a href="NoCallers$.html" title="">NoCallers</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="NoInstantiatedTypes$.html" title=""></a>
+                        <a href="NoInstantiatedTypes$.html" title="">NoInstantiatedTypes</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="NoLoadedClasses$.html" title=""></a>
+                        <a href="NoLoadedClasses$.html" title="">NoLoadedClasses</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="OnlyCallersWithUnknownContext$.html" title=""></a>
+                        <a href="OnlyCallersWithUnknownContext$.html" title="">OnlyCallersWithUnknownContext</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="OnlyVMCallersAndWithUnknownContext$.html" title=""></a>
+                        <a href="OnlyVMCallersAndWithUnknownContext$.html" title="">OnlyVMCallersAndWithUnknownContext</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="OnlyVMLevelCallers$.html" title=""></a>
+                        <a href="OnlyVMLevelCallers$.html" title="">OnlyVMLevelCallers</a>
+                      </li><li name="org.opalj.br.fpcf.properties.pointsto" visbl="pub" class="indented6 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pointsto"></a><a id="pointsto:pointsto"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/pointsto/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../pointsto/index.html"><span class="name">pointsto</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.br.fpcf.properties">properties</a></dd></dl></div>
+    </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="package value">
+      <div id="definition">
+        <div class="big-circle package">p</div>
+        <p id="owner"><a href="../../../../../index.html" class="extype" name="org">org</a>.<a href="../../../../index.html" class="extype" name="org.opalj">opalj</a>.<a href="../../../index.html" class="extype" name="org.opalj.br">br</a>.<a href="../../index.html" class="extype" name="org.opalj.br.fpcf">fpcf</a>.<a href="../index.html" class="extype" name="org.opalj.br.fpcf.properties">properties</a></p>
+        <h1>cg<span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cg</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              
+            </ol>
+          </div>
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.opalj.br.fpcf.properties.cg.Callees" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CalleesextendsPropertywithCalleesPropertyMetaInformation"></a><a id="Callees:Callees"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/Callees.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Encapsulates all possible callees of a method, as computed by a set of cooperating call graph analyses." href="Callees.html"><span class="name">Callees</span></a><span class="result"> extends <a href="../../../../fpcf/Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a> with <a href="CalleesPropertyMetaInformation.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CalleesPropertyMetaInformation">CalleesPropertyMetaInformation</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Encapsulates all possible callees of a method, as computed by a set of cooperating call graph
+analyses.</p>
+    </li><li name="org.opalj.br.fpcf.properties.cg.CalleesPropertyMetaInformation" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CalleesPropertyMetaInformationextendsPropertyMetaInformation"></a><a id="CalleesPropertyMetaInformation:CalleesPropertyMetaInformation"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/CalleesPropertyMetaInformation.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="CalleesPropertyMetaInformation.html"><span class="name">CalleesPropertyMetaInformation</span></a><span class="result"> extends <a href="../../../../fpcf/PropertyMetaInformation.html" class="extype" name="org.opalj.fpcf.PropertyMetaInformation">PropertyMetaInformation</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.Callers" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CallersextendsOrderedPropertywithCallersPropertyMetaInformation"></a><a id="Callers:Callers"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/Callers.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Callers.html"><span class="name">Callers</span></a><span class="result"> extends <a href="../../../../fpcf/OrderedProperty.html" class="extype" name="org.opalj.fpcf.OrderedProperty">OrderedProperty</a> with <a href="CallersPropertyMetaInformation.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersPropertyMetaInformation">CallersPropertyMetaInformation</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.CallersImplWithOtherCalls" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CallersImplWithOtherCallsextendsCallersImplementation"></a><a id="CallersImplWithOtherCalls:CallersImplWithOtherCalls"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/CallersImplWithOtherCalls.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="CallersImplWithOtherCalls.html"><span class="name">CallersImplWithOtherCalls</span></a><span class="result"> extends <a href="CallersImplementation.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersImplementation">CallersImplementation</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.CallersImplementation" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CallersImplementationextendsCallers"></a><a id="CallersImplementation:CallersImplementation"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/CallersImplementation.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="CallersImplementation.html"><span class="name">CallersImplementation</span></a><span class="result"> extends <a href="Callers.html" class="extype" name="org.opalj.br.fpcf.properties.cg.Callers">Callers</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.CallersOnlyWithConcreteCallers" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CallersOnlyWithConcreteCallersextendsCallersImplementationwithCallersWithoutVMLevelCallwithCallersWithoutUnknownContext"></a><a id="CallersOnlyWithConcreteCallers:CallersOnlyWithConcreteCallers"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/CallersOnlyWithConcreteCallers.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="CallersOnlyWithConcreteCallers.html"><span class="name">CallersOnlyWithConcreteCallers</span></a><span class="result"> extends <a href="CallersImplementation.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersImplementation">CallersImplementation</a> with <a href="CallersWithoutVMLevelCall.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersWithoutVMLevelCall">CallersWithoutVMLevelCall</a> with <a href="CallersWithoutUnknownContext.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersWithoutUnknownContext">CallersWithoutUnknownContext</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.CallersPropertyMetaInformation" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CallersPropertyMetaInformationextendsPropertyMetaInformation"></a><a id="CallersPropertyMetaInformation:CallersPropertyMetaInformation"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/CallersPropertyMetaInformation.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="For a given org.opalj.br.DeclaredMethod, and for each call site (represented by the PC), the set of methods that are possible call targets." href="CallersPropertyMetaInformation.html"><span class="name">CallersPropertyMetaInformation</span></a><span class="result"> extends <a href="../../../../fpcf/PropertyMetaInformation.html" class="extype" name="org.opalj.fpcf.PropertyMetaInformation">PropertyMetaInformation</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">For a given <a href="../../../DeclaredMethod.html" class="extype" name="org.opalj.br.DeclaredMethod">org.opalj.br.DeclaredMethod</a>, and for each call site (represented by the PC),
+the set of methods that are possible call targets.</p>
+    </li><li name="org.opalj.br.fpcf.properties.cg.CallersWithUnknownContext" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CallersWithUnknownContextextendsCallers"></a><a id="CallersWithUnknownContext:CallersWithUnknownContext"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/CallersWithUnknownContext.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="CallersWithUnknownContext.html"><span class="name">CallersWithUnknownContext</span></a><span class="result"> extends <a href="Callers.html" class="extype" name="org.opalj.br.fpcf.properties.cg.Callers">Callers</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.CallersWithVMLevelCall" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CallersWithVMLevelCallextendsCallers"></a><a id="CallersWithVMLevelCall:CallersWithVMLevelCall"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/CallersWithVMLevelCall.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="CallersWithVMLevelCall.html"><span class="name">CallersWithVMLevelCall</span></a><span class="result"> extends <a href="Callers.html" class="extype" name="org.opalj.br.fpcf.properties.cg.Callers">Callers</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.CallersWithoutUnknownContext" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CallersWithoutUnknownContextextendsCallers"></a><a id="CallersWithoutUnknownContext:CallersWithoutUnknownContext"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/CallersWithoutUnknownContext.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="CallersWithoutUnknownContext.html"><span class="name">CallersWithoutUnknownContext</span></a><span class="result"> extends <a href="Callers.html" class="extype" name="org.opalj.br.fpcf.properties.cg.Callers">Callers</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.CallersWithoutVMLevelCall" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CallersWithoutVMLevelCallextendsCallers"></a><a id="CallersWithoutVMLevelCall:CallersWithoutVMLevelCall"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/CallersWithoutVMLevelCall.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="CallersWithoutVMLevelCall.html"><span class="name">CallersWithoutVMLevelCall</span></a><span class="result"> extends <a href="Callers.html" class="extype" name="org.opalj.br.fpcf.properties.cg.Callers">Callers</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.ConcreteCallees" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConcreteCalleesextendsCallees"></a><a id="ConcreteCallees:ConcreteCallees"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/ConcreteCallees.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Callees class used for final results where the callees are already aggregated." href="ConcreteCallees.html"><span class="name">ConcreteCallees</span></a><span class="result"> extends <a href="Callees.html" class="extype" name="org.opalj.br.fpcf.properties.cg.Callees">Callees</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Callees class used for final results where the callees are already aggregated.</p>
+    </li><li name="org.opalj.br.fpcf.properties.cg.EmptyConcreteCallers" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EmptyConcreteCallersextendsCallers"></a><a id="EmptyConcreteCallers:EmptyConcreteCallers"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/EmptyConcreteCallers.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="EmptyConcreteCallers.html"><span class="name">EmptyConcreteCallers</span></a><span class="result"> extends <a href="Callers.html" class="extype" name="org.opalj.br.fpcf.properties.cg.Callers">Callers</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.InstantiatedTypes" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InstantiatedTypesextendsOrderedPropertywithInstantiatedTypesPropertyMetaInformationwithProductwithSerializable"></a><a id="InstantiatedTypes:InstantiatedTypes"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/InstantiatedTypes.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="InstantiatedTypes.html"><span class="name">InstantiatedTypes</span></a><span class="result"> extends <a href="../../../../fpcf/OrderedProperty.html" class="extype" name="org.opalj.fpcf.OrderedProperty">OrderedProperty</a> with <a href="InstantiatedTypesPropertyMetaInformation.html" class="extype" name="org.opalj.br.fpcf.properties.cg.InstantiatedTypesPropertyMetaInformation">InstantiatedTypesPropertyMetaInformation</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.InstantiatedTypesPropertyMetaInformation" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InstantiatedTypesPropertyMetaInformationextendsPropertyMetaInformation"></a><a id="InstantiatedTypesPropertyMetaInformation:InstantiatedTypesPropertyMetaInformation"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/InstantiatedTypesPropertyMetaInformation.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Represent the set of types that have allocations reachable from the respective entry points." href="InstantiatedTypesPropertyMetaInformation.html"><span class="name">InstantiatedTypesPropertyMetaInformation</span></a><span class="result"> extends <a href="../../../../fpcf/PropertyMetaInformation.html" class="extype" name="org.opalj.fpcf.PropertyMetaInformation">PropertyMetaInformation</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Represent the set of types that have allocations reachable from the respective entry points.</p>
+    </li><li name="org.opalj.br.fpcf.properties.cg.LoadedClasses" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LoadedClassesextendsOrderedPropertywithLoadedClassesMetaInformation"></a><a id="LoadedClasses:LoadedClasses"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/LoadedClasses.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Represent the set of types (classes) that were loaded by the VM during execution of the respective org.opalj.br.analyses.Project (which is the entity for this property)." href="LoadedClasses.html"><span class="name">LoadedClasses</span></a><span class="result"> extends <a href="../../../../fpcf/OrderedProperty.html" class="extype" name="org.opalj.fpcf.OrderedProperty">OrderedProperty</a> with <a href="LoadedClassesMetaInformation.html" class="extype" name="org.opalj.br.fpcf.properties.cg.LoadedClassesMetaInformation">LoadedClassesMetaInformation</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Represent the set of types (classes) that were loaded by the VM during execution of the
+respective <a href="../../../analyses/Project.html" class="extype" name="org.opalj.br.analyses.Project">org.opalj.br.analyses.Project</a> (which is the entity for this property).</p>
+    </li><li name="org.opalj.br.fpcf.properties.cg.LoadedClassesMetaInformation" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LoadedClassesMetaInformationextendsPropertyMetaInformation"></a><a id="LoadedClassesMetaInformation:LoadedClassesMetaInformation"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/LoadedClassesMetaInformation.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="LoadedClassesMetaInformation.html"><span class="name">LoadedClassesMetaInformation</span></a><span class="result"> extends <a href="../../../../fpcf/PropertyMetaInformation.html" class="extype" name="org.opalj.fpcf.PropertyMetaInformation">PropertyMetaInformation</a></span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="org.opalj.br.fpcf.properties.cg.Callees" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Callees"></a><a id="Callees:Callees"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/Callees$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Callees$.html"><span class="name">Callees</span></a><span class="result"> extends <a href="CalleesPropertyMetaInformation.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CalleesPropertyMetaInformation">CalleesPropertyMetaInformation</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.Callers" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Callers"></a><a id="Callers:Callers"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/Callers$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Callers$.html"><span class="name">Callers</span></a><span class="result"> extends <a href="CallersPropertyMetaInformation.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersPropertyMetaInformation">CallersPropertyMetaInformation</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.CallersImplWithOtherCalls" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CallersImplWithOtherCalls"></a><a id="CallersImplWithOtherCalls:CallersImplWithOtherCalls"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/CallersImplWithOtherCalls$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="CallersImplWithOtherCalls$.html"><span class="name">CallersImplWithOtherCalls</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.InstantiatedTypes" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InstantiatedTypes"></a><a id="InstantiatedTypes:InstantiatedTypes"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/InstantiatedTypes$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="InstantiatedTypes$.html"><span class="name">InstantiatedTypes</span></a><span class="result"> extends <a href="InstantiatedTypesPropertyMetaInformation.html" class="extype" name="org.opalj.br.fpcf.properties.cg.InstantiatedTypesPropertyMetaInformation">InstantiatedTypesPropertyMetaInformation</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.LoadedClasses" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LoadedClasses"></a><a id="LoadedClasses:LoadedClasses"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/LoadedClasses$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="LoadedClasses$.html"><span class="name">LoadedClasses</span></a><span class="result"> extends <a href="LoadedClassesMetaInformation.html" class="extype" name="org.opalj.br.fpcf.properties.cg.LoadedClassesMetaInformation">LoadedClassesMetaInformation</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.NoCallees" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NoCallees"></a><a id="NoCallees:NoCallees"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/NoCallees$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="NoCallees$.html"><span class="name">NoCallees</span></a><span class="result"> extends <a href="Callees.html" class="extype" name="org.opalj.br.fpcf.properties.cg.Callees">Callees</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.NoCalleesDueToNotReachableMethod" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NoCalleesDueToNotReachableMethod"></a><a id="NoCalleesDueToNotReachableMethod:NoCalleesDueToNotReachableMethod"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/NoCalleesDueToNotReachableMethod$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="NoCalleesDueToNotReachableMethod$.html"><span class="name">NoCalleesDueToNotReachableMethod</span></a><span class="result"> extends <a href="Callees.html" class="extype" name="org.opalj.br.fpcf.properties.cg.Callees">Callees</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.NoCallers" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NoCallers"></a><a id="NoCallers:NoCallers"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/NoCallers$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="NoCallers$.html"><span class="name">NoCallers</span></a><span class="result"> extends <a href="EmptyConcreteCallers.html" class="extype" name="org.opalj.br.fpcf.properties.cg.EmptyConcreteCallers">EmptyConcreteCallers</a> with <a href="CallersWithoutUnknownContext.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersWithoutUnknownContext">CallersWithoutUnknownContext</a> with <a href="CallersWithoutVMLevelCall.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersWithoutVMLevelCall">CallersWithoutVMLevelCall</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.NoInstantiatedTypes" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NoInstantiatedTypes"></a><a id="NoInstantiatedTypes:NoInstantiatedTypes"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/NoInstantiatedTypes$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="NoInstantiatedTypes$.html"><span class="name">NoInstantiatedTypes</span></a><span class="result"> extends <a href="InstantiatedTypes.html" class="extype" name="org.opalj.br.fpcf.properties.cg.InstantiatedTypes">InstantiatedTypes</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.NoLoadedClasses" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NoLoadedClasses"></a><a id="NoLoadedClasses:NoLoadedClasses"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/NoLoadedClasses$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="NoLoadedClasses$.html"><span class="name">NoLoadedClasses</span></a><span class="result"> extends <a href="LoadedClasses.html" class="extype" name="org.opalj.br.fpcf.properties.cg.LoadedClasses">LoadedClasses</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.OnlyCallersWithUnknownContext" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OnlyCallersWithUnknownContext"></a><a id="OnlyCallersWithUnknownContext:OnlyCallersWithUnknownContext"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/OnlyCallersWithUnknownContext$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="OnlyCallersWithUnknownContext$.html"><span class="name">OnlyCallersWithUnknownContext</span></a><span class="result"> extends <a href="EmptyConcreteCallers.html" class="extype" name="org.opalj.br.fpcf.properties.cg.EmptyConcreteCallers">EmptyConcreteCallers</a> with <a href="CallersWithUnknownContext.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersWithUnknownContext">CallersWithUnknownContext</a> with <a href="CallersWithoutVMLevelCall.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersWithoutVMLevelCall">CallersWithoutVMLevelCall</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.OnlyVMCallersAndWithUnknownContext" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OnlyVMCallersAndWithUnknownContext"></a><a id="OnlyVMCallersAndWithUnknownContext:OnlyVMCallersAndWithUnknownContext"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/OnlyVMCallersAndWithUnknownContext$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="OnlyVMCallersAndWithUnknownContext$.html"><span class="name">OnlyVMCallersAndWithUnknownContext</span></a><span class="result"> extends <a href="EmptyConcreteCallers.html" class="extype" name="org.opalj.br.fpcf.properties.cg.EmptyConcreteCallers">EmptyConcreteCallers</a> with <a href="CallersWithVMLevelCall.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersWithVMLevelCall">CallersWithVMLevelCall</a> with <a href="CallersWithUnknownContext.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersWithUnknownContext">CallersWithUnknownContext</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.fpcf.properties.cg.OnlyVMLevelCallers" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OnlyVMLevelCallers"></a><a id="OnlyVMLevelCallers:OnlyVMLevelCallers"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/br/fpcf/properties/cg/OnlyVMLevelCallers$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="OnlyVMLevelCallers$.html"><span class="name">OnlyVMLevelCallers</span></a><span class="result"> extends <a href="EmptyConcreteCallers.html" class="extype" name="org.opalj.br.fpcf.properties.cg.EmptyConcreteCallers">EmptyConcreteCallers</a> with <a href="CallersWithoutUnknownContext.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersWithoutUnknownContext">CallersWithoutUnknownContext</a> with <a href="CallersWithVMLevelCall.html" class="extype" name="org.opalj.br.fpcf.properties.cg.CallersWithVMLevelCall">CallersWithVMLevelCall</a></span>
+      </span>
+      
+      
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

@@ -1,0 +1,1176 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.ai.ValuesDomain.ReturnAddressValue</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.ai.ValuesDomain.ReturnAddressValue" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.ai.ValuesDomain.ReturnAddressValue" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../index.js"></script>
+      <script type="text/javascript" src="../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../br/index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.ai" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ai"></a><a id="ai:ai"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Implementation of an abstract interpretation (ai) framework – also referred to as OPAL." href="index.html"><span class="name">ai</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Implementation of an abstract interpretation (ai) framework – also referred to as OPAL.</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of an abstract interpretation (ai) framework – also referred to as OPAL.</p><p>Please note that OPAL/the abstract interpreter just refers to the classes and traits
+defined in this package (<code>ai</code>). The classes and traits defined in the sub-packages
+(in particular in <code>domain</code>) are not considered to be part of the core of OPAL/the
+abstract interpreter.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj">opalj</a></dd><dt>Note</dt><dd><span class="cmt"><p>This framework assumes that the analyzed bytecode is valid; i.e., the JVM's
+     bytecode verifier would be able to verify the code. Furthermore, load-time errors
+     (e.g., <code>LinkageErrors</code>) are – by default – completely ignored to facilitate the
+     analysis of parts of a project. In general, if the presented bytecode is not valid,
+     the result is undefined (i.e., OPAL may report meaningless results, crash or run
+     indefinitely).</p></span></dd><dt>See also</dt><dd><span class="cmt"><p><a href="AI.html" class="extype" name="org.opalj.ai.AI">org.opalj.ai.AI</a> - Implements the abstract interpreter that
+     processes a methods code and uses an analysis-specific domain to perform the
+     abstract computations.</p></span><span class="cmt"><p><a href="Domain.html" class="extype" name="org.opalj.ai.Domain">org.opalj.ai.Domain</a> - The core interface between the abstract
+     interpretation framework and the abstract domain that is responsible for
+     performing the abstract computations.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.ValuesDomain" visbl="pub" class="indented4 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ValuesDomainextendsAnyRef"></a><a id="ValuesDomain:ValuesDomain"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines the concept of a value in a Domain." href="ValuesDomain.html"><span class="name">ValuesDomain</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Defines the concept of a value in a <code>Domain</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Defines the concept of a value in a <code>Domain</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.ai">ai</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="Domain.html" class="extype" name="org.opalj.ai.Domain">Domain</a> For an explanation of the underlying concepts and ideas.</p></span></dd></dl></div>
+    </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="abstract type" href="ValuesDomain$DomainIllegalValue.html" title="Abstracts over the concrete type of IllegalValue."></a>
+                        <a href="ValuesDomain$DomainIllegalValue.html" title="Abstracts over the concrete type of IllegalValue.">DomainIllegalValue</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="abstract type" href="ValuesDomain$DomainReferenceValue.html" title=""></a>
+                        <a href="ValuesDomain$DomainReferenceValue.html" title="">DomainReferenceValue</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="abstract type" href="ValuesDomain$DomainReturnAddressValue.html" title="Abstracts over the concrete type of ReturnAddressValue."></a>
+                        <a href="ValuesDomain$DomainReturnAddressValue.html" title="Abstracts over the concrete type of ReturnAddressValue.">DomainReturnAddressValue</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="abstract type" href="ValuesDomain$DomainReturnAddressValues.html" title=""></a>
+                        <a href="ValuesDomain$DomainReturnAddressValues.html" title="">DomainReturnAddressValues</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="abstract type" href="ValuesDomain$DomainTypedValue.html" title=""></a>
+                        <a href="ValuesDomain$DomainTypedValue.html" title="">DomainTypedValue</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="abstract type" href="ValuesDomain$DomainValue.html" title="Abstracts over the concrete type of Value."></a>
+                        <a href="ValuesDomain$DomainValue.html" title="Abstracts over the concrete type of Value.">DomainValue</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ValuesDomain$IllegalValue.html" title="Represents a value that has no well defined state/type."></a>
+                        <a href="ValuesDomain$IllegalValue.html" title="Represents a value that has no well defined state/type.">IllegalValue</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ValuesDomain$RETValue.html" title=""></a>
+                        <a href="ValuesDomain$RETValue.html" title="">RETValue</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ValuesDomain$ReferenceValue.html" title=""></a>
+                        <a href="ValuesDomain$ReferenceValue.html" title="">ReferenceValue</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="" title="Stores a single return address (i.e., a program counter/index into the code array)."></a>
+                        <a href="" title="Stores a single return address (i.e., a program counter/index into the code array).">ReturnAddressValue</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ValuesDomain$ReturnAddressValues.html" title="A collection of (not further stored) return address values."></a>
+                        <a href="ValuesDomain$ReturnAddressValues.html" title="A collection of (not further stored) return address values.">ReturnAddressValues</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ValuesDomain$TypedValue.html" title=""></a>
+                        <a href="ValuesDomain$TypedValue.html" title="">TypedValue</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ValuesDomain$Value.html" title="Abstracts over a concrete operand stack value or a value stored in one of the local variables/registers."></a>
+                        <a href="ValuesDomain$Value.html" title="Abstracts over a concrete operand stack value or a value stored in one of the local variables/registers.">Value</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="class type">
+      <div id="definition">
+        <div class="big-circle class">c</div>
+        <p id="owner"><a href="../../index.html" class="extype" name="org">org</a>.<a href="../index.html" class="extype" name="org.opalj">opalj</a>.<a href="index.html" class="extype" name="org.opalj.ai">ai</a>.<a href="ValuesDomain.html" class="extype" name="org.opalj.ai.ValuesDomain">ValuesDomain</a></p>
+        <h1>ReturnAddressValue<span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ReturnAddressValue</span><span class="result"> extends <a href="ValuesDomain$RETValue.html" class="extype" name="org.opalj.ai.ValuesDomain.RETValue">RETValue</a></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Stores a single return address (i.e., a program counter/index into the code array).
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="ValuesDomain.html#DomainReturnAddressValue&lt;:ValuesDomain.this.ReturnAddressValuewithValuesDomain.this.DomainValue" class="extmbr" name="org.opalj.ai.ValuesDomain.DomainReturnAddressValue">DomainReturnAddressValue</a></dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/ai/src/main/scala/org/opalj/ai/ValuesDomain.scala?at=develop" target="_blank">ValuesDomain.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>Though the framework completely handles all aspects related to return address
+     values, it is nevertheless necessary that this class inherits from <code>Value</code>
+     as return addresses are stored on the stack/in the registers. However,
+     if the <code>Value</code> trait should be refined, all additional methods may – from
+     the point-of-view of OPAL-AI – just throw an <code>UnsupportedOperationException</code>
+     as these additional methods will never be called by the OPAL-AI.</p></span></dd></dl><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><a href="ValuesDomain$RETValue.html" class="extype" name="org.opalj.ai.ValuesDomain.RETValue">RETValue</a>, <a href="../value/IsReturnAddressValue.html" class="extype" name="org.opalj.value.IsReturnAddressValue">IsReturnAddressValue</a>, <a href="../value/KnownTypedValue.html" class="extype" name="org.opalj.value.KnownTypedValue">KnownTypedValue</a>, <a href="../value/KnownValue.html" class="extype" name="org.opalj.value.KnownValue">KnownValue</a>, <a href="ValuesDomain$Value.html" class="extype" name="org.opalj.ai.ValuesDomain.Value">Value</a>, <a href="../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="org.opalj.ai.ValuesDomain.ReturnAddressValue"><span>ReturnAddressValue</span></li><li class="in" name="org.opalj.ai.ValuesDomain.RETValue"><span>RETValue</span></li><li class="in" name="org.opalj.value.IsReturnAddressValue"><span>IsReturnAddressValue</span></li><li class="in" name="org.opalj.value.KnownTypedValue"><span>KnownTypedValue</span></li><li class="in" name="org.opalj.value.KnownValue"><span>KnownValue</span></li><li class="in" name="org.opalj.ai.ValuesDomain.Value"><span>Value</span></li><li class="in" name="org.opalj.value.ValueInformation"><span>ValueInformation</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.opalj.ai.ValuesDomain.ReturnAddressValue#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(address:Int):ValuesDomain.this.ReturnAddressValue"></a><a id="&lt;init&gt;:ReturnAddressValue"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#&lt;init&gt;(address:Int):ValuesDomain.this.ReturnAddressValue" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ReturnAddressValue</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Int">Int</span></span>)</span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.ai.ValuesDomain.Value#PCIndependent" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PCIndependent:Int"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#PCIndependent:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PCIndependent</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ValuesDomain$Value.html" class="extype" name="org.opalj.ai.ValuesDomain.Value">Value</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.ai.ValuesDomain.Value#abstractsOver" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="abstractsOver(other:ValuesDomain.this.DomainValue):Boolean"></a><a id="abstractsOver(DomainValue):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#abstractsOver(other:ValuesDomain.this.DomainValue):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">abstractsOver</span><span class="params">(<span name="other">other: <a href="ValuesDomain.html#DomainValue&gt;:Null&lt;:ValuesDomain.this.Value" class="extmbr" name="org.opalj.ai.ValuesDomain.DomainValue">DomainValue</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns <code>true</code> iff the abstract state represented by this value abstracts over
+the state of the given value.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> iff the abstract state represented by this value abstracts over
+the state of the given value. In other words if every possible runtime value
+represented by the given value is also represented by this value.</p><p>The abstract state generally encompasses every information that would
+be considered during a <a href="ValuesDomain$Value.html#join(pc:Int,that:ValuesDomain.this.DomainValue):org.opalj.ai.Update[ValuesDomain.this.DomainValue]" class="extmbr" name="org.opalj.ai.ValuesDomain.Value#join">join</a> of <code>this</code> value and the <code>other</code> value and that
+could lead to a true <a href="Update.html" class="extype" name="org.opalj.ai.Update">Update</a>.</p><p>This method is <b>reflexive</b>, I.e., every value abstracts over itself.</p><p><a href="ValuesDomain.html#TheIllegalValue:ValuesDomain.this.DomainIllegalValue" class="extmbr" name="org.opalj.ai.ValuesDomain#TheIllegalValue">TheIllegalValue</a> only abstracts over itself.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ValuesDomain$Value.html" class="extype" name="org.opalj.ai.ValuesDomain.Value">Value</a></dd><dt>Note</dt><dd><span class="cmt"><p>abstractsOver is only defined for comparable values where both values have the
+      same computational type.</p></span>, <span class="cmt"><p>The default implementation uses the <a href="ValuesDomain$Value.html#join(pc:Int,that:ValuesDomain.this.DomainValue):org.opalj.ai.Update[ValuesDomain.this.DomainValue]" class="extmbr" name="org.opalj.ai.ValuesDomain.Value#join">join</a>  method of this <b>domain value</b>.
+      Overriding this method is, hence, primarily meaningful for performance reasons.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p><code>isMorePreciseThan</code></p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.ValuesDomain.ReturnAddressValue#adapt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="adapt(target:org.opalj.ai.TargetDomain,vo:org.opalj.ai.ValueOrigin):target.DomainValue"></a><a id="adapt(TargetDomain,ValueOrigin):(target)#DomainValue"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#adapt(target:org.opalj.ai.TargetDomain,vo:org.opalj.ai.ValueOrigin):target.DomainValue" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">adapt</span><span class="params">(<span name="target">target: <a href="index.html#TargetDomain=org.opalj.ai.ValuesDomainwithorg.opalj.ai.package.ValuesFactory" class="extmbr" name="org.opalj.ai.TargetDomain">TargetDomain</a></span>, <span name="vo">vo: <a href="index.html#ValueOrigin=Int" class="extmbr" name="org.opalj.ai.ValueOrigin">ValueOrigin</a></span>)</span><span class="result">: (<span class="extype" name="org.opalj.ai.ValuesDomain.ReturnAddressValue.adapt.target">target</span>)#<span class="extype" name="org.opalj.ai.ValuesDomain.DomainValue">DomainValue</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Adapts this value to the given domain (default: throws a domain exception
+that adaptation is not supported).</p><div class="fullcomment"><div class="comment cmt"><p>Adapts this value to the given domain (default: throws a domain exception
+that adaptation is not supported). <b>This method needs to be overridden
+by concrete <code>Value</code> classes to support the adaptation for a specific domain.</b></p><p>Supporting the <code>adapt</code> method is primarily necessary when you want to analyze a
+method that is called by the currently analyzed method and you need to adapt this
+domain's values (the actual parameters of the method) to the domain used for
+analyzing the called method.</p><p>Additionally, the <code>adapt</code> method is OPAL's main mechanism to enable dynamic
+domain-adaptation. I.e., to make it possible to change the abstract domain at
+runtime if the analysis time takes too long using a (more) precise domain.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.ai.ValuesDomain.ReturnAddressValue">ReturnAddressValue</a> → <a href="ValuesDomain$Value.html" class="extype" name="org.opalj.ai.ValuesDomain.Value">Value</a></dd><dt>Note</dt><dd><span class="cmt"><p>The abstract interpretation framework does not use/call this method.
+        This method is solely predefined to facilitate the development of
+        project-wide analyses.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.ValuesDomain.ReturnAddressValue#address" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="address:Int"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#address:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">address</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.ai.ValuesDomain.Value#asDomainReferenceValue" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asDomainReferenceValue:ValuesDomain.this.DomainReferenceValue"></a><a id="asDomainReferenceValue:DomainReferenceValue"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#asDomainReferenceValue:ValuesDomain.this.DomainReferenceValue" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asDomainReferenceValue</span><span class="result">: <a href="ValuesDomain.html#DomainReferenceValue&gt;:Null&lt;:ValuesDomain.this.ReferenceValuewithValuesDomain.this.DomainTypedValue[org.opalj.br.ReferenceType]" class="extmbr" name="org.opalj.ai.ValuesDomain.DomainReferenceValue">DomainReferenceValue</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the represented reference value iff this value represents a reference value.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the represented reference value iff this value represents a reference value.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ValuesDomain$Value.html" class="extype" name="org.opalj.ai.ValuesDomain.Value">Value</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.opalj.value.ValueInformation#asPrimitiveValue" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asPrimitiveValue:org.opalj.value.IsPrimitiveValue[_&lt;:org.opalj.br.BaseType]"></a><a id="asPrimitiveValue:IsPrimitiveValue[_&lt;:BaseType]"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#asPrimitiveValue:org.opalj.value.IsPrimitiveValue[_&lt;:org.opalj.br.BaseType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asPrimitiveValue</span><span class="result">: <a href="../value/IsPrimitiveValue.html" class="extype" name="org.opalj.value.IsPrimitiveValue">IsPrimitiveValue</a>[_ &lt;: <a href="../br/BaseType.html" class="extype" name="org.opalj.br.BaseType">BaseType</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a></dd></dl></div>
+    </li><li name="org.opalj.value.ValueInformation#asReferenceValue" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asReferenceValue:org.opalj.value.IsReferenceValue"></a><a id="asReferenceValue:IsReferenceValue"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#asReferenceValue:org.opalj.value.IsReferenceValue" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asReferenceValue</span><span class="result">: <a href="../value/IsReferenceValue.html" class="extype" name="org.opalj.value.IsReferenceValue">IsReferenceValue</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.value.IsReturnAddressValue#computationalType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="computationalType:org.opalj.br.ComputationalType"></a><a id="computationalType:ComputationalType"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#computationalType:org.opalj.br.ComputationalType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">computationalType</span><span class="result">: <a href="../br/ComputationalType.html" class="extype" name="org.opalj.br.ComputationalType">ComputationalType</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The computational type of the value if this object represents a legal value.</p><div class="fullcomment"><div class="comment cmt"><p>The computational type of the value if this object represents a legal value.</p><p>The precise computational type is, e.g., needed to calculate the effect
+of generic stack manipulation instructions (e.g., <code>DUP_...</code> and <code>SWAP</code>)
+on the stack as well as to calculate the jump targets of <code>RET</code> instructions
+and to determine which values are actually copied by, e.g., the <code>dup_XX</code>
+instructions.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../value/IsReturnAddressValue.html" class="extype" name="org.opalj.value.IsReturnAddressValue">IsReturnAddressValue</a> → <a href="../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a></dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="IllegalStateException"><code>IllegalStateException</code></span> if this value is illegal or void.</p></span></dd><dt>Note</dt><dd><span class="cmt"><p>The computational type has to be precise/correct.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.ValuesDomain.ReturnAddressValue#doJoin" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doJoin(pc:Int,other:ValuesDomain.this.DomainValue):org.opalj.ai.Update[ValuesDomain.this.DomainValue]"></a><a id="doJoin(Int,DomainValue):Update[DomainValue]"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#doJoin(pc:Int,other:ValuesDomain.this.DomainValue):org.opalj.ai.Update[ValuesDomain.this.DomainValue]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doJoin</span><span class="params">(<span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="other">other: <a href="ValuesDomain.html#DomainValue&gt;:Null&lt;:ValuesDomain.this.Value" class="extmbr" name="org.opalj.ai.ValuesDomain.DomainValue">DomainValue</a></span>)</span><span class="result">: <a href="Update.html" class="extype" name="org.opalj.ai.Update">Update</a>[<a href="ValuesDomain.html#DomainValue&gt;:Null&lt;:ValuesDomain.this.Value" class="extmbr" name="org.opalj.ai.ValuesDomain.DomainValue">DomainValue</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Joins this value and the given value.</p><div class="fullcomment"><div class="comment cmt"><p>Joins this value and the given value.</p><p>Join is called whenever an instruction is evaluated more than once and, hence,
+the values found on the paths need to be joined. This method is, however,
+only called if the two values are two different objects (<code>(this ne value) === true</code>),
+but both values have the <i>same computational type</i>.</p><p>This basically implements the join operator of complete lattices.</p><h4>Example</h4><p>For example, joining a <code>DomainValue</code> that represents the integer value 0
+with a <code>DomainValue</code> that represents the integer value 1 may return a new
+<code>DomainValue</code> that precisely captures the range <b>[0..1]</b> or that captures
+<b>all positive</b> integer values or just <b>some integer value</b>.</p><h4>Contract</h4><p><b><code>this</code> value</b> is always the value that was previously used to perform
+subsequent computations/analyses. Hence, if <code>this</code> value subsumes the given
+value, the result has to be either <code>NoUpdate</code> or a <code>MetaInformationUpdate</code>.
+In case that the given value subsumes <code>this</code> value, the result has to be
+a <code>StructuralUpdate</code> with the given value as the new value. Hence,
+<i>this <code>join</code> operation is not commutative</i>. If a new (more abstract)
+abstract value is created that represents both values the result always has to
+be a <code>StructuralUpdate</code>.
+If the result is a <code>StructuralUpdate</code> the framework will continue with the
+interpretation.</p><p>The termination of the abstract interpretation directly depends on the fact
+that at some point all (abstract) values are fixed and don't change anymore.
+Hence, it is important that <b>the type of the update is only a
+<a href="StructuralUpdate.html" class="extype" name="org.opalj.ai.StructuralUpdate">org.opalj.ai.StructuralUpdate</a> if the value has changed in
+a way relevant for future computations/analyses</b> involving this value.
+In other words, when two values are joined it has to be ensured that no
+fall back to a previous value occurs. E.g., if you join the existing integer
+value 0 and the given value 1 and the result would be 1, then it must be
+ensured that a subsequent join with the value 0 will not result in the value
+0 again.</p><p>Conceptually, the join of an object with itself has to return the object
+itself. Note, that this is a conceptual requirement as such a call
+(<code>this.doJoin(..,this)</code>) will not be performed by the abstract interpretation
+framework; this case is handled by the <a href="#join(pc:Int,that:ValuesDomain.this.DomainValue):org.opalj.ai.Update[ValuesDomain.this.DomainValue]" class="extmbr" name="org.opalj.ai.ValuesDomain.ReturnAddressValue#join">join</a> method.
+However, if the join object is also used by the implementation of the domain
+itself, it may be necessary to explicitly handle self-joins.</p><h4>Performance</h4><p>In general, the domain should try to minimize the number of objects that it
+uses to represent values. That is, <b>two values that are conceptually equal
+should – whenever possible – use only one object</b>. This has a significant
+impact on functions such as <code>join</code>.
+</p></div><dl class="paramcmts block"><dt class="param">pc</dt><dd class="cmt"><p>The program counter of the instruction where the paths converge.</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.ai.ValuesDomain.ReturnAddressValue">ReturnAddressValue</a> → <a href="ValuesDomain$Value.html" class="extype" name="org.opalj.ai.ValuesDomain.Value">Value</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.value.IsReturnAddressValue#hasCategory2ComputationalType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hasCategory2ComputationalType:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#hasCategory2ComputationalType:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasCategory2ComputationalType</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns <code>true</code> if and only if the value has the computational type 2; <code>false</code> in all
+other cases (including the case where this value is illegal!).</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> if and only if the value has the computational type 2; <code>false</code> in all
+other cases (including the case where this value is illegal!).
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../value/IsReturnAddressValue.html" class="extype" name="org.opalj.value.IsReturnAddressValue">IsReturnAddressValue</a> → <a href="../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a></dd></dl></div>
+    </li><li name="org.opalj.ai.ValuesDomain.ReturnAddressValue#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.ai.ValuesDomain.ReturnAddressValue">ReturnAddressValue</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.value.IsReturnAddressValue#isArrayValue" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isArrayValue:org.opalj.Answer"></a><a id="isArrayValue:Answer"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#isArrayValue:org.opalj.Answer" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isArrayValue</span><span class="result">: <a href="../Answer.html" class="extype" name="org.opalj.Answer">Answer</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns <code>Yes</code> if the value is _not null_ and the least upper type bound is an <code>ArrayType</code>;
+the value is <code>Unknown</code> if the least upper type bound is <code>ArrayType</code> but the value may be null;
+in all other cases <code>No</code> is returned; in particular if the value is known to be null.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>Yes</code> if the value is _not null_ and the least upper type bound is an <code>ArrayType</code>;
+the value is <code>Unknown</code> if the least upper type bound is <code>ArrayType</code> but the value may be null;
+in all other cases <code>No</code> is returned; in particular if the value is known to be null. <code>No</code>
+is also returned if the value's type is <code>Object</code> or <code>Seriablizable</code> or <code>Cloneable</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../value/IsReturnAddressValue.html" class="extype" name="org.opalj.value.IsReturnAddressValue">IsReturnAddressValue</a> → <a href="../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a></dd></dl></div>
+    </li><li name="org.opalj.value.KnownValue#isIllegalValue" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isIllegalValue:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#isIllegalValue:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isIllegalValue</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns <code>true</code> iff this value is not a legal value according to the JVM specification.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> iff this value is not a legal value according to the JVM specification.
+Such values cannot be used to perform any computations and will generally not occur
+in static analyses unless the analysis or the bytecode is buggy.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../value/KnownValue.html" class="extype" name="org.opalj.value.KnownValue">KnownValue</a> → <a href="../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a></dd><dt>Note</dt><dd><span class="cmt"><p>An <a href="../value/IsIllegalValue.html" class="extype" name="org.opalj.value.IsIllegalValue">IsIllegalValue</a> can always be distinguished from a void value.</p></span></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.opalj.ai.ValuesDomain.Value#isMorePreciseThan" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isMorePreciseThan(other:ValuesDomain.this.DomainValue):Boolean"></a><a id="isMorePreciseThan(DomainValue):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#isMorePreciseThan(other:ValuesDomain.this.DomainValue):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isMorePreciseThan</span><span class="params">(<span name="other">other: <a href="ValuesDomain.html#DomainValue&gt;:Null&lt;:ValuesDomain.this.Value" class="extmbr" name="org.opalj.ai.ValuesDomain.DomainValue">DomainValue</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns <code>true</code> iff the abstract state represented by this value is strictly more
+precise than the state of the given value.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> iff the abstract state represented by this value is strictly more
+precise than the state of the given value. In other words if every possible
+runtime value represented by this value is also represented by the given value,
+but both <b>are not equal</b>; in other words, this method is <b>irreflexive</b>.</p><p>The considered abstract state generally encompasses every information that would be
+considered during a <a href="ValuesDomain$Value.html#join(pc:Int,that:ValuesDomain.this.DomainValue):org.opalj.ai.Update[ValuesDomain.this.DomainValue]" class="extmbr" name="org.opalj.ai.ValuesDomain.Value#join">join</a> of <code>this</code> value and the <code>other</code> value and that could
+lead to a <a href="StructuralUpdate.html" class="extype" name="org.opalj.ai.StructuralUpdate">StructuralUpdate</a>.
+</p></div><dl class="paramcmts block"><dt class="param">other</dt><dd class="cmt"><p>Another <code>DomainValue</code> with the same computational type as this value.
+         (The <code>IllegalValue</code> has no computational type and, hence, a comparison with
+         an IllegalValue is not well defined.)</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ValuesDomain$Value.html" class="extype" name="org.opalj.ai.ValuesDomain.Value">Value</a></dd><dt>Note</dt><dd><span class="cmt"><p>It is recommended to overwrite this method for performance
+         reasons, as the default implementation relies on <a href="ValuesDomain$Value.html#join(pc:Int,that:ValuesDomain.this.DomainValue):org.opalj.ai.Update[ValuesDomain.this.DomainValue]" class="extmbr" name="org.opalj.ai.ValuesDomain.Value#join">join</a>.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p><code>abstractsOver</code></p></span></dd></dl></div>
+    </li><li name="org.opalj.value.IsReturnAddressValue#isPrimitiveValue" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isPrimitiveValue:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#isPrimitiveValue:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isPrimitiveValue</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns <code>true</code> in case of a value with primitive type.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> in case of a value with primitive type.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../value/IsReturnAddressValue.html" class="extype" name="org.opalj.value.IsReturnAddressValue">IsReturnAddressValue</a> → <a href="../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a></dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="IllegalStateException"><code>IllegalStateException</code></span> if this value is illegal.</p></span></dd></dl></div>
+    </li><li name="org.opalj.value.IsReturnAddressValue#isReferenceValue" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isReferenceValue:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#isReferenceValue:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isReferenceValue</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns <code>true</code> if the value has a reference type.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> if the value has a reference type.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../value/IsReturnAddressValue.html" class="extype" name="org.opalj.value.IsReturnAddressValue">IsReturnAddressValue</a> → <a href="../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a></dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="IllegalStateException"><code>IllegalStateException</code></span> if this value is illegal.</p></span></dd></dl></div>
+    </li><li name="org.opalj.value.KnownTypedValue#isVoid" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isVoid:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#isVoid:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isVoid</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns <code>true</code> if this value represents void.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> if this value represents void.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../value/KnownTypedValue.html" class="extype" name="org.opalj.value.KnownTypedValue">KnownTypedValue</a> → <a href="../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a></dd></dl></div>
+    </li><li name="org.opalj.ai.ValuesDomain.Value#join" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="join(pc:Int,that:ValuesDomain.this.DomainValue):org.opalj.ai.Update[ValuesDomain.this.DomainValue]"></a><a id="join(Int,DomainValue):Update[DomainValue]"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#join(pc:Int,that:ValuesDomain.this.DomainValue):org.opalj.ai.Update[ValuesDomain.this.DomainValue]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">join</span><span class="params">(<span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="that">that: <a href="ValuesDomain.html#DomainValue&gt;:Null&lt;:ValuesDomain.this.Value" class="extmbr" name="org.opalj.ai.ValuesDomain.DomainValue">DomainValue</a></span>)</span><span class="result">: <a href="Update.html" class="extype" name="org.opalj.ai.Update">Update</a>[<a href="ValuesDomain.html#DomainValue&gt;:Null&lt;:ValuesDomain.this.Value" class="extmbr" name="org.opalj.ai.ValuesDomain.DomainValue">DomainValue</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Checks that the given value and this value are compatible with regard to
+its computational type and – if so – calls <a href="ValuesDomain$Value.html#doJoin(pc:Int,value:ValuesDomain.this.DomainValue):org.opalj.ai.Update[ValuesDomain.this.DomainValue]" class="extmbr" name="org.opalj.ai.ValuesDomain.Value#doJoin">doJoin</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Checks that the given value and this value are compatible with regard to
+its computational type and – if so – calls <a href="ValuesDomain$Value.html#doJoin(pc:Int,value:ValuesDomain.this.DomainValue):org.opalj.ai.Update[ValuesDomain.this.DomainValue]" class="extmbr" name="org.opalj.ai.ValuesDomain.Value#doJoin">doJoin</a>.</p><p>See <code>doJoin(PC,DomainValue)</code> for details.
+</p></div><dl class="paramcmts block"><dt class="param">pc</dt><dd class="cmt"><p>The program counter of the instruction where the paths converge or
+         <code>Int.MinValue</code> if the join is done independently of an instruction.</p></dd><dt class="param">that</dt><dd class="cmt"><p>The &quot;new&quot; domain value with which this domain value should be
+         joined. The caller has to ensure that the given value and this value
+         are guaranteed to be two different objects.</p></dd><dt>returns</dt><dd class="cmt"><p><a href="ValuesDomain.html#MetaInformationUpdateIllegalValue:org.opalj.ai.MetaInformationUpdate[ValuesDomain.this.DomainIllegalValue]" class="extmbr" name="org.opalj.ai.ValuesDomain#MetaInformationUpdateIllegalValue">MetaInformationUpdateIllegalValue</a> or the result of calling
+         <a href="ValuesDomain$Value.html#doJoin(pc:Int,value:ValuesDomain.this.DomainValue):org.opalj.ai.Update[ValuesDomain.this.DomainValue]" class="extmbr" name="org.opalj.ai.ValuesDomain.Value#doJoin">doJoin</a>.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ValuesDomain$Value.html" class="extype" name="org.opalj.ai.ValuesDomain.Value">Value</a></dd><dt>Note</dt><dd><span class="cmt"><p>It is in general not recommended/needed to override this method.</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.ai.ValuesDomain.RETValue#summarize" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="summarize(pc:Int):ValuesDomain.this.DomainValue"></a><a id="summarize(Int):DomainValue"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#summarize(pc:Int):ValuesDomain.this.DomainValue" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">summarize</span><span class="params">(<span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="ValuesDomain.html#DomainValue&gt;:Null&lt;:ValuesDomain.this.Value" class="extmbr" name="org.opalj.ai.ValuesDomain.DomainValue">DomainValue</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Creates a summary of this value.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a summary of this value.</p><p>In general, creating a summary of a value may be useful/required for values that
+are potentially returned by a called method and which will then be used by the
+calling method. For example, it may be useful to precisely track the flow of
+values within a method to be able to distinguish between all sources of a value
+(E.g., to be able to distinguish between a <code>NullPointerException</code> created by
+instruction A and another one created by instruction B (<code>A != B</code>).)</p><p>However, from the caller perspective it may be absolutely irrelevant where/how the
+value was created in the called method and, hence, keeping all information would
+just waste memory and a summary may be sufficient.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ValuesDomain$RETValue.html" class="extype" name="org.opalj.ai.ValuesDomain.RETValue">RETValue</a> → <a href="ValuesDomain$Value.html" class="extype" name="org.opalj.ai.ValuesDomain.Value">Value</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="&quot;summarize(...) is not supported by RETValue&quot;">...</span>
+    </span>)</span>
+              
+        </dd><dt>Note</dt><dd><span class="cmt"><p>This method is predefined to facilitate the development of project-wide analyses.</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.opalj.value.IsReturnAddressValue#toCanonicalForm" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toCanonicalForm:org.opalj.value.IsReturnAddressValue"></a><a id="toCanonicalForm:IsReturnAddressValue"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#toCanonicalForm:org.opalj.value.IsReturnAddressValue" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toCanonicalForm</span><span class="result">: <a href="../value/IsReturnAddressValue.html" class="extype" name="org.opalj.value.IsReturnAddressValue">IsReturnAddressValue</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns a <code>ValueInformation</code> object that just captures the basic information as defined
+by this <code>value</code> framework.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a <code>ValueInformation</code> object that just captures the basic information as defined
+by this <code>value</code> framework. The returned value information object will be independent of
+the underlying representation from which it was derived.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../value/IsReturnAddressValue.html" class="extype" name="org.opalj.value.IsReturnAddressValue">IsReturnAddressValue</a> → <a href="../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a></dd></dl></div>
+    </li><li name="org.opalj.ai.ValuesDomain.ReturnAddressValue#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.ai.ValuesDomain.ReturnAddressValue">ReturnAddressValue</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.value.IsReturnAddressValue#verificationTypeInfo" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="verificationTypeInfo:org.opalj.br.VerificationTypeInfo"></a><a id="verificationTypeInfo:VerificationTypeInfo"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#verificationTypeInfo:org.opalj.br.VerificationTypeInfo" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">verificationTypeInfo</span><span class="result">: <a href="../br/VerificationTypeInfo.html" class="extype" name="org.opalj.br.VerificationTypeInfo">VerificationTypeInfo</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The type of this value as used by the <a href="../br/StackMapTable.html" class="extype" name="org.opalj.br.StackMapTable">org.opalj.br.StackMapTable</a> attribute.</p><div class="fullcomment"><div class="comment cmt"><p>The type of this value as used by the <a href="../br/StackMapTable.html" class="extype" name="org.opalj.br.StackMapTable">org.opalj.br.StackMapTable</a> attribute.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../value/IsReturnAddressValue.html" class="extype" name="org.opalj.value.IsReturnAddressValue">IsReturnAddressValue</a> → <a href="../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a></dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="IllegalStateException"><code>IllegalStateException</code></span> if this <i>value represents void</i> or a return address value.</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/ValuesDomain$ReturnAddressValue.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="org.opalj.ai.ValuesDomain.RETValue">
+              <h3>Inherited from <a href="ValuesDomain$RETValue.html" class="extype" name="org.opalj.ai.ValuesDomain.RETValue">RETValue</a></h3>
+            </div><div class="parent" name="org.opalj.value.IsReturnAddressValue">
+              <h3>Inherited from <a href="../value/IsReturnAddressValue.html" class="extype" name="org.opalj.value.IsReturnAddressValue">IsReturnAddressValue</a></h3>
+            </div><div class="parent" name="org.opalj.value.KnownTypedValue">
+              <h3>Inherited from <a href="../value/KnownTypedValue.html" class="extype" name="org.opalj.value.KnownTypedValue">KnownTypedValue</a></h3>
+            </div><div class="parent" name="org.opalj.value.KnownValue">
+              <h3>Inherited from <a href="../value/KnownValue.html" class="extype" name="org.opalj.value.KnownValue">KnownValue</a></h3>
+            </div><div class="parent" name="org.opalj.ai.ValuesDomain.Value">
+              <h3>Inherited from <a href="ValuesDomain$Value.html" class="extype" name="org.opalj.ai.ValuesDomain.Value">Value</a></h3>
+            </div><div class="parent" name="org.opalj.value.ValueInformation">
+              <h3>Inherited from <a href="../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

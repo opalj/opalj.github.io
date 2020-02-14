@@ -1,0 +1,1739 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.br.reader</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.br.reader" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.br.reader" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../../index.js"></script>
+      <script type="text/javascript" src="../../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="../../ai/index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.br" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="br"></a><a id="br:br"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="In this representation of Java bytecode references to a Java class file's constant pool and to attributes are replaced by direct references to the corresponding constant pool entries." href="../index.html"><span class="name">br</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">In this representation of Java bytecode references to a Java class file's constant
+pool and to attributes are replaced by direct references to the corresponding constant
+pool entries.</p><div class="fullcomment"><div class="comment cmt"><p>In this representation of Java bytecode references to a Java class file's constant
+pool and to attributes are replaced by direct references to the corresponding constant
+pool entries. This facilitates developing analyses and fosters comprehension.</p><p>Based on the fact that indirect
+references to constant pool entries are resolved and replaced by direct references this
+representation is called the resolved representation.</p><p>This representation of Java bytecode is considered as OPAL's standard representation
+for writing Scala based analyses. This representation is engineered such
+that it facilitates writing analyses that use pattern matching.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org.opalj">opalj</a></dd></dl></div>
+    </li><li name="org.opalj.br.analyses" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="analyses"></a><a id="analyses:analyses"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines commonly useful type aliases." href="../analyses/index.html"><span class="name">analyses</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Defines commonly useful type aliases.</p><div class="fullcomment"><div class="comment cmt"><p>Defines commonly useful type aliases.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.cfg" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cfg"></a><a id="cfg:cfg"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/cfg/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../cfg/index.html"><span class="name">cfg</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.collection" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="collection"></a><a id="collection:collection"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/collection/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../collection/index.html"><span class="name">collection</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.cp" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cp"></a><a id="cp:cp"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/cp/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Implementation of classes to represent/recreate a class file's constant pool." href="../cp/index.html"><span class="name">cp</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Implementation of classes to represent/recreate a class file's constant pool.</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of classes to represent/recreate a class file's constant pool.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fpcf"></a><a id="fpcf:fpcf"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/fpcf/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../fpcf/index.html"><span class="name">fpcf</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.instructions" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="instructions"></a><a id="instructions:instructions"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/instructions/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Common instruction sequences." href="../instructions/index.html"><span class="name">instructions</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Common instruction sequences.</p><div class="fullcomment"><div class="comment cmt"><p>Common instruction sequences.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.reader" visbl="pub" class="indented4 current" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reader"></a><a id="reader:reader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reader</span>
+      </span>
+      
+      <p class="shortcomment cmt">Defines convenience methods related to reading in class files.</p><div class="fullcomment"><div class="comment cmt"><p>Defines convenience methods related to reading in class files.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="AnnotationAttributesBinding.html" title="Factory methods to create representations of the attributes related to Java annotations."></a>
+                        <a href="AnnotationAttributesBinding.html" title="Factory methods to create representations of the attributes related to Java annotations.">AnnotationAttributesBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="AnnotationsBinding.html" title="Factory methods to create representations of Java annotations."></a>
+                        <a href="AnnotationsBinding.html" title="Factory methods to create representations of Java annotations.">AnnotationsBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="AttributeBinding.html" title="Defines the common bindings for all &quot;resolved&quot; attributes."></a>
+                        <a href="AttributeBinding.html" title="Defines the common bindings for all &quot;resolved&quot; attributes.">AttributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="BootstrapMethods_attributeBinding.html" title="Final bindings and factory methods for the BoostrapMethods attribute."></a>
+                        <a href="BootstrapMethods_attributeBinding.html" title="Final bindings and factory methods for the BoostrapMethods attribute.">BootstrapMethods_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="BytecodeInstructionsCache.html" title=""></a>
+                        <a href="BytecodeInstructionsCache.html" title="">BytecodeInstructionsCache</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="BytecodeOptimizer$.html" title=""></a>
+                        <a class="trait" href="BytecodeOptimizer.html" title="Performs some very basic, in-place control-flow simplifications to make the code more regular."></a>
+                        <a href="BytecodeOptimizer.html" title="Performs some very basic, in-place control-flow simplifications to make the code more regular.">BytecodeOptimizer</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="BytecodeReaderAndBinding.html" title="Defines a method to parse an array of bytes (containing Java bytecode instructions) and to return an array of org.opalj.br.instructions.Instruction's."></a>
+                        <a href="BytecodeReaderAndBinding.html" title="Defines a method to parse an array of bytes (containing Java bytecode instructions) and to return an array of org.opalj.br.instructions.Instruction's.">BytecodeReaderAndBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="CachedBytecodeReaderAndBinding.html" title="Defines a method to parse an array of bytes (containing Java bytecode instructions) and to return an array of org.opalj.br.instructions.Instructions."></a>
+                        <a href="CachedBytecodeReaderAndBinding.html" title="Defines a method to parse an array of bytes (containing Java bytecode instructions) and to return an array of org.opalj.br.instructions.Instructions.">CachedBytecodeReaderAndBinding</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="ClassFileBinding$.html" title=""></a>
+                        <a class="trait" href="ClassFileBinding.html" title=""></a>
+                        <a href="ClassFileBinding.html" title="">ClassFileBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="ClassFileReaderConfiguration$.html" title=""></a>
+                        <a href="ClassFileReaderConfiguration$.html" title="">ClassFileReaderConfiguration</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="CodeAttributeBinding.html" title="Binding for the code attribute."></a>
+                        <a href="CodeAttributeBinding.html" title="Binding for the code attribute.">CodeAttributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="CodeBinding.html" title=""></a>
+                        <a href="CodeBinding.html" title="">CodeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="CompactLineNumberTable_attributeBinding.html" title="Implements the factory methods to create line number tables."></a>
+                        <a href="CompactLineNumberTable_attributeBinding.html" title="Implements the factory methods to create line number tables.">CompactLineNumberTable_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ConstantPoolBinding.html" title="A representation of the constant pool."></a>
+                        <a href="ConstantPoolBinding.html" title="A representation of the constant pool.">ConstantPoolBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ConstantValue_attributeBinding.html" title=""></a>
+                        <a href="ConstantValue_attributeBinding.html" title="">ConstantValue_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="DeferredInvokedynamicResolution.html" title="Mixin this trait to resolve links between org.opalj.br.instructions.INVOKEDYNAMIC instructions and the BootstrapMethodTable."></a>
+                        <a href="DeferredInvokedynamicResolution.html" title="Mixin this trait to resolve links between org.opalj.br.instructions.INVOKEDYNAMIC instructions and the BootstrapMethodTable.">DeferredInvokedynamicResolution</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Deprecated_attributeBinding.html" title=""></a>
+                        <a href="Deprecated_attributeBinding.html" title="">Deprecated_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="EnclosingMethod_attributeBinding.html" title=""></a>
+                        <a href="EnclosingMethod_attributeBinding.html" title="">EnclosingMethod_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Exceptions_attributeBinding.html" title="The factory method to create a method's exception attribute."></a>
+                        <a href="Exceptions_attributeBinding.html" title="The factory method to create a method's exception attribute.">Exceptions_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="FieldsBinding.html" title=""></a>
+                        <a href="FieldsBinding.html" title="">FieldsBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="InnerClasses_attributeBinding.html" title="The factory methods to create inner classes attributes and entries."></a>
+                        <a href="InnerClasses_attributeBinding.html" title="The factory methods to create inner classes attributes and entries.">InnerClasses_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="InstructionsDeserializer.html" title=""></a>
+                        <a href="InstructionsDeserializer.html" title="">InstructionsDeserializer</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="InvokedynamicRewriting$.html" title=""></a>
+                        <a class="trait" href="InvokedynamicRewriting.html" title="Provides support for rewriting Java 8/Scala lambda or method reference expressions that were compiled to org.opalj.br.instructions.INVOKEDYNAMIC instructions."></a>
+                        <a href="InvokedynamicRewriting.html" title="Provides support for rewriting Java 8/Scala lambda or method reference expressions that were compiled to org.opalj.br.instructions.INVOKEDYNAMIC instructions.">InvokedynamicRewriting</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="Java7Framework$.html" title=""></a>
+                        <a class="trait" href="Java7Framework.html" title="This &quot;framework&quot; can be used to read in Java 7 (version 51) class files."></a>
+                        <a href="Java7Framework.html" title="This &quot;framework&quot; can be used to read in Java 7 (version 51) class files.">Java7Framework</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="Java7LibraryFramework$.html" title=""></a>
+                        <a class="trait" href="Java7LibraryFramework.html" title="This &quot;framework&quot; can be used to read in Java 7 (version 51) class files if only the public interface of a class is needed."></a>
+                        <a href="Java7LibraryFramework.html" title="This &quot;framework&quot; can be used to read in Java 7 (version 51) class files if only the public interface of a class is needed.">Java7LibraryFramework</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="Java8Framework$.html" title=""></a>
+                        <a class="trait" href="Java8Framework.html" title="This &quot;framework&quot; can be used to read Java 8 (version 52) class files."></a>
+                        <a href="Java8Framework.html" title="This &quot;framework&quot; can be used to read Java 8 (version 52) class files.">Java8Framework</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="Java8FrameworkWithCaching.html" title="This configuration can be used to read in Java 8 (version 52) class files."></a>
+                        <a href="Java8FrameworkWithCaching.html" title="This configuration can be used to read in Java 8 (version 52) class files.">Java8FrameworkWithCaching</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="Java8FrameworkWithInvokedynamicSupportAndCaching.html" title="This configuration can be used to read in Java 8 (version 52) class files with full support for rewriting invokedynamic instructions created by the JDK(8) compiler for lambda and method reference expressions."></a>
+                        <a href="Java8FrameworkWithInvokedynamicSupportAndCaching.html" title="This configuration can be used to read in Java 8 (version 52) class files with full support for rewriting invokedynamic instructions created by the JDK(8) compiler for lambda and method reference expressions.">Java8FrameworkWithInvokedynamicSupportAndCaching</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="Java8LibraryFramework$.html" title=""></a>
+                        <a class="trait" href="Java8LibraryFramework.html" title="This &quot;framework&quot; can be used to read in Java 8 (version 52) class files."></a>
+                        <a href="Java8LibraryFramework.html" title="This &quot;framework&quot; can be used to read in Java 8 (version 52) class files.">Java8LibraryFramework</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="Java9Framework$.html" title=""></a>
+                        <a class="trait" href="Java9Framework.html" title="This &quot;framework&quot; can be used to read Java 9 (version 53) and Java 10 (version 54) class files."></a>
+                        <a href="Java9Framework.html" title="This &quot;framework&quot; can be used to read Java 9 (version 53) and Java 10 (version 54) class files.">Java9Framework</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="Java9FrameworkWithCaching.html" title="This configuration can be used to read in Java 9 (version 53) class files."></a>
+                        <a href="Java9FrameworkWithCaching.html" title="This configuration can be used to read in Java 9 (version 53) class files.">Java9FrameworkWithCaching</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="Java9FrameworkWithInvokedynamicSupportAndCaching.html" title="This configuration can be used to read in Java 9 (version 53) class files."></a>
+                        <a href="Java9FrameworkWithInvokedynamicSupportAndCaching.html" title="This configuration can be used to read in Java 9 (version 53) class files.">Java9FrameworkWithInvokedynamicSupportAndCaching</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="Java9LibraryFramework$.html" title=""></a>
+                        <a class="trait" href="Java9LibraryFramework.html" title="This &quot;framework&quot; can be used to read in Java 9 (version 53) class files."></a>
+                        <a href="Java9LibraryFramework.html" title="This &quot;framework&quot; can be used to read in Java 9 (version 53) class files.">Java9LibraryFramework</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="LibraryClassFileBinding.html" title="Default class file binding where all private fields and methods are not represented."></a>
+                        <a href="LibraryClassFileBinding.html" title="Default class file binding where all private fields and methods are not represented.">LibraryClassFileBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="LocalVariableTable_attributeBinding.html" title="The factory methods to create local variable tables and their entries."></a>
+                        <a href="LocalVariableTable_attributeBinding.html" title="The factory methods to create local variable tables and their entries.">LocalVariableTable_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="LocalVariableTypeTable_attributeBinding.html" title="The factory methods to create local variable type tables and their entries."></a>
+                        <a href="LocalVariableTypeTable_attributeBinding.html" title="The factory methods to create local variable type tables and their entries.">LocalVariableTypeTable_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="MethodParameters_attributeBinding.html" title="Implements the factory methods to create method parameter tables and their entries."></a>
+                        <a href="MethodParameters_attributeBinding.html" title="Implements the factory methods to create method parameter tables and their entries.">MethodParameters_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="MethodsBinding.html" title=""></a>
+                        <a href="MethodsBinding.html" title="">MethodsBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ModuleMainClass_attributeBinding.html" title="The factory method to create the ModuleMainClass attribute (Java 9)."></a>
+                        <a href="ModuleMainClass_attributeBinding.html" title="The factory method to create the ModuleMainClass attribute (Java 9).">ModuleMainClass_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ModulePackages_attributeBinding.html" title="The factory method to create the ModulePackages attribute (Java 9)."></a>
+                        <a href="ModulePackages_attributeBinding.html" title="The factory method to create the ModulePackages attribute (Java 9).">ModulePackages_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Module_attributeBinding.html" title="The factory method to create the &quot;class level&quot; Module attribute (Java 9)."></a>
+                        <a href="Module_attributeBinding.html" title="The factory method to create the &quot;class level&quot; Module attribute (Java 9).">Module_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="SignatureParser$.html" title="Parses Java class file signature strings."></a>
+                        <a href="SignatureParser$.html" title="Parses Java class file signature strings.">SignatureParser</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Signature_attributeBinding.html" title="Implements the factory method defined and used by the generic signature attribute reader."></a>
+                        <a href="Signature_attributeBinding.html" title="Implements the factory method defined and used by the generic signature attribute reader.">Signature_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="SourceDebugExtension_attributeBinding.html" title="Provides the factory method to create a source debug extension attribute."></a>
+                        <a href="SourceDebugExtension_attributeBinding.html" title="Provides the factory method to create a source debug extension attribute.">SourceDebugExtension_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="SourceFile_attributeBinding.html" title="The factory method to create the source file attribute."></a>
+                        <a href="SourceFile_attributeBinding.html" title="The factory method to create the source file attribute.">SourceFile_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="StackMapTable_attributeBinding.html" title="Provides the factory methods to create a stack map table attribute and its entries."></a>
+                        <a href="StackMapTable_attributeBinding.html" title="Provides the factory methods to create a stack map table attribute and its entries.">StackMapTable_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Synthetic_attributeBinding.html" title="Represents Java's Synthetic attribute."></a>
+                        <a href="Synthetic_attributeBinding.html" title="Represents Java's Synthetic attribute.">Synthetic_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="TypeAnnotationAttributesBinding.html" title="Factory methods to create representations of the attributes related to Java type annotations."></a>
+                        <a href="TypeAnnotationAttributesBinding.html" title="Factory methods to create representations of the attributes related to Java type annotations.">TypeAnnotationAttributesBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="TypeAnnotationsBinding.html" title="Factory methods to create representations of Java type annotations."></a>
+                        <a href="TypeAnnotationsBinding.html" title="Factory methods to create representations of Java type annotations.">TypeAnnotationsBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Unknown_attributeBinding.html" title="&quot;Factory&quot; to create unknown attributes which are used to represent class file attributes that are not understood by this framework."></a>
+                        <a href="Unknown_attributeBinding.html" title="&quot;Factory&quot; to create unknown attributes which are used to represent class file attributes that are not understood by this framework.">Unknown_attributeBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="UnpackedLineNumberTable_attributeBinding.html" title="Implements the factory methods to create line number tables and their entries."></a>
+                        <a href="UnpackedLineNumberTable_attributeBinding.html" title="Implements the factory methods to create line number tables and their entries.">UnpackedLineNumberTable_attributeBinding</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="package value">
+      <div id="definition">
+        <div class="big-circle package">p</div>
+        <p id="owner"><a href="../../../index.html" class="extype" name="org">org</a>.<a href="../../index.html" class="extype" name="org.opalj">opalj</a>.<a href="../index.html" class="extype" name="org.opalj.br">br</a></p>
+        <h1>reader<span class="permalink">
+      <a href="../../../../org/opalj/br/reader/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reader</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Defines convenience methods related to reading in class files.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/reader/package.scala?at=develop" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="org.opalj.br.reader"><span>reader</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.opalj.br.reader.AnnotationAttributesBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AnnotationAttributesBindingextendsAnnotationsBindingwithAnnotationsReaderwithParametersAnnotationsReaderwithRuntimeInvisibleAnnotations_attributeReaderwithRuntimeVisibleAnnotations_attributeReaderwithRuntimeInvisibleParameterAnnotations_attributeReaderwithRuntimeVisibleParameterAnnotations_attributeReaderwithAnnotationDefault_attributeReaderwithAttributeBinding"></a><a id="AnnotationAttributesBinding:AnnotationAttributesBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/AnnotationAttributesBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Factory methods to create representations of the attributes related to Java annotations." href="AnnotationAttributesBinding.html"><span class="name">AnnotationAttributesBinding</span></a><span class="result"> extends <a href="AnnotationsBinding.html" class="extype" name="org.opalj.br.reader.AnnotationsBinding">AnnotationsBinding</a> with <a href="../../bi/reader/AnnotationsReader.html" class="extype" name="org.opalj.bi.reader.AnnotationsReader">AnnotationsReader</a> with <a href="../../bi/reader/ParametersAnnotationsReader.html" class="extype" name="org.opalj.bi.reader.ParametersAnnotationsReader">ParametersAnnotationsReader</a> with <a href="../../bi/reader/RuntimeInvisibleAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeInvisibleAnnotations_attributeReader">RuntimeInvisibleAnnotations_attributeReader</a> with <a href="../../bi/reader/RuntimeVisibleAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeVisibleAnnotations_attributeReader">RuntimeVisibleAnnotations_attributeReader</a> with <a href="../../bi/reader/RuntimeInvisibleParameterAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeInvisibleParameterAnnotations_attributeReader">RuntimeInvisibleParameterAnnotations_attributeReader</a> with <a href="../../bi/reader/RuntimeVisibleParameterAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeVisibleParameterAnnotations_attributeReader">RuntimeVisibleParameterAnnotations_attributeReader</a> with <a href="../../bi/reader/AnnotationDefault_attributeReader.html" class="extype" name="org.opalj.bi.reader.AnnotationDefault_attributeReader">AnnotationDefault_attributeReader</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Factory methods to create representations of the attributes related to
+Java annotations.</p>
+    </li><li name="org.opalj.br.reader.AnnotationsBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AnnotationsBindingextendsAnnotationsAbstractionswithElementValuePairsReaderwithConstantPoolBinding"></a><a id="AnnotationsBinding:AnnotationsBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/AnnotationsBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Factory methods to create representations of Java annotations." href="AnnotationsBinding.html"><span class="name">AnnotationsBinding</span></a><span class="result"> extends <a href="../../bi/reader/AnnotationsAbstractions.html" class="extype" name="org.opalj.bi.reader.AnnotationsAbstractions">AnnotationsAbstractions</a> with <a href="../../bi/reader/ElementValuePairsReader.html" class="extype" name="org.opalj.bi.reader.ElementValuePairsReader">ElementValuePairsReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Factory methods to create representations of Java annotations.</p>
+    </li><li name="org.opalj.br.reader.AttributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AttributeBindingextendsAttributesAbstractions"></a><a id="AttributeBinding:AttributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/AttributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines the common bindings for all &quot;resolved&quot; attributes." href="AttributeBinding.html"><span class="name">AttributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/AttributesAbstractions.html" class="extype" name="org.opalj.bi.reader.AttributesAbstractions">AttributesAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Defines the common bindings for all &quot;resolved&quot; attributes.</p>
+    </li><li name="org.opalj.br.reader.BootstrapMethods_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BootstrapMethods_attributeBindingextendsBootstrapMethods_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="BootstrapMethods_attributeBinding:BootstrapMethods_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/BootstrapMethods_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Final bindings and factory methods for the BoostrapMethods attribute." href="BootstrapMethods_attributeBinding.html"><span class="name">BootstrapMethods_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/BootstrapMethods_attributeReader.html" class="extype" name="org.opalj.bi.reader.BootstrapMethods_attributeReader">BootstrapMethods_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Final bindings and factory methods for the <i>BoostrapMethods</i> attribute.</p>
+    </li><li name="org.opalj.br.reader.BytecodeInstructionsCache" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BytecodeInstructionsCacheextendsAnyRef"></a><a id="BytecodeInstructionsCache:BytecodeInstructionsCache"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/BytecodeInstructionsCache.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="BytecodeInstructionsCache.html"><span class="name">BytecodeInstructionsCache</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader.BytecodeOptimizer" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="BytecodeOptimizerextendsMethodsBinding"></a><a id="BytecodeOptimizer:BytecodeOptimizer"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/BytecodeOptimizer.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Performs some very basic, in-place control-flow simplifications to make the code more regular." href="BytecodeOptimizer.html"><span class="name">BytecodeOptimizer</span></a><span class="result"> extends <a href="MethodsBinding.html" class="extype" name="org.opalj.br.reader.MethodsBinding">MethodsBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Performs some very basic, in-place control-flow simplifications to make the code more regular.</p><div class="fullcomment"><div class="comment cmt"><p>Performs some very basic, in-place control-flow simplifications to make the code more regular.
+In particular to make it more likely that an <code>if</code> that is actually a loop's <code>if</code> actually
+jumps back.</p><p>The following transformations are performed:</p><ul><li>trivial gotos which jump to the immediately succeeding instruction are replaced by nops
+   (the CFG may contain less basic blocks afterwards)</li><li>goto chains are shortened (i.e., a goto jumping to another goto)
+   (this primarily reduces the number of instructions that need to be evaluated at
+   abstract interpretation time; it may - however - also reduce the number of basic blocks)</li><li>useless ifs where the jump target is the next instruction are replaced by nops
+   (the CFG may contain less basic blocks afterwards)</li><li>if -&gt; goto instruction sequences are resolved
+   (this primarily reduces the number of instructions that need to be evaluated at
+   abstract interpretation time; it may - however - also reduce the number of basic blocks)</li><li>useless switches are replaced
+   (the CFG may contain less basic blocks afterwards)</li></ul><p>The target array has the same size as the source array to make sure that branch offsets/line-
+numbers etc. point to the correct instruction. Furthermore, we try to avoid the introduction
+of dead code.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>All transformation always only reduce the number of basic blocks and never create new
+      basic blocks. The existing stack map table attributes are never effected and remain
+      valid; they may just contain more entries than strictly necessary.</p></span></dd></dl></div>
+    </li><li name="org.opalj.br.reader.BytecodeReaderAndBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="BytecodeReaderAndBindingextendsInstructionsDeserializer"></a><a id="BytecodeReaderAndBinding:BytecodeReaderAndBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/BytecodeReaderAndBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines a method to parse an array of bytes (containing Java bytecode instructions) and to return an array of org.opalj.br.instructions.Instruction's." href="BytecodeReaderAndBinding.html"><span class="name">BytecodeReaderAndBinding</span></a><span class="result"> extends <a href="InstructionsDeserializer.html" class="extype" name="org.opalj.br.reader.InstructionsDeserializer">InstructionsDeserializer</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Defines a method to parse an array of bytes (containing Java bytecode instructions) and
+to return an array of <a href="../instructions/Instruction.html" class="extype" name="org.opalj.br.instructions.Instruction">org.opalj.br.instructions.Instruction</a>'s.</p><div class="fullcomment"><div class="comment cmt"><p>Defines a method to parse an array of bytes (containing Java bytecode instructions) and
+to return an array of <a href="../instructions/Instruction.html" class="extype" name="org.opalj.br.instructions.Instruction">org.opalj.br.instructions.Instruction</a>'s.</p><p>The target array has the same size as the source array to make sure that branch offsets
+etc. point to the correct instruction.
+</p></div></div>
+    </li><li name="org.opalj.br.reader.CachedBytecodeReaderAndBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="CachedBytecodeReaderAndBindingextendsInstructionsDeserializer"></a><a id="CachedBytecodeReaderAndBinding:CachedBytecodeReaderAndBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/CachedBytecodeReaderAndBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines a method to parse an array of bytes (containing Java bytecode instructions) and to return an array of org.opalj.br.instructions.Instructions." href="CachedBytecodeReaderAndBinding.html"><span class="name">CachedBytecodeReaderAndBinding</span></a><span class="result"> extends <a href="InstructionsDeserializer.html" class="extype" name="org.opalj.br.reader.InstructionsDeserializer">InstructionsDeserializer</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Defines a method to parse an array of bytes (containing Java bytecode instructions) and
+to return an array of <a href="../instructions/Instruction.html" class="extype" name="org.opalj.br.instructions.Instruction">org.opalj.br.instructions.Instruction</a><code>s.</code></p><div class="fullcomment"><div class="comment cmt"><p>Defines a method to parse an array of bytes (containing Java bytecode instructions) and
+to return an array of <a href="../instructions/Instruction.html" class="extype" name="org.opalj.br.instructions.Instruction">org.opalj.br.instructions.Instruction</a><code>s.</code></p><p>The target array has the same size as the source array to make sure that branch offsets
+etc. point to the correct instruction.</p><p>This reader caches the instructions – primarily – to save memory once all class
+files are loaded.
+</p></div></div>
+    </li><li name="org.opalj.br.reader.ClassFileBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ClassFileBindingextendsClassFileReader"></a><a id="ClassFileBinding:ClassFileBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/ClassFileBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ClassFileBinding.html"><span class="name">ClassFileBinding</span></a><span class="result"> extends <a href="../../bi/reader/ClassFileReader.html" class="extype" name="org.opalj.bi.reader.ClassFileReader">ClassFileReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.opalj.br.reader.CodeAttributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CodeAttributeBindingextendsCode_attributeReaderwithConstantPoolBindingwithCodeBindingwithAttributeBinding"></a><a id="CodeAttributeBinding:CodeAttributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/CodeAttributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Binding for the code attribute." href="CodeAttributeBinding.html"><span class="name">CodeAttributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/Code_attributeReader.html" class="extype" name="org.opalj.bi.reader.Code_attributeReader">Code_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="CodeBinding.html" class="extype" name="org.opalj.br.reader.CodeBinding">CodeBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Binding for the code attribute.</p>
+    </li><li name="org.opalj.br.reader.CodeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CodeBindingextendsAnyRef"></a><a id="CodeBinding:CodeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/CodeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="CodeBinding.html"><span class="name">CodeBinding</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.opalj.br.reader.CompactLineNumberTable_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CompactLineNumberTable_attributeBindingextendsCompactLineNumberTable_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="CompactLineNumberTable_attributeBinding:CompactLineNumberTable_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/CompactLineNumberTable_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Implements the factory methods to create line number tables." href="CompactLineNumberTable_attributeBinding.html"><span class="name">CompactLineNumberTable_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/CompactLineNumberTable_attributeReader.html" class="extype" name="org.opalj.bi.reader.CompactLineNumberTable_attributeReader">CompactLineNumberTable_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Implements the factory methods to create line number tables.</p>
+    </li><li name="org.opalj.br.reader.ConstantPoolBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ConstantPoolBindingextendsConstant_PoolReader"></a><a id="ConstantPoolBinding:ConstantPoolBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/ConstantPoolBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="A representation of the constant pool." href="ConstantPoolBinding.html"><span class="name">ConstantPoolBinding</span></a><span class="result"> extends <a href="../../bi/reader/Constant_PoolReader.html" class="extype" name="org.opalj.bi.reader.Constant_PoolReader">Constant_PoolReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A representation of the constant pool.</p><div class="fullcomment"><div class="comment cmt"><p>A representation of the constant pool.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>The constant pool is considered to be static; i.e., references between
+   constant pool entries are always resolved at most once and the results are cached.
+   Hence, after reading the constant pool the constant pool is treated as
+   immutable; the referenced constant pool entry must not change.</p></span></dd></dl></div>
+    </li><li name="org.opalj.br.reader.ConstantValue_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ConstantValue_attributeBindingextendsConstantValue_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="ConstantValue_attributeBinding:ConstantValue_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/ConstantValue_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ConstantValue_attributeBinding.html"><span class="name">ConstantValue_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/ConstantValue_attributeReader.html" class="extype" name="org.opalj.bi.reader.ConstantValue_attributeReader">ConstantValue_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.opalj.br.reader.DeferredInvokedynamicResolution" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DeferredInvokedynamicResolutionextendsConstantPoolBindingwithCodeBinding"></a><a id="DeferredInvokedynamicResolution:DeferredInvokedynamicResolution"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/DeferredInvokedynamicResolution.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Mixin this trait to resolve links between org.opalj.br.instructions.INVOKEDYNAMIC instructions and the BootstrapMethodTable." href="DeferredInvokedynamicResolution.html"><span class="name">DeferredInvokedynamicResolution</span></a><span class="result"> extends <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="CodeBinding.html" class="extype" name="org.opalj.br.reader.CodeBinding">CodeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Mixin this trait to resolve links between <a href="../instructions/INVOKEDYNAMIC.html" class="extype" name="org.opalj.br.instructions.INVOKEDYNAMIC">org.opalj.br.instructions.INVOKEDYNAMIC</a>
+instructions and the <a href="../BootstrapMethodTable.html" class="extype" name="org.opalj.br.BootstrapMethodTable">BootstrapMethodTable</a>.</p>
+    </li><li name="org.opalj.br.reader.Deprecated_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Deprecated_attributeBindingextendsDeprecated_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="Deprecated_attributeBinding:Deprecated_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Deprecated_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Deprecated_attributeBinding.html"><span class="name">Deprecated_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/Deprecated_attributeReader.html" class="extype" name="org.opalj.bi.reader.Deprecated_attributeReader">Deprecated_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.opalj.br.reader.EnclosingMethod_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EnclosingMethod_attributeBindingextendsEnclosingMethod_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="EnclosingMethod_attributeBinding:EnclosingMethod_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/EnclosingMethod_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="EnclosingMethod_attributeBinding.html"><span class="name">EnclosingMethod_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/EnclosingMethod_attributeReader.html" class="extype" name="org.opalj.bi.reader.EnclosingMethod_attributeReader">EnclosingMethod_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.opalj.br.reader.Exceptions_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Exceptions_attributeBindingextendsExceptions_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="Exceptions_attributeBinding:Exceptions_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Exceptions_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="The factory method to create a method's exception attribute." href="Exceptions_attributeBinding.html"><span class="name">Exceptions_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/Exceptions_attributeReader.html" class="extype" name="org.opalj.bi.reader.Exceptions_attributeReader">Exceptions_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The factory method to create a method's exception attribute.</p>
+    </li><li name="org.opalj.br.reader.FieldsBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FieldsBindingextendsFieldsReader"></a><a id="FieldsBinding:FieldsBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/FieldsBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="FieldsBinding.html"><span class="name">FieldsBinding</span></a><span class="result"> extends <a href="../../bi/reader/FieldsReader.html" class="extype" name="org.opalj.bi.reader.FieldsReader">FieldsReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.opalj.br.reader.InnerClasses_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InnerClasses_attributeBindingextendsInnerClasses_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="InnerClasses_attributeBinding:InnerClasses_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/InnerClasses_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="The factory methods to create inner classes attributes and entries." href="InnerClasses_attributeBinding.html"><span class="name">InnerClasses_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/InnerClasses_attributeReader.html" class="extype" name="org.opalj.bi.reader.InnerClasses_attributeReader">InnerClasses_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The factory methods to create inner classes attributes and entries.</p>
+    </li><li name="org.opalj.br.reader.InstructionsDeserializer" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InstructionsDeserializerextendsDeferredInvokedynamicResolution"></a><a id="InstructionsDeserializer:InstructionsDeserializer"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/InstructionsDeserializer.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="InstructionsDeserializer.html"><span class="name">InstructionsDeserializer</span></a><span class="result"> extends <a href="DeferredInvokedynamicResolution.html" class="extype" name="org.opalj.br.reader.DeferredInvokedynamicResolution">DeferredInvokedynamicResolution</a></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.opalj.br.reader.InvokedynamicRewriting" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="InvokedynamicRewritingextendsDeferredInvokedynamicResolution"></a><a id="InvokedynamicRewriting:InvokedynamicRewriting"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/InvokedynamicRewriting.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides support for rewriting Java 8/Scala lambda or method reference expressions that were compiled to org.opalj.br.instructions.INVOKEDYNAMIC instructions." href="InvokedynamicRewriting.html"><span class="name">InvokedynamicRewriting</span></a><span class="result"> extends <a href="DeferredInvokedynamicResolution.html" class="extype" name="org.opalj.br.reader.DeferredInvokedynamicResolution">DeferredInvokedynamicResolution</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides support for rewriting Java 8/Scala lambda or method reference expressions that
+were compiled to <a href="../instructions/INVOKEDYNAMIC.html" class="extype" name="org.opalj.br.instructions.INVOKEDYNAMIC">org.opalj.br.instructions.INVOKEDYNAMIC</a> instructions.</p><div class="fullcomment"><div class="comment cmt"><p>Provides support for rewriting Java 8/Scala lambda or method reference expressions that
+were compiled to <a href="../instructions/INVOKEDYNAMIC.html" class="extype" name="org.opalj.br.instructions.INVOKEDYNAMIC">org.opalj.br.instructions.INVOKEDYNAMIC</a> instructions.
+This trait should be mixed in alongside a <a href="BytecodeReaderAndBinding.html" class="extype" name="org.opalj.br.reader.BytecodeReaderAndBinding">BytecodeReaderAndBinding</a>, which extracts
+basic <code>invokedynamic</code> information from the <a href="../BootstrapMethodTable.html" class="extype" name="org.opalj.br.BootstrapMethodTable">BootstrapMethodTable</a>.</p><p>Specifically, whenever an <code>invokedynamic</code> instruction is encountered that is the result
+of a lambda/method reference expression compiled by Oracle's JDK8, it creates a proxy
+class file that represents the synthetic object that the JVM generates after executing
+the <code>invokedynamic</code> call site. This proxy is then stored in the temporary ClassFile
+attribute <a href="../SynthesizedClassFiles.html" class="extype" name="org.opalj.br.SynthesizedClassFiles">SynthesizedClassFiles</a>. All such ClassFiles will
+be picked up later for inclusion in the project.
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://mydailyjava.blogspot.de/2015/03/dismantling-invokedynamic.html" target="_blank">DismantlingInvokeDynamic</a>
+     for further information.</p></span></dd></dl></div>
+    </li><li name="org.opalj.br.reader.Java7Framework" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Java7FrameworkextendsJava7LibraryFrameworkwithCodeAttributeBindingwithSourceDebugExtension_attributeBindingwithBootstrapMethods_attributeBindingwithStackMapTable_attributeBindingwithCompactLineNumberTable_attributeBindingwithLocalVariableTable_attributeBindingwithLocalVariableTypeTable_attributeBindingwithExceptions_attributeBindingwithBytecodeReaderAndBindingwithBytecodeOptimizerwithCodeReader"></a><a id="Java7Framework:Java7Framework"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java7Framework.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="This &quot;framework&quot; can be used to read in Java 7 (version 51) class files." href="Java7Framework.html"><span class="name">Java7Framework</span></a><span class="result"> extends <a href="Java7LibraryFramework.html" class="extype" name="org.opalj.br.reader.Java7LibraryFramework">Java7LibraryFramework</a> with <a href="CodeAttributeBinding.html" class="extype" name="org.opalj.br.reader.CodeAttributeBinding">CodeAttributeBinding</a> with <a href="SourceDebugExtension_attributeBinding.html" class="extype" name="org.opalj.br.reader.SourceDebugExtension_attributeBinding">SourceDebugExtension_attributeBinding</a> with <a href="BootstrapMethods_attributeBinding.html" class="extype" name="org.opalj.br.reader.BootstrapMethods_attributeBinding">BootstrapMethods_attributeBinding</a> with <a href="StackMapTable_attributeBinding.html" class="extype" name="org.opalj.br.reader.StackMapTable_attributeBinding">StackMapTable_attributeBinding</a> with <a href="CompactLineNumberTable_attributeBinding.html" class="extype" name="org.opalj.br.reader.CompactLineNumberTable_attributeBinding">CompactLineNumberTable_attributeBinding</a> with <a href="LocalVariableTable_attributeBinding.html" class="extype" name="org.opalj.br.reader.LocalVariableTable_attributeBinding">LocalVariableTable_attributeBinding</a> with <a href="LocalVariableTypeTable_attributeBinding.html" class="extype" name="org.opalj.br.reader.LocalVariableTypeTable_attributeBinding">LocalVariableTypeTable_attributeBinding</a> with <a href="Exceptions_attributeBinding.html" class="extype" name="org.opalj.br.reader.Exceptions_attributeBinding">Exceptions_attributeBinding</a> with <a href="BytecodeReaderAndBinding.html" class="extype" name="org.opalj.br.reader.BytecodeReaderAndBinding">BytecodeReaderAndBinding</a> with <a href="BytecodeOptimizer.html" class="extype" name="org.opalj.br.reader.BytecodeOptimizer">BytecodeOptimizer</a> with <a href="../../bi/reader/CodeReader.html" class="extype" name="org.opalj.bi.reader.CodeReader">CodeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This &quot;framework&quot; can be used to read in Java 7 (version 51) class files.</p><div class="fullcomment"><div class="comment cmt"><p>This &quot;framework&quot; can be used to read in Java 7 (version 51) class files. All
+standard information (as defined in the Java Virtual Machine Specification)
+is represented.
+</p></div></div>
+    </li><li name="org.opalj.br.reader.Java7LibraryFramework" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Java7LibraryFrameworkextendsConstantPoolBindingwithFieldsBindingwithMethodsBindingwithClassFileBindingwithAttributesReaderwithSkipUnknown_attributeReaderwithAnnotationAttributesBindingwithInnerClasses_attributeBindingwithEnclosingMethod_attributeBindingwithSourceFile_attributeBindingwithDeprecated_attributeBindingwithSignature_attributeBindingwithSynthetic_attributeBindingwithConstantValue_attributeBindingwithExceptions_attributeBindingwithModule_attributeBinding"></a><a id="Java7LibraryFramework:Java7LibraryFramework"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java7LibraryFramework.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="This &quot;framework&quot; can be used to read in Java 7 (version 51) class files if only the public interface of a class is needed." href="Java7LibraryFramework.html"><span class="name">Java7LibraryFramework</span></a><span class="result"> extends <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="FieldsBinding.html" class="extype" name="org.opalj.br.reader.FieldsBinding">FieldsBinding</a> with <a href="MethodsBinding.html" class="extype" name="org.opalj.br.reader.MethodsBinding">MethodsBinding</a> with <a href="ClassFileBinding.html" class="extype" name="org.opalj.br.reader.ClassFileBinding">ClassFileBinding</a> with <a href="../../bi/reader/AttributesReader.html" class="extype" name="org.opalj.bi.reader.AttributesReader">AttributesReader</a> with <a href="../../bi/reader/SkipUnknown_attributeReader.html" class="extype" name="org.opalj.bi.reader.SkipUnknown_attributeReader">SkipUnknown_attributeReader</a> with <a href="AnnotationAttributesBinding.html" class="extype" name="org.opalj.br.reader.AnnotationAttributesBinding">AnnotationAttributesBinding</a> with <a href="InnerClasses_attributeBinding.html" class="extype" name="org.opalj.br.reader.InnerClasses_attributeBinding">InnerClasses_attributeBinding</a> with <a href="EnclosingMethod_attributeBinding.html" class="extype" name="org.opalj.br.reader.EnclosingMethod_attributeBinding">EnclosingMethod_attributeBinding</a> with <a href="SourceFile_attributeBinding.html" class="extype" name="org.opalj.br.reader.SourceFile_attributeBinding">SourceFile_attributeBinding</a> with <a href="Deprecated_attributeBinding.html" class="extype" name="org.opalj.br.reader.Deprecated_attributeBinding">Deprecated_attributeBinding</a> with <a href="Signature_attributeBinding.html" class="extype" name="org.opalj.br.reader.Signature_attributeBinding">Signature_attributeBinding</a> with <a href="Synthetic_attributeBinding.html" class="extype" name="org.opalj.br.reader.Synthetic_attributeBinding">Synthetic_attributeBinding</a> with <a href="ConstantValue_attributeBinding.html" class="extype" name="org.opalj.br.reader.ConstantValue_attributeBinding">ConstantValue_attributeBinding</a> with <a href="Exceptions_attributeBinding.html" class="extype" name="org.opalj.br.reader.Exceptions_attributeBinding">Exceptions_attributeBinding</a> with <a href="Module_attributeBinding.html" class="extype" name="org.opalj.br.reader.Module_attributeBinding">Module_attributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This &quot;framework&quot; can be used to read in Java 7 (version 51) class files if only
+the public interface of a class is needed.</p>
+    </li><li name="org.opalj.br.reader.Java8Framework" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Java8FrameworkextendsJava7FrameworkwithJava8LibraryFramework"></a><a id="Java8Framework:Java8Framework"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java8Framework.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="This &quot;framework&quot; can be used to read Java 8 (version 52) class files." href="Java8Framework.html"><span class="name">Java8Framework</span></a><span class="result"> extends <a href="Java7Framework.html" class="extype" name="org.opalj.br.reader.Java7Framework">Java7Framework</a> with <a href="Java8LibraryFramework.html" class="extype" name="org.opalj.br.reader.Java8LibraryFramework">Java8LibraryFramework</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This &quot;framework&quot; can be used to read Java 8 (version 52) class files.</p><div class="fullcomment"><div class="comment cmt"><p>This &quot;framework&quot; can be used to read Java 8 (version 52) class files. All
+standard information (as defined in the Java Virtual Machine Specification)
+is represented.
+</p></div></div>
+    </li><li name="org.opalj.br.reader.Java8FrameworkWithCaching" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Java8FrameworkWithCachingextendsJava8LibraryFrameworkwithCodeAttributeBindingwithSourceDebugExtension_attributeBindingwithBootstrapMethods_attributeBindingwithStackMapTable_attributeBindingwithCompactLineNumberTable_attributeBindingwithLocalVariableTable_attributeBindingwithLocalVariableTypeTable_attributeBindingwithExceptions_attributeBindingwithCachedBytecodeReaderAndBindingwithBytecodeOptimizerwithCodeReader"></a><a id="Java8FrameworkWithCaching:Java8FrameworkWithCaching"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java8FrameworkWithCaching.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="This configuration can be used to read in Java 8 (version 52) class files." href="Java8FrameworkWithCaching.html"><span class="name">Java8FrameworkWithCaching</span></a><span class="result"> extends <a href="Java8LibraryFramework.html" class="extype" name="org.opalj.br.reader.Java8LibraryFramework">Java8LibraryFramework</a> with <a href="CodeAttributeBinding.html" class="extype" name="org.opalj.br.reader.CodeAttributeBinding">CodeAttributeBinding</a> with <a href="SourceDebugExtension_attributeBinding.html" class="extype" name="org.opalj.br.reader.SourceDebugExtension_attributeBinding">SourceDebugExtension_attributeBinding</a> with <a href="BootstrapMethods_attributeBinding.html" class="extype" name="org.opalj.br.reader.BootstrapMethods_attributeBinding">BootstrapMethods_attributeBinding</a> with <a href="StackMapTable_attributeBinding.html" class="extype" name="org.opalj.br.reader.StackMapTable_attributeBinding">StackMapTable_attributeBinding</a> with <a href="CompactLineNumberTable_attributeBinding.html" class="extype" name="org.opalj.br.reader.CompactLineNumberTable_attributeBinding">CompactLineNumberTable_attributeBinding</a> with <a href="LocalVariableTable_attributeBinding.html" class="extype" name="org.opalj.br.reader.LocalVariableTable_attributeBinding">LocalVariableTable_attributeBinding</a> with <a href="LocalVariableTypeTable_attributeBinding.html" class="extype" name="org.opalj.br.reader.LocalVariableTypeTable_attributeBinding">LocalVariableTypeTable_attributeBinding</a> with <a href="Exceptions_attributeBinding.html" class="extype" name="org.opalj.br.reader.Exceptions_attributeBinding">Exceptions_attributeBinding</a> with <a href="CachedBytecodeReaderAndBinding.html" class="extype" name="org.opalj.br.reader.CachedBytecodeReaderAndBinding">CachedBytecodeReaderAndBinding</a> with <a href="BytecodeOptimizer.html" class="extype" name="org.opalj.br.reader.BytecodeOptimizer">BytecodeOptimizer</a> with <a href="../../bi/reader/CodeReader.html" class="extype" name="org.opalj.bi.reader.CodeReader">CodeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This configuration can be used to read in Java 8 (version 52) class files.</p><div class="fullcomment"><div class="comment cmt"><p>This configuration can be used to read in Java 8 (version 52) class files. All
+standard information (as defined in the Java Virtual Machine Specification)
+is represented. Instructions will be cached.
+</p></div></div>
+    </li><li name="org.opalj.br.reader.Java8FrameworkWithInvokedynamicSupportAndCaching" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Java8FrameworkWithInvokedynamicSupportAndCachingextendsJava8FrameworkWithCachingwithInvokedynamicRewriting"></a><a id="Java8FrameworkWithInvokedynamicSupportAndCaching:Java8FrameworkWithInvokedynamicSupportAndCaching"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java8FrameworkWithInvokedynamicSupportAndCaching.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="This configuration can be used to read in Java 8 (version 52) class files with full support for rewriting invokedynamic instructions created by the JDK(8) compiler for lambda and method reference expressions." href="Java8FrameworkWithInvokedynamicSupportAndCaching.html"><span class="name">Java8FrameworkWithInvokedynamicSupportAndCaching</span></a><span class="result"> extends <a href="Java8FrameworkWithCaching.html" class="extype" name="org.opalj.br.reader.Java8FrameworkWithCaching">Java8FrameworkWithCaching</a> with <a href="InvokedynamicRewriting.html" class="extype" name="org.opalj.br.reader.InvokedynamicRewriting">InvokedynamicRewriting</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This configuration can be used to read in Java 8 (version 52) class files with full
+support for rewriting <code>invokedynamic</code> instructions created by the JDK(8) compiler for
+lambda and method reference expressions.</p><div class="fullcomment"><div class="comment cmt"><p>This configuration can be used to read in Java 8 (version 52) class files with full
+support for rewriting <code>invokedynamic</code> instructions created by the JDK(8) compiler for
+lambda and method reference expressions. All standard information (as defined in the
+Java Virtual Machine Specification) is represented. Instructions will be cached.
+</p></div></div>
+    </li><li name="org.opalj.br.reader.Java8LibraryFramework" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Java8LibraryFrameworkextendsJava7LibraryFrameworkwithMethodParameters_attributeBindingwithTypeAnnotationAttributesBinding"></a><a id="Java8LibraryFramework:Java8LibraryFramework"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java8LibraryFramework.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="This &quot;framework&quot; can be used to read in Java 8 (version 52) class files." href="Java8LibraryFramework.html"><span class="name">Java8LibraryFramework</span></a><span class="result"> extends <a href="Java7LibraryFramework.html" class="extype" name="org.opalj.br.reader.Java7LibraryFramework">Java7LibraryFramework</a> with <a href="MethodParameters_attributeBinding.html" class="extype" name="org.opalj.br.reader.MethodParameters_attributeBinding">MethodParameters_attributeBinding</a> with <a href="TypeAnnotationAttributesBinding.html" class="extype" name="org.opalj.br.reader.TypeAnnotationAttributesBinding">TypeAnnotationAttributesBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This &quot;framework&quot; can be used to read in Java 8 (version 52) class files.</p><div class="fullcomment"><div class="comment cmt"><p>This &quot;framework&quot; can be used to read in Java 8 (version 52) class files. All
+standard information (as defined in the Java Virtual Machine Specification)
+is represented except of method implementations.
+</p></div></div>
+    </li><li name="org.opalj.br.reader.Java9Framework" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Java9FrameworkextendsJava8FrameworkwithJava9LibraryFramework"></a><a id="Java9Framework:Java9Framework"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java9Framework.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="This &quot;framework&quot; can be used to read Java 9 (version 53) and Java 10 (version 54) class files." href="Java9Framework.html"><span class="name">Java9Framework</span></a><span class="result"> extends <a href="Java8Framework.html" class="extype" name="org.opalj.br.reader.Java8Framework">Java8Framework</a> with <a href="Java9LibraryFramework.html" class="extype" name="org.opalj.br.reader.Java9LibraryFramework">Java9LibraryFramework</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This &quot;framework&quot; can be used to read Java 9 (version 53) and Java 10 (version 54) class files.</p><div class="fullcomment"><div class="comment cmt"><p>This &quot;framework&quot; can be used to read Java 9 (version 53) and Java 10 (version 54) class files.
+All standard information (as defined in the Java Virtual Machine Specification) is represented.
+(Java 10 did not introduce new attributes.)
+</p></div></div>
+    </li><li name="org.opalj.br.reader.Java9FrameworkWithCaching" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Java9FrameworkWithCachingextendsJava8FrameworkWithCachingwithJava9LibraryFramework"></a><a id="Java9FrameworkWithCaching:Java9FrameworkWithCaching"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java9FrameworkWithCaching.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="This configuration can be used to read in Java 9 (version 53) class files." href="Java9FrameworkWithCaching.html"><span class="name">Java9FrameworkWithCaching</span></a><span class="result"> extends <a href="Java8FrameworkWithCaching.html" class="extype" name="org.opalj.br.reader.Java8FrameworkWithCaching">Java8FrameworkWithCaching</a> with <a href="Java9LibraryFramework.html" class="extype" name="org.opalj.br.reader.Java9LibraryFramework">Java9LibraryFramework</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This configuration can be used to read in Java 9 (version 53) class files.</p><div class="fullcomment"><div class="comment cmt"><p>This configuration can be used to read in Java 9 (version 53) class files. All
+standard information (as defined in the Java Virtual Machine Specification)
+is represented. Instructions will be cached.
+</p></div></div>
+    </li><li name="org.opalj.br.reader.Java9FrameworkWithInvokedynamicSupportAndCaching" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Java9FrameworkWithInvokedynamicSupportAndCachingextendsJava8FrameworkWithInvokedynamicSupportAndCachingwithJava9LibraryFramework"></a><a id="Java9FrameworkWithInvokedynamicSupportAndCaching:Java9FrameworkWithInvokedynamicSupportAndCaching"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java9FrameworkWithInvokedynamicSupportAndCaching.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="This configuration can be used to read in Java 9 (version 53) class files." href="Java9FrameworkWithInvokedynamicSupportAndCaching.html"><span class="name">Java9FrameworkWithInvokedynamicSupportAndCaching</span></a><span class="result"> extends <a href="Java8FrameworkWithInvokedynamicSupportAndCaching.html" class="extype" name="org.opalj.br.reader.Java8FrameworkWithInvokedynamicSupportAndCaching">Java8FrameworkWithInvokedynamicSupportAndCaching</a> with <a href="Java9LibraryFramework.html" class="extype" name="org.opalj.br.reader.Java9LibraryFramework">Java9LibraryFramework</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This configuration can be used to read in Java 9 (version 53) class files.</p><div class="fullcomment"><div class="comment cmt"><p>This configuration can be used to read in Java 9 (version 53) class files. All
+standard information (as defined in the Java Virtual Machine Specification)
+is represented. Instructions will be cached.
+</p></div></div>
+    </li><li name="org.opalj.br.reader.Java9LibraryFramework" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Java9LibraryFrameworkextendsJava8LibraryFrameworkwithModuleMainClass_attributeBindingwithModulePackages_attributeBinding"></a><a id="Java9LibraryFramework:Java9LibraryFramework"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java9LibraryFramework.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="This &quot;framework&quot; can be used to read in Java 9 (version 53) class files." href="Java9LibraryFramework.html"><span class="name">Java9LibraryFramework</span></a><span class="result"> extends <a href="Java8LibraryFramework.html" class="extype" name="org.opalj.br.reader.Java8LibraryFramework">Java8LibraryFramework</a> with <a href="ModuleMainClass_attributeBinding.html" class="extype" name="org.opalj.br.reader.ModuleMainClass_attributeBinding">ModuleMainClass_attributeBinding</a> with <a href="ModulePackages_attributeBinding.html" class="extype" name="org.opalj.br.reader.ModulePackages_attributeBinding">ModulePackages_attributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This &quot;framework&quot; can be used to read in Java 9 (version 53) class files.</p><div class="fullcomment"><div class="comment cmt"><p>This &quot;framework&quot; can be used to read in Java 9 (version 53) class files. All
+standard information (as defined in the Java Virtual Machine Specification)
+is represented except of method implementations.
+</p></div></div>
+    </li><li name="org.opalj.br.reader.LibraryClassFileBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LibraryClassFileBindingextendsClassFileBinding"></a><a id="LibraryClassFileBinding:LibraryClassFileBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/LibraryClassFileBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Default class file binding where all private fields and methods are not represented." href="LibraryClassFileBinding.html"><span class="name">LibraryClassFileBinding</span></a><span class="result"> extends <a href="ClassFileBinding.html" class="extype" name="org.opalj.br.reader.ClassFileBinding">ClassFileBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Default class file binding where all private fields and methods are not represented.</p>
+    </li><li name="org.opalj.br.reader.LocalVariableTable_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LocalVariableTable_attributeBindingextendsLocalVariableTable_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="LocalVariableTable_attributeBinding:LocalVariableTable_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/LocalVariableTable_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="The factory methods to create local variable tables and their entries." href="LocalVariableTable_attributeBinding.html"><span class="name">LocalVariableTable_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/LocalVariableTable_attributeReader.html" class="extype" name="org.opalj.bi.reader.LocalVariableTable_attributeReader">LocalVariableTable_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The factory methods to create local variable tables and their entries.</p>
+    </li><li name="org.opalj.br.reader.LocalVariableTypeTable_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LocalVariableTypeTable_attributeBindingextendsLocalVariableTypeTable_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="LocalVariableTypeTable_attributeBinding:LocalVariableTypeTable_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/LocalVariableTypeTable_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="The factory methods to create local variable type tables and their entries." href="LocalVariableTypeTable_attributeBinding.html"><span class="name">LocalVariableTypeTable_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/LocalVariableTypeTable_attributeReader.html" class="extype" name="org.opalj.bi.reader.LocalVariableTypeTable_attributeReader">LocalVariableTypeTable_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The factory methods to create local variable type tables and their entries.</p>
+    </li><li name="org.opalj.br.reader.MethodParameters_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MethodParameters_attributeBindingextendsMethodParameters_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="MethodParameters_attributeBinding:MethodParameters_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/MethodParameters_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Implements the factory methods to create method parameter tables and their entries." href="MethodParameters_attributeBinding.html"><span class="name">MethodParameters_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/MethodParameters_attributeReader.html" class="extype" name="org.opalj.bi.reader.MethodParameters_attributeReader">MethodParameters_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Implements the factory methods to create method parameter tables and their entries.</p>
+    </li><li name="org.opalj.br.reader.MethodsBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MethodsBindingextendsMethodsReader"></a><a id="MethodsBinding:MethodsBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/MethodsBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="MethodsBinding.html"><span class="name">MethodsBinding</span></a><span class="result"> extends <a href="../../bi/reader/MethodsReader.html" class="extype" name="org.opalj.bi.reader.MethodsReader">MethodsReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.opalj.br.reader.ModuleMainClass_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ModuleMainClass_attributeBindingextendsModuleMainClass_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="ModuleMainClass_attributeBinding:ModuleMainClass_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/ModuleMainClass_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="The factory method to create the ModuleMainClass attribute (Java 9)." href="ModuleMainClass_attributeBinding.html"><span class="name">ModuleMainClass_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/ModuleMainClass_attributeReader.html" class="extype" name="org.opalj.bi.reader.ModuleMainClass_attributeReader">ModuleMainClass_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The factory method to create the <code>ModuleMainClass</code> attribute (Java 9).</p>
+    </li><li name="org.opalj.br.reader.ModulePackages_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ModulePackages_attributeBindingextendsModulePackages_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="ModulePackages_attributeBinding:ModulePackages_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/ModulePackages_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="The factory method to create the ModulePackages attribute (Java 9)." href="ModulePackages_attributeBinding.html"><span class="name">ModulePackages_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/ModulePackages_attributeReader.html" class="extype" name="org.opalj.bi.reader.ModulePackages_attributeReader">ModulePackages_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The factory method to create the <code>ModulePackages</code> attribute (Java 9).</p>
+    </li><li name="org.opalj.br.reader.Module_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Module_attributeBindingextendsModule_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="Module_attributeBinding:Module_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Module_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="The factory method to create the &quot;class level&quot; Module attribute (Java 9)." href="Module_attributeBinding.html"><span class="name">Module_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/Module_attributeReader.html" class="extype" name="org.opalj.bi.reader.Module_attributeReader">Module_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The factory method to create the &quot;class level&quot; <code>Module</code> attribute (Java 9).</p>
+    </li><li name="org.opalj.br.reader.Signature_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Signature_attributeBindingextendsSignature_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="Signature_attributeBinding:Signature_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Signature_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Implements the factory method defined and used by the generic signature attribute reader." href="Signature_attributeBinding.html"><span class="name">Signature_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/Signature_attributeReader.html" class="extype" name="org.opalj.bi.reader.Signature_attributeReader">Signature_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Implements the factory method defined and used by the generic signature attribute reader.</p>
+    </li><li name="org.opalj.br.reader.Source" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Source=AnyRef"></a><a id="Source:Source"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/index.html#Source=AnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Source</span><span class="result alias"> = <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader.SourceDebugExtension_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SourceDebugExtension_attributeBindingextendsSourceDebugExtension_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="SourceDebugExtension_attributeBinding:SourceDebugExtension_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/SourceDebugExtension_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides the factory method to create a source debug extension attribute." href="SourceDebugExtension_attributeBinding.html"><span class="name">SourceDebugExtension_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/SourceDebugExtension_attributeReader.html" class="extype" name="org.opalj.bi.reader.SourceDebugExtension_attributeReader">SourceDebugExtension_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides the factory method to create a source debug extension attribute.</p>
+    </li><li name="org.opalj.br.reader.SourceFile_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SourceFile_attributeBindingextendsSourceFile_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="SourceFile_attributeBinding:SourceFile_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/SourceFile_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="The factory method to create the source file attribute." href="SourceFile_attributeBinding.html"><span class="name">SourceFile_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/SourceFile_attributeReader.html" class="extype" name="org.opalj.bi.reader.SourceFile_attributeReader">SourceFile_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The factory method to create the source file attribute.</p>
+    </li><li name="org.opalj.br.reader.StackMapTable_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StackMapTable_attributeBindingextendsStackMapTable_attributeReaderwithStackMapFrameReaderwithVerificationTypeInfoReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="StackMapTable_attributeBinding:StackMapTable_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/StackMapTable_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides the factory methods to create a stack map table attribute and its entries." href="StackMapTable_attributeBinding.html"><span class="name">StackMapTable_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/StackMapTable_attributeReader.html" class="extype" name="org.opalj.bi.reader.StackMapTable_attributeReader">StackMapTable_attributeReader</a> with <a href="../../bi/reader/StackMapFrameReader.html" class="extype" name="org.opalj.bi.reader.StackMapFrameReader">StackMapFrameReader</a> with <a href="../../bi/reader/VerificationTypeInfoReader.html" class="extype" name="org.opalj.bi.reader.VerificationTypeInfoReader">VerificationTypeInfoReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides the factory methods to create a stack map table attribute and
+its entries.</p>
+    </li><li name="org.opalj.br.reader.Synthetic_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Synthetic_attributeBindingextendsSynthetic_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="Synthetic_attributeBinding:Synthetic_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Synthetic_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Represents Java's Synthetic attribute." href="Synthetic_attributeBinding.html"><span class="name">Synthetic_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/Synthetic_attributeReader.html" class="extype" name="org.opalj.bi.reader.Synthetic_attributeReader">Synthetic_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Represents Java's Synthetic attribute.</p>
+    </li><li name="org.opalj.br.reader.TypeAnnotationAttributesBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TypeAnnotationAttributesBindingextendsTypeAnnotationsBindingwithRuntimeInvisibleTypeAnnotations_attributeReaderwithRuntimeVisibleTypeAnnotations_attributeReaderwithAttributeBinding"></a><a id="TypeAnnotationAttributesBinding:TypeAnnotationAttributesBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/TypeAnnotationAttributesBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Factory methods to create representations of the attributes related to Java type annotations." href="TypeAnnotationAttributesBinding.html"><span class="name">TypeAnnotationAttributesBinding</span></a><span class="result"> extends <a href="TypeAnnotationsBinding.html" class="extype" name="org.opalj.br.reader.TypeAnnotationsBinding">TypeAnnotationsBinding</a> with <a href="../../bi/reader/RuntimeInvisibleTypeAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeInvisibleTypeAnnotations_attributeReader">RuntimeInvisibleTypeAnnotations_attributeReader</a> with <a href="../../bi/reader/RuntimeVisibleTypeAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeVisibleTypeAnnotations_attributeReader">RuntimeVisibleTypeAnnotations_attributeReader</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Factory methods to create representations of the attributes related to
+Java type annotations.</p>
+    </li><li name="org.opalj.br.reader.TypeAnnotationsBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TypeAnnotationsBindingextendsTypeAnnotationsReaderwithTypeAnnotationTargetReaderwithTypeAnnotationPathReaderwithAnnotationsBindingwithAttributeBinding"></a><a id="TypeAnnotationsBinding:TypeAnnotationsBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/TypeAnnotationsBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Factory methods to create representations of Java type annotations." href="TypeAnnotationsBinding.html"><span class="name">TypeAnnotationsBinding</span></a><span class="result"> extends <a href="../../bi/reader/TypeAnnotationsReader.html" class="extype" name="org.opalj.bi.reader.TypeAnnotationsReader">TypeAnnotationsReader</a> with <a href="../../bi/reader/TypeAnnotationTargetReader.html" class="extype" name="org.opalj.bi.reader.TypeAnnotationTargetReader">TypeAnnotationTargetReader</a> with <a href="../../bi/reader/TypeAnnotationPathReader.html" class="extype" name="org.opalj.bi.reader.TypeAnnotationPathReader">TypeAnnotationPathReader</a> with <a href="AnnotationsBinding.html" class="extype" name="org.opalj.br.reader.AnnotationsBinding">AnnotationsBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Factory methods to create representations of Java type annotations.</p>
+    </li><li name="org.opalj.br.reader.Unknown_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Unknown_attributeBindingextendsUnknown_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="Unknown_attributeBinding:Unknown_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Unknown_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="&quot;Factory&quot; to create unknown attributes which are used to represent class file attributes that are not understood by this framework." href="Unknown_attributeBinding.html"><span class="name">Unknown_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/Unknown_attributeReader.html" class="extype" name="org.opalj.bi.reader.Unknown_attributeReader">Unknown_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">&quot;Factory&quot; to create unknown attributes which are used to represent class
+file attributes that are not understood by this framework.</p>
+    </li><li name="org.opalj.br.reader.UnpackedLineNumberTable_attributeBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="UnpackedLineNumberTable_attributeBindingextendsLineNumberTable_attributeReaderwithConstantPoolBindingwithAttributeBinding"></a><a id="UnpackedLineNumberTable_attributeBinding:UnpackedLineNumberTable_attributeBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/UnpackedLineNumberTable_attributeBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Implements the factory methods to create line number tables and their entries." href="UnpackedLineNumberTable_attributeBinding.html"><span class="name">UnpackedLineNumberTable_attributeBinding</span></a><span class="result"> extends <a href="../../bi/reader/LineNumberTable_attributeReader.html" class="extype" name="org.opalj.bi.reader.LineNumberTable_attributeReader">LineNumberTable_attributeReader</a> with <a href="ConstantPoolBinding.html" class="extype" name="org.opalj.br.reader.ConstantPoolBinding">ConstantPoolBinding</a> with <a href="AttributeBinding.html" class="extype" name="org.opalj.br.reader.AttributeBinding">AttributeBinding</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Implements the factory methods to create line number tables and their entries.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="org.opalj.br.reader#ConfigKeyPrefix" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConfigKeyPrefix:String"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/index.html#ConfigKeyPrefix:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ConfigKeyPrefix</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader#read" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="read(args:Iterable[String],classFilesReader:(java.io.File,(org.opalj.br.reader.package.Source,Throwable)=&gt;Unit)=&gt;Iterable[(org.opalj.br.ClassFile,java.net.URL)]):(Iterable[(org.opalj.br.ClassFile,java.net.URL)],List[Throwable])"></a><a id="read(Iterable[String],(File,(Source,Throwable)⇒Unit)⇒Iterable[(ClassFile,URL)]):(Iterable[(ClassFile,URL)],List[Throwable])"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/index.html#read(args:Iterable[String],classFilesReader:(java.io.File,(org.opalj.br.reader.package.Source,Throwable)=&gt;Unit)=&gt;Iterable[(org.opalj.br.ClassFile,java.net.URL)]):(Iterable[(org.opalj.br.ClassFile,java.net.URL)],List[Throwable])" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">read</span><span class="params">(<span name="args">args: <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="classFilesReader">classFilesReader: (<span class="extype" name="java.io.File">File</span>, (<a href="#Source=AnyRef" class="extmbr" name="org.opalj.br.reader.Source">Source</a>, <span class="extype" name="scala.Throwable">Throwable</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Iterable">Iterable</span>[(<a href="../ClassFile.html" class="extype" name="org.opalj.br.ClassFile">ClassFile</a>, <span class="extype" name="java.net.URL">URL</span>)]</span>)</span><span class="result">: (<span class="extype" name="scala.Iterable">Iterable</span>[(<a href="../ClassFile.html" class="extype" name="org.opalj.br.ClassFile">ClassFile</a>, <span class="extype" name="java.net.URL">URL</span>)], <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Throwable">Throwable</span>])</span>
+      </span>
+      
+      <p class="shortcomment cmt">Reads in all class files found in the jar files or jar and class files in the
+folders specified by <code>args</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Reads in all class files found in the jar files or jar and class files in the
+folders specified by <code>args</code>. The class files are read in using the specified
+class file reader. This enables, e.g., to use this method to only read in
+the public interface of a class file or to read in complete class files.
+</p></div><dl class="paramcmts block"><dt class="param">args</dt><dd class="cmt"><p>An <code>Iterable</code> of file and folder names that refer to jar files
+     or folders in which jar and class files are found.</p></dd><dt class="param">classFilesReader</dt><dd class="cmt"><p>A function that – given a file (jar, folder, class file) – 
+     loads the respective class files and returns an <code>Iterable</code>. The second
+     parameter of the function is a function that should be called back by the
+     reader whenever the processing of given file fails with an exception.
+     This design was chosen to enable a reader of jar file to continue processing
+     class files even if the processing of a class file failed.</p></dd></dl></div>
+    </li><li name="org.opalj.br.reader#readClassFiles" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="readClassFiles(files:Iterable[java.io.File],classFilesReader:(java.io.File,(org.opalj.br.reader.package.Source,Throwable)=&gt;Unit)=&gt;Iterable[(org.opalj.br.ClassFile,java.net.URL)],perFile:java.io.File=&gt;Unit):(Iterable[(org.opalj.br.ClassFile,java.net.URL)],List[Throwable])"></a><a id="readClassFiles(Iterable[File],(File,(Source,Throwable)⇒Unit)⇒Iterable[(ClassFile,URL)],(File)⇒Unit):(Iterable[(ClassFile,URL)],List[Throwable])"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/index.html#readClassFiles(files:Iterable[java.io.File],classFilesReader:(java.io.File,(org.opalj.br.reader.package.Source,Throwable)=&gt;Unit)=&gt;Iterable[(org.opalj.br.ClassFile,java.net.URL)],perFile:java.io.File=&gt;Unit):(Iterable[(org.opalj.br.ClassFile,java.net.URL)],List[Throwable])" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readClassFiles</span><span class="params">(<span name="files">files: <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="java.io.File">File</span>]</span>, <span name="classFilesReader">classFilesReader: (<span class="extype" name="java.io.File">File</span>, (<a href="#Source=AnyRef" class="extmbr" name="org.opalj.br.reader.Source">Source</a>, <span class="extype" name="scala.Throwable">Throwable</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Iterable">Iterable</span>[(<a href="../ClassFile.html" class="extype" name="org.opalj.br.ClassFile">ClassFile</a>, <span class="extype" name="java.net.URL">URL</span>)]</span>, <span name="perFile">perFile: (<span class="extype" name="java.io.File">File</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span> = <span class="symbol">(f: File) ⇒ { /*do nothing*/ }</span></span>)</span><span class="result">: (<span class="extype" name="scala.Iterable">Iterable</span>[(<a href="../ClassFile.html" class="extype" name="org.opalj.br.ClassFile">ClassFile</a>, <span class="extype" name="java.net.URL">URL</span>)], <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Throwable">Throwable</span>])</span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader#readJREClassFiles" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="readJREClassFiles(cache:org.opalj.br.reader.BytecodeInstructionsCache)(implicitreader:org.opalj.br.reader.ClassFileBinding,implicitlogContext:org.opalj.log.LogContext):Seq[(org.opalj.br.ClassFile,java.net.URL)]"></a><a id="readJREClassFiles(BytecodeInstructionsCache)(ClassFileBinding,LogContext):Seq[(ClassFile,URL)]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/index.html#readJREClassFiles(cache:org.opalj.br.reader.BytecodeInstructionsCache)(implicitreader:org.opalj.br.reader.ClassFileBinding,implicitlogContext:org.opalj.log.LogContext):Seq[(org.opalj.br.ClassFile,java.net.URL)]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readJREClassFiles</span><span class="params">(<span name="cache">cache: <a href="BytecodeInstructionsCache.html" class="extype" name="org.opalj.br.reader.BytecodeInstructionsCache">BytecodeInstructionsCache</a> = <span class="symbol"><span class="name"><a href="BytecodeInstructionsCache.html">new BytecodeInstructionsCache</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="reader">reader: <a href="ClassFileBinding.html" class="extype" name="org.opalj.br.reader.ClassFileBinding">ClassFileBinding</a> = <span class="defval" name='<span class="name"><a href="Java9FrameworkWithInvokedynamicSupportAndCaching.html">new Java9FrameworkWithInvokedynamicSupportAndCaching(cache)</a></span>'>...</span></span>, <span name="logContext">logContext: <a href="../../log/LogContext.html" class="extype" name="org.opalj.log.LogContext">LogContext</a> = <span class="symbol"><span class="name"><a href="../../../index.html">GlobalLogContext</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[(<a href="../ClassFile.html" class="extype" name="org.opalj.br.ClassFile">ClassFile</a>, <span class="extype" name="java.net.URL">URL</span>)]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Loads class files from JRE .jars found in the boot classpath.</p><div class="fullcomment"><div class="comment cmt"><p>Loads class files from JRE .jars found in the boot classpath.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>List of class files ready to be passed to a <code>IndexBasedProject</code>.</p></dd></dl></div>
+    </li><li name="org.opalj.br.reader#readRTJarClassFiles" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="readRTJarClassFiles(cache:org.opalj.br.reader.BytecodeInstructionsCache)(implicitreader:org.opalj.br.reader.ClassFileBinding,implicitlogContext:org.opalj.log.LogContext):Traversable[(org.opalj.br.ClassFile,java.net.URL)]"></a><a id="readRTJarClassFiles(BytecodeInstructionsCache)(ClassFileBinding,LogContext):Traversable[(ClassFile,URL)]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/index.html#readRTJarClassFiles(cache:org.opalj.br.reader.BytecodeInstructionsCache)(implicitreader:org.opalj.br.reader.ClassFileBinding,implicitlogContext:org.opalj.log.LogContext):Traversable[(org.opalj.br.ClassFile,java.net.URL)]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readRTJarClassFiles</span><span class="params">(<span name="cache">cache: <a href="BytecodeInstructionsCache.html" class="extype" name="org.opalj.br.reader.BytecodeInstructionsCache">BytecodeInstructionsCache</a> = <span class="symbol"><span class="name"><a href="BytecodeInstructionsCache.html">new BytecodeInstructionsCache</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="reader">reader: <a href="ClassFileBinding.html" class="extype" name="org.opalj.br.reader.ClassFileBinding">ClassFileBinding</a> = <span class="defval" name='<span class="name"><a href="Java9FrameworkWithInvokedynamicSupportAndCaching.html">new Java9FrameworkWithInvokedynamicSupportAndCaching(cache)</a></span>'>...</span></span>, <span name="logContext">logContext: <a href="../../log/LogContext.html" class="extype" name="org.opalj.log.LogContext">LogContext</a> = <span class="symbol"><span class="name"><a href="../../../index.html">GlobalLogContext</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Traversable">Traversable</span>[(<a href="../ClassFile.html" class="extype" name="org.opalj.br.ClassFile">ClassFile</a>, <span class="extype" name="java.net.URL">URL</span>)]</span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader.BytecodeOptimizer" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BytecodeOptimizer"></a><a id="BytecodeOptimizer:BytecodeOptimizer"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/BytecodeOptimizer$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="BytecodeOptimizer$.html"><span class="name">BytecodeOptimizer</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader.ClassFileBinding" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClassFileBinding"></a><a id="ClassFileBinding:ClassFileBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/ClassFileBinding$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ClassFileBinding$.html"><span class="name">ClassFileBinding</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader.ClassFileReaderConfiguration" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClassFileReaderConfiguration"></a><a id="ClassFileReaderConfiguration:ClassFileReaderConfiguration"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/ClassFileReaderConfiguration$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ClassFileReaderConfiguration$.html"><span class="name">ClassFileReaderConfiguration</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.opalj.br.reader.InvokedynamicRewriting" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InvokedynamicRewriting"></a><a id="InvokedynamicRewriting:InvokedynamicRewriting"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/InvokedynamicRewriting$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="InvokedynamicRewriting$.html"><span class="name">InvokedynamicRewriting</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader.Java7Framework" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Java7Framework"></a><a id="Java7Framework:Java7Framework"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java7Framework$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Java7Framework$.html"><span class="name">Java7Framework</span></a><span class="result"> extends <a href="Java7Framework.html" class="extype" name="org.opalj.br.reader.Java7Framework">Java7Framework</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader.Java7LibraryFramework" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Java7LibraryFramework"></a><a id="Java7LibraryFramework:Java7LibraryFramework"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java7LibraryFramework$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Java7LibraryFramework$.html"><span class="name">Java7LibraryFramework</span></a><span class="result"> extends <a href="Java7LibraryFramework.html" class="extype" name="org.opalj.br.reader.Java7LibraryFramework">Java7LibraryFramework</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader.Java8Framework" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Java8Framework"></a><a id="Java8Framework:Java8Framework"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java8Framework$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Java8Framework$.html"><span class="name">Java8Framework</span></a><span class="result"> extends <a href="Java8Framework.html" class="extype" name="org.opalj.br.reader.Java8Framework">Java8Framework</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader.Java8LibraryFramework" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Java8LibraryFramework"></a><a id="Java8LibraryFramework:Java8LibraryFramework"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java8LibraryFramework$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Java8LibraryFramework$.html"><span class="name">Java8LibraryFramework</span></a><span class="result"> extends <a href="Java8LibraryFramework.html" class="extype" name="org.opalj.br.reader.Java8LibraryFramework">Java8LibraryFramework</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader.Java9Framework" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Java9Framework"></a><a id="Java9Framework:Java9Framework"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java9Framework$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Java9Framework$.html"><span class="name">Java9Framework</span></a><span class="result"> extends <a href="Java9Framework.html" class="extype" name="org.opalj.br.reader.Java9Framework">Java9Framework</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader.Java9LibraryFramework" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Java9LibraryFramework"></a><a id="Java9LibraryFramework:Java9LibraryFramework"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/Java9LibraryFramework$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Java9LibraryFramework$.html"><span class="name">Java9LibraryFramework</span></a><span class="result"> extends <a href="Java9LibraryFramework.html" class="extype" name="org.opalj.br.reader.Java9LibraryFramework">Java9LibraryFramework</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.reader.SignatureParser" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SignatureParser"></a><a id="SignatureParser:SignatureParser"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/reader/SignatureParser$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Parses Java class file signature strings." href="SignatureParser$.html"><span class="name">SignatureParser</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Parses Java class file signature strings.</p><div class="fullcomment"><div class="comment cmt"><p>Parses Java class file signature strings.</p><h4>Thread-Safety</h4><p>Using this object is thread-safe.
+</p></div></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

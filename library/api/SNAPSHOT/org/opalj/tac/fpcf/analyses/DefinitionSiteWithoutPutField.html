@@ -1,0 +1,912 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../../../index.js"></script>
+      <script type="text/javascript" src="../../../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../../../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../../../br/index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="../../../ai/index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.tac" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tac"></a><a id="tac:tac"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Common definitions related to the definition and processing of three address code." href="../../index.html"><span class="name">tac</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Common definitions related to the definition and processing of three address code.</p><div class="fullcomment"><div class="comment cmt"><p>Common definitions related to the definition and processing of three address code.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="org.opalj">opalj</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fpcf"></a><a id="fpcf:fpcf"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html"><span class="name">fpcf</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org.opalj.tac">tac</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses" visbl="pub" class="indented5 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="analyses"></a><a id="analyses:analyses"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html"><span class="name">analyses</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.tac.fpcf">fpcf</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg" visbl="pub" class="indented6 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cg"></a><a id="cg:cg"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/cg/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="cg/index.html"><span class="name">cg</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.tac.fpcf.analyses">analyses</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.escape" visbl="pub" class="indented6 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="escape"></a><a id="escape:escape"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/escape/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="escape/index.html"><span class="name">escape</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.tac.fpcf.analyses">analyses</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.pointsto" visbl="pub" class="indented6 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pointsto"></a><a id="pointsto:pointsto"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/pointsto/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="pointsto/index.html"><span class="name">pointsto</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.tac.fpcf.analyses">analyses</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.purity" visbl="pub" class="indented6 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="purity"></a><a id="purity:purity"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/purity/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="purity/index.html"><span class="name">purity</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.tac.fpcf.analyses">analyses</a></dd></dl></div>
+    </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="APIBasedAnalysis.html" title="A trait for analyses that model the result of the invocation of a specific apiMethod."></a>
+                        <a href="APIBasedAnalysis.html" title="A trait for analyses that model the result of the invocation of a specific apiMethod.">APIBasedAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <a class="object" href="AbstractIFDSAnalysis$.html" title=""></a>
+                        <a class="class" href="AbstractIFDSAnalysis.html" title="A framework for IFDS analyses."></a>
+                        <a href="AbstractIFDSAnalysis.html" title="A framework for IFDS analyses.">AbstractIFDSAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="AbstractIFDSFact.html" title="The super type of all IFDS facts."></a>
+                        <a href="AbstractIFDSFact.html" title="The super type of all IFDS facts.">AbstractIFDSFact</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="AbstractIFDSNullFact.html" title="The super type of all null facts."></a>
+                        <a href="AbstractIFDSNullFact.html" title="The super type of all null facts.">AbstractIFDSNullFact</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="" title="Represents a definition site of an object that is stored into a field (that is being analyzed for locality) where the field write use-site is removed from the set of use-sites."></a>
+                        <a href="" title="Represents a definition site of an object that is stored into a field (that is being analyzed for locality) where the field write use-site is removed from the set of use-sites.">DefinitionSiteWithoutPutField</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="DefinitionSitesWithoutPutField$.html" title="Holds a map of DefinitionSiteWithoutPutField values, in order to provide unique identities (enable comparison via eq/neq)."></a>
+                        <a href="DefinitionSitesWithoutPutField$.html" title="Holds a map of DefinitionSiteWithoutPutField values, in order to provide unique identities (enable comparison via eq/neq).">DefinitionSitesWithoutPutField</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="EagerFieldLocalityAnalysis$.html" title=""></a>
+                        <a href="EagerFieldLocalityAnalysis$.html" title="">EagerFieldLocalityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="EagerL0TACAIAnalysis$.html" title=""></a>
+                        <a href="EagerL0TACAIAnalysis$.html" title="">EagerL0TACAIAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="EagerL1FieldMutabilityAnalysis$.html" title="Executor for the field mutability analysis."></a>
+                        <a href="EagerL1FieldMutabilityAnalysis$.html" title="Executor for the field mutability analysis.">EagerL1FieldMutabilityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="EagerL2FieldMutabilityAnalysis$.html" title="Executor for the field mutability analysis."></a>
+                        <a href="EagerL2FieldMutabilityAnalysis$.html" title="Executor for the field mutability analysis.">EagerL2FieldMutabilityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="EagerTACAIProvider$.html" title=""></a>
+                        <a href="EagerTACAIProvider$.html" title="">EagerTACAIProvider</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="FieldLocalityAnalysis.html" title="Determines whether the lifetime of a reference type field is the same as that of its owning instance."></a>
+                        <a href="FieldLocalityAnalysis.html" title="Determines whether the lifetime of a reference type field is the same as that of its owning instance.">FieldLocalityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="FieldLocalityAnalysisScheduler.html" title=""></a>
+                        <a href="FieldLocalityAnalysisScheduler.html" title="">FieldLocalityAnalysisScheduler</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="FieldLocalityState.html" title=""></a>
+                        <a href="FieldLocalityState.html" title="">FieldLocalityState</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="IFDSAnalysis.html" title=""></a>
+                        <a href="IFDSAnalysis.html" title="">IFDSAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="L0TACAIAnalysis.html" title="Basically just (re)creates the tac of a method if the result of the underlying abstract interpretation changes."></a>
+                        <a href="L0TACAIAnalysis.html" title="Basically just (re)creates the tac of a method if the result of the underlying abstract interpretation changes.">L0TACAIAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="L0TACAIAnalysisScheduler.html" title=""></a>
+                        <a href="L0TACAIAnalysisScheduler.html" title="">L0TACAIAnalysisScheduler</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="L1FieldMutabilityAnalysis.html" title="Simple analysis that checks if a private (static or instance) field is always initialized at most once or if a field is or can be mutated after (lazy) initialization."></a>
+                        <a href="L1FieldMutabilityAnalysis.html" title="Simple analysis that checks if a private (static or instance) field is always initialized at most once or if a field is or can be mutated after (lazy) initialization.">L1FieldMutabilityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="L1FieldMutabilityAnalysisScheduler.html" title=""></a>
+                        <a href="L1FieldMutabilityAnalysisScheduler.html" title="">L1FieldMutabilityAnalysisScheduler</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="L2FieldMutabilityAnalysis.html" title="Simple analysis that checks if a private (static or instance) field is always initialized at most once or if a field is or can be mutated after (lazy) initialization."></a>
+                        <a href="L2FieldMutabilityAnalysis.html" title="Simple analysis that checks if a private (static or instance) field is always initialized at most once or if a field is or can be mutated after (lazy) initialization.">L2FieldMutabilityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="L2FieldMutabilityAnalysisScheduler.html" title=""></a>
+                        <a href="L2FieldMutabilityAnalysisScheduler.html" title="">L2FieldMutabilityAnalysisScheduler</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="LazyFieldLocalityAnalysis$.html" title=""></a>
+                        <a href="LazyFieldLocalityAnalysis$.html" title="">LazyFieldLocalityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="LazyL0TACAIAnalysis$.html" title=""></a>
+                        <a href="LazyL0TACAIAnalysis$.html" title="">LazyL0TACAIAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="LazyL1FieldMutabilityAnalysis$.html" title="Executor for the lazy field mutability analysis."></a>
+                        <a href="LazyL1FieldMutabilityAnalysis$.html" title="Executor for the lazy field mutability analysis.">LazyL1FieldMutabilityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="LazyL2FieldMutabilityAnalysis$.html" title="Executor for the lazy field mutability analysis."></a>
+                        <a href="LazyL2FieldMutabilityAnalysis$.html" title="Executor for the lazy field mutability analysis.">LazyL2FieldMutabilityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="LazyTACAIProvider$.html" title=""></a>
+                        <a href="LazyTACAIProvider$.html" title="">LazyTACAIProvider</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="Statement.html" title="A statement that is passed to the concrete analysis."></a>
+                        <a href="Statement.html" title="A statement that is passed to the concrete analysis.">Statement</a>
+                      </li><li class="current-entities indented5">
+                        <a class="object" href="SystemPropertiesAnalysisScheduler$.html" title=""></a>
+                        <a class="class" href="SystemPropertiesAnalysisScheduler.html" title=""></a>
+                        <a href="SystemPropertiesAnalysisScheduler.html" title="">SystemPropertiesAnalysisScheduler</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="TACAIAnalysis$.html" title=""></a>
+                        <a href="TACAIAnalysis$.html" title="">TACAIAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="TACAIBasedAPIBasedAnalysis.html" title="An APIBasedAnalysis that ensures that whenever processNewCaller gets called, some (interim) version of the three-address code is available in the property store."></a>
+                        <a href="TACAIBasedAPIBasedAnalysis.html" title="An APIBasedAnalysis that ensures that whenever processNewCaller gets called, some (interim) version of the three-address code is available in the property store.">TACAIBasedAPIBasedAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="TACAIBasedAnalysisState.html" title="A base class for the state of FPCF analyses operating on the three-address code of methods."></a>
+                        <a href="TACAIBasedAnalysisState.html" title="A base class for the state of FPCF analyses operating on the three-address code of methods.">TACAIBasedAnalysisState</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="TACAIInitializer.html" title="Transforms an aiResult to the 3-address code."></a>
+                        <a href="TACAIInitializer.html" title="Transforms an aiResult to the 3-address code.">TACAIInitializer</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="TACAIProvider.html" title="Provides the TACAI for all methods."></a>
+                        <a href="TACAIProvider.html" title="Provides the TACAI for all methods.">TACAIProvider</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="TACAIProviderScheduler.html" title=""></a>
+                        <a href="TACAIProviderScheduler.html" title="">TACAIProviderScheduler</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="TACAITransformer$.html" title="Transforms a BaseAIResult to the 3-address code."></a>
+                        <a href="TACAITransformer$.html" title="Transforms a BaseAIResult to the 3-address code.">TACAITransformer</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="class type">
+      <div id="definition">
+        <div class="big-circle class">c</div>
+        <p id="owner"><a href="../../../../index.html" class="extype" name="org">org</a>.<a href="../../../index.html" class="extype" name="org.opalj">opalj</a>.<a href="../../index.html" class="extype" name="org.opalj.tac">tac</a>.<a href="../index.html" class="extype" name="org.opalj.tac.fpcf">fpcf</a>.<a href="index.html" class="extype" name="org.opalj.tac.fpcf.analyses">analyses</a></p>
+        <h1>DefinitionSiteWithoutPutField<span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefinitionSiteWithoutPutField</span><span class="params">(<span name="method">method: <a href="../../../br/Method.html" class="extype" name="org.opalj.br.Method">Method</a></span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="putFieldPC">putFieldPC: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="../../common/DefinitionSiteLike.html" class="extype" name="org.opalj.tac.common.DefinitionSiteLike">DefinitionSiteLike</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Represents a definition site of an object that is stored into a field (that is being analyzed
+for locality) where the field write use-site is removed from the set of use-sites.
+It acts as an entity for the escape analysis (we are interested whether the objects stored into
+a field are local, i.e. doe not escape).
+Here, the <a href="../../PutField.html" class="extype" name="org.opalj.tac.PutField">org.opalj.tac.PutField</a> would let the object escape.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/FieldLocalityAnalysis.scala?at=develop" target="_blank">FieldLocalityAnalysis.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="../../common/DefinitionSiteLike.html" class="extype" name="org.opalj.tac.common.DefinitionSiteLike">DefinitionSiteLike</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField"><span>DefinitionSiteWithoutPutField</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="org.opalj.tac.common.DefinitionSiteLike"><span>DefinitionSiteLike</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(method:org.opalj.br.Method,pc:Int,putFieldPC:Int):org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField"></a><a id="&lt;init&gt;:DefinitionSiteWithoutPutField"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#&lt;init&gt;(method:org.opalj.br.Method,pc:Int,putFieldPC:Int):org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefinitionSiteWithoutPutField</span><span class="params">(<span name="method">method: <a href="../../../br/Method.html" class="extype" name="org.opalj.br.Method">Method</a></span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="putFieldPC">putFieldPC: <span class="extype" name="scala.Int">Int</span></span>)</span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField#method" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="method:org.opalj.br.Method"></a><a id="method:Method"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#method:org.opalj.br.Method" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">method</span><span class="result">: <a href="../../../br/Method.html" class="extype" name="org.opalj.br.Method">Method</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField">DefinitionSiteWithoutPutField</a> → <a href="../../common/DefinitionSiteLike.html" class="extype" name="org.opalj.tac.common.DefinitionSiteLike">DefinitionSiteLike</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField#pc" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pc:Int"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#pc:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pc</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField">DefinitionSiteWithoutPutField</a> → <a href="../../common/DefinitionSiteLike.html" class="extype" name="org.opalj.tac.common.DefinitionSiteLike">DefinitionSiteLike</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField#putFieldPC" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="putFieldPC:Int"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#putFieldPC:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">putFieldPC</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField#usedBy" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="usedBy[V&lt;:org.opalj.value.ValueInformation](tacode:org.opalj.tac.TACode[org.opalj.tac.TACMethodParameter,org.opalj.tac.DUVar[V]]):org.opalj.collection.immutable.IntTrieSet"></a><a id="usedBy[V&lt;:ValueInformation](TACode[TACMethodParameter,DUVar[V]]):IntTrieSet"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#usedBy[V&lt;:org.opalj.value.ValueInformation](tacode:org.opalj.tac.TACode[org.opalj.tac.TACMethodParameter,org.opalj.tac.DUVar[V]]):org.opalj.collection.immutable.IntTrieSet" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">usedBy</span><span class="tparams">[<span name="V">V &lt;: <a href="../../../value/ValueInformation.html" class="extype" name="org.opalj.value.ValueInformation">ValueInformation</a></span>]</span><span class="params">(<span name="tacode">tacode: <a href="../../TACode.html" class="extype" name="org.opalj.tac.TACode">TACode</a>[<a href="../../TACMethodParameter.html" class="extype" name="org.opalj.tac.TACMethodParameter">TACMethodParameter</a>, <a href="../../DUVar.html" class="extype" name="org.opalj.tac.DUVar">DUVar</a>[<span class="extype" name="org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField.usedBy.V">V</span>]]</span>)</span><span class="result">: <a href="../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField">DefinitionSiteWithoutPutField</a> → <a href="../../common/DefinitionSiteLike.html" class="extype" name="org.opalj.tac.common.DefinitionSiteLike">DefinitionSiteLike</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="org.opalj.tac.common.DefinitionSiteLike">
+              <h3>Inherited from <a href="../../common/DefinitionSiteLike.html" class="extype" name="org.opalj.tac.common.DefinitionSiteLike">DefinitionSiteLike</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

@@ -1,0 +1,1085 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.fpcf.par</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.fpcf.par" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.fpcf.par" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../../index.js"></script>
+      <script type="text/javascript" src="../../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../../br/index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="../../ai/index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fpcf"></a><a id="fpcf:fpcf"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="The fixpoint computations framework (fpcf) is a general framework to perform fixpoint computations of properties ordered by a lattice." href="../index.html"><span class="name">fpcf</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">The fixpoint computations framework (<code>fpcf</code>) is a general framework to perform fixpoint
+computations of properties ordered by a lattice.</p><div class="fullcomment"><div class="comment cmt"><p>The fixpoint computations framework (<code>fpcf</code>) is a general framework to perform fixpoint
+computations of properties ordered by a lattice. The framework in particular supports the
+development of static analyses.</p><p>In this case, the fixpoint computations/static analyses are generally operating on the
+code and need to be executed until the computations have reached their (implicit) fixpoint.
+The fixpoint framework explicitly supports resolving cyclic dependencies/computations.
+A prime use case of the fixpoint framework are all those analyses that may interact with
+the results of other analyses.</p><p>For example, an analysis that analyzes all field write accesses to determine if we can
+refine a field's type (for the purpose of the analysis) can (reuse) the information
+about the return types of methods, which however may depend on the refined field types.</p><p>The framework is generic enough to facilitate the implementation of anytime algorithms.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org.opalj">opalj</a></dd><dt>Note</dt><dd><span class="cmt"><p><i>This framework assumes that all data-structures (e.g., dependee lists and properties)
+      that are passed to the framework are effectively immutable!</i>
+      (Effectively immutable means that a data structure is never updated after it was
+      passed to the framework.)</p></span>, <span class="cmt"><p>The dependency relation is as follows:
+     “A depends on B”
+         <code>===</code>
+     “A is the depender, B is the dependee”.
+         <code>===</code>
+     “B is depended on by A”</p></span>, <span class="cmt"><p>The very core of the framework is described in:
+      <a href="https://conf.researchr.org/track/ecoop-issta-2018/SOAP-2018-papers#program" target="_blank">Lattice Based Modularization of Static Analyses</a></p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par" visbl="pub" class="indented4 current" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="par"></a><a id="par:par"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">par</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.fpcf">fpcf</a></dd></dl></div>
+    </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="AppliedUpdateComputationEvent.html" title=""></a>
+                        <a href="AppliedUpdateComputationEvent.html" title="">AppliedUpdateComputationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ComputedFallbackEvent.html" title=""></a>
+                        <a href="ComputedFallbackEvent.html" title="">ComputedFallbackEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="DeferredProcessingResultEvent.html" title=""></a>
+                        <a href="DeferredProcessingResultEvent.html" title="">DeferredProcessingResultEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="EPKState$.html" title=""></a>
+                        <a href="EPKState$.html" title="">EPKState</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="EnqueuedEPKToForceEvent.html" title=""></a>
+                        <a href="EnqueuedEPKToForceEvent.html" title="">EnqueuedEPKToForceEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="EvaluatedTransformerEvent.html" title=""></a>
+                        <a href="EvaluatedTransformerEvent.html" title="">EvaluatedTransformerEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="FinalizedPropertyEvent.html" title=""></a>
+                        <a href="FinalizedPropertyEvent.html" title="">FinalizedPropertyEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="FirstExceptionEvent.html" title=""></a>
+                        <a href="FirstExceptionEvent.html" title="">FirstExceptionEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ForcingEPKEvaluationEvent.html" title=""></a>
+                        <a href="ForcingEPKEvaluationEvent.html" title="">ForcingEPKEvaluationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="HandlingInterimEPKsDueToSuppressionEvent.html" title=""></a>
+                        <a href="HandlingInterimEPKsDueToSuppressionEvent.html" title="">HandlingInterimEPKsDueToSuppressionEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="IdempotentUpdateEvent.html" title=""></a>
+                        <a href="IdempotentUpdateEvent.html" title="">IdempotentUpdateEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ImmediatelyExecutedLazyComputationEvent.html" title=""></a>
+                        <a href="ImmediatelyExecutedLazyComputationEvent.html" title="">ImmediatelyExecutedLazyComputationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ImmediatelyRescheduledOnUpdateComputationEvent.html" title=""></a>
+                        <a href="ImmediatelyRescheduledOnUpdateComputationEvent.html" title="">ImmediatelyRescheduledOnUpdateComputationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="MakingIntermediateEPKStateFinalEvent.html" title=""></a>
+                        <a href="MakingIntermediateEPKStateFinalEvent.html" title="">MakingIntermediateEPKStateFinalEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="NoRelevantUpdate$.html" title=""></a>
+                        <a href="NoRelevantUpdate$.html" title="">NoRelevantUpdate</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="PKECPropertyStore$.html" title=""></a>
+                        <a class="class" href="PKECPropertyStore.html" title="A concurrent implementation of the property store which executes the scheduled computations in parallel."></a>
+                        <a href="PKECPropertyStore.html" title="A concurrent implementation of the property store which executes the scheduled computations in parallel.">PKECPropertyStore</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ParTasksManager.html" title="A task manager which performs all tasks in parallel using a standard fixed thread pool."></a>
+                        <a href="ParTasksManager.html" title="A task manager which performs all tasks in parallel using a standard fixed thread pool.">ParTasksManager</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="ParTasksManagerConfig$.html" title=""></a>
+                        <a href="ParTasksManagerConfig$.html" title="">ParTasksManagerConfig</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ParallelPropertyStore.html" title="An implementation of the property store which parallelizes the computation of the properties."></a>
+                        <a href="ParallelPropertyStore.html" title="An implementation of the property store which parallelizes the computation of the properties.">ParallelPropertyStore</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="PreInitializationEvent.html" title=""></a>
+                        <a href="PreInitializationEvent.html" title="">PreInitializationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ProcessingResultEvent.html" title=""></a>
+                        <a href="ProcessingResultEvent.html" title="">ProcessingResultEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ReachedQuiescenceEvent.html" title=""></a>
+                        <a href="ReachedQuiescenceEvent.html" title="">ReachedQuiescenceEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="RegisteredTransformerEvent.html" title=""></a>
+                        <a href="RegisteredTransformerEvent.html" title="">RegisteredTransformerEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="RelevantUpdateAndNotification$.html" title=""></a>
+                        <a href="RelevantUpdateAndNotification$.html" title="">RelevantUpdateAndNotification</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="RelevantUpdateButNoNotification$.html" title=""></a>
+                        <a href="RelevantUpdateButNoNotification$.html" title="">RelevantUpdateButNoNotification</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="RemovedDependerEvent.html" title=""></a>
+                        <a href="RemovedDependerEvent.html" title="">RemovedDependerEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ScheduledLazyComputationEvent.html" title=""></a>
+                        <a href="ScheduledLazyComputationEvent.html" title="">ScheduledLazyComputationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ScheduledOnUpdateComputationEvent.html" title=""></a>
+                        <a href="ScheduledOnUpdateComputationEvent.html" title="">ScheduledOnUpdateComputationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ScheduledOnUpdateComputationForFinalEPEvent.html" title=""></a>
+                        <a href="ScheduledOnUpdateComputationForFinalEPEvent.html" title="">ScheduledOnUpdateComputationForFinalEPEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="SeqTasksManager.html" title="A task manager which performs all tasks sequentially; hence, turning the parallel properties store into a sequential store."></a>
+                        <a href="SeqTasksManager.html" title="A task manager which performs all tasks sequentially; hence, turning the parallel properties store into a sequential store.">SeqTasksManager</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="SetPropertyEvent.html" title=""></a>
+                        <a href="SetPropertyEvent.html" title="">SetPropertyEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="StartedMainLoopEvent.html" title=""></a>
+                        <a href="StartedMainLoopEvent.html" title="">StartedMainLoopEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="StoreEvent.html" title=""></a>
+                        <a href="StoreEvent.html" title="">StoreEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="SubphaseFinalizationEvent.html" title=""></a>
+                        <a href="SubphaseFinalizationEvent.html" title="">SubphaseFinalizationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="TaskManagerFactory.html" title=""></a>
+                        <a href="TaskManagerFactory.html" title="">TaskManagerFactory</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="TasksManager.html" title=""></a>
+                        <a href="TasksManager.html" title="">TasksManager</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="TriggeredComputationEvent.html" title=""></a>
+                        <a href="TriggeredComputationEvent.html" title="">TriggeredComputationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="UpdateAndNotifyState.html" title=""></a>
+                        <a href="UpdateAndNotifyState.html" title="">UpdateAndNotifyState</a>
+                      </li><li name="org.opalj.fpcf.seq" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="seq"></a><a id="seq:seq"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/seq/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../seq/index.html"><span class="name">seq</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.fpcf">fpcf</a></dd></dl></div>
+    </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="package value">
+      <div id="definition">
+        <div class="big-circle package">p</div>
+        <p id="owner"><a href="../../../index.html" class="extype" name="org">org</a>.<a href="../../index.html" class="extype" name="org.opalj">opalj</a>.<a href="../index.html" class="extype" name="org.opalj.fpcf">fpcf</a></p>
+        <h1>par<span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">par</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              
+            </ol>
+          </div>
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.opalj.fpcf.par.AppliedUpdateComputationEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AppliedUpdateComputationEventextendsStoreEventwithProductwithSerializable"></a><a id="AppliedUpdateComputationEvent:AppliedUpdateComputationEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/AppliedUpdateComputationEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AppliedUpdateComputationEvent.html"><span class="name">AppliedUpdateComputationEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="newEPKState">newEPKState: <span class="extype" name="org.opalj.fpcf.par.EPKState">EPKState</span></span>, <span name="result">result: <span class="extype" name="scala.Option">Option</span>[(<a href="../index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>, <a href="../index.html#SomeInterimEP=org.opalj.fpcf.InterimEP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeInterimEP">SomeInterimEP</a>, <span class="extype" name="scala.Traversable">Traversable</span>[<a href="../index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a>])]</span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.ComputedFallbackEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ComputedFallbackEventextendsStoreEventwithProductwithSerializable"></a><a id="ComputedFallbackEvent:ComputedFallbackEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/ComputedFallbackEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ComputedFallbackEvent.html"><span class="name">ComputedFallbackEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="ep">ep: <a href="../index.html#SomeFinalEP=org.opalj.fpcf.FinalEP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeFinalEP">SomeFinalEP</a></span>, <span name="why">why: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.DeferredProcessingResultEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeferredProcessingResultEventextendsStoreEventwithProductwithSerializable"></a><a id="DeferredProcessingResultEvent:DeferredProcessingResultEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/DeferredProcessingResultEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="DeferredProcessingResultEvent.html"><span class="name">DeferredProcessingResultEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="r">r: <a href="../PropertyComputationResult.html" class="extype" name="org.opalj.fpcf.PropertyComputationResult">PropertyComputationResult</a></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.EnqueuedEPKToForceEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EnqueuedEPKToForceEventextendsStoreEventwithProductwithSerializable"></a><a id="EnqueuedEPKToForceEvent:EnqueuedEPKToForceEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/EnqueuedEPKToForceEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="EnqueuedEPKToForceEvent.html"><span class="name">EnqueuedEPKToForceEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="epk">epk: <a href="../index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.EvaluatedTransformerEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EvaluatedTransformerEventextendsStoreEventwithProductwithSerializable"></a><a id="EvaluatedTransformerEvent:EvaluatedTransformerEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/EvaluatedTransformerEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="EvaluatedTransformerEvent.html"><span class="name">EvaluatedTransformerEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="source">source: <a href="../index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a></span>, <span name="target">target: <a href="../index.html#SomeFinalEP=org.opalj.fpcf.FinalEP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeFinalEP">SomeFinalEP</a></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.FinalizedPropertyEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FinalizedPropertyEventextendsStoreEventwithProductwithSerializable"></a><a id="FinalizedPropertyEvent:FinalizedPropertyEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/FinalizedPropertyEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="FinalizedPropertyEvent.html"><span class="name">FinalizedPropertyEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="oldEP">oldEP: <a href="../index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a></span>, <span name="finalEP">finalEP: <a href="../index.html#SomeFinalEP=org.opalj.fpcf.FinalEP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeFinalEP">SomeFinalEP</a></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.FirstExceptionEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FirstExceptionEventextendsStoreEventwithProductwithSerializable"></a><a id="FirstExceptionEvent:FirstExceptionEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/FirstExceptionEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="FirstExceptionEvent.html"><span class="name">FirstExceptionEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="t">t: <span class="extype" name="scala.Throwable">Throwable</span></span>, <span name="thread">thread: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="stackTrace">stackTrace: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.ForcingEPKEvaluationEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ForcingEPKEvaluationEventextendsStoreEventwithProductwithSerializable"></a><a id="ForcingEPKEvaluationEvent:ForcingEPKEvaluationEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/ForcingEPKEvaluationEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ForcingEPKEvaluationEvent.html"><span class="name">ForcingEPKEvaluationEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="epk">epk: <a href="../index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.HandlingInterimEPKsDueToSuppressionEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HandlingInterimEPKsDueToSuppressionEventextendsStoreEventwithProductwithSerializable"></a><a id="HandlingInterimEPKsDueToSuppressionEvent:HandlingInterimEPKsDueToSuppressionEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/HandlingInterimEPKsDueToSuppressionEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="HandlingInterimEPKsDueToSuppressionEvent.html"><span class="name">HandlingInterimEPKsDueToSuppressionEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="interimEPKs">interimEPKs: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="cSCCs">cSCCs: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.IdempotentUpdateEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IdempotentUpdateEventextendsStoreEventwithProductwithSerializable"></a><a id="IdempotentUpdateEvent:IdempotentUpdateEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/IdempotentUpdateEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="IdempotentUpdateEvent.html"><span class="name">IdempotentUpdateEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="newEPKState">newEPKState: <span class="extype" name="org.opalj.fpcf.par.EPKState">EPKState</span></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.ImmediatelyExecutedLazyComputationEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ImmediatelyExecutedLazyComputationEventextendsStoreEventwithProductwithSerializable"></a><a id="ImmediatelyExecutedLazyComputationEvent:ImmediatelyExecutedLazyComputationEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/ImmediatelyExecutedLazyComputationEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ImmediatelyExecutedLazyComputationEvent.html"><span class="name">ImmediatelyExecutedLazyComputationEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="newEOptionP">newEOptionP: <a href="../index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a></span>, <span name="evaluationDepth">evaluationDepth: <span class="extype" name="scala.Int">Int</span></span>, <span name="c">c: <a href="../index.html#SomePropertyComputation=org.opalj.fpcf.package.PropertyComputation[_&lt;:org.opalj.fpcf.package.Entity]" class="extmbr" name="org.opalj.fpcf.SomePropertyComputation">SomePropertyComputation</a></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.ImmediatelyRescheduledOnUpdateComputationEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ImmediatelyRescheduledOnUpdateComputationEventextendsStoreEventwithProductwithSerializable"></a><a id="ImmediatelyRescheduledOnUpdateComputationEvent:ImmediatelyRescheduledOnUpdateComputationEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/ImmediatelyRescheduledOnUpdateComputationEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ImmediatelyRescheduledOnUpdateComputationEvent.html"><span class="name">ImmediatelyRescheduledOnUpdateComputationEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="dependerEPK">dependerEPK: <a href="../index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a></span>, <span name="oldEOptionP">oldEOptionP: <a href="../index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a></span>, <span name="newEOptionP">newEOptionP: <a href="../index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a></span>, <span name="c">c: <a href="../index.html#OnUpdateContinuation=org.opalj.fpcf.package.SomeEPS=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.OnUpdateContinuation">OnUpdateContinuation</a></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.MakingIntermediateEPKStateFinalEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MakingIntermediateEPKStateFinalEventextendsStoreEventwithProductwithSerializable"></a><a id="MakingIntermediateEPKStateFinalEvent:MakingIntermediateEPKStateFinalEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/MakingIntermediateEPKStateFinalEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="MakingIntermediateEPKStateFinalEvent.html"><span class="name">MakingIntermediateEPKStateFinalEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="interimEPKState">interimEPKState: <span class="extype" name="org.opalj.fpcf.par.EPKState">EPKState</span></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PKECPropertyStoreextendsParallelPropertyStore"></a><a id="PKECPropertyStore:PKECPropertyStore"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="A concurrent implementation of the property store which executes the scheduled computations in parallel." href="PKECPropertyStore.html"><span class="name">PKECPropertyStore</span></a><span class="result"> extends <a href="ParallelPropertyStore.html" class="extype" name="org.opalj.fpcf.par.ParallelPropertyStore">ParallelPropertyStore</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A concurrent implementation of the property store which executes the scheduled computations
+in parallel.</p><div class="fullcomment"><div class="comment cmt"><p>A concurrent implementation of the property store which executes the scheduled computations
+in parallel.</p><p>The number of threads that is used for parallelizing the computation is determined by:
+<code>NumberOfThreadsForProcessingPropertyComputations</code>
+</p></div></div>
+    </li><li name="org.opalj.fpcf.par.ParTasksManager" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ParTasksManagerextendsTasksManager"></a><a id="ParTasksManager:ParTasksManager"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/ParTasksManager.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="A task manager which performs all tasks in parallel using a standard fixed thread pool." href="ParTasksManager.html"><span class="name">ParTasksManager</span></a><span class="result"> extends <a href="TasksManager.html" class="extype" name="org.opalj.fpcf.par.TasksManager">TasksManager</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A task manager which performs all tasks in parallel using a standard fixed thread pool.</p><div class="fullcomment"><div class="comment cmt"><p>A task manager which performs all tasks in parallel using a standard fixed thread pool.
+This store is intended to be used for debugging and evaluation purposes only, because it
+doesn't support any kind of &quot;smart&quot; scheduling strategies.
+</p></div></div>
+    </li><li name="org.opalj.fpcf.par.ParallelPropertyStore" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ParallelPropertyStoreextendsPropertyStore"></a><a id="ParallelPropertyStore:ParallelPropertyStore"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/ParallelPropertyStore.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="An implementation of the property store which parallelizes the computation of the properties." href="ParallelPropertyStore.html"><span class="name">ParallelPropertyStore</span></a><span class="result"> extends <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">An implementation of the property store which parallelizes the computation
+of the properties.</p>
+    </li><li name="org.opalj.fpcf.par.PreInitializationEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PreInitializationEventextendsStoreEventwithProductwithSerializable"></a><a id="PreInitializationEvent:PreInitializationEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PreInitializationEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="PreInitializationEvent.html"><span class="name">PreInitializationEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="oldEPKState">oldEPKState: <span class="extype" name="org.opalj.fpcf.par.EPKState">EPKState</span></span>, <span name="newEPKState">newEPKState: <span class="extype" name="org.opalj.fpcf.par.EPKState">EPKState</span></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.ProcessingResultEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ProcessingResultEventextendsStoreEventwithProductwithSerializable"></a><a id="ProcessingResultEvent:ProcessingResultEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/ProcessingResultEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ProcessingResultEvent.html"><span class="name">ProcessingResultEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="r">r: <a href="../PropertyComputationResult.html" class="extype" name="org.opalj.fpcf.PropertyComputationResult">PropertyComputationResult</a></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.ReachedQuiescenceEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReachedQuiescenceEventextendsStoreEventwithProductwithSerializable"></a><a id="ReachedQuiescenceEvent:ReachedQuiescenceEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/ReachedQuiescenceEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ReachedQuiescenceEvent.html"><span class="name">ReachedQuiescenceEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.RegisteredTransformerEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RegisteredTransformerEventextendsStoreEventwithProductwithSerializable"></a><a id="RegisteredTransformerEvent:RegisteredTransformerEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/RegisteredTransformerEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="RegisteredTransformerEvent.html"><span class="name">RegisteredTransformerEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="source">source: <span class="extype" name="org.opalj.fpcf.par.EPKState">EPKState</span></span>, <span name="target">target: <span class="extype" name="org.opalj.fpcf.par.EPKState">EPKState</span></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.RemovedDependerEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RemovedDependerEventextendsStoreEventwithProductwithSerializable"></a><a id="RemovedDependerEvent:RemovedDependerEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/RemovedDependerEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="RemovedDependerEvent.html"><span class="name">RemovedDependerEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="epk">epk: <a href="../index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a></span>, <span name="epkState">epkState: <span class="extype" name="org.opalj.fpcf.par.EPKState">EPKState</span></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.ScheduledLazyComputationEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScheduledLazyComputationEventextendsStoreEventwithProductwithSerializable"></a><a id="ScheduledLazyComputationEvent:ScheduledLazyComputationEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/ScheduledLazyComputationEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ScheduledLazyComputationEvent.html"><span class="name">ScheduledLazyComputationEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="epk">epk: <a href="../index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a></span>, <span name="c">c: <a href="../index.html#SomePropertyComputation=org.opalj.fpcf.package.PropertyComputation[_&lt;:org.opalj.fpcf.package.Entity]" class="extmbr" name="org.opalj.fpcf.SomePropertyComputation">SomePropertyComputation</a></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.ScheduledOnUpdateComputationEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScheduledOnUpdateComputationEventextendsStoreEventwithProductwithSerializable"></a><a id="ScheduledOnUpdateComputationEvent:ScheduledOnUpdateComputationEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/ScheduledOnUpdateComputationEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ScheduledOnUpdateComputationEvent.html"><span class="name">ScheduledOnUpdateComputationEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="dependerEPK">dependerEPK: <a href="../index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a></span>, <span name="oldEOptionP">oldEOptionP: <a href="../index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a></span>, <span name="newEOptionP">newEOptionP: <a href="../index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a></span>, <span name="c">c: <a href="../index.html#OnUpdateContinuation=org.opalj.fpcf.package.SomeEPS=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.OnUpdateContinuation">OnUpdateContinuation</a></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.ScheduledOnUpdateComputationForFinalEPEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScheduledOnUpdateComputationForFinalEPEventextendsStoreEventwithProductwithSerializable"></a><a id="ScheduledOnUpdateComputationForFinalEPEvent:ScheduledOnUpdateComputationForFinalEPEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/ScheduledOnUpdateComputationForFinalEPEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ScheduledOnUpdateComputationForFinalEPEvent.html"><span class="name">ScheduledOnUpdateComputationForFinalEPEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="dependerEPK">dependerEPK: <a href="../index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a></span>, <span name="oldEOptionP">oldEOptionP: <a href="../index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a></span>, <span name="finalEP">finalEP: <a href="../index.html#SomeFinalEP=org.opalj.fpcf.FinalEP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeFinalEP">SomeFinalEP</a></span>, <span name="c">c: <a href="../index.html#OnUpdateContinuation=org.opalj.fpcf.package.SomeEPS=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.OnUpdateContinuation">OnUpdateContinuation</a></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.SeqTasksManager" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SeqTasksManagerextendsTasksManager"></a><a id="SeqTasksManager:SeqTasksManager"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/SeqTasksManager.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="A task manager which performs all tasks sequentially; hence, turning the parallel properties store into a sequential store." href="SeqTasksManager.html"><span class="name">SeqTasksManager</span></a><span class="result"> extends <a href="TasksManager.html" class="extype" name="org.opalj.fpcf.par.TasksManager">TasksManager</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A task manager which performs all tasks sequentially; hence, turning the parallel
+properties store into a sequential store.</p><div class="fullcomment"><div class="comment cmt"><p>A task manager which performs all tasks sequentially; hence, turning the parallel
+properties store into a sequential store. This store is intended to be used for debugging
+and evaluation (i.e., the memory overhead of the parallel store when compared to the
+sequential store) purposes only.
+</p></div></div>
+    </li><li name="org.opalj.fpcf.par.SetPropertyEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SetPropertyEventextendsStoreEventwithProductwithSerializable"></a><a id="SetPropertyEvent:SetPropertyEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/SetPropertyEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="SetPropertyEvent.html"><span class="name">SetPropertyEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="epkState">epkState: <span class="extype" name="org.opalj.fpcf.par.EPKState">EPKState</span></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.StartedMainLoopEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StartedMainLoopEventextendsStoreEventwithProductwithSerializable"></a><a id="StartedMainLoopEvent:StartedMainLoopEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/StartedMainLoopEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="StartedMainLoopEvent.html"><span class="name">StartedMainLoopEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.StoreEvent" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StoreEventextendsAnyRef"></a><a id="StoreEvent:StoreEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/StoreEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="StoreEvent.html"><span class="name">StoreEvent</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.SubphaseFinalizationEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SubphaseFinalizationEventextendsStoreEventwithProductwithSerializable"></a><a id="SubphaseFinalizationEvent:SubphaseFinalizationEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/SubphaseFinalizationEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="SubphaseFinalizationEvent.html"><span class="name">SubphaseFinalizationEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="properties">properties: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.TaskManagerFactory" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TaskManagerFactoryextendsAnyRef"></a><a id="TaskManagerFactory:TaskManagerFactory"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/TaskManagerFactory.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="TaskManagerFactory.html"><span class="name">TaskManagerFactory</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.TasksManager" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TasksManagerextendsAnyRef"></a><a id="TasksManager:TasksManager"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/TasksManager.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="TasksManager.html"><span class="name">TasksManager</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.TriggeredComputationEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TriggeredComputationEventextendsStoreEventwithProductwithSerializable"></a><a id="TriggeredComputationEvent:TriggeredComputationEvent"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/TriggeredComputationEvent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="TriggeredComputationEvent.html"><span class="name">TriggeredComputationEvent</span></a><span class="params">(<span name="eventId">eventId: <span class="extype" name="scala.Int">Int</span></span>, <span name="e">e: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="pkId">pkId: <a href="../../index.html#UShort=Int" class="extmbr" name="org.opalj.UShort">UShort</a></span>, <span name="c">c: <a href="../index.html#SomePropertyComputation=org.opalj.fpcf.package.PropertyComputation[_&lt;:org.opalj.fpcf.package.Entity]" class="extmbr" name="org.opalj.fpcf.SomePropertyComputation">SomePropertyComputation</a></span>)</span><span class="result"> extends <a href="StoreEvent.html" class="extype" name="org.opalj.fpcf.par.StoreEvent">StoreEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.UpdateAndNotifyState" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="UpdateAndNotifyStateextendsAnyRef"></a><a id="UpdateAndNotifyState:UpdateAndNotifyState"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/UpdateAndNotifyState.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="UpdateAndNotifyState.html"><span class="name">UpdateAndNotifyState</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="org.opalj.fpcf.par.EPKState" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EPKState"></a><a id="EPKState:EPKState"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/EPKState$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="EPKState$.html"><span class="name">EPKState</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.NoRelevantUpdate" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NoRelevantUpdate"></a><a id="NoRelevantUpdate:NoRelevantUpdate"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/NoRelevantUpdate$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="NoRelevantUpdate$.html"><span class="name">NoRelevantUpdate</span></a><span class="result"> extends <a href="UpdateAndNotifyState.html" class="extype" name="org.opalj.fpcf.par.UpdateAndNotifyState">UpdateAndNotifyState</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PKECPropertyStore"></a><a id="PKECPropertyStore:PKECPropertyStore"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="PKECPropertyStore$.html"><span class="name">PKECPropertyStore</span></a><span class="result"> extends <a href="../PropertyStoreFactory.html" class="extype" name="org.opalj.fpcf.PropertyStoreFactory">PropertyStoreFactory</a>[<a href="PKECPropertyStore.html" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a>]</span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.ParTasksManagerConfig" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ParTasksManagerConfig"></a><a id="ParTasksManagerConfig:ParTasksManagerConfig"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/ParTasksManagerConfig$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ParTasksManagerConfig$.html"><span class="name">ParTasksManagerConfig</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.RelevantUpdateAndNotification" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RelevantUpdateAndNotification"></a><a id="RelevantUpdateAndNotification:RelevantUpdateAndNotification"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/RelevantUpdateAndNotification$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="RelevantUpdateAndNotification$.html"><span class="name">RelevantUpdateAndNotification</span></a><span class="result"> extends <a href="UpdateAndNotifyState.html" class="extype" name="org.opalj.fpcf.par.UpdateAndNotifyState">UpdateAndNotifyState</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.RelevantUpdateButNoNotification" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RelevantUpdateButNoNotification"></a><a id="RelevantUpdateButNoNotification:RelevantUpdateButNoNotification"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/RelevantUpdateButNoNotification$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="RelevantUpdateButNoNotification$.html"><span class="name">RelevantUpdateButNoNotification</span></a><span class="result"> extends <a href="UpdateAndNotifyState.html" class="extype" name="org.opalj.fpcf.par.UpdateAndNotifyState">UpdateAndNotifyState</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

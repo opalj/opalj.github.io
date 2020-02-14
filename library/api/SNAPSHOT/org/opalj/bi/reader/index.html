@@ -1,0 +1,1353 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.bi.reader</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.bi.reader" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.bi.reader" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../../index.js"></script>
+      <script type="text/javascript" src="../../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../../br/index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="../../ai/index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.bi" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bi"></a><a id="bi:bi"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Implementation of a library for parsing Java bytecode and creating arbitrary representations." href="../index.html"><span class="name">bi</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Implementation of a library for parsing Java bytecode and creating arbitrary
+representations.</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of a library for parsing Java bytecode and creating arbitrary
+representations.</p><p>OPAL's primary representation of Java byte code
+is the <a href="../../br/index.html" class="extype" name="org.opalj.br">org.opalj.br</a> representation which is defined in the
+respective package. A second representation that represents bytecode one-by-one
+is found in the <a href="../../da/index.html" class="extype" name="org.opalj.da">org.opalj.da</a> package.</p><h4> This Package </h4><p>Common constants and type definitions used across OPAL.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org.opalj">opalj</a></dd></dl></div>
+    </li><li name="org.opalj.bi.reader" visbl="pub" class="indented4 current" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reader"></a><a id="reader:reader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reader</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.bi">bi</a></dd></dl></div>
+    </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="AnnotationDefault_attributeReader.html" title="Generic parser for annotation default attributes."></a>
+                        <a href="AnnotationDefault_attributeReader.html" title="Generic parser for annotation default attributes.">AnnotationDefault_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="AnnotationsAbstractions.html" title="Annotation related definitions."></a>
+                        <a href="AnnotationsAbstractions.html" title="Annotation related definitions.">AnnotationsAbstractions</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="AnnotationsReader.html" title="Generic parser to parse a list of annotations."></a>
+                        <a href="AnnotationsReader.html" title="Generic parser to parse a list of annotations.">AnnotationsReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="AttributeReader.html" title="Generic infrastructure used by specific parsers of class file attributes to register with the overall framework (org.opalj.bi.reader.AttributesReader)."></a>
+                        <a href="AttributeReader.html" title="Generic infrastructure used by specific parsers of class file attributes to register with the overall framework (org.opalj.bi.reader.AttributesReader).">AttributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="AttributesAbstractions.html" title="Defines common abstractions over class file attributes."></a>
+                        <a href="AttributesAbstractions.html" title="Defines common abstractions over class file attributes.">AttributesAbstractions</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="AttributesReader.html" title="Trait that implements a template method to read in the attributes of a class, method_info, field_info or code_attribute structure."></a>
+                        <a href="AttributesReader.html" title="Trait that implements a template method to read in the attributes of a class, method_info, field_info or code_attribute structure.">AttributesReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="BootstrapMethods_attributeReader.html" title="Template method to read the (Java 7) BootstrapMethods attribute."></a>
+                        <a href="BootstrapMethods_attributeReader.html" title="Template method to read the (Java 7) BootstrapMethods attribute.">BootstrapMethods_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="ClassFileReader$.html" title="Helper methods related to reading class files."></a>
+                        <a class="trait" href="ClassFileReader.html" title="Implements the template method to read in a Java class file."></a>
+                        <a href="ClassFileReader.html" title="Implements the template method to read in a Java class file.">ClassFileReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ClassFileReaderConfiguration.html" title="Defines various settings related to reading/processing class files."></a>
+                        <a href="ClassFileReaderConfiguration.html" title="Defines various settings related to reading/processing class files.">ClassFileReaderConfiguration</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="CodeReader.html" title="Naive Code reader that just reads in the code array as is - without parsing it."></a>
+                        <a href="CodeReader.html" title="Naive Code reader that just reads in the code array as is - without parsing it.">CodeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Code_attributeReader.html" title="Defines a template method to read in the code attribute."></a>
+                        <a href="Code_attributeReader.html" title="Defines a template method to read in the code attribute.">Code_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="CompactLineNumberTable_attributeReader.html" title="Generic parser for the LineNumberTable attribute that does not unpack the line number table."></a>
+                        <a href="CompactLineNumberTable_attributeReader.html" title="Generic parser for the LineNumberTable attribute that does not unpack the line number table.">CompactLineNumberTable_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ConstantPoolEntry.html" title="Common interface of all entries in the constant pool."></a>
+                        <a href="ConstantPoolEntry.html" title="Common interface of all entries in the constant pool.">ConstantPoolEntry</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ConstantValue_attributeReader.html" title="Defines a template method to read in a constant value attribute."></a>
+                        <a href="ConstantValue_attributeReader.html" title="Defines a template method to read in a constant value attribute.">ConstantValue_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Constant_PoolAbstractions.html" title="Constant pool related type definitions."></a>
+                        <a href="Constant_PoolAbstractions.html" title="Constant pool related type definitions.">Constant_PoolAbstractions</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Constant_PoolReader.html" title="Defines a template method to read in a class file's constant pool."></a>
+                        <a href="Constant_PoolReader.html" title="Defines a template method to read in a class file's constant pool.">Constant_PoolReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Deprecated_attributeReader.html" title="Generic infrastructure for reading the &quot;@deprecated&quot; attribute."></a>
+                        <a href="Deprecated_attributeReader.html" title="Generic infrastructure for reading the &quot;@deprecated&quot; attribute.">Deprecated_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ElementValuePairsReader.html" title="Generic parser for an annotation's element-value pairs."></a>
+                        <a href="ElementValuePairsReader.html" title="Generic parser for an annotation's element-value pairs.">ElementValuePairsReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="EnclosingMethod_attributeReader.html" title="Generic parser for the enclosing method attribute."></a>
+                        <a href="EnclosingMethod_attributeReader.html" title="Generic parser for the enclosing method attribute.">EnclosingMethod_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Exceptions_attributeReader.html" title="Generic parser for a code block's exceptions attribute."></a>
+                        <a href="Exceptions_attributeReader.html" title="Generic parser for a code block's exceptions attribute.">Exceptions_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="FieldsReader.html" title=""></a>
+                        <a href="FieldsReader.html" title="">FieldsReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="InnerClasses_attributeReader.html" title="Generic parser for the inner classes attribute."></a>
+                        <a href="InnerClasses_attributeReader.html" title="Generic parser for the inner classes attribute.">InnerClasses_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="LineNumberTable_attributeReader.html" title="Generic parser for the LineNumberTable attribute."></a>
+                        <a href="LineNumberTable_attributeReader.html" title="Generic parser for the LineNumberTable attribute.">LineNumberTable_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="LocalVariableTable_attributeReader.html" title="Generic parser for the local variable table attribute."></a>
+                        <a href="LocalVariableTable_attributeReader.html" title="Generic parser for the local variable table attribute.">LocalVariableTable_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="LocalVariableTypeTable_attributeReader.html" title="Generic parser for the local variable type table attribute."></a>
+                        <a href="LocalVariableTypeTable_attributeReader.html" title="Generic parser for the local variable type table attribute.">LocalVariableTypeTable_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="MethodParameters_attributeReader.html" title="A generic reader for Java 8's MethodParameters attribute."></a>
+                        <a href="MethodParameters_attributeReader.html" title="A generic reader for Java 8's MethodParameters attribute.">MethodParameters_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="MethodsReader.html" title="Defines a template method to read in a class file's Method_info structure."></a>
+                        <a href="MethodsReader.html" title="Defines a template method to read in a class file's Method_info structure.">MethodsReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ModuleMainClass_attributeReader.html" title="Generic parser for the ModuleMainClass attribute (Java 9)."></a>
+                        <a href="ModuleMainClass_attributeReader.html" title="Generic parser for the ModuleMainClass attribute (Java 9).">ModuleMainClass_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ModulePackages_attributeReader.html" title="Generic parser for the ModulePackages attribute (Java 9)."></a>
+                        <a href="ModulePackages_attributeReader.html" title="Generic parser for the ModulePackages attribute (Java 9).">ModulePackages_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Module_attributeReader.html" title="Generic parser for the Module attribute (Java 9)."></a>
+                        <a href="Module_attributeReader.html" title="Generic parser for the Module attribute (Java 9).">Module_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ParametersAnnotationsReader.html" title="Generic parser for a method parameter's visible or invisible annotations."></a>
+                        <a href="ParametersAnnotationsReader.html" title="Generic parser for a method parameter's visible or invisible annotations.">ParametersAnnotationsReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RuntimeInvisibleAnnotations_attributeReader.html" title="Generic parser for the RuntimeInvisibleAnnotations attribute."></a>
+                        <a href="RuntimeInvisibleAnnotations_attributeReader.html" title="Generic parser for the RuntimeInvisibleAnnotations attribute.">RuntimeInvisibleAnnotations_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RuntimeInvisibleParameterAnnotations_attributeReader.html" title="Generic parser for the RuntimeInvisibleParameterAnnotations attribute."></a>
+                        <a href="RuntimeInvisibleParameterAnnotations_attributeReader.html" title="Generic parser for the RuntimeInvisibleParameterAnnotations attribute.">RuntimeInvisibleParameterAnnotations_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RuntimeInvisibleTypeAnnotations_attributeReader.html" title="Parser for Java 8's RuntimeInvisibleTypeAnnotations attribute."></a>
+                        <a href="RuntimeInvisibleTypeAnnotations_attributeReader.html" title="Parser for Java 8's RuntimeInvisibleTypeAnnotations attribute.">RuntimeInvisibleTypeAnnotations_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RuntimeVisibleAnnotations_attributeReader.html" title="Generic parser for RuntimeVisibleAnnotations attribute."></a>
+                        <a href="RuntimeVisibleAnnotations_attributeReader.html" title="Generic parser for RuntimeVisibleAnnotations attribute.">RuntimeVisibleAnnotations_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RuntimeVisibleParameterAnnotations_attributeReader.html" title="Generic parser for RuntimeVisibleParameterAnnotations attributes."></a>
+                        <a href="RuntimeVisibleParameterAnnotations_attributeReader.html" title="Generic parser for RuntimeVisibleParameterAnnotations attributes.">RuntimeVisibleParameterAnnotations_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RuntimeVisibleTypeAnnotations_attributeReader.html" title="Generic parser for Java 8's RuntimeVisibleTypeAnnotations attribute."></a>
+                        <a href="RuntimeVisibleTypeAnnotations_attributeReader.html" title="Generic parser for Java 8's RuntimeVisibleTypeAnnotations attribute.">RuntimeVisibleTypeAnnotations_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Signature_attributeReader.html" title="Implements the template method to read signature attributes."></a>
+                        <a href="Signature_attributeReader.html" title="Implements the template method to read signature attributes.">Signature_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="SkipUnknown_attributeReader.html" title="Template method to skip an unknown attribute."></a>
+                        <a href="SkipUnknown_attributeReader.html" title="Template method to skip an unknown attribute.">SkipUnknown_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="SourceDebugExtension_attributeReader.html" title="Template method to read in the SourceDebugExtension attribute."></a>
+                        <a href="SourceDebugExtension_attributeReader.html" title="Template method to read in the SourceDebugExtension attribute.">SourceDebugExtension_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="SourceFile_attributeReader.html" title="The SourceFile attribute is an optional attribute in the attributes table of a ClassFile structure."></a>
+                        <a href="SourceFile_attributeReader.html" title="The SourceFile attribute is an optional attribute in the attributes table of a ClassFile structure.">SourceFile_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="StackMapFrameReader.html" title=""></a>
+                        <a href="StackMapFrameReader.html" title="">StackMapFrameReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="StackMapTable_attributeReader.html" title="Implementation of a template method to read in the StackMapTable attribute."></a>
+                        <a href="StackMapTable_attributeReader.html" title="Implementation of a template method to read in the StackMapTable attribute.">StackMapTable_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Synthetic_attributeReader.html" title="The Synthetic attribute is an attribute in the attributes table of a ClassFile, field_info or method_info structure."></a>
+                        <a href="Synthetic_attributeReader.html" title="The Synthetic attribute is an attribute in the attributes table of a ClassFile, field_info or method_info structure.">Synthetic_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="TypeAnnotationPathReader.html" title="Generic parser for the type_path field of type annotations."></a>
+                        <a href="TypeAnnotationPathReader.html" title="Generic parser for the type_path field of type annotations.">TypeAnnotationPathReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="TypeAnnotationTargetReader.html" title="Generic parser for the target_type and target_info fields of type annotations."></a>
+                        <a href="TypeAnnotationTargetReader.html" title="Generic parser for the target_type and target_info fields of type annotations.">TypeAnnotationTargetReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="TypeAnnotationsReader.html" title="Generic parser for type annotations."></a>
+                        <a href="TypeAnnotationsReader.html" title="Generic parser for type annotations.">TypeAnnotationsReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Unknown_attributeAbstractions.html" title=""></a>
+                        <a href="Unknown_attributeAbstractions.html" title="">Unknown_attributeAbstractions</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Unknown_attributeReader.html" title="A generic reader that can read attributes that are neither defined by the specification nor by some additional user supplied code."></a>
+                        <a href="Unknown_attributeReader.html" title="A generic reader that can read attributes that are neither defined by the specification nor by some additional user supplied code.">Unknown_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="VerificationTypeInfoItem$.html" title=""></a>
+                        <a href="VerificationTypeInfoItem$.html" title="">VerificationTypeInfoItem</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="VerificationTypeInfoReader.html" title=""></a>
+                        <a href="VerificationTypeInfoReader.html" title="">VerificationTypeInfoReader</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="package value">
+      <div id="definition">
+        <div class="big-circle package">p</div>
+        <p id="owner"><a href="../../../index.html" class="extype" name="org">org</a>.<a href="../../index.html" class="extype" name="org.opalj">opalj</a>.<a href="../index.html" class="extype" name="org.opalj.bi">bi</a></p>
+        <h1>reader<span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reader</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              
+            </ol>
+          </div>
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.opalj.bi.reader.AnnotationDefault_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AnnotationDefault_attributeReaderextendsAttributeReader"></a><a id="AnnotationDefault_attributeReader:AnnotationDefault_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/AnnotationDefault_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for annotation default attributes." href="AnnotationDefault_attributeReader.html"><span class="name">AnnotationDefault_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for <i>annotation default</i> attributes.</p>
+    </li><li name="org.opalj.bi.reader.AnnotationsAbstractions" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AnnotationsAbstractionsextendsConstant_PoolAbstractions"></a><a id="AnnotationsAbstractions:AnnotationsAbstractions"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/AnnotationsAbstractions.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Annotation related definitions." href="AnnotationsAbstractions.html"><span class="name">AnnotationsAbstractions</span></a><span class="result"> extends <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Annotation related definitions.</p>
+    </li><li name="org.opalj.bi.reader.AnnotationsReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="AnnotationsReaderextendsAnnotationsAbstractions"></a><a id="AnnotationsReader:AnnotationsReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/AnnotationsReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser to parse a list of annotations." href="AnnotationsReader.html"><span class="name">AnnotationsReader</span></a><span class="result"> extends <a href="AnnotationsAbstractions.html" class="extype" name="org.opalj.bi.reader.AnnotationsAbstractions">AnnotationsAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser to parse a list of annotations.</p><div class="fullcomment"><div class="comment cmt"><p>Generic parser to parse a list of annotations. This reader is intended to be used in
+conjunction with the Runtime(In)Visible(Parameter)Annotations_attributeReaders.
+</p></div></div>
+    </li><li name="org.opalj.bi.reader.AttributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AttributeReaderextendsConstant_PoolAbstractionswithAttributesAbstractions"></a><a id="AttributeReader:AttributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/AttributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic infrastructure used by specific parsers of class file attributes to register with the overall framework (org.opalj.bi.reader.AttributesReader)." href="AttributeReader.html"><span class="name">AttributeReader</span></a><span class="result"> extends <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a> with <a href="AttributesAbstractions.html" class="extype" name="org.opalj.bi.reader.AttributesAbstractions">AttributesAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic infrastructure used by specific parsers of class file attributes to register
+with the overall framework (<a href="AttributesReader.html" class="extype" name="org.opalj.bi.reader.AttributesReader">org.opalj.bi.reader.AttributesReader</a>).</p>
+    </li><li name="org.opalj.bi.reader.AttributesAbstractions" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AttributesAbstractionsextendsAnyRef"></a><a id="AttributesAbstractions:AttributesAbstractions"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/AttributesAbstractions.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines common abstractions over class file attributes." href="AttributesAbstractions.html"><span class="name">AttributesAbstractions</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Defines common abstractions over class file attributes.</p>
+    </li><li name="org.opalj.bi.reader.AttributesReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AttributesReaderextendsAttributesAbstractionswithConstant_PoolAbstractionswithUnknown_attributeAbstractions"></a><a id="AttributesReader:AttributesReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/AttributesReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Trait that implements a template method to read in the attributes of a class, method_info, field_info or code_attribute structure." href="AttributesReader.html"><span class="name">AttributesReader</span></a><span class="result"> extends <a href="AttributesAbstractions.html" class="extype" name="org.opalj.bi.reader.AttributesAbstractions">AttributesAbstractions</a> with <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a> with <a href="Unknown_attributeAbstractions.html" class="extype" name="org.opalj.bi.reader.Unknown_attributeAbstractions">Unknown_attributeAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Trait that implements a template method to read in the attributes of
+a class, method_info, field_info or code_attribute structure.</p>
+    </li><li name="org.opalj.bi.reader.BootstrapMethods_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="BootstrapMethods_attributeReaderextendsAttributeReader"></a><a id="BootstrapMethods_attributeReader:BootstrapMethods_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/BootstrapMethods_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Template method to read the (Java 7) BootstrapMethods attribute." href="BootstrapMethods_attributeReader.html"><span class="name">BootstrapMethods_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Template method to read the (Java 7) <i>BootstrapMethods</i> attribute.</p><div class="fullcomment"><div class="comment cmt"><p>Template method to read the (Java 7) <i>BootstrapMethods</i> attribute.</p><p><b>From the Specification</b>
+The <code>BootstrapMethods</code> attribute is a variable-length attribute in the
+attributes table of a <code>ClassFile</code> structure. The <code>BootstrapMethods</code> attribute
+records bootstrap method specifiers referenced by <code>invokedynamic</code> instructions.
+</p></div></div>
+    </li><li name="org.opalj.bi.reader.ClassFileReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ClassFileReaderextendsClassFileReaderConfigurationwithConstant_PoolAbstractions"></a><a id="ClassFileReader:ClassFileReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/ClassFileReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Implements the template method to read in a Java class file." href="ClassFileReader.html"><span class="name">ClassFileReader</span></a><span class="result"> extends <a href="ClassFileReaderConfiguration.html" class="extype" name="org.opalj.bi.reader.ClassFileReaderConfiguration">ClassFileReaderConfiguration</a> with <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Implements the template method to read in a Java class file.</p><div class="fullcomment"><div class="comment cmt"><p>Implements the template method to read in a Java class file. Additionally,
+several convenience methods are defined to read in class files from various
+sources (Streams, Files, JAR archives).</p><p>This library supports class files from version 45 (Java 1.1) up to version 54 (Java 10).</p><h4>Notes for Implementors</h4><p>Reading of the class file's major structures: the constant pool, fields, methods
+and the attributes is delegated to corresponding readers.
+This enables a very high-level of adaptability.</p><p>For further details see the JVM Specification: The ClassFile Structure.
+</p></div></div>
+    </li><li name="org.opalj.bi.reader.ClassFileReaderConfiguration" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ClassFileReaderConfigurationextendsAnyRef"></a><a id="ClassFileReaderConfiguration:ClassFileReaderConfiguration"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/ClassFileReaderConfiguration.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines various settings related to reading/processing class files." href="ClassFileReaderConfiguration.html"><span class="name">ClassFileReaderConfiguration</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Defines various settings related to reading/processing class files.</p><div class="fullcomment"><div class="comment cmt"><p>Defines various settings related to reading/processing class files. To change
+the default configuration, override the respective <code>val</code> using <b>early initializers</b>!
+</p></div><dl class="attributes block"> <div class="block">Example:
+               <ol><li class="cmt"><p></p><pre><span class="kw">class</span> ConfiguredFramework <span class="kw">extends</span> {
+     <span class="kw">override</span> <span class="kw">implicit</span> <span class="kw">val</span> logContext: LogContext = theLogContext
+     <span class="kw">override</span> <span class="kw">implicit</span> <span class="kw">val</span> config: Config = theConfig
+} <span class="kw">with</span> Java9FrameworkWithInvokedynamicSupportAndCaching(cache)
+<span class="kw">new</span> ConfiguredFramework</pre></li></ol>
+            </div></dl></div>
+    </li><li name="org.opalj.bi.reader.CodeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CodeReaderextendsConstant_PoolAbstractions"></a><a id="CodeReader:CodeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/CodeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Naive Code reader that just reads in the code array as is - without parsing it." href="CodeReader.html"><span class="name">CodeReader</span></a><span class="result"> extends <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Naive Code reader that just reads in the code array as is - without parsing it.</p>
+    </li><li name="org.opalj.bi.reader.Code_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Code_attributeReaderextendsAttributeReader"></a><a id="Code_attributeReader:Code_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/Code_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines a template method to read in the code attribute." href="Code_attributeReader.html"><span class="name">Code_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Defines a template method to read in the code attribute.</p><div class="fullcomment"><div class="comment cmt"><p>Defines a template method to read in the code attribute.</p><p><b>From the Specification</b>
+The Code attribute is a variable-length attribute in the attributes table
+of a method_info structure.
+</p></div></div>
+    </li><li name="org.opalj.bi.reader.CompactLineNumberTable_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CompactLineNumberTable_attributeReaderextendsAttributeReader"></a><a id="CompactLineNumberTable_attributeReader:CompactLineNumberTable_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/CompactLineNumberTable_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for the LineNumberTable attribute that does not unpack the line number table." href="CompactLineNumberTable_attributeReader.html"><span class="name">CompactLineNumberTable_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for the <i>LineNumberTable</i> attribute that does not unpack the
+line number table.</p>
+    </li><li name="org.opalj.bi.reader.ConstantPoolEntry" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ConstantPoolEntryextendsAnyRef"></a><a id="ConstantPoolEntry:ConstantPoolEntry"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/ConstantPoolEntry.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Common interface of all entries in the constant pool." href="ConstantPoolEntry.html"><span class="name">ConstantPoolEntry</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Common interface of all entries in the constant pool.</p>
+    </li><li name="org.opalj.bi.reader.ConstantValue_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ConstantValue_attributeReaderextendsAttributeReader"></a><a id="ConstantValue_attributeReader:ConstantValue_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/ConstantValue_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines a template method to read in a constant value attribute." href="ConstantValue_attributeReader.html"><span class="name">ConstantValue_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Defines a template method to read in a constant value attribute.</p><div class="fullcomment"><div class="comment cmt"><p>Defines a template method to read in a constant value attribute.</p><p><b>From the Specification</b></p><p>The ConstantValue attribute is a fixed-length attribute in the attributes
+table of a field_info structure.</p><p><pre>
+ConstantValue_attribute {
+ u2 attribute_name_index;
+ u4 attribute_length;
+ u2 constantvalue_index;
+}
+</pre>
+</p></div></div>
+    </li><li name="org.opalj.bi.reader.Constant_PoolAbstractions" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Constant_PoolAbstractionsextendsAnyRef"></a><a id="Constant_PoolAbstractions:Constant_PoolAbstractions"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/Constant_PoolAbstractions.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Constant pool related type definitions." href="Constant_PoolAbstractions.html"><span class="name">Constant_PoolAbstractions</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Constant pool related type definitions.</p>
+    </li><li name="org.opalj.bi.reader.Constant_PoolReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Constant_PoolReaderextendsConstant_PoolAbstractions"></a><a id="Constant_PoolReader:Constant_PoolReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/Constant_PoolReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines a template method to read in a class file's constant pool." href="Constant_PoolReader.html"><span class="name">Constant_PoolReader</span></a><span class="result"> extends <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Defines a template method to read in a class file's constant pool.</p>
+    </li><li name="org.opalj.bi.reader.Deprecated_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Deprecated_attributeReaderextendsAttributeReader"></a><a id="Deprecated_attributeReader:Deprecated_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/Deprecated_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic infrastructure for reading the &quot;@deprecated&quot; attribute." href="Deprecated_attributeReader.html"><span class="name">Deprecated_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic infrastructure for reading the &quot;@deprecated&quot; attribute.</p>
+    </li><li name="org.opalj.bi.reader.ElementValuePairsReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ElementValuePairsReaderextendsAnnotationsAbstractions"></a><a id="ElementValuePairsReader:ElementValuePairsReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/ElementValuePairsReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for an annotation's element-value pairs." href="ElementValuePairsReader.html"><span class="name">ElementValuePairsReader</span></a><span class="result"> extends <a href="AnnotationsAbstractions.html" class="extype" name="org.opalj.bi.reader.AnnotationsAbstractions">AnnotationsAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for an annotation's element-value pairs.</p>
+    </li><li name="org.opalj.bi.reader.EnclosingMethod_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EnclosingMethod_attributeReaderextendsAttributeReader"></a><a id="EnclosingMethod_attributeReader:EnclosingMethod_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/EnclosingMethod_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for the enclosing method attribute." href="EnclosingMethod_attributeReader.html"><span class="name">EnclosingMethod_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for the <i>enclosing method</i> attribute.</p>
+    </li><li name="org.opalj.bi.reader.Exceptions_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Exceptions_attributeReaderextendsAttributeReader"></a><a id="Exceptions_attributeReader:Exceptions_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/Exceptions_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for a code block's exceptions attribute." href="Exceptions_attributeReader.html"><span class="name">Exceptions_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for a code block's <i>exceptions</i> attribute.</p>
+    </li><li name="org.opalj.bi.reader.FieldsReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FieldsReaderextendsConstant_PoolAbstractions"></a><a id="FieldsReader:FieldsReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/FieldsReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="FieldsReader.html"><span class="name">FieldsReader</span></a><span class="result"> extends <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.bi.reader.InnerClasses_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InnerClasses_attributeReaderextendsAttributeReader"></a><a id="InnerClasses_attributeReader:InnerClasses_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/InnerClasses_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for the inner classes attribute." href="InnerClasses_attributeReader.html"><span class="name">InnerClasses_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for the <i>inner classes</i> attribute.</p>
+    </li><li name="org.opalj.bi.reader.LineNumberTable_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LineNumberTable_attributeReaderextendsAttributeReader"></a><a id="LineNumberTable_attributeReader:LineNumberTable_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/LineNumberTable_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for the LineNumberTable attribute." href="LineNumberTable_attributeReader.html"><span class="name">LineNumberTable_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for the <i>LineNumberTable</i> attribute.</p>
+    </li><li name="org.opalj.bi.reader.LocalVariableTable_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LocalVariableTable_attributeReaderextendsAttributeReader"></a><a id="LocalVariableTable_attributeReader:LocalVariableTable_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/LocalVariableTable_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for the local variable table attribute." href="LocalVariableTable_attributeReader.html"><span class="name">LocalVariableTable_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for the <i>local variable table</i> attribute.</p>
+    </li><li name="org.opalj.bi.reader.LocalVariableTypeTable_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LocalVariableTypeTable_attributeReaderextendsAttributeReader"></a><a id="LocalVariableTypeTable_attributeReader:LocalVariableTypeTable_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/LocalVariableTypeTable_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for the local variable type table attribute." href="LocalVariableTypeTable_attributeReader.html"><span class="name">LocalVariableTypeTable_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for the local variable type table attribute.</p>
+    </li><li name="org.opalj.bi.reader.MethodParameters_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MethodParameters_attributeReaderextendsAttributeReader"></a><a id="MethodParameters_attributeReader:MethodParameters_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/MethodParameters_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="A generic reader for Java 8's MethodParameters attribute." href="MethodParameters_attributeReader.html"><span class="name">MethodParameters_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A generic reader for Java 8's <code>MethodParameters</code> attribute.</p>
+    </li><li name="org.opalj.bi.reader.MethodsReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MethodsReaderextendsConstant_PoolAbstractions"></a><a id="MethodsReader:MethodsReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/MethodsReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines a template method to read in a class file's Method_info structure." href="MethodsReader.html"><span class="name">MethodsReader</span></a><span class="result"> extends <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Defines a template method to read in a class file's Method_info structure.</p>
+    </li><li name="org.opalj.bi.reader.ModuleMainClass_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ModuleMainClass_attributeReaderextendsAttributeReader"></a><a id="ModuleMainClass_attributeReader:ModuleMainClass_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/ModuleMainClass_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for the ModuleMainClass attribute (Java 9)." href="ModuleMainClass_attributeReader.html"><span class="name">ModuleMainClass_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for the <i>ModuleMainClass</i> attribute (Java 9).</p>
+    </li><li name="org.opalj.bi.reader.ModulePackages_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ModulePackages_attributeReaderextendsAttributeReader"></a><a id="ModulePackages_attributeReader:ModulePackages_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/ModulePackages_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for the ModulePackages attribute (Java 9)." href="ModulePackages_attributeReader.html"><span class="name">ModulePackages_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for the <i>ModulePackages</i> attribute (Java 9).</p>
+    </li><li name="org.opalj.bi.reader.Module_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Module_attributeReaderextendsAttributeReader"></a><a id="Module_attributeReader:Module_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/Module_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for the Module attribute (Java 9)." href="Module_attributeReader.html"><span class="name">Module_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for the <i>Module</i> attribute (Java 9).</p>
+    </li><li name="org.opalj.bi.reader.ParametersAnnotationsReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ParametersAnnotationsReaderextendsAnnotationsAbstractions"></a><a id="ParametersAnnotationsReader:ParametersAnnotationsReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/ParametersAnnotationsReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for a method parameter's visible or invisible annotations." href="ParametersAnnotationsReader.html"><span class="name">ParametersAnnotationsReader</span></a><span class="result"> extends <a href="AnnotationsAbstractions.html" class="extype" name="org.opalj.bi.reader.AnnotationsAbstractions">AnnotationsAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for a method parameter's visible or invisible annotations.</p>
+    </li><li name="org.opalj.bi.reader.RuntimeInvisibleAnnotations_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RuntimeInvisibleAnnotations_attributeReaderextendsAttributeReader"></a><a id="RuntimeInvisibleAnnotations_attributeReader:RuntimeInvisibleAnnotations_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/RuntimeInvisibleAnnotations_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for the RuntimeInvisibleAnnotations attribute." href="RuntimeInvisibleAnnotations_attributeReader.html"><span class="name">RuntimeInvisibleAnnotations_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for the <code>RuntimeInvisibleAnnotations</code> attribute.</p>
+    </li><li name="org.opalj.bi.reader.RuntimeInvisibleParameterAnnotations_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RuntimeInvisibleParameterAnnotations_attributeReaderextendsAttributeReader"></a><a id="RuntimeInvisibleParameterAnnotations_attributeReader:RuntimeInvisibleParameterAnnotations_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/RuntimeInvisibleParameterAnnotations_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for the RuntimeInvisibleParameterAnnotations attribute." href="RuntimeInvisibleParameterAnnotations_attributeReader.html"><span class="name">RuntimeInvisibleParameterAnnotations_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for the <code>RuntimeInvisibleParameterAnnotations</code> attribute.</p>
+    </li><li name="org.opalj.bi.reader.RuntimeInvisibleTypeAnnotations_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RuntimeInvisibleTypeAnnotations_attributeReaderextendsAttributeReader"></a><a id="RuntimeInvisibleTypeAnnotations_attributeReader:RuntimeInvisibleTypeAnnotations_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/RuntimeInvisibleTypeAnnotations_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Parser for Java 8's RuntimeInvisibleTypeAnnotations attribute." href="RuntimeInvisibleTypeAnnotations_attributeReader.html"><span class="name">RuntimeInvisibleTypeAnnotations_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Parser for Java 8's <code>RuntimeInvisibleTypeAnnotations</code> attribute.</p>
+    </li><li name="org.opalj.bi.reader.RuntimeVisibleAnnotations_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RuntimeVisibleAnnotations_attributeReaderextendsAttributeReader"></a><a id="RuntimeVisibleAnnotations_attributeReader:RuntimeVisibleAnnotations_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/RuntimeVisibleAnnotations_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for RuntimeVisibleAnnotations attribute." href="RuntimeVisibleAnnotations_attributeReader.html"><span class="name">RuntimeVisibleAnnotations_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for <code>RuntimeVisibleAnnotations</code> attribute.</p>
+    </li><li name="org.opalj.bi.reader.RuntimeVisibleParameterAnnotations_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RuntimeVisibleParameterAnnotations_attributeReaderextendsAttributeReader"></a><a id="RuntimeVisibleParameterAnnotations_attributeReader:RuntimeVisibleParameterAnnotations_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/RuntimeVisibleParameterAnnotations_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for RuntimeVisibleParameterAnnotations attributes." href="RuntimeVisibleParameterAnnotations_attributeReader.html"><span class="name">RuntimeVisibleParameterAnnotations_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for <code>RuntimeVisibleParameterAnnotations</code> attributes.</p>
+    </li><li name="org.opalj.bi.reader.RuntimeVisibleTypeAnnotations_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RuntimeVisibleTypeAnnotations_attributeReaderextendsAttributeReader"></a><a id="RuntimeVisibleTypeAnnotations_attributeReader:RuntimeVisibleTypeAnnotations_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/RuntimeVisibleTypeAnnotations_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for Java 8's RuntimeVisibleTypeAnnotations attribute." href="RuntimeVisibleTypeAnnotations_attributeReader.html"><span class="name">RuntimeVisibleTypeAnnotations_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for Java 8's <code>RuntimeVisibleTypeAnnotations</code> attribute.</p>
+    </li><li name="org.opalj.bi.reader.Signature_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Signature_attributeReaderextendsAttributeReaderwithClassFileReaderConfiguration"></a><a id="Signature_attributeReader:Signature_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/Signature_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Implements the template method to read signature attributes." href="Signature_attributeReader.html"><span class="name">Signature_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a> with <a href="ClassFileReaderConfiguration.html" class="extype" name="org.opalj.bi.reader.ClassFileReaderConfiguration">ClassFileReaderConfiguration</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Implements the template method to read signature attributes.</p><div class="fullcomment"><div class="comment cmt"><p>Implements the template method to read signature attributes.</p><p>The Signature attribute is an optional attribute in the
+attributes table of a ClassFile, field_info or method_info structure.
+</p></div></div>
+    </li><li name="org.opalj.bi.reader.SkipUnknown_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="SkipUnknown_attributeReaderextendsUnknown_attributeAbstractionswithClassFileReaderConfiguration"></a><a id="SkipUnknown_attributeReader:SkipUnknown_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/SkipUnknown_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Template method to skip an unknown attribute." href="SkipUnknown_attributeReader.html"><span class="name">SkipUnknown_attributeReader</span></a><span class="result"> extends <a href="Unknown_attributeAbstractions.html" class="extype" name="org.opalj.bi.reader.Unknown_attributeAbstractions">Unknown_attributeAbstractions</a> with <a href="ClassFileReaderConfiguration.html" class="extype" name="org.opalj.bi.reader.ClassFileReaderConfiguration">ClassFileReaderConfiguration</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Template method to skip an unknown attribute.</p><div class="fullcomment"><div class="comment cmt"><p>Template method to skip an unknown attribute. I.e., the information will
+not be represented at runtime.
+</p></div></div>
+    </li><li name="org.opalj.bi.reader.SourceDebugExtension_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="SourceDebugExtension_attributeReaderextendsAttributeReader"></a><a id="SourceDebugExtension_attributeReader:SourceDebugExtension_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/SourceDebugExtension_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Template method to read in the SourceDebugExtension attribute." href="SourceDebugExtension_attributeReader.html"><span class="name">SourceDebugExtension_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Template method to read in the SourceDebugExtension attribute.</p><div class="fullcomment"><div class="comment cmt"><p>Template method to read in the SourceDebugExtension attribute.</p><p>The SourceDebugExtension attribute is an optional attribute in the
+attributes table of a ClassFile structure.
+</p></div></div>
+    </li><li name="org.opalj.bi.reader.SourceFile_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SourceFile_attributeReaderextendsAttributeReader"></a><a id="SourceFile_attributeReader:SourceFile_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/SourceFile_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="The SourceFile attribute is an optional attribute in the attributes table of a ClassFile structure." href="SourceFile_attributeReader.html"><span class="name">SourceFile_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The SourceFile attribute is an optional attribute in the
+attributes table of a ClassFile structure.</p>
+    </li><li name="org.opalj.bi.reader.StackMapFrameReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StackMapFrameReaderextendsConstant_PoolAbstractions"></a><a id="StackMapFrameReader:StackMapFrameReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/StackMapFrameReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="StackMapFrameReader.html"><span class="name">StackMapFrameReader</span></a><span class="result"> extends <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.bi.reader.StackMapTable_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StackMapTable_attributeReaderextendsAttributeReader"></a><a id="StackMapTable_attributeReader:StackMapTable_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/StackMapTable_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Implementation of a template method to read in the StackMapTable attribute." href="StackMapTable_attributeReader.html"><span class="name">StackMapTable_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Implementation of a template method to read in the StackMapTable attribute.</p>
+    </li><li name="org.opalj.bi.reader.Synthetic_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Synthetic_attributeReaderextendsAttributeReader"></a><a id="Synthetic_attributeReader:Synthetic_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/Synthetic_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="The Synthetic attribute is an attribute in the attributes table of a ClassFile, field_info or method_info structure." href="Synthetic_attributeReader.html"><span class="name">Synthetic_attributeReader</span></a><span class="result"> extends <a href="AttributeReader.html" class="extype" name="org.opalj.bi.reader.AttributeReader">AttributeReader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The Synthetic attribute is an attribute in the attributes table
+of a ClassFile, field_info or method_info structure.</p>
+    </li><li name="org.opalj.bi.reader.TypeAnnotationPathReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TypeAnnotationPathReaderextendsConstant_PoolAbstractions"></a><a id="TypeAnnotationPathReader:TypeAnnotationPathReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/TypeAnnotationPathReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for the type_path field of type annotations." href="TypeAnnotationPathReader.html"><span class="name">TypeAnnotationPathReader</span></a><span class="result"> extends <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for the <code>type_path</code> field of type annotations.</p><div class="fullcomment"><div class="comment cmt"><p>Generic parser for the <code>type_path</code> field of type annotations. This
+reader is intended to be used in conjunction with the
+<a href="TypeAnnotationsReader.html" class="extype" name="org.opalj.bi.reader.TypeAnnotationsReader">TypeAnnotationsReader</a>.
+</p></div></div>
+    </li><li name="org.opalj.bi.reader.TypeAnnotationTargetReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TypeAnnotationTargetReaderextendsConstant_PoolAbstractions"></a><a id="TypeAnnotationTargetReader:TypeAnnotationTargetReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/TypeAnnotationTargetReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for the target_type and target_info fields of type annotations." href="TypeAnnotationTargetReader.html"><span class="name">TypeAnnotationTargetReader</span></a><span class="result"> extends <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for the <code>target_type</code> and <code>target_info</code> fields of type annotations.</p><div class="fullcomment"><div class="comment cmt"><p>Generic parser for the <code>target_type</code> and <code>target_info</code> fields of type annotations.
+This reader is intended to be used in conjunction with the
+<a href="TypeAnnotationsReader.html" class="extype" name="org.opalj.bi.reader.TypeAnnotationsReader">TypeAnnotationsReader</a>.
+</p></div></div>
+    </li><li name="org.opalj.bi.reader.TypeAnnotationsReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TypeAnnotationsReaderextendsAnnotationsAbstractions"></a><a id="TypeAnnotationsReader:TypeAnnotationsReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/TypeAnnotationsReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic parser for type annotations." href="TypeAnnotationsReader.html"><span class="name">TypeAnnotationsReader</span></a><span class="result"> extends <a href="AnnotationsAbstractions.html" class="extype" name="org.opalj.bi.reader.AnnotationsAbstractions">AnnotationsAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic parser for type annotations.</p><div class="fullcomment"><div class="comment cmt"><p>Generic parser for type annotations. This reader is intended to be used in conjunction with the
+Runtime(In)VisibleTypeAnnotations_attributeReaders.
+</p></div></div>
+    </li><li name="org.opalj.bi.reader.Unknown_attributeAbstractions" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Unknown_attributeAbstractionsextendsConstant_PoolAbstractionswithAttributesAbstractions"></a><a id="Unknown_attributeAbstractions:Unknown_attributeAbstractions"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/Unknown_attributeAbstractions.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Unknown_attributeAbstractions.html"><span class="name">Unknown_attributeAbstractions</span></a><span class="result"> extends <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a> with <a href="AttributesAbstractions.html" class="extype" name="org.opalj.bi.reader.AttributesAbstractions">AttributesAbstractions</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.bi.reader.Unknown_attributeReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Unknown_attributeReaderextendsConstant_PoolAbstractionswithUnknown_attributeAbstractions"></a><a id="Unknown_attributeReader:Unknown_attributeReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/Unknown_attributeReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="A generic reader that can read attributes that are neither defined by the specification nor by some additional user supplied code." href="Unknown_attributeReader.html"><span class="name">Unknown_attributeReader</span></a><span class="result"> extends <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a> with <a href="Unknown_attributeAbstractions.html" class="extype" name="org.opalj.bi.reader.Unknown_attributeAbstractions">Unknown_attributeAbstractions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A generic reader that can read attributes that are neither defined by the
+specification nor by some additional user supplied code.</p>
+    </li><li name="org.opalj.bi.reader.VerificationTypeInfoReader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="VerificationTypeInfoReaderextendsConstant_PoolAbstractions"></a><a id="VerificationTypeInfoReader:VerificationTypeInfoReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/VerificationTypeInfoReader.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="VerificationTypeInfoReader.html"><span class="name">VerificationTypeInfoReader</span></a><span class="result"> extends <a href="Constant_PoolAbstractions.html" class="extype" name="org.opalj.bi.reader.Constant_PoolAbstractions">Constant_PoolAbstractions</a></span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="org.opalj.bi.reader.ClassFileReader" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClassFileReader"></a><a id="ClassFileReader:ClassFileReader"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/ClassFileReader$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Helper methods related to reading class files." href="ClassFileReader$.html"><span class="name">ClassFileReader</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Helper methods related to reading class files.</p>
+    </li><li name="org.opalj.bi.reader.VerificationTypeInfoItem" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VerificationTypeInfoItem"></a><a id="VerificationTypeInfoItem:VerificationTypeInfoItem"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/bi/reader/VerificationTypeInfoItem$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="VerificationTypeInfoItem$.html"><span class="name">VerificationTypeInfoItem</span></a><span class="result"> extends <span class="extype" name="scala.Enumeration">Enumeration</span></span>
+      </span>
+      
+      
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

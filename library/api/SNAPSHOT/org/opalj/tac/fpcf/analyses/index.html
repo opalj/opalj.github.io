@@ -1,0 +1,1127 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.tac.fpcf.analyses</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.tac.fpcf.analyses" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.tac.fpcf.analyses" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../../../index.js"></script>
+      <script type="text/javascript" src="../../../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../../../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../../../br/index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="../../../ai/index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.tac" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tac"></a><a id="tac:tac"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Common definitions related to the definition and processing of three address code." href="../../index.html"><span class="name">tac</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Common definitions related to the definition and processing of three address code.</p><div class="fullcomment"><div class="comment cmt"><p>Common definitions related to the definition and processing of three address code.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="org.opalj">opalj</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fpcf"></a><a id="fpcf:fpcf"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html"><span class="name">fpcf</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org.opalj.tac">tac</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses" visbl="pub" class="indented5 current" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="analyses"></a><a id="analyses:analyses"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">analyses</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.tac.fpcf">fpcf</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg" visbl="pub" class="indented6 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cg"></a><a id="cg:cg"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/cg/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="cg/index.html"><span class="name">cg</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.escape" visbl="pub" class="indented6 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="escape"></a><a id="escape:escape"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/escape/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="escape/index.html"><span class="name">escape</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.pointsto" visbl="pub" class="indented6 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="pointsto"></a><a id="pointsto:pointsto"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/pointsto/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="pointsto/index.html"><span class="name">pointsto</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.purity" visbl="pub" class="indented6 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="purity"></a><a id="purity:purity"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/purity/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="purity/index.html"><span class="name">purity</span></a>
+      </span>
+      
+      
+    </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="APIBasedAnalysis.html" title="A trait for analyses that model the result of the invocation of a specific apiMethod."></a>
+                        <a href="APIBasedAnalysis.html" title="A trait for analyses that model the result of the invocation of a specific apiMethod.">APIBasedAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <a class="object" href="AbstractIFDSAnalysis$.html" title=""></a>
+                        <a class="class" href="AbstractIFDSAnalysis.html" title="A framework for IFDS analyses."></a>
+                        <a href="AbstractIFDSAnalysis.html" title="A framework for IFDS analyses.">AbstractIFDSAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="AbstractIFDSFact.html" title="The super type of all IFDS facts."></a>
+                        <a href="AbstractIFDSFact.html" title="The super type of all IFDS facts.">AbstractIFDSFact</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="AbstractIFDSNullFact.html" title="The super type of all null facts."></a>
+                        <a href="AbstractIFDSNullFact.html" title="The super type of all null facts.">AbstractIFDSNullFact</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="DefinitionSiteWithoutPutField.html" title="Represents a definition site of an object that is stored into a field (that is being analyzed for locality) where the field write use-site is removed from the set of use-sites."></a>
+                        <a href="DefinitionSiteWithoutPutField.html" title="Represents a definition site of an object that is stored into a field (that is being analyzed for locality) where the field write use-site is removed from the set of use-sites.">DefinitionSiteWithoutPutField</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="DefinitionSitesWithoutPutField$.html" title="Holds a map of DefinitionSiteWithoutPutField values, in order to provide unique identities (enable comparison via eq/neq)."></a>
+                        <a href="DefinitionSitesWithoutPutField$.html" title="Holds a map of DefinitionSiteWithoutPutField values, in order to provide unique identities (enable comparison via eq/neq).">DefinitionSitesWithoutPutField</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="EagerFieldLocalityAnalysis$.html" title=""></a>
+                        <a href="EagerFieldLocalityAnalysis$.html" title="">EagerFieldLocalityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="EagerL0TACAIAnalysis$.html" title=""></a>
+                        <a href="EagerL0TACAIAnalysis$.html" title="">EagerL0TACAIAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="EagerL1FieldMutabilityAnalysis$.html" title="Executor for the field mutability analysis."></a>
+                        <a href="EagerL1FieldMutabilityAnalysis$.html" title="Executor for the field mutability analysis.">EagerL1FieldMutabilityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="EagerL2FieldMutabilityAnalysis$.html" title="Executor for the field mutability analysis."></a>
+                        <a href="EagerL2FieldMutabilityAnalysis$.html" title="Executor for the field mutability analysis.">EagerL2FieldMutabilityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="EagerTACAIProvider$.html" title=""></a>
+                        <a href="EagerTACAIProvider$.html" title="">EagerTACAIProvider</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="FieldLocalityAnalysis.html" title="Determines whether the lifetime of a reference type field is the same as that of its owning instance."></a>
+                        <a href="FieldLocalityAnalysis.html" title="Determines whether the lifetime of a reference type field is the same as that of its owning instance.">FieldLocalityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="FieldLocalityAnalysisScheduler.html" title=""></a>
+                        <a href="FieldLocalityAnalysisScheduler.html" title="">FieldLocalityAnalysisScheduler</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="FieldLocalityState.html" title=""></a>
+                        <a href="FieldLocalityState.html" title="">FieldLocalityState</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="IFDSAnalysis.html" title=""></a>
+                        <a href="IFDSAnalysis.html" title="">IFDSAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="L0TACAIAnalysis.html" title="Basically just (re)creates the tac of a method if the result of the underlying abstract interpretation changes."></a>
+                        <a href="L0TACAIAnalysis.html" title="Basically just (re)creates the tac of a method if the result of the underlying abstract interpretation changes.">L0TACAIAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="L0TACAIAnalysisScheduler.html" title=""></a>
+                        <a href="L0TACAIAnalysisScheduler.html" title="">L0TACAIAnalysisScheduler</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="L1FieldMutabilityAnalysis.html" title="Simple analysis that checks if a private (static or instance) field is always initialized at most once or if a field is or can be mutated after (lazy) initialization."></a>
+                        <a href="L1FieldMutabilityAnalysis.html" title="Simple analysis that checks if a private (static or instance) field is always initialized at most once or if a field is or can be mutated after (lazy) initialization.">L1FieldMutabilityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="L1FieldMutabilityAnalysisScheduler.html" title=""></a>
+                        <a href="L1FieldMutabilityAnalysisScheduler.html" title="">L1FieldMutabilityAnalysisScheduler</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="L2FieldMutabilityAnalysis.html" title="Simple analysis that checks if a private (static or instance) field is always initialized at most once or if a field is or can be mutated after (lazy) initialization."></a>
+                        <a href="L2FieldMutabilityAnalysis.html" title="Simple analysis that checks if a private (static or instance) field is always initialized at most once or if a field is or can be mutated after (lazy) initialization.">L2FieldMutabilityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="L2FieldMutabilityAnalysisScheduler.html" title=""></a>
+                        <a href="L2FieldMutabilityAnalysisScheduler.html" title="">L2FieldMutabilityAnalysisScheduler</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="LazyFieldLocalityAnalysis$.html" title=""></a>
+                        <a href="LazyFieldLocalityAnalysis$.html" title="">LazyFieldLocalityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="LazyL0TACAIAnalysis$.html" title=""></a>
+                        <a href="LazyL0TACAIAnalysis$.html" title="">LazyL0TACAIAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="LazyL1FieldMutabilityAnalysis$.html" title="Executor for the lazy field mutability analysis."></a>
+                        <a href="LazyL1FieldMutabilityAnalysis$.html" title="Executor for the lazy field mutability analysis.">LazyL1FieldMutabilityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="LazyL2FieldMutabilityAnalysis$.html" title="Executor for the lazy field mutability analysis."></a>
+                        <a href="LazyL2FieldMutabilityAnalysis$.html" title="Executor for the lazy field mutability analysis.">LazyL2FieldMutabilityAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="LazyTACAIProvider$.html" title=""></a>
+                        <a href="LazyTACAIProvider$.html" title="">LazyTACAIProvider</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="Statement.html" title="A statement that is passed to the concrete analysis."></a>
+                        <a href="Statement.html" title="A statement that is passed to the concrete analysis.">Statement</a>
+                      </li><li class="current-entities indented5">
+                        <a class="object" href="SystemPropertiesAnalysisScheduler$.html" title=""></a>
+                        <a class="class" href="SystemPropertiesAnalysisScheduler.html" title=""></a>
+                        <a href="SystemPropertiesAnalysisScheduler.html" title="">SystemPropertiesAnalysisScheduler</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="TACAIAnalysis$.html" title=""></a>
+                        <a href="TACAIAnalysis$.html" title="">TACAIAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="TACAIBasedAPIBasedAnalysis.html" title="An APIBasedAnalysis that ensures that whenever processNewCaller gets called, some (interim) version of the three-address code is available in the property store."></a>
+                        <a href="TACAIBasedAPIBasedAnalysis.html" title="An APIBasedAnalysis that ensures that whenever processNewCaller gets called, some (interim) version of the three-address code is available in the property store.">TACAIBasedAPIBasedAnalysis</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="TACAIBasedAnalysisState.html" title="A base class for the state of FPCF analyses operating on the three-address code of methods."></a>
+                        <a href="TACAIBasedAnalysisState.html" title="A base class for the state of FPCF analyses operating on the three-address code of methods.">TACAIBasedAnalysisState</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="TACAIInitializer.html" title="Transforms an aiResult to the 3-address code."></a>
+                        <a href="TACAIInitializer.html" title="Transforms an aiResult to the 3-address code.">TACAIInitializer</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="TACAIProvider.html" title="Provides the TACAI for all methods."></a>
+                        <a href="TACAIProvider.html" title="Provides the TACAI for all methods.">TACAIProvider</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="trait" href="TACAIProviderScheduler.html" title=""></a>
+                        <a href="TACAIProviderScheduler.html" title="">TACAIProviderScheduler</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="object" href="TACAITransformer$.html" title="Transforms a BaseAIResult to the 3-address code."></a>
+                        <a href="TACAITransformer$.html" title="Transforms a BaseAIResult to the 3-address code.">TACAITransformer</a>
+                      </li><li name="org.opalj.tac.fpcf.properties" visbl="pub" class="indented5 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="properties"></a><a id="properties:properties"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/properties/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../properties/index.html"><span class="name">properties</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.tac.fpcf">fpcf</a></dd></dl></div>
+    </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="package value">
+      <div id="definition">
+        <div class="big-circle package">p</div>
+        <p id="owner"><a href="../../../../index.html" class="extype" name="org">org</a>.<a href="../../../index.html" class="extype" name="org.opalj">opalj</a>.<a href="../../index.html" class="extype" name="org.opalj.tac">tac</a>.<a href="../index.html" class="extype" name="org.opalj.tac.fpcf">fpcf</a></p>
+        <h1>analyses<span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">analyses</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              
+            </ol>
+          </div>
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="APIBasedAnalysisextendsFPCFAnalysis"></a><a id="APIBasedAnalysis:APIBasedAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/APIBasedAnalysis.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="A trait for analyses that model the result of the invocation of a specific apiMethod." href="APIBasedAnalysis.html"><span class="name">APIBasedAnalysis</span></a><span class="result"> extends <a href="../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A trait for analyses that model the result of the invocation of a specific
+<code>apiMethod</code>.</p><div class="fullcomment"><div class="comment cmt"><p>A trait for analyses that model the result of the invocation of a specific
+<code>apiMethod</code>.</p><p>Each time a new caller of the <a href="APIBasedAnalysis.html#apiMethod:org.opalj.br.DeclaredMethod" class="extmbr" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis#apiMethod">apiMethod*</a> is found in the
+<span class="extype" name="Callers">Callers</span> property, <a href="APIBasedAnalysis.html#handleNewCaller(caller:org.opalj.br.DefinedMethod,pc:Int,isDirect:Boolean):org.opalj.fpcf.ProperPropertyComputationResult" class="extmbr" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis#handleNewCaller">handleNewCaller*</a>
+gets called.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>When <code>handleNewCaller</code> gets invoked, there is no guarantee that the caller's three-address
+      code (<a href="../properties/TACAI.html" class="extype" name="org.opalj.tac.fpcf.properties.TACAI">org.opalj.tac.fpcf.properties.TACAI</a>) is present in the property store, nor that
+      it is final. If this is required, use the <a href="TACAIBasedAPIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIBasedAPIBasedAnalysis">TACAIBasedAPIBasedAnalysis</a>
+      sub-trait.</p></span></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.AbstractIFDSAnalysis" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="AbstractIFDSAnalysis[IFDSFact&lt;:org.opalj.tac.fpcf.analyses.AbstractIFDSFact]extendsFPCFAnalysis"></a><a id="AbstractIFDSAnalysis[IFDSFact&lt;:AbstractIFDSFact]:AbstractIFDSAnalysis[IFDSFact]"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/AbstractIFDSAnalysis.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="A framework for IFDS analyses." href="AbstractIFDSAnalysis.html"><span class="name">AbstractIFDSAnalysis</span></a><span class="tparams">[<span name="IFDSFact">IFDSFact &lt;: <a href="AbstractIFDSFact.html" class="extype" name="org.opalj.tac.fpcf.analyses.AbstractIFDSFact">AbstractIFDSFact</a></span>]</span><span class="result"> extends <a href="../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A framework for IFDS analyses.</p><div class="fullcomment"><div class="comment cmt"><p>A framework for IFDS analyses.
+</p></div><dl class="paramcmts block"><dt class="tparam">IFDSFact</dt><dd class="cmt"><p>The type of flow facts the concrete analysis wants to track</p></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.AbstractIFDSFact" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AbstractIFDSFactextendsAnyRef"></a><a id="AbstractIFDSFact:AbstractIFDSFact"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/AbstractIFDSFact.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="The super type of all IFDS facts." href="AbstractIFDSFact.html"><span class="name">AbstractIFDSFact</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The super type of all IFDS facts.</p>
+    </li><li name="org.opalj.tac.fpcf.analyses.AbstractIFDSNullFact" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AbstractIFDSNullFactextendsAbstractIFDSFact"></a><a id="AbstractIFDSNullFact:AbstractIFDSNullFact"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/AbstractIFDSNullFact.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="The super type of all null facts." href="AbstractIFDSNullFact.html"><span class="name">AbstractIFDSNullFact</span></a><span class="result"> extends <a href="AbstractIFDSFact.html" class="extype" name="org.opalj.tac.fpcf.analyses.AbstractIFDSFact">AbstractIFDSFact</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The super type of all null facts.</p>
+    </li><li name="org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefinitionSiteWithoutPutFieldextendsDefinitionSiteLikewithProductwithSerializable"></a><a id="DefinitionSiteWithoutPutField:DefinitionSiteWithoutPutField"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSiteWithoutPutField.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Represents a definition site of an object that is stored into a field (that is being analyzed for locality) where the field write use-site is removed from the set of use-sites." href="DefinitionSiteWithoutPutField.html"><span class="name">DefinitionSiteWithoutPutField</span></a><span class="params">(<span name="method">method: <a href="../../../br/Method.html" class="extype" name="org.opalj.br.Method">Method</a></span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="putFieldPC">putFieldPC: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="../../common/DefinitionSiteLike.html" class="extype" name="org.opalj.tac.common.DefinitionSiteLike">DefinitionSiteLike</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Represents a definition site of an object that is stored into a field (that is being analyzed
+for locality) where the field write use-site is removed from the set of use-sites.</p><div class="fullcomment"><div class="comment cmt"><p>Represents a definition site of an object that is stored into a field (that is being analyzed
+for locality) where the field write use-site is removed from the set of use-sites.
+It acts as an entity for the escape analysis (we are interested whether the objects stored into
+a field are local, i.e. doe not escape).
+Here, the <a href="../../PutField.html" class="extype" name="org.opalj.tac.PutField">org.opalj.tac.PutField</a> would let the object escape.
+</p></div></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.FieldLocalityAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FieldLocalityAnalysisextendsFPCFAnalysis"></a><a id="FieldLocalityAnalysis:FieldLocalityAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/FieldLocalityAnalysis.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Determines whether the lifetime of a reference type field is the same as that of its owning instance." href="FieldLocalityAnalysis.html"><span class="name">FieldLocalityAnalysis</span></a><span class="result"> extends <a href="../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Determines whether the lifetime of a reference type field is the same as that of its owning
+instance.</p><div class="fullcomment"><div class="comment cmt"><p>Determines whether the lifetime of a reference type field is the same as that of its owning
+instance. Base type fields are treated as local for convenience, but this should never be
+required anyway.
+</p></div></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.FieldLocalityAnalysisScheduler" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FieldLocalityAnalysisSchedulerextendsFPCFAnalysisScheduler"></a><a id="FieldLocalityAnalysisScheduler:FieldLocalityAnalysisScheduler"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/FieldLocalityAnalysisScheduler.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="FieldLocalityAnalysisScheduler.html"><span class="name">FieldLocalityAnalysisScheduler</span></a><span class="result"> extends <a href="../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.FieldLocalityState" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FieldLocalityStateextendsAnyRef"></a><a id="FieldLocalityState:FieldLocalityState"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/FieldLocalityState.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="FieldLocalityState.html"><span class="name">FieldLocalityState</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.IFDSAnalysis" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IFDSAnalysis[IFDSFact&lt;:org.opalj.tac.fpcf.analyses.AbstractIFDSFact]extendsFPCFLazyAnalysisScheduler"></a><a id="IFDSAnalysis[IFDSFact&lt;:AbstractIFDSFact]:IFDSAnalysis[IFDSFact]"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/IFDSAnalysis.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="IFDSAnalysis.html"><span class="name">IFDSAnalysis</span></a><span class="tparams">[<span name="IFDSFact">IFDSFact &lt;: <a href="AbstractIFDSFact.html" class="extype" name="org.opalj.tac.fpcf.analyses.AbstractIFDSFact">AbstractIFDSFact</a></span>]</span><span class="result"> extends <a href="../../../br/fpcf/FPCFLazyAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFLazyAnalysisScheduler">FPCFLazyAnalysisScheduler</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.L0TACAIAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="L0TACAIAnalysisextendsFPCFAnalysis"></a><a id="L0TACAIAnalysis:L0TACAIAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/L0TACAIAnalysis.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Basically just (re)creates the tac of a method if the result of the underlying abstract interpretation changes." href="L0TACAIAnalysis.html"><span class="name">L0TACAIAnalysis</span></a><span class="result"> extends <a href="../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Basically just (re)creates the tac of a method if the result of the underlying
+abstract interpretation changes.</p>
+    </li><li name="org.opalj.tac.fpcf.analyses.L0TACAIAnalysisScheduler" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="L0TACAIAnalysisSchedulerextendsTACAIInitializer"></a><a id="L0TACAIAnalysisScheduler:L0TACAIAnalysisScheduler"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/L0TACAIAnalysisScheduler.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="L0TACAIAnalysisScheduler.html"><span class="name">L0TACAIAnalysisScheduler</span></a><span class="result"> extends <a href="TACAIInitializer.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIInitializer">TACAIInitializer</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.L1FieldMutabilityAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="L1FieldMutabilityAnalysisextendsFPCFAnalysis"></a><a id="L1FieldMutabilityAnalysis:L1FieldMutabilityAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/L1FieldMutabilityAnalysis.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Simple analysis that checks if a private (static or instance) field is always initialized at most once or if a field is or can be mutated after (lazy) initialization." href="L1FieldMutabilityAnalysis.html"><span class="name">L1FieldMutabilityAnalysis</span></a><span class="result"> extends <a href="../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Simple analysis that checks if a private (static or instance) field is always initialized at
+most once or if a field is or can be mutated after (lazy) initialization.</p><div class="fullcomment"><div class="comment cmt"><p>Simple analysis that checks if a private (static or instance) field is always initialized at
+most once or if a field is or can be mutated after (lazy) initialization.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>Requires that the 3-address code's expressions are not deeply nested.</p></span></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.L1FieldMutabilityAnalysisScheduler" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="L1FieldMutabilityAnalysisSchedulerextendsFPCFAnalysisScheduler"></a><a id="L1FieldMutabilityAnalysisScheduler:L1FieldMutabilityAnalysisScheduler"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/L1FieldMutabilityAnalysisScheduler.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="L1FieldMutabilityAnalysisScheduler.html"><span class="name">L1FieldMutabilityAnalysisScheduler</span></a><span class="result"> extends <a href="../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="L2FieldMutabilityAnalysisextendsFPCFAnalysis"></a><a id="L2FieldMutabilityAnalysis:L2FieldMutabilityAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/L2FieldMutabilityAnalysis.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Simple analysis that checks if a private (static or instance) field is always initialized at most once or if a field is or can be mutated after (lazy) initialization." href="L2FieldMutabilityAnalysis.html"><span class="name">L2FieldMutabilityAnalysis</span></a><span class="result"> extends <a href="../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Simple analysis that checks if a private (static or instance) field is always initialized at
+most once or if a field is or can be mutated after (lazy) initialization.</p><div class="fullcomment"><div class="comment cmt"><p>Simple analysis that checks if a private (static or instance) field is always initialized at
+most once or if a field is or can be mutated after (lazy) initialization.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>Requires that the 3-address code's expressions are not deeply nested.</p></span></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysisScheduler" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="L2FieldMutabilityAnalysisSchedulerextendsFPCFAnalysisScheduler"></a><a id="L2FieldMutabilityAnalysisScheduler:L2FieldMutabilityAnalysisScheduler"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/L2FieldMutabilityAnalysisScheduler.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="L2FieldMutabilityAnalysisScheduler.html"><span class="name">L2FieldMutabilityAnalysisScheduler</span></a><span class="result"> extends <a href="../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.Statement" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="StatementextendsProductwithSerializable"></a><a id="Statement:Statement"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/Statement.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="A statement that is passed to the concrete analysis." href="Statement.html"><span class="name">Statement</span></a><span class="params">(<span name="method">method: <a href="../../../br/Method.html" class="extype" name="org.opalj.br.Method">Method</a></span>, <span name="node">node: <a href="../../../br/cfg/CFGNode.html" class="extype" name="org.opalj.br.cfg.CFGNode">CFGNode</a></span>, <span name="stmt">stmt: <a href="../../Stmt.html" class="extype" name="org.opalj.tac.Stmt">Stmt</a>[<a href="AbstractIFDSAnalysis$.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.AbstractIFDSAnalysis.V">V</a>]</span>, <span name="index">index: <span class="extype" name="scala.Int">Int</span></span>, <span name="code">code: <span class="extype" name="scala.Array">Array</span>[<a href="../../Stmt.html" class="extype" name="org.opalj.tac.Stmt">Stmt</a>[<a href="AbstractIFDSAnalysis$.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.AbstractIFDSAnalysis.V">V</a>]]</span>, <span name="cfg">cfg: <a href="../../../br/cfg/CFG.html" class="extype" name="org.opalj.br.cfg.CFG">CFG</a>[<a href="../../Stmt.html" class="extype" name="org.opalj.tac.Stmt">Stmt</a>[<a href="AbstractIFDSAnalysis$.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.AbstractIFDSAnalysis.V">V</a>], <a href="../../TACStmts.html" class="extype" name="org.opalj.tac.TACStmts">TACStmts</a>[<a href="AbstractIFDSAnalysis$.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.AbstractIFDSAnalysis.V">V</a>]]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">A statement that is passed to the concrete analysis.</p><div class="fullcomment"><div class="comment cmt"><p>A statement that is passed to the concrete analysis.
+</p></div><dl class="paramcmts block"><dt class="param">method</dt><dd class="cmt"><p>The method containing the statement.</p></dd><dt class="param">node</dt><dd class="cmt"><p>The basic block containing the statement.</p></dd><dt class="param">stmt</dt><dd class="cmt"><p>The TAC statement.</p></dd><dt class="param">index</dt><dd class="cmt"><p>The index of the Statement in the code.</p></dd><dt class="param">code</dt><dd class="cmt"><p>The method's TAC code.</p></dd><dt class="param">cfg</dt><dd class="cmt"><p>The method's CFG.</p></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.SystemPropertiesAnalysisScheduler" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SystemPropertiesAnalysisSchedulerextendsReachableMethodAnalysis"></a><a id="SystemPropertiesAnalysisScheduler:SystemPropertiesAnalysisScheduler"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/SystemPropertiesAnalysisScheduler.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="SystemPropertiesAnalysisScheduler.html"><span class="name">SystemPropertiesAnalysisScheduler</span></a><span class="result"> extends <a href="cg/ReachableMethodAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.ReachableMethodAnalysis">ReachableMethodAnalysis</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.TACAIBasedAPIBasedAnalysis" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TACAIBasedAPIBasedAnalysisextendsAPIBasedAnalysis"></a><a id="TACAIBasedAPIBasedAnalysis:TACAIBasedAPIBasedAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/TACAIBasedAPIBasedAnalysis.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="An APIBasedAnalysis that ensures that whenever processNewCaller gets called, some (interim) version of the three-address code is available in the property store." href="TACAIBasedAPIBasedAnalysis.html"><span class="name">TACAIBasedAPIBasedAnalysis</span></a><span class="result"> extends <a href="APIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis">APIBasedAnalysis</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">An <a href="APIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis">APIBasedAnalysis</a> that ensures that whenever <code>processNewCaller</code> gets called,
+some (interim) version of the three-address code is available in the property store.</p><div class="fullcomment"><div class="comment cmt"><p>An <a href="APIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis">APIBasedAnalysis</a> that ensures that whenever <code>processNewCaller</code> gets called,
+some (interim) version of the three-address code is available in the property store.
+For each update of <a href="../properties/TACAI.html" class="extype" name="org.opalj.tac.fpcf.properties.TACAI">org.opalj.tac.fpcf.properties.TACAI</a> that actually contains a three-address
+code, <code>processNewCaller</code> is invoked, i.e., it might be called multiple times for the same caller.
+Due to monotonicity required for all results, this is still sound.
+</p></div></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.TACAIBasedAnalysisState" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TACAIBasedAnalysisStateextendsAnyRef"></a><a id="TACAIBasedAnalysisState:TACAIBasedAnalysisState"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/TACAIBasedAnalysisState.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="A base class for the state of FPCF analyses operating on the three-address code of methods." href="TACAIBasedAnalysisState.html"><span class="name">TACAIBasedAnalysisState</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">A base class for the state of FPCF analyses operating on the three-address code of methods.</p>
+    </li><li name="org.opalj.tac.fpcf.analyses.TACAIInitializer" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TACAIInitializerextendsFPCFAnalysisScheduler"></a><a id="TACAIInitializer:TACAIInitializer"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/TACAIInitializer.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Transforms an aiResult to the 3-address code." href="TACAIInitializer.html"><span class="name">TACAIInitializer</span></a><span class="result"> extends <a href="../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Transforms an aiResult to the 3-address code.</p>
+    </li><li name="org.opalj.tac.fpcf.analyses.TACAIProvider" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TACAIProviderextendsFPCFAnalysis"></a><a id="TACAIProvider:TACAIProvider"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/TACAIProvider.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides the TACAI for all methods." href="TACAIProvider.html"><span class="name">TACAIProvider</span></a><span class="result"> extends <a href="../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides the TACAI for all methods.</p><div class="fullcomment"><div class="comment cmt"><p>Provides the TACAI for all methods. The TACAI provided by the TACAI provider is always
+detached from the underlying results of the abstract interpretation and therefore
+significantly reduces the overall memory consumption if the AIResults are not needed!
+</p></div></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.TACAIProviderScheduler" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TACAIProviderSchedulerextendsTACAIInitializerwithDomainBasedFPCFAnalysisScheduler"></a><a id="TACAIProviderScheduler:TACAIProviderScheduler"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/TACAIProviderScheduler.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="TACAIProviderScheduler.html"><span class="name">TACAIProviderScheduler</span></a><span class="result"> extends <a href="TACAIInitializer.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIInitializer">TACAIInitializer</a> with <a href="../../../ai/fpcf/analyses/DomainBasedFPCFAnalysisScheduler.html" class="extype" name="org.opalj.ai.fpcf.analyses.DomainBasedFPCFAnalysisScheduler">DomainBasedFPCFAnalysisScheduler</a></span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="org.opalj.tac.fpcf.analyses.AbstractIFDSAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AbstractIFDSAnalysis"></a><a id="AbstractIFDSAnalysis:AbstractIFDSAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/AbstractIFDSAnalysis$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractIFDSAnalysis$.html"><span class="name">AbstractIFDSAnalysis</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.DefinitionSitesWithoutPutField" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefinitionSitesWithoutPutField"></a><a id="DefinitionSitesWithoutPutField:DefinitionSitesWithoutPutField"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/DefinitionSitesWithoutPutField$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Holds a map of DefinitionSiteWithoutPutField values, in order to provide unique identities (enable comparison via eq/neq)." href="DefinitionSitesWithoutPutField$.html"><span class="name">DefinitionSitesWithoutPutField</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Holds a map of <a href="DefinitionSiteWithoutPutField.html" class="extype" name="org.opalj.tac.fpcf.analyses.DefinitionSiteWithoutPutField">DefinitionSiteWithoutPutField</a> values, in order to provide unique identities
+(enable comparison via eq/neq).</p>
+    </li><li name="org.opalj.tac.fpcf.analyses.EagerFieldLocalityAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EagerFieldLocalityAnalysis"></a><a id="EagerFieldLocalityAnalysis:EagerFieldLocalityAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/EagerFieldLocalityAnalysis$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="EagerFieldLocalityAnalysis$.html"><span class="name">EagerFieldLocalityAnalysis</span></a><span class="result"> extends <a href="FieldLocalityAnalysisScheduler.html" class="extype" name="org.opalj.tac.fpcf.analyses.FieldLocalityAnalysisScheduler">FieldLocalityAnalysisScheduler</a> with <a href="../../../br/fpcf/BasicFPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler">BasicFPCFEagerAnalysisScheduler</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.EagerL0TACAIAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EagerL0TACAIAnalysis"></a><a id="EagerL0TACAIAnalysis:EagerL0TACAIAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/EagerL0TACAIAnalysis$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="EagerL0TACAIAnalysis$.html"><span class="name">EagerL0TACAIAnalysis</span></a><span class="result"> extends <a href="L0TACAIAnalysisScheduler.html" class="extype" name="org.opalj.tac.fpcf.analyses.L0TACAIAnalysisScheduler">L0TACAIAnalysisScheduler</a> with <a href="../../../br/fpcf/FPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler">FPCFEagerAnalysisScheduler</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.EagerL1FieldMutabilityAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EagerL1FieldMutabilityAnalysis"></a><a id="EagerL1FieldMutabilityAnalysis:EagerL1FieldMutabilityAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/EagerL1FieldMutabilityAnalysis$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Executor for the field mutability analysis." href="EagerL1FieldMutabilityAnalysis$.html"><span class="name">EagerL1FieldMutabilityAnalysis</span></a><span class="result"> extends <a href="L1FieldMutabilityAnalysisScheduler.html" class="extype" name="org.opalj.tac.fpcf.analyses.L1FieldMutabilityAnalysisScheduler">L1FieldMutabilityAnalysisScheduler</a> with <a href="../../../br/fpcf/BasicFPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler">BasicFPCFEagerAnalysisScheduler</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Executor for the field mutability analysis.</p>
+    </li><li name="org.opalj.tac.fpcf.analyses.EagerL2FieldMutabilityAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EagerL2FieldMutabilityAnalysis"></a><a id="EagerL2FieldMutabilityAnalysis:EagerL2FieldMutabilityAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/EagerL2FieldMutabilityAnalysis$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Executor for the field mutability analysis." href="EagerL2FieldMutabilityAnalysis$.html"><span class="name">EagerL2FieldMutabilityAnalysis</span></a><span class="result"> extends <a href="L2FieldMutabilityAnalysisScheduler.html" class="extype" name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysisScheduler">L2FieldMutabilityAnalysisScheduler</a> with <a href="../../../br/fpcf/BasicFPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler">BasicFPCFEagerAnalysisScheduler</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Executor for the field mutability analysis.</p>
+    </li><li name="org.opalj.tac.fpcf.analyses.EagerTACAIProvider" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EagerTACAIProvider"></a><a id="EagerTACAIProvider:EagerTACAIProvider"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/EagerTACAIProvider$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="EagerTACAIProvider$.html"><span class="name">EagerTACAIProvider</span></a><span class="result"> extends <a href="TACAIProviderScheduler.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIProviderScheduler">TACAIProviderScheduler</a> with <a href="../../../br/fpcf/FPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler">FPCFEagerAnalysisScheduler</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.LazyFieldLocalityAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LazyFieldLocalityAnalysis"></a><a id="LazyFieldLocalityAnalysis:LazyFieldLocalityAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/LazyFieldLocalityAnalysis$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="LazyFieldLocalityAnalysis$.html"><span class="name">LazyFieldLocalityAnalysis</span></a><span class="result"> extends <a href="FieldLocalityAnalysisScheduler.html" class="extype" name="org.opalj.tac.fpcf.analyses.FieldLocalityAnalysisScheduler">FieldLocalityAnalysisScheduler</a> with <a href="../../../br/fpcf/BasicFPCFLazyAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFLazyAnalysisScheduler">BasicFPCFLazyAnalysisScheduler</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.LazyL0TACAIAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LazyL0TACAIAnalysis"></a><a id="LazyL0TACAIAnalysis:LazyL0TACAIAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/LazyL0TACAIAnalysis$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="LazyL0TACAIAnalysis$.html"><span class="name">LazyL0TACAIAnalysis</span></a><span class="result"> extends <a href="L0TACAIAnalysisScheduler.html" class="extype" name="org.opalj.tac.fpcf.analyses.L0TACAIAnalysisScheduler">L0TACAIAnalysisScheduler</a> with <a href="../../../br/fpcf/FPCFLazyAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFLazyAnalysisScheduler">FPCFLazyAnalysisScheduler</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.LazyL1FieldMutabilityAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LazyL1FieldMutabilityAnalysis"></a><a id="LazyL1FieldMutabilityAnalysis:LazyL1FieldMutabilityAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/LazyL1FieldMutabilityAnalysis$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Executor for the lazy field mutability analysis." href="LazyL1FieldMutabilityAnalysis$.html"><span class="name">LazyL1FieldMutabilityAnalysis</span></a><span class="result"> extends <a href="L1FieldMutabilityAnalysisScheduler.html" class="extype" name="org.opalj.tac.fpcf.analyses.L1FieldMutabilityAnalysisScheduler">L1FieldMutabilityAnalysisScheduler</a> with <a href="../../../br/fpcf/BasicFPCFLazyAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFLazyAnalysisScheduler">BasicFPCFLazyAnalysisScheduler</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Executor for the lazy field mutability analysis.</p>
+    </li><li name="org.opalj.tac.fpcf.analyses.LazyL2FieldMutabilityAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LazyL2FieldMutabilityAnalysis"></a><a id="LazyL2FieldMutabilityAnalysis:LazyL2FieldMutabilityAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/LazyL2FieldMutabilityAnalysis$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Executor for the lazy field mutability analysis." href="LazyL2FieldMutabilityAnalysis$.html"><span class="name">LazyL2FieldMutabilityAnalysis</span></a><span class="result"> extends <a href="L2FieldMutabilityAnalysisScheduler.html" class="extype" name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysisScheduler">L2FieldMutabilityAnalysisScheduler</a> with <a href="../../../br/fpcf/BasicFPCFLazyAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFLazyAnalysisScheduler">BasicFPCFLazyAnalysisScheduler</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Executor for the lazy field mutability analysis.</p>
+    </li><li name="org.opalj.tac.fpcf.analyses.LazyTACAIProvider" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LazyTACAIProvider"></a><a id="LazyTACAIProvider:LazyTACAIProvider"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/LazyTACAIProvider$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="LazyTACAIProvider$.html"><span class="name">LazyTACAIProvider</span></a><span class="result"> extends <a href="TACAIProviderScheduler.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIProviderScheduler">TACAIProviderScheduler</a> with <a href="../../../br/fpcf/FPCFLazyAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFLazyAnalysisScheduler">FPCFLazyAnalysisScheduler</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.SystemPropertiesAnalysisScheduler" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SystemPropertiesAnalysisScheduler"></a><a id="SystemPropertiesAnalysisScheduler:SystemPropertiesAnalysisScheduler"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/SystemPropertiesAnalysisScheduler$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="SystemPropertiesAnalysisScheduler$.html"><span class="name">SystemPropertiesAnalysisScheduler</span></a><span class="result"> extends <a href="../../../br/fpcf/BasicFPCFTriggeredAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFTriggeredAnalysisScheduler">BasicFPCFTriggeredAnalysisScheduler</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.TACAIAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TACAIAnalysis"></a><a id="TACAIAnalysis:TACAIAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/TACAIAnalysis$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="TACAIAnalysis$.html"><span class="name">TACAIAnalysis</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.fpcf.analyses.TACAITransformer" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TACAITransformer"></a><a id="TACAITransformer:TACAITransformer"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/TACAITransformer$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Transforms a BaseAIResult to the 3-address code." href="TACAITransformer$.html"><span class="name">TACAITransformer</span></a><span class="result"> extends <a href="../../../br/fpcf/BasicFPCFTransformerScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFTransformerScheduler">BasicFPCFTransformerScheduler</a> with <a href="TACAIInitializer.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIInitializer">TACAIInitializer</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Transforms a BaseAIResult to the 3-address code.</p>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

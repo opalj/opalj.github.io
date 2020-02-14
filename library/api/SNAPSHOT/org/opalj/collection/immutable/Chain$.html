@@ -1,0 +1,1078 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.collection.immutable.Chain</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.collection.immutable.Chain" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.collection.immutable.Chain" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../../index.js"></script>
+      <script type="text/javascript" src="../../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../../br/index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="../../ai/index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.collection" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="collection"></a><a id="collection:collection"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL's collection library is primarily designed with high performance in mind." href="../index.html"><span class="name">collection</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL's collection library is primarily designed with high performance in mind.</p><div class="fullcomment"><div class="comment cmt"><h4>Design Goals</h4><p>OPAL's collection library is primarily designed with high performance in mind. I.e., all methods
+provided by the collection library are reasonably optimized. However, providing a very large
+number of methods is a non-goal. Overall, OPAL's collection library provides:</p><ul><li>collection classes that are manually specialized for primitive data-types.</li><li>collection classes that are optimized for particularly small collections of values.</li><li>collection classes that target special use cases such as using a collection as a
+   workset/worklist.</li><li>collection classes that offer special methods that minimize the number of steps when
+   compared to general purpose methods.</li></ul><h4>Integration With Scala's Collection Library</h4><p>Hence, OPAL's collection library complements Scala's default collection library and is not
+intended to replace it. Integration with Scala's collection library is primarily provided
+by means of iterators (OPAL's <code>Iterator</code>s inherit from Scala's <code>Iterator</code>s). Furthermore
+the companion object of each of OPAL's collection classes generally provides factory methods
+that facilitate the conversion from Scala collection classes to OPAL collection classes.</p><h4>Status</h4><p>The collection library is growing. Nevertheless, the existing classes are production ready.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org.opalj">opalj</a></dd></dl></div>
+    </li><li name="org.opalj.collection.immutable" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="immutable"></a><a id="immutable:immutable"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html"><span class="name">immutable</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.collection">collection</a></dd></dl></div>
+    </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="$colon$amp$colon.html" title="An container for a list element."></a>
+                        <a href="$colon$amp$colon.html" title="An container for a list element.">:&amp;:</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="BitArraySet$.html" title=""></a>
+                        <a class="class" href="BitArraySet.html" title="An immutable bit set for storing positive int values."></a>
+                        <a href="BitArraySet.html" title="An immutable bit set for storing positive int values.">BitArraySet</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="" title="Factory for Chains."></a>
+                        <a class="trait" href="Chain.html" title="A linked list which does not perform any length related checks."></a>
+                        <a href="Chain.html" title="A linked list which does not perform any length related checks.">Chain</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="ConstArray$.html" title="Factory for ConstArrays."></a>
+                        <a class="class" href="ConstArray.html" title="Wraps an array such that the underlying array is no longer directly accessible and therefore also no longer mutable if ConstArray is the sole owner."></a>
+                        <a href="ConstArray.html" title="Wraps an array such that the underlying array is no longer directly accessible and therefore also no longer mutable if ConstArray is the sole owner.">ConstArray</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="ConstCovariantArray$.html" title="Factory for ConstCovariantArrays."></a>
+                        <a class="class" href="ConstCovariantArray.html" title="Wraps an array such that the underlying array is no longer directly accessible and therefore also no longer mutable if ConstCovariantArray is the sole owner."></a>
+                        <a href="ConstCovariantArray.html" title="Wraps an array such that the underlying array is no longer directly accessible and therefore also no longer mutable if ConstCovariantArray is the sole owner.">ConstCovariantArray</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="EmptyIntArraySet$.html" title=""></a>
+                        <a href="EmptyIntArraySet$.html" title="">EmptyIntArraySet</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="EmptyIntList$.html" title="An empty IntList."></a>
+                        <a href="EmptyIntList$.html" title="An empty IntList.">EmptyIntList</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="EmptyIntTrieSet$.html" title=""></a>
+                        <a href="EmptyIntTrieSet$.html" title="">EmptyIntTrieSet</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="FilteredIntTrieSet.html" title=""></a>
+                        <a href="FilteredIntTrieSet.html" title="">FilteredIntTrieSet</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="IdentityPair.html" title="Encapsulates a pair of values that is intended to be used as a key in Maps."></a>
+                        <a href="IdentityPair.html" title="Encapsulates a pair of values that is intended to be used as a key in Maps.">IdentityPair</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="Int2List$.html" title=""></a>
+                        <a class="trait" href="Int2List.html" title="A growable, immutable linked list based data store for int values except Int.MinValue."></a>
+                        <a href="Int2List.html" title="A growable, immutable linked list based data store for int values except Int.MinValue.">Int2List</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Int2ListEnd$.html" title="An empty Int2List."></a>
+                        <a href="Int2ListEnd$.html" title="An empty Int2List.">Int2ListEnd</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="Int2ListNode.html" title="An container for a list element."></a>
+                        <a href="Int2ListNode.html" title="An container for a list element.">Int2ListNode</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="IntArray$.html" title="Factory for IntArrays."></a>
+                        <a class="class" href="IntArray.html" title="Wraps an array such that the underlying array is no longer directly accessible and therefore also no longer mutable."></a>
+                        <a href="IntArray.html" title="Wraps an array such that the underlying array is no longer directly accessible and therefore also no longer mutable.">IntArray</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="IntArraySet$.html" title=""></a>
+                        <a class="class" href="IntArraySet.html" title="A sorted set of integer values backed by an ordered array to store the values; this guarantees log2(n) lookup."></a>
+                        <a href="IntArraySet.html" title="A sorted set of integer values backed by an ordered array to store the values; this guarantees log2(n) lookup.">IntArraySet</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="IntArraySet1.html" title=""></a>
+                        <a href="IntArraySet1.html" title="">IntArraySet1</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="IntArraySetBuilder$.html" title=""></a>
+                        <a class="class" href="IntArraySetBuilder.html" title=""></a>
+                        <a href="IntArraySetBuilder.html" title="">IntArraySetBuilder</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="IntArraySetN.html" title=""></a>
+                        <a href="IntArraySetN.html" title="">IntArraySetN</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="IntIntPair.html" title="An immutable pair of int values."></a>
+                        <a href="IntIntPair.html" title="An immutable pair of int values.">IntIntPair</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="IntList$.html" title=""></a>
+                        <a class="trait" href="IntList.html" title="An immutable linked list for storing int values."></a>
+                        <a href="IntList.html" title="An immutable linked list for storing int values.">IntList</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="IntListNode.html" title="An container for a list element."></a>
+                        <a href="IntListNode.html" title="An container for a list element.">IntListNode</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="IntRefPair.html" title="A simple pairing of an int value and a reference value."></a>
+                        <a href="IntRefPair.html" title="A simple pairing of an int value and a reference value.">IntRefPair</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="IntTrieSet$.html" title="Factory to create IntTrieSets."></a>
+                        <a class="class" href="IntTrieSet.html" title="An unordered set of integer values backed by a trie set."></a>
+                        <a href="IntTrieSet.html" title="An unordered set of integer values backed by a trie set.">IntTrieSet</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="IntTrieSet1$.html" title=""></a>
+                        <a class="class" href="IntTrieSet1.html" title=""></a>
+                        <a href="IntTrieSet1.html" title="">IntTrieSet1</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="IntTrieSetBuilder.html" title=""></a>
+                        <a href="IntTrieSetBuilder.html" title="">IntTrieSetBuilder</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="IntWorkSet.html" title="A set of integers which supports (reasonable) efficient headAndTail operations."></a>
+                        <a href="IntWorkSet.html" title="A set of integers which supports (reasonable) efficient headAndTail operations.">IntWorkSet</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="LargeLongLinkedTrieSet$.html" title=""></a>
+                        <a href="LargeLongLinkedTrieSet$.html" title="">LargeLongLinkedTrieSet</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="Long2List$.html" title=""></a>
+                        <a class="class" href="Long2List.html" title="A growable, immutable linked list based data store for long values."></a>
+                        <a href="Long2List.html" title="A growable, immutable linked list based data store for long values.">Long2List</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Long2List0$.html" title="An empty Long2List."></a>
+                        <a href="Long2List0$.html" title="An empty Long2List.">Long2List0</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="LongLinkedSet.html" title="A set of long values."></a>
+                        <a href="LongLinkedSet.html" title="A set of long values.">LongLinkedSet</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="LongLinkedTrieSet$.html" title=""></a>
+                        <a class="class" href="LongLinkedTrieSet.html" title="An effectively immutable trie set of long values where the elements are sorted based on the insertion order."></a>
+                        <a href="LongLinkedTrieSet.html" title="An effectively immutable trie set of long values where the elements are sorted based on the insertion order.">LongLinkedTrieSet</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="LongLinkedTrieSet0$.html" title=""></a>
+                        <a href="LongLinkedTrieSet0$.html" title="">LongLinkedTrieSet0</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="LongLinkedTrieSet1.html" title=""></a>
+                        <a href="LongLinkedTrieSet1.html" title="">LongLinkedTrieSet1</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="LongLinkedTrieSetN4$.html" title=""></a>
+                        <a href="LongLinkedTrieSetN4$.html" title="">LongLinkedTrieSetN4</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="LongList$.html" title=""></a>
+                        <a class="trait" href="LongList.html" title="An immutable linked list for storing long values."></a>
+                        <a href="LongList.html" title="An immutable linked list for storing long values.">LongList</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="LongList0$.html" title="An empty LongList."></a>
+                        <a href="LongList0$.html" title="An empty LongList.">LongList0</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="LongListNode.html" title="An container for a list element."></a>
+                        <a href="LongListNode.html" title="An container for a list element.">LongListNode</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="LongRefPair.html" title="A simple pairing of a long value and a reference value."></a>
+                        <a href="LongRefPair.html" title="A simple pairing of a long value and a reference value.">LongRefPair</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="LongTrieSet$.html" title=""></a>
+                        <a class="class" href="LongTrieSet.html" title=""></a>
+                        <a href="LongTrieSet.html" title="">LongTrieSet</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="LongTrieSetWithList$.html" title=""></a>
+                        <a class="class" href="LongTrieSetWithList.html" title="An immutable set of long values which maintains an additional list to enable an access of the values in insertion order (newest first)."></a>
+                        <a href="LongTrieSetWithList.html" title="An immutable set of long values which maintains an additional list to enable an access of the values in insertion order (newest first).">LongTrieSetWithList</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="LongWorkSet.html" title="A set of longs which supports (reasonable) efficient headAndTail operations."></a>
+                        <a href="LongWorkSet.html" title="A set of longs which supports (reasonable) efficient headAndTail operations.">LongWorkSet</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Naught$.html" title="An empty Chains."></a>
+                        <a href="Naught$.html" title="An empty Chains.">Naught</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="NonEmptyUIDSet.html" title=""></a>
+                        <a href="NonEmptyUIDSet.html" title="">NonEmptyUIDSet</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Pair$.html" title=""></a>
+                        <a href="Pair$.html" title="">Pair</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="Ref2List$.html" title=""></a>
+                        <a class="class" href="Ref2List.html" title="A growable, immutable linked list based, data store for reference values except null."></a>
+                        <a href="Ref2List.html" title="A growable, immutable linked list based, data store for reference values except null.">Ref2List</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="RefArray$.html" title="Factory for RefArrays."></a>
+                        <a class="class" href="RefArray.html" title="Wraps an array such that the underlying array is no longer directly accessible and therefore also no longer mutable if RefArray is the sole owner."></a>
+                        <a href="RefArray.html" title="Wraps an array such that the underlying array is no longer directly accessible and therefore also no longer mutable if RefArray is the sole owner.">RefArray</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="RefIntPair.html" title="A simple pairing of a reference value and an int value."></a>
+                        <a href="RefIntPair.html" title="A simple pairing of a reference value and an int value.">RefIntPair</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="UIDSet$.html" title=""></a>
+                        <a class="class" href="UIDSet.html" title="An unordered trie-set based on the unique ids of the stored UID objects."></a>
+                        <a href="UIDSet.html" title="An unordered trie-set based on the unique ids of the stored UID objects.">UIDSet</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="UIDSet0$.html" title="Represents the empty UIDSet."></a>
+                        <a href="UIDSet0$.html" title="Represents the empty UIDSet.">UIDSet0</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="UIDSet1.html" title=""></a>
+                        <a href="UIDSet1.html" title="">UIDSet1</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="UIDSet2$.html" title=""></a>
+                        <a class="class" href="UIDSet2.html" title=""></a>
+                        <a href="UIDSet2.html" title="">UIDSet2</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="UIDSet3.html" title=""></a>
+                        <a href="UIDSet3.html" title="">UIDSet3</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="UIDSetInnerNode.html" title=""></a>
+                        <a href="UIDSetInnerNode.html" title="">UIDSetInnerNode</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="UIDSetLeaf.html" title=""></a>
+                        <a href="UIDSetLeaf.html" title="">UIDSetLeaf</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="UIDTrieSet$.html" title="Factory methods for creating UIDTrieSets."></a>
+                        <a class="class" href="UIDTrieSet.html" title="A set of objects of type UID."></a>
+                        <a href="UIDTrieSet.html" title="A set of objects of type UID.">UIDTrieSet</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="UIDTrieSet0$.html" title=""></a>
+                        <a href="UIDTrieSet0$.html" title="">UIDTrieSet0</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="UIDTrieSet1.html" title=""></a>
+                        <a href="UIDTrieSet1.html" title="">UIDTrieSet1</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="UShortPair$.html" title="Factory to create UShortPair objects."></a>
+                        <a class="class" href="UShortPair.html" title="A representation of a pair of unsigned short values."></a>
+                        <a href="UShortPair.html" title="A representation of a pair of unsigned short values.">UShortPair</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="object value">
+      <div id="definition">
+        <a href="Chain.html" title="See companion trait"><div class="big-circle object-companion-trait">o</div></a>
+        <p id="owner"><a href="../../../index.html" class="extype" name="org">org</a>.<a href="../../index.html" class="extype" name="org.opalj">opalj</a>.<a href="../index.html" class="extype" name="org.opalj.collection">collection</a>.<a href="index.html" class="extype" name="org.opalj.collection.immutable">immutable</a></p>
+        <h1><a href="Chain.html" title="See companion trait">Chain</a><span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"><div>
+            Companion <a href="Chain.html" title="See companion trait">trait Chain</a>
+          </div></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Chain</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Factory for <a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>s.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/common/src/main/scala/org/opalj/collection/immutable/Chain.scala?at=develop" target="_blank">Chain.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="org.opalj.collection.immutable.Chain"><span>Chain</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.opalj.collection.immutable.Chain.ChainBuilder" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ChainBuilder[T]extendsBuilder[T,org.opalj.collection.immutable.Chain[T]]"></a><a id="ChainBuilder[T]:ChainBuilder[T]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$$ChainBuilder.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Builder for Chains." href="Chain$$ChainBuilder.html"><span class="name">ChainBuilder</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.collection.mutable.Builder">Builder</span>[<span class="extype" name="org.opalj.collection.immutable.Chain.ChainBuilder.T">T</span>, <a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>[<span class="extype" name="org.opalj.collection.immutable.Chain.ChainBuilder.T">T</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Builder for <a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>s.</p><div class="fullcomment"><div class="comment cmt"><p>Builder for <a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>s. The builder is specialized for the primitive
+type <code>Int</code> to enable the creation of new instances of the correspondingly
+specialized list.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The type of the list's element.</p></dd></dl><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>The builder must not be used after a <code>result</code> call.</p></span></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.collection.immutable.Chain#CompleteEmptyChain" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CompleteEmptyChain:org.opalj.collection.CompleteCollection[org.opalj.collection.immutable.Chain[Nothing]]"></a><a id="CompleteEmptyChain:CompleteCollection[Chain[Nothing]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#CompleteEmptyChain:org.opalj.collection.CompleteCollection[org.opalj.collection.immutable.Chain[Nothing]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CompleteEmptyChain</span><span class="result">: <a href="../CompleteCollection.html" class="extype" name="org.opalj.collection.CompleteCollection">CompleteCollection</a>[<a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>[<span class="extype" name="scala.Nothing">Nothing</span>]]</span>
+      </span>
+      
+      
+    </li><li name="org.opalj.collection.immutable.Chain#GenericSpecializedCBF" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GenericSpecializedCBF:scala.collection.generic.CanBuildFrom[Any,Int,org.opalj.collection.immutable.Chain[Int]]{defapply(from:Any):org.opalj.collection.immutable.Chain.ChainBuilder[Int];defapply():org.opalj.collection.immutable.Chain.ChainBuilder[Int]}"></a><a id="GenericSpecializedCBF:CanBuildFrom[Any,Int,Chain[Int]]{.../*2definitionsintyperefinement*/}"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#GenericSpecializedCBF:scala.collection.generic.CanBuildFrom[Any,Int,org.opalj.collection.immutable.Chain[Int]]{defapply(from:Any):org.opalj.collection.immutable.Chain.ChainBuilder[Int];defapply():org.opalj.collection.immutable.Chain.ChainBuilder[Int]}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">GenericSpecializedCBF</span><span class="result">: <span class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Int">Int</span>, <a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>[<span class="extype" name="scala.Int">Int</span>]] { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      
+      
+    </li><li name="org.opalj.collection.immutable.Chain#IncompleteEmptyChain" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IncompleteEmptyChain:org.opalj.collection.IncompleteCollection[org.opalj.collection.immutable.Chain[Nothing]]"></a><a id="IncompleteEmptyChain:IncompleteCollection[Chain[Nothing]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#IncompleteEmptyChain:org.opalj.collection.IncompleteCollection[org.opalj.collection.immutable.Chain[Nothing]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">IncompleteEmptyChain</span><span class="result">: <a href="../IncompleteCollection.html" class="extype" name="org.opalj.collection.IncompleteCollection">IncompleteCollection</a>[<a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>[<span class="extype" name="scala.Nothing">Nothing</span>]]</span>
+      </span>
+      
+      
+    </li><li name="org.opalj.collection.immutable.Chain#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply[T](es:T*):org.opalj.collection.immutable.Chain[T]"></a><a id="apply[T](T*):Chain[T]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#apply[T](es:T*):org.opalj.collection.immutable.Chain[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="es">es: <span class="extype" name="org.opalj.collection.immutable.Chain.apply.T">T</span>*</span>)</span><span class="result">: <a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>[<span class="extype" name="org.opalj.collection.immutable.Chain.apply.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>The recommended way to create a Chain with one element is to
+          use the <code>singleton</code> method.</p></span></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.opalj.collection.immutable.Chain#canBuildFrom" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="canBuildFrom[A&lt;:AnyRef]:scala.collection.generic.CanBuildFrom[org.opalj.collection.immutable.Chain[_],A,org.opalj.collection.immutable.Chain[A]]"></a><a id="canBuildFrom[A&lt;:AnyRef]:CanBuildFrom[Chain[_],A,Chain[A]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#canBuildFrom[A&lt;:AnyRef]:scala.collection.generic.CanBuildFrom[org.opalj.collection.immutable.Chain[_],A,org.opalj.collection.immutable.Chain[A]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canBuildFrom</span><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result">: <span class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</span>[<a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>[_], <span class="extype" name="org.opalj.collection.immutable.Chain.canBuildFrom.A">A</span>, <a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>[<span class="extype" name="org.opalj.collection.immutable.Chain.canBuildFrom.A">A</span>]]</span>
+      </span>
+      
+      
+    </li><li name="org.opalj.collection.immutable.Chain#canBuildIntChainFrom" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="canBuildIntChainFrom:scala.collection.generic.CanBuildFrom[org.opalj.collection.immutable.Chain[_],Int,org.opalj.collection.immutable.Chain[Int]]"></a><a id="canBuildIntChainFrom:CanBuildFrom[Chain[_],Int,Chain[Int]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#canBuildIntChainFrom:scala.collection.generic.CanBuildFrom[org.opalj.collection.immutable.Chain[_],Int,org.opalj.collection.immutable.Chain[Int]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canBuildIntChainFrom</span><span class="result">: <span class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</span>[<a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>[_], <span class="extype" name="scala.Int">Int</span>, <a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>[<span class="extype" name="scala.Int">Int</span>]]</span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.collection.immutable.Chain#empty" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="empty[T]:org.opalj.collection.immutable.Chain[T]"></a><a id="empty[T]:Chain[T]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#empty[T]:org.opalj.collection.immutable.Chain[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">empty</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>[<span class="extype" name="org.opalj.collection.immutable.Chain.empty.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns an empty list.</p><div class="fullcomment"><div class="comment cmt"><p>Returns an empty list.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>In general it is preferable to directly use <a href="Naught$.html" class="extype" name="org.opalj.collection.immutable.Naught">Naught</a>.</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.opalj.collection.immutable.Chain#newBuilder" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="newBuilder[T](implicitt:scala.reflect.ClassTag[T]):org.opalj.collection.immutable.Chain.ChainBuilder[T]"></a><a id="newBuilder[T](ClassTag[T]):ChainBuilder[T]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#newBuilder[T](implicitt:scala.reflect.ClassTag[T]):org.opalj.collection.immutable.Chain.ChainBuilder[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newBuilder</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="t">t: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="org.opalj.collection.immutable.Chain.newBuilder.T">T</span>]</span>)</span><span class="result">: <a href="Chain$$ChainBuilder.html" class="extype" name="org.opalj.collection.immutable.Chain.ChainBuilder">ChainBuilder</a>[<span class="extype" name="org.opalj.collection.immutable.Chain.newBuilder.T">T</span>]</span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.collection.immutable.Chain#singleton" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="singleton[T](e:T):org.opalj.collection.immutable.Chain[T]"></a><a id="singleton[T](T):Chain[T]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#singleton[T](e:T):org.opalj.collection.immutable.Chain[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">singleton</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="e">e: <span class="extype" name="org.opalj.collection.immutable.Chain.singleton.T">T</span></span>)</span><span class="result">: <a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>[<span class="extype" name="org.opalj.collection.immutable.Chain.singleton.T">T</span>]</span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.collection.immutable.Chain#toTraversable" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="toTraversable[T](cl:org.opalj.collection.immutable.Chain[T]):Traversable[T]"></a><a id="toTraversable[T](Chain[T]):Traversable[T]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#toTraversable[T](cl:org.opalj.collection.immutable.Chain[T]):Traversable[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toTraversable</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="cl">cl: <a href="Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>[<span class="extype" name="org.opalj.collection.immutable.Chain.toTraversable.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="org.opalj.collection.immutable.Chain.toTraversable.T">T</span>]</span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/immutable/Chain$.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

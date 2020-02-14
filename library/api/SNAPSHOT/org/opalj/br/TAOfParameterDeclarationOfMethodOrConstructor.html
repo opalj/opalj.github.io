@@ -1,0 +1,1846 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.br.TAOfParameterDeclarationOfMethodOrConstructor</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.br.TAOfParameterDeclarationOfMethodOrConstructor" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.br.TAOfParameterDeclarationOfMethodOrConstructor" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../index.js"></script>
+      <script type="text/javascript" src="../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="../ai/index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.br" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="br"></a><a id="br:br"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="In this representation of Java bytecode references to a Java class file's constant pool and to attributes are replaced by direct references to the corresponding constant pool entries." href="index.html"><span class="name">br</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">In this representation of Java bytecode references to a Java class file's constant
+pool and to attributes are replaced by direct references to the corresponding constant
+pool entries.</p><div class="fullcomment"><div class="comment cmt"><p>In this representation of Java bytecode references to a Java class file's constant
+pool and to attributes are replaced by direct references to the corresponding constant
+pool entries. This facilitates developing analyses and fosters comprehension.</p><p>Based on the fact that indirect
+references to constant pool entries are resolved and replaced by direct references this
+representation is called the resolved representation.</p><p>This representation of Java bytecode is considered as OPAL's standard representation
+for writing Scala based analyses. This representation is engineered such
+that it facilitates writing analyses that use pattern matching.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj">opalj</a></dd></dl></div>
+    </li><li name="org.opalj.br.analyses" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="analyses"></a><a id="analyses:analyses"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/analyses/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines commonly useful type aliases." href="analyses/index.html"><span class="name">analyses</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Defines commonly useful type aliases.</p><div class="fullcomment"><div class="comment cmt"><p>Defines commonly useful type aliases.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.cfg" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cfg"></a><a id="cfg:cfg"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/cfg/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="cfg/index.html"><span class="name">cfg</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.collection" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="collection"></a><a id="collection:collection"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/collection/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="collection/index.html"><span class="name">collection</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.cp" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cp"></a><a id="cp:cp"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/cp/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Implementation of classes to represent/recreate a class file's constant pool." href="cp/index.html"><span class="name">cp</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Implementation of classes to represent/recreate a class file's constant pool.</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of classes to represent/recreate a class file's constant pool.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fpcf"></a><a id="fpcf:fpcf"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/fpcf/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="fpcf/index.html"><span class="name">fpcf</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.instructions" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="instructions"></a><a id="instructions:instructions"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/instructions/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Common instruction sequences." href="instructions/index.html"><span class="name">instructions</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Common instruction sequences.</p><div class="fullcomment"><div class="comment cmt"><p>Common instruction sequences.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.reader" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reader"></a><a id="reader:reader"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/reader/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines convenience methods related to reading in class files." href="reader/index.html"><span class="name">reader</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Defines convenience methods related to reading in class files.</p><div class="fullcomment"><div class="comment cmt"><p>Defines convenience methods related to reading in class files.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li class="current-entities indented3">
+                        <a class="object" href="Annotation$.html" title="Factory object to create Annotation objects."></a>
+                        <a class="class" href="Annotation.html" title="An annotation of a class, field, method or method parameter."></a>
+                        <a href="Annotation.html" title="An annotation of a class, field, method or method parameter.">Annotation</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AnnotationLike.html" title="An annotation of a code entity."></a>
+                        <a href="AnnotationLike.html" title="An annotation of a code entity.">AnnotationLike</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="AnnotationTable$.html" title="Functionality common to annotation tables."></a>
+                        <a class="trait" href="AnnotationTable.html" title="The runtime (in)visible annotations of a class, method, or field."></a>
+                        <a href="AnnotationTable.html" title="The runtime (in)visible annotations of a class, method, or field.">AnnotationTable</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="AnnotationValue$.html" title=""></a>
+                        <a class="class" href="AnnotationValue.html" title=""></a>
+                        <a href="AnnotationValue.html" title="">AnnotationValue</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AppendFrame.html" title=""></a>
+                        <a href="AppendFrame.html" title="">AppendFrame</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ArrayElementType$.html" title="Facilitates matching against an array's element type."></a>
+                        <a href="ArrayElementType$.html" title="Facilitates matching against an array's element type.">ArrayElementType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ArrayType$.html" title="Defines factory and extractor methods for ArrayTypes."></a>
+                        <a class="class" href="ArrayType.html" title="Represents an array type."></a>
+                        <a href="ArrayType.html" title="Represents an array type.">ArrayType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ArrayTypeSignature$.html" title=""></a>
+                        <a class="class" href="ArrayTypeSignature.html" title=""></a>
+                        <a href="ArrayTypeSignature.html" title="">ArrayTypeSignature</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ArrayValue$.html" title=""></a>
+                        <a class="class" href="ArrayValue.html" title=""></a>
+                        <a href="ArrayValue.html" title="">ArrayValue</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Attribute.html" title="A class file attribute."></a>
+                        <a href="Attribute.html" title="A class file attribute.">Attribute</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="BaseType$.html" title="Common constants related to base types (aka."></a>
+                        <a class="trait" href="BaseType.html" title=""></a>
+                        <a href="BaseType.html" title="">BaseType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="BaseTypeElementValue.html" title="Common super trait of all element values with a primitive base type."></a>
+                        <a href="BaseTypeElementValue.html" title="Common super trait of all element values with a primitive base type.">BaseTypeElementValue</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="BasicClassTypeSignature$.html" title="Extractor/Matcher of the (potentially erased) ObjectType that is defined by a ClassTypeSignature; ignores all further potential type parameters."></a>
+                        <a href="BasicClassTypeSignature$.html" title="Extractor/Matcher of the (potentially erased) ObjectType that is defined by a ClassTypeSignature; ignores all further potential type parameters.">BasicClassTypeSignature</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="BooleanType$.html" title=""></a>
+                        <a class="class" href="BooleanType.html" title="The type of boolean values (true=1, false=0)."></a>
+                        <a href="BooleanType.html" title="The type of boolean values (true=1, false=0).">BooleanType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="BooleanValue$.html" title=""></a>
+                        <a class="class" href="BooleanValue.html" title=""></a>
+                        <a href="BooleanValue.html" title="">BooleanValue</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="BootstrapArgument.html" title="A marker trait to identify those constant pool values that can be arguments of boot strap methods."></a>
+                        <a href="BootstrapArgument.html" title="A marker trait to identify those constant pool values that can be arguments of boot strap methods.">BootstrapArgument</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="BootstrapMethod.html" title="Java 7's 'BootstrapMethod'."></a>
+                        <a href="BootstrapMethod.html" title="Java 7's 'BootstrapMethod'.">BootstrapMethod</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="BootstrapMethodTable$.html" title=""></a>
+                        <a class="class" href="BootstrapMethodTable.html" title="Java 7's BootstrapMethods_attribute."></a>
+                        <a href="BootstrapMethodTable.html" title="Java 7's BootstrapMethods_attribute.">BootstrapMethodTable</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ByteType$.html" title=""></a>
+                        <a class="class" href="ByteType.html" title=""></a>
+                        <a href="ByteType.html" title="">ByteType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ByteValue$.html" title=""></a>
+                        <a class="class" href="ByteValue.html" title=""></a>
+                        <a href="ByteValue.html" title="">ByteValue</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="CTIntType$.html" title="In some cases we abstract over all computational type integer values."></a>
+                        <a class="trait" href="CTIntType.html" title="All values which are stored in a value with computational type integer."></a>
+                        <a href="CTIntType.html" title="All values which are stored in a value with computational type integer.">CTIntType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Category1ComputationalTypeCategory$.html" title=""></a>
+                        <a href="Category1ComputationalTypeCategory$.html" title="">Category1ComputationalTypeCategory</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Category2ComputationalTypeCategory$.html" title=""></a>
+                        <a href="Category2ComputationalTypeCategory$.html" title="">Category2ComputationalTypeCategory</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="CharType$.html" title=""></a>
+                        <a class="class" href="CharType.html" title=""></a>
+                        <a href="CharType.html" title="">CharType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="CharValue$.html" title=""></a>
+                        <a class="class" href="CharValue.html" title=""></a>
+                        <a href="CharValue.html" title="">CharValue</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ChopFrame$.html" title=""></a>
+                        <a class="trait" href="ChopFrame.html" title=""></a>
+                        <a href="ChopFrame.html" title="">ChopFrame</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ChopFrame248.html" title=""></a>
+                        <a href="ChopFrame248.html" title="">ChopFrame248</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ChopFrame249.html" title=""></a>
+                        <a href="ChopFrame249.html" title="">ChopFrame249</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ChopFrame250.html" title=""></a>
+                        <a href="ChopFrame250.html" title="">ChopFrame250</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ClassFile$.html" title="Defines factory and extractor methods for ClassFile objects as well as related constants."></a>
+                        <a class="class" href="ClassFile.html" title="Represents a single class file which either defines a class type or an interface type."></a>
+                        <a href="ClassFile.html" title="Represents a single class file which either defines a class type or an interface type.">ClassFile</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ClassFileAttributeBuilder.html" title="Given a class files' main elements the attribute is build."></a>
+                        <a href="ClassFileAttributeBuilder.html" title="Given a class files' main elements the attribute is build.">ClassFileAttributeBuilder</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ClassFileRepository.html" title="Enables the lookup of ClassFiles."></a>
+                        <a href="ClassFileRepository.html" title="Enables the lookup of ClassFiles.">ClassFileRepository</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ClassHierarchy$.html" title="Factory methods for creating ClassHierarchy objects."></a>
+                        <a class="class" href="ClassHierarchy.html" title="Represents a project's class hierarchy."></a>
+                        <a href="ClassHierarchy.html" title="Represents a project's class hierarchy.">ClassHierarchy</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ClassMember$.html" title="Defines an extractor method for class members."></a>
+                        <a class="trait" href="ClassMember.html" title="Abstractions over the common properties of class members (Methods and Fields)."></a>
+                        <a href="ClassMember.html" title="Abstractions over the common properties of class members (Methods and Fields).">ClassMember</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ClassSignature$.html" title=""></a>
+                        <a class="class" href="ClassSignature.html" title=""></a>
+                        <a href="ClassSignature.html" title="">ClassSignature</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ClassTypeSignature$.html" title=""></a>
+                        <a class="class" href="ClassTypeSignature.html" title=""></a>
+                        <a href="ClassTypeSignature.html" title="">ClassTypeSignature</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ClassValue$.html" title=""></a>
+                        <a class="class" href="ClassValue.html" title=""></a>
+                        <a href="ClassValue.html" title="">ClassValue</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Code$.html" title="Defines constants useful when analyzing a method's code."></a>
+                        <a class="class" href="Code.html" title="Representation of a method's code attribute, that is, representation of a method's implementation."></a>
+                        <a href="Code.html" title="Representation of a method's code attribute, that is, representation of a method's implementation.">Code</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CodeAnalysisFailedException.html" title="Exception that is thrown when an analysis of a method's implementation has failed."></a>
+                        <a href="CodeAnalysisFailedException.html" title="Exception that is thrown when an analysis of a method's implementation has failed.">CodeAnalysisFailedException</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CodeAttribute.html" title="Attributes which are referred to by the code attribute."></a>
+                        <a href="CodeAttribute.html" title="Attributes which are referred to by the code attribute.">CodeAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CodeAttributeBuilder.html" title="Given a method's signature and access flags the code attribute is build and some meta information - depending on the type of the code attribute builder - is collected."></a>
+                        <a href="CodeAttributeBuilder.html" title="Given a method's signature and access flags the code attribute is build and some meta information - depending on the type of the code attribute builder - is collected.">CodeAttributeBuilder</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CodeSequence.html" title="A sequence of instructions; (currently) the common super trait of org.opalj.tac.TACStmts and org.opalj.br.Code)"></a>
+                        <a href="CodeSequence.html" title="A sequence of instructions; (currently) the common super trait of org.opalj.tac.TACStmts and org.opalj.br.Code)">CodeSequence</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CommonAttributes.html" title="Defines methods to return common attributes from the attributes table of ClassFile, Field, Method and Code declarations."></a>
+                        <a href="CommonAttributes.html" title="Defines methods to return common attributes from the attributes table of ClassFile, Field, Method and Code declarations.">CommonAttributes</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CommonSourceElementAttributes.html" title="Defines methods to return common attributes from the attributes table of ClassFile, Field and Method declarations."></a>
+                        <a href="CommonSourceElementAttributes.html" title="Defines methods to return common attributes from the attributes table of ClassFile, Field and Method declarations.">CommonSourceElementAttributes</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CompactLineNumberTable.html" title="A method's line number table."></a>
+                        <a href="CompactLineNumberTable.html" title="A method's line number table.">CompactLineNumberTable</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="CompareAllConfiguration$.html" title=""></a>
+                        <a class="class" href="CompareAllConfiguration.html" title=""></a>
+                        <a href="CompareAllConfiguration.html" title="">CompareAllConfiguration</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ComputationalType.html" title="The computational type of a value on the operand stack."></a>
+                        <a href="ComputationalType.html" title="The computational type of a value on the operand stack.">ComputationalType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ComputationalTypeCategory.html" title="The computational type category of a value on the operand stack."></a>
+                        <a href="ComputationalTypeCategory.html" title="The computational type category of a value on the operand stack.">ComputationalTypeCategory</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ComputationalTypeDouble$.html" title=""></a>
+                        <a href="ComputationalTypeDouble$.html" title="">ComputationalTypeDouble</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ComputationalTypeFloat$.html" title=""></a>
+                        <a href="ComputationalTypeFloat$.html" title="">ComputationalTypeFloat</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ComputationalTypeInt$.html" title=""></a>
+                        <a href="ComputationalTypeInt$.html" title="">ComputationalTypeInt</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ComputationalTypeLong$.html" title=""></a>
+                        <a href="ComputationalTypeLong$.html" title="">ComputationalTypeLong</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ComputationalTypeReference$.html" title=""></a>
+                        <a href="ComputationalTypeReference$.html" title="">ComputationalTypeReference</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ComputationalTypeReturnAddress$.html" title=""></a>
+                        <a href="ComputationalTypeReturnAddress$.html" title="">ComputationalTypeReturnAddress</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ConcreteSourceElement.html" title="We treat as a source element every entity that can be referred to by other class files."></a>
+                        <a href="ConcreteSourceElement.html" title="We treat as a source element every entity that can be referred to by other class files.">ConcreteSourceElement</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ConcreteType$.html" title="Matches a ClassTypeSignature with a SimpleClassTypeSignature that does not define a generic type."></a>
+                        <a href="ConcreteType$.html" title="Matches a ClassTypeSignature with a SimpleClassTypeSignature that does not define a generic type.">ConcreteType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ConcreteTypeArgument$.html" title="Facilitates matching ProperTypeArguments that define a single concrete/invariant type that is not a generic type on its own."></a>
+                        <a href="ConcreteTypeArgument$.html" title="Facilitates matching ProperTypeArguments that define a single concrete/invariant type that is not a generic type on its own.">ConcreteTypeArgument</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ConstantClass.html" title="Represents a class or interface."></a>
+                        <a href="ConstantClass.html" title="Represents a class or interface.">ConstantClass</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ConstantDouble$.html" title=""></a>
+                        <a class="class" href="ConstantDouble.html" title=""></a>
+                        <a href="ConstantDouble.html" title="">ConstantDouble</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ConstantFieldValue.html" title="A representation of the constant value of a field."></a>
+                        <a href="ConstantFieldValue.html" title="A representation of the constant value of a field.">ConstantFieldValue</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ConstantFloat$.html" title=""></a>
+                        <a class="class" href="ConstantFloat.html" title=""></a>
+                        <a href="ConstantFloat.html" title="">ConstantFloat</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ConstantInteger$.html" title=""></a>
+                        <a class="class" href="ConstantInteger.html" title=""></a>
+                        <a href="ConstantInteger.html" title="">ConstantInteger</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ConstantLong$.html" title=""></a>
+                        <a class="class" href="ConstantLong.html" title=""></a>
+                        <a href="ConstantLong.html" title="">ConstantLong</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ConstantString$.html" title=""></a>
+                        <a class="class" href="ConstantString.html" title=""></a>
+                        <a href="ConstantString.html" title="">ConstantString</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ConstantValue$.html" title="Facilitates matching constant values."></a>
+                        <a class="trait" href="ConstantValue.html" title="Represents constant values; that is, values pushed onto the stack by the ldc(2)(_w) instructions or type information required by the instructions to create arrays."></a>
+                        <a href="ConstantValue.html" title="Represents constant values; that is, values pushed onto the stack by the ldc(2)(_w) instructions or type information required by the instructions to create arrays.">ConstantValue</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ContravariantIndicator$.html" title=""></a>
+                        <a class="class" href="ContravariantIndicator.html" title="A declaration such as &lt;? super Entry&gt; is represented in class file signatures by the ContravariantIndicator (&quot;? super&quot;) and a FieldTypeSignature."></a>
+                        <a href="ContravariantIndicator.html" title="A declaration such as &lt;? super Entry&gt; is represented in class file signatures by the ContravariantIndicator (&quot;? super&quot;) and a FieldTypeSignature.">ContravariantIndicator</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="CovariantIndicator$.html" title=""></a>
+                        <a class="class" href="CovariantIndicator.html" title="If you have a declaration such as &amp;lt;? extends Entry&amp;gt; then the &quot;? extends&quot; part is represented by the CovariantIndicator."></a>
+                        <a href="CovariantIndicator.html" title="If you have a declaration such as &amp;lt;? extends Entry&amp;gt; then the &quot;? extends&quot; part is represented by the CovariantIndicator.">CovariantIndicator</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="DeclaredMethod.html" title="Represents a declared method of a class identified by declaringClassType; that is, a method which belongs to the API of the class itself or a super class thereof."></a>
+                        <a href="DeclaredMethod.html" title="Represents a declared method of a class identified by declaringClassType; that is, a method which belongs to the API of the class itself or a super class thereof.">DeclaredMethod</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="DefinedMethod.html" title="Represents a declared method; i.e., a method which belongs to the (public and private) API of a class along with a reference to the original declaration."></a>
+                        <a href="DefinedMethod.html" title="Represents a declared method; i.e., a method which belongs to the (public and private) API of a class along with a reference to the original declaration.">DefinedMethod</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Deprecated$.html" title="The deprecated attribute."></a>
+                        <a href="Deprecated$.html" title="The deprecated attribute.">Deprecated</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="DoubleType$.html" title=""></a>
+                        <a class="class" href="DoubleType.html" title=""></a>
+                        <a href="DoubleType.html" title="">DoubleType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="DoubleValue$.html" title=""></a>
+                        <a class="class" href="DoubleValue.html" title=""></a>
+                        <a href="DoubleValue.html" title="">DoubleValue</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="DoubleVariableInfo$.html" title=""></a>
+                        <a href="DoubleVariableInfo$.html" title="">DoubleVariableInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ElementReferenceType$.html" title=""></a>
+                        <a href="ElementReferenceType$.html" title="">ElementReferenceType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ElementValue$.html" title=""></a>
+                        <a class="trait" href="ElementValue.html" title="An element value represents an annotation's value or an annonation's default value; depending on the context in which it is used."></a>
+                        <a href="ElementValue.html" title="An element value represents an annotation's value or an annonation's default value; depending on the context in which it is used.">ElementValue</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ElementValuePair$.html" title=""></a>
+                        <a class="class" href="ElementValuePair.html" title="An annotation's name-value pair."></a>
+                        <a href="ElementValuePair.html" title="An annotation's name-value pair.">ElementValuePair</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="EnclosingMethod$.html" title=""></a>
+                        <a class="class" href="EnclosingMethod.html" title="The optional enclosing method attribute of a class."></a>
+                        <a href="EnclosingMethod.html" title="The optional enclosing method attribute of a class.">EnclosingMethod</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="EnumValue$.html" title=""></a>
+                        <a class="class" href="EnumValue.html" title=""></a>
+                        <a href="EnumValue.html" title="">EnumValue</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ExceptionHandler.html" title="An entry in the exceptions table of a org.opalj.br.Code block."></a>
+                        <a href="ExceptionHandler.html" title="An entry in the exceptions table of a org.opalj.br.Code block.">ExceptionHandler</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ExceptionTable$.html" title=""></a>
+                        <a class="class" href="ExceptionTable.html" title="Attribute in a method's attributes table that declares the (checked) exceptions that may be thrown by the method."></a>
+                        <a href="ExceptionTable.html" title="Attribute in a method's attributes table that declares the (checked) exceptions that may be thrown by the method.">ExceptionTable</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Exports.html" title=""></a>
+                        <a href="Exports.html" title="">Exports</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Field$.html" title="Defines factory and extractor methods for Field objects."></a>
+                        <a class="class" href="Field.html" title=""></a>
+                        <a href="Field.html" title="">Field</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="FieldAccessMethodHandle.html" title=""></a>
+                        <a href="FieldAccessMethodHandle.html" title="">FieldAccessMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="FieldAttributeBuilder.html" title="Given a field's information a (final) attribute related to the field is build."></a>
+                        <a href="FieldAttributeBuilder.html" title="Given a field's information a (final) attribute related to the field is build.">FieldAttributeBuilder</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="FieldIdentifier.html" title=""></a>
+                        <a href="FieldIdentifier.html" title="">FieldIdentifier</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="FieldReadAccessMethodHandle.html" title=""></a>
+                        <a href="FieldReadAccessMethodHandle.html" title="">FieldReadAccessMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="FieldTemplate.html" title=""></a>
+                        <a href="FieldTemplate.html" title="">FieldTemplate</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="FieldType$.html" title="Factory to parse field type (descriptors) to get field type objects."></a>
+                        <a class="trait" href="FieldType.html" title="Supertype of all types except VoidType."></a>
+                        <a href="FieldType.html" title="Supertype of all types except VoidType.">FieldType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="FieldTypeJVMSignature$.html" title=""></a>
+                        <a href="FieldTypeJVMSignature$.html" title="">FieldTypeJVMSignature</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="FieldTypeSignature$.html" title=""></a>
+                        <a class="trait" href="FieldTypeSignature.html" title=""></a>
+                        <a href="FieldTypeSignature.html" title="">FieldTypeSignature</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="FieldWriteAccessMethodHandle.html" title=""></a>
+                        <a href="FieldWriteAccessMethodHandle.html" title="">FieldWriteAccessMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="FloatType$.html" title=""></a>
+                        <a class="class" href="FloatType.html" title=""></a>
+                        <a href="FloatType.html" title="">FloatType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="FloatValue$.html" title=""></a>
+                        <a class="class" href="FloatValue.html" title=""></a>
+                        <a href="FloatValue.html" title="">FloatValue</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="FloatVariableInfo$.html" title=""></a>
+                        <a href="FloatVariableInfo$.html" title="">FloatVariableInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="FormalTypeParameter.html" title=""></a>
+                        <a href="FormalTypeParameter.html" title="">FormalTypeParameter</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="FullFrame.html" title=""></a>
+                        <a href="FullFrame.html" title="">FullFrame</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="GenericType$.html" title="Matches all ClassTypeSignatures which consists of a SimpleClassTypeSignature with a non-empty List of TypeArguments ( which consists of Wildcards or ProperTypeArguments)"></a>
+                        <a href="GenericType$.html" title="Matches all ClassTypeSignatures which consists of a SimpleClassTypeSignature with a non-empty List of TypeArguments ( which consists of Wildcards or ProperTypeArguments)">GenericType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="GenericTypeArgument$.html" title="Facilitates matching the (VarianceIndicator, ObjectType) that is defined within a ProperTypeArgument."></a>
+                        <a href="GenericTypeArgument$.html" title="Facilitates matching the (VarianceIndicator, ObjectType) that is defined within a ProperTypeArgument.">GenericTypeArgument</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="GenericTypeWithClassSuffix$.html" title="Matches all ClassTypeSignatures which consists of a SimpleClassTypeSignature with an optional list of TypeArguments ( which consists of Wildcards or ProperTypeArguments) and a non-empty list of SimpleClassTypeSignature (which encodes the suffix of the ClassTypeSignature for inner classes)"></a>
+                        <a href="GenericTypeWithClassSuffix$.html" title="Matches all ClassTypeSignatures which consists of a SimpleClassTypeSignature with an optional list of TypeArguments ( which consists of Wildcards or ProperTypeArguments) and a non-empty list of SimpleClassTypeSignature (which encodes the suffix of the ClassTypeSignature for inner classes)">GenericTypeWithClassSuffix</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="GetFieldMethodHandle.html" title=""></a>
+                        <a href="GetFieldMethodHandle.html" title="">GetFieldMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="GetStaticMethodHandle.html" title=""></a>
+                        <a href="GetStaticMethodHandle.html" title="">GetStaticMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="HasNoArgsAndReturnsVoid$.html" title=""></a>
+                        <a href="HasNoArgsAndReturnsVoid$.html" title="">HasNoArgsAndReturnsVoid</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="InnerClass.html" title=""></a>
+                        <a href="InnerClass.html" title="">InnerClass</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="InnerClassTable$.html" title=""></a>
+                        <a class="class" href="InnerClassTable.html" title="Attribute in a class' attribute table that encodes information about inner classes."></a>
+                        <a href="InnerClassTable.html" title="Attribute in a class' attribute table that encodes information about inner classes.">InnerClassTable</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="InstructionsContainer.html" title="Common interface of all elements that have (at most one) sequence of instructions."></a>
+                        <a href="InstructionsContainer.html" title="Common interface of all elements that have (at most one) sequence of instructions.">InstructionsContainer</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="IntLikeType.html" title="An IntLikeType is every type (byte, char, short and int) that uses a primitive int to store the current value and which has explicit support in the JVM."></a>
+                        <a href="IntLikeType.html" title="An IntLikeType is every type (byte, char, short and int) that uses a primitive int to store the current value and which has explicit support in the JVM.">IntLikeType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="IntValue$.html" title=""></a>
+                        <a class="class" href="IntValue.html" title=""></a>
+                        <a href="IntValue.html" title="">IntValue</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="IntegerType$.html" title=""></a>
+                        <a class="class" href="IntegerType.html" title=""></a>
+                        <a href="IntegerType.html" title="">IntegerType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="IntegerVariableInfo$.html" title=""></a>
+                        <a href="IntegerVariableInfo$.html" title="">IntegerVariableInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="InvokeInterfaceMethodHandle.html" title=""></a>
+                        <a href="InvokeInterfaceMethodHandle.html" title="">InvokeInterfaceMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="InvokeSpecialMethodHandle.html" title=""></a>
+                        <a href="InvokeSpecialMethodHandle.html" title="">InvokeSpecialMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="InvokeStaticMethodHandle.html" title=""></a>
+                        <a href="InvokeStaticMethodHandle.html" title="">InvokeStaticMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="InvokeVirtualMethodHandle.html" title=""></a>
+                        <a href="InvokeVirtualMethodHandle.html" title="">InvokeVirtualMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="JVMField.html" title="Represents a single field declaration/definition."></a>
+                        <a href="JVMField.html" title="Represents a single field declaration/definition.">JVMField</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="JVMMethod.html" title="Represents a single method."></a>
+                        <a href="JVMMethod.html" title="Represents a single method.">JVMMethod</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="JVMMethodDescriptor$.html" title="Extractor for JVM method descriptors (for example, &quot;(I[Ljava/lang/Object;])V&quot;)."></a>
+                        <a href="JVMMethodDescriptor$.html" title="Extractor for JVM method descriptors (for example, &quot;(I[Ljava/lang/Object;])V&quot;).">JVMMethodDescriptor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="LineNumber.html" title="An entry in a line number table."></a>
+                        <a href="LineNumber.html" title="An entry in a line number table.">LineNumber</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="LineNumberTable$.html" title=""></a>
+                        <a class="trait" href="LineNumberTable.html" title="A method's line number table."></a>
+                        <a href="LineNumberTable.html" title="A method's line number table.">LineNumberTable</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="LocalVariable.html" title="An entry in a local variable table."></a>
+                        <a href="LocalVariable.html" title="An entry in a local variable table.">LocalVariable</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="LocalVariableTable$.html" title=""></a>
+                        <a class="class" href="LocalVariableTable.html" title="Representation of the local variable table."></a>
+                        <a href="LocalVariableTable.html" title="Representation of the local variable table.">LocalVariableTable</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="LocalVariableType.html" title=""></a>
+                        <a href="LocalVariableType.html" title="">LocalVariableType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="LocalVariableTypeTable$.html" title=""></a>
+                        <a class="class" href="LocalVariableTypeTable.html" title="Representation of the local variable type table."></a>
+                        <a href="LocalVariableTypeTable.html" title="Representation of the local variable type table.">LocalVariableTypeTable</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="LocalvarTableEntry.html" title="The local variable is valid in the range [start_pc, start_pc + length)."></a>
+                        <a href="LocalvarTableEntry.html" title="The local variable is valid in the range [start_pc, start_pc + length).">LocalvarTableEntry</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="LongType$.html" title=""></a>
+                        <a class="class" href="LongType.html" title=""></a>
+                        <a href="LongType.html" title="">LongType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="LongValue$.html" title=""></a>
+                        <a class="class" href="LongValue.html" title=""></a>
+                        <a href="LongValue.html" title="">LongValue</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="LongVariableInfo$.html" title=""></a>
+                        <a href="LongVariableInfo$.html" title="">LongVariableInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="LowerTypeBound$.html" title="Facilitates matching ProperTypeArguments that define a lower type bound."></a>
+                        <a href="LowerTypeBound$.html" title="Facilitates matching ProperTypeArguments that define a lower type bound.">LowerTypeBound</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Method$.html" title="Defines factory and extractor methods for Method objects."></a>
+                        <a class="class" href="Method.html" title="A method belonging to a class file."></a>
+                        <a href="Method.html" title="A method belonging to a class file.">Method</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="MethodAttributeBuilder.html" title="Given a method's signature and access flags the attribute related to the method is build."></a>
+                        <a href="MethodAttributeBuilder.html" title="Given a method's signature and access flags the attribute related to the method is build.">MethodAttributeBuilder</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="MethodCallMethodHandle$.html" title=""></a>
+                        <a class="class" href="MethodCallMethodHandle.html" title=""></a>
+                        <a href="MethodCallMethodHandle.html" title="">MethodCallMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="MethodDescriptor$.html" title="Defines extractor and factory methods for MethodDescriptors."></a>
+                        <a class="class" href="MethodDescriptor.html" title="A method descriptor represents the parameters that the method takes and the value that it returns."></a>
+                        <a href="MethodDescriptor.html" title="A method descriptor represents the parameters that the method takes and the value that it returns.">MethodDescriptor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="MethodHandle.html" title="A method handle."></a>
+                        <a href="MethodHandle.html" title="A method handle.">MethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="MethodIdentifier.html" title=""></a>
+                        <a href="MethodIdentifier.html" title="">MethodIdentifier</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="MethodParameter.html" title="The description of a method parameter."></a>
+                        <a href="MethodParameter.html" title="The description of a method parameter.">MethodParameter</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="MethodParameterTable$.html" title=""></a>
+                        <a class="class" href="MethodParameterTable.html" title="Representation of a method's information about the method parameters."></a>
+                        <a href="MethodParameterTable.html" title="Representation of a method's information about the method parameters.">MethodParameterTable</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="MethodSignature.html" title="Represents a method signature which consists of the name and descriptor of a method; the signatures of all methods of a class file have to be different."></a>
+                        <a href="MethodSignature.html" title="Represents a method signature which consists of the name and descriptor of a method; the signatures of all methods of a class file have to be different.">MethodSignature</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="MethodTemplate.html" title="A method which is not (yet) associated with a class file."></a>
+                        <a href="MethodTemplate.html" title="A method which is not (yet) associated with a class file.">MethodTemplate</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="MethodTypeSignature$.html" title=""></a>
+                        <a class="class" href="MethodTypeSignature.html" title=""></a>
+                        <a href="MethodTypeSignature.html" title="">MethodTypeSignature</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="MethodWithBody$.html" title="Provides efficient pattern matching facilities for methods with bodies."></a>
+                        <a href="MethodWithBody$.html" title="Provides efficient pattern matching facilities for methods with bodies.">MethodWithBody</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Module$.html" title=""></a>
+                        <a class="class" href="Module.html" title="Definition of a Java 9 module."></a>
+                        <a href="Module.html" title="Definition of a Java 9 module.">Module</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ModuleMainClass$.html" title=""></a>
+                        <a class="class" href="ModuleMainClass.html" title="Definition of a Java 9 module main class."></a>
+                        <a href="ModuleMainClass.html" title="Definition of a Java 9 module main class.">ModuleMainClass</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ModulePackages$.html" title=""></a>
+                        <a class="class" href="ModulePackages.html" title="Definition of a Java 9 module's packages."></a>
+                        <a href="ModulePackages.html" title="Definition of a Java 9 module's packages.">ModulePackages</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="MultipleDefinedMethods.html" title=""></a>
+                        <a href="MultipleDefinedMethods.html" title="">MultipleDefinedMethods</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NewInvokeSpecialMethodHandle.html" title=""></a>
+                        <a href="NewInvokeSpecialMethodHandle.html" title="">NewInvokeSpecialMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="NoArgumentMethodDescriptor$.html" title=""></a>
+                        <a href="NoArgumentMethodDescriptor$.html" title="">NoArgumentMethodDescriptor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="NoSourceElementsVisitor.html" title="Simple implementation of the SourceElementsVisitor trait where all methods do nothing."></a>
+                        <a href="NoSourceElementsVisitor.html" title="Simple implementation of the SourceElementsVisitor trait where all methods do nothing.">NoSourceElementsVisitor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="NotJavaLangObject$.html" title="Defines an extractor to match a type against any ObjectType except java.lang.Object."></a>
+                        <a href="NotJavaLangObject$.html" title="Defines an extractor to match a type against any ObjectType except java.lang.Object.">NotJavaLangObject</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="NotVoid$.html" title="Defines an extractor to match against any Type except void."></a>
+                        <a href="NotVoid$.html" title="Defines an extractor to match against any Type except void.">NotVoid</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="NullVariableInfo$.html" title=""></a>
+                        <a href="NullVariableInfo$.html" title="">NullVariableInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NumericType.html" title=""></a>
+                        <a href="NumericType.html" title="">NumericType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ObjectType$.html" title="Defines factory and extractor methods for ObjectTypes."></a>
+                        <a class="class" href="ObjectType.html" title="Represents an ObjectType."></a>
+                        <a href="ObjectType.html" title="Represents an ObjectType.">ObjectType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ObjectVariableInfo.html" title=""></a>
+                        <a href="ObjectVariableInfo.html" title="">ObjectVariableInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Opens.html" title=""></a>
+                        <a href="Opens.html" title="">Opens</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="PCAndAnyRef$.html" title=""></a>
+                        <a class="class" href="PCAndAnyRef.html" title="An efficient (i.e., no (un)boxing...) representation of an instruction and a value."></a>
+                        <a href="PCAndAnyRef.html" title="An efficient (i.e., no (un)boxing...) representation of an instruction and a value.">PCAndAnyRef</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="PCAndInstruction$.html" title=""></a>
+                        <a class="class" href="PCAndInstruction.html" title="An efficient (i.e., no (un)boxing...) representation of an instruction and its pc."></a>
+                        <a href="PCAndInstruction.html" title="An efficient (i.e., no (un)boxing...) representation of an instruction and its pc.">PCAndInstruction</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="PCInMethod$.html" title=""></a>
+                        <a class="class" href="PCInMethod.html" title="An efficient (i.e., no (un)boxing...) representation of an instruction (identified) by its pc in a method."></a>
+                        <a href="PCInMethod.html" title="An efficient (i.e., no (un)boxing...) representation of an instruction (identified) by its pc in a method.">PCInMethod</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ParameterAnnotationTable$.html" title=""></a>
+                        <a class="trait" href="ParameterAnnotationTable.html" title="Parameter annotations."></a>
+                        <a href="ParameterAnnotationTable.html" title="Parameter annotations.">ParameterAnnotationTable</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ProperTypeArgument.html" title=""></a>
+                        <a href="ProperTypeArgument.html" title="">ProperTypeArgument</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Provides.html" title=""></a>
+                        <a href="Provides.html" title="">Provides</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="PutFieldMethodHandle.html" title=""></a>
+                        <a href="PutFieldMethodHandle.html" title="">PutFieldMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="PutStaticMethodHandle.html" title=""></a>
+                        <a href="PutStaticMethodHandle.html" title="">PutStaticMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ReferenceType$.html" title="Factory to create instances of ReferenceType."></a>
+                        <a class="class" href="ReferenceType.html" title=""></a>
+                        <a href="ReferenceType.html" title="">ReferenceType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Requires.html" title=""></a>
+                        <a href="Requires.html" title="">Requires</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ReturnType$.html" title=""></a>
+                        <a href="ReturnType$.html" title="">ReturnType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ReturnTypeSignature.html" title=""></a>
+                        <a href="ReturnTypeSignature.html" title="">ReturnTypeSignature</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RuntimeInvisibleAnnotationTable$.html" title=""></a>
+                        <a class="class" href="RuntimeInvisibleAnnotationTable.html" title="The runtime invisible class, method, or field annotations."></a>
+                        <a href="RuntimeInvisibleAnnotationTable.html" title="The runtime invisible class, method, or field annotations.">RuntimeInvisibleAnnotationTable</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RuntimeInvisibleParameterAnnotationTable$.html" title=""></a>
+                        <a class="class" href="RuntimeInvisibleParameterAnnotationTable.html" title="Parameter annotations."></a>
+                        <a href="RuntimeInvisibleParameterAnnotationTable.html" title="Parameter annotations.">RuntimeInvisibleParameterAnnotationTable</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RuntimeInvisibleTypeAnnotationTable$.html" title=""></a>
+                        <a class="class" href="RuntimeInvisibleTypeAnnotationTable.html" title="The runtime invisible type annotations."></a>
+                        <a href="RuntimeInvisibleTypeAnnotationTable.html" title="The runtime invisible type annotations.">RuntimeInvisibleTypeAnnotationTable</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RuntimeVisibleAnnotationTable$.html" title=""></a>
+                        <a class="class" href="RuntimeVisibleAnnotationTable.html" title="A class, method, or field annotation."></a>
+                        <a href="RuntimeVisibleAnnotationTable.html" title="A class, method, or field annotation.">RuntimeVisibleAnnotationTable</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RuntimeVisibleParameterAnnotationTable$.html" title=""></a>
+                        <a class="class" href="RuntimeVisibleParameterAnnotationTable.html" title="Parameter annotations."></a>
+                        <a href="RuntimeVisibleParameterAnnotationTable.html" title="Parameter annotations.">RuntimeVisibleParameterAnnotationTable</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RuntimeVisibleTypeAnnotationTable$.html" title=""></a>
+                        <a class="class" href="RuntimeVisibleTypeAnnotationTable.html" title="A runtime visible type annotation."></a>
+                        <a href="RuntimeVisibleTypeAnnotationTable.html" title="A runtime visible type annotation.">RuntimeVisibleTypeAnnotationTable</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SameFrame.html" title=""></a>
+                        <a href="SameFrame.html" title="">SameFrame</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SameFrameExtended.html" title=""></a>
+                        <a href="SameFrameExtended.html" title="">SameFrameExtended</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SameLocals1StackItemFrame.html" title=""></a>
+                        <a href="SameLocals1StackItemFrame.html" title="">SameLocals1StackItemFrame</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SameLocals1StackItemFrameExtended.html" title=""></a>
+                        <a href="SameLocals1StackItemFrameExtended.html" title="">SameLocals1StackItemFrameExtended</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ShortType$.html" title=""></a>
+                        <a class="class" href="ShortType.html" title=""></a>
+                        <a href="ShortType.html" title="">ShortType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ShortValue$.html" title=""></a>
+                        <a class="class" href="ShortValue.html" title=""></a>
+                        <a href="ShortValue.html" title="">ShortValue</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Signature$.html" title=""></a>
+                        <a class="class" href="Signature.html" title="An attribute-level signature as defined in the JVM specification."></a>
+                        <a href="Signature.html" title="An attribute-level signature as defined in the JVM specification.">Signature</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SignatureElement.html" title="An element of a Signature used to encode generic type information."></a>
+                        <a href="SignatureElement.html" title="An element of a Signature used to encode generic type information.">SignatureElement</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SignatureVisitor.html" title="Implements a visitor for type signatures."></a>
+                        <a href="SignatureVisitor.html" title="Implements a visitor for type signatures.">SignatureVisitor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SimilarityTestConfiguration.html" title="Specifies which parts of a class file should be compared with another one."></a>
+                        <a href="SimilarityTestConfiguration.html" title="Specifies which parts of a class file should be compared with another one.">SimilarityTestConfiguration</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SimpleClassTypeSignature.html" title=""></a>
+                        <a href="SimpleClassTypeSignature.html" title="">SimpleClassTypeSignature</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="SimpleGenericType$.html" title="Facilitates matching ClassTypeSignatures that define a simple generic type that has a single type argument with a concrete type."></a>
+                        <a href="SimpleGenericType$.html" title="Facilitates matching ClassTypeSignatures that define a simple generic type that has a single type argument with a concrete type.">SimpleGenericType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="SingleArgumentMethodDescriptor$.html" title="Extractor for method descriptors defining a single parameter type and some return type."></a>
+                        <a href="SingleArgumentMethodDescriptor$.html" title="Extractor for method descriptors defining a single parameter type and some return type.">SingleArgumentMethodDescriptor</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="SourceDebugExtension$.html" title=""></a>
+                        <a class="class" href="SourceDebugExtension.html" title="Attribute to associate additional debug information with a class."></a>
+                        <a href="SourceDebugExtension.html" title="Attribute to associate additional debug information with a class.">SourceDebugExtension</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SourceElement.html" title="We treat as a source element every entity that can be referred to by other class files."></a>
+                        <a href="SourceElement.html" title="We treat as a source element every entity that can be referred to by other class files.">SourceElement</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SourceElementsVisitor.html" title="Classes that traverse a class file can extend this trait to facilitate reporting the traversed source file elements."></a>
+                        <a href="SourceElementsVisitor.html" title="Classes that traverse a class file can extend this trait to facilitate reporting the traversed source file elements.">SourceElementsVisitor</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="SourceFile$.html" title=""></a>
+                        <a class="class" href="SourceFile.html" title="The source file attribute is an optional attribute in the attributes table of org.opalj.br.ClassFile objects."></a>
+                        <a href="SourceFile.html" title="The source file attribute is an optional attribute in the attributes table of org.opalj.br.ClassFile objects.">SourceFile</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="StackMapFrame.html" title="Part of the Java 6 stack map table attribute."></a>
+                        <a href="StackMapFrame.html" title="Part of the Java 6 stack map table attribute.">StackMapFrame</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="StackMapTable$.html" title=""></a>
+                        <a class="class" href="StackMapTable.html" title="Java 6's stack map table attribute."></a>
+                        <a href="StackMapTable.html" title="Java 6's stack map table attribute.">StackMapTable</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="StringValue$.html" title=""></a>
+                        <a class="class" href="StringValue.html" title=""></a>
+                        <a href="StringValue.html" title="">StringValue</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="StructureIdentifier.html" title="Uniquely identifies a specific element that can (by definition) only exist once in a project."></a>
+                        <a href="StructureIdentifier.html" title="Uniquely identifies a specific element that can (by definition) only exist once in a project.">StructureIdentifier</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="SubtypeInformation$.html" title="Factory to create the subtype information data structure."></a>
+                        <a class="class" href="SubtypeInformation.html" title="Represents a type's subtype information."></a>
+                        <a href="SubtypeInformation.html" title="Represents a type's subtype information.">SubtypeInformation</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="SupertypeInformation$.html" title=""></a>
+                        <a class="class" href="SupertypeInformation.html" title="Represents a type's supertype information."></a>
+                        <a href="SupertypeInformation.html" title="Represents a type's supertype information.">SupertypeInformation</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="SynthesizedClassFiles$.html" title=""></a>
+                        <a class="class" href="SynthesizedClassFiles.html" title="This attribute stores references to ClassFile objects that have been generated while parsing the annotated ClassFile."></a>
+                        <a href="SynthesizedClassFiles.html" title="This attribute stores references to ClassFile objects that have been generated while parsing the annotated ClassFile.">SynthesizedClassFiles</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Synthetic$.html" title="The synthetic attribute."></a>
+                        <a href="Synthetic$.html" title="The synthetic attribute.">Synthetic</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="TADeeperInArrayType$.html" title=""></a>
+                        <a href="TADeeperInArrayType$.html" title="">TADeeperInArrayType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="TADeeperInNestedType$.html" title=""></a>
+                        <a href="TADeeperInNestedType$.html" title="">TADeeperInNestedType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="TADirectlyOnType$.html" title=""></a>
+                        <a href="TADirectlyOnType$.html" title="">TADirectlyOnType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfCastExpression.html" title=""></a>
+                        <a href="TAOfCastExpression.html" title="">TAOfCastExpression</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfCatch.html" title=""></a>
+                        <a href="TAOfCatch.html" title="">TAOfCatch</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfConstructorInMethodReferenceExpression.html" title=""></a>
+                        <a href="TAOfConstructorInMethodReferenceExpression.html" title="">TAOfConstructorInMethodReferenceExpression</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfConstructorInvocation.html" title=""></a>
+                        <a href="TAOfConstructorInvocation.html" title="">TAOfConstructorInvocation</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="TAOfFieldDeclaration$.html" title=""></a>
+                        <a href="TAOfFieldDeclaration$.html" title="">TAOfFieldDeclaration</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfFormalParameter.html" title=""></a>
+                        <a href="TAOfFormalParameter.html" title="">TAOfFormalParameter</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfInstanceOf.html" title=""></a>
+                        <a href="TAOfInstanceOf.html" title="">TAOfInstanceOf</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfLocalvarDecl.html" title=""></a>
+                        <a href="TAOfLocalvarDecl.html" title="">TAOfLocalvarDecl</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfMethodInMethodReferenceExpression.html" title=""></a>
+                        <a href="TAOfMethodInMethodReferenceExpression.html" title="">TAOfMethodInMethodReferenceExpression</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfMethodInvocation.html" title=""></a>
+                        <a href="TAOfMethodInvocation.html" title="">TAOfMethodInvocation</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfMethodReferenceExpressionIdentifier.html" title=""></a>
+                        <a href="TAOfMethodReferenceExpressionIdentifier.html" title="">TAOfMethodReferenceExpressionIdentifier</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfMethodReferenceExpressionNew.html" title=""></a>
+                        <a href="TAOfMethodReferenceExpressionNew.html" title="">TAOfMethodReferenceExpressionNew</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfNew.html" title=""></a>
+                        <a href="TAOfNew.html" title="">TAOfNew</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfParameterDeclarationOfClassOrInterface.html" title=""></a>
+                        <a href="TAOfParameterDeclarationOfClassOrInterface.html" title="">TAOfParameterDeclarationOfClassOrInterface</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="" title=""></a>
+                        <a href="" title="">TAOfParameterDeclarationOfMethodOrConstructor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="TAOfReceiverType$.html" title=""></a>
+                        <a href="TAOfReceiverType$.html" title="">TAOfReceiverType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfResourcevarDecl.html" title=""></a>
+                        <a href="TAOfResourcevarDecl.html" title="">TAOfResourcevarDecl</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="TAOfReturnType$.html" title=""></a>
+                        <a href="TAOfReturnType$.html" title="">TAOfReturnType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfSupertype.html" title=""></a>
+                        <a href="TAOfSupertype.html" title="">TAOfSupertype</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfThrows.html" title=""></a>
+                        <a href="TAOfThrows.html" title="">TAOfThrows</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfTypeBoundOfParameterDeclarationOfClassOrInterface.html" title=""></a>
+                        <a href="TAOfTypeBoundOfParameterDeclarationOfClassOrInterface.html" title="">TAOfTypeBoundOfParameterDeclarationOfClassOrInterface</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOfTypeBoundOfParameterDeclarationOfMethodOrConstructor.html" title=""></a>
+                        <a href="TAOfTypeBoundOfParameterDeclarationOfMethodOrConstructor.html" title="">TAOfTypeBoundOfParameterDeclarationOfMethodOrConstructor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="TAOnBoundOfWildcardType$.html" title=""></a>
+                        <a href="TAOnBoundOfWildcardType$.html" title="">TAOnBoundOfWildcardType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TAOnNestedType.html" title=""></a>
+                        <a href="TAOnNestedType.html" title="">TAOnNestedType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="TAOnTypeArgument$.html" title=""></a>
+                        <a class="class" href="TAOnTypeArgument.html" title=""></a>
+                        <a href="TAOnTypeArgument.html" title="">TAOnTypeArgument</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="TheArgument$.html" title="Extractor for method descriptors defining a single parameter type."></a>
+                        <a href="TheArgument$.html" title="Extractor for method descriptors defining a single parameter type.">TheArgument</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ThrowsSignature.html" title=""></a>
+                        <a href="ThrowsSignature.html" title="">ThrowsSignature</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="TopVariableInfo$.html" title=""></a>
+                        <a href="TopVariableInfo$.html" title="">TopVariableInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="TraversingVisitor.html" title="This visitor's visit methods completely traverse all elements of a type signature."></a>
+                        <a href="TraversingVisitor.html" title="This visitor's visit methods completely traverse all elements of a type signature.">TraversingVisitor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="TwoArgumentsMethodDescriptor$.html" title=""></a>
+                        <a href="TwoArgumentsMethodDescriptor$.html" title="">TwoArgumentsMethodDescriptor</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Type$.html" title=""></a>
+                        <a class="trait" href="Type.html" title="Represents a JVM type."></a>
+                        <a href="Type.html" title="Represents a JVM type.">Type</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypeAnnotation.html" title="A type annotation (*TA*)."></a>
+                        <a href="TypeAnnotation.html" title="A type annotation (*TA*).">TypeAnnotation</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypeAnnotationPath.html" title="The path that describes which type is actually annotated using a TypeAnnotation."></a>
+                        <a href="TypeAnnotationPath.html" title="The path that describes which type is actually annotated using a TypeAnnotation.">TypeAnnotationPath</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypeAnnotationPathElement.html" title="An element of the path that describes which type is actually annotated using a TypeAnnotation."></a>
+                        <a href="TypeAnnotationPathElement.html" title="An element of the path that describes which type is actually annotated using a TypeAnnotation.">TypeAnnotationPathElement</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="TypeAnnotationTable$.html" title="Functionality common to annotation tables."></a>
+                        <a class="trait" href="TypeAnnotationTable.html" title="The runtime (in)visible type annotations of a class, method, field or code block."></a>
+                        <a href="TypeAnnotationTable.html" title="The runtime (in)visible type annotations of a class, method, field or code block.">TypeAnnotationTable</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypeAnnotationTarget.html" title="Describes the kind of the target of a TypeAnnotation."></a>
+                        <a href="TypeAnnotationTarget.html" title="Describes the kind of the target of a TypeAnnotation.">TypeAnnotationTarget</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypeAnnotationTargetInClassDeclaration.html" title=""></a>
+                        <a href="TypeAnnotationTargetInClassDeclaration.html" title="">TypeAnnotationTargetInClassDeclaration</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypeAnnotationTargetInCode.html" title=""></a>
+                        <a href="TypeAnnotationTargetInCode.html" title="">TypeAnnotationTargetInCode</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypeAnnotationTargetInFieldDeclaration.html" title=""></a>
+                        <a href="TypeAnnotationTargetInFieldDeclaration.html" title="">TypeAnnotationTargetInFieldDeclaration</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypeAnnotationTargetInMetodDeclaration.html" title=""></a>
+                        <a href="TypeAnnotationTargetInMetodDeclaration.html" title="">TypeAnnotationTargetInMetodDeclaration</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypeAnnotationTargetInVarDecl.html" title=""></a>
+                        <a href="TypeAnnotationTargetInVarDecl.html" title="">TypeAnnotationTargetInVarDecl</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypeArgument.html" title=""></a>
+                        <a href="TypeArgument.html" title="">TypeArgument</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="TypeConversionFactory.html" title="A factory to create instruction sequences to convert one primitive type into another one."></a>
+                        <a href="TypeConversionFactory.html" title="A factory to create instruction sequences to convert one primitive type into another one.">TypeConversionFactory</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypeDeclaration.html" title="Stores information about a type's supertypes."></a>
+                        <a href="TypeDeclaration.html" title="Stores information about a type's supertypes.">TypeDeclaration</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypeHierarchyInformation.html" title="Represents the results of a type hierarchy related query."></a>
+                        <a href="TypeHierarchyInformation.html" title="Represents the results of a type hierarchy related query.">TypeHierarchyInformation</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypeIdentifier.html" title=""></a>
+                        <a href="TypeIdentifier.html" title="">TypeIdentifier</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="TypeSignature.html" title=""></a>
+                        <a href="TypeSignature.html" title="">TypeSignature</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="TypeVariableSignature$.html" title=""></a>
+                        <a class="class" href="TypeVariableSignature.html" title=""></a>
+                        <a href="TypeVariableSignature.html" title="">TypeVariableSignature</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TypesVisitor.html" title="Traverses a signature and calls for each Type the given method."></a>
+                        <a href="TypesVisitor.html" title="Traverses a signature and calls for each Type the given method.">TypesVisitor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="UninitializedThisVariableInfo$.html" title=""></a>
+                        <a href="UninitializedThisVariableInfo$.html" title="">UninitializedThisVariableInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="UninitializedVariableInfo.html" title=""></a>
+                        <a href="UninitializedVariableInfo.html" title="">UninitializedVariableInfo</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="UnknownAttribute$.html" title=""></a>
+                        <a class="class" href="UnknownAttribute.html" title="Represents (as a byte array) attributes that are not directly supported by OPAL."></a>
+                        <a href="UnknownAttribute.html" title="Represents (as a byte array) attributes that are not directly supported by OPAL.">UnknownAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="UnpackedLineNumberTable.html" title="A method's line number table."></a>
+                        <a href="UnpackedLineNumberTable.html" title="A method's line number table.">UnpackedLineNumberTable</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="UpperTypeBound$.html" title="Facilitates matching ProperTypeArguments that define an upper type bound."></a>
+                        <a href="UpperTypeBound$.html" title="Facilitates matching ProperTypeArguments that define an upper type bound.">UpperTypeBound</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="VarianceIndicator.html" title="Indicates a TypeArgument's variance."></a>
+                        <a href="VarianceIndicator.html" title="Indicates a TypeArgument's variance.">VarianceIndicator</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="VerificationTypeInfo.html" title="Part of the Java 6 stack map table attribute."></a>
+                        <a href="VerificationTypeInfo.html" title="Part of the Java 6 stack map table attribute.">VerificationTypeInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="VirtualClass.html" title="Represents a class for which we have found some references but have not analyzed any class file or do not want to keep the reference to the underlying class file."></a>
+                        <a href="VirtualClass.html" title="Represents a class for which we have found some references but have not analyzed any class file or do not want to keep the reference to the underlying class file.">VirtualClass</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="VirtualClassMember.html" title=""></a>
+                        <a href="VirtualClassMember.html" title="">VirtualClassMember</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="VirtualDeclaredMethod.html" title="Represents a method belonging to the API of the specified class type, where the original method definition is not available (in the context of the current analysis)."></a>
+                        <a href="VirtualDeclaredMethod.html" title="Represents a method belonging to the API of the specified class type, where the original method definition is not available (in the context of the current analysis).">VirtualDeclaredMethod</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="VirtualField.html" title="Represents a field of a virtual class."></a>
+                        <a href="VirtualField.html" title="Represents a field of a virtual class.">VirtualField</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="VirtualForwardingMethod.html" title=""></a>
+                        <a href="VirtualForwardingMethod.html" title="">VirtualForwardingMethod</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="VirtualMethod$.html" title=""></a>
+                        <a class="class" href="VirtualMethod.html" title="Represents a method of a virtual class."></a>
+                        <a href="VirtualMethod.html" title="Represents a method of a virtual class.">VirtualMethod</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="VirtualSourceElement$.html" title="Defines common helper functions related to VirtualSourceElements."></a>
+                        <a class="class" href="VirtualSourceElement.html" title="A VirtualSourceElement is the representation of some source element that may be detached from the concrete source element that represents the implementation; that is, the virtual source element may not have a reference to the concrete element."></a>
+                        <a href="VirtualSourceElement.html" title="A VirtualSourceElement is the representation of some source element that may be detached from the concrete source element that represents the implementation; that is, the virtual source element may not have a reference to the concrete element.">VirtualSourceElement</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="VirtualTypeFlag$.html" title="This class file level attribute identifies ClassFile objects that have no direct representation in the bytecode of a project."></a>
+                        <a href="VirtualTypeFlag$.html" title="This class file level attribute identifies ClassFile objects that have no direct representation in the bytecode of a project.">VirtualTypeFlag</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="VoidType$.html" title=""></a>
+                        <a class="class" href="VoidType.html" title="Represents the Java type/keyword void."></a>
+                        <a href="VoidType.html" title="Represents the Java type/keyword void.">VoidType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Wildcard$.html" title=""></a>
+                        <a class="class" href="Wildcard.html" title="If a type argument is not further specified (e.g., List&lt;?&gt; l = …), then the type argument &quot;?&quot; is represented by this object."></a>
+                        <a href="Wildcard.html" title="If a type argument is not further specified (e.g., List&lt;?&gt; l = …), then the type argument &quot;?&quot; is represented by this object.">Wildcard</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="class type">
+      <div id="definition">
+        <div class="big-circle class">c</div>
+        <p id="owner"><a href="../../index.html" class="extype" name="org">org</a>.<a href="../index.html" class="extype" name="org.opalj">opalj</a>.<a href="index.html" class="extype" name="org.opalj.br">br</a></p>
+        <h1>TAOfParameterDeclarationOfMethodOrConstructor<span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TAOfParameterDeclarationOfMethodOrConstructor</span><span class="params">(<span name="type_parameter_index">type_parameter_index: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="TypeAnnotationTargetInMetodDeclaration.html" class="extype" name="org.opalj.br.TypeAnnotationTargetInMetodDeclaration">TypeAnnotationTargetInMetodDeclaration</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/TypeAnnotation.scala?at=develop" target="_blank">TypeAnnotation.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="TypeAnnotationTargetInMetodDeclaration.html" class="extype" name="org.opalj.br.TypeAnnotationTargetInMetodDeclaration">TypeAnnotationTargetInMetodDeclaration</a>, <a href="TypeAnnotationTarget.html" class="extype" name="org.opalj.br.TypeAnnotationTarget">TypeAnnotationTarget</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="org.opalj.br.TAOfParameterDeclarationOfMethodOrConstructor"><span>TAOfParameterDeclarationOfMethodOrConstructor</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="org.opalj.br.TypeAnnotationTargetInMetodDeclaration"><span>TypeAnnotationTargetInMetodDeclaration</span></li><li class="in" name="org.opalj.br.TypeAnnotationTarget"><span>TypeAnnotationTarget</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.opalj.br.TAOfParameterDeclarationOfMethodOrConstructor#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(type_parameter_index:Int):org.opalj.br.TAOfParameterDeclarationOfMethodOrConstructor"></a><a id="&lt;init&gt;:TAOfParameterDeclarationOfMethodOrConstructor"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#&lt;init&gt;(type_parameter_index:Int):org.opalj.br.TAOfParameterDeclarationOfMethodOrConstructor" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TAOfParameterDeclarationOfMethodOrConstructor</span><span class="params">(<span name="type_parameter_index">type_parameter_index: <span class="extype" name="scala.Int">Int</span></span>)</span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.br.TypeAnnotationTargetInMetodDeclaration#remapPCs" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="remapPCs(codeSize:Int,f:org.opalj.br.PC=&gt;org.opalj.br.PC):Some[org.opalj.br.TypeAnnotationTarget]"></a><a id="remapPCs(Int,(PC)⇒PC):Some[TypeAnnotationTarget]"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#remapPCs(codeSize:Int,f:org.opalj.br.PC=&gt;org.opalj.br.PC):Some[org.opalj.br.TypeAnnotationTarget]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">remapPCs</span><span class="params">(<span name="codeSize">codeSize: <span class="extype" name="scala.Int">Int</span></span>, <span name="f">f: (<a href="index.html#PC=org.opalj.bytecode.PC" class="extmbr" name="org.opalj.br.PC">PC</a>) ⇒ <a href="index.html#PC=org.opalj.bytecode.PC" class="extmbr" name="org.opalj.br.PC">PC</a></span>)</span><span class="result">: <span class="extype" name="scala.Some">Some</span>[<a href="TypeAnnotationTarget.html" class="extype" name="org.opalj.br.TypeAnnotationTarget">TypeAnnotationTarget</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Remaps the pcs/offset by calling the given function; this is particularly required
+when the bytecode is optimized/transformed/instrumented to ensure the annotations are
+still valid.</p><div class="fullcomment"><div class="comment cmt"><p>Remaps the pcs/offset by calling the given function; this is particularly required
+when the bytecode is optimized/transformed/instrumented to ensure the annotations are
+still valid.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TypeAnnotationTargetInMetodDeclaration.html" class="extype" name="org.opalj.br.TypeAnnotationTargetInMetodDeclaration">TypeAnnotationTargetInMetodDeclaration</a> → <a href="TypeAnnotationTarget.html" class="extype" name="org.opalj.br.TypeAnnotationTarget">TypeAnnotationTarget</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.opalj.br.TAOfParameterDeclarationOfMethodOrConstructor#typeId" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="typeId:Int"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#typeId:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">typeId</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.br.TAOfParameterDeclarationOfMethodOrConstructor">TAOfParameterDeclarationOfMethodOrConstructor</a> → <a href="TypeAnnotationTarget.html" class="extype" name="org.opalj.br.TypeAnnotationTarget">TypeAnnotationTarget</a></dd></dl></div>
+    </li><li name="org.opalj.br.TAOfParameterDeclarationOfMethodOrConstructor#type_parameter_index" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="type_parameter_index:Int"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#type_parameter_index:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">type_parameter_index</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/TAOfParameterDeclarationOfMethodOrConstructor.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="org.opalj.br.TypeAnnotationTargetInMetodDeclaration">
+              <h3>Inherited from <a href="TypeAnnotationTargetInMetodDeclaration.html" class="extype" name="org.opalj.br.TypeAnnotationTargetInMetodDeclaration">TypeAnnotationTargetInMetodDeclaration</a></h3>
+            </div><div class="parent" name="org.opalj.br.TypeAnnotationTarget">
+              <h3>Inherited from <a href="TypeAnnotationTarget.html" class="extype" name="org.opalj.br.TypeAnnotationTarget">TypeAnnotationTarget</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

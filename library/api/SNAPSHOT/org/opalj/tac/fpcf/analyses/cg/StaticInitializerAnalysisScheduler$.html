@@ -1,0 +1,1324 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../../../../index.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../../../../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../../../../br/index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="../../../../ai/index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.tac" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tac"></a><a id="tac:tac"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Common definitions related to the definition and processing of three address code." href="../../../index.html"><span class="name">tac</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Common definitions related to the definition and processing of three address code.</p><div class="fullcomment"><div class="comment cmt"><p>Common definitions related to the definition and processing of three address code.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="org.opalj">opalj</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fpcf"></a><a id="fpcf:fpcf"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html"><span class="name">fpcf</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="org.opalj.tac">tac</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses" visbl="pub" class="indented5 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="analyses"></a><a id="analyses:analyses"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html"><span class="name">analyses</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org.opalj.tac.fpcf">fpcf</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg" visbl="pub" class="indented6 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cg"></a><a id="cg:cg"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html"><span class="name">cg</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.tac.fpcf.analyses">analyses</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.pointsto" visbl="pub" class="indented7 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pointsto"></a><a id="pointsto:pointsto"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/pointsto/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="pointsto/index.html"><span class="name">pointsto</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg">cg</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.reflection" visbl="pub" class="indented7 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reflection"></a><a id="reflection:reflection"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/reflection/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="reflection/index.html"><span class="name">reflection</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg">cg</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.rta" visbl="pub" class="indented7 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rta"></a><a id="rta:rta"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/rta/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="rta/index.html"><span class="name">rta</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg">cg</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.xta" visbl="pub" class="indented7 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="xta"></a><a id="xta:xta"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/xta/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="xta/index.html"><span class="name">xta</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg">cg</a></dd></dl></div>
+    </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="AbstractCallGraphAnalysis.html" title="A base class for call graph analyses based on the FPCF framework."></a>
+                        <a href="AbstractCallGraphAnalysis.html" title="A base class for call graph analyses based on the FPCF framework.">AbstractCallGraphAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="AbstractDoPrivilegedPointsToCGAnalysis.html" title="Models the behavior for java.security.AccessController.doPrivileged*."></a>
+                        <a href="AbstractDoPrivilegedPointsToCGAnalysis.html" title="Models the behavior for java.security.AccessController.doPrivileged*.">AbstractDoPrivilegedPointsToCGAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="CGState.html" title=""></a>
+                        <a href="CGState.html" title="">CGState</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="CHACallGraphAnalysis.html" title="A call graph based on Class Hierarchy Analysis (CHA)."></a>
+                        <a href="CHACallGraphAnalysis.html" title="A call graph based on Class Hierarchy Analysis (CHA).">CHACallGraphAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="CHACallGraphAnalysisScheduler$.html" title=""></a>
+                        <a href="CHACallGraphAnalysisScheduler$.html" title="">CHACallGraphAnalysisScheduler</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="CHAState.html" title=""></a>
+                        <a href="CHAState.html" title="">CHAState</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="CallGraphAnalysisScheduler.html" title=""></a>
+                        <a href="CallGraphAnalysisScheduler.html" title="">CallGraphAnalysisScheduler</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="CallGraphDeserializerScheduler.html" title=""></a>
+                        <a href="CallGraphDeserializerScheduler.html" title="">CallGraphDeserializerScheduler</a>
+                      </li><li class="current-entities indented6">
+                        <a class="object" href="CallSiteDescription$.html" title=""></a>
+                        <a class="class" href="CallSiteDescription.html" title="A call site has a declaredTarget method, is associated with a line number (-1 if unknown) and contains the set of computed target methods (targets)."></a>
+                        <a href="CallSiteDescription.html" title="A call site has a declaredTarget method, is associated with a line number (-1 if unknown) and contains the set of computed target methods (targets).">CallSiteDescription</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="CalleesAndCallers.html" title="A convenience class for call graph constructions."></a>
+                        <a href="CalleesAndCallers.html" title="A convenience class for call graph constructions.">CalleesAndCallers</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="Calls.html" title=""></a>
+                        <a href="Calls.html" title="">Calls</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="ConfiguredNativeMethodsCallGraphAnalysis.html" title="Add calls from configured native methods to the call graph."></a>
+                        <a href="ConfiguredNativeMethodsCallGraphAnalysis.html" title="Add calls from configured native methods to the call graph.">ConfiguredNativeMethodsCallGraphAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="ConfiguredNativeMethodsCallGraphAnalysisScheduler$.html" title=""></a>
+                        <a href="ConfiguredNativeMethodsCallGraphAnalysisScheduler$.html" title="">ConfiguredNativeMethodsCallGraphAnalysisScheduler</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="DirectCalls.html" title=""></a>
+                        <a href="DirectCalls.html" title="">DirectCalls</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="DirectCallsBase.html" title=""></a>
+                        <a href="DirectCallsBase.html" title="">DirectCallsBase</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="DoPrivilegedPointsToCGAnalysis.html" title=""></a>
+                        <a href="DoPrivilegedPointsToCGAnalysis.html" title="">DoPrivilegedPointsToCGAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="DoPrivilegedPointsToCGAnalysisScheduler$.html" title=""></a>
+                        <a href="DoPrivilegedPointsToCGAnalysisScheduler$.html" title="">DoPrivilegedPointsToCGAnalysisScheduler</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="FinalizerAnalysis.html" title="Computes the set of finalize methods that are being called by the VM during the execution of the project."></a>
+                        <a href="FinalizerAnalysis.html" title="Computes the set of finalize methods that are being called by the VM during the execution of the project.">FinalizerAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="FinalizerAnalysisScheduler$.html" title=""></a>
+                        <a href="FinalizerAnalysisScheduler$.html" title="">FinalizerAnalysisScheduler</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="IncompleteCallSites.html" title=""></a>
+                        <a href="IncompleteCallSites.html" title="">IncompleteCallSites</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="IndirectCalls.html" title=""></a>
+                        <a href="IndirectCalls.html" title="">IndirectCalls</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="IndirectCallsBase.html" title=""></a>
+                        <a href="IndirectCallsBase.html" title="">IndirectCallsBase</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="LoadedClassesAnalysis.html" title="For a reachable methods (see Callers) this class computes the classes that are being loaded (e.g."></a>
+                        <a href="LoadedClassesAnalysis.html" title="For a reachable methods (see Callers) this class computes the classes that are being loaded (e.g.">LoadedClassesAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="LoadedClassesAnalysisScheduler$.html" title=""></a>
+                        <a href="LoadedClassesAnalysisScheduler$.html" title="">LoadedClassesAnalysisScheduler</a>
+                      </li><li class="current-entities indented6">
+                        <a class="object" href="MethodDesc$.html" title=""></a>
+                        <a class="class" href="MethodDesc.html" title="A method is represented using the name, the declaringClass, its returnType and its parameterTypes."></a>
+                        <a href="MethodDesc.html" title="A method is represented using the name, the declaringClass, its returnType and its parameterTypes.">MethodDesc</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="OISReadObjectAnalysis.html" title="Analysis handling the specifics of java.io.ObjectInputStream.readObject."></a>
+                        <a href="OISReadObjectAnalysis.html" title="Analysis handling the specifics of java.io.ObjectInputStream.readObject.">OISReadObjectAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="OOSWriteObjectAnalysis.html" title="Analysis handling the specifics of java.io.ObjectOutputStream.writeObject."></a>
+                        <a href="OOSWriteObjectAnalysis.html" title="Analysis handling the specifics of java.io.ObjectOutputStream.writeObject.">OOSWriteObjectAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="ReachableMethodAnalysis.html" title="Base trait for analyses that are executed for every method that is reachable."></a>
+                        <a href="ReachableMethodAnalysis.html" title="Base trait for analyses that are executed for every method that is reachable.">ReachableMethodAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <a class="object" href="ReachableMethodDescription$.html" title=""></a>
+                        <a class="class" href="ReachableMethodDescription.html" title="A reachable method contains of the method itself and the call sites within that method."></a>
+                        <a href="ReachableMethodDescription.html" title="A reachable method contains of the method itself and the call sites within that method.">ReachableMethodDescription</a>
+                      </li><li class="current-entities indented6">
+                        <a class="object" href="ReachableMethodsDescription$.html" title=""></a>
+                        <a class="class" href="ReachableMethodsDescription.html" title="Representation of all Methods that are reachable in the represented call graph."></a>
+                        <a href="ReachableMethodsDescription.html" title="Representation of all Methods that are reachable in the represented call graph.">ReachableMethodsDescription</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="SerializationRelatedCallsAnalysis.html" title="Handles the effect of serialization to the call graph."></a>
+                        <a href="SerializationRelatedCallsAnalysis.html" title="Handles the effect of serialization to the call graph.">SerializationRelatedCallsAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="SerializationRelatedCallsAnalysisScheduler$.html" title=""></a>
+                        <a href="SerializationRelatedCallsAnalysisScheduler$.html" title="">SerializationRelatedCallsAnalysisScheduler</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="StaticInitializerAnalysis.html" title="Extends the call graph analysis (e.g."></a>
+                        <a href="StaticInitializerAnalysis.html" title="Extends the call graph analysis (e.g.">StaticInitializerAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="" title=""></a>
+                        <a href="" title="">StaticInitializerAnalysisScheduler</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="ThreadRelatedCallsAnalysis.html" title="This analysis handles implicit method invocations related to the java.lang.Thread API."></a>
+                        <a href="ThreadRelatedCallsAnalysis.html" title="This analysis handles implicit method invocations related to the java.lang.Thread API.">ThreadRelatedCallsAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="object" href="ThreadRelatedCallsAnalysisScheduler$.html" title=""></a>
+                        <a href="ThreadRelatedCallsAnalysisScheduler$.html" title="">ThreadRelatedCallsAnalysisScheduler</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="ThreadStartAnalysis.html" title=""></a>
+                        <a href="ThreadStartAnalysis.html" title="">ThreadStartAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="UncaughtExceptionHandlerAnalysis.html" title=""></a>
+                        <a href="UncaughtExceptionHandlerAnalysis.html" title="">UncaughtExceptionHandlerAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="class" href="VMReachableMethods.html" title=""></a>
+                        <a href="VMReachableMethods.html" title="">VMReachableMethods</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
+                        <a class="trait" href="VMReachableMethodsBase.html" title=""></a>
+                        <a href="VMReachableMethodsBase.html" title="">VMReachableMethodsBase</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="object value">
+      <div id="definition">
+        <div class="big-circle object">o</div>
+        <p id="owner"><a href="../../../../../index.html" class="extype" name="org">org</a>.<a href="../../../../index.html" class="extype" name="org.opalj">opalj</a>.<a href="../../../index.html" class="extype" name="org.opalj.tac">tac</a>.<a href="../../index.html" class="extype" name="org.opalj.tac.fpcf">fpcf</a>.<a href="../index.html" class="extype" name="org.opalj.tac.fpcf.analyses">analyses</a>.<a href="index.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg">cg</a></p>
+        <h1>StaticInitializerAnalysisScheduler<span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">StaticInitializerAnalysisScheduler</span><span class="result"> extends <a href="../../../../br/fpcf/BasicFPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler">BasicFPCFEagerAnalysisScheduler</a></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysis.scala?at=develop" target="_blank">StaticInitializerAnalysis.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><a href="../../../../br/fpcf/BasicFPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler">BasicFPCFEagerAnalysisScheduler</a>, <a href="../../../../br/fpcf/FPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler">FPCFEagerAnalysisScheduler</a>, <a href="../../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a>, <a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a>[<a href="../../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler"><span>StaticInitializerAnalysisScheduler</span></li><li class="in" name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler"><span>BasicFPCFEagerAnalysisScheduler</span></li><li class="in" name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler"><span>FPCFEagerAnalysisScheduler</span></li><li class="in" name="org.opalj.br.fpcf.FPCFAnalysisScheduler"><span>FPCFAnalysisScheduler</span></li><li class="in" name="org.opalj.fpcf.ComputationSpecification"><span>ComputationSpecification</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler.InitializationData" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="InitializationData=Null"></a><a id="InitializationData:InitializationData"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#InitializationData=Null" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">InitializationData</span><span class="result alias"> = <span class="extype" name="scala.Null">Null</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The type of the data used by the analysis at initialization time.</p><div class="fullcomment"><div class="comment cmt"><p>The type of the data used by the analysis at initialization time.
+For analyses without special initialization requirements this type is <code>Null</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/BasicFPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler">BasicFPCFEagerAnalysisScheduler</a> → <a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler#afterPhaseCompletion" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="afterPhaseCompletion(p:org.opalj.br.analyses.SomeProject,ps:org.opalj.fpcf.PropertyStore,analysis:org.opalj.br.fpcf.FPCFAnalysis):Unit"></a><a id="afterPhaseCompletion(SomeProject,PropertyStore,FPCFAnalysis):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#afterPhaseCompletion(p:org.opalj.br.analyses.SomeProject,ps:org.opalj.fpcf.PropertyStore,analysis:org.opalj.br.fpcf.FPCFAnalysis):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">afterPhaseCompletion</span><span class="params">(<span name="p">p: <a href="../../../../br/analyses/index.html#SomeProject=org.opalj.br.analyses.Project[_]" class="extmbr" name="org.opalj.br.analyses.SomeProject">SomeProject</a></span>, <span name="ps">ps: <a href="../../../../fpcf/PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></span>, <span name="analysis">analysis: <a href="../../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/BasicFPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler">BasicFPCFEagerAnalysisScheduler</a> → <a href="../../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.FPCFAnalysisScheduler#afterPhaseCompletion" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="afterPhaseCompletion(ps:org.opalj.fpcf.PropertyStore,analysis:org.opalj.br.fpcf.FPCFAnalysis):Unit"></a><a id="afterPhaseCompletion(PropertyStore,FPCFAnalysis):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#afterPhaseCompletion(ps:org.opalj.fpcf.PropertyStore,analysis:org.opalj.br.fpcf.FPCFAnalysis):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">afterPhaseCompletion</span><span class="params">(<span name="ps">ps: <a href="../../../../fpcf/PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></span>, <span name="analysis">analysis: <a href="../../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Called after phase completion.</p><div class="fullcomment"><div class="comment cmt"><p>Called after phase completion.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a> → <a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler#afterPhaseScheduling" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="afterPhaseScheduling(ps:org.opalj.fpcf.PropertyStore,analysis:org.opalj.br.fpcf.FPCFAnalysis):Unit"></a><a id="afterPhaseScheduling(PropertyStore,FPCFAnalysis):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#afterPhaseScheduling(ps:org.opalj.fpcf.PropertyStore,analysis:org.opalj.br.fpcf.FPCFAnalysis):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">afterPhaseScheduling</span><span class="params">(<span name="ps">ps: <a href="../../../../fpcf/PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></span>, <span name="analysis">analysis: <a href="../../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Called back after all analyses of a specific phase have been
+       schedule (i.e., before calling waitOnPhaseCompletion).</p><div class="fullcomment"><div class="comment cmt"><p>Called back after all analyses of a specific phase have been
+       schedule (i.e., before calling waitOnPhaseCompletion).
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/BasicFPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler">BasicFPCFEagerAnalysisScheduler</a> → <a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler#beforeSchedule" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="beforeSchedule(p:org.opalj.br.analyses.SomeProject,ps:org.opalj.fpcf.PropertyStore):Unit"></a><a id="beforeSchedule(SomeProject,PropertyStore):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#beforeSchedule(p:org.opalj.br.analyses.SomeProject,ps:org.opalj.fpcf.PropertyStore):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">beforeSchedule</span><span class="params">(<span name="p">p: <a href="../../../../br/analyses/index.html#SomeProject=org.opalj.br.analyses.Project[_]" class="extmbr" name="org.opalj.br.analyses.SomeProject">SomeProject</a></span>, <span name="ps">ps: <a href="../../../../fpcf/PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/BasicFPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler">BasicFPCFEagerAnalysisScheduler</a> → <a href="../../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.FPCFAnalysisScheduler#beforeSchedule" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="beforeSchedule(ps:org.opalj.fpcf.PropertyStore):Unit"></a><a id="beforeSchedule(PropertyStore):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#beforeSchedule(ps:org.opalj.fpcf.PropertyStore):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">beforeSchedule</span><span class="params">(<span name="ps">ps: <a href="../../../../fpcf/PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Called directly before the analyses belonging to a phase are effectively scheduled.</p><div class="fullcomment"><div class="comment cmt"><p>Called directly before the analyses belonging to a phase are effectively scheduled. I.e.,
+after phase setup, but potentially after other analyses' <code>beforeSchedule</code> method is called.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a> → <a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler#computationType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="computationType:org.opalj.fpcf.ComputationType"></a><a id="computationType:ComputationType"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#computationType:org.opalj.fpcf.ComputationType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">computationType</span><span class="result">: <a href="../../../../fpcf/ComputationType.html" class="extype" name="org.opalj.fpcf.ComputationType">ComputationType</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Specifies the kind of the computation that is performed.</p><div class="fullcomment"><div class="comment cmt"><p>Specifies the kind of the computation that is performed. The kind restricts in which
+way the analysis is allowed to interact with the property store/other analyses.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/FPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler">FPCFEagerAnalysisScheduler</a> → <a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.ComputationSpecification#derives" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="derives:Iterator[org.opalj.fpcf.PropertyBounds]"></a><a id="derives:Iterator[PropertyBounds]"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#derives:Iterator[org.opalj.fpcf.PropertyBounds]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">derives</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="../../../../fpcf/PropertyBounds.html" class="extype" name="org.opalj.fpcf.PropertyBounds">PropertyBounds</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler#derivesCollaboratively" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="derivesCollaboratively:Set[org.opalj.fpcf.PropertyBounds]"></a><a id="derivesCollaboratively:Set[PropertyBounds]"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#derivesCollaboratively:Set[org.opalj.fpcf.PropertyBounds]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">derivesCollaboratively</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../../fpcf/PropertyBounds.html" class="extype" name="org.opalj.fpcf.PropertyBounds">PropertyBounds</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler">StaticInitializerAnalysisScheduler</a> → <a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler#derivesEagerly" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="derivesEagerly:Set[org.opalj.fpcf.PropertyBounds]"></a><a id="derivesEagerly:Set[PropertyBounds]"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#derivesEagerly:Set[org.opalj.fpcf.PropertyBounds]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">derivesEagerly</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../../fpcf/PropertyBounds.html" class="extype" name="org.opalj.fpcf.PropertyBounds">PropertyBounds</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the set of property kinds eagerly derived by the underlying analysis.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the set of property kinds eagerly derived by the underlying analysis.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler">StaticInitializerAnalysisScheduler</a> → <a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler#derivesLazily" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="derivesLazily:Option[org.opalj.fpcf.PropertyBounds]"></a><a id="derivesLazily:Option[PropertyBounds]"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#derivesLazily:Option[org.opalj.fpcf.PropertyBounds]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">derivesLazily</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../../../../fpcf/PropertyBounds.html" class="extype" name="org.opalj.fpcf.PropertyBounds">PropertyBounds</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the kind of the property that is lazily (on-demand) derived.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the kind of the property that is lazily (on-demand) derived.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/FPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler">FPCFEagerAnalysisScheduler</a> → <a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler#init" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="init(p:org.opalj.br.analyses.SomeProject,ps:org.opalj.fpcf.PropertyStore):Null"></a><a id="init(SomeProject,PropertyStore):Null"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#init(p:org.opalj.br.analyses.SomeProject,ps:org.opalj.fpcf.PropertyStore):Null" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">init</span><span class="params">(<span name="p">p: <a href="../../../../br/analyses/index.html#SomeProject=org.opalj.br.analyses.Project[_]" class="extmbr" name="org.opalj.br.analyses.SomeProject">SomeProject</a></span>, <span name="ps">ps: <a href="../../../../fpcf/PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></span>)</span><span class="result">: <span class="extype" name="scala.Null">Null</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/BasicFPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler">BasicFPCFEagerAnalysisScheduler</a> → <a href="../../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.FPCFAnalysisScheduler#init" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="init(ps:org.opalj.fpcf.PropertyStore):FPCFAnalysisScheduler.this.InitializationData"></a><a id="init(PropertyStore):InitializationData"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#init(ps:org.opalj.fpcf.PropertyStore):FPCFAnalysisScheduler.this.InitializationData" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">init</span><span class="params">(<span name="ps">ps: <a href="../../../../fpcf/PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></span>)</span><span class="result">: <a href="#InitializationData=Null" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler.InitializationData">InitializationData</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Called directly after the analysis is registered with an analysis scheduler; in particular
+before any analysis belonging to the same analysis scenario is scheduled –
+independent of the batch in which it will run.</p><div class="fullcomment"><div class="comment cmt"><p>Called directly after the analysis is registered with an analysis scheduler; in particular
+before any analysis belonging to the same analysis scenario is scheduled –
+independent of the batch in which it will run.</p><p>This enables further initialization of the computations that will eventually be executed.
+For example to initialize global configuration information.</p><p>A computation specification does not have to call any methods of the property store that
+may trigger or schedule computations; i.e., it must – in particular – not call
+the methods <code>apply</code>, <code>schedule*</code>, <code>register*</code> or <code>waitOnPhaseCompletion</code>.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The initialization data that is later on passed to schedule.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a> → <a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.opalj.fpcf.ComputationSpecification#name" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="name:String"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#name:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Identifies this computation specification; typically the name of the class
+which implements the underlying analysis.</p><div class="fullcomment"><div class="comment cmt"><p>Identifies this computation specification; typically the name of the class
+which implements the underlying analysis.</p><p>The default name is the name of <code>this</code> class.</p><p><b>This method should be overridden.</b>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler#requiredProjectInformation" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="requiredProjectInformation:org.opalj.br.analyses.ProjectInformationKeys"></a><a id="requiredProjectInformation:ProjectInformationKeys"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#requiredProjectInformation:org.opalj.br.analyses.ProjectInformationKeys" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">requiredProjectInformation</span><span class="result">: <a href="../../../../br/analyses/index.html#ProjectInformationKeys=Seq[org.opalj.br.analyses.ProjectInformationKey[_&lt;:AnyRef,_&lt;:AnyRef]]" class="extmbr" name="org.opalj.br.analyses.ProjectInformationKeys">ProjectInformationKeys</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns all <a href="../../../../br/analyses/ProjectInformationKey.html" class="extype" name="org.opalj.br.analyses.ProjectInformationKey">org.opalj.br.analyses.ProjectInformationKey</a>s required by the analyses.</p><div class="fullcomment"><div class="comment cmt"><p>Returns all <a href="../../../../br/analyses/ProjectInformationKey.html" class="extype" name="org.opalj.br.analyses.ProjectInformationKey">org.opalj.br.analyses.ProjectInformationKey</a>s required by the analyses.</p><p>This information is in particular required by keys which - when the key is computed - make use of
+other keys which are not statically known at compile time. If a single key that is (transitively)
+used is not correctly listed, a deadlock will _always_ occur.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler">StaticInitializerAnalysisScheduler</a> → <a href="../../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler#schedule" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="schedule(ps:org.opalj.fpcf.PropertyStore,i:FPCFEagerAnalysisScheduler.this.InitializationData):org.opalj.br.fpcf.FPCFAnalysis"></a><a id="schedule(PropertyStore,InitializationData):FPCFAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#schedule(ps:org.opalj.fpcf.PropertyStore,i:FPCFEagerAnalysisScheduler.this.InitializationData):org.opalj.br.fpcf.FPCFAnalysis" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">schedule</span><span class="params">(<span name="ps">ps: <a href="../../../../fpcf/PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></span>, <span name="i">i: <a href="#InitializationData=Null" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler.InitializationData">InitializationData</a></span>)</span><span class="result">: <a href="../../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Called by the scheduler to let the analysis register itself or to start execution.</p><div class="fullcomment"><div class="comment cmt"><p>Called by the scheduler to let the analysis register itself or to start execution.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/FPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler">FPCFEagerAnalysisScheduler</a> → <a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler#start" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="start(p:org.opalj.br.analyses.SomeProject,ps:org.opalj.fpcf.PropertyStore,unused:Null):org.opalj.br.fpcf.FPCFAnalysis"></a><a id="start(SomeProject,PropertyStore,Null):FPCFAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#start(p:org.opalj.br.analyses.SomeProject,ps:org.opalj.fpcf.PropertyStore,unused:Null):org.opalj.br.fpcf.FPCFAnalysis" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">start</span><span class="params">(<span name="p">p: <a href="../../../../br/analyses/index.html#SomeProject=org.opalj.br.analyses.Project[_]" class="extmbr" name="org.opalj.br.analyses.SomeProject">SomeProject</a></span>, <span name="ps">ps: <a href="../../../../fpcf/PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></span>, <span name="unused">unused: <span class="extype" name="scala.Null">Null</span></span>)</span><span class="result">: <a href="../../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Called when a schedule is executed and when this analysis shall register itself
+with the property store using
+<a href="../../../../fpcf/PropertyStore.html#scheduleEagerComputationForEntity[E&lt;:org.opalj.fpcf.Entity](e:E)(pc:org.opalj.fpcf.PropertyComputation[E]):Unit" class="extmbr" name="org.opalj.fpcf.PropertyStore#scheduleEagerComputationForEntity">org.opalj.fpcf.PropertyStore.scheduleEagerComputationForEntity</a> or a variant thereof.</p><div class="fullcomment"><div class="comment cmt"><p>Called when a schedule is executed and when this analysis shall register itself
+with the property store using
+<a href="../../../../fpcf/PropertyStore.html#scheduleEagerComputationForEntity[E&lt;:org.opalj.fpcf.Entity](e:E)(pc:org.opalj.fpcf.PropertyComputation[E]):Unit" class="extmbr" name="org.opalj.fpcf.PropertyStore#scheduleEagerComputationForEntity">org.opalj.fpcf.PropertyStore.scheduleEagerComputationForEntity</a> or a variant thereof.
+This method is typically implicitly called by the <a href="../../../../br/fpcf/FPCFAnalysesManager.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysesManager">org.opalj.br.fpcf.FPCFAnalysesManager</a>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler">StaticInitializerAnalysisScheduler</a> → <a href="../../../../br/fpcf/FPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler">FPCFEagerAnalysisScheduler</a></dd><dt>Note</dt><dd><span class="cmt"><p>This analysis must not call <code>registerTriggeredComputation</code> or
+      <code>registerLazyPropertyComputation</code>.</p></span></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler#start" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="start(p:org.opalj.br.analyses.SomeProject,i:FPCFEagerAnalysisScheduler.this.InitializationData):org.opalj.br.fpcf.FPCFAnalysis"></a><a id="start(SomeProject,InitializationData):FPCFAnalysis"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#start(p:org.opalj.br.analyses.SomeProject,i:FPCFEagerAnalysisScheduler.this.InitializationData):org.opalj.br.fpcf.FPCFAnalysis" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">start</span><span class="params">(<span name="p">p: <a href="../../../../br/analyses/index.html#SomeProject=org.opalj.br.analyses.Project[_]" class="extmbr" name="org.opalj.br.analyses.SomeProject">SomeProject</a></span>, <span name="i">i: <a href="#InitializationData=Null" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler.InitializationData">InitializationData</a></span>)</span><span class="result">: <a href="../../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Starts the analysis for the given <code>project</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Starts the analysis for the given <code>project</code>. This method is typically implicitly
+called by the <a href="../../../../br/fpcf/FPCFAnalysesManager.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysesManager">FPCFAnalysesManager</a>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/FPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler">FPCFEagerAnalysisScheduler</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.opalj.fpcf.ComputationSpecification#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.fpcf.ComputationSpecification#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString(ps:org.opalj.fpcf.PropertyStore):String"></a><a id="toString(PropertyStore):String"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#toString(ps:org.opalj.fpcf.PropertyStore):String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">(<span name="ps">ps: <a href="../../../../fpcf/PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.FPCFAnalysisScheduler#uniqueId" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uniqueId:Int"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#uniqueId:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">uniqueId</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The unique id of this factory.</p><div class="fullcomment"><div class="comment cmt"><p>The unique id of this factory.</p><p>Every factory for a specific analysis is automatically associated with a unique id.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler#uses" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uses:Set[org.opalj.fpcf.PropertyBounds]"></a><a id="uses:Set[PropertyBounds]"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#uses:Set[org.opalj.fpcf.PropertyBounds]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">uses</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../../fpcf/PropertyBounds.html" class="extype" name="org.opalj.fpcf.PropertyBounds">PropertyBounds</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The uses that are configuration independent.</p><div class="fullcomment"><div class="comment cmt"><p>The uses that are configuration independent.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.cg.StaticInitializerAnalysisScheduler">StaticInitializerAnalysisScheduler</a> → <a href="../../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.FPCFAnalysisScheduler#uses" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uses(p:org.opalj.br.analyses.SomeProject,ps:org.opalj.fpcf.PropertyStore):Set[org.opalj.fpcf.PropertyBounds]"></a><a id="uses(SomeProject,PropertyStore):Set[PropertyBounds]"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#uses(p:org.opalj.br.analyses.SomeProject,ps:org.opalj.fpcf.PropertyStore):Set[org.opalj.fpcf.PropertyBounds]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">uses</span><span class="params">(<span name="p">p: <a href="../../../../br/analyses/index.html#SomeProject=org.opalj.br.analyses.Project[_]" class="extmbr" name="org.opalj.br.analyses.SomeProject">SomeProject</a></span>, <span name="ps">ps: <a href="../../../../fpcf/PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../../fpcf/PropertyBounds.html" class="extype" name="org.opalj.fpcf.PropertyBounds">PropertyBounds</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The uses that are configuration (project) dependent.</p><div class="fullcomment"><div class="comment cmt"><p>The uses that are configuration (project) dependent.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.FPCFAnalysisScheduler#uses" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uses(ps:org.opalj.fpcf.PropertyStore):Set[org.opalj.fpcf.PropertyBounds]"></a><a id="uses(PropertyStore):Set[PropertyBounds]"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#uses(ps:org.opalj.fpcf.PropertyStore):Set[org.opalj.fpcf.PropertyBounds]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">uses</span><span class="params">(<span name="ps">ps: <a href="../../../../fpcf/PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../../fpcf/PropertyBounds.html" class="extype" name="org.opalj.fpcf.PropertyBounds">PropertyBounds</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the kinds of properties which are queried by this analysis.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the kinds of properties which are queried by this analysis.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a> → <a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a></dd><dt>Note</dt><dd><span class="cmt"><p>This set consists only of property kinds which are directly used by the analysis.</p></span>, <span class="cmt"><p>Self usages should also be documented.</p></span>, <span class="cmt"><p>This method is called after
+        <a href="../../../../fpcf/ComputationSpecification.html#init(ps:org.opalj.fpcf.PropertyStore):ComputationSpecification.this.InitializationData" class="extmbr" name="org.opalj.fpcf.ComputationSpecification#init">org.opalj.fpcf.ComputationSpecification#init(ps:org\.opalj\.fpcf\.PropertyStore)*</a>
+        was called for all analyses belonging to an analysis scenario.
+        (E.g., it can be used to collect the set of used property bounds based on the
+        configuration choices made in other analyses.)</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/StaticInitializerAnalysisScheduler$.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler">
+              <h3>Inherited from <a href="../../../../br/fpcf/BasicFPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.BasicFPCFEagerAnalysisScheduler">BasicFPCFEagerAnalysisScheduler</a></h3>
+            </div><div class="parent" name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler">
+              <h3>Inherited from <a href="../../../../br/fpcf/FPCFEagerAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFEagerAnalysisScheduler">FPCFEagerAnalysisScheduler</a></h3>
+            </div><div class="parent" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">
+              <h3>Inherited from <a href="../../../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></h3>
+            </div><div class="parent" name="org.opalj.fpcf.ComputationSpecification">
+              <h3>Inherited from <a href="../../../../fpcf/ComputationSpecification.html" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a>[<a href="../../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

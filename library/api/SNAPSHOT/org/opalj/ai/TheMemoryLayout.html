@@ -1,0 +1,1119 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.ai.TheMemoryLayout</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.ai.TheMemoryLayout" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.ai.TheMemoryLayout" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../index.js"></script>
+      <script type="text/javascript" src="../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../br/index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.ai" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ai"></a><a id="ai:ai"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Implementation of an abstract interpretation (ai) framework – also referred to as OPAL." href="index.html"><span class="name">ai</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Implementation of an abstract interpretation (ai) framework – also referred to as OPAL.</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of an abstract interpretation (ai) framework – also referred to as OPAL.</p><p>Please note that OPAL/the abstract interpreter just refers to the classes and traits
+defined in this package (<code>ai</code>). The classes and traits defined in the sub-packages
+(in particular in <code>domain</code>) are not considered to be part of the core of OPAL/the
+abstract interpreter.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj">opalj</a></dd><dt>Note</dt><dd><span class="cmt"><p>This framework assumes that the analyzed bytecode is valid; i.e., the JVM's
+     bytecode verifier would be able to verify the code. Furthermore, load-time errors
+     (e.g., <code>LinkageErrors</code>) are – by default – completely ignored to facilitate the
+     analysis of parts of a project. In general, if the presented bytecode is not valid,
+     the result is undefined (i.e., OPAL may report meaningless results, crash or run
+     indefinitely).</p></span></dd><dt>See also</dt><dd><span class="cmt"><p><a href="AI.html" class="extype" name="org.opalj.ai.AI">org.opalj.ai.AI</a> - Implements the abstract interpreter that
+     processes a methods code and uses an analysis-specific domain to perform the
+     abstract computations.</p></span><span class="cmt"><p><a href="Domain.html" class="extype" name="org.opalj.ai.Domain">org.opalj.ai.Domain</a> - The core interface between the abstract
+     interpretation framework and the abstract domain that is responsible for
+     performing the abstract computations.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.common" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="common"></a><a id="common:common"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/common/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="common/index.html"><span class="name">common</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.ai">ai</a></dd></dl></div>
+    </li><li name="org.opalj.ai.domain" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="domain"></a><a id="domain:domain"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/domain/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="This package contains definitions of common domains that can be used for the implementation of analyses." href="domain/index.html"><span class="name">domain</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">This package contains definitions of common domains that can be used for the
+implementation of analyses.</p><div class="fullcomment"><div class="comment cmt"><p>This package contains definitions of common domains that can be used for the
+implementation of analyses.</p><h4>Types of Domains</h4><p>In general, we distinguish two types of domains. First, domains that define a
+general interface (on top of the one defined by <a href="Domain.html" class="extype" name="org.opalj.ai.Domain">Domain</a>), but do not directly
+provide an implementation. Hence, whenever you develop a new <code>Domain</code> you should
+consider implementing/using these domains to maximize reusability. Second,
+<code>Domain</code>s that implement a specific interface (trait).  In this case, we further
+distinguish between domains that provide a default implementation (per <i>interface</i>
+only one of these <code>Domain</code>s can be used to create a <b>final <code>Domain</code></b>) and
+those that can be stacked and basically refine the overall functionality.</p><p><b>Examples</b></p><ul><li>Domains That Define a General Interface<ul><li><a href="domain/Origin.html" class="extype" name="org.opalj.ai.domain.Origin">Origin</a> defines two types which domains that provide information abou the
+     origin of a value should consider to implement.</li><li><a href="domain/TheProject.html" class="extype" name="org.opalj.ai.domain.TheProject">TheProject</a> defines a standard mechanism how a domain can access the
+     <i>current</i> project.</li><li>...</li></ul></li><li>Domains That Provide a Default Implementation<ul><li><a href="domain/Origin.html" class="extype" name="org.opalj.ai.domain.Origin">Origin</a> defines the functionality to return a value's origin if the value
+     supports that.</li><li><a href="domain/TheProject.html" class="extype" name="org.opalj.ai.domain.TheProject">org.opalj.ai.domain.TheProject</a> default implementation of the class hierarchy related
+     methods using the project's class hierarchy.</li><li><a href="domain/DefaultHandlingOfMethodResults.html" class="extype" name="org.opalj.ai.domain.DefaultHandlingOfMethodResults">org.opalj.ai.domain.DefaultHandlingOfMethodResults</a> basically implements a Domain's methods
+     related to return instructions an uncaught exceptions.</li><li>...</li></ul></li><li>Domains That Implement Stackable Functionality<ul><li><a href="domain/RecordThrownExceptions.html" class="extype" name="org.opalj.ai.domain.RecordThrownExceptions">org.opalj.ai.domain.RecordThrownExceptions</a> records information about all uncaught exceptions
+     by intercepting a <code>Domain</code>'s respective methods. However, it does provide a
+     default implementation. Hence, a typical pattern is:</li></ul></li></ul><pre><span class="kw">class</span> MyDomain <span class="kw">extends</span> Domain <span class="kw">with</span> ...
+    <span class="kw">with</span> DefaultHandlingOfMethodResults <span class="kw">with</span> RecordThrownExceptions</pre><h4>Thread Safety</h4><p>Unless explicitly documented, a domain is never thread-safe. The general programming
+model is to use one <code>Domain</code> object per code block/method and therefore, thread-safety
+is not required for <code>Domain</code>s that are used for the evaluation of methods. However
+domains that are used to adapt/transfer values should be thread safe
+(see <a href="domain/ValuesCoordinatingDomain.html" class="extype" name="org.opalj.ai.domain.ValuesCoordinatingDomain">org.opalj.ai.domain.ValuesCoordinatingDomain</a> for further details).
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.ai">ai</a></dd></dl></div>
+    </li><li name="org.opalj.ai.fpcf" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fpcf"></a><a id="fpcf:fpcf"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/fpcf/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="fpcf/index.html"><span class="name">fpcf</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.ai">ai</a></dd></dl></div>
+    </li><li name="org.opalj.ai.project" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="project"></a><a id="project:project"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/project/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="project/index.html"><span class="name">project</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.ai">ai</a></dd></dl></div>
+    </li><li name="org.opalj.ai.util" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="util"></a><a id="util:util"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/util/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Common utility functionality." href="util/index.html"><span class="name">util</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Common utility functionality.</p><div class="fullcomment"><div class="comment cmt"><p>Common utility functionality.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.ai">ai</a></dd></dl></div>
+    </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AI.html" title="A highly-configurable framework for the (abstract) interpretation of Java bytecode."></a>
+                        <a href="AI.html" title="A highly-configurable framework for the (abstract) interpretation of Java bytecode.">AI</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AIAborted.html" title="Encapsulates the intermediate result of an aborted abstract interpretation of a method."></a>
+                        <a href="AIAborted.html" title="Encapsulates the intermediate result of an aborted abstract interpretation of a method.">AIAborted</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="AICompleted$.html" title=""></a>
+                        <a class="class" href="AICompleted.html" title="Encapsulates the final result of the successful abstract interpretation of a method."></a>
+                        <a href="AICompleted.html" title="Encapsulates the final result of the successful abstract interpretation of a method.">AICompleted</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AIException.html" title="A general, non-recoverable exception occurred during the abstract interpretation of a method."></a>
+                        <a href="AIException.html" title="A general, non-recoverable exception occurred during the abstract interpretation of a method.">AIException</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AIResult.html" title="Encapsulates the result of the abstract interpretation of a method."></a>
+                        <a href="AIResult.html" title="Encapsulates the result of the abstract interpretation of a method.">AIResult</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="AIResultBuilder$.html" title="Factory to create AIResult objects."></a>
+                        <a href="AIResultBuilder$.html" title="Factory to create AIResult objects.">AIResultBuilder</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="AITracer.html" title="Defines the interface between the abstract interpreter and a module for tracing and debugging the interpreter's progress."></a>
+                        <a href="AITracer.html" title="Defines the interface between the abstract interpreter and a module for tracing and debugging the interpreter's progress.">AITracer</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="BaseAI$.html" title="Instance of the base abstract interpreter."></a>
+                        <a class="class" href="BaseAI.html" title="A base abstract interpreter that can be used with any domain that has no special requirements on the abstract interpreter."></a>
+                        <a href="BaseAI.html" title="A base abstract interpreter that can be used with any domain that has no special requirements on the abstract interpreter.">BaseAI</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="BoundedInterruptableAI.html" title="An abstract interpreter that interrupts itself after the evaluation of the given number of instructions or if the callback function doInterrupt returns false or if the maximum allowed time is exceeded."></a>
+                        <a href="BoundedInterruptableAI.html" title="An abstract interpreter that interrupts itself after the evaluation of the given number of instructions or if the callback function doInterrupt returns false or if the maximum allowed time is exceeded.">BoundedInterruptableAI</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="CTC1$.html" title="Facilitates matching against values of computational type category 1."></a>
+                        <a href="CTC1$.html" title="Facilitates matching against values of computational type category 1.">CTC1</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="CTC2$.html" title="Facilitates matching against values of computational type category 2."></a>
+                        <a href="CTC2$.html" title="Facilitates matching against values of computational type category 2.">CTC2</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Computation.html" title="Encapsulates the result of a computation in a domain."></a>
+                        <a href="Computation.html" title="Encapsulates the result of a computation in a domain.">Computation</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ComputationFailed$.html" title="Indicates that the computation did not succeed."></a>
+                        <a href="ComputationFailed$.html" title="Indicates that the computation did not succeed.">ComputationFailed</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ComputationWithException$.html" title=""></a>
+                        <a href="ComputationWithException$.html" title="">ComputationWithException</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ComputationWithResult$.html" title=""></a>
+                        <a href="ComputationWithResult$.html" title="">ComputationWithResult</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ComputationWithResultAndException$.html" title=""></a>
+                        <a href="ComputationWithResultAndException$.html" title="">ComputationWithResultAndException</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ComputationWithSideEffectOnly$.html" title="Represents a computation that completed normally."></a>
+                        <a href="ComputationWithSideEffectOnly$.html" title="Represents a computation that completed normally.">ComputationWithSideEffectOnly</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ComputationWithSideEffectOrException.html" title="Encapsulates the result of a computation that returned normally (but which did not return some value) or that threw an exception/multiple exceptions."></a>
+                        <a href="ComputationWithSideEffectOrException.html" title="Encapsulates the result of a computation that returned normally (but which did not return some value) or that threw an exception/multiple exceptions.">ComputationWithSideEffectOrException</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ComputedValue.html" title="Encapsulates the result of a computation that returned normally and that did not throw an exception."></a>
+                        <a href="ComputedValue.html" title="Encapsulates the result of a computation that returned normally and that did not throw an exception.">ComputedValue</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ComputedValueOrException.html" title="Encapsulates the result of a computation that either returned normally or threw an exception."></a>
+                        <a href="ComputedValueOrException.html" title="Encapsulates the result of a computation that either returned normally or threw an exception.">ComputedValueOrException</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Configuration.html" title="Centralizes all configuration options related to how a domain should handle situations in which the information about a value is (often) not completely available and which could lead to some kind of exception."></a>
+                        <a href="Configuration.html" title="Centralizes all configuration options related to how a domain should handle situations in which the information about a value is (often) not completely available and which could lead to some kind of exception.">Configuration</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CoreDomainFunctionality.html" title="Defines the core functionality that is shared across all Domains that implement the operations related to different kinds of values and instructions."></a>
+                        <a href="CoreDomainFunctionality.html" title="Defines the core functionality that is shared across all Domains that implement the operations related to different kinds of values and instructions.">CoreDomainFunctionality</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CorrelationalDomain.html" title="A Domain that supports the tracking of correlations between values."></a>
+                        <a href="CorrelationalDomain.html" title="A Domain that supports the tracking of correlations between values.">CorrelationalDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CorrelationalDomainSupport.html" title="Provides basic support for tracking the correlation between domain values stored in different registers/in different stack slots."></a>
+                        <a href="CorrelationalDomainSupport.html" title="Provides basic support for tracking the correlation between domain values stored in different registers/in different stack slots.">CorrelationalDomainSupport</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CountingAI.html" title="An abstract interpreter that counts the number of instruction evaluations that are performed."></a>
+                        <a href="CountingAI.html" title="An abstract interpreter that counts the number of instruction evaluations that are performed.">CountingAI</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CustomInitialization.html" title="Mixin this trait if a domain needs to perform some custom initialization."></a>
+                        <a href="CustomInitialization.html" title="Mixin this trait if a domain needs to perform some custom initialization.">CustomInitialization</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Domain.html" title="A domain is the fundamental abstraction mechanism in OPAL that enables the customization of the abstract interpretation framework towards the needs of a specific analysis."></a>
+                        <a href="Domain.html" title="A domain is the fundamental abstraction mechanism in OPAL that enables the customization of the abstract interpretation framework towards the needs of a specific analysis.">Domain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="DomainException.html" title="An exception related to a computation in a specific domain occurred."></a>
+                        <a href="DomainException.html" title="An exception related to a computation in a specific domain occurred.">DomainException</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="DoubleValuesDomain.html" title="Defines the public interface between the abstract interpreter and the domain that implements the functionality related to the handling of double values."></a>
+                        <a href="DoubleValuesDomain.html" title="Defines the public interface between the abstract interpreter and the domain that implements the functionality related to the handling of double values.">DoubleValuesDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="DoubleValuesFactory.html" title="Defines the primary factory methods for Double values."></a>
+                        <a href="DoubleValuesFactory.html" title="Defines the primary factory methods for Double values.">DoubleValuesFactory</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ExceptionsFactory.html" title="Defines factory methods for those exceptions that are (also) created by the JVM when the evaluation of a specific bytecode instruction fails (e.g., idiv, checkcast, monitorexit, return...)."></a>
+                        <a href="ExceptionsFactory.html" title="Defines factory methods for those exceptions that are (also) created by the JVM when the evaluation of a specific bytecode instruction fails (e.g., idiv, checkcast, monitorexit, return...).">ExceptionsFactory</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ExceptionsRaisedByCalledMethods$.html" title="Enumeration of how method calls are treated when the set of exceptions thrown by the target method is not completely known."></a>
+                        <a href="ExceptionsRaisedByCalledMethods$.html" title="Enumeration of how method calls are treated when the set of exceptions thrown by the target method is not completely known.">ExceptionsRaisedByCalledMethods</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="FieldAccessesDomain.html" title="Interface related to the handling of field access instructions."></a>
+                        <a href="FieldAccessesDomain.html" title="Interface related to the handling of field access instructions.">FieldAccessesDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="FloatValuesDomain.html" title="Defines the public interface between the abstract interpreter and the domain that implements the functionality related to the handling of float values."></a>
+                        <a href="FloatValuesDomain.html" title="Defines the public interface between the abstract interpreter and the domain that implements the functionality related to the handling of float values.">FloatValuesDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="FloatValuesFactory.html" title="Defines factory methods to create concrete representations of constant float values."></a>
+                        <a href="FloatValuesFactory.html" title="Defines factory methods to create concrete representations of constant float values.">FloatValuesFactory</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="GlobalLogContextProvider.html" title=""></a>
+                        <a href="GlobalLogContextProvider.html" title="">GlobalLogContextProvider</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="IdentityBasedCorrelationChangeDetection.html" title="Identifies situations (based on a reference comparison of the domain values) in which the memory layout changes such that a correlation between two values, which existed before a join was performed, no longer exists."></a>
+                        <a href="IdentityBasedCorrelationChangeDetection.html" title="Identifies situations (based on a reference comparison of the domain values) in which the memory layout changes such that a correlation between two values, which existed before a join was performed, no longer exists.">IdentityBasedCorrelationChangeDetection</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="InstructionCountBoundedAI$.html" title="Defines common helper methods."></a>
+                        <a class="class" href="InstructionCountBoundedAI.html" title="An abstract interpreter that interrupts itself after the evaluation of the given number of instructions."></a>
+                        <a href="InstructionCountBoundedAI.html" title="An abstract interpreter that interrupts itself after the evaluation of the given number of instructions.">InstructionCountBoundedAI</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="IntegerRangeValuesFactory.html" title="Defines a factory method to create IntegerRange values."></a>
+                        <a href="IntegerRangeValuesFactory.html" title="Defines a factory method to create IntegerRange values.">IntegerRangeValuesFactory</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="IntegerValuesDomain.html" title="Defines the public interface between the abstract interpreter and the domain that implements the functionality related to the handling of integer values."></a>
+                        <a href="IntegerValuesDomain.html" title="Defines the public interface between the abstract interpreter and the domain that implements the functionality related to the handling of integer values.">IntegerValuesDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="IntegerValuesFactory.html" title="Defines the primary factory methods to create Integer values."></a>
+                        <a href="IntegerValuesFactory.html" title="Defines the primary factory methods to create Integer values.">IntegerValuesFactory</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="InterpretationFailedException$.html" title="Factory for InterpretationFailedExceptions."></a>
+                        <a class="trait" href="InterpretationFailedException.html" title="Exception that is thrown by the abstract interpreter when the abstract interpretation of a method's implementation failed."></a>
+                        <a href="InterpretationFailedException.html" title="Exception that is thrown by the abstract interpreter when the abstract interpretation of a method's implementation failed.">InterpretationFailedException</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="InterruptableAI.html" title="An abstract interpreter that can be interrupted by calling the AI's interrupt method or by calling the executing thread's interrupt method."></a>
+                        <a href="InterruptableAI.html" title="An abstract interpreter that can be interrupted by calling the AI's interrupt method or by calling the executing thread's interrupt method.">InterruptableAI</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="JoinStabilization.html" title="Ensures that the same DomainValue is used whenever we merge the same pair of domain values."></a>
+                        <a href="JoinStabilization.html" title="Ensures that the same DomainValue is used whenever we merge the same pair of domain values.">JoinStabilization</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="LogContextProvider.html" title="Provides log context information."></a>
+                        <a href="LogContextProvider.html" title="Provides log context information.">LogContextProvider</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="LongValuesDomain.html" title="Defines the public interface between the abstract interpreter and the domain that implements the functionality related to the handling of long values."></a>
+                        <a href="LongValuesDomain.html" title="Defines the public interface between the abstract interpreter and the domain that implements the functionality related to the handling of long values.">LongValuesDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="LongValuesFactory.html" title="Defines the primary factory methods to create long values."></a>
+                        <a href="LongValuesFactory.html" title="Defines the primary factory methods to create long values.">LongValuesFactory</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="MetaInformationUpdate.html" title="Characterizes an update that did not affect the abstract state but instead just updated some meta information."></a>
+                        <a href="MetaInformationUpdate.html" title="Characterizes an update that did not affect the abstract state but instead just updated some meta information.">MetaInformationUpdate</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="MetaInformationUpdateType$.html" title=""></a>
+                        <a class="trait" href="MetaInformationUpdateType.html" title=""></a>
+                        <a href="MetaInformationUpdateType.html" title="">MetaInformationUpdateType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="MethodCallsDomain.html" title="Defines all methods related to the invocation of other methods."></a>
+                        <a href="MethodCallsDomain.html" title="Defines all methods related to the invocation of other methods.">MethodCallsDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="MonitorInstructionsDomain.html" title="Domain that defines all methods related to monitor instructions."></a>
+                        <a href="MonitorInstructionsDomain.html" title="Domain that defines all methods related to monitor instructions.">MonitorInstructionsDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="MultiTracer.html" title="A tracer that forwards every call to all registered tracers."></a>
+                        <a href="MultiTracer.html" title="A tracer that forwards every call to all registered tracers.">MultiTracer</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="NoUpdate$.html" title="Indicates that the (given) structure was not updated."></a>
+                        <a href="NoUpdate$.html" title="Indicates that the (given) structure was not updated.">NoUpdate</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="NoUpdateType$.html" title=""></a>
+                        <a href="NoUpdateType$.html" title="">NoUpdateType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="PrimitiveValuesConversionsDomain.html" title="Defines the methods that performs type conversions between primitive values with different computational types."></a>
+                        <a href="PrimitiveValuesConversionsDomain.html" title="Defines the methods that performs type conversions between primitive values with different computational types.">PrimitiveValuesConversionsDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ReferenceValuesDomain.html" title="Domain that defines all methods that perform computations related to RefernceValues."></a>
+                        <a href="ReferenceValuesDomain.html" title="Domain that defines all methods that perform computations related to RefernceValues.">ReferenceValuesDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ReferenceValuesFactory.html" title="Definition of factory methods to create ReferenceValues."></a>
+                        <a href="ReferenceValuesFactory.html" title="Definition of factory methods to create ReferenceValues.">ReferenceValuesFactory</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ReturnInstructionsDomain.html" title="Defines the methods that lead to a return from a method."></a>
+                        <a href="ReturnInstructionsDomain.html" title="Defines the methods that lead to a return from a method.">ReturnInstructionsDomain</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="SomeUpdate$.html" title="Facilitates matching against updates that actually encapsulate an updated value."></a>
+                        <a class="class" href="SomeUpdate.html" title="Identifies updates where something was updated without further qualifying the update."></a>
+                        <a href="SomeUpdate.html" title="Identifies updates where something was updated without further qualifying the update.">SomeUpdate</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="StructuralUpdate.html" title="Characterizes updates where the abstract state was updated such that it is required to continue the abstract interpretation."></a>
+                        <a href="StructuralUpdate.html" title="Characterizes updates where the abstract state was updated such that it is required to continue the abstract interpretation.">StructuralUpdate</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="StructuralUpdateType$.html" title=""></a>
+                        <a href="StructuralUpdateType$.html" title="">StructuralUpdateType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SubroutinesDomain.html" title="Enables specialized processing of subroutine calls by domains; this is generally only relevant for those domains that record the control-flow graph."></a>
+                        <a href="SubroutinesDomain.html" title="Enables specialized processing of subroutine calls by domains; this is generally only relevant for those domains that record the control-flow graph.">SubroutinesDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="TheAI.html" title="Makes the instance of the abstract interpreter that performs the abstract interpretation available to the domain."></a>
+                        <a href="TheAI.html" title="Makes the instance of the abstract interpreter that performs the abstract interpretation available to the domain.">TheAI</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="TheCodeStructure.html" title="Mixin this trait if the domain needs information about the structure of the code."></a>
+                        <a href="TheCodeStructure.html" title="Mixin this trait if the domain needs information about the structure of the code.">TheCodeStructure</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="" title="Mixin this trait if a domain needs access to the operands (Domain#OperandsArray) and/or locals (Domain#LocalsArray)."></a>
+                        <a href="" title="Mixin this trait if a domain needs access to the operands (Domain#OperandsArray) and/or locals (Domain#LocalsArray).">TheMemoryLayout</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ThrowsException.html" title="Encapsulates the result of a computation that threw an exception."></a>
+                        <a href="ThrowsException.html" title="Encapsulates the result of a computation that threw an exception.">ThrowsException</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TimeBoundedAI.html" title="An abstract interpreter that interrupts itself after some configurable (maxEffort) time has passed."></a>
+                        <a href="TimeBoundedAI.html" title="An abstract interpreter that interrupts itself after some configurable (maxEffort) time has passed.">TimeBoundedAI</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="TypedValuesFactory.html" title="Defines additional, generally useful factory methods to create DomainValues."></a>
+                        <a href="TypedValuesFactory.html" title="Defines additional, generally useful factory methods to create DomainValues.">TypedValuesFactory</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Update.html" title="Encapsulates an updated value and qualifies the type of the update."></a>
+                        <a href="Update.html" title="Encapsulates an updated value and qualifies the type of the update.">Update</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="UpdateType.html" title="Specifies the type of an update."></a>
+                        <a href="UpdateType.html" title="Specifies the type of an update.">UpdateType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ValuesDomain.html" title="Defines the concept of a value in a Domain."></a>
+                        <a href="ValuesDomain.html" title="Defines the concept of a value in a Domain.">ValuesDomain</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="trait type">
+      <div id="definition">
+        <div class="big-circle trait">t</div>
+        <p id="owner"><a href="../../index.html" class="extype" name="org">org</a>.<a href="../index.html" class="extype" name="org.opalj">opalj</a>.<a href="index.html" class="extype" name="org.opalj.ai">ai</a></p>
+        <h1>TheMemoryLayout<span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TheMemoryLayout</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Mixin this trait if a domain needs access to the operands (<a href="Domain.html#OperandsArray=org.opalj.ai.TheOperandsArray[ValuesDomain.this.Operands]" class="extmbr" name="org.opalj.ai.Domain.OperandsArray">Domain#OperandsArray</a>)
+and/or locals (<a href="Domain.html#LocalsArray=org.opalj.ai.TheLocalsArray[ValuesDomain.this.Locals]" class="extmbr" name="org.opalj.ai.Domain.LocalsArray">Domain#LocalsArray</a>).</p><h4>Usage</h4><p>It is sufficient to mixin this trait in a <a href="Domain.html" class="extype" name="org.opalj.ai.Domain">Domain</a> that needs to get access to the
+memory structures. The abstract interpreter will then perform the initialization.</p><p>This information is set immediately before the abstract interpretation is
+started/continued.
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.ai.TheMemoryLayout">TheMemoryLayout</a> with <a href="ValuesDomain.html" class="extype" name="org.opalj.ai.ValuesDomain">ValuesDomain</a></dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/ai/src/main/scala/org/opalj/ai/TheMemoryLayout.scala?at=develop" target="_blank">TheMemoryLayout.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">
+              Known Subclasses
+            </span>
+            <div class="subClasses hiddenContent"><a href="domain/l2/ChildDefaultDomain.html" class="extype" name="org.opalj.ai.domain.l2.ChildDefaultDomain">ChildDefaultDomain</a>, <a href="domain/l2/ChildPerformInvocationsWithRecursionDetection.html" class="extype" name="org.opalj.ai.domain.l2.ChildPerformInvocationsWithRecursionDetection">ChildPerformInvocationsWithRecursionDetection</a>, <a href="domain/l2/DefaultDomain.html" class="extype" name="org.opalj.ai.domain.l2.DefaultDomain">DefaultDomain</a>, <a href="domain/l2/PerformInvocationsWithRecursionDetection.html" class="extype" name="org.opalj.ai.domain.l2.PerformInvocationsWithRecursionDetection">PerformInvocationsWithRecursionDetection</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="org.opalj.ai.TheMemoryLayout"><span>TheMemoryLayout</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.opalj.ai.TheMemoryLayout#localsArray" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="localsArray:TheMemoryLayout.this.LocalsArray"></a><a id="localsArray:(TheMemoryLayout.this)#LocalsArray"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#localsArray:TheMemoryLayout.this.LocalsArray" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">localsArray</span><span class="result">: (<a href="" class="extype" name="org.opalj.ai.TheMemoryLayout">TheMemoryLayout</a>.this)#<span class="extype" name="org.opalj.ai.ValuesDomain.LocalsArray">LocalsArray</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.ai.TheMemoryLayout#memoryLayoutBeforeSubroutineCall" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="memoryLayoutBeforeSubroutineCall:org.opalj.collection.immutable.Chain[(org.opalj.br.PC,TheMemoryLayout.this.OperandsArray,TheMemoryLayout.this.LocalsArray)]"></a><a id="memoryLayoutBeforeSubroutineCall:Chain[(PC,(TheMemoryLayout.this)#OperandsArray,(TheMemoryLayout.this)#LocalsArray)]"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#memoryLayoutBeforeSubroutineCall:org.opalj.collection.immutable.Chain[(org.opalj.br.PC,TheMemoryLayout.this.OperandsArray,TheMemoryLayout.this.LocalsArray)]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">memoryLayoutBeforeSubroutineCall</span><span class="result">: <a href="../collection/immutable/Chain.html" class="extype" name="org.opalj.collection.immutable.Chain">Chain</a>[(<a href="../br/index.html#PC=org.opalj.bytecode.PC" class="extmbr" name="org.opalj.br.PC">PC</a>, (<a href="" class="extype" name="org.opalj.ai.TheMemoryLayout">TheMemoryLayout</a>.this)#<span class="extype" name="org.opalj.ai.ValuesDomain.OperandsArray">OperandsArray</span>, (<a href="" class="extype" name="org.opalj.ai.TheMemoryLayout">TheMemoryLayout</a>.this)#<span class="extype" name="org.opalj.ai.ValuesDomain.LocalsArray">LocalsArray</span>)]</span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.ai.TheMemoryLayout#operandsArray" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="operandsArray:TheMemoryLayout.this.OperandsArray"></a><a id="operandsArray:(TheMemoryLayout.this)#OperandsArray"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#operandsArray:TheMemoryLayout.this.OperandsArray" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">operandsArray</span><span class="result">: (<a href="" class="extype" name="org.opalj.ai.TheMemoryLayout">TheMemoryLayout</a>.this)#<span class="extype" name="org.opalj.ai.ValuesDomain.OperandsArray">OperandsArray</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.ai.TheMemoryLayout#subroutinesLocalsArray" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="subroutinesLocalsArray:TheMemoryLayout.this.LocalsArray"></a><a id="subroutinesLocalsArray:(TheMemoryLayout.this)#LocalsArray"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#subroutinesLocalsArray:TheMemoryLayout.this.LocalsArray" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subroutinesLocalsArray</span><span class="result">: (<a href="" class="extype" name="org.opalj.ai.TheMemoryLayout">TheMemoryLayout</a>.this)#<span class="extype" name="org.opalj.ai.ValuesDomain.LocalsArray">LocalsArray</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.ai.TheMemoryLayout#subroutinesOperandsArray" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="subroutinesOperandsArray:TheMemoryLayout.this.OperandsArray"></a><a id="subroutinesOperandsArray:(TheMemoryLayout.this)#OperandsArray"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#subroutinesOperandsArray:TheMemoryLayout.this.OperandsArray" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subroutinesOperandsArray</span><span class="result">: (<a href="" class="extype" name="org.opalj.ai.TheMemoryLayout">TheMemoryLayout</a>.this)#<span class="extype" name="org.opalj.ai.ValuesDomain.OperandsArray">OperandsArray</span></span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/TheMemoryLayout.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

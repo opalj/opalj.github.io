@@ -1,0 +1,2228 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.fpcf.par.PKECPropertyStore</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.fpcf.par.PKECPropertyStore" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.fpcf.par.PKECPropertyStore" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../../index.js"></script>
+      <script type="text/javascript" src="../../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../../br/index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="../../ai/index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fpcf"></a><a id="fpcf:fpcf"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="The fixpoint computations framework (fpcf) is a general framework to perform fixpoint computations of properties ordered by a lattice." href="../index.html"><span class="name">fpcf</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">The fixpoint computations framework (<code>fpcf</code>) is a general framework to perform fixpoint
+computations of properties ordered by a lattice.</p><div class="fullcomment"><div class="comment cmt"><p>The fixpoint computations framework (<code>fpcf</code>) is a general framework to perform fixpoint
+computations of properties ordered by a lattice. The framework in particular supports the
+development of static analyses.</p><p>In this case, the fixpoint computations/static analyses are generally operating on the
+code and need to be executed until the computations have reached their (implicit) fixpoint.
+The fixpoint framework explicitly supports resolving cyclic dependencies/computations.
+A prime use case of the fixpoint framework are all those analyses that may interact with
+the results of other analyses.</p><p>For example, an analysis that analyzes all field write accesses to determine if we can
+refine a field's type (for the purpose of the analysis) can (reuse) the information
+about the return types of methods, which however may depend on the refined field types.</p><p>The framework is generic enough to facilitate the implementation of anytime algorithms.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org.opalj">opalj</a></dd><dt>Note</dt><dd><span class="cmt"><p><i>This framework assumes that all data-structures (e.g., dependee lists and properties)
+      that are passed to the framework are effectively immutable!</i>
+      (Effectively immutable means that a data structure is never updated after it was
+      passed to the framework.)</p></span>, <span class="cmt"><p>The dependency relation is as follows:
+     “A depends on B”
+         <code>===</code>
+     “A is the depender, B is the dependee”.
+         <code>===</code>
+     “B is depended on by A”</p></span>, <span class="cmt"><p>The very core of the framework is described in:
+      <a href="https://conf.researchr.org/track/ecoop-issta-2018/SOAP-2018-papers#program" target="_blank">Lattice Based Modularization of Static Analyses</a></p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="par"></a><a id="par:par"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html"><span class="name">par</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.fpcf">fpcf</a></dd></dl></div>
+    </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="AppliedUpdateComputationEvent.html" title=""></a>
+                        <a href="AppliedUpdateComputationEvent.html" title="">AppliedUpdateComputationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ComputedFallbackEvent.html" title=""></a>
+                        <a href="ComputedFallbackEvent.html" title="">ComputedFallbackEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="DeferredProcessingResultEvent.html" title=""></a>
+                        <a href="DeferredProcessingResultEvent.html" title="">DeferredProcessingResultEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="EPKState$.html" title=""></a>
+                        <a href="EPKState$.html" title="">EPKState</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="EnqueuedEPKToForceEvent.html" title=""></a>
+                        <a href="EnqueuedEPKToForceEvent.html" title="">EnqueuedEPKToForceEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="EvaluatedTransformerEvent.html" title=""></a>
+                        <a href="EvaluatedTransformerEvent.html" title="">EvaluatedTransformerEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="FinalizedPropertyEvent.html" title=""></a>
+                        <a href="FinalizedPropertyEvent.html" title="">FinalizedPropertyEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="FirstExceptionEvent.html" title=""></a>
+                        <a href="FirstExceptionEvent.html" title="">FirstExceptionEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ForcingEPKEvaluationEvent.html" title=""></a>
+                        <a href="ForcingEPKEvaluationEvent.html" title="">ForcingEPKEvaluationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="HandlingInterimEPKsDueToSuppressionEvent.html" title=""></a>
+                        <a href="HandlingInterimEPKsDueToSuppressionEvent.html" title="">HandlingInterimEPKsDueToSuppressionEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="IdempotentUpdateEvent.html" title=""></a>
+                        <a href="IdempotentUpdateEvent.html" title="">IdempotentUpdateEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ImmediatelyExecutedLazyComputationEvent.html" title=""></a>
+                        <a href="ImmediatelyExecutedLazyComputationEvent.html" title="">ImmediatelyExecutedLazyComputationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ImmediatelyRescheduledOnUpdateComputationEvent.html" title=""></a>
+                        <a href="ImmediatelyRescheduledOnUpdateComputationEvent.html" title="">ImmediatelyRescheduledOnUpdateComputationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="MakingIntermediateEPKStateFinalEvent.html" title=""></a>
+                        <a href="MakingIntermediateEPKStateFinalEvent.html" title="">MakingIntermediateEPKStateFinalEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="NoRelevantUpdate$.html" title=""></a>
+                        <a href="NoRelevantUpdate$.html" title="">NoRelevantUpdate</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="PKECPropertyStore$.html" title=""></a>
+                        <a class="class" href="" title="A concurrent implementation of the property store which executes the scheduled computations in parallel."></a>
+                        <a href="" title="A concurrent implementation of the property store which executes the scheduled computations in parallel.">PKECPropertyStore</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ParTasksManager.html" title="A task manager which performs all tasks in parallel using a standard fixed thread pool."></a>
+                        <a href="ParTasksManager.html" title="A task manager which performs all tasks in parallel using a standard fixed thread pool.">ParTasksManager</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="ParTasksManagerConfig$.html" title=""></a>
+                        <a href="ParTasksManagerConfig$.html" title="">ParTasksManagerConfig</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ParallelPropertyStore.html" title="An implementation of the property store which parallelizes the computation of the properties."></a>
+                        <a href="ParallelPropertyStore.html" title="An implementation of the property store which parallelizes the computation of the properties.">ParallelPropertyStore</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="PreInitializationEvent.html" title=""></a>
+                        <a href="PreInitializationEvent.html" title="">PreInitializationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ProcessingResultEvent.html" title=""></a>
+                        <a href="ProcessingResultEvent.html" title="">ProcessingResultEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ReachedQuiescenceEvent.html" title=""></a>
+                        <a href="ReachedQuiescenceEvent.html" title="">ReachedQuiescenceEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="RegisteredTransformerEvent.html" title=""></a>
+                        <a href="RegisteredTransformerEvent.html" title="">RegisteredTransformerEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="RelevantUpdateAndNotification$.html" title=""></a>
+                        <a href="RelevantUpdateAndNotification$.html" title="">RelevantUpdateAndNotification</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="RelevantUpdateButNoNotification$.html" title=""></a>
+                        <a href="RelevantUpdateButNoNotification$.html" title="">RelevantUpdateButNoNotification</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="RemovedDependerEvent.html" title=""></a>
+                        <a href="RemovedDependerEvent.html" title="">RemovedDependerEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ScheduledLazyComputationEvent.html" title=""></a>
+                        <a href="ScheduledLazyComputationEvent.html" title="">ScheduledLazyComputationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ScheduledOnUpdateComputationEvent.html" title=""></a>
+                        <a href="ScheduledOnUpdateComputationEvent.html" title="">ScheduledOnUpdateComputationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ScheduledOnUpdateComputationForFinalEPEvent.html" title=""></a>
+                        <a href="ScheduledOnUpdateComputationForFinalEPEvent.html" title="">ScheduledOnUpdateComputationForFinalEPEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="SeqTasksManager.html" title="A task manager which performs all tasks sequentially; hence, turning the parallel properties store into a sequential store."></a>
+                        <a href="SeqTasksManager.html" title="A task manager which performs all tasks sequentially; hence, turning the parallel properties store into a sequential store.">SeqTasksManager</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="SetPropertyEvent.html" title=""></a>
+                        <a href="SetPropertyEvent.html" title="">SetPropertyEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="StartedMainLoopEvent.html" title=""></a>
+                        <a href="StartedMainLoopEvent.html" title="">StartedMainLoopEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="StoreEvent.html" title=""></a>
+                        <a href="StoreEvent.html" title="">StoreEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="SubphaseFinalizationEvent.html" title=""></a>
+                        <a href="SubphaseFinalizationEvent.html" title="">SubphaseFinalizationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="TaskManagerFactory.html" title=""></a>
+                        <a href="TaskManagerFactory.html" title="">TaskManagerFactory</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="TasksManager.html" title=""></a>
+                        <a href="TasksManager.html" title="">TasksManager</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="TriggeredComputationEvent.html" title=""></a>
+                        <a href="TriggeredComputationEvent.html" title="">TriggeredComputationEvent</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="UpdateAndNotifyState.html" title=""></a>
+                        <a href="UpdateAndNotifyState.html" title="">UpdateAndNotifyState</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="class type">
+      <div id="definition">
+        <a href="PKECPropertyStore$.html" title="See companion object"><div class="big-circle class-companion-object">c</div></a>
+        <p id="owner"><a href="../../../index.html" class="extype" name="org">org</a>.<a href="../../index.html" class="extype" name="org.opalj">opalj</a>.<a href="../index.html" class="extype" name="org.opalj.fpcf">fpcf</a>.<a href="index.html" class="extype" name="org.opalj.fpcf.par">par</a></p>
+        <h1><a href="PKECPropertyStore$.html" title="See companion object">PKECPropertyStore</a><span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"><div>
+            Companion <a href="PKECPropertyStore$.html" title="See companion object">object PKECPropertyStore</a>
+          </div></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PKECPropertyStore</span><span class="result"> extends <a href="ParallelPropertyStore.html" class="extype" name="org.opalj.fpcf.par.ParallelPropertyStore">ParallelPropertyStore</a></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A concurrent implementation of the property store which executes the scheduled computations
+in parallel.</p><p>The number of threads that is used for parallelizing the computation is determined by:
+<code>NumberOfThreadsForProcessingPropertyComputations</code>
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a></dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/si/src/main/scala/org/opalj/fpcf/par/PKECPropertyStore.scala?at=develop" target="_blank">PKECPropertyStore.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><a href="ParallelPropertyStore.html" class="extype" name="org.opalj.fpcf.par.ParallelPropertyStore">ParallelPropertyStore</a>, <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="org.opalj.fpcf.par.PKECPropertyStore"><span>PKECPropertyStore</span></li><li class="in" name="org.opalj.fpcf.par.ParallelPropertyStore"><span>ParallelPropertyStore</span></li><li class="in" name="org.opalj.fpcf.PropertyStore"><span>PropertyStore</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.opalj.fpcf.par.PKECPropertyStore#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(ctx:Map[Class[_],AnyRef],implicittasksManager:org.opalj.fpcf.par.TasksManager,tracer:Option[org.opalj.fpcf.par.PropertyStoreTracer])(implicitlogContext:org.opalj.log.LogContext):org.opalj.fpcf.par.PKECPropertyStore"></a><a id="&lt;init&gt;:PKECPropertyStore"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#&lt;init&gt;(ctx:Map[Class[_],AnyRef],implicittasksManager:org.opalj.fpcf.par.TasksManager,tracer:Option[org.opalj.fpcf.par.PropertyStoreTracer])(implicitlogContext:org.opalj.log.LogContext):org.opalj.fpcf.par.PKECPropertyStore" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PKECPropertyStore</span><span class="params">(<span name="ctx">ctx: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.Class">Class</span>[_], <span class="extype" name="scala.AnyRef">AnyRef</span>]</span>, <span name="tasksManager">tasksManager: <a href="TasksManager.html" class="extype" name="org.opalj.fpcf.par.TasksManager">TasksManager</a></span>, <span name="tracer">tracer: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.opalj.fpcf.par.PropertyStoreTracer">PropertyStoreTracer</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="logContext">logContext: <a href="../../log/LogContext.html" class="extype" name="org.opalj.log.LogContext">LogContext</a></span>)</span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#MaxEvaluationDepth" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MaxEvaluationDepth:Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#MaxEvaluationDepth:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MaxEvaluationDepth</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#alreadyComputedPropertyKindIds" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="alreadyComputedPropertyKindIds:org.opalj.collection.IntIterator"></a><a id="alreadyComputedPropertyKindIds:IntIterator"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#alreadyComputedPropertyKindIds:org.opalj.collection.IntIterator" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">alreadyComputedPropertyKindIds</span><span class="result">: <a href="../../collection/IntIterator.html" class="extype" name="org.opalj.collection.IntIterator">IntIterator</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](epk:org.opalj.fpcf.EPK[E,P]):org.opalj.fpcf.EOptionP[E,P]"></a><a id="apply[E&lt;:Entity,P&lt;:Property](EPK[E,P]):EOptionP[E,P]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#apply[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](epk:org.opalj.fpcf.EPK[E,P]):org.opalj.fpcf.EOptionP[E,P]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="epk">epk: <a href="../EPK.html" class="extype" name="org.opalj.fpcf.EPK">EPK</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.apply.E">E</span>, <span class="extype" name="org.opalj.fpcf.PropertyStore.apply.P">P</span>]</span>)</span><span class="result">: <a href="../EOptionP.html" class="extype" name="org.opalj.fpcf.EOptionP">EOptionP</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.apply.E">E</span>, <span class="extype" name="org.opalj.fpcf.PropertyStore.apply.P">P</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the property of the respective property kind <code>pk</code> currently associated
+with the given element <code>e</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the property of the respective property kind <code>pk</code> currently associated
+with the given element <code>e</code>.</p><p>This is the most basic method to get some property and it is the preferred way
+if (a) you know that the property is already available – e.g., because some
+property computation function was strictly run before the current one – or
+if (b) the property is computed using a lazy property computation - or
+if (c) it may be possible to compute a final answer even if the property
+of the entity is not yet available.
+</p></div><dl class="paramcmts block"><dt class="param">epk</dt><dd class="cmt"><p>An entity/property key pair.</p></dd><dt>returns</dt><dd class="cmt"><p><code>EPK(e,pk)</code> if information about the respective property is not (yet) available.
+        <code>Final|InterimP(e,Property)</code> otherwise.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="IllegalStateException"><code>IllegalStateException</code></span> If setup phase was not called or
+        a previous computation result contained an epk which was not queried.
+        (Both state are ALWAYS illegal, but are only explicitly checked for if debug
+        is turned on!)</p></span></dd><dt>Note</dt><dd><span class="cmt"><p>In general, the returned value may change over time but only such that it
+        is strictly more precise.</p></span>, <span class="cmt"><p>Querying a property may trigger the (lazy) computation of the property.</p></span>, <span class="cmt"><p><a href="../PropertyStore.html#setupPhase(propertyKindsComputedInThisPhase:Set[org.opalj.fpcf.PropertyKind],propertyKindsComputedInLaterPhase:Set[org.opalj.fpcf.PropertyKind],suppressInterimUpdates:Map[org.opalj.fpcf.PropertyKind,Set[org.opalj.fpcf.PropertyKind]],finalizationOrder:List[List[org.opalj.fpcf.PropertyKind]]):Unit" class="extmbr" name="org.opalj.fpcf.PropertyStore#setupPhase">setupPhase</a> has to be called before calling apply!</p></span>, <span class="cmt"><p>After all computations has finished one of the &quot;pure&quot; query methods (e.g.,
+        <code>entities</code> or <code>get</code> should be used.)</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](e:E,pk:org.opalj.fpcf.PropertyKey[P]):org.opalj.fpcf.EOptionP[E,P]"></a><a id="apply[E&lt;:Entity,P&lt;:Property](E,PropertyKey[P]):EOptionP[E,P]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#apply[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](e:E,pk:org.opalj.fpcf.PropertyKey[P]):org.opalj.fpcf.EOptionP[E,P]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="e">e: <span class="extype" name="org.opalj.fpcf.PropertyStore.apply.E">E</span></span>, <span name="pk">pk: <a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.apply.P">P</span>]</span>)</span><span class="result">: <a href="../EOptionP.html" class="extype" name="org.opalj.fpcf.EOptionP">EOptionP</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.apply.E">E</span>, <span class="extype" name="org.opalj.fpcf.PropertyStore.apply.P">P</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>See also</dt><dd><span class="cmt"><p><code>apply(epk:EPK)</code> for details.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](es:Traversable[E],pmi:org.opalj.fpcf.PropertyMetaInformation{typeSelf&lt;:P}):Traversable[org.opalj.fpcf.EOptionP[E,P]]"></a><a id="apply[E&lt;:Entity,P&lt;:Property](Traversable[E],PropertyMetaInformation{typeSelf&lt;:P}):Traversable[EOptionP[E,P]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#apply[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](es:Traversable[E],pmi:org.opalj.fpcf.PropertyMetaInformation{typeSelf&lt;:P}):Traversable[org.opalj.fpcf.EOptionP[E,P]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="es">es: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="org.opalj.fpcf.PropertyStore.apply.E">E</span>]</span>, <span name="pmi">pmi: <a href="../PropertyMetaInformation.html" class="extype" name="org.opalj.fpcf.PropertyMetaInformation">PropertyMetaInformation</a> { type Self &lt;: P }</span>)</span><span class="result">: <span class="extype" name="scala.Traversable">Traversable</span>[<a href="../EOptionP.html" class="extype" name="org.opalj.fpcf.EOptionP">EOptionP</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.apply.E">E</span>, <span class="extype" name="org.opalj.fpcf.PropertyStore.apply.P">P</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns a snapshot of the properties with the given kind associated with the given entities.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a snapshot of the properties with the given kind associated with the given entities.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>Querying the properties of the given entities will trigger lazy computations.</p></span>, <span class="cmt"><p>The returned collection can be used to create an <a href="../InterimResult.html" class="extype" name="org.opalj.fpcf.InterimResult">InterimResult</a>.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p><code>apply(epk:EPK)</code> for details.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](es:Traversable[E],pk:org.opalj.fpcf.PropertyKey[P]):Traversable[org.opalj.fpcf.EOptionP[E,P]]"></a><a id="apply[E&lt;:Entity,P&lt;:Property](Traversable[E],PropertyKey[P]):Traversable[EOptionP[E,P]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#apply[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](es:Traversable[E],pk:org.opalj.fpcf.PropertyKey[P]):Traversable[org.opalj.fpcf.EOptionP[E,P]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="es">es: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="org.opalj.fpcf.PropertyStore.apply.E">E</span>]</span>, <span name="pk">pk: <a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.apply.P">P</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Traversable">Traversable</span>[<a href="../EOptionP.html" class="extype" name="org.opalj.fpcf.EOptionP">EOptionP</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.apply.E">E</span>, <span class="extype" name="org.opalj.fpcf.PropertyStore.apply.P">P</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns a snapshot of the properties with the given kind associated with the given entities.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a snapshot of the properties with the given kind associated with the given entities.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>Querying the properties of the given entities will trigger lazy computations.</p></span>, <span class="cmt"><p>The returned collection can be used to create an <a href="../InterimResult.html" class="extype" name="org.opalj.fpcf.InterimResult">InterimResult</a>.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p><code>apply(epk:EPK)</code> for details.</p></span></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#collectAndThrowException" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="collectAndThrowException(t:Throwable):Nothing"></a><a id="collectAndThrowException(Throwable):Nothing"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#collectAndThrowException(t:Throwable):Nothing" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">collectAndThrowException</span><span class="params">(<span name="t">t: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../index.html" class="extype" name="org.opalj.fpcf">fpcf</a>] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#collectException" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="collectException(t:Throwable):Unit"></a><a id="collectException(Throwable):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#collectException(t:Throwable):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">collectException</span><span class="params">(<span name="t">t: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../index.html" class="extype" name="org.opalj.fpcf">fpcf</a>] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#computeFallback" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="computeFallback[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](e:E,pkId:Int):org.opalj.fpcf.FinalEP[E,P]"></a><a id="computeFallback[E&lt;:Entity,P&lt;:Property](E,Int):FinalEP[E,P]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#computeFallback[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](e:E,pkId:Int):org.opalj.fpcf.FinalEP[E,P]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">computeFallback</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="e">e: <span class="extype" name="org.opalj.fpcf.PropertyStore.computeFallback.E">E</span></span>, <span name="pkId">pkId: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="../FinalEP.html" class="extype" name="org.opalj.fpcf.FinalEP">FinalEP</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.computeFallback.E">E</span>, <span class="extype" name="org.opalj.fpcf.PropertyStore.computeFallback.P">P</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#context" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="context[T](key:Class[T]):T"></a><a id="context[T](Class[T]):T"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#context[T](key:Class[T]):T" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">context</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="org.opalj.fpcf.PropertyStore.context.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="org.opalj.fpcf.PropertyStore.context.T">T</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Looks up the context object of the given type.</p><div class="fullcomment"><div class="comment cmt"><p>Looks up the context object of the given type. This is a comparatively expensive operation;
+the result should be cached.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#ctx" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ctx:Map[Class[_],AnyRef]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#ctx:Map[Class[_],AnyRef]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ctx</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.Class">Class</span>[_], <span class="extype" name="scala.AnyRef">AnyRef</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Immutable map which stores the context objects given at initialization time.</p><div class="fullcomment"><div class="comment cmt"><p>Immutable map which stores the context objects given at initialization time.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#debug" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="debug:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#debug:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">debug</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">If &quot;debug&quot; is <code>true</code> and we have an update related to an ordered property,
+we will then check if the update is correct!
+</p><div class="fullcomment"><div class="comment cmt"><p>If &quot;debug&quot; is <code>true</code> and we have an update related to an ordered property,
+we will then check if the update is correct!
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#doApply" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doApply[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](epk:org.opalj.fpcf.EPK[E,P],e:E,pkId:Int):org.opalj.fpcf.EOptionP[E,P]"></a><a id="doApply[E&lt;:Entity,P&lt;:Property](EPK[E,P],E,Int):EOptionP[E,P]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#doApply[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](epk:org.opalj.fpcf.EPK[E,P],e:E,pkId:Int):org.opalj.fpcf.EOptionP[E,P]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doApply</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="epk">epk: <a href="../EPK.html" class="extype" name="org.opalj.fpcf.EPK">EPK</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doApply.E">E</span>, <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doApply.P">P</span>]</span>, <span name="e">e: <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doApply.E">E</span></span>, <span name="pkId">pkId: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="../EOptionP.html" class="extype" name="org.opalj.fpcf.EOptionP">EOptionP</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doApply.E">E</span>, <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doApply.P">P</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#doPreInitialize" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doPreInitialize[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](e:E,pk:org.opalj.fpcf.PropertyKey[P])(pc:org.opalj.fpcf.EOptionP[E,P]=&gt;org.opalj.fpcf.InterimEP[E,P]):Unit"></a><a id="doPreInitialize[E&lt;:Entity,P&lt;:Property](E,PropertyKey[P])((EOptionP[E,P])⇒InterimEP[E,P]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#doPreInitialize[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](e:E,pk:org.opalj.fpcf.PropertyKey[P])(pc:org.opalj.fpcf.EOptionP[E,P]=&gt;org.opalj.fpcf.InterimEP[E,P]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doPreInitialize</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="e">e: <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doPreInitialize.E">E</span></span>, <span name="pk">pk: <a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doPreInitialize.P">P</span>]</span>)</span><span class="params">(<span name="pc">pc: (<a href="../EOptionP.html" class="extype" name="org.opalj.fpcf.EOptionP">EOptionP</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doPreInitialize.E">E</span>, <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doPreInitialize.P">P</span>]) ⇒ <a href="../InterimEP.html" class="extype" name="org.opalj.fpcf.InterimEP">InterimEP</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doPreInitialize.E">E</span>, <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doPreInitialize.P">P</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#doRegisterTriggeredComputation" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doRegisterTriggeredComputation[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](pk:org.opalj.fpcf.PropertyKey[P],pc:org.opalj.fpcf.PropertyComputation[E]):Unit"></a><a id="doRegisterTriggeredComputation[E&lt;:Entity,P&lt;:Property](PropertyKey[P],PropertyComputation[E]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#doRegisterTriggeredComputation[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](pk:org.opalj.fpcf.PropertyKey[P],pc:org.opalj.fpcf.PropertyComputation[E]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doRegisterTriggeredComputation</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="pk">pk: <a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doRegisterTriggeredComputation.P">P</span>]</span>, <span name="pc">pc: <a href="../index.html#PropertyComputation[E&lt;:org.opalj.fpcf.package.Entity]=E=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.PropertyComputation">PropertyComputation</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doRegisterTriggeredComputation.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#doScheduleEagerComputationForEntity" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doScheduleEagerComputationForEntity[E&lt;:org.opalj.fpcf.Entity](e:E)(pc:org.opalj.fpcf.PropertyComputation[E]):Unit"></a><a id="doScheduleEagerComputationForEntity[E&lt;:Entity](E)(PropertyComputation[E]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#doScheduleEagerComputationForEntity[E&lt;:org.opalj.fpcf.Entity](e:E)(pc:org.opalj.fpcf.PropertyComputation[E]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doScheduleEagerComputationForEntity</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>]</span><span class="params">(<span name="e">e: <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doScheduleEagerComputationForEntity.E">E</span></span>)</span><span class="params">(<span name="pc">pc: <a href="../index.html#PropertyComputation[E&lt;:org.opalj.fpcf.package.Entity]=E=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.PropertyComputation">PropertyComputation</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.doScheduleEagerComputationForEntity.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#doSet" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doSet(e:org.opalj.fpcf.Entity,p:org.opalj.fpcf.Property):Unit"></a><a id="doSet(Entity,Property):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#doSet(e:org.opalj.fpcf.Entity,p:org.opalj.fpcf.Property):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doSet</span><span class="params">(<span name="e">e: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="p">p: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#doTerminate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doTerminate:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#doTerminate:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doTerminate</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">If set to <code>true</code> no new computations will be scheduled and running computations will
+be terminated.</p><div class="fullcomment"><div class="comment cmt"><p>If set to <code>true</code> no new computations will be scheduled and running computations will
+be terminated. Afterwards, the store can be queried, but no new computations can
+be started.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#entities" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="entities[P&lt;:org.opalj.fpcf.Property](lb:P,ub:P):Iterator[org.opalj.fpcf.Entity]"></a><a id="entities[P&lt;:Property](P,P):Iterator[Entity]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#entities[P&lt;:org.opalj.fpcf.Property](lb:P,ub:P):Iterator[org.opalj.fpcf.Entity]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entities</span><span class="tparams">[<span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="lb">lb: <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.entities.P">P</span></span>, <span name="ub">ub: <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.entities.P">P</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns all entities that currently have the given property bounds based on an &quot;==&quot; (equals)
+comparison.</p><div class="fullcomment"><div class="comment cmt"><p>Returns all entities that currently have the given property bounds based on an &quot;==&quot; (equals)
+comparison. (In case of final properties the bounds are equal.)
+If some analysis only computes an upper or a lower bound and no final results exists,
+that entity will be ignored.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>Only to be called when the store is quiescent.</p></span>, <span class="cmt"><p>Does not trigger lazy property computations.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#entities" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="entities[P&lt;:org.opalj.fpcf.Property](pk:org.opalj.fpcf.PropertyKey[P]):Iterator[org.opalj.fpcf.EPS[org.opalj.fpcf.Entity,P]]"></a><a id="entities[P&lt;:Property](PropertyKey[P]):Iterator[EPS[Entity,P]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#entities[P&lt;:org.opalj.fpcf.Property](pk:org.opalj.fpcf.PropertyKey[P]):Iterator[org.opalj.fpcf.EPS[org.opalj.fpcf.Entity,P]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entities</span><span class="tparams">[<span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="pk">pk: <a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.entities.P">P</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="../EPS.html" class="extype" name="org.opalj.fpcf.EPS">EPS</a>[<a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a>, <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.entities.P">P</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns all entities which have a property of the respective kind.</p><div class="fullcomment"><div class="comment cmt"><p>Returns all entities which have a property of the respective kind. The result is
+undefined if this method is called while the property store still performs
+(concurrent) computations.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>Only to be called when the store is quiescent.</p></span>, <span class="cmt"><p>Does not trigger lazy property computations.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#entities" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="entities(p:org.opalj.fpcf.SomeEPS=&gt;Boolean):Iterator[org.opalj.fpcf.Entity]"></a><a id="entities((SomeEPS)⇒Boolean):Iterator[Entity]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#entities(p:org.opalj.fpcf.SomeEPS=&gt;Boolean):Iterator[org.opalj.fpcf.Entity]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entities</span><span class="params">(<span name="p">p: (<a href="../index.html#SomeEPS=org.opalj.fpcf.EPS[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPS">SomeEPS</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The set of all entities which have an entity property state that passes
+the given filter.</p><div class="fullcomment"><div class="comment cmt"><p>The set of all entities which have an entity property state that passes
+the given filter.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>Only to be called when the store is quiescent.</p></span>, <span class="cmt"><p>Does not trigger lazy property computations.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#entitiesWithLB" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="entitiesWithLB[P&lt;:org.opalj.fpcf.Property](lb:P):Iterator[org.opalj.fpcf.Entity]"></a><a id="entitiesWithLB[P&lt;:Property](P):Iterator[Entity]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#entitiesWithLB[P&lt;:org.opalj.fpcf.Property](lb:P):Iterator[org.opalj.fpcf.Entity]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entitiesWithLB</span><span class="tparams">[<span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="lb">lb: <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.entitiesWithLB.P">P</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>Only to be called when the store is quiescent.</p></span>, <span class="cmt"><p>Does not trigger lazy property computations.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#entitiesWithUB" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="entitiesWithUB[P&lt;:org.opalj.fpcf.Property](ub:P):Iterator[org.opalj.fpcf.Entity]"></a><a id="entitiesWithUB[P&lt;:Property](P):Iterator[Entity]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#entitiesWithUB[P&lt;:org.opalj.fpcf.Property](ub:P):Iterator[org.opalj.fpcf.Entity]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entitiesWithUB</span><span class="tparams">[<span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="ub">ub: <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.entitiesWithUB.P">P</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>Only to be called when the store is quiescent.</p></span>, <span class="cmt"><p>Does not trigger lazy property computations.</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#exception" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="exception:Throwable"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#exception:Throwable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">exception</span><span class="result">: <span class="extype" name="scala.Throwable">Throwable</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#execute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="execute(f:=&gt;Unit):Unit"></a><a id="execute(⇒Unit):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#execute(f:=&gt;Unit):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">execute</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Executes the given function at some point between now and the return of a subsequent call
+of waitOnPhaseCompletion.</p><div class="fullcomment"><div class="comment cmt"><p>Executes the given function at some point between now and the return of a subsequent call
+of waitOnPhaseCompletion.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#fallbacksUsedForComputedPropertiesCount" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fallbacksUsedForComputedPropertiesCount:Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#fallbacksUsedForComputedPropertiesCount:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fallbacksUsedForComputedPropertiesCount</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The number of times a fallback property was computed for an entity though an (eager)
+analysis was actually scheduled.</p><div class="fullcomment"><div class="comment cmt"><p>The number of times a fallback property was computed for an entity though an (eager)
+analysis was actually scheduled.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#finalEntities" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalEntities[P&lt;:org.opalj.fpcf.Property](p:P):Iterator[org.opalj.fpcf.Entity]"></a><a id="finalEntities[P&lt;:Property](P):Iterator[Entity]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#finalEntities[P&lt;:org.opalj.fpcf.Property](p:P):Iterator[org.opalj.fpcf.Entity]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalEntities</span><span class="tparams">[<span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="p">p: <span class="extype" name="org.opalj.fpcf.PropertyStore.finalEntities.P">P</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns all final entities with the given property.</p><div class="fullcomment"><div class="comment cmt"><p>Returns all final entities with the given property.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>Only to be called when the store is quiescent.</p></span>, <span class="cmt"><p>Does not trigger lazy property computations.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#force" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="force[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](e:E,pk:org.opalj.fpcf.PropertyKey[P]):Unit"></a><a id="force[E&lt;:Entity,P&lt;:Property](E,PropertyKey[P]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#force[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](e:E,pk:org.opalj.fpcf.PropertyKey[P]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">force</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="e">e: <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.force.E">E</span></span>, <span name="pk">pk: <a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.force.P">P</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Enforce the evaluation of the specified property kind for the given entity, even
+if the property is computed lazily and no &quot;eager computation&quot; requires the results
+(anymore).</p><div class="fullcomment"><div class="comment cmt"><p>Enforce the evaluation of the specified property kind for the given entity, even
+if the property is computed lazily and no &quot;eager computation&quot; requires the results
+(anymore).
+Using <code>force</code> is in particular necessary in cases where a specific analysis should
+be scheduled lazily because the computed information is not necessary for all entities,
+but strictly required for some elements.
+E.g., if you want to compute a property for some piece of code, but not for those
+elements of the used library that are strictly necessary.
+For example, if we want to compute the purity of the methods of a specific application,
+we may have to compute the property for some entities of the libraries, but we don't
+want to compute them for all.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>Triggers lazy evaluations.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#get" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="get[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](epk:org.opalj.fpcf.EPK[E,P]):Option[org.opalj.fpcf.EOptionP[E,P]]"></a><a id="get[E&lt;:Entity,P&lt;:Property](EPK[E,P]):Option[EOptionP[E,P]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#get[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](epk:org.opalj.fpcf.EPK[E,P]):Option[org.opalj.fpcf.EOptionP[E,P]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">get</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="epk">epk: <a href="../EPK.html" class="extype" name="org.opalj.fpcf.EPK">EPK</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.get.E">E</span>, <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.get.P">P</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../EOptionP.html" class="extype" name="org.opalj.fpcf.EOptionP">EOptionP</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.get.E">E</span>, <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.get.P">P</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the property of the respective property kind <code>pk</code> currently associated
+with the given element <code>e</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the property of the respective property kind <code>pk</code> currently associated
+with the given element <code>e</code>. Does not trigger any computations.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#get" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="get[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](e:E,pk:org.opalj.fpcf.PropertyKey[P]):Option[org.opalj.fpcf.EOptionP[E,P]]"></a><a id="get[E&lt;:Entity,P&lt;:Property](E,PropertyKey[P]):Option[EOptionP[E,P]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#get[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](e:E,pk:org.opalj.fpcf.PropertyKey[P]):Option[org.opalj.fpcf.EOptionP[E,P]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">get</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="e">e: <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.get.E">E</span></span>, <span name="pk">pk: <a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.get.P">P</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../EOptionP.html" class="extype" name="org.opalj.fpcf.EOptionP">EOptionP</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.get.E">E</span>, <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.get.P">P</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>See also</dt><dd><span class="cmt"><p><code>get(epk:EPK)</code> for details.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#getAndClearInformation" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getAndClearInformation[T&lt;:AnyRef](key:AnyRef):Option[T]"></a><a id="getAndClearInformation[T&lt;:AnyRef](AnyRef):Option[T]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#getAndClearInformation[T&lt;:AnyRef](key:AnyRef):Option[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getAndClearInformation</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.opalj.fpcf.PropertyStore.getAndClearInformation.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the information stored in the store and removes the key, if any.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the information stored in the store and removes the key, if any.</p><p>This method is thread-safe. However, the client which adds information to the store
+has to ensure that the overall process of adding/querying/removing is well defined and
+the ordered is ensured.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#getInformation" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getInformation[T&lt;:AnyRef](key:AnyRef):Option[T]"></a><a id="getInformation[T&lt;:AnyRef](AnyRef):Option[T]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#getInformation[T&lt;:AnyRef](key:AnyRef):Option[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getInformation</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.opalj.fpcf.PropertyStore.getInformation.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the information stored in the store, if any.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the information stored in the store, if any.</p><p>This method is thread-safe. However, the client which adds information to the store
+has to ensure that the overall process of adding/querying/removing is well defined and
+the ordered is ensured.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#getOrCreateInformation" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getOrCreateInformation[T&lt;:AnyRef](key:AnyRef,f:=&gt;T):T"></a><a id="getOrCreateInformation[T&lt;:AnyRef](AnyRef,⇒T):T"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#getOrCreateInformation[T&lt;:AnyRef](key:AnyRef,f:=&gt;T):T" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getOrCreateInformation</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="f">f: ⇒ <span class="extype" name="org.opalj.fpcf.PropertyStore.getOrCreateInformation.T">T</span></span>)</span><span class="result">: <span class="extype" name="org.opalj.fpcf.PropertyStore.getOrCreateInformation.T">T</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Attaches or returns some information associated with the property store using a key object.</p><div class="fullcomment"><div class="comment cmt"><p>Attaches or returns some information associated with the property store using a key object.</p><p>This method is thread-safe. However, the client which adds information to the store
+has to ensure that the overall process of adding/querying/removing is well defined and
+the ordered is ensured.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#handleExceptions" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="handleExceptions[U](f:=&gt;U):U"></a><a id="handleExceptions[U](⇒U):U"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#handleExceptions[U](f:=&gt;U):U" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">handleExceptions</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="org.opalj.fpcf.PropertyStore.handleExceptions.U">U</span></span>)</span><span class="result">: <span class="extype" name="org.opalj.fpcf.PropertyStore.handleExceptions.U">U</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#handleResult" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="handleResult(r:org.opalj.fpcf.PropertyComputationResult):Unit"></a><a id="handleResult(PropertyComputationResult):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#handleResult(r:org.opalj.fpcf.PropertyComputationResult):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">handleResult</span><span class="params">(<span name="r">r: <a href="../PropertyComputationResult.html" class="extype" name="org.opalj.fpcf.PropertyComputationResult">PropertyComputationResult</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Processes the result eventually; generally, not directly called by analyses.</p><div class="fullcomment"><div class="comment cmt"><p>Processes the result eventually; generally, not directly called by analyses.
+If this function is directly called, the caller has to ensure that we don't have overlapping
+results and that the given result is a meaningful update of the previous property
+associated with the respective entity - if any!
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="IllegalStateException"><code>IllegalStateException</code></span> If the result cannot be applied.</p></span></dd><dt>Note</dt><dd><span class="cmt"><p>If any computation resulted in an exception, then <code>handleResult</code> will fail and
+        the exception related to the failing computation will be thrown again.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#hasProperty" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hasProperty(e:org.opalj.fpcf.Entity,pk:org.opalj.fpcf.PropertyKind):Boolean"></a><a id="hasProperty(Entity,PropertyKind):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#hasProperty(e:org.opalj.fpcf.Entity,pk:org.opalj.fpcf.PropertyKind):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasProperty</span><span class="params">(<span name="e">e: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="pk">pk: <a href="../PropertyKind.html" class="extype" name="org.opalj.fpcf.PropertyKind">PropertyKind</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">See <code>hasProperty(SomeEPK)</code> for details.</p><div class="fullcomment"><div class="comment cmt"><p>See <code>hasProperty(SomeEPK)</code> for details. *</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#hasProperty" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hasProperty(epk:org.opalj.fpcf.SomeEPK):Boolean"></a><a id="hasProperty(SomeEPK):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#hasProperty(epk:org.opalj.fpcf.SomeEPK):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasProperty</span><span class="params">(<span name="epk">epk: <a href="../index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Tests if we have some (lb, ub or final) property for the entity with the respective kind.</p><div class="fullcomment"><div class="comment cmt"><p>Tests if we have some (lb, ub or final) property for the entity with the respective kind.
+If <code>hasProperty</code> returns <code>true</code> a subsequent <code>apply</code> will return an <code>EPS</code> (not an <code>EPK</code>).
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#hasSuppressedDependers" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hasSuppressedDependers:Array[Boolean]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#hasSuppressedDependers:Array[Boolean]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasSuppressedDependers</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt"><code>true</code> if entities with a specific property kind (EP) may have dependers with suppressed
+notifications.</p><div class="fullcomment"><div class="comment cmt"><p><code>true</code> if entities with a specific property kind (EP) may have dependers with suppressed
+notifications. (I.e., suppressInteriumUpdates(&quot;depender&quot;)(&quot;EP&quot;) is <code>true</code>.)
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#hasSuppressedNotifications" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hasSuppressedNotifications:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#hasSuppressedNotifications:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasSuppressedNotifications</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#isIdle" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isIdle:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#isIdle:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isIdle</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns <code>true</code> if the store does not perform any computations at the time of this method
+call.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> if the store does not perform any computations at the time of this method
+call.</p><p>This method is only intended to support bug detection.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#isKnown" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isKnown(e:org.opalj.fpcf.Entity):Boolean"></a><a id="isKnown(Entity):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#isKnown(e:org.opalj.fpcf.Entity):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isKnown</span><span class="params">(<span name="e">e: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns <code>true</code> if the given entity is known to the property store.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> if the given entity is known to the property store. Here, <code>isKnown</code> can mean</p><ul><li>that we actually have a property, or</li><li>a computation is scheduled/running to compute some property, or</li><li>an analysis has a dependency on some (not yet finally computed) property, or</li><li>that the store just eagerly created the data structures necessary to associate
+   properties with the entity because the entity was queried.
+</li></ul></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#lazyComputations" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lazyComputations:Array[org.opalj.fpcf.SomeProperPropertyComputation]"></a><a id="lazyComputations:Array[SomeProperPropertyComputation]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#lazyComputations:Array[org.opalj.fpcf.SomeProperPropertyComputation]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lazyComputations</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<a href="../index.html#SomeProperPropertyComputation=org.opalj.fpcf.package.ProperPropertyComputation[_&lt;:org.opalj.fpcf.package.Entity]" class="extmbr" name="org.opalj.fpcf.SomeProperPropertyComputation">SomeProperPropertyComputation</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The set of computations that will only be scheduled if the result is required.</p><div class="fullcomment"><div class="comment cmt"><p>The set of computations that will only be scheduled if the result is required.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#logContext" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logContext:org.opalj.log.LogContext"></a><a id="logContext:LogContext"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#logContext:org.opalj.log.LogContext" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">logContext</span><span class="result">: <a href="../../log/LogContext.html" class="extype" name="org.opalj.log.LogContext">LogContext</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#newPhaseInitialized" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newPhaseInitialized(propertyKindsComputedInThisPhase:Set[org.opalj.fpcf.PropertyKind],propertyKindsComputedInLaterPhase:Set[org.opalj.fpcf.PropertyKind],suppressInterimUpdates:Map[org.opalj.fpcf.PropertyKind,Set[org.opalj.fpcf.PropertyKind]],finalizationOrder:List[List[org.opalj.fpcf.PropertyKind]]):Unit"></a><a id="newPhaseInitialized(Set[PropertyKind],Set[PropertyKind],Map[PropertyKind,Set[PropertyKind]],List[List[PropertyKind]]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#newPhaseInitialized(propertyKindsComputedInThisPhase:Set[org.opalj.fpcf.PropertyKind],propertyKindsComputedInLaterPhase:Set[org.opalj.fpcf.PropertyKind],suppressInterimUpdates:Map[org.opalj.fpcf.PropertyKind,Set[org.opalj.fpcf.PropertyKind]],finalizationOrder:List[List[org.opalj.fpcf.PropertyKind]]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newPhaseInitialized</span><span class="params">(<span name="propertyKindsComputedInThisPhase">propertyKindsComputedInThisPhase: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../PropertyKind.html" class="extype" name="org.opalj.fpcf.PropertyKind">PropertyKind</a>]</span>, <span name="propertyKindsComputedInLaterPhase">propertyKindsComputedInLaterPhase: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../PropertyKind.html" class="extype" name="org.opalj.fpcf.PropertyKind">PropertyKind</a>]</span>, <span name="suppressInterimUpdates">suppressInterimUpdates: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../PropertyKind.html" class="extype" name="org.opalj.fpcf.PropertyKind">PropertyKind</a>, <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../PropertyKind.html" class="extype" name="org.opalj.fpcf.PropertyKind">PropertyKind</a>]]</span>, <span name="finalizationOrder">finalizationOrder: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.List">List</span>[<a href="../PropertyKind.html" class="extype" name="org.opalj.fpcf.PropertyKind">PropertyKind</a>]]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Called when a new phase was initialized.</p><div class="fullcomment"><div class="comment cmt"><p>Called when a new phase was initialized. Intended to be overridden by subclasses if
+special handling is required.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#onFirstException" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onFirstException(t:Throwable):Unit"></a><a id="onFirstException(Throwable):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#onFirstException(t:Throwable):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onFirstException</span><span class="params">(<span name="t">t: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Called when the first top-level exception occurs.</p><div class="fullcomment"><div class="comment cmt"><p>Called when the first top-level exception occurs.
+Intended to be overridden by subclasses.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#preInitialize" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="preInitialize[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](e:E,pk:org.opalj.fpcf.PropertyKey[P])(pc:org.opalj.fpcf.EOptionP[E,P]=&gt;org.opalj.fpcf.InterimEP[E,P]):Unit"></a><a id="preInitialize[E&lt;:Entity,P&lt;:Property](E,PropertyKey[P])((EOptionP[E,P])⇒InterimEP[E,P]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#preInitialize[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](e:E,pk:org.opalj.fpcf.PropertyKey[P])(pc:org.opalj.fpcf.EOptionP[E,P]=&gt;org.opalj.fpcf.InterimEP[E,P]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">preInitialize</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="e">e: <span class="extype" name="org.opalj.fpcf.PropertyStore.preInitialize.E">E</span></span>, <span name="pk">pk: <a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.preInitialize.P">P</span>]</span>)</span><span class="params">(<span name="pc">pc: (<a href="../EOptionP.html" class="extype" name="org.opalj.fpcf.EOptionP">EOptionP</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.preInitialize.E">E</span>, <span class="extype" name="org.opalj.fpcf.PropertyStore.preInitialize.P">P</span>]) ⇒ <a href="../InterimEP.html" class="extype" name="org.opalj.fpcf.InterimEP">InterimEP</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.preInitialize.E">E</span>, <span class="extype" name="org.opalj.fpcf.PropertyStore.preInitialize.P">P</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Associates the given entity with the newly computed intermediate property P.</p><div class="fullcomment"><div class="comment cmt"><p>Associates the given entity with the newly computed intermediate property P.</p><p><b>Calling this method is only supported before any analysis is scheduled!</b>
+</p></div><dl class="paramcmts block"><dt class="param">pc</dt><dd class="cmt"><p>A function which is given the current property of kind pk associated with e and
+          which has to compute the new <b>intermediate</b> property <code>p</code>.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#properties" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="properties[E&lt;:org.opalj.fpcf.Entity](e:E):Iterator[org.opalj.fpcf.EPS[E,org.opalj.fpcf.Property]]"></a><a id="properties[E&lt;:Entity](E):Iterator[EPS[E,Property]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#properties[E&lt;:org.opalj.fpcf.Entity](e:E):Iterator[org.opalj.fpcf.EPS[E,org.opalj.fpcf.Property]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">properties</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>]</span><span class="params">(<span name="e">e: <span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.properties.E">E</span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="../EPS.html" class="extype" name="org.opalj.fpcf.EPS">EPS</a>[<span class="extype" name="org.opalj.fpcf.par.PKECPropertyStore.properties.E">E</span>, <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a>]]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#propertyKindsComputedInEarlierPhase" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="propertyKindsComputedInEarlierPhase:Array[Boolean]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#propertyKindsComputedInEarlierPhase:Array[Boolean]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">propertyKindsComputedInEarlierPhase</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">If a property is queried for which we have no value, then this information is used
+to determine which kind of fallback is required.</p><div class="fullcomment"><div class="comment cmt"><p>If a property is queried for which we have no value, then this information is used
+to determine which kind of fallback is required.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#propertyKindsComputedInLaterPhase" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="propertyKindsComputedInLaterPhase:Array[Boolean]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#propertyKindsComputedInLaterPhase:Array[Boolean]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">propertyKindsComputedInLaterPhase</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Used to identify situations where a property is queried, which is only going to be computed
+in the future - in this case, the specification of an analysis is broken!
+</p><div class="fullcomment"><div class="comment cmt"><p>Used to identify situations where a property is queried, which is only going to be computed
+in the future - in this case, the specification of an analysis is broken!
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#propertyKindsComputedInThisPhase" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="propertyKindsComputedInThisPhase:Array[Boolean]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#propertyKindsComputedInThisPhase:Array[Boolean]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">propertyKindsComputedInThisPhase</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#quiescenceCount" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="quiescenceCount:Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#quiescenceCount:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">quiescenceCount</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The number of times the property store reached quiescence.</p><div class="fullcomment"><div class="comment cmt"><p>The number of times the property store reached quiescence.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#registerLazyPropertyComputation" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="registerLazyPropertyComputation[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](pk:org.opalj.fpcf.PropertyKey[P],pc:org.opalj.fpcf.ProperPropertyComputation[E]):Unit"></a><a id="registerLazyPropertyComputation[E&lt;:Entity,P&lt;:Property](PropertyKey[P],ProperPropertyComputation[E]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#registerLazyPropertyComputation[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](pk:org.opalj.fpcf.PropertyKey[P],pc:org.opalj.fpcf.ProperPropertyComputation[E]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registerLazyPropertyComputation</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="pk">pk: <a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.registerLazyPropertyComputation.P">P</span>]</span>, <span name="pc">pc: <a href="../index.html#ProperPropertyComputation[E&lt;:org.opalj.fpcf.package.Entity]=E=&gt;org.opalj.fpcf.ProperPropertyComputationResult" class="extmbr" name="org.opalj.fpcf.ProperPropertyComputation">ProperPropertyComputation</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.registerLazyPropertyComputation.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Registers a function that lazily computes a property for an element
+of the store if the property of the respective kind is requested.</p><div class="fullcomment"><div class="comment cmt"><p>Registers a function that lazily computes a property for an element
+of the store if the property of the respective kind is requested.
+Hence, a first request of such a property will always first return no result.</p><p>The computation is triggered by a(n in)direct call of this store's <code>apply</code> method.</p><p>This store ensures that the property computation function <code>pc</code> is never invoked more
+than once for the same element at the same time. If <code>pc</code> is invoked again for a specific
+element then only because a dependee has changed!</p><p>In general, the result can't be an <code>IncrementalResult</code>, a <code>PartialResult</code> or a <code>NoResult</code>.</p><p><i>A lazy computation must never return a <a href="../NoResult$.html" class="extype" name="org.opalj.fpcf.NoResult">NoResult</a>; if the entity cannot be processed an
+exception has to be thrown or the bottom value – if defined – has to be returned.</i></p><p><b>Calling <code>registerLazyPropertyComputation</code> is only supported as long as the store is not
+queried and no computations are already running.
+In general, this requires that lazy property computations are scheduled before any eager
+analysis that potentially reads the value.</b>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#registerTransformer" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="registerTransformer[SourceP&lt;:org.opalj.fpcf.Property,TargetP&lt;:org.opalj.fpcf.Property,E&lt;:org.opalj.fpcf.Entity](sourcePK:org.opalj.fpcf.PropertyKey[SourceP],targetPK:org.opalj.fpcf.PropertyKey[TargetP])(pc:(E,SourceP)=&gt;org.opalj.fpcf.FinalEP[E,TargetP]):Unit"></a><a id="registerTransformer[SourceP&lt;:Property,TargetP&lt;:Property,E&lt;:Entity](PropertyKey[SourceP],PropertyKey[TargetP])((E,SourceP)⇒FinalEP[E,TargetP]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#registerTransformer[SourceP&lt;:org.opalj.fpcf.Property,TargetP&lt;:org.opalj.fpcf.Property,E&lt;:org.opalj.fpcf.Entity](sourcePK:org.opalj.fpcf.PropertyKey[SourceP],targetPK:org.opalj.fpcf.PropertyKey[TargetP])(pc:(E,SourceP)=&gt;org.opalj.fpcf.FinalEP[E,TargetP]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registerTransformer</span><span class="tparams">[<span name="SourceP">SourceP &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>, <span name="TargetP">TargetP &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>, <span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>]</span><span class="params">(<span name="sourcePK">sourcePK: <a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.registerTransformer.SourceP">SourceP</span>]</span>, <span name="targetPK">targetPK: <a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.registerTransformer.TargetP">TargetP</span>]</span>)</span><span class="params">(<span name="pc">pc: (<span class="extype" name="org.opalj.fpcf.PropertyStore.registerTransformer.E">E</span>, <span class="extype" name="org.opalj.fpcf.PropertyStore.registerTransformer.SourceP">SourceP</span>) ⇒ <a href="../FinalEP.html" class="extype" name="org.opalj.fpcf.FinalEP">FinalEP</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.registerTransformer.E">E</span>, <span class="extype" name="org.opalj.fpcf.PropertyStore.registerTransformer.TargetP">TargetP</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Registers a total function that takes a given final property and computes a new final
+property of a different kind; the function must not query the property store.</p><div class="fullcomment"><div class="comment cmt"><p>Registers a total function that takes a given final property and computes a new final
+property of a different kind; the function must not query the property store. Furthermore,
+<code>setupPhase</code> must specify that notifications about interim updates have to be suppressed.
+A transformer is conceptually a special kind of lazy analysis.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#registerTriggeredComputation" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="registerTriggeredComputation[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](pk:org.opalj.fpcf.PropertyKey[P],pc:org.opalj.fpcf.PropertyComputation[E]):Unit"></a><a id="registerTriggeredComputation[E&lt;:Entity,P&lt;:Property](PropertyKey[P],PropertyComputation[E]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#registerTriggeredComputation[E&lt;:org.opalj.fpcf.Entity,P&lt;:org.opalj.fpcf.Property](pk:org.opalj.fpcf.PropertyKey[P],pc:org.opalj.fpcf.PropertyComputation[E]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registerTriggeredComputation</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="P">P &lt;: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="pk">pk: <a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.registerTriggeredComputation.P">P</span>]</span>, <span name="pc">pc: <a href="../index.html#PropertyComputation[E&lt;:org.opalj.fpcf.package.Entity]=E=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.PropertyComputation">PropertyComputation</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.registerTriggeredComputation.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Registers a property computation that is eagerly triggered when a property of the given kind
+is derived for some entity for the first time.</p><div class="fullcomment"><div class="comment cmt"><p>Registers a property computation that is eagerly triggered when a property of the given kind
+is derived for some entity for the first time. Note, that the property computation
+function – as usual – has to be thread safe (only on-update continuation functions are
+guaranteed to be executed sequentially per E/PK pair). The primary use case is to
+kick-start the computation of some e/pk as soon as an entity &quot;becomes relevant&quot;.</p><p>In general, it also possible to have a standard analysis that just queries the properties
+of the respective entities and which maintains the list of dependees. However, if the
+list of dependees becomes larger and (at least initially) encompasses a significant fraction
+or even all entities of a specific kind, the overhead that is generated in the framework
+becomes very huge. In this case, it is way more efficient to register a triggered
+computation.</p><p>For example, if you want to do some processing (kick-start further computations) related
+to methods that are reached, it is more efficient to register a property computation
+that is triggered when a method's <code>Caller</code> property is set. Please note, that the property
+computation is allowed to query and depend on the property that initially kicked-off the
+computation in the first place. <b>Querying the property store may in particular be required
+to identify the reason why the property was set</b>. For example, if the <code>Caller</code> property
+was set to the fallback due to a depending computation, it may be necessary to distinguish
+between the case &quot;no callers&quot; and &quot;unknown callers&quot;; in case of the final property
+&quot;no callers&quot; the result may very well be <a href="../NoResult$.html" class="extype" name="org.opalj.fpcf.NoResult">NoResult</a>.
+</p></div><dl class="paramcmts block"><dt class="param">pk</dt><dd class="cmt"><p>The property key.</p></dd><dt class="param">pc</dt><dd class="cmt"><p>The computation that is (potentially concurrently) called to kick-start a
+          computation related to the given entity.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>A computation is guaranteed to be triggered exactly once for every e/pk pair that has
+      a concrete property - even if the value was already associated with the e/pk pair
+      before the registration is done.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#scheduleEagerComputationForEntity" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="scheduleEagerComputationForEntity[E&lt;:org.opalj.fpcf.Entity](e:E)(pc:org.opalj.fpcf.PropertyComputation[E]):Unit"></a><a id="scheduleEagerComputationForEntity[E&lt;:Entity](E)(PropertyComputation[E]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#scheduleEagerComputationForEntity[E&lt;:org.opalj.fpcf.Entity](e:E)(pc:org.opalj.fpcf.PropertyComputation[E]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scheduleEagerComputationForEntity</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>]</span><span class="params">(<span name="e">e: <span class="extype" name="org.opalj.fpcf.PropertyStore.scheduleEagerComputationForEntity.E">E</span></span>)</span><span class="params">(<span name="pc">pc: <a href="../index.html#PropertyComputation[E&lt;:org.opalj.fpcf.package.Entity]=E=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.PropertyComputation">PropertyComputation</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.scheduleEagerComputationForEntity.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Schedules the execution of the given <code>PropertyComputation</code> function for the given entity.</p><div class="fullcomment"><div class="comment cmt"><p>Schedules the execution of the given <code>PropertyComputation</code> function for the given entity.
+This is of particular interest to start an incremental computation
+(cf. <a href="../IncrementalResult.html" class="extype" name="org.opalj.fpcf.IncrementalResult">IncrementalResult</a>) which, e.g., processes the class hierarchy in a top-down manner.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>It is NOT possible to use scheduleEagerComputationForEntity for properties which
+        are also computed by a lazy property computation; use <code>force</code> instead!</p></span>, <span class="cmt"><p>If any computation resulted in an exception, then the scheduling will fail and
+        the exception related to the failing computation will be thrown again.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#scheduleEagerComputationsForEntities" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="scheduleEagerComputationsForEntities[E&lt;:org.opalj.fpcf.Entity](es:TraversableOnce[E])(c:org.opalj.fpcf.PropertyComputation[E]):Unit"></a><a id="scheduleEagerComputationsForEntities[E&lt;:Entity](TraversableOnce[E])(PropertyComputation[E]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#scheduleEagerComputationsForEntities[E&lt;:org.opalj.fpcf.Entity](es:TraversableOnce[E])(c:org.opalj.fpcf.PropertyComputation[E]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scheduleEagerComputationsForEntities</span><span class="tparams">[<span name="E">E &lt;: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>]</span><span class="params">(<span name="es">es: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="org.opalj.fpcf.PropertyStore.scheduleEagerComputationsForEntities.E">E</span>]</span>)</span><span class="params">(<span name="c">c: <a href="../index.html#PropertyComputation[E&lt;:org.opalj.fpcf.package.Entity]=E=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.PropertyComputation">PropertyComputation</a>[<span class="extype" name="org.opalj.fpcf.PropertyStore.scheduleEagerComputationsForEntities.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Will call the given function <code>c</code> for all elements of <code>es</code> in parallel.</p><div class="fullcomment"><div class="comment cmt"><p>Will call the given function <code>c</code> for all elements of <code>es</code> in parallel.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="../PropertyStore.html#scheduleEagerComputationForEntity[E&lt;:org.opalj.fpcf.Entity](e:E)(pc:org.opalj.fpcf.PropertyComputation[E]):Unit" class="extmbr" name="org.opalj.fpcf.PropertyStore#scheduleEagerComputationForEntity">scheduleEagerComputationForEntity</a> for details.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#scheduledOnUpdateComputationsCount" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="scheduledOnUpdateComputationsCount:Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#scheduledOnUpdateComputationsCount:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scheduledOnUpdateComputationsCount</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The number of (<a href="../index.html#OnUpdateContinuation=org.opalj.fpcf.package.SomeEPS=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.OnUpdateContinuation">OnUpdateContinuation</a>s) that were executed in response to an
+updated property.</p><div class="fullcomment"><div class="comment cmt"><p>The number of (<a href="../index.html#OnUpdateContinuation=org.opalj.fpcf.package.SomeEPS=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.OnUpdateContinuation">OnUpdateContinuation</a>s) that were executed in response to an
+updated property.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#scheduledTasksCount" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="scheduledTasksCount:Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#scheduledTasksCount:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scheduledTasksCount</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Simple counter of the number of tasks that were executed to perform an initial
+computation of a property for some entity.</p><div class="fullcomment"><div class="comment cmt"><p>Simple counter of the number of tasks that were executed to perform an initial
+computation of a property for some entity.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#set" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="set(e:org.opalj.fpcf.Entity,p:org.opalj.fpcf.Property):Unit"></a><a id="set(Entity,Property):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#set(e:org.opalj.fpcf.Entity,p:org.opalj.fpcf.Property):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">set</span><span class="params">(<span name="e">e: <a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="p">p: <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Associates the given property <code>p</code>, which has property kind <code>pk</code>, with the given entity
+<code>e</code> iff <code>e</code> has no property of the respective kind.</p><div class="fullcomment"><div class="comment cmt"><p>Associates the given property <code>p</code>, which has property kind <code>pk</code>, with the given entity
+<code>e</code> iff <code>e</code> has no property of the respective kind. The set property is always final.</p><p><b>Calling this method is only supported before any analysis is scheduled!</b></p><p>One use case is an analysis that does use the property store while executing the analysis,
+but which wants to store the results in the store. Such an analysis <b>must
+be executed before any other analysis is scheduled</b>.
+A second use case are (eager or lazy) analyses, which want to store some pre-configured
+information in the property store; e.g., properties of natives methods which were derived
+beforehand.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>This method must not be used <b>if there might be a computation (in the future) that
+        computes the property kind <code>pk</code> for the given <code>e</code></b>.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#setupPhase" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setupPhase(propertyKindsComputedInThisPhase:Set[org.opalj.fpcf.PropertyKind],propertyKindsComputedInLaterPhase:Set[org.opalj.fpcf.PropertyKind],suppressInterimUpdates:Map[org.opalj.fpcf.PropertyKind,Set[org.opalj.fpcf.PropertyKind]],finalizationOrder:List[List[org.opalj.fpcf.PropertyKind]]):Unit"></a><a id="setupPhase(Set[PropertyKind],Set[PropertyKind],Map[PropertyKind,Set[PropertyKind]],List[List[PropertyKind]]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#setupPhase(propertyKindsComputedInThisPhase:Set[org.opalj.fpcf.PropertyKind],propertyKindsComputedInLaterPhase:Set[org.opalj.fpcf.PropertyKind],suppressInterimUpdates:Map[org.opalj.fpcf.PropertyKind,Set[org.opalj.fpcf.PropertyKind]],finalizationOrder:List[List[org.opalj.fpcf.PropertyKind]]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setupPhase</span><span class="params">(<span name="propertyKindsComputedInThisPhase">propertyKindsComputedInThisPhase: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../PropertyKind.html" class="extype" name="org.opalj.fpcf.PropertyKind">PropertyKind</a>]</span>, <span name="propertyKindsComputedInLaterPhase">propertyKindsComputedInLaterPhase: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../PropertyKind.html" class="extype" name="org.opalj.fpcf.PropertyKind">PropertyKind</a>] = <span class="symbol">Set.empty</span></span>, <span name="suppressInterimUpdates">suppressInterimUpdates: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../PropertyKind.html" class="extype" name="org.opalj.fpcf.PropertyKind">PropertyKind</a>, <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../PropertyKind.html" class="extype" name="org.opalj.fpcf.PropertyKind">PropertyKind</a>]] = <span class="symbol">Map.empty</span></span>, <span name="finalizationOrder">finalizationOrder: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.List">List</span>[<a href="../PropertyKind.html" class="extype" name="org.opalj.fpcf.PropertyKind">PropertyKind</a>]] = <span class="symbol">List.empty</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Needs to be called before an analysis is scheduled to inform the property store which
+properties will be computed now and which are computed in a later phase.</p><div class="fullcomment"><div class="comment cmt"><p>Needs to be called before an analysis is scheduled to inform the property store which
+properties will be computed now and which are computed in a later phase. The
+information is used to decide when we use a fallback and which kind of fallback.
+</p></div><dl class="paramcmts block"><dt class="param">propertyKindsComputedInThisPhase</dt><dd class="cmt"><p>The kinds of properties for which we will schedule
+                                        computations.</p></dd><dt class="param">propertyKindsComputedInLaterPhase</dt><dd class="cmt"><p>The set of property kinds which will be computed
+       in a later phase.</p></dd><dt class="param">suppressInterimUpdates</dt><dd class="cmt"><p>Specifies which interim updates should not be passed to which
+       kind of dependers.
+       A depender will only be informed about the final update. The key of the map
+       identifies the target of a notification about an update (the depender) and the value
+       specifies which dependee updates should be ignored unless it is a final update.
+       This is an optimization related to lazy computations, but also enables the
+       implementation of transformers and the scheduling of analyses which compute different
+       kinds of bounds unless the analyses have cyclic dependencies.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p><code>setupPhase</code> even needs to be called if just fallback values should be computed; in
+       this case <code>propertyKindsComputedInThisPhase</code> and <code>propertyKindsComputedInLaterPhase</code>
+       have to be empty, but <code>finalizationOrder</code> have to contain the respective property
+       kind.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#setupPhase" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setupPhase(configuration:org.opalj.fpcf.PropertyKindsConfiguration):Unit"></a><a id="setupPhase(PropertyKindsConfiguration):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#setupPhase(configuration:org.opalj.fpcf.PropertyKindsConfiguration):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setupPhase</span><span class="params">(<span name="configuration">configuration: <a href="../PropertyKindsConfiguration.html" class="extype" name="org.opalj.fpcf.PropertyKindsConfiguration">PropertyKindsConfiguration</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#shutdown" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="shutdown():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#shutdown():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">shutdown</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Should be called when a PropertyStore is no longer going to be used to schedule
+computations.</p><div class="fullcomment"><div class="comment cmt"><p>Should be called when a PropertyStore is no longer going to be used to schedule
+computations.</p><p>Properties can still be queried after shutdown.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#statistics" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="statistics:scala.collection.mutable.LinkedHashMap[String,Int]"></a><a id="statistics:LinkedHashMap[String,Int]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#statistics:scala.collection.mutable.LinkedHashMap[String,Int]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">statistics</span><span class="result">: <span class="extype" name="scala.collection.mutable.LinkedHashMap">LinkedHashMap</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Int">Int</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Reports core statistics; this method is only guaranteed to report <i>final</i> results
+if it is called while the store is quiescent.</p><div class="fullcomment"><div class="comment cmt"><p>Reports core statistics; this method is only guaranteed to report <i>final</i> results
+if it is called while the store is quiescent.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#subPhaseFinalizationOrder" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="subPhaseFinalizationOrder:Array[List[org.opalj.fpcf.PropertyKind]]"></a><a id="subPhaseFinalizationOrder:Array[List[PropertyKind]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#subPhaseFinalizationOrder:Array[List[org.opalj.fpcf.PropertyKind]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subPhaseFinalizationOrder</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.List">List</span>[<a href="../PropertyKind.html" class="extype" name="org.opalj.fpcf.PropertyKind">PropertyKind</a>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The order in which the property kinds will be finalized; the last phase is considered
+the clean-up phase and will contain all remaining properties that were not explicitly
+finalized previously.</p><div class="fullcomment"><div class="comment cmt"><p>The order in which the property kinds will be finalized; the last phase is considered
+the clean-up phase and will contain all remaining properties that were not explicitly
+finalized previously.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#subPhaseId" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="subPhaseId:Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#subPhaseId:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subPhaseId</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#suppressInterimUpdates" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="suppressInterimUpdates:Array[Array[Boolean]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#suppressInterimUpdates:Array[Array[Boolean]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">suppressInterimUpdates</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Boolean">Boolean</span>]]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#tasksManager" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tasksManager:org.opalj.fpcf.par.TasksManager"></a><a id="tasksManager:TasksManager"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#tasksManager:org.opalj.fpcf.par.TasksManager" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tasksManager</span><span class="result">: <a href="TasksManager.html" class="extype" name="org.opalj.fpcf.par.TasksManager">TasksManager</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString(printProperties:Boolean):String"></a><a id="toString(Boolean):String"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#toString(printProperties:Boolean):String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">(<span name="printProperties">printProperties: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns a consistent snapshot of the stored properties.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a consistent snapshot of the stored properties.
+</p></div><dl class="paramcmts block"><dt class="param">printProperties</dt><dd class="cmt"><p>If <code>true</code> prints the properties of all entities.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>Some computations may still be running.</p></span></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns a short string representation of the property store showing core figures.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a short string representation of the property store showing core figures.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#traceFallbacks" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="traceFallbacks:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#traceFallbacks:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">traceFallbacks</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#traceSuppressedNotifications" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="traceSuppressedNotifications:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#traceSuppressedNotifications:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">traceSuppressedNotifications</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#tracer" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tracer:Option[org.opalj.fpcf.par.PropertyStoreTracer]"></a><a id="tracer:Option[PropertyStoreTracer]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#tracer:Option[org.opalj.fpcf.par.PropertyStoreTracer]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tracer</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.opalj.fpcf.par.PropertyStoreTracer">PropertyStoreTracer</span>]</span>
+      </span>
+      
+      
+    </li><li name="org.opalj.fpcf.PropertyStore#transformersBySourcePK" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="transformersBySourcePK:Array[(org.opalj.fpcf.PropertyKey[org.opalj.fpcf.Property],(org.opalj.fpcf.Entity,org.opalj.fpcf.Property)=&gt;org.opalj.fpcf.FinalEP[org.opalj.fpcf.Entity,org.opalj.fpcf.Property])]"></a><a id="transformersBySourcePK:Array[(PropertyKey[Property],(Entity,Property)⇒FinalEP[Entity,Property])]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#transformersBySourcePK:Array[(org.opalj.fpcf.PropertyKey[org.opalj.fpcf.Property],(org.opalj.fpcf.Entity,org.opalj.fpcf.Property)=&gt;org.opalj.fpcf.FinalEP[org.opalj.fpcf.Entity,org.opalj.fpcf.Property])]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">transformersBySourcePK</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[(<a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a>], (<a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a>, <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a>) ⇒ <a href="../FinalEP.html" class="extype" name="org.opalj.fpcf.FinalEP">FinalEP</a>[<a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a>, <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a>])]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="org.opalj.fpcf.PropertyStore#transformersByTargetPK" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="transformersByTargetPK:Array[(org.opalj.fpcf.PropertyKey[org.opalj.fpcf.Property],(org.opalj.fpcf.Entity,org.opalj.fpcf.Property)=&gt;org.opalj.fpcf.FinalEP[org.opalj.fpcf.Entity,org.opalj.fpcf.Property])]"></a><a id="transformersByTargetPK:Array[(PropertyKey[Property],(Entity,Property)⇒FinalEP[Entity,Property])]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#transformersByTargetPK:Array[(org.opalj.fpcf.PropertyKey[org.opalj.fpcf.Property],(org.opalj.fpcf.Entity,org.opalj.fpcf.Property)=&gt;org.opalj.fpcf.FinalEP[org.opalj.fpcf.Entity,org.opalj.fpcf.Property])]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">transformersByTargetPK</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[(<a href="../PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a>], (<a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a>, <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a>) ⇒ <a href="../FinalEP.html" class="extype" name="org.opalj.fpcf.FinalEP">FinalEP</a>[<a href="../index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a>, <a href="../Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a>])]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The set of transformers that will only be executed when required.</p><div class="fullcomment"><div class="comment cmt"><p>The set of transformers that will only be executed when required.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.fpcf.par.PKECPropertyStore#waitOnPhaseCompletion" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="waitOnPhaseCompletion():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#waitOnPhaseCompletion():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">waitOnPhaseCompletion</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Awaits the completion of all property computations which were previously scheduled.</p><div class="fullcomment"><div class="comment cmt"><p>Awaits the completion of all property computations which were previously scheduled.
+As soon as all initial computations have finished, dependencies on E/P pairs for which
+no value was computed, will be identified and the fallback value will be used. After that,
+the remaining intermediate values will be made final.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.fpcf.par.PKECPropertyStore">PKECPropertyStore</a> → <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></dd><dt>Note</dt><dd><span class="cmt"><p>If a computation fails with an exception, the property store will stop in due time
+      and return the thrown exception. No strong guarantees are given which exception
+      is returned in case of concurrent execution with multiple exceptions.</p></span>, <span class="cmt"><p>In case of an exception, the analyses are aborted as fast as possible and the
+      store is no longer usable.</p></span></dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/fpcf/par/PKECPropertyStore.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="org.opalj.fpcf.par.ParallelPropertyStore">
+              <h3>Inherited from <a href="ParallelPropertyStore.html" class="extype" name="org.opalj.fpcf.par.ParallelPropertyStore">ParallelPropertyStore</a></h3>
+            </div><div class="parent" name="org.opalj.fpcf.PropertyStore">
+              <h3>Inherited from <a href="../PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

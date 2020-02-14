@@ -1,0 +1,1148 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.br.analyses.MethodDeclarationContext</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.br.analyses.MethodDeclarationContext" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.br.analyses.MethodDeclarationContext" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../../index.js"></script>
+      <script type="text/javascript" src="../../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="../../ai/index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.br" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="br"></a><a id="br:br"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="In this representation of Java bytecode references to a Java class file's constant pool and to attributes are replaced by direct references to the corresponding constant pool entries." href="../index.html"><span class="name">br</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">In this representation of Java bytecode references to a Java class file's constant
+pool and to attributes are replaced by direct references to the corresponding constant
+pool entries.</p><div class="fullcomment"><div class="comment cmt"><p>In this representation of Java bytecode references to a Java class file's constant
+pool and to attributes are replaced by direct references to the corresponding constant
+pool entries. This facilitates developing analyses and fosters comprehension.</p><p>Based on the fact that indirect
+references to constant pool entries are resolved and replaced by direct references this
+representation is called the resolved representation.</p><p>This representation of Java bytecode is considered as OPAL's standard representation
+for writing Scala based analyses. This representation is engineered such
+that it facilitates writing analyses that use pattern matching.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org.opalj">opalj</a></dd></dl></div>
+    </li><li name="org.opalj.br.analyses" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="analyses"></a><a id="analyses:analyses"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Defines commonly useful type aliases." href="index.html"><span class="name">analyses</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Defines commonly useful type aliases.</p><div class="fullcomment"><div class="comment cmt"><p>Defines commonly useful type aliases.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.br">br</a></dd></dl></div>
+    </li><li name="org.opalj.br.analyses.cg" visbl="pub" class="indented5 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cg"></a><a id="cg:cg"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/cg/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="cg/index.html"><span class="name">cg</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.opalj.br.analyses">analyses</a></dd></dl></div>
+    </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Analysis.html" title="Common trait that analyses can inherit from when they want to use the general analysis framework AnalysisApplication."></a>
+                        <a href="Analysis.html" title="Common trait that analyses can inherit from when they want to use the general analysis framework AnalysisApplication.">Analysis</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="AnalysisApplication.html" title="Provides the necessary infrastructure to easily execute a given analysis that generates some analysis result that can be printed on the command line."></a>
+                        <a href="AnalysisApplication.html" title="Provides the necessary infrastructure to easily execute a given analysis that generates some analysis result that can be printed on the command line.">AnalysisApplication</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="AnalysisException.html" title="Exception raised while the analysis is executed."></a>
+                        <a href="AnalysisException.html" title="Exception raised while the analysis is executed.">AnalysisException</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="BasicMethodInfo$.html" title="Defines a simplified extractor for a MethodInfo object."></a>
+                        <a href="BasicMethodInfo$.html" title="Defines a simplified extractor for a MethodInfo object.">BasicMethodInfo</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="BasicReport$.html" title="Defines factory methods for BasicReports."></a>
+                        <a class="class" href="BasicReport.html" title="Result of some analysis that just consists of some text."></a>
+                        <a href="BasicReport.html" title="Result of some analysis that just consists of some text.">BasicReport</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="DeclaredMethods.html" title="The set of all org.opalj.br.DeclaredMethods (potentially used by the property store)."></a>
+                        <a href="DeclaredMethods.html" title="The set of all org.opalj.br.DeclaredMethods (potentially used by the property store).">DeclaredMethods</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="DeclaredMethodsKey$.html" title="The key object to get information about all declared methods."></a>
+                        <a href="DeclaredMethodsKey$.html" title="The key object to get information about all declared methods.">DeclaredMethodsKey</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="FieldAccessInformation.html" title="Stores the information where each field is read and written."></a>
+                        <a href="FieldAccessInformation.html" title="Stores the information where each field is read and written.">FieldAccessInformation</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="FieldAccessInformationAnalysis$.html" title="This analysis determines where each field is accessed."></a>
+                        <a href="FieldAccessInformationAnalysis$.html" title="This analysis determines where each field is accessed.">FieldAccessInformationAnalysis</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="FieldAccessInformationKey$.html" title="The key object to get global field access information."></a>
+                        <a href="FieldAccessInformationKey$.html" title="The key object to get global field access information.">FieldAccessInformationKey</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="InconsistentProjectException.html" title="Thrown when the framework determines that the project is not consistent."></a>
+                        <a href="InconsistentProjectException.html" title="Thrown when the framework determines that the project is not consistent.">InconsistentProjectException</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="JavaProject$.html" title=""></a>
+                        <a class="class" href="JavaProject.html" title="Enables the querying of a project."></a>
+                        <a href="JavaProject.html" title="Enables the querying of a project.">JavaProject</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="MethodAnalysisApplication.html" title="A small framework to implement analyses which should be executed for a given set of methods."></a>
+                        <a href="MethodAnalysisApplication.html" title="A small framework to implement analyses which should be executed for a given set of methods.">MethodAnalysisApplication</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="MethodDeclarationContext$.html" title="Definition of factory and extractor methods for MethodDeclarationContext objects."></a>
+                        <a class="class" href="" title="Encapsulates the information about a non-abstract, non-private, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets."></a>
+                        <a href="" title="Encapsulates the information about a non-abstract, non-private, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets.">MethodDeclarationContext</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="package$$MethodDeclarationContextOrdering$.html" title=""></a>
+                        <a href="package$$MethodDeclarationContextOrdering$.html" title="">MethodDeclarationContextOrdering</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="MethodInfo.html" title="Encapsulates the source of a method."></a>
+                        <a href="MethodInfo.html" title="Encapsulates the source of a method.">MethodInfo</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ModuleDefinition.html" title=""></a>
+                        <a href="ModuleDefinition.html" title="">ModuleDefinition</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="OneStepAnalysis.html" title="An analysis that performs all computations in one step."></a>
+                        <a href="OneStepAnalysis.html" title="An analysis that performs all computations in one step.">OneStepAnalysis</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="ProgressEvents$.html" title="Characterizes the type of an event related to a running analysis."></a>
+                        <a href="ProgressEvents$.html" title="Characterizes the type of an event related to a running analysis.">ProgressEvents</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="ProgressManagement$.html" title="Factory for a function to create a default progress management object that basically does not track the progress."></a>
+                        <a class="trait" href="ProgressManagement.html" title="Enables the management of the progress of a long running computation."></a>
+                        <a href="ProgressManagement.html" title="Enables the management of the progress of a long running computation.">ProgressManagement</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="Project$.html" title="Definition of factory methods to create Projects."></a>
+                        <a class="class" href="Project.html" title="Primary abstraction of a Java project; i.e., a set of classes that constitute a library, framework or application as well as the libraries or frameworks used by the former."></a>
+                        <a href="Project.html" title="Primary abstraction of a Java project; i.e., a set of classes that constitute a library, framework or application as well as the libraries or frameworks used by the former.">Project</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ProjectAnalysisApplication.html" title="Default implementation of the AnalysisApplication trait which facilitates the development of analyses which are executed in one step."></a>
+                        <a href="ProjectAnalysisApplication.html" title="Default implementation of the AnalysisApplication trait which facilitates the development of analyses which are executed in one step.">ProjectAnalysisApplication</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ProjectBasedAnalysis.html" title="Common super trait of all analyses that use the fixpoint computations framework."></a>
+                        <a href="ProjectBasedAnalysis.html" title="Common super trait of all analyses that use the fixpoint computations framework.">ProjectBasedAnalysis</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="ProjectIndex$.html" title="Factory for ProjectIndex objects."></a>
+                        <a class="class" href="ProjectIndex.html" title="An index that enables the efficient lookup of source elements (methods and fields) given the method's/field's name and the descriptor/field type."></a>
+                        <a href="ProjectIndex.html" title="An index that enables the efficient lookup of source elements (methods and fields) given the method's/field's name and the descriptor/field type.">ProjectIndex</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="ProjectIndexKey$.html" title="The key object to get an index of the source elements of a project."></a>
+                        <a href="ProjectIndexKey$.html" title="The key object to get an index of the source elements of a project.">ProjectIndexKey</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ProjectInformationKey.html" title="ProjectInformationKey objects are used to get/associate some (immutable) information with a project that should be computed on demand."></a>
+                        <a href="ProjectInformationKey.html" title="ProjectInformationKey objects are used to get/associate some (immutable) information with a project that should be computed on demand.">ProjectInformationKey</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="ProjectLike$.html" title=""></a>
+                        <a class="class" href="ProjectLike.html" title="Enables project wide lookups of methods and fields as required to determine the target(s) of an invoke or field access instruction."></a>
+                        <a href="ProjectLike.html" title="Enables project wide lookups of methods and fields as required to determine the target(s) of an invoke or field access instruction.">ProjectLike</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="ReportableAnalysisResult$.html" title=""></a>
+                        <a class="trait" href="ReportableAnalysisResult.html" title="Result of analyses that can be meaningfully represented using text."></a>
+                        <a href="ReportableAnalysisResult.html" title="Result of analyses that can be meaningfully represented using text.">ReportableAnalysisResult</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="StringConstantsInformationKey$.html" title="The key object to get information about all string constants found in the project's code."></a>
+                        <a href="StringConstantsInformationKey$.html" title="The key object to get information about all string constants found in the project's code.">StringConstantsInformationKey</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="VirtualFormalParameter$.html" title=""></a>
+                        <a class="class" href="VirtualFormalParameter.html" title="Explicitly models a formal parameter of a DeclaredMethod to make it possible to store it in the property store and to compute properties for it."></a>
+                        <a href="VirtualFormalParameter.html" title="Explicitly models a formal parameter of a DeclaredMethod to make it possible to store it in the property store and to compute properties for it.">VirtualFormalParameter</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="VirtualFormalParameters.html" title="The set of all explicit and implicit virtual formal method parameters in a project."></a>
+                        <a href="VirtualFormalParameters.html" title="The set of all explicit and implicit virtual formal method parameters in a project.">VirtualFormalParameters</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="VirtualFormalParametersKey$.html" title="The key object to get information about all virtual formal parameters."></a>
+                        <a href="VirtualFormalParametersKey$.html" title="The key object to get information about all virtual formal parameters.">VirtualFormalParametersKey</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="class type">
+      <div id="definition">
+        <a href="MethodDeclarationContext$.html" title="See companion object"><div class="big-circle class-companion-object">c</div></a>
+        <p id="owner"><a href="../../../index.html" class="extype" name="org">org</a>.<a href="../../index.html" class="extype" name="org.opalj">opalj</a>.<a href="../index.html" class="extype" name="org.opalj.br">br</a>.<a href="index.html" class="extype" name="org.opalj.br.analyses">analyses</a></p>
+        <h1><a href="MethodDeclarationContext$.html" title="See companion object">MethodDeclarationContext</a><span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"><div>
+            Companion <a href="MethodDeclarationContext$.html" title="See companion object">object MethodDeclarationContext</a>
+          </div></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MethodDeclarationContext</span><span class="result"> extends <span class="extype" name="scala.Ordered">Ordered</span>[<a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a>]</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Encapsulates the information about a <b>non-abstract</b>, <b>non-private</b>, <b>non-static</b>
+method which is <b>not an initializer</b> (<code>&lt;(cl)init&gt;</code>) and which is required when determining
+potential call targets.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/analyses/MethodDeclarationContext.scala?at=develop" target="_blank">MethodDeclarationContext.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>A class may have -- w.r.t. a given package name -- at most one package
+         visible method which has a specific name and descriptor combination.
+         For methods with protected or public visibility a class always has at
+         most one method with a given name and descriptor.</p></span>, <span class="cmt"><p>Equality is defined based on the name, descriptor and declaring package
+         of a method (the concrete declaring class is not considered!).</p></span></dd></dl><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="org.opalj.br.analyses.MethodDeclarationContext"><span>MethodDeclarationContext</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.opalj.br.analyses.MethodDeclarationContext#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(method:org.opalj.br.Method):org.opalj.br.analyses.MethodDeclarationContext"></a><a id="&lt;init&gt;:MethodDeclarationContext"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#&lt;init&gt;(method:org.opalj.br.Method):org.opalj.br.analyses.MethodDeclarationContext" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MethodDeclarationContext</span><span class="params">(<span name="method">method: <a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a></span>)</span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.math.Ordered#&lt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;(that:A):Boolean"></a><a id="&lt;(MethodDeclarationContext):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#&lt;(that:A):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $less" class="name">&lt;</span><span class="params">(<span name="that">that: <a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="scala.math.Ordered#&lt;=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;=(that:A):Boolean"></a><a id="&lt;=(MethodDeclarationContext):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#&lt;=(that:A):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $less$eq" class="name">&lt;=</span><span class="params">(<span name="that">that: <a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.math.Ordered#&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&gt;(that:A):Boolean"></a><a id="&gt;(MethodDeclarationContext):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#&gt;(that:A):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $greater" class="name">&gt;</span><span class="params">(<span name="that">that: <a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="scala.math.Ordered#&gt;=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&gt;=(that:A):Boolean"></a><a id="&gt;=(MethodDeclarationContext):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#&gt;=(that:A):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $greater$eq" class="name">&gt;=</span><span class="params">(<span name="that">that: <a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#canDirectlyOverride" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canDirectlyOverride(visibility:Option[org.opalj.bi.VisibilityModifier],packageName:String):Boolean"></a><a id="canDirectlyOverride(Option[VisibilityModifier],String):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#canDirectlyOverride(visibility:Option[org.opalj.bi.VisibilityModifier],packageName:String):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canDirectlyOverride</span><span class="params">(<span name="visibility">visibility: <span class="extype" name="scala.Option">Option</span>[<a href="../../bi/VisibilityModifier.html" class="extype" name="org.opalj.bi.VisibilityModifier">VisibilityModifier</a>]</span>, <span name="packageName">packageName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Performs the accessibility check required when we need to determine
+if this method (<code>mc</code>) overrides another method (<code>ma</code>).</p><div class="fullcomment"><div class="comment cmt"><p>Performs the accessibility check required when we need to determine
+if this method (<code>mc</code>) overrides another method (<code>ma</code>).
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>This method must be defined by a class which is a subtype of the
+         declaring class of the other method.</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#compare" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compare(that:org.opalj.br.analyses.MethodDeclarationContext):Int"></a><a id="compare(MethodDeclarationContext):Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#compare(that:org.opalj.br.analyses.MethodDeclarationContext):Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compare</span><span class="params">(<span name="that">that: <a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Compares this <code>MethodDeclarationContext</code> with the given one.</p><div class="fullcomment"><div class="comment cmt"><p>Compares this <code>MethodDeclarationContext</code> with the given one. Defines a total order w.r.t.
+the name, descriptor and declaring package of a method. (The declaring class is not
+considered and, therefore, two <code>MethodDeclarationContext</code>s may be considered equal
+even though the underlying method is not the same one.)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a> → Ordered</dd></dl></div>
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#compareAccessibilityAware" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="compareAccessibilityAware(declaringClass:org.opalj.br.ObjectType,m:org.opalj.br.Method):Int"></a><a id="compareAccessibilityAware(ObjectType,Method):Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#compareAccessibilityAware(declaringClass:org.opalj.br.ObjectType,m:org.opalj.br.Method):Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compareAccessibilityAware</span><span class="params">(<span name="declaringClass">declaringClass: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="m">m: <a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#compareAccessibilityAware" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compareAccessibilityAware(packageName:String,name:String,descriptor:org.opalj.br.MethodDescriptor):Int"></a><a id="compareAccessibilityAware(String,String,MethodDescriptor):Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#compareAccessibilityAware(packageName:String,name:String,descriptor:org.opalj.br.MethodDescriptor):Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compareAccessibilityAware</span><span class="params">(<span name="packageName">packageName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <a href="../MethodDescriptor.html" class="extype" name="org.opalj.br.MethodDescriptor">MethodDescriptor</a></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Compares this method (declaration context) with an (implicit) method which has the
+given <code>name</code> and <code>descriptor</code> and which is defined in the given <code>package</code>
+unless this method is protected or public.</p><div class="fullcomment"><div class="comment cmt"><p>Compares this method (declaration context) with an (implicit) method which has the
+given <code>name</code> and <code>descriptor</code> and which is defined in the given <code>package</code>
+unless this method is protected or public. In that case the
+<code>packageName</code> is not compared and &quot;0&quot; (&lt;=&gt; equal) is returned.
+Hence, this <code>compare</code> method is well suited to make a lookup for a matching
+method declaration context in a sorted array of method declaration
+contexts.
+</p></div></div>
+    </li><li name="scala.math.Ordered#compareTo" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compareTo(that:A):Int"></a><a id="compareTo(MethodDeclarationContext):Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#compareTo(that:A):Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compareTo</span><span class="params">(<span name="that">that: <a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered → Comparable</dd></dl></div>
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#compareWithPublicMethod" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="compareWithPublicMethod(thatMethod:org.opalj.br.Method):Int"></a><a id="compareWithPublicMethod(Method):Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#compareWithPublicMethod(thatMethod:org.opalj.br.Method):Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compareWithPublicMethod</span><span class="params">(<span name="thatMethod">thatMethod: <a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#declaringClassType" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="declaringClassType:org.opalj.br.ObjectType"></a><a id="declaringClassType:ObjectType"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#declaringClassType:org.opalj.br.ObjectType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">declaringClassType</span><span class="result">: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#descriptor" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="descriptor:org.opalj.br.MethodDescriptor"></a><a id="descriptor:MethodDescriptor"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#descriptor:org.opalj.br.MethodDescriptor" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">descriptor</span><span class="result">: <a href="../MethodDescriptor.html" class="extype" name="org.opalj.br.MethodDescriptor">MethodDescriptor</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#directlyOverrides" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="directlyOverrides(that:org.opalj.br.analyses.MethodDeclarationContext):Boolean"></a><a id="directlyOverrides(MethodDeclarationContext):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#directlyOverrides(that:org.opalj.br.analyses.MethodDeclarationContext):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">directlyOverrides</span><span class="params">(<span name="that">that: <a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns <code>true</code> if this method directly overrides the given method.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> if this method directly overrides the given method.</p><p>(Note: indirect overriding can only be determined if all intermediate methods
+are known; only in that case it is possible to test if, e.g., a public method
+in package x indirectly overrides a package visible method in a package y.)
+</p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>The <a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a> object of another method which is defined by
+         the same class as this method or a superclass thereof. If the
+         other method is defined by some other class with which this class
+         is not in a sub-/supertype relation, the result is not defined.</p></dd></dl><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>The overrides relation is reflexive as defined by the JVM specification
+         (Section: &quot;Overriding&quot;).</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(other:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#equals(other:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="other">other: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The hash code is equal to the <code><code>&quot;hashCode of the descriptor of the underlying method&quot;
+* 113 + &quot;the hashCode of the package of the declaring class&quot;</code></code>.</p><div class="fullcomment"><div class="comment cmt"><p>The hash code is equal to the <code><code>&quot;hashCode of the descriptor of the underlying method&quot;
+* 113 + &quot;the hashCode of the package of the declaring class&quot;</code></code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#isDirectlyOverriddenBy" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDirectlyOverriddenBy(packageName:String):Boolean"></a><a id="isDirectlyOverriddenBy(String):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#isDirectlyOverriddenBy(packageName:String):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDirectlyOverriddenBy</span><span class="params">(<span name="packageName">packageName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns true if a method with the same signature as this method that is defined in
+the given package directly overrides this encapsultated method.</p><div class="fullcomment"><div class="comment cmt"><p>Returns true if a method with the same signature as this method that is defined in
+the given package directly overrides this encapsultated method. This property
+always holds if this method has public or protected visiblity. If this method
+has package visibility, the other (implicit) method has to be defined in
+this method's package.
+</p></div></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#isPublic" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isPublic:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#isPublic:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isPublic</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#method" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="method:org.opalj.br.Method"></a><a id="method:Method"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#method:org.opalj.br.Method" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">method</span><span class="result">: <a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#name" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="name:String"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#name:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#packageName" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="packageName:String"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#packageName:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">packageName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.opalj.br.analyses.MethodDeclarationContext#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/MethodDeclarationContext.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.math.Ordered">
+              <h3>Inherited from <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a>]</h3>
+            </div><div class="parent" name="java.lang.Comparable">
+              <h3>Inherited from <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="" class="extype" name="org.opalj.br.analyses.MethodDeclarationContext">MethodDeclarationContext</a>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

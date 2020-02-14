@@ -1,0 +1,1842 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.ai.domain</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.ai.domain" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.ai.domain" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      
+      <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../../index.js"></script>
+      <script type="text/javascript" src="../../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="../../../../index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.org" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="org"></a><a id="org:org"></a>
+      <span class="permalink">
+      <a href="../../../../org/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">org</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="org.opalj" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opalj"></a><a id="opalj:opalj"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="OPAL is a Scala-based framework for the static analysis, manipulation and creation of Java bytecode." href="../../index.html"><span class="name">opalj</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode.</p><div class="fullcomment"><div class="comment cmt"><p>OPAL is a Scala-based framework for the static analysis, manipulation and creation of
+Java bytecode. OPAL is designed with performance, scalability and adaptability in mind.</p><p>Its main components are:</p><ul><li>a library (<code>Common</code>) which provides generally useful data-structures and algorithms
+   for static analyses.</li><li>a framework for implementing lattice based static analyses (<code>Static Analysis Infrastructure</code>)</li><li>a framework for parsing Java bytecode (Bytecode Infrastructure<code>) that can be used to
+   create arbitrary representations.</code></li><li>a library to create a one-to-one in-memory representation of Java bytecode
+   (<code>Bytecode Disassembler</code>).</li><li>a library to create a representation of Java bytecode that facilitates writing
+   simple static analyses (<code>Bytecode Representation</code> - <a href="../../br/index.html" class="extype" name="org.opalj.br">org.opalj.br</a>).</li><li>a scalable, easily customizable framework for the abstract interpretation of
+   Java bytecode (<code>Abstract Interpretation Framework</code> - <a href="../index.html" class="extype" name="org.opalj.ai">org.opalj.ai</a>).</li><li>a library to extract dependencies between code elements and to facilitate checking
+   architecture definitions.</li><li>a library for the lightweight manipulation and creation of Java bytecode (Bytecode Assembler).</li></ul><h4>General Design Decisions</h4><h5>Thread Safety</h5><p>Unless explicitly noted, <b>OPAL is thread safe</b>. I.e., the classes defined by
+OPAL can be considered to be thread safe unless otherwise stated.
+(For example, it is possible to read and process class files concurrently without
+explicit synchronization on the client side.)</p><h5>No <code>null</code> Values</h5><p>Unless explicitly noted, <b>OPAL does not <code>null</code> values</b>
+I.e., fields that are accessible will never contain <code>null</code> values and methods will
+never return <code>null</code>.  <b>If a method accepts <code>null</code> as a value for a parameter or
+returns a <code>null</code> value it is always explicitly documented.</b>
+In general, the behavior of methods that are passed <code>null</code> values is undefined unless
+explicitly documented.</p><h5>No Typecasts for Collections</h5><p>For efficiency reasons, OPAL sometimes uses mutable data-structures internally.
+After construction time, these data-structures are generally represented using
+their generic interfaces (e.g., <code>scala.collection.{Set,Map}</code>). However, a downcast
+(e.g., to add/remove elements) is always forbidden as it would effectively prevent
+thread-safety.</p><h5>Assertions</h5><p>OPAL makes heavy use of Scala's <b>Assertion Facility</b> to facilitate writing correct
+code. Hence, for production builds (after thorough testing(!)) it is
+highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="org">org</a></dd></dl></div>
+    </li><li name="org.opalj.ai" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ai"></a><a id="ai:ai"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Implementation of an abstract interpretation (ai) framework – also referred to as OPAL." href="../index.html"><span class="name">ai</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Implementation of an abstract interpretation (ai) framework – also referred to as OPAL.</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of an abstract interpretation (ai) framework – also referred to as OPAL.</p><p>Please note that OPAL/the abstract interpreter just refers to the classes and traits
+defined in this package (<code>ai</code>). The classes and traits defined in the sub-packages
+(in particular in <code>domain</code>) are not considered to be part of the core of OPAL/the
+abstract interpreter.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="org.opalj">opalj</a></dd><dt>Note</dt><dd><span class="cmt"><p>This framework assumes that the analyzed bytecode is valid; i.e., the JVM's
+     bytecode verifier would be able to verify the code. Furthermore, load-time errors
+     (e.g., <code>LinkageErrors</code>) are – by default – completely ignored to facilitate the
+     analysis of parts of a project. In general, if the presented bytecode is not valid,
+     the result is undefined (i.e., OPAL may report meaningless results, crash or run
+     indefinitely).</p></span></dd><dt>See also</dt><dd><span class="cmt"><p><a href="../AI.html" class="extype" name="org.opalj.ai.AI">org.opalj.ai.AI</a> - Implements the abstract interpreter that
+     processes a methods code and uses an analysis-specific domain to perform the
+     abstract computations.</p></span><span class="cmt"><p><a href="../Domain.html" class="extype" name="org.opalj.ai.Domain">org.opalj.ai.Domain</a> - The core interface between the abstract
+     interpretation framework and the abstract domain that is responsible for
+     performing the abstract computations.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.common" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="common"></a><a id="common:common"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/common/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../common/index.html"><span class="name">common</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.ai">ai</a></dd></dl></div>
+    </li><li name="org.opalj.ai.domain" visbl="pub" class="indented4 current" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="domain"></a><a id="domain:domain"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">domain</span>
+      </span>
+      
+      <p class="shortcomment cmt">This package contains definitions of common domains that can be used for the
+implementation of analyses.</p><div class="fullcomment"><div class="comment cmt"><p>This package contains definitions of common domains that can be used for the
+implementation of analyses.</p><h4>Types of Domains</h4><p>In general, we distinguish two types of domains. First, domains that define a
+general interface (on top of the one defined by <a href="../Domain.html" class="extype" name="org.opalj.ai.Domain">Domain</a>), but do not directly
+provide an implementation. Hence, whenever you develop a new <code>Domain</code> you should
+consider implementing/using these domains to maximize reusability. Second,
+<code>Domain</code>s that implement a specific interface (trait).  In this case, we further
+distinguish between domains that provide a default implementation (per <i>interface</i>
+only one of these <code>Domain</code>s can be used to create a <b>final <code>Domain</code></b>) and
+those that can be stacked and basically refine the overall functionality.</p><p><b>Examples</b></p><ul><li>Domains That Define a General Interface<ul><li><a href="Origin.html" class="extype" name="org.opalj.ai.domain.Origin">Origin</a> defines two types which domains that provide information abou the
+     origin of a value should consider to implement.</li><li><a href="TheProject.html" class="extype" name="org.opalj.ai.domain.TheProject">TheProject</a> defines a standard mechanism how a domain can access the
+     <i>current</i> project.</li><li>...</li></ul></li><li>Domains That Provide a Default Implementation<ul><li><a href="Origin.html" class="extype" name="org.opalj.ai.domain.Origin">Origin</a> defines the functionality to return a value's origin if the value
+     supports that.</li><li><a href="TheProject.html" class="extype" name="org.opalj.ai.domain.TheProject">org.opalj.ai.domain.TheProject</a> default implementation of the class hierarchy related
+     methods using the project's class hierarchy.</li><li><a href="DefaultHandlingOfMethodResults.html" class="extype" name="org.opalj.ai.domain.DefaultHandlingOfMethodResults">org.opalj.ai.domain.DefaultHandlingOfMethodResults</a> basically implements a Domain's methods
+     related to return instructions an uncaught exceptions.</li><li>...</li></ul></li><li>Domains That Implement Stackable Functionality<ul><li><a href="RecordThrownExceptions.html" class="extype" name="org.opalj.ai.domain.RecordThrownExceptions">org.opalj.ai.domain.RecordThrownExceptions</a> records information about all uncaught exceptions
+     by intercepting a <code>Domain</code>'s respective methods. However, it does provide a
+     default implementation. Hence, a typical pattern is:</li></ul></li></ul><pre><span class="kw">class</span> MyDomain <span class="kw">extends</span> Domain <span class="kw">with</span> ...
+    <span class="kw">with</span> DefaultHandlingOfMethodResults <span class="kw">with</span> RecordThrownExceptions</pre><h4>Thread Safety</h4><p>Unless explicitly documented, a domain is never thread-safe. The general programming
+model is to use one <code>Domain</code> object per code block/method and therefore, thread-safety
+is not required for <code>Domain</code>s that are used for the evaluation of methods. However
+domains that are used to adapt/transfer values should be thread safe
+(see <a href="ValuesCoordinatingDomain.html" class="extype" name="org.opalj.ai.domain.ValuesCoordinatingDomain">org.opalj.ai.domain.ValuesCoordinatingDomain</a> for further details).
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.ai">ai</a></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.l0" visbl="pub" class="indented5 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="l0"></a><a id="l0:l0"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/l0/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="l0/index.html"><span class="name">l0</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.ai.domain.l1" visbl="pub" class="indented5 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="l1"></a><a id="l1:l1"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/l1/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Commonly useful methods." href="l1/index.html"><span class="name">l1</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Commonly useful methods.</p>
+    </li><li name="org.opalj.ai.domain.l2" visbl="pub" class="indented5 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="l2"></a><a id="l2:l2"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/l2/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="l2/index.html"><span class="name">l2</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.ai.domain.tracing" visbl="pub" class="indented5 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tracing"></a><a id="tracing:tracing"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/tracing/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="tracing/index.html"><span class="name">tracing</span></a>
+      </span>
+      
+      
+    </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="AsDomainValue.html" title="Mixed in by domains that support the conversation of a Java Object into a DomainValue."></a>
+                        <a href="AsDomainValue.html" title="Mixed in by domains that support the conversation of a Java Object into a DomainValue.">AsDomainValue</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="AsJavaObject.html" title="Mixed in by domains that support the conversation of a DomainValue into a respective Java object."></a>
+                        <a href="AsJavaObject.html" title="Mixed in by domains that support the conversation of a DomainValue into a respective Java object.">AsJavaObject</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ConcreteIntegerValues.html" title="Provides information about an integer value's precise value, if this information is available."></a>
+                        <a href="ConcreteIntegerValues.html" title="Provides information about an integer value's precise value, if this information is available.">ConcreteIntegerValues</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ConcreteLongValues.html" title="Provides information about a long value's precise value, if this information is available."></a>
+                        <a href="ConcreteLongValues.html" title="Provides information about a long value's precise value, if this information is available.">ConcreteLongValues</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ConstantFieldValuesResolution.html" title="Resolves references to final static fields that have simple constant values."></a>
+                        <a href="ConstantFieldValuesResolution.html" title="Resolves references to final static fields that have simple constant values.">ConstantFieldValuesResolution</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="CurrentCode.html" title="Provides information about the code block that is currently analyzed."></a>
+                        <a href="CurrentCode.html" title="Provides information about the code block that is currently analyzed.">CurrentCode</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="DefaultExceptionsFactory.html" title="Default implementation of the ExceptionsFactory trait that relies on the ReferenceValuesFactory."></a>
+                        <a href="DefaultExceptionsFactory.html" title="Default implementation of the ExceptionsFactory trait that relies on the ReferenceValuesFactory.">DefaultExceptionsFactory</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="DefaultHandlingForReturnInstructions.html" title="Provides default implementations for a Domain's return methods that always throw an IllegalMonitorStateExceptoin."></a>
+                        <a href="DefaultHandlingForReturnInstructions.html" title="Provides default implementations for a Domain's return methods that always throw an IllegalMonitorStateExceptoin.">DefaultHandlingForReturnInstructions</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="DefaultHandlingForThrownExceptions.html" title="Basic implementation of a Domain's abruptMethodExecution method that does nothing."></a>
+                        <a href="DefaultHandlingForThrownExceptions.html" title="Basic implementation of a Domain's abruptMethodExecution method that does nothing.">DefaultHandlingForThrownExceptions</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="DefaultHandlingOfMethodResults.html" title="A Domain that does nothing if a method returns ab-/normally."></a>
+                        <a href="DefaultHandlingOfMethodResults.html" title="A Domain that does nothing if a method returns ab-/normally.">DefaultHandlingOfMethodResults</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="DefaultHandlingOfVoidReturns.html" title="Basic implementation of a Domains returnVoid method that does nothing."></a>
+                        <a href="DefaultHandlingOfVoidReturns.html" title="Basic implementation of a Domains returnVoid method that does nothing.">DefaultHandlingOfVoidReturns</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="DefaultRecordMethodCallResults.html" title="Records the results of the evaluation of the current method such that the results can directly be adapted to the calling context and can be used by the caller to continue the abstract interpretation of the calling method."></a>
+                        <a href="DefaultRecordMethodCallResults.html" title="Records the results of the evaluation of the current method such that the results can directly be adapted to the calling context and can be used by the caller to continue the abstract interpretation of the calling method.">DefaultRecordMethodCallResults</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="DefaultSpecialDomainValuesBinding.html" title="Final binding of a Domain's type DomainValue as well as all subtypes of it that are also defined by Domain."></a>
+                        <a href="DefaultSpecialDomainValuesBinding.html" title="Final binding of a Domain's type DomainValue as well as all subtypes of it that are also defined by Domain.">DefaultSpecialDomainValuesBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="DomainId.html" title="Common super trait of all domains have an id to identify them."></a>
+                        <a href="DomainId.html" title="Common super trait of all domains have an id to identify them.">DomainId</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="DomainValues$.html" title="Factory for creating DomainValues objects."></a>
+                        <a class="class" href="DomainValues.html" title="Encapsulates a domain and some values created by the respective domain."></a>
+                        <a href="DomainValues.html" title="Encapsulates a domain and some values created by the respective domain.">DomainValues</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="GeneralizedArrayHandling.html" title="This (partial-)domain abstracts over the concrete methods for performing array operations and provides an interface at a higher abstraction level."></a>
+                        <a href="GeneralizedArrayHandling.html" title="This (partial-)domain abstracts over the concrete methods for performing array operations and provides an interface at a higher abstraction level.">GeneralizedArrayHandling</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="IgnoreSynchronization.html" title="Provides a default implementation for the instructions related to synchronization."></a>
+                        <a href="IgnoreSynchronization.html" title="Provides a default implementation for the instructions related to synchronization.">IgnoreSynchronization</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ImpossibleRefinement.html" title="Thrown to indicate that a refinement of some value was not possible."></a>
+                        <a href="ImpossibleRefinement.html" title="Thrown to indicate that a refinement of some value was not possible.">ImpossibleRefinement</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="MethodCallResults.html" title="Trait that can be mixed in if information is needed about all returned values and the thrown exceptions."></a>
+                        <a href="MethodCallResults.html" title="Trait that can be mixed in if information is needed about all returned values and the thrown exceptions.">MethodCallResults</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="MethodCallsHandling.html" title="Provides support for handling method invocations, but does not handle any invocations directly."></a>
+                        <a href="MethodCallsHandling.html" title="Provides support for handling method invocations, but does not handle any invocations directly.">MethodCallsHandling</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="MonitorInstructionsTracker.html" title="Tracks if a monitor(enter|exit) instruction was executed."></a>
+                        <a href="MonitorInstructionsTracker.html" title="Tracks if a monitor(enter|exit) instruction was executed.">MonitorInstructionsTracker</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="Origin$.html" title=""></a>
+                        <a class="trait" href="Origin.html" title="Provides information about the origin (that is, def-site) of a value iff the underlying domain provides the respective information; that is, this trait only defines the public API it does not provide origin information on its own."></a>
+                        <a href="Origin.html" title="Provides information about the origin (that is, def-site) of a value iff the underlying domain provides the respective information; that is, this trait only defines the public API it does not provide origin information on its own.">Origin</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Origins$.html" title=""></a>
+                        <a href="Origins$.html" title="">Origins</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="OriginsIterator$.html" title=""></a>
+                        <a href="OriginsIterator$.html" title="">OriginsIterator</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="PerInstructionPostProcessing.html" title="Provides the generic infrastructure to register a function that updates the operands and locals associated with an instruction that will be evaluated &quot;next&quot;."></a>
+                        <a href="PerInstructionPostProcessing.html" title="Provides the generic infrastructure to register a function that updates the operands and locals associated with an instruction that will be evaluated &quot;next&quot;.">PerInstructionPostProcessing</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="PerformAI$.html" title="A base abstract interpreter that can be used with any domain that has no special requirements on the abstract interpreter and which provides some convenience factory methods to run the abstract interpretation if the domain provide the necessary information."></a>
+                        <a href="PerformAI$.html" title="A base abstract interpreter that can be used with any domain that has no special requirements on the abstract interpreter and which provides some convenience factory methods to run the abstract interpretation if the domain provide the necessary information.">PerformAI</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="PostEvaluationMemoryManagement.html" title="Provides the possibility to further update the memory layout (registers and operands) after the execution of an instruction, but before any potential join is performed."></a>
+                        <a href="PostEvaluationMemoryManagement.html" title="Provides the possibility to further update the memory layout (registers and operands) after the execution of an instruction, but before any potential join is performed.">PostEvaluationMemoryManagement</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="PredefinedClassHierarchy$.html" title=""></a>
+                        <a class="trait" href="PredefinedClassHierarchy.html" title="This class uses OPAL's PreInitializedClassHierarchy (see ClassHierarchy for details) for class hierarchy related queries."></a>
+                        <a href="PredefinedClassHierarchy.html" title="This class uses OPAL's PreInitializedClassHierarchy (see ClassHierarchy for details) for class hierarchy related queries.">PredefinedClassHierarchy</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordAllThrownExceptions.html" title="Records all exceptions thrown by a method."></a>
+                        <a href="RecordAllThrownExceptions.html" title="Records all exceptions thrown by a method.">RecordAllThrownExceptions</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordCFG.html" title="Records the abstract interpretation time control-flow graph (CFG)."></a>
+                        <a href="RecordCFG.html" title="Records the abstract interpretation time control-flow graph (CFG).">RecordCFG</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordConstraints.html" title="Mixin this trait if you want to reify the constraints that are stated by the abstract interpretation framework."></a>
+                        <a href="RecordConstraints.html" title="Mixin this trait if you want to reify the constraints that are stated by the abstract interpretation framework.">RecordConstraints</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordDefUse.html" title="Collects the definition/use information based on the abstract interpretation time cfg."></a>
+                        <a href="RecordDefUse.html" title="Collects the definition/use information based on the abstract interpretation time cfg.">RecordDefUse</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordJoinedThrownExceptions.html" title="Records the exception that is thrown by an instruction."></a>
+                        <a href="RecordJoinedThrownExceptions.html" title="Records the exception that is thrown by an instruction.">RecordJoinedThrownExceptions</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordLastReturnedValues.html" title="Records the last value that is returned by a specific return instruction."></a>
+                        <a href="RecordLastReturnedValues.html" title="Records the last value that is returned by a specific return instruction.">RecordLastReturnedValues</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordMethodCallResults.html" title="Records the results of the evaluation of the current method such that the results can directly be adapted to the calling context and can be used by the caller to continue the abstract interpretation of the calling method."></a>
+                        <a href="RecordMethodCallResults.html" title="Records the results of the evaluation of the current method such that the results can directly be adapted to the calling context and can be used by the caller to continue the abstract interpretation of the calling method.">RecordMethodCallResults</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordReturnFromMethodInstructions.html" title="Records the program counters of all instructions that lead to a (ab)normal return from the method."></a>
+                        <a href="RecordReturnFromMethodInstructions.html" title="Records the program counters of all instructions that lead to a (ab)normal return from the method.">RecordReturnFromMethodInstructions</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordReturnedValue.html" title="Record the value returned by a method across all return instructions."></a>
+                        <a href="RecordReturnedValue.html" title="Record the value returned by a method across all return instructions.">RecordReturnedValue</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordReturnedValueInfrastructure.html" title="Generic infrastructure to record the value returned by the method (calculated across all return instructions)"></a>
+                        <a href="RecordReturnedValueInfrastructure.html" title="Generic infrastructure to record the value returned by the method (calculated across all return instructions)">RecordReturnedValueInfrastructure</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordReturnedValues.html" title="Generic infrastructure to record the values returned by the method."></a>
+                        <a href="RecordReturnedValues.html" title="Generic infrastructure to record the values returned by the method.">RecordReturnedValues</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordReturnedValuesInfrastructure.html" title="Infrastructure to record returned values."></a>
+                        <a href="RecordReturnedValuesInfrastructure.html" title="Infrastructure to record returned values.">RecordReturnedValuesInfrastructure</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordThrownExceptions.html" title="Generic infrastructure to record the exceptions thrown by a method."></a>
+                        <a href="RecordThrownExceptions.html" title="Generic infrastructure to record the exceptions thrown by a method.">RecordThrownExceptions</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RecordVoidReturns.html" title="Records the program counters of all return (void) instructions that are reached."></a>
+                        <a href="RecordVoidReturns.html" title="Records the program counters of all return (void) instructions that are reached.">RecordVoidReturns</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="RefineDefUseUsingOrigins.html" title="Collects/refines the abstract interpretation time definition/use information using the domain values' origin information if available."></a>
+                        <a href="RefineDefUseUsingOrigins.html" title="Collects/refines the abstract interpretation time definition/use information using the domain values' origin information if available.">RefineDefUseUsingOrigins</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ReifiedConstraints.html" title="Mixin this trait to reify the stated constraints."></a>
+                        <a href="ReifiedConstraints.html" title="Mixin this trait to reify the stated constraints.">ReifiedConstraints</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ReturnInstructionsDomain.html" title="Adds support for handling return instructions in a generic manner."></a>
+                        <a href="ReturnInstructionsDomain.html" title="Adds support for handling return instructions in a generic manner.">ReturnInstructionsDomain</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="SpecialMethodsHandling$.html" title=""></a>
+                        <a class="trait" href="SpecialMethodsHandling.html" title="Hard-codes some part of the semantics of some very high-profile (native) methods of the JDK (for example, System.arraycopy)."></a>
+                        <a href="SpecialMethodsHandling.html" title="Hard-codes some part of the semantics of some very high-profile (native) methods of the JDK (for example, System.arraycopy).">SpecialMethodsHandling</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="TheCode.html" title="Provides information about the code block that is currently analyzed."></a>
+                        <a href="TheCode.html" title="Provides information about the code block that is currently analyzed.">TheCode</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="TheMethod.html" title="Provides information about the method that is currently analyzed."></a>
+                        <a href="TheMethod.html" title="Provides information about the method that is currently analyzed.">TheMethod</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="TheProject.html" title="Provides information about the underlying project."></a>
+                        <a href="TheProject.html" title="Provides information about the underlying project.">TheProject</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ThePropertyStore.html" title="This trait is mixed in by those (partial) domains that require access to the project's property store."></a>
+                        <a href="ThePropertyStore.html" title="This trait is mixed in by those (partial) domains that require access to the project's property store.">ThePropertyStore</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ThrowAllPotentialExceptionsConfiguration.html" title="A configuration that forces abstract interpretation to always create an exception if it is not possible to deduce that a specific exception will not be thrown."></a>
+                        <a href="ThrowAllPotentialExceptionsConfiguration.html" title="A configuration that forces abstract interpretation to always create an exception if it is not possible to deduce that a specific exception will not be thrown.">ThrowAllPotentialExceptionsConfiguration</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ThrowNoPotentialExceptionsConfiguration.html" title="A configuration that forces the abstract interpretor to never create an exception if it is not possible to deduce that the specific exception is guaranteed to be thrown."></a>
+                        <a href="ThrowNoPotentialExceptionsConfiguration.html" title="A configuration that forces the abstract interpretor to never create an exception if it is not possible to deduce that the specific exception is guaranteed to be thrown.">ThrowNoPotentialExceptionsConfiguration</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ValuesCoordinatingDomain.html" title="Can be mixed in to create a Domain that is intended to be used to coordinate the exchange of values between different domains."></a>
+                        <a href="ValuesCoordinatingDomain.html" title="Can be mixed in to create a Domain that is intended to be used to coordinate the exchange of values between different domains.">ValuesCoordinatingDomain</a>
+                      </li><li name="org.opalj.ai.fpcf" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fpcf"></a><a id="fpcf:fpcf"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/fpcf/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../fpcf/index.html"><span class="name">fpcf</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.ai">ai</a></dd></dl></div>
+    </li><li name="org.opalj.ai.project" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="project"></a><a id="project:project"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/project/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../project/index.html"><span class="name">project</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.ai">ai</a></dd></dl></div>
+    </li><li name="org.opalj.ai.util" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="util"></a><a id="util:util"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/util/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Common utility functionality." href="../util/index.html"><span class="name">util</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Common utility functionality.</p><div class="fullcomment"><div class="comment cmt"><p>Common utility functionality.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.opalj.ai">ai</a></dd></dl></div>
+    </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="package value">
+      <div id="definition">
+        <div class="big-circle package">p</div>
+        <p id="owner"><a href="../../../index.html" class="extype" name="org">org</a>.<a href="../../index.html" class="extype" name="org.opalj">opalj</a>.<a href="../index.html" class="extype" name="org.opalj.ai">ai</a></p>
+        <h1>domain<span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">domain</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This package contains definitions of common domains that can be used for the
+implementation of analyses.</p><h4>Types of Domains</h4><p>In general, we distinguish two types of domains. First, domains that define a
+general interface (on top of the one defined by <a href="../Domain.html" class="extype" name="org.opalj.ai.Domain">Domain</a>), but do not directly
+provide an implementation. Hence, whenever you develop a new <code>Domain</code> you should
+consider implementing/using these domains to maximize reusability. Second,
+<code>Domain</code>s that implement a specific interface (trait).  In this case, we further
+distinguish between domains that provide a default implementation (per <i>interface</i>
+only one of these <code>Domain</code>s can be used to create a <b>final <code>Domain</code></b>) and
+those that can be stacked and basically refine the overall functionality.</p><p><b>Examples</b></p><ul><li>Domains That Define a General Interface<ul><li><a href="Origin.html" class="extype" name="org.opalj.ai.domain.Origin">Origin</a> defines two types which domains that provide information abou the
+     origin of a value should consider to implement.</li><li><a href="TheProject.html" class="extype" name="org.opalj.ai.domain.TheProject">TheProject</a> defines a standard mechanism how a domain can access the
+     <i>current</i> project.</li><li>...</li></ul></li><li>Domains That Provide a Default Implementation<ul><li><a href="Origin.html" class="extype" name="org.opalj.ai.domain.Origin">Origin</a> defines the functionality to return a value's origin if the value
+     supports that.</li><li><a href="TheProject.html" class="extype" name="org.opalj.ai.domain.TheProject">org.opalj.ai.domain.TheProject</a> default implementation of the class hierarchy related
+     methods using the project's class hierarchy.</li><li><a href="DefaultHandlingOfMethodResults.html" class="extype" name="org.opalj.ai.domain.DefaultHandlingOfMethodResults">org.opalj.ai.domain.DefaultHandlingOfMethodResults</a> basically implements a Domain's methods
+     related to return instructions an uncaught exceptions.</li><li>...</li></ul></li><li>Domains That Implement Stackable Functionality<ul><li><a href="RecordThrownExceptions.html" class="extype" name="org.opalj.ai.domain.RecordThrownExceptions">org.opalj.ai.domain.RecordThrownExceptions</a> records information about all uncaught exceptions
+     by intercepting a <code>Domain</code>'s respective methods. However, it does provide a
+     default implementation. Hence, a typical pattern is:</li></ul></li></ul><pre><span class="kw">class</span> MyDomain <span class="kw">extends</span> Domain <span class="kw">with</span> ...
+    <span class="kw">with</span> DefaultHandlingOfMethodResults <span class="kw">with</span> RecordThrownExceptions</pre><h4>Thread Safety</h4><p>Unless explicitly documented, a domain is never thread-safe. The general programming
+model is to use one <code>Domain</code> object per code block/method and therefore, thread-safety
+is not required for <code>Domain</code>s that are used for the evaluation of methods. However
+domains that are used to adapt/transfer values should be thread safe
+(see <a href="ValuesCoordinatingDomain.html" class="extype" name="org.opalj.ai.domain.ValuesCoordinatingDomain">org.opalj.ai.domain.ValuesCoordinatingDomain</a> for further details).
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/ai/src/main/scala/org/opalj/ai/domain/package.scala?at=develop" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="org.opalj.ai.domain"><span>domain</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.opalj.ai.domain.AsDomainValue" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="AsDomainValueextendsAnyRef"></a><a id="AsDomainValue:AsDomainValue"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/AsDomainValue.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Mixed in by domains that support the conversation of a Java Object into a DomainValue." href="AsDomainValue.html"><span class="name">AsDomainValue</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Mixed in by domains that support the conversation of a Java Object into a <code>DomainValue</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Mixed in by domains that support the conversation of a Java Object into a <code>DomainValue</code>.
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="AsJavaObject.html" class="extype" name="org.opalj.ai.domain.AsJavaObject">AsJavaObject</a> for further information on limitations.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.AsJavaObject" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="AsJavaObjectextendsAnyRef"></a><a id="AsJavaObject:AsJavaObject"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/AsJavaObject.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Mixed in by domains that support the conversation of a DomainValue into a respective Java object." href="AsJavaObject.html"><span class="name">AsJavaObject</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Mixed in by domains that support the conversation of a <code>DomainValue</code> into
+a respective Java object.</p><div class="fullcomment"><div class="comment cmt"><p>Mixed in by domains that support the conversation of a <code>DomainValue</code> into
+a respective Java object. This Java object can then be used to perform method
+invocations.</p><h4>Limitation</h4><p>Using <code>AsJavaObject</code> will only work reasonably iff the respective class
+is either in the classpath of the JVM or a class loader (initialized with the
+project's classpath) is used.
+The latter, however, does not work for classes on the bootclasspath (e.g.,
+<code>java.lang.String</code>). In that case it is necessary to check that the code of the
+analyzed application is compatible with the one on the class path.
+<b>To avoid accidental imprecision in the analysis you should use this features
+only for stable classes belonging to the core JDK (<code>java.lang...</code>.)</b>
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.ConcreteIntegerValues" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ConcreteIntegerValuesextendsAnyRef"></a><a id="ConcreteIntegerValues:ConcreteIntegerValues"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/ConcreteIntegerValues.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides information about an integer value's precise value, if this information is available." href="ConcreteIntegerValues.html"><span class="name">ConcreteIntegerValues</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides information about an integer value's precise value, if this information
+is available.</p><div class="fullcomment"><div class="comment cmt"><p>Provides information about an integer value's precise value, if this information
+is available.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>The information about an integer value's range that is required by the
+     abstract interpreter is defined by the <code>Domain</code> trait.</p></span>, <span class="cmt"><p>This functionality is not required by the OPAL core.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.ConcreteLongValues" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ConcreteLongValuesextendsAnyRef"></a><a id="ConcreteLongValues:ConcreteLongValues"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/ConcreteLongValues.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides information about a long value's precise value, if this information is available." href="ConcreteLongValues.html"><span class="name">ConcreteLongValues</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides information about a long value's precise value, if this information
+is available.</p><div class="fullcomment"><div class="comment cmt"><p>Provides information about a long value's precise value, if this information
+is available.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>This abstract interpreter never requires knowledge about the precise
+     value of a value with computational type <code>long</code>.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.ConstantFieldValuesResolution" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ConstantFieldValuesResolutionextendsDomain"></a><a id="ConstantFieldValuesResolution:ConstantFieldValuesResolution"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/ConstantFieldValuesResolution.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Resolves references to final static fields that have simple constant values." href="ConstantFieldValuesResolution.html"><span class="name">ConstantFieldValuesResolution</span></a><span class="result"> extends <a href="../Domain.html" class="extype" name="org.opalj.ai.Domain">Domain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Resolves references to final static fields that have simple constant values.</p><div class="fullcomment"><div class="comment cmt"><p>Resolves references to final static fields that have simple constant values.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p><b>A typical Java compiler automatically resolves all simple references
+     and, hence, this trait has for Java projects in general no effect.</b> If we analyze
+     other languages that compile to the JVM platform, the effect might be different.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.CurrentCode" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="CurrentCodeextendsTheCodewithCustomInitialization"></a><a id="CurrentCode:CurrentCode"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/CurrentCode.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides information about the code block that is currently analyzed." href="CurrentCode.html"><span class="name">CurrentCode</span></a><span class="result"> extends <a href="TheCode.html" class="extype" name="org.opalj.ai.domain.TheCode">TheCode</a> with <a href="../CustomInitialization.html" class="extype" name="org.opalj.ai.CustomInitialization">CustomInitialization</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides information about the code block that is currently analyzed.</p><div class="fullcomment"><div class="comment cmt"><p>Provides information about the code block that is currently analyzed.</p><h4>Core Properties</h4><ul><li>&quot;Automatically reset&quot; when the domain is used to analyze another method.</li><li>&quot;Concurrent Usage&quot;: &quot;No&quot;
+</li></ul></div></div>
+    </li><li name="org.opalj.ai.domain.DefaultExceptionsFactory" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DefaultExceptionsFactoryextendsExceptionsFactory"></a><a id="DefaultExceptionsFactory:DefaultExceptionsFactory"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/DefaultExceptionsFactory.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Default implementation of the ExceptionsFactory trait that relies on the ReferenceValuesFactory." href="DefaultExceptionsFactory.html"><span class="name">DefaultExceptionsFactory</span></a><span class="result"> extends <a href="../ExceptionsFactory.html" class="extype" name="org.opalj.ai.ExceptionsFactory">ExceptionsFactory</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Default implementation of the <a href="../ExceptionsFactory.html" class="extype" name="org.opalj.ai.ExceptionsFactory">ExceptionsFactory</a> trait that relies
+on the <a href="../ReferenceValuesFactory.html" class="extype" name="org.opalj.ai.ReferenceValuesFactory">ReferenceValuesFactory</a>.</p>
+    </li><li name="org.opalj.ai.domain.DefaultHandlingForReturnInstructions" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DefaultHandlingForReturnInstructionsextendsReturnInstructionsDomain"></a><a id="DefaultHandlingForReturnInstructions:DefaultHandlingForReturnInstructions"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/DefaultHandlingForReturnInstructions.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides default implementations for a Domain's return methods that always throw an IllegalMonitorStateExceptoin." href="DefaultHandlingForReturnInstructions.html"><span class="name">DefaultHandlingForReturnInstructions</span></a><span class="result"> extends <a href="ReturnInstructionsDomain.html" class="extype" name="org.opalj.ai.domain.ReturnInstructionsDomain">ReturnInstructionsDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides default implementations for a <code>Domain</code>'s return methods that always throw
+an <code>IllegalMonitorStateExceptoin</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Provides default implementations for a <code>Domain</code>'s return methods that always throw
+an <code>IllegalMonitorStateExceptoin</code>.</p><p>You can mix in this trait if you are not interested in a method's return values or if
+you need some default implementations.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.DefaultHandlingForThrownExceptions" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DefaultHandlingForThrownExceptionsextendsReturnInstructionsDomain"></a><a id="DefaultHandlingForThrownExceptions:DefaultHandlingForThrownExceptions"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/DefaultHandlingForThrownExceptions.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Basic implementation of a Domain's abruptMethodExecution method that does nothing." href="DefaultHandlingForThrownExceptions.html"><span class="name">DefaultHandlingForThrownExceptions</span></a><span class="result"> extends <a href="ReturnInstructionsDomain.html" class="extype" name="org.opalj.ai.domain.ReturnInstructionsDomain">ReturnInstructionsDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Basic implementation of a <code>Domain</code>'s <code>abruptMethodExecution</code> method that does
+nothing.</p><div class="fullcomment"><div class="comment cmt"><p>Basic implementation of a <code>Domain</code>'s <code>abruptMethodExecution</code> method that does
+nothing.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>Mix-in this trait if the analysis does not need to do anything special in case
+     of an exception or if you have multiple stackable traits and you need a base
+     implementation.
+     Example:</p><pre>MySpecialDomain
+    <span class="kw">extends</span> ...
+    <span class="kw">with</span> DefaultHandlingForThrownExceptions
+    <span class="kw">with</span> RecordThrownExceptions
+    <span class="kw">with</span> ...</pre></span></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.DefaultHandlingOfMethodResults" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DefaultHandlingOfMethodResultsextendsDefaultHandlingForThrownExceptionswithDefaultHandlingOfVoidReturnswithDefaultHandlingForReturnInstructions"></a><a id="DefaultHandlingOfMethodResults:DefaultHandlingOfMethodResults"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/DefaultHandlingOfMethodResults.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="A Domain that does nothing if a method returns ab-/normally." href="DefaultHandlingOfMethodResults.html"><span class="name">DefaultHandlingOfMethodResults</span></a><span class="result"> extends <a href="DefaultHandlingForThrownExceptions.html" class="extype" name="org.opalj.ai.domain.DefaultHandlingForThrownExceptions">DefaultHandlingForThrownExceptions</a> with <a href="DefaultHandlingOfVoidReturns.html" class="extype" name="org.opalj.ai.domain.DefaultHandlingOfVoidReturns">DefaultHandlingOfVoidReturns</a> with <a href="DefaultHandlingForReturnInstructions.html" class="extype" name="org.opalj.ai.domain.DefaultHandlingForReturnInstructions">DefaultHandlingForReturnInstructions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A <code>Domain</code> that does nothing if a method returns ab-/normally.</p><div class="fullcomment"><div class="comment cmt"><p>A <code>Domain</code> that does nothing if a method returns ab-/normally.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>This trait's methods are generally not intended to be overridden.
+     If you need to do some special processing just directly implement
+     the respective method and mixin the traits that ignore the rest.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.DefaultHandlingOfVoidReturns" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DefaultHandlingOfVoidReturnsextendsReturnInstructionsDomain"></a><a id="DefaultHandlingOfVoidReturns:DefaultHandlingOfVoidReturns"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/DefaultHandlingOfVoidReturns.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Basic implementation of a Domains returnVoid method that does nothing." href="DefaultHandlingOfVoidReturns.html"><span class="name">DefaultHandlingOfVoidReturns</span></a><span class="result"> extends <a href="ReturnInstructionsDomain.html" class="extype" name="org.opalj.ai.domain.ReturnInstructionsDomain">ReturnInstructionsDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Basic implementation of a <code>Domain</code>s <code>returnVoid</code> method that does nothing.</p>
+    </li><li name="org.opalj.ai.domain.DefaultRecordMethodCallResults" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DefaultRecordMethodCallResultsextendsRecordMethodCallResultswithRecordLastReturnedValueswithRecordAllThrownExceptions"></a><a id="DefaultRecordMethodCallResults:DefaultRecordMethodCallResults"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/DefaultRecordMethodCallResults.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Records the results of the evaluation of the current method such that the results can directly be adapted to the calling context and can be used by the caller to continue the abstract interpretation of the calling method." href="DefaultRecordMethodCallResults.html"><span class="name">DefaultRecordMethodCallResults</span></a><span class="result"> extends <a href="RecordMethodCallResults.html" class="extype" name="org.opalj.ai.domain.RecordMethodCallResults">RecordMethodCallResults</a> with <a href="RecordLastReturnedValues.html" class="extype" name="org.opalj.ai.domain.RecordLastReturnedValues">RecordLastReturnedValues</a> with <a href="RecordAllThrownExceptions.html" class="extype" name="org.opalj.ai.domain.RecordAllThrownExceptions">RecordAllThrownExceptions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Records the results of the evaluation of the <code>current</code> method such that the results
+can directly be adapted to the calling context and can be used by the caller to continue
+the abstract interpretation of the calling method.</p>
+    </li><li name="org.opalj.ai.domain.DefaultSpecialDomainValuesBinding" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DefaultSpecialDomainValuesBindingextendsValuesDomain"></a><a id="DefaultSpecialDomainValuesBinding:DefaultSpecialDomainValuesBinding"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/DefaultSpecialDomainValuesBinding.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Final binding of a Domain's type DomainValue as well as all subtypes of it that are also defined by Domain." href="DefaultSpecialDomainValuesBinding.html"><span class="name">DefaultSpecialDomainValuesBinding</span></a><span class="result"> extends <a href="../ValuesDomain.html" class="extype" name="org.opalj.ai.ValuesDomain">ValuesDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Final binding of a <code>Domain</code>'s type <code>DomainValue</code> as well as all subtypes of it that are
+also defined by <code>Domain</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Final binding of a <code>Domain</code>'s type <code>DomainValue</code> as well as all subtypes of it that are
+also defined by <code>Domain</code>.</p><p>The type <code>DomainValue</code> is set to the type <a href="../ValuesDomain$Value.html" class="extype" name="org.opalj.ai.ValuesDomain.Value">org.opalj.ai.Domain.Value</a>.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.DomainId" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DomainIdextendsAnyRef"></a><a id="DomainId:DomainId"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/DomainId.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Common super trait of all domains have an id to identify them." href="DomainId.html"><span class="name">DomainId</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Common super trait of all domains have an id to identify them.</p>
+    </li><li name="org.opalj.ai.domain.DomainValues" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DomainValuesextendsAnyRef"></a><a id="DomainValues:DomainValues"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/DomainValues.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Encapsulates a domain and some values created by the respective domain." href="DomainValues.html"><span class="name">DomainValues</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Encapsulates a <code>domain</code> and some values created by the respective domain.</p><div class="fullcomment"><div class="comment cmt"><p>Encapsulates a <code>domain</code> and some values created by the respective domain.</p><p>Using the class <code>DomainValues</code> enables type-safety when we need to store and
+pass on a <code>Domain</code> object and some of its values.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.GeneralizedArrayHandling" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GeneralizedArrayHandlingextendsReferenceValuesDomain"></a><a id="GeneralizedArrayHandling:GeneralizedArrayHandling"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/GeneralizedArrayHandling.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="This (partial-)domain abstracts over the concrete methods for performing array operations and provides an interface at a higher abstraction level." href="GeneralizedArrayHandling.html"><span class="name">GeneralizedArrayHandling</span></a><span class="result"> extends <a href="../ReferenceValuesDomain.html" class="extype" name="org.opalj.ai.ReferenceValuesDomain">ReferenceValuesDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This (partial-)domain abstracts over the concrete methods for performing
+array operations and provides an interface at a higher abstraction level.</p>
+    </li><li name="org.opalj.ai.domain.IgnoreSynchronization" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IgnoreSynchronizationextendsMonitorInstructionsDomain"></a><a id="IgnoreSynchronization:IgnoreSynchronization"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/IgnoreSynchronization.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides a default implementation for the instructions related to synchronization." href="IgnoreSynchronization.html"><span class="name">IgnoreSynchronization</span></a><span class="result"> extends <a href="../MonitorInstructionsDomain.html" class="extype" name="org.opalj.ai.MonitorInstructionsDomain">MonitorInstructionsDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides a default implementation for the instructions related to synchronization.</p>
+    </li><li name="org.opalj.ai.domain.ImpossibleRefinement" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ImpossibleRefinementextendsAIExceptionwithProductwithSerializable"></a><a id="ImpossibleRefinement:ImpossibleRefinement"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/ImpossibleRefinement.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Thrown to indicate that a refinement of some value was not possible." href="ImpossibleRefinement.html"><span class="name">ImpossibleRefinement</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="refinementGoal">refinementGoal: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="../AIException.html" class="extype" name="org.opalj.ai.AIException">AIException</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Thrown to indicate that a refinement of some value was not possible.</p>
+    </li><li name="org.opalj.ai.domain.MethodCallResults" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="MethodCallResultsextendsAnyRef"></a><a id="MethodCallResults:MethodCallResults"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/MethodCallResults.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Trait that can be mixed in if information is needed about all returned values and the thrown exceptions." href="MethodCallResults.html"><span class="name">MethodCallResults</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Trait that can be mixed in if information is needed about all returned values and
+the thrown exceptions.</p><div class="fullcomment"><div class="comment cmt"><p>Trait that can be mixed in if information is needed about all returned values and
+the thrown exceptions. <i>This information is, however, only available after the
+evaluation of a method has completed.</i>
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.MethodCallsHandling" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MethodCallsHandlingextendsMethodCallsDomain"></a><a id="MethodCallsHandling:MethodCallsHandling"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/MethodCallsHandling.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides support for handling method invocations, but does not handle any invocations directly." href="MethodCallsHandling.html"><span class="name">MethodCallsHandling</span></a><span class="result"> extends <a href="../MethodCallsDomain.html" class="extype" name="org.opalj.ai.MethodCallsDomain">MethodCallsDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides support for handling method invocations, but does not handle any invocations directly.</p>
+    </li><li name="org.opalj.ai.domain.MonitorInstructionsTracker" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="MonitorInstructionsTrackerextendsMonitorInstructionsDomainwithCustomInitialization"></a><a id="MonitorInstructionsTracker:MonitorInstructionsTracker"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/MonitorInstructionsTracker.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Tracks if a monitor(enter|exit) instruction was executed." href="MonitorInstructionsTracker.html"><span class="name">MonitorInstructionsTracker</span></a><span class="result"> extends <a href="../MonitorInstructionsDomain.html" class="extype" name="org.opalj.ai.MonitorInstructionsDomain">MonitorInstructionsDomain</a> with <a href="../CustomInitialization.html" class="extype" name="org.opalj.ai.CustomInitialization">CustomInitialization</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Tracks if a monitor(enter|exit) instruction was executed.</p><div class="fullcomment"><div class="comment cmt"><p>Tracks if a monitor(enter|exit) instruction was executed.</p><p>This knowledge is of interest to decide, e.g., whether a return instruction
+may throw an <code>IllegalMonitorStateException</code> or not.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.Origin" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="OriginextendsAnyRef"></a><a id="Origin:Origin"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/Origin.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides information about the origin (that is, def-site) of a value iff the underlying domain provides the respective information; that is, this trait only defines the public API it does not provide origin information on its own." href="Origin.html"><span class="name">Origin</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides information about the origin (that is, def-site) of a value iff the underlying domain
+provides the respective information; that is, this trait only defines the public API it does
+not provide origin information on its own.</p><div class="fullcomment"><div class="comment cmt"><p>Provides information about the origin (that is, def-site) of a value iff the underlying domain
+provides the respective information; that is, this trait only defines the public API it does
+not provide origin information on its own.</p><p>However, a domain that provides origin information has to do so
+for ALL values of the respective computational type category and the information has to be
+complete.</p><h4>Usage</h4><p>To get origin information this trait needs be implemented by a domain.
+I.e., <i>just mixing in this trait will not provide origin information about values</i>.</p><h4>Implementation</h4><p>This trait should be inherited from by all domains that make information about
+the origin of a value available (see <a href="l1/ReferenceValues.html" class="extype" name="org.opalj.ai.domain.l1.ReferenceValues">org.opalj.ai.domain.l1.ReferenceValues</a>
+as an example); the respective domains have to override <a href="Origin.html#providesOriginInformationFor(ctc:org.opalj.br.ComputationalType):Boolean" class="extmbr" name="org.opalj.ai.domain.Origin#providesOriginInformationFor">providesOriginInformationFor</a>
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>A <a href="../../br/instructions/CHECKCAST.html" class="extype" name="org.opalj.br.instructions.CHECKCAST">org.opalj.br.instructions.CHECKCAST</a> must not modify <code>origin</code> information; i.e.,
+      the origin of the value on the stack before and after the checkast (unless we have
+      an exception) must be the same!</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.PerInstructionPostProcessing" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="PerInstructionPostProcessingextendsCoreDomainFunctionality"></a><a id="PerInstructionPostProcessing:PerInstructionPostProcessing"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/PerInstructionPostProcessing.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides the generic infrastructure to register a function that updates the operands and locals associated with an instruction that will be evaluated &quot;next&quot;." href="PerInstructionPostProcessing.html"><span class="name">PerInstructionPostProcessing</span></a><span class="result"> extends <a href="../CoreDomainFunctionality.html" class="extype" name="org.opalj.ai.CoreDomainFunctionality">CoreDomainFunctionality</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides the generic infrastructure to register a function that updates the operands
+and locals associated with an instruction that will be evaluated &quot;next&quot;.</p><div class="fullcomment"><div class="comment cmt"><p>Provides the generic infrastructure to register a function that updates the operands
+and locals associated with an instruction that will be evaluated &quot;next&quot;.
+For example, let's assume that we are currently processing instruction X and that
+instruction Y is the successor instruction. In this case, the framework will first
+determine the effect of function X on the stack/locals. After that, all registered
+updaters will be called. All registered updaters will be discarded as soon the
+evaluation of instruction X has completed.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.PostEvaluationMemoryManagement" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="PostEvaluationMemoryManagementextendsCoreDomainFunctionality"></a><a id="PostEvaluationMemoryManagement:PostEvaluationMemoryManagement"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/PostEvaluationMemoryManagement.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides the possibility to further update the memory layout (registers and operands) after the execution of an instruction, but before any potential join is performed." href="PostEvaluationMemoryManagement.html"><span class="name">PostEvaluationMemoryManagement</span></a><span class="result"> extends <a href="../CoreDomainFunctionality.html" class="extype" name="org.opalj.ai.CoreDomainFunctionality">CoreDomainFunctionality</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides the possibility to further update the memory layout (registers and operands)
+after the execution of an instruction, but before any potential join is performed.</p><div class="fullcomment"><div class="comment cmt"><p>Provides the possibility to further update the memory layout (registers and operands)
+after the execution of an instruction, but before any potential join is performed.</p><p>Using this domain is only safe if the (partial-)domains that use this functionality
+never interfere with each other.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>If this domain is mixed in then the domain cannot be used to simultaneously analyze
+         multiple different methods at the same time.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.PredefinedClassHierarchy" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="PredefinedClassHierarchyextendsAnyRef"></a><a id="PredefinedClassHierarchy:PredefinedClassHierarchy"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/PredefinedClassHierarchy.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="This class uses OPAL's PreInitializedClassHierarchy (see ClassHierarchy for details) for class hierarchy related queries." href="PredefinedClassHierarchy.html"><span class="name">PredefinedClassHierarchy</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This class uses OPAL's <code>PreInitializedClassHierarchy</code> (see <code>ClassHierarchy</code> for details)
+for class hierarchy related queries.</p><div class="fullcomment"><div class="comment cmt"><p>This class uses OPAL's <code>PreInitializedClassHierarchy</code> (see <code>ClassHierarchy</code> for details)
+for class hierarchy related queries.</p><p><b>Use this trait ONLY if you just want to do some testing.</b>
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.RecordAllThrownExceptions" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RecordAllThrownExceptionsextendsRecordThrownExceptions"></a><a id="RecordAllThrownExceptions:RecordAllThrownExceptions"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordAllThrownExceptions.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Records all exceptions thrown by a method." href="RecordAllThrownExceptions.html"><span class="name">RecordAllThrownExceptions</span></a><span class="result"> extends <a href="RecordThrownExceptions.html" class="extype" name="org.opalj.ai.domain.RecordThrownExceptions">RecordThrownExceptions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Records <b>all</b> exceptions thrown by a method.</p><div class="fullcomment"><div class="comment cmt"><p>Records <b>all</b> exceptions thrown by a method. I.e., for each instruction that
+throws an exception (or multiple exceptions) all exceptions are recorded.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>This domain requires that <code>DomainValue</code>s that represent thrown exceptions
+     have meaningful <code>equals</code> and <code>hashCode</code> methods. (Depending on the purpose
+     of the abstract interpretation, reference equality may be sufficient.)</p></span>, <span class="cmt"><p>This domain is only effective if the calculation of joins is fast. Otherwise
+     it can significantly hamper overall performance!</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.RecordCFG" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RecordCFGextendsCoreDomainFunctionalitywithCustomInitializationwithReturnInstructionsDomain"></a><a id="RecordCFG:RecordCFG"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordCFG.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Records the abstract interpretation time control-flow graph (CFG)." href="RecordCFG.html"><span class="name">RecordCFG</span></a><span class="result"> extends <a href="../CoreDomainFunctionality.html" class="extype" name="org.opalj.ai.CoreDomainFunctionality">CoreDomainFunctionality</a> with <a href="../CustomInitialization.html" class="extype" name="org.opalj.ai.CustomInitialization">CustomInitialization</a> with <a href="../ReturnInstructionsDomain.html" class="extype" name="org.opalj.ai.ReturnInstructionsDomain">ai.ReturnInstructionsDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Records the abstract interpretation time control-flow graph (CFG).</p><div class="fullcomment"><div class="comment cmt"><p>Records the abstract interpretation time control-flow graph (CFG).
+This CFG is always (still) a sound approximation of the generally incomputable
+real(runtime) CFG.</p><h4>Usage (Mixin-Composition Order)</h4><p>This domain primarily overrides the <code>flow</code> method and requires that it is mixed in before every
+other domain that overrides the <code>flow</code> method and which may manipulate the <code>worklist</code>.
+E.g., the mixin order should be:</p><pre><span class="kw">class</span> MyDomain <span class="kw">extends</span> Domain <span class="kw">with</span> RecordCFG <span class="kw">with</span> FlowManipulatingDomain</pre><p>If the mixin order is not correct, the computed CFG may not be complete/concrete.</p><h4>Core Properties</h4><ul><li>Thread-safe: <b>No</b>; i.e., the composed domain can only be used by one
+             abstract interpreter at a time.
+             However, using the collected results is thread-safe!</li><li>Reusable: <b>Yes</b>; all state directly associated with the analyzed code block is
+             reset by the method <code>initProperties</code>.</li><li>No Partial Results: If the abstract interpretation was aborted the results have
+             no meaning and must not be used; however, if the abstract interpretation
+             is later continued and successfully completed the results are correct.
+</li></ul></div></div>
+    </li><li name="org.opalj.ai.domain.RecordConstraints" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RecordConstraintsextendsReifiedConstraints"></a><a id="RecordConstraints:RecordConstraints"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordConstraints.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Mixin this trait if you want to reify the constraints that are stated by the abstract interpretation framework." href="RecordConstraints.html"><span class="name">RecordConstraints</span></a><span class="result"> extends <a href="ReifiedConstraints.html" class="extype" name="org.opalj.ai.domain.ReifiedConstraints">ReifiedConstraints</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Mixin this trait if you want to reify the constraints that are stated by the
+abstract interpretation framework.</p><div class="fullcomment"><div class="comment cmt"><p>Mixin this trait if you want to reify the constraints that are stated by the
+abstract interpretation framework.
+This is particularly useful for testing and debugging purposes.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.RecordDefUse" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RecordDefUseextendsRecordCFG"></a><a id="RecordDefUse:RecordDefUse"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordDefUse.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Collects the definition/use information based on the abstract interpretation time cfg." href="RecordDefUse.html"><span class="name">RecordDefUse</span></a><span class="result"> extends <a href="RecordCFG.html" class="extype" name="org.opalj.ai.domain.RecordCFG">RecordCFG</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Collects the definition/use information based on the abstract interpretation time cfg.</p><div class="fullcomment"><div class="comment cmt"><p>Collects the definition/use information based on the abstract interpretation time cfg.
+I.e., makes the information available which value is accessed where/where a used
+value is defined.
+In general, all local variables are identified using <code>Int</code>s where the <code>Int</code> identifies
+the expression (by means of it's pc) which evaluated to the respective value.
+In case of a parameter the <code>Int</code> value is <code>-parametersIndex corrected by computational type
+category</code> (see below for details).</p><p><b>In case of exception values the <code>Int</code> value identifies the instruction which ex-/implicitly
+raised the exception.</b>
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>A checkcast is considered a use-site, but not a def-site, even if the shape changes/
+      the assumed type is narrowed. Otherwise, if the cast is useless, we could not replace it
+      by a NOP.</p><h4>General Usage</h4><p>This trait collects the def/use information <b>after the abstract interpretation has
+successfully completed</b> and the control-flow graph is available.
+The information is automatically made available, when this plug-in is mixed in.</p><h4>Special Values</h4><h5>Parameters</h5><p>The ex-/implicit parameters given to a method have negative <code>int</code> values (the first
+parameter has the value -1, the second -2 if the first one is a value of computational
+type category one and -3 if the first value is of computational type category two and so forth).
+I.e., in case of a method <code>def (d : Double, i : Int)</code>, the second parameter will have the index
+-3.</p><h4>Core Properties</h4><h5>Reusability</h5><p>An instance of this domain can be reused to successively perform abstract
+interpretations of different methods.
+The domain's inherited <code>initProperties</code> method – which is always called by the AI
+framework – resets the entire state related to the method.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.RecordJoinedThrownExceptions" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RecordJoinedThrownExceptionsextendsRecordThrownExceptions"></a><a id="RecordJoinedThrownExceptions:RecordJoinedThrownExceptions"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordJoinedThrownExceptions.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Records the exception that is thrown by an instruction." href="RecordJoinedThrownExceptions.html"><span class="name">RecordJoinedThrownExceptions</span></a><span class="result"> extends <a href="RecordThrownExceptions.html" class="extype" name="org.opalj.ai.domain.RecordThrownExceptions">RecordThrownExceptions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Records the exception that is thrown by an instruction.</p><div class="fullcomment"><div class="comment cmt"><p>Records the exception that is thrown by an instruction. If an instruction throws
+multiple exceptions. The exceptions are <code>join</code>ed using the <a href="../Domain.html#DomainValue&gt;:Null&lt;:ValuesDomain.this.Value" class="extmbr" name="org.opalj.ai.Domain.DomainValue">Domain#DomainValue</a>'s
+<code>join</code> method.</p><p>This trait can be used to record the thrown exceptions independently of the
+precision of the domain.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.RecordLastReturnedValues" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RecordLastReturnedValuesextendsRecordReturnedValues"></a><a id="RecordLastReturnedValues:RecordLastReturnedValues"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordLastReturnedValues.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Records the last value that is returned by a specific return instruction." href="RecordLastReturnedValues.html"><span class="name">RecordLastReturnedValues</span></a><span class="result"> extends <a href="RecordReturnedValues.html" class="extype" name="org.opalj.ai.domain.RecordReturnedValues">RecordReturnedValues</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Records the last value that is returned by a specific return instruction.</p><div class="fullcomment"><div class="comment cmt"><p>Records the last value that is returned by a specific return instruction.</p><p>Recording just the last value that is returned by an <code>(a|i|l|f|d)return</code> instruction
+is often sufficient (e.g., in case of a domain that performs all computations at the type
+level). The &quot;last&quot; value encodes all necessary information.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.RecordMethodCallResults" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RecordMethodCallResultsextendsMethodCallResultswithRecordReturnedValueswithRecordThrownExceptions"></a><a id="RecordMethodCallResults:RecordMethodCallResults"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordMethodCallResults.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Records the results of the evaluation of the current method such that the results can directly be adapted to the calling context and can be used by the caller to continue the abstract interpretation of the calling method." href="RecordMethodCallResults.html"><span class="name">RecordMethodCallResults</span></a><span class="result"> extends <a href="MethodCallResults.html" class="extype" name="org.opalj.ai.domain.MethodCallResults">MethodCallResults</a> with <a href="RecordReturnedValues.html" class="extype" name="org.opalj.ai.domain.RecordReturnedValues">RecordReturnedValues</a> with <a href="RecordThrownExceptions.html" class="extype" name="org.opalj.ai.domain.RecordThrownExceptions">RecordThrownExceptions</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Records the results of the evaluation of the <code>current</code> method such that the results
+can directly be adapted to the calling context and can be used by the caller to continue
+the abstract interpretation of the calling method.</p><div class="fullcomment"><div class="comment cmt"><p>Records the results of the evaluation of the <code>current</code> method such that the results
+can directly be adapted to the calling context and can be used by the caller to continue
+the abstract interpretation of the calling method.</p><p><b>The returned value will only be a given parameter, if the given parameter is not mutated.</b>
+For example, if an array is passed to a method where the content is reified, the
+returned value will only be mapped back to the parameter value if the array is not changed at all.
+In other words, the returned value, which may get the pc of the method caller, may refer to
+any parameter given to the method. Only, if the returned value is a parameter, we know that
+this specific parameter was not mutated at all.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.RecordReturnFromMethodInstructions" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RecordReturnFromMethodInstructionsextendsReturnInstructionsDomain"></a><a id="RecordReturnFromMethodInstructions:RecordReturnFromMethodInstructions"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordReturnFromMethodInstructions.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Records the program counters of all instructions that lead to a (ab)normal return from the method." href="RecordReturnFromMethodInstructions.html"><span class="name">RecordReturnFromMethodInstructions</span></a><span class="result"> extends <a href="../ReturnInstructionsDomain.html" class="extype" name="org.opalj.ai.ReturnInstructionsDomain">ai.ReturnInstructionsDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Records the program counters of all instructions that lead to a (ab)normal
+return from the method.</p><div class="fullcomment"><div class="comment cmt"><p>Records the program counters of all instructions that lead to a (ab)normal
+return from the method. I.e., every instruction that may throw an exception or
+causes a normal return from method may be recorded. Examples of instructions
+that may be recorded: <code>(X)return</code>, <code>throw</code>, <code>invoke(XXX)</code>, <code>get|put(static|field)</code>,
+<code>checkcast</code>, <code>(a)new(array)</code>,... . Instructions such as <code>swap</code> or <code>dup(XXX)</code>, however,
+never directly lead to a method return (they will never result in an exception)
+and will not be recorded.</p><p>If you are interested in recording the values use: <a href="RecordReturnedValues.html" class="extype" name="org.opalj.ai.domain.RecordReturnedValues">RecordReturnedValues</a>,
+<a href="RecordThrownExceptions.html" class="extype" name="org.opalj.ai.domain.RecordThrownExceptions">RecordThrownExceptions</a>.</p><h4>Usage</h4><p>This domain can be stacked on top of other traits that handle
+return instructions and abrupt method executions.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.RecordReturnedValue" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RecordReturnedValueextendsRecordReturnedValuesInfrastructure"></a><a id="RecordReturnedValue:RecordReturnedValue"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordReturnedValue.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Record the value returned by a method across all return instructions." href="RecordReturnedValue.html"><span class="name">RecordReturnedValue</span></a><span class="result"> extends <a href="RecordReturnedValuesInfrastructure.html" class="extype" name="org.opalj.ai.domain.RecordReturnedValuesInfrastructure">RecordReturnedValuesInfrastructure</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Record the value returned by a method across all return instructions.</p><div class="fullcomment"><div class="comment cmt"><p>Record the value returned by a method across all return instructions.</p><h4>Usage</h4><p>This domain can be stacked on top of other traits that handle
+return instructions that return some value.</p><h4>Usage</h4><p>A domain that mixes in this trait should only be used to analyze a single method.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.RecordReturnedValueInfrastructure" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RecordReturnedValueInfrastructureextendsRecordReturnedValuesInfrastructure"></a><a id="RecordReturnedValueInfrastructure:RecordReturnedValueInfrastructure"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordReturnedValueInfrastructure.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic infrastructure to record the value returned by the method (calculated across all return instructions)" href="RecordReturnedValueInfrastructure.html"><span class="name">RecordReturnedValueInfrastructure</span></a><span class="result"> extends <a href="RecordReturnedValuesInfrastructure.html" class="extype" name="org.opalj.ai.domain.RecordReturnedValuesInfrastructure">RecordReturnedValuesInfrastructure</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic infrastructure to record the value returned by the method (calculated
+across all return instructions)</p><div class="fullcomment"><div class="comment cmt"><p>Generic infrastructure to record the value returned by the method (calculated
+across all return instructions)</p><h4>Usage</h4><p>This domain can be stacked on top of other traits that handle
+return instructions that return some value.</p><h4>Usage</h4><p>A domain that mixes in this trait should only be used to analyze a single method.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.RecordReturnedValues" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RecordReturnedValuesextendsRecordReturnedValuesInfrastructurewithCustomInitialization"></a><a id="RecordReturnedValues:RecordReturnedValues"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordReturnedValues.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic infrastructure to record the values returned by the method." href="RecordReturnedValues.html"><span class="name">RecordReturnedValues</span></a><span class="result"> extends <a href="RecordReturnedValuesInfrastructure.html" class="extype" name="org.opalj.ai.domain.RecordReturnedValuesInfrastructure">RecordReturnedValuesInfrastructure</a> with <a href="../CustomInitialization.html" class="extype" name="org.opalj.ai.CustomInitialization">CustomInitialization</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic infrastructure to record the values returned by the method.</p><div class="fullcomment"><div class="comment cmt"><p>Generic infrastructure to record the values returned by the method.
+(Note that the computational type of the value(s) is not recorded.
+It is directly determined by the signature of the method that is analyzed or
+can be extracted using the respective method.)</p><h4>Usage</h4><p>This domain can be stacked on top of other traits that handle
+return instructions that return some value.</p><h4>Usage</h4><p>A domain that mixes in this trait should only be used to analyze a single method.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.RecordReturnedValuesInfrastructure" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RecordReturnedValuesInfrastructureextendsReturnInstructionsDomain"></a><a id="RecordReturnedValuesInfrastructure:RecordReturnedValuesInfrastructure"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordReturnedValuesInfrastructure.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Infrastructure to record returned values." href="RecordReturnedValuesInfrastructure.html"><span class="name">RecordReturnedValuesInfrastructure</span></a><span class="result"> extends <a href="../ReturnInstructionsDomain.html" class="extype" name="org.opalj.ai.ReturnInstructionsDomain">ai.ReturnInstructionsDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Infrastructure to record returned values.</p>
+    </li><li name="org.opalj.ai.domain.RecordThrownExceptions" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RecordThrownExceptionsextendsReturnInstructionsDomain"></a><a id="RecordThrownExceptions:RecordThrownExceptions"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordThrownExceptions.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Generic infrastructure to record the exceptions thrown by a method." href="RecordThrownExceptions.html"><span class="name">RecordThrownExceptions</span></a><span class="result"> extends <a href="../ReturnInstructionsDomain.html" class="extype" name="org.opalj.ai.ReturnInstructionsDomain">ai.ReturnInstructionsDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic infrastructure to record the exceptions thrown by a method.</p><div class="fullcomment"><div class="comment cmt"><p>Generic infrastructure to record the exceptions thrown by a method.
+This trait can be used to record the thrown exceptions independently of the
+precision of the domain.</p><h4>Usage</h4><p>This domain can be stacked on top of other traits that handle
+<a href="RecordThrownExceptions.html#abruptMethodExecution(pc:Int,exception:RecordThrownExceptions.this.ExceptionValue):Unit" class="extmbr" name="org.opalj.ai.domain.RecordThrownExceptions#abruptMethodExecution">abruptMethodExecution</a>s.
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.RecordVoidReturns" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RecordVoidReturnsextendsReturnInstructionsDomain"></a><a id="RecordVoidReturns:RecordVoidReturns"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RecordVoidReturns.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Records the program counters of all return (void) instructions that are reached." href="RecordVoidReturns.html"><span class="name">RecordVoidReturns</span></a><span class="result"> extends <a href="ReturnInstructionsDomain.html" class="extype" name="org.opalj.ai.domain.ReturnInstructionsDomain">ReturnInstructionsDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Records the program counters of all return (void) instructions that are reached.</p><div class="fullcomment"><div class="comment cmt"><p>Records the program counters of all return (void) instructions that are reached.</p><h4>Usage</h4><p>Typical usage:</p><pre><span class="kw">class</span> MyDomain <span class="kw">extends</span> ...DefaultHandlingOfVoidReturns <span class="kw">with</span> RecordVoidReturns</pre><p>This domain forwards all instruction evaluation calls to the super trait.</p><h4>Core Properties</h4><ul><li>Needs to be stacked upon a base implementation of the domain
+   <a href="ReturnInstructionsDomain.html" class="extype" name="org.opalj.ai.domain.ReturnInstructionsDomain">ReturnInstructionsDomain</a>.</li><li>Collects information directly associated with the analyzed code block.</li><li>Not thread-safe.</li><li>Not reusable.
+</li></ul></div></div>
+    </li><li name="org.opalj.ai.domain.RefineDefUseUsingOrigins" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RefineDefUseUsingOriginsextendsRecordDefUse"></a><a id="RefineDefUseUsingOrigins:RefineDefUseUsingOrigins"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/RefineDefUseUsingOrigins.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Collects/refines the abstract interpretation time definition/use information using the domain values' origin information if available." href="RefineDefUseUsingOrigins.html"><span class="name">RefineDefUseUsingOrigins</span></a><span class="result"> extends <a href="RecordDefUse.html" class="extype" name="org.opalj.ai.domain.RecordDefUse">RecordDefUse</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Collects/refines the abstract interpretation time definition/use information using the domain
+values' origin information if available.</p><div class="fullcomment"><div class="comment cmt"><p>Collects/refines the abstract interpretation time definition/use information using the domain
+values' origin information if available.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>ReturnAddressValues are ignored by this domain; however, the parent domain
+      <a href="RecordDefUse.html" class="extype" name="org.opalj.ai.domain.RecordDefUse">RecordDefUse</a> has appropriate handling.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.ReifiedConstraints" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ReifiedConstraintsextendsIntegerValuesDomainwithReferenceValuesDomain"></a><a id="ReifiedConstraints:ReifiedConstraints"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/ReifiedConstraints.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Mixin this trait to reify the stated constraints." href="ReifiedConstraints.html"><span class="name">ReifiedConstraints</span></a><span class="result"> extends <a href="../IntegerValuesDomain.html" class="extype" name="org.opalj.ai.IntegerValuesDomain">IntegerValuesDomain</a> with <a href="../ReferenceValuesDomain.html" class="extype" name="org.opalj.ai.ReferenceValuesDomain">ReferenceValuesDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Mixin this trait to reify the stated constraints.</p><div class="fullcomment"><div class="comment cmt"><p>Mixin this trait to reify the stated constraints. This trait
+need to be mixed in after all traits that actually handle constraints.</p><p>This is particularly useful for testing and debugging purposes.</p><h4>Core Properties</h4><ul><li>Needs to be stacked upon a base implementation of the domains: <a href="../IntegerValuesDomain.html" class="extype" name="org.opalj.ai.IntegerValuesDomain">IntegerValuesDomain</a>
+   and <a href="../ReferenceValuesDomain.html" class="extype" name="org.opalj.ai.ReferenceValuesDomain">ReferenceValuesDomain</a>].</li><li>Collects state directly associated with the analyzed code block.</li><li><b>Not</b> thread-safe.</li><li><b>Not</b> reusable (I.e., a new instance needs to be created per method.)
+</li></ul></div></div>
+    </li><li name="org.opalj.ai.domain.ReturnInstructionsDomain" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ReturnInstructionsDomainextendsReturnInstructionsDomain"></a><a id="ReturnInstructionsDomain:ReturnInstructionsDomain"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/ReturnInstructionsDomain.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Adds support for handling return instructions in a generic manner." href="ReturnInstructionsDomain.html"><span class="name">ReturnInstructionsDomain</span></a><span class="result"> extends <a href="../ReturnInstructionsDomain.html" class="extype" name="org.opalj.ai.ReturnInstructionsDomain">ai.ReturnInstructionsDomain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Adds support for handling return instructions in a generic manner.</p>
+    </li><li name="org.opalj.ai.domain.SpecialMethodsHandling" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="SpecialMethodsHandlingextendsMethodCallsHandling"></a><a id="SpecialMethodsHandling:SpecialMethodsHandling"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/SpecialMethodsHandling.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Hard-codes some part of the semantics of some very high-profile (native) methods of the JDK (for example, System.arraycopy)." href="SpecialMethodsHandling.html"><span class="name">SpecialMethodsHandling</span></a><span class="result"> extends <a href="MethodCallsHandling.html" class="extype" name="org.opalj.ai.domain.MethodCallsHandling">MethodCallsHandling</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Hard-codes some part of the semantics of some very high-profile (native) methods of the JDK
+(for example, <code>System.arraycopy</code>).</p><div class="fullcomment"><div class="comment cmt"><p>Hard-codes some part of the semantics of some very high-profile (native) methods of the JDK
+(for example, <code>System.arraycopy</code>).</p><h4>Mixin Order</h4><p> This method should be mixed in (lexically) after those domains that provide the
+ basic handling of unresolved methods (e.g., using &quot;just&quot; type information) but before
+ those that actually invoke a method!
+</p></div></div>
+    </li><li name="org.opalj.ai.domain.TheCode" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TheCodeextendsAnyRef"></a><a id="TheCode:TheCode"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/TheCode.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides information about the code block that is currently analyzed." href="TheCode.html"><span class="name">TheCode</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides information about the code block that is currently analyzed.</p><div class="fullcomment"><div class="comment cmt"><p>Provides information about the code block that is currently analyzed.</p><h4>Core Properties</h4><ul><li>Defines the public interface.
+</li></ul></div></div>
+    </li><li name="org.opalj.ai.domain.TheMethod" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TheMethodextendsTheCode"></a><a id="TheMethod:TheMethod"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/TheMethod.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides information about the method that is currently analyzed." href="TheMethod.html"><span class="name">TheMethod</span></a><span class="result"> extends <a href="TheCode.html" class="extype" name="org.opalj.ai.domain.TheCode">TheCode</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides information about the method that is currently analyzed.</p><div class="fullcomment"><div class="comment cmt"><p>Provides information about the method that is currently analyzed.</p><h4>Usage</h4><p>A domain that implements this trait usually defines a parameter that is set
+at construction time.</p><p>E.g.,</p><pre><span class="kw">class</span> MyDomain{<span class="kw">val</span> method : Method} <span class="kw">extends</span> Domain <span class="kw">with</span> TheMethod</pre><h4>Core Properties</h4><ul><li>Defines the public interface.</li><li>Makes the analyzed <a href="../../br/Method.html" class="extype" name="org.opalj.br.Method">org.opalj.br.Method</a> (and its <a href="../../br/Code.html" class="extype" name="org.opalj.br.Code">org.opalj.br.Code</a>) available.</li><li>Thread safe.
+</li></ul></div></div>
+    </li><li name="org.opalj.ai.domain.TheProject" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TheProjectextendsThePropertyStorewithLogContextProvider"></a><a id="TheProject:TheProject"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/TheProject.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides information about the underlying project." href="TheProject.html"><span class="name">TheProject</span></a><span class="result"> extends <a href="ThePropertyStore.html" class="extype" name="org.opalj.ai.domain.ThePropertyStore">ThePropertyStore</a> with <a href="../LogContextProvider.html" class="extype" name="org.opalj.ai.LogContextProvider">LogContextProvider</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides information about the underlying project.</p><div class="fullcomment"><div class="comment cmt"><p>Provides information about the underlying project.</p><h4>Usage</h4><p>If a (partial-) domain needs information about the project declare a corresponding
+self-type dependency.</p><pre><span class="kw">trait</span> MyIntegerValuesDomain <span class="kw">extends</span> IntegerValues { <span class="kw">this</span> : TheProject <span class="kw">=&gt;</span></pre><h4>Providing Information about a Project</h4><p>A domain that provides information about the currently analyzed project should inherit
+from this trait and implement the respective method.</p><h4>Core Properties</h4><ul><li>Defines the public interface.</li><li>Makes the analyzed <a href="../../br/analyses/Project.html" class="extype" name="org.opalj.br.analyses.Project">org.opalj.br.analyses.Project</a> available.</li><li>Thread safe.
+</li></ul></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p><b>It is recommended that the domain that provides the project information
+     does not use the <code>override</code> access flag.</b>
+     This way the compiler will issue a warning if two implementations are used
+     to create a final domain.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.ThePropertyStore" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ThePropertyStoreextendsAnyRef"></a><a id="ThePropertyStore:ThePropertyStore"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/ThePropertyStore.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="This trait is mixed in by those (partial) domains that require access to the project's property store." href="ThePropertyStore.html"><span class="name">ThePropertyStore</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This trait is mixed in by those (partial) domains that require access to the project's
+property store.</p>
+    </li><li name="org.opalj.ai.domain.ThrowAllPotentialExceptionsConfiguration" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ThrowAllPotentialExceptionsConfigurationextendsConfiguration"></a><a id="ThrowAllPotentialExceptionsConfiguration:ThrowAllPotentialExceptionsConfiguration"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/ThrowAllPotentialExceptionsConfiguration.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="A configuration that forces abstract interpretation to always create an exception if it is not possible to deduce that a specific exception will not be thrown." href="ThrowAllPotentialExceptionsConfiguration.html"><span class="name">ThrowAllPotentialExceptionsConfiguration</span></a><span class="result"> extends <a href="../Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A configuration that forces abstract interpretation to always create an exception
+if it is not possible to deduce that a specific exception will not be thrown.</p><div class="fullcomment"><div class="comment cmt"><p>A configuration that forces abstract interpretation to always create an exception
+if it is not possible to deduce that a specific exception will not be thrown.</p><h4>Usage</h4><p>If you need to adapt a setting just override the respective method in your domain
+or create a class that inherits from <a href="../Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a>.</p><h4>Core Properties</h4><ul><li>Concrete base implementation of the <a href="../Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a> trait that can
+   be used to create a final domain.</li><li>Thread safe.
+</li></ul></div></div>
+    </li><li name="org.opalj.ai.domain.ThrowNoPotentialExceptionsConfiguration" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ThrowNoPotentialExceptionsConfigurationextendsConfiguration"></a><a id="ThrowNoPotentialExceptionsConfiguration:ThrowNoPotentialExceptionsConfiguration"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/ThrowNoPotentialExceptionsConfiguration.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="A configuration that forces the abstract interpretor to never create an exception if it is not possible to deduce that the specific exception is guaranteed to be thrown." href="ThrowNoPotentialExceptionsConfiguration.html"><span class="name">ThrowNoPotentialExceptionsConfiguration</span></a><span class="result"> extends <a href="../Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A configuration that forces the abstract interpretor to never create an exception
+if it is not possible to deduce that the specific exception is guaranteed to be thrown.</p><div class="fullcomment"><div class="comment cmt"><p>A configuration that forces the abstract interpretor to never create an exception
+if it is not possible to deduce that the specific exception is guaranteed to be thrown.</p><h4>Usage</h4><p>If you need to adapt a setting just override the respective method in your domain
+or create a class that inherits from <a href="../Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a>.</p><h4>Core Properties</h4><ul><li>Concrete base implementation of the <a href="../Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a> trait that can
+   be used to create a final domain.</li><li>Thread safe.
+</li></ul></div></div>
+    </li><li name="org.opalj.ai.domain.ValuesCoordinatingDomain" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ValuesCoordinatingDomainextendsCorrelationalDomainwithConfiguration"></a><a id="ValuesCoordinatingDomain:ValuesCoordinatingDomain"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/ValuesCoordinatingDomain.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Can be mixed in to create a Domain that is intended to be used to coordinate the exchange of values between different domains." href="ValuesCoordinatingDomain.html"><span class="name">ValuesCoordinatingDomain</span></a><span class="result"> extends <a href="../CorrelationalDomain.html" class="extype" name="org.opalj.ai.CorrelationalDomain">CorrelationalDomain</a> with <a href="../Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Can be mixed in to create a <code>Domain</code> that is intended to be used to coordinate the
+exchange of values between different domains.</p><div class="fullcomment"><div class="comment cmt"><p>Can be mixed in to create a <code>Domain</code> that is intended to be used to coordinate the
+exchange of values between different domains.</p><p>This domain does not prescribe the semantics of any values, but
+instead implements methods that perform computations.</p><p>This domain directly inherits from <a href="../Domain.html" class="extype" name="org.opalj.ai.Domain">Domain</a> and can, thus, directly be used
+to create a final domain.</p><h4>Core Properties</h4><ul><li>Concrete base implementation of the following domains:<ul><li><a href="../Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a></li><li><a href="../MethodCallsDomain.html" class="extype" name="org.opalj.ai.MethodCallsDomain">MethodCallsDomain</a></li><li><a href="../FieldAccessesDomain.html" class="extype" name="org.opalj.ai.FieldAccessesDomain">FieldAccessesDomain</a></li><li><a href="../MonitorInstructionsDomain.html" class="extype" name="org.opalj.ai.MonitorInstructionsDomain">MonitorInstructionsDomain</a></li></ul></li><li>Thread safe.</li><li>Reusable.
+</li></ul></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="org.opalj.ai.domain#EmptyUpperTypeBound" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EmptyUpperTypeBound:org.opalj.collection.immutable.UIDSet[org.opalj.br.ReferenceType]"></a><a id="EmptyUpperTypeBound:UIDSet[ReferenceType]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/index.html#EmptyUpperTypeBound:org.opalj.collection.immutable.UIDSet[org.opalj.br.ReferenceType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">EmptyUpperTypeBound</span><span class="result">: <a href="../../collection/immutable/UIDSet.html" class="extype" name="org.opalj.collection.immutable.UIDSet">UIDSet</a>[<a href="../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>]</span>
+      </span>
+      
+      
+    </li><li name="org.opalj.ai.domain#analyzedEntity" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="analyzedEntity(domain:org.opalj.ai.Domain):String"></a><a id="analyzedEntity(Domain):String"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/index.html#analyzedEntity(domain:org.opalj.ai.Domain):String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">analyzedEntity</span><span class="params">(<span name="domain">domain: <a href="../Domain.html" class="extype" name="org.opalj.ai.Domain">Domain</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Tries to determine the name of the method/class that is analyzed;
+the result depends on the mixed-in domain(s).</p>
+    </li><li name="org.opalj.ai.domain.DomainValues" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DomainValues"></a><a id="DomainValues:DomainValues"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/DomainValues$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Factory for creating DomainValues objects." href="DomainValues$.html"><span class="name">DomainValues</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">Factory for creating <code>DomainValues</code> objects.</p>
+    </li><li name="org.opalj.ai.domain.Origins" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Origins"></a><a id="Origins:Origins"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/Origins$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Origins$.html"><span class="name">Origins</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.ai.domain.OriginsIterator" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OriginsIterator"></a><a id="OriginsIterator:OriginsIterator"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/OriginsIterator$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="OriginsIterator$.html"><span class="name">OriginsIterator</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.ai.domain.PerformAI" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PerformAI"></a><a id="PerformAI:PerformAI"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/PerformAI$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="A base abstract interpreter that can be used with any domain that has no special requirements on the abstract interpreter and which provides some convenience factory methods to run the abstract interpretation if the domain provide the necessary information." href="PerformAI$.html"><span class="name">PerformAI</span></a><span class="result"> extends <a href="../BaseAI.html" class="extype" name="org.opalj.ai.BaseAI">BaseAI</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A base abstract interpreter that can be used with any domain that has
+no special requirements on the abstract interpreter and which provides some convenience
+factory methods to run the abstract interpretation if the domain provide the necessary
+information.</p><div class="fullcomment"><div class="comment cmt"><p>A base abstract interpreter that can be used with any domain that has
+no special requirements on the abstract interpreter and which provides some convenience
+factory methods to run the abstract interpretation if the domain provide the necessary
+information.</p><p>The base interpreter can be interrupted by calling the <code>interrupt</code> method of the
+AI's thread.
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="../BoundedInterruptableAI.html" class="extype" name="org.opalj.ai.BoundedInterruptableAI">BoundedInterruptableAI</a> for an abstract interpreter that can easily be
+     interrupted and which also interrupts itself if a certain threshold is exceeded.</p></span></dd></dl></div>
+    </li><li name="org.opalj.ai.domain.PredefinedClassHierarchy" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PredefinedClassHierarchy"></a><a id="PredefinedClassHierarchy:PredefinedClassHierarchy"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/PredefinedClassHierarchy$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="PredefinedClassHierarchy$.html"><span class="name">PredefinedClassHierarchy</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.ai.domain.SpecialMethodsHandling" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SpecialMethodsHandling"></a><a id="SpecialMethodsHandling:SpecialMethodsHandling"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/SpecialMethodsHandling$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="SpecialMethodsHandling$.html"><span class="name">SpecialMethodsHandling</span></a>
+      </span>
+      
+      
+    </li>
+              </ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="org.opalj.ai.domain.Origin" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Origin"></a><a id="Origin:Origin"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/ai/domain/Origin$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Origin$.html"><span class="name deprecated" title="Deprecated: (Since version OPAL 1.1.0) introduces unnecessary (un)boxing; use the domain's (foreach)origin">Origin</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version OPAL 1.1.0)</i> introduces unnecessary (un)boxing; use the domain's (foreach)origin</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>
