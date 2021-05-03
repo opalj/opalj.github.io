@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Results</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/skel.min.js"></script>
+        <script src="/js/skel-layers.min.js"></script>
+        <script src="/js/init.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/scala.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css" />
+        <noscript>
+            <link rel="stylesheet" href="/css/skel.css" />
+        	<link rel="stylesheet" href="/css/style.css" />
+        	<link rel="stylesheet" href="/css/style-xlarge.css" />
+        </noscript>
+    </head>
+    <body id="top">
+        <header id="header" class="skel-layers-fixed">
+            <h1><a href="https://www.opal-project.de"><img src="/OPALLogo.png" width="13" height="13">&nbsp;OPAL Project</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="/index.html">Getting Started</a></li>
+                    <li><a href="/library/api/SNAPSHOT/org/opalj/index.html">ScalaDoc</a></li>
+                    <li><a href="https://github.com/opalj/OPAL">Repository</a></li>
+                    <li><a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22de.opal-project%22">Maven Central</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section id="one" class="wrapper style1">
+            <div class="container">
+    			<div class="row">
+                    <div class="3u">
+                        <nav>
+                                                    
+                                <a href="/index.html">OPAL</a><br>
+                                                                                
+                                <br><b>Getting Started</b><br>
+                                                                                
+                                <a href="/tutorial/FixedPointAnalyses.html">Writing Fixed-Point Analyses</a><br>
+                                                                                
+                                <a href="/tutorial/CollaborativeAnalyses.html">Collaborative Analyses</a><br>
+                                                                                
+                                <a href="/tutorial/Lattices.html">Lattices</a><br>
+                                                                                
+                                <a href="/tutorial/Results.html">Results</a><br>
+                                                                                
+                                <a href="/tutorial/Schedulers.html">Schedulers</a><br>
+                                                                                
+                                <br><b>Further Tutorials</b><br>
+                                                                                
+                                <a href="/ReadingClassFiles.html">Reading Class Files</a><br>
+                                                                                
+                                <a href="/Projects.html">Loading Java Projects</a><br>
+                                                                                
+                                <a href="/ClassHierarchy.html">Using the Class Hierarchy</a><br>
+                                                                                
+                                <a href="/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
+                                                                                
+                                <a href="/TAC.html">3-Address Code/SSA Code</a><br>
+                                                                                
+                                <a href="/WritingAnalyses.html">Writing Analyses</a><br>
+                                                                                
+                                <br><b>Tools</b><br>
+                                                                                
+                                <a href="/DeveloperTools.html">Supporting OPAL Developers</a><br>
+                                                                                
+                                <a href="/Hermes.html">Hermes</a><br>
+                                                                                
+                                <a href="/Opium.html">OPIUM</a><br>
+                                                                                
+                                <br><b>Showcases</b><br>
+                                                                                
+                                <a href="/UselessBoxing.html">Detecting Useless Boxings</a><br>
+                                                                                
+                                <a href="/JDK8Dependencies.html">Package Dependencies in JDK8</a><br>
+                                                                                
+                                <a href="/JDK8Complexity.html">Complexity of the JDK8</a><br>
+                                                                                
+                                <br><b>Artifacts</b><br>
+                                                                                
+                                <a href="/Artifacts.html">Research Artifacts</a><br>
+                                                                            </nav>
+                        <hr/>
+                        <div class="hide-at-medium">
+                            Please, report issues or problems in the documentation using <a href="https://github.com/opalj/OPAL/issues">OPAL's issue tracker</a>, by going to the <a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link">OPAL gitter chat room</a> or by writing an email to <a href="mailto:opal_at_st.informatik.tu-darmstadt.de">opal(at)st.informatik.tu-darmstadt.de</a>.
+                        </div>
+                    </div>
+    				<div class="9u">
+                        <h1>Results</h1>
+<p>OPAL provides several options for your analyses to return their results.<br />
+You should have read the tutorial on <a href="FixedPointAnalyses.html">Writing Fixed-Point Analyses</a> first that introduces the basic concepts.</p>
+<p>In OPAL, types of results are represented by the subtypes of <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyComputationResult.html">PropertyComputationResult</a>.<br />
+Let's see what is possible using them.</p>
+<h2>NoResult</h2>
+<p><a href="/library/api/SNAPSHOT/org/opalj/fpcf/NoResult.html">NoResult</a> is the simplest one.<br />
+As the name suggests, it is used when your analysis cannot compute anything.<br />
+Note that in contrast to all other result types, <code>NoResult</code> can only be returned by the analysis function, not by a continuation (it is not a <a href="/library/api/SNAPSHOT/org/opalj/fpcf/ProperPropertyComputationResult.html">ProperPropertyComputationResult</a>).
+This is because a continuation continues the computation of some result, thus it is only executed when there is something to be computed.</p>
+<h2>Result</h2>
+<p><a href="/library/api/SNAPSHOT/org/opalj/fpcf/Result.html">Result</a> is one of the most important types of results.<br />
+It represents a single, final result of your analysis.<br />
+It consists of the entity for which some property is valid and that respective property:</p>
+<pre><code class="language-scala">Result(classFile, ImmutableClass)
+</code></pre>
+<h2>InterimResult</h2>
+<p><a href="/library/api/SNAPSHOT/org/opalj/fpcf/InterimResult.html">InterimResult</a> is the second important type of result.<br />
+Like a <code>Result</code>, it represents a single result of your analysis, but one that is not yet final because it may depend on some other properties that were not yet available.<br />
+It consists of the entity for which you are computing a property, the bound(s) to that property that you already know, the open dependencies and the continuation function to be called when there is an update to one of the dependencies.<br />
+There are multiple ways to construct an <code>InterimResult</code>, the three most important ones shown here:</p>
+<pre><code class="language-scala">InterimResult.forUB(classFile, ImmutableClass, dependencies, continuation)
+InterimResult.forLB(classFile, MutableClass, dependencies, continuation)
+InterimResult(classFile, MutableClass, ImmutableClass, dependencies, continuation)
+</code></pre>
+<p><code>InterimResult.forUB()</code> is used to provide an upper bound for a property, i.e., an optimistic assumption of what the final result could be.<br />
+<code>InterimResult.forLB()</code> is its counterpart for a lower bound, i.e., a pessimistic assumption.<br />
+Finally, if you can provide both a lower and an upper bound, <code>InterimResult</code> has an <code>apply</code> method that takes both bounds.</p>
+<h2>MultiResult</h2>
+<p><a href="/library/api/SNAPSHOT/org/opalj/fpcf/MultiResult.html">MultiResult</a>, like <code>Result</code> represents final results of your analysis, but it allows you to return several at once.<br />
+You construct it from a number of <a href="/library/api/SNAPSHOT/org/opalj/fpcf/FinalEP.html">FinalEP</a> objects, each of which is one property for one entity.<br />
+Make sure that they are for different entities or different kinds of properties though!</p>
+<pre><code class="language-scala">MultResult(classHierarchy.allSubclassTypes(classType).map(FinalEP(_, MutableClass)))
+</code></pre>
+<h2>Results</h2>
+<p><a href="/library/api/SNAPSHOT/org/opalj/fpcf/Results.html">Results</a> allows your analysis to return several results of any kind at once, as long as they are for different entities or different kinds of properties.</p>
+<pre><code class="language-scala">Results(Result(classFile, MutableClass), InterimResult.forUB(field, NonTransitivelyImmutableField, fieldDependencies, fieldContinuation))
+</code></pre>
+<h2>IncrementalResult</h2>
+<p><a href="/library/api/SNAPSHOT/org/opalj/fpcf/IncrementalResult.html">IncrementalResult</a> allows your analysis to guide the computation order.<br />
+Use it with an eager analysis that you don't start for all entities, but only for some kind of base case (e.g., for <code>Java.lang.Object</code>) to schedule the analysis of more complex cases only once the respective base case has been computed.<br />
+<code>IncrementalResult</code> takes one result on any kind and an iterator of pairs of an analysis function and the entity this function should be applied to:</p>
+<pre><code class="language-scala">IncrementalResult(Result(classFile, immutability), classHierarchy.allSubclassTypes(classType).map((analyzeClassImmutability, _)))
+</code></pre>
+<h2>PartialResult</h2>
+<p><a href="/library/api/SNAPSHOT/org/opalj/fpcf/IncrementalResult.html">PartialResult</a> allows several analyses to collaboratively compute a single property (see the tutorial on <a href="CollaborativeAnalyses.html">Collaborative Analyses</a>).
+A <code>PartialResult</code> is different from the other result types in that it does not take a property value, but, in addition to analyzed entity, the kind of property (identified by the <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyKey.html">PropertyKey</a>) and a function that is applied to whatever value that entity/property kind pair currently has:</p>
+<pre><code class="language-scala">PartialResult[DeclaredMethod, Callers](method, Callers.key, {
+    case InterimUBP(ub: Callers) ⇒
+        if (!ub.hasVMLevelCallers)
+            Some(InterimEUBP(method, ub.updatedWithVMLevelCall()))
+        else None
+    case _: EPK[_, _] ⇒
+        Some(InterimEUBP(method, OnlyVMLevelCallers))
+    case r ⇒
+        throw new IllegalStateException(s&quot;unexpected previous result $r&quot;)
+})
+</code></pre>
+<p>It has to return a <code>Some</code> of some new value for the property if you want to update the value or it can return <code>None</code> if no update is necessary.<br />
+As you can see, while it is only some partial result, it does not have any dependencies, thus, no further computation will be scheduled once the partial result has been applied.<br />
+If you need to schedule further updates, use an <code>InterimPartialResult</code>:</p>
+<h2>InterimPartialResult</h2>
+<p><a href="/library/api/SNAPSHOT/org/opalj/fpcf/IncrementalResult.html">InterimPartialResult</a> finally allows you to give several <code>PartialResult</code>s (or even none) and give a set of dependencies and a continuation function to be called when these dependencies are updated:</p>
+<pre><code class="language-scala">InterimPartialResult(None, dependencies, continuation)
+</code></pre>
+<p>In this example, we don't provide any <code>PartialResult</code>s (<code>None</code>), but still ensure that <code>continuation</code> is called whenever one of the dependencies changes.</p>
+<h2>What next?</h2>
+<p>This concludes our overview of different types of results in OPAL.<br />
+If you haven't done so ye, we suggest you read on what option you have for <a href="Lattices.html">Lattices</a> and <a href="Schedulers.html">Schedulers</a> in OPAL.
+You can also read about <a href="CollaborativeAnalyses.html">Collaborative Analyses</a> for more detail on <code>PartialResult</code> and <code>InterimPartialResult</code>.</p>
+
+                    </div>
+                </div>
+            </div>
+    	</section>
+
+        <footer id="footer">
+    	    <div class="container">
+    			<div class="row double">
+                    <div class="6u">
+                        <div class="row collapse-at-2">
+                            <div class="6u">
+                                <h3>Stay connected and get help!</h3>
+                                <ul class="icons">
+                                    <li><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.opal-project.de%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=TheOpalProject&tw_p=followbutton" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                                    <li><a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="icon fa-users"><span class="label">Gitter</span></a></li>
+                                    <li><a href="https://trello.com/theopalproject" class="icon fa-trello"><span class="label">Trello</span></a></li>
+                                    <li><a href="https://stackoverflow.com/questions/tagged/opal-framework" class="icon fa-stack-overflow"><span class="label">Stackoverflow</span></a></li>
+                                    <li><a href="https://hub.docker.com/r/opalj/sbt_scala_javafx/" class="icon fa-cloud"><span class="label">Docker</span></a></li>
+                                </ul>
+                                <h3>Related</h3>
+                                <ul class="alt">
+                                    <li><a href="https://www.openhub.net/p/OPAL-Project">OPAL on OpenHub</a></li>
+                                </ul>
+                                <h3>Supported By</h3>
+                                <ul class="alt">
+                                    <li><a href="https://www.yourkit.com/"><img src="/images/yklogo.png" width="139", height="33"></a><br>
+                                        YourKit supports open source projects with its full-featured Java Profiler.
+                                        YourKit, LLC is the creator of <a href="https://www.yourkit.com/java/profiler/">YourKit Java Profiler</a>
+                                        an innovative and intelligent tool for profiling Java applications.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="6u">
+                                <h3>Core Papers</h3>
+                                <ul class="alt">
+                                    <li><a href="https://2020.esec-fse.org/details/fse-2020-papers/191">Modular Collaborative Program Analysis in OPAL</a></li>
+                                    <li><a href="https://conf.researchr.org/details/issta-2020/issta-2020-papers/18/A-Programming-Model-for-Semi-implicit-Parallelization-of-Static-Analyses">A Programming Model for Semi-implicit Parallelization of Static Analyses</a></li>
+                                    <li><a href="https://pldi20.sigplan.org/details/SOAP-2020-papers/1">TACAI: An Intermediate Representation based on Abstract Interpretation</a></li>
+                                    <li><a href="https://conf.researchr.org/track/ecoop-issta-2018/SOAP-2018-papers#program">Lattice Based Modularization of Static Analyses</a></li>
+                                    <li><a href="articles/Hermes@SOAP18.pdf">Assessment and Creation of Effective Test Corpora</a></li>
+                                    <li><a href="https://doi.acm.org/10.1145/2950290.2950312">Call Graph Construction for Java Libraries</a></li>
+                                    <li><a href="https://doi.acm.org/10.1145/2614628.2614630">A software product line for static analyses: the OPAL framework</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="6u">
+                        <h3>Research Using OPAL</h3>
+                        <emph>The following papers give you an idea what you can do with OPAL.</emph>
+                        <ul class="alt">
+                            <li><a href="https://dl.acm.org/doi/10.1145/3320269.3384745">Hidden in Plain Sight: Obfuscated Strings Threatening Your Privacy</a></li>
+                            <li><a href="https://conf.researchr.org/details/issta-2019/issta-2019-Technical-Papers/24/Judge-Identifying-Understanding-and-Evaluating-Sources-of-Unsoundness-in-Call-Grap">Judge: Identifying, Understanding, and Evaluating Sources of Unsoundness in Call Graphs</a></li>
+                            <li><a href="https://2018.splashcon.org/event/splash-2018-oopsla-algebraic-effects-for-the-masses">Algebraic Effects for the Masses</a></li>
+                            <li><a href="http://michael-reif.name/publications/JCG.pdf">Systematic Evaluation of the Unsoundness of Call Graph Construction Algorithms for Java</a></li>
+                            <li><a href="https://ieeexplore.ieee.org/abstract/document/9000061">A Unified Lattice Model and Framework for Purity Analyses</a></li>
+                            <li><a href="http://www.st.informatik.tu-darmstadt.de/artifacts/codematch/">CodeMatch: Obfuscation won't Conceal your Repackaged App</a></li>
+                            <li><a href="https://doi.acm.org/10.1145/2786805.2786865">Hidden Truths in Dead Software Paths</a></li>
+                            <li><a href="https://doi.acm.org/10.1145/2786805.2786829">Getting to know you. . . Towards a Capability Model for Java</a></li>
+                        </ul>
+                        <h3>Related Presentations</h3>
+                        <ul class="alt">
+                            <li><a href="/articles/Your_JDK-Entwicklertag2015.pdf">Your JDK 8</a></li>
+                            <li><a href="/articles/FPCF-Slides@SOAP18.pdf">Lattice Based Modularization of Static Analyses</a></li>
+                        </ul>
+                    </div>
+    			</div>
+    			<ul class="copyright">
+                    <li>&copy; The OPAL Project. All rights reserved.</li>
+                    <li><a href="https://raw.githubusercontent.com/stg-tud/opal/master/LICENSE">License (BSD 2 Clause)</a></li>
+                    <li><img src="/Athene.png" height="27" style="vertical-align:middle"></li>
+    				<li>Design: <a href="https://templated.co">TEMPLATED</a></li>
+    			</ul>
+    		</div>
+    	</footer>
+
+    </body>
+
+    <script>
+        hljs.configure({
+          tabReplace: '    ', // 4 spaces
+          languages: ["scala","java"]
+        })
+        hljs.initHighlightingOnLoad();
+    </script>
+</html>
