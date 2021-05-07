@@ -18,10 +18,10 @@
     </head>
     <body id="top">
         <header id="header" class="skel-layers-fixed">
-            <h1><a href="https://www.opal-project.de"><img src="/OPALLogo.png" width="13" height="13">&nbsp;OPAL Project</a></h1>
+            <h2><a href="/"><img src="/OPALLogo.png" width="13" height="13">&nbsp;OPAL Project</a></h2>
             <nav id="nav">
                 <ul>
-                    <li><a href="/index.html">Getting Started</a></li>
+                    <li><a href="/Publications.html">Publications</a></li>
                     <li><a href="/library/api/SNAPSHOT/org/opalj/index.html">ScalaDoc</a></li>
                     <li><a href="https://github.com/opalj/OPAL">Repository</a></li>
                     <li><a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22de.opal-project%22">Maven Central</a></li>
@@ -36,8 +36,6 @@
                     <div class="3u">
                         <nav>
                                                     
-                                <a href="/index.html">OPAL</a><br>
-                                                                                
                                 <br><b>Getting Started</b><br>
                                                                                 
                                 <a href="/tutorial/FixedPointAnalyses.html">Writing Fixed-Point Analyses</a><br>
@@ -52,17 +50,17 @@
                                                                                 
                                 <br><b>Further Tutorials</b><br>
                                                                                 
-                                <a href="/ReadingClassFiles.html">Reading Class Files</a><br>
+                                <a href="/examples/ReadingClassFiles.html">Reading Class Files</a><br>
                                                                                 
-                                <a href="/Projects.html">Loading Java Projects</a><br>
+                                <a href="/examples/Projects.html">Loading Java Projects</a><br>
                                                                                 
-                                <a href="/ClassHierarchy.html">Using the Class Hierarchy</a><br>
+                                <a href="/examples/ClassHierarchy.html">Using the Class Hierarchy</a><br>
                                                                                 
-                                <a href="/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
+                                <a href="/examples/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
                                                                                 
-                                <a href="/TAC.html">3-Address Code/SSA Code</a><br>
+                                <a href="/examples/TAC.html">3-Address Code/SSA Code</a><br>
                                                                                 
-                                <a href="/WritingAnalyses.html">Writing Analyses</a><br>
+                                <a href="/examples/WritingAnalyses.html">Writing Analyses</a><br>
                                                                                 
                                 <br><b>Tools</b><br>
                                                                                 
@@ -90,17 +88,22 @@
                         </div>
                     </div>
     				<div class="9u">
-                        <h1>Writing Fixed-Point Analyses</h1>
-<p>This tutorial will guide you through the implementation of a simple fixed-point analysis for class immutability.</p>
-<h2>Defining a Lattice</h2>
-<p>Fixed-point analyses in OPAL take their result values from explicitly defined lattices.<br />
+                        <h1 id="implementing-fixed-point-analyses">Implementing Fixed-Point Analyses</h1>
+<p>This tutorial will guide you through the implementation of a simple fixed-point analysis for class immutability.<br />
+This analysis checks whether instances of a class are mutable, non-transitively immutable (i.e., their fields are <code>final</code> but may point to mutable objects) or transitively immutable (i.e., their fields are <code>final</code> and only point to other transitively immutable classes).</p>
+<p>We will develop the implementation in small steps, but you can get the complete, runnable source code for this analysis <a href="ClassImmutabilityAnalysis.scala">here</a>.</p>
+<h2 id="defining-a-lattice">Defining a Lattice</h2>
+<p>Fixed-point analyses in OPAL produce result values from explicitly defined <a href="https://en.wikipedia.org/wiki/Lattice_(order)">lattices</a>.<br />
 The lattice for our class immutability analysis consists of several parts:</p>
-<p>First, a trait that extends <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyMetaInformation.html">PropertyMetaInformation</a>:</p>
-<pre><code class="language-scala">sealed trait ClassImmutabilityPropertyMetaInformation extends PropertyMetaInformation { [...] }
+<p>First, a trait that extends <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyMetaInformation.html"><code>PropertyMetaInformation</code></a>:</p>
+<pre><code class="language-scala">sealed trait ClassImmutabilityPropertyMetaInformation extends PropertyMetaInformation {
+    final type Self = ClassImmutability
+}
 </code></pre>
-<p>Second, a trait for our lattice (we chose it to be an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/OrderedProperty.html">OrderedProperty</a> which provides additional checks for the correctness of our analyses):</p>
+<p>We use this to define the type of our lattice to be <code>ClassImmutability</code>, which we implement next.</p>
+<p><code>ClassImmutability</code> is the main trait for our lattice (we chose it to be an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/OrderedProperty.html"><code>OrderedProperty</code></a> which provides additional checks for the correctness of our analyses):</p>
 <pre><code class="language-scala">sealed trait ClassImmutability extends ClassImmutabilityPropertyMetaInformation with OrderedProperty {
-    def meet(other: ClassImmutability): ClassImmutability
+    def meet(other: ClassImmutability): ClassImmutability = { [...] }
 
     override def checkIsEqualOrBetterThan(e: Entity, other: ClassImmutability): Unit = {
         if (meet(other) != other) {
@@ -108,43 +111,36 @@ The lattice for our class immutability analysis consists of several parts:</p>
         }
     }
 
-    [...]
+    final def key: PropertyKey[ClassImmutability] = ClassImmutability.key
 }
 </code></pre>
-<p>We can define whatever we might need to easily handle the lattice values later one.<br />
-Here, we define a <code>meet</code> function to compute the common lower bound of two values<a title="In OPAL, the most optimistic value is top, the most pessimistic value is bottom.\nThus, the meet function will return a value that over-approximates its two inputs."><sup>[note]</sup></a>.</p>
-<p>Because we chose class immutability to be an <code>OrderedProperty</code>, we have to implement the <code>checkIsEqualOrBetterThan</code> method to throw an exception if the <code>other</code> value is more precise.<br />
-Here, we can use our defined <code>meet</code> function to implement this easily.<br />
-If we can't provide such check, if it would be too expensive or if we just don't care for this additional help in checking and debugging the correctness of our analyses, we could have extended <a href="/library/api/SNAPSHOT/org/opalj/fpcf/Property.html">Property</a> instead of <code>OrderedProperty</code>.</p>
-<p>Next, we set up a singleton that allows us to statically refer to our lattice later on:</p>
-<pre><code class="language-scala">object ClassImmutability extends ClassImmutabilityPropertyMetaInformation { [...] }
-</code></pre>
-<p>Finally, we have to specify the individual lattice values, called <em>Properties</em>, of which we define three simple ones here:</p>
-<pre><code class="language-scala">case object TransitivelyImmutableClass extends ClassImmutability {
-    override def meet(other: ClassImmutability): ClassImmutability = other
-}
+<p>We can define whatever we might need to easily handle the lattice values later on.<br />
+Here, we define a <code>meet</code> function to compute the common lower bound of two values<sup title="In OPAL, the most optimistic value is top, the most pessimistic value is bottom.\nThus, the meet function will return a value that over-approximates its two inputs.">[note]</sup>.</p>
+<p>The trait <code>OrderedProperty</code> requires us to implement the <code>checkIsEqualOrBetterThan</code> function to throw an exception if the <code>other</code> value is more precise.<br />
+Here, we can use our defined <code>meet</code> function to check whether <code>other</code> is smaller easily.<br />
+If we can't provide such check, if it would be too expensive or if we just don't care for this additional help in checking and debugging the correctness of our analyses, we could have extended <a href="/library/api/SNAPSHOT/org/opalj/fpcf/Property.html"><code>Property</code></a> instead of <code>OrderedProperty</code>.</p>
+<p>We also have to provide a <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyKey.html"><code>PropertyKey</code></a> which is later used to tag and query results with.<br />
+We will create that key below in a companion object.</p>
+<p>We now implement the individual lattice values, called <em>Properties</em>, of which we define three simple ones here:</p>
+<pre><code class="language-scala">case object TransitivelyImmutableClass extends ClassImmutability
 
-case object NonTransitivelyImmutableClass extends ClassImmutability {
-    override def meet(other: ClassImmutability): ClassImmutability = {
-        if(other == TransitivelyImmutableClass) this
-        else other
-    }
-}
+case object NonTransitivelyImmutableClass extends ClassImmutability
 
-case object MutableClass extends ClassImmutability {
-    override def meet(other: ClassImmutability): ClassImmutability = MutableClass
-}
+case object MutableClass extends ClassImmutability
 </code></pre>
 <p>This is a simple lattice consisting of singleton values, but it is possible to create more complex lattices by using (case) classes for the lattice values that can store more information, e.g., sets of values for set-based lattices.<br />
 Check <a href="/tutorial/Lattices.html">here</a> for more information on what else you can do with lattices in OPAL.</p>
-<p>Of course we have to provide the <code>meet</code> function that we defined earlier.</p>
-<p>We now have to declare a few more values:</p>
-<p>First, in the <code>PropertyMetaInformation</code>, we define the type of the lattice to be <code>ClassImmutability</code>:</p>
-<pre><code class="language-scala">sealed trait ClassImmutabilityPropertyMetaInformation extends PropertyMetaInformation {
-    final type Self = ClassImmutability
+<p>Now we can implement the <code>meet</code> function that we defined earlier:</p>
+<pre><code class="language-scala">def meet(other: ClassImmutability): ClassImmutability = {
+    (this, other) match {
+        case (TransitivelyImmutableClass, _)       ⇒ other
+        case (_, TransitivelyImmutableClass)       ⇒ this
+        case (MutableClass, _) | (_, MutableClass) ⇒ MutableClass
+        case (_, _)                                ⇒ this
+    }
 }
 </code></pre>
-<p>Then, we create a new <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyKey.html">PropertyKey</a> which we can later use to tag and query results with:</p>
+<p>Finally, we set up a singleton that allows us to statically refer to our lattice later on:</p>
 <pre><code class="language-scala">object ClassImmutability extends ClassImmutabilityPropertyMetaInformation {
     final val key: PropertyKey[ClassImmutability] = PropertyKey.create(
         &quot;ClassImmutability&quot;,
@@ -152,29 +148,24 @@ Check <a href="/tutorial/Lattices.html">here</a> for more information on what el
     )
 }
 </code></pre>
-<p>The key consists of a unique name of our choice and a sound fallback value to be used when someone tries to retrieve a class immutability value without previously executing the corresponding analysis.</p>
-<p>Finally, we provide access to this key also for all lattice values:</p>
-<pre><code class="language-scala">sealed trait ClassImmutability extends ClassImmutabilityPropertyMetaInformation with {
-
-    [...]
-
-    final def key: PropertyKey[ClassImmutability] = ClassImmutability.key
-}
-</code></pre>
-<h2>Writing the Analysis</h2>
-<p>In order to implement the analysis itself, we create a class that extends <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFAnalysis.html">FPCFAnalysis</a>.</p>
+<p>Here, we finally create the <code>PropertyKey</code>.
+It consists of a unique name of our choice and a sound fallback value to be used when someone tries to retrieve a class immutability value without previously executing the corresponding analysis.</p>
+<h2 id="implementing-the-analysis">Implementing the Analysis</h2>
+<p>We will now implement the analysis itself.<br />
+Remember that the goal is to check whether instance fields are <code>final</code> and whether they can only point to immutable objects.</p>
+<p>We first create a class that extends <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFAnalysis.html"><code>FPCFAnalysis</code></a>.</p>
 <pre><code class="language-scala">class ClassImmutabilityAnalysis(val project: SomeProject) extends FPCFAnalysis { [...] }
 </code></pre>
-<p>This requires a <a href="/library/api/SNAPSHOT/org/opalj/br/analyses/Project.html">Project</a><a title="SomeProject gets rid of Project's type parameter for you."><sup>[note]</sup></a> through which we can later access all information about the analyzed code.</p>
-<p>The core of a fixed-point analysis is a single function that processes one entity and produces some form of <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyComputationResult.html">PropertyComputationResult</a>.</p>
+<p>This requires a <a href="/library/api/SNAPSHOT/org/opalj/br/analyses/Project.html"><code>Project</code></a><sup title="SomeProject gets rid of Project's type parameter for you.">[note]</sup> through which we can later access all information about the analyzed code.</p>
+<p>The core of a fixed-point analysis is a single function that processes one entity and produces some form of <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyComputationResult.html"><code>PropertyComputationResult</code></a>.</p>
 <pre><code class="language-scala">class ClassImmutabilityAnalysis(val project: SomeProject) extends FPCFAnalysis { 
     def analyzeClassImmutability(classFile: ClassFile): ProperPropertyComputationResult = { [...] }
 
     [...]
 }
 </code></pre>
-<p>We use <a href="/library/api/SNAPSHOT/org/opalj/br/ClassFile.html">ClassFile</a> for the entity, as that represents a class.<br />
-Using a <a href="/library/api/SNAPSHOT/org/opalj/fpcf/ProperPropertyComputationResult.html">ProperPropertyComputationResult</a> signals that our analysis will always be able to return a result.</p>
+<p>Method <code>analyzeClassImmutability</code> takes a <a href="/library/api/SNAPSHOT/org/opalj/br/ClassFile.html"><code>ClassFile</code></a> for the entity, as that represents a class.<br />
+It returns a <a href="/library/api/SNAPSHOT/org/opalj/fpcf/ProperPropertyComputationResult.html"><code>ProperPropertyComputationResult</code></a> to signal it will always be able to return a result<sup title="If there are cases where no result can be computed, use PropertyComputationResult instead.">[note]</sup>.</p>
 <p>Next, we initialize some state:</p>
 <pre><code class="language-scala">def analyzeClassImmutability(classFile: ClassFile): ProperPropertyComputationResult = {
     var immutability: ClassImmutability = TransitivelyImmutableClass
@@ -184,7 +175,7 @@ Using a <a href="/library/api/SNAPSHOT/org/opalj/fpcf/ProperPropertyComputationR
 }
 </code></pre>
 <p>We need to keep track of the information we already have about the immutability of our class, and as we are implementing an optimistic analysis, we initially assume it might be transitively immutable.<br />
-Additionally, we will need to keep track of some dependencies. Dependecies are of type <a href="/library/api/SNAPSHOT/org/opalj/fpcf/EOptionP.html">EOptionP</a>, i.e., a pair of some entity with, optionally, some property that entity has.<br />
+Additionally, we will need to keep track of some dependencies. Dependecies are of type <a href="/library/api/SNAPSHOT/org/opalj/fpcf/EOptionP.html"><code>EOptionP</code></a>, i.e., a pair of some entity with, optionally, some property that entity has.
 We store them in a map with the entity as the key in order to be able to access them easily.</p>
 <p>Now it is time to gather the information we need.<br />
 We start by checking the immutability of the class we inherit from.<br />
@@ -234,7 +225,7 @@ Checking whether the superclass is <code>java.lang.Object</code> not only allows
 <p>Next, from the type, we try to retrieve the actual classfile from the analyzed project.<br />
 It may be the case that the classfile for the superclass is not part of the analyzed project and thus, we get no result here.<br />
 In that case, we soundly assume that it is mutable and can thus end our analysis here early, returning that our classfile represents a mutable class.<br />
-Otherwise, we ask the <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyStore.html">PropertyStore</a> for the superclass' class immutabilty, using the key we defined in our lattice.<br />
+Otherwise, we ask the <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyStore.html"><code>PropertyStore</code></a> for the superclass' class immutabilty, using the key we defined in our lattice.<br />
 The property store is the central data structure that keeps track of all properties that have been computed for any entity so far.<br />
 We didn't have to define it, because <code>FPCFAnalysis</code> provides it for us.<br />
 Finally, we use our previously defined <code>checkSuperclass</code> function to process the value that we got from the property store.</p>
@@ -263,7 +254,7 @@ Finally, we use our previously defined <code>checkSuperclass</code> function to 
 </code></pre>
 <p>The <code>checkField</code> function is similar to <code>checkSuperclass</code>.<br />
 We assume that a lattice <code>FieldImmutability</code> exists that is essentially identical to the one defined above for class immutability.<br />
-Instead of using a predefined <code>meet</code> function, here we check the possible values explicitly.
+Instead of using a predefined <code>meet</code> meh, here we check the possible values explicitly.
 We could of course have defined a function to incorporate a <code>FieldImmutability</code> into a <code>ClassImmutability</code> in the class immutability lattice to make our life easier here.</p>
 <p>In order to get the immutability properties of the class' instance fields, we filter the classfile's fields for those that aren't static, then we use a second form of the property store's <code>apply</code> method to query several properties at once and finally pass each of the results to <code>checkField</code>.</p>
 <p>Now we have queried all information that we need, but as you have seen, the property store may return <code>EOptionP</code> values that have no upper bound yet for the property we're interested in, or values that aren't be final yet.<br />
@@ -277,7 +268,7 @@ In order to be able to process them once they are available, we define another f
     [...]
 }
 </code></pre>
-<p>The continuation function gets an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/EPS.html">EPS</a><a title="SomeEPS gets rid of EPS's type parameters for you."><sup>[note]</sup></a> which is an <code>EOptionP</code> that is guaranteed to have a value for the property.
+<p>The continuation function gets an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/EPS.html"><code>EPS</code></a><sup title="SomeEPS gets rid of EPS's type parameters for you.">[note]</sup> which is an <code>EOptionP</code> that is guaranteed to have a value for the property.
 Different to the analysis function itself, the continuation <em>must</em> return a result, thus we have to use <code>ProperPropertyComputationResult</code> and may not use the more general <code>PropertyComputationResult</code> here.
 Let's not worry about <code>continuation</code>'s implementation for now, we will fill that out later.</p>
 <p>Now, there's only one thing left to do, and that is returning the result of our analysis.<br />
@@ -298,7 +289,7 @@ def analyzeClassImmutability(classFile: ClassFile): ProperPropertyComputationRes
 </code></pre>
 <p>There are two possible cases here:<br />
 If we have no dependencies, or if we reached the lattice's bottom value <code>MutableClass</code>, we can just return the immutability that we computed.<br />
-Otherwise, however, this immutability is not yet final and we have to create an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/InterimResult.html">InterimResult</a> instead.<br />
+Otherwise, however, this immutability is not yet final and we have to create an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/InterimResult.html"><code>InterimResult</code></a> instead.<br />
 We specify that the given immutability is an optimistic upper bound by using the <code>forLB</code> factory method.<br />
 Additionally, we provide the set of dependencies and the <code>continuation</code> function defined earlier.<br />
 Calling the <code>result</code> function is the final thing to do in our analysis.</p>
@@ -314,9 +305,9 @@ Calling the <code>result</code> function is the final thing to do in our analysi
 </code></pre>
 <p>It is very simple, we just use the updated value's entity to decide whether we need to process it using <code>checkSuperclass</code> or <code>checkField</code> and make sure that the types are as expected.<br />
 Once we processed the updated value, we just call <code>result</code> to provide the result of <code>continuation</code> as well.</p>
-<h2>Scheduling the Analysis</h2>
-<p>The analysis itself is completed now, but we still need to tell OPAL how to use it.<br />
-We do so using an <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFAnalysisScheduler.html">FPCFAnalysisScheduler</a>:</p>
+<h2 id="scheduling-the-analysis">Scheduling the Analysis</h2>
+<p>The analysis itself is completed now, but we still need to tell OPAL how to execute it.<br />
+We do so using an <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFAnalysisScheduler.html"><code>FPCFAnalysisScheduler</code></a>:</p>
 <pre><code class="language-scala">trait ClassImmutabilityAnalysisScheduler extends FPCFAnalysisScheduler {
     def derivedProperty: PropertyBounds = PropertyBounds.ub(ClassImmutability)
 
@@ -325,14 +316,14 @@ We do so using an <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFAnalysisS
     override def uses: Set[PropertyBounds] = Set(PropertyBounds.ub(ClassImmutability), PropertyBounds.ub(FieldImmutability))
 }
 </code></pre>
-<p>First we define that we derive upper bounds for <code>ClassImmutability</code>, i.e., that this is an optimistic analysis of class immutability.<br />
+<p>With <code>derivedProperty</code>, we define that our analysis derives upper bounds (<code>ub</code>) for <code>ClassImmutability</code>, i.e., that this is an optimistic analysis of class immutability.<br />
 While not necessary here, we do this here for convenience. We will use it shortly.<br />
 Secondly, we have to specify what information our analysis uses.<br />
-The analysis above uses no <a href="/library/api/SNAPSHOT/org/opalj/br/analyses/ProjectInformationKey.html">ProjectInformationKey</a><a title="ProjectInformationKeys provide aggregated information about a project, such as a call graph or the set of methods that access each field."><sup>[note]</sup></a>, but if it did, we had to specify them here.
+The analysis above uses no <a href="/library/api/SNAPSHOT/org/opalj/br/analyses/ProjectInformationKey.html"><code>ProjectInformationKey</code></a><sup title="ProjectInformationKeys provide aggregated information about a project, such as a call graph or the set of methods that access each field.">[note]</sup>, but if it did, we had to specify them here.
 However, the analysis does use values from fixed-point computations: It needs to query and process upper bounds of both <code>ClassImmutability</code> (for the superclass) and <code>FieldImmutability</code> for the instance fields.<br />
 Specifying all of this ensures that OPAL knows that these values will have to be provided one way or the other.</p>
-<p>Notice that above we defined a trait.<br />
-We now extend this trait to implement an actual scheduler:</p>
+<p>Note that above we defined <code>ClassImmutabilityAnalysisScheduler</code> as a trait.<br />
+We now extend it to implement an actual scheduler:</p>
 <pre><code class="language-scala">object EagerClassImmutabilityAnalysis extends ClassImmutabilityAnalysisScheduler with BasicFPCFEagerAnalysisScheduler {
     override def derivesEagerly: Set[PropertyBounds] = Set(derivedProperty)
 
@@ -345,11 +336,11 @@ We now extend this trait to implement an actual scheduler:</p>
     }
 }
 </code></pre>
-<p>This is an <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFEagerAnalysisScheduler.html">FPCFEagerAnalysisScheduler</a><a title="The BasicFPCFEagerAnalysisScheduler provides an empty implementation for some rarely used methods."><sup>[note]</sup></a> that allows us to run the analysis for a pre-defined number of entities.<br />
+<p>This is an <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFEagerAnalysisScheduler.html"><code>FPCFEagerAnalysisScheduler</code></a><sup title="The BasicFPCFEagerAnalysisScheduler provides an empty implementation for some rarely used methods.">[note]</sup> that allows us to run the analysis for a pre-defined number of entities.<br />
 We first specify what our analysis computes: Using this scheduler, it eagerly computes upper bounds for <code>ClassImmutability</code>, which we provide using the shorthand defined above.<br />
 Eager schedulers can also provide so-called collaborative computations, but that is an advanced topic discussed <a href="CollaborativeAnalyses.html">here</a>, so don't worry about it for now.<br />
 There are also other types of Schedulers. You can get more information on them <a href="Schedulers.html">here</a>.<br />
-Finally, we tell OPAL how to execute the analysis: We create a new analysis, then we tell the property store to eagerly call the <code>analyzeClassImmutability</code> method for all classfiles in the project and finally we return the analysis.</p>
+Finally, we tell OPAL how to execute the analysis: We create a new analysis, then we tell the property store to eagerly call the <code>analyzeClassImmutability</code> function for all classfiles in the project and finally we return the analysis.</p>
 <p>What if we don't want to execute our analysis for <em>all</em> classfiles?<br />
 We can tell OPAL to only analyze those classfiles that we query from the property store.<br />
 However, we need a small additional method in our analysis to do so:</p>
@@ -367,7 +358,7 @@ However, we need a small additional method in our analysis to do so:</p>
 <p>Because OPAL doesn't know in advance that we will only ever query the property store for the class immutability of classfiles, the parameter type of <code>analyzeClassImmutability</code> is too specific.<br />
 Thus, we provide a second entry point to our analysis, <code>lazilyAnalyzeClassImmutability</code>, that takes any type of entity and, if it is a classfile, analyzes it.<br />
 We just throw an exception if the entity is not a classfile, as we can only process classfiles.</p>
-<p>Now we are ready to implement a <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFLazyAnalysisScheduler.html">FPCFLazyAnalysisScheduler</a>:</p>
+<p>Now we are ready to implement a <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFLazyAnalysisScheduler.html"><code>FPCFLazyAnalysisScheduler</code></a>:</p>
 <pre><code class="language-scala">object LazyClassImmutabilityAnalysis extends ClassImmutabilityAnalysisScheduler with BasicFPCFLazyAnalysisScheduler {
 
     override def derivesLazily: Some[PropertyBounds] = Some(derivedProperty)
@@ -383,9 +374,9 @@ We just throw an exception if the entity is not a classfile, as we can only proc
 Note that while eager schedulers can compute several kinds of properties at once (as expressed by the fact that <code>derivesEagerly</code> returns a <code>Set</code>), lazy schedulers may only compute a single kind of property (<code>derivesLazily</code> returns a <code>Some</code>, i.e., a single value).<br />
 Again, like in the eager scheduler, we create a new analysis, but this time, we tell the property store to call <code>lazilyAnalyzeClassImmutability</code> only when a <code>ClassImmutability</code> is queried.<br />
 As before, we finally have to return the analysis.</p>
-<h2>Running the Analysis</h2>
+<h2 id="running-the-analysis">Running the Analysis</h2>
 <p>Finally it is time to try our analysis.<br />
-To do so easily, we extend <a href="">ProjectAnalysisApplication</a> which provides us with a <code>main</code> method that parses parameters for us, most importantly the &quot;-cp=<some path>&quot; parameter that lets users specify the path to a project that they want to analyze.</p>
+To do so easily, we extend <a href="">ProjectAnalysisApplication</a> which provides us with an implicit <code>main</code> method that parses parameters for us, most importantly the &quot;-cp=<some path>&quot; parameter that lets users specify the path to a project that they want to analyze.</p>
 <pre><code class="language-scala">object ClassImmutabilityRunner extends ProjectAnalysisApplication { 
     override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () ⇒ Boolean): BasicReport = { [...] }
 }
@@ -400,7 +391,7 @@ To do so easily, we extend <a href="">ProjectAnalysisApplication</a> which provi
     [...]
 }
 </code></pre>
-<p>We use the <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFAnalysesManagerKey$.html">FPCFAnalysisManagerKey</a> to get an <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFAnalysesManager.html">FPCFAnalysisManager</a> that will run our analyses.<br />
+<p>We use the <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFAnalysesManagerKey$.html"><code>FPCFAnalysisManagerKey</code></a> to get an <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFAnalysesManager.html"><code>FPCFAnalysisManager</code></a> that will run our analyses.<br />
 We just pass all analyses that we want to execute to the <code>runAll</code> method.<br />
 Note that we assume that a <code>LazyFieldImmutabilityAnalysis</code> has been implemented as well.<br />
 As long as that doesn't exist, you can remove that line and OPAL will use the fallback value of the <code>FieldImmutability</code> lattice whenever a field immutability is queried.</p>
@@ -415,9 +406,9 @@ As long as that doesn't exist, you can remove that line and OPAL will use the fa
     [...]
 }
 </code></pre>
-<p>The <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyStore.html">PropertyStore</a> provides several methods to inspect the results.<br />
+<p>The <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyStore.html"><code>PropertyStore</code></a> provides several methods to inspect the results.<br />
 Here we use <code>finalEntities</code> to get all entities that have the given final property, then we count those.</p>
-<p>Finally, the <code>doAnalyze</code> method requires us to return a <a href="/library/api/SNAPSHOT/org/opalj/br/analyses/BasicReport.html">BasicReport</a>, which is a simple way to return some string that will ultimate be printed to the console:</p>
+<p>Finally, the <code>doAnalyze</code> method requires us to return a <a href="/library/api/SNAPSHOT/org/opalj/br/analyses/BasicReport.html"><code>BasicReport</code></a>, which is a simple way to return some string that will ultimate be printed to the console:</p>
 <pre><code class="language-scala">override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () ⇒ Boolean): BasicReport = {
     [...]
 
@@ -429,9 +420,8 @@ Here we use <code>finalEntities</code> to get all entities that have the given f
     )
 }
 </code></pre>
-<h2>What next?</h2>
-<p>This concludes our tutorial on the implementation of a simple, yet complete fixed-point analysis in OPAL.<br />
-You can get the complete, runnable source code for this analysis <a href="ClassImmutabilityAnalysis.scala">here</a>.</p>
+<h2 id="what-next">What next?</h2>
+<p>This concludes our tutorial on the implementation of a simple, yet complete fixed-point analysis in OPAL.</p>
 <p>If you want to implement more complex analyses, we suggest you read on what else you can do with <a href="Lattices.html">Lattices</a>, <a href="Schedulers.html">Schedulers</a> and <a href="Results.html">Results</a> in OPAL.<br />
 You can also read about <a href="CollaborativeAnalyses.html">Collaborative Analyses</a> used, e.g., to build call graphs.</p>
 
@@ -444,60 +434,27 @@ You can also read about <a href="CollaborativeAnalyses.html">Collaborative Analy
     	    <div class="container">
     			<div class="row double">
                     <div class="6u">
-                        <div class="row collapse-at-2">
-                            <div class="6u">
-                                <h3>Stay connected and get help!</h3>
-                                <ul class="icons">
-                                    <li><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.opal-project.de%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=TheOpalProject&tw_p=followbutton" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                                    <li><a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="icon fa-users"><span class="label">Gitter</span></a></li>
-                                    <li><a href="https://trello.com/theopalproject" class="icon fa-trello"><span class="label">Trello</span></a></li>
-                                    <li><a href="https://stackoverflow.com/questions/tagged/opal-framework" class="icon fa-stack-overflow"><span class="label">Stackoverflow</span></a></li>
-                                    <li><a href="https://hub.docker.com/r/opalj/sbt_scala_javafx/" class="icon fa-cloud"><span class="label">Docker</span></a></li>
-                                </ul>
-                                <h3>Related</h3>
-                                <ul class="alt">
-                                    <li><a href="https://www.openhub.net/p/OPAL-Project">OPAL on OpenHub</a></li>
-                                </ul>
-                                <h3>Supported By</h3>
-                                <ul class="alt">
-                                    <li><a href="https://www.yourkit.com/"><img src="/images/yklogo.png" width="139", height="33"></a><br>
-                                        YourKit supports open source projects with its full-featured Java Profiler.
-                                        YourKit, LLC is the creator of <a href="https://www.yourkit.com/java/profiler/">YourKit Java Profiler</a>
-                                        an innovative and intelligent tool for profiling Java applications.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="6u">
-                                <h3>Core Papers</h3>
-                                <ul class="alt">
-                                    <li><a href="https://2020.esec-fse.org/details/fse-2020-papers/191">Modular Collaborative Program Analysis in OPAL</a></li>
-                                    <li><a href="https://conf.researchr.org/details/issta-2020/issta-2020-papers/18/A-Programming-Model-for-Semi-implicit-Parallelization-of-Static-Analyses">A Programming Model for Semi-implicit Parallelization of Static Analyses</a></li>
-                                    <li><a href="https://pldi20.sigplan.org/details/SOAP-2020-papers/1">TACAI: An Intermediate Representation based on Abstract Interpretation</a></li>
-                                    <li><a href="https://conf.researchr.org/track/ecoop-issta-2018/SOAP-2018-papers#program">Lattice Based Modularization of Static Analyses</a></li>
-                                    <li><a href="articles/Hermes@SOAP18.pdf">Assessment and Creation of Effective Test Corpora</a></li>
-                                    <li><a href="https://doi.acm.org/10.1145/2950290.2950312">Call Graph Construction for Java Libraries</a></li>
-                                    <li><a href="https://doi.acm.org/10.1145/2614628.2614630">A software product line for static analyses: the OPAL framework</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <h3>Stay connected and get help!</h3>
+                        <ul class="icons">
+                            <li><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.opal-project.de%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=TheOpalProject&tw_p=followbutton" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="icon fa-users"><span class="label">Gitter</span></a></li>
+                            <li><a href="https://trello.com/theopalproject" class="icon fa-trello"><span class="label">Trello</span></a></li>
+                            <li><a href="https://stackoverflow.com/questions/tagged/opal-framework" class="icon fa-stack-overflow"><span class="label">Stackoverflow</span></a></li>
+                            <li><a href="https://hub.docker.com/r/opalj/sbt_scala_javafx/" class="icon fa-cloud"><span class="label">Docker</span></a></li>
+                        </ul>
+                        <h3>Related</h3>
+                        <ul class="alt">
+                            <li><a href="https://www.openhub.net/p/OPAL-Project">OPAL on OpenHub</a></li>
+                        </ul>
                     </div>
                     <div class="6u">
-                        <h3>Research Using OPAL</h3>
-                        <emph>The following papers give you an idea what you can do with OPAL.</emph>
+                        <h3>Supported By</h3>
                         <ul class="alt">
-                            <li><a href="https://dl.acm.org/doi/10.1145/3320269.3384745">Hidden in Plain Sight: Obfuscated Strings Threatening Your Privacy</a></li>
-                            <li><a href="https://conf.researchr.org/details/issta-2019/issta-2019-Technical-Papers/24/Judge-Identifying-Understanding-and-Evaluating-Sources-of-Unsoundness-in-Call-Grap">Judge: Identifying, Understanding, and Evaluating Sources of Unsoundness in Call Graphs</a></li>
-                            <li><a href="https://2018.splashcon.org/event/splash-2018-oopsla-algebraic-effects-for-the-masses">Algebraic Effects for the Masses</a></li>
-                            <li><a href="http://michael-reif.name/publications/JCG.pdf">Systematic Evaluation of the Unsoundness of Call Graph Construction Algorithms for Java</a></li>
-                            <li><a href="https://ieeexplore.ieee.org/abstract/document/9000061">A Unified Lattice Model and Framework for Purity Analyses</a></li>
-                            <li><a href="http://www.st.informatik.tu-darmstadt.de/artifacts/codematch/">CodeMatch: Obfuscation won't Conceal your Repackaged App</a></li>
-                            <li><a href="https://doi.acm.org/10.1145/2786805.2786865">Hidden Truths in Dead Software Paths</a></li>
-                            <li><a href="https://doi.acm.org/10.1145/2786805.2786829">Getting to know you. . . Towards a Capability Model for Java</a></li>
-                        </ul>
-                        <h3>Related Presentations</h3>
-                        <ul class="alt">
-                            <li><a href="/articles/Your_JDK-Entwicklertag2015.pdf">Your JDK 8</a></li>
-                            <li><a href="/articles/FPCF-Slides@SOAP18.pdf">Lattice Based Modularization of Static Analyses</a></li>
+                            <li><a href="https://www.yourkit.com/"><img src="/images/yklogo.png" width="139", height="33"></a><br>
+                                YourKit supports open source projects with its full-featured Java Profiler.
+                                YourKit, LLC is the creator of <a href="https://www.yourkit.com/java/profiler/">YourKit Java Profiler</a>
+                                an innovative and intelligent tool for profiling Java applications.
+                            </li>
                         </ul>
                     </div>
     			</div>

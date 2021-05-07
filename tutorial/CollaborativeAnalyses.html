@@ -18,10 +18,10 @@
     </head>
     <body id="top">
         <header id="header" class="skel-layers-fixed">
-            <h1><a href="https://www.opal-project.de"><img src="/OPALLogo.png" width="13" height="13">&nbsp;OPAL Project</a></h1>
+            <h2><a href="/"><img src="/OPALLogo.png" width="13" height="13">&nbsp;OPAL Project</a></h2>
             <nav id="nav">
                 <ul>
-                    <li><a href="/index.html">Getting Started</a></li>
+                    <li><a href="/Publications.html">Publications</a></li>
                     <li><a href="/library/api/SNAPSHOT/org/opalj/index.html">ScalaDoc</a></li>
                     <li><a href="https://github.com/opalj/OPAL">Repository</a></li>
                     <li><a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22de.opal-project%22">Maven Central</a></li>
@@ -36,8 +36,6 @@
                     <div class="3u">
                         <nav>
                                                     
-                                <a href="/index.html">OPAL</a><br>
-                                                                                
                                 <br><b>Getting Started</b><br>
                                                                                 
                                 <a href="/tutorial/FixedPointAnalyses.html">Writing Fixed-Point Analyses</a><br>
@@ -52,17 +50,17 @@
                                                                                 
                                 <br><b>Further Tutorials</b><br>
                                                                                 
-                                <a href="/ReadingClassFiles.html">Reading Class Files</a><br>
+                                <a href="/examples/ReadingClassFiles.html">Reading Class Files</a><br>
                                                                                 
-                                <a href="/Projects.html">Loading Java Projects</a><br>
+                                <a href="/examples/Projects.html">Loading Java Projects</a><br>
                                                                                 
-                                <a href="/ClassHierarchy.html">Using the Class Hierarchy</a><br>
+                                <a href="/examples/ClassHierarchy.html">Using the Class Hierarchy</a><br>
                                                                                 
-                                <a href="/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
+                                <a href="/examples/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
                                                                                 
-                                <a href="/TAC.html">3-Address Code/SSA Code</a><br>
+                                <a href="/examples/TAC.html">3-Address Code/SSA Code</a><br>
                                                                                 
-                                <a href="/WritingAnalyses.html">Writing Analyses</a><br>
+                                <a href="/examples/WritingAnalyses.html">Writing Analyses</a><br>
                                                                                 
                                 <br><b>Tools</b><br>
                                                                                 
@@ -90,13 +88,14 @@
                         </div>
                     </div>
     				<div class="9u">
-                        <h1>Collaborative Analyses</h1>
+                        <h1 id="collaborative-analyses">Collaborative Analyses</h1>
 <p>This tutorial will guide you through the implementation of a simple analysis module that integrates into OPAL's call-graph analysis framework, using OPAL's support for collaborative analyses.<br />
 The module developed in this tutorial will compute all classes that are possibly instantiated during program execution as is necessary to perform rapid type analysis (RTA).
 You should have read the tutorial on <a href="FixedPointAnalyses.html">Writing Fixed-Point Analyses</a> first that introduces the basic concepts of OPAL's fixed-point analyses.</p>
-<h2>Defining a Lattice</h2>
+<p>We will develop the implementation in small steps, but you can get the complete, runnable source code for this analysis <a href="InstantiatedTypesAnalysis.scala">here</a>.</p>
+<h2 id="defining-a-lattice">Defining a Lattice</h2>
 <p>As is always the case for fixed-point analyses in OPAL, we need a suitable lattice to represent our analysis' results.<br />
-In order to represent the set of all classes potentially instantiated, we thus create a lattice of set<a title="OPAL's UIDSet is an optimized set for several kinds of entities in OPAL, including, e.g., ObjectType which represents the type of a class."><sup>[note]</sup></a> values:</p>
+In order to represent the set of all classes potentially instantiated, we thus create a lattice of set<sup title="OPAL's UIDSet is an optimized set for several kinds of entities in OPAL, including, e.g., ObjectType which represents the type of a class.">[note]</sup> values:</p>
 <pre><code class="language-scala">sealed trait InstantiatedTypesPropertyMetaInformation extends PropertyMetaInformation {
     final type Self = InstantiatedTypes
 }
@@ -121,7 +120,7 @@ object InstantiatedTypes extends InstantiatedTypesPropertyMetaInformation {
     )
 }
 </code></pre>
-<p>We use a case class here to provide a container for an arbitrary set of <a href="/library/api/SNAPSHOT/org/opalj/br/ObjectType.html">ObjectType</a>s.</p>
+<p>We use a case class here to provide a container for an arbitrary set of <a href="/library/api/SNAPSHOT/org/opalj/br/ObjectType.html"><code>ObjectType</code></a>s.</p>
 <p>Note that for the <code>key</code>, we didn't just provide a fallback value, but a small function that is called whenever <code>InstantiatedTypes</code> are needed, but have not been computed.<br />
 This is to distinguish between two cases:<br />
 Either, the analysis (which we will implement below) was executed, but there simply are no classes that have been instantiated.
@@ -129,7 +128,7 @@ In this case, we want to provide not a sound over-approximation of the program b
 On the other hand, it may be that our analysis has not been executed.
 In this case, a sound over-approximation (namely that <em>any</em> class could be instantiated) would be possible, but probably not what the user of our lattice expects.
 Thus, we raise an error here to point the user to the fact that he may want to run our analysis to get the information that he requires.</p>
-<h2>Writing the Analysis</h2>
+<h2 id="implementing-the-analysis">Implementing the Analysis</h2>
 <p>Now, let's implement the (simplified) analysis.<br />
 As usual, we start by creating an analysis class with an analysis function:</p>
 <pre><code class="language-scala">class InstantiatedTypesAnalysis(val project: SomeProject) extends FPCFAnalysis {
@@ -138,8 +137,8 @@ As usual, we start by creating an analysis class with an analysis function:</p>
     def analyzeMethod(method: DeclaredMethod): PropertyComputationResult = { [...] }
 }
 </code></pre>
-<p>We need a <a href="/library/api/SNAPSHOT/org/opalj/br/analyses/ProjectInformationKey.html">ProjectInformationKey</a> here, namely the <code>DeclaredMethodsKey</code>, as this will later be needed implicitly to resolve calls with the call graph.<br />
-The analysis function takes a <a href="/library/api/SNAPSHOT/org/opalj/br/DeclaredMethod.html">DeclaredMethod</a> (a representation of a method in the context of its class) as the entity to be analyzed as we want to find all classes instantiated by methods that potentially called (i.e., that are not <em>dead</em>).<br />
+<p>We need a <a href="/library/api/SNAPSHOT/org/opalj/br/analyses/ProjectInformationKey.html"><code>ProjectInformationKey</code></a> here, namely the <code>DeclaredMethodsKey</code>, as this will later be needed implicitly to resolve calls with the call graph.<br />
+The analysis function takes a <a href="/library/api/SNAPSHOT/org/opalj/br/DeclaredMethod.html"><code>DeclaredMethod</code></a> (a representation of a method in the context of its class) as the entity to be analyzed as we want to find all classes instantiated by methods that potentially called (i.e., that are not <em>dead</em>).<br />
 Note that unlike most analyses, we will however <em>not</em> compute a result just for this entity, we just use it to compute its effect on the set of instantiated classes <em>anywhere</em> in the analyzed program.</p>
 <p>We will later configure our analysis function to be called once for every method that is potentially called, but classes are instantiated only by constructors (named <code>&lt;init&gt;</code> in the Java Virtual Machine), thus we first check whether the analyzed method actually is a constructor:</p>
 <pre><code class="language-scala">def analyzeMethod(method: DeclaredMethod): PropertyComputationResult = {
@@ -149,7 +148,7 @@ Note that unlike most analyses, we will however <em>not</em> compute a result ju
     [...]
 }
 </code></pre>
-<p>We use <a href="/library/api/SNAPSHOT/org/opalj/fpcf/NoResult.html">NoResult</a> to signal that we won't compute any result for methods that are not constructors.</p>
+<p>We use <a href="/library/api/SNAPSHOT/org/opalj/fpcf/NoResult.html"><code>NoResult</code></a> to signal that we won't compute any result for methods that are not constructors.</p>
 <p>Next, we get the type of the class that is instantiated, which is the class that declares the analyzed constructor.</p>
 <pre><code class="language-scala">def analyzeMethod(method: DeclaredMethod): PropertyComputationResult = {
     [...]
@@ -185,12 +184,12 @@ Note that unlike most analyses, we will however <em>not</em> compute a result ju
     [...]
 }
 </code></pre>
-<p>We use a <a href="/library/api/SNAPSHOT/org/opalj/fpcf/NoResult.html">PartialResult</a> here that allows us to contribute to a collaboratively computed property.<br />
+<p>We use a <a href="/library/api/SNAPSHOT/org/opalj/fpcf/NoResult.html"><code>PartialResult</code></a> here that allows us to contribute to a collaboratively computed property.<br />
 The partial result takes the entity (we use <code>project</code> here, since the set of instantiated classes is global to the whole program that is analyzed) and the key of the property that we compute.<br />
 Finally, it takes a function that will get the current value of that property and computes an update to it.<br />
 To do so, we check whether there already is a property present and extract its upper bound.<br />
-If that upper bound already contains our class, we return <code>None</code> to signal that no update is necessary, otherwise we create an updated result, which is an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/InterimEUBP.html">InterimEUBP</a>, i.e., a not yet final result consisting of an entity (<code>project</code>) and its property, which is the old set of instantiated classes extended by the class type of the analyzed constructor.<br />
-If, on the other hand, no property has been computed so far, the update function will be called with an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/EPK.html">EPK</a>, i.e., a tuple of the entity and the key of the property.
+If that upper bound already contains our class, we return <code>None</code> to signal that no update is necessary, otherwise we create an updated result, which is an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/InterimEUBP.html"><code>InterimEUBP</code></a>, i.e., a not yet final result consisting of an entity (<code>project</code>) and its property, which is the old set of instantiated classes extended by the class type of the analyzed constructor.<br />
+If, on the other hand, no property has been computed so far, the update function will be called with an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/EPK.html"><code>EPK</code></a>, i.e., a tuple of the entity and the key of the property.
 In that case, we return property that contains just the class type of the analyzed constructor.</p>
 <p>Next, we should check whether the analyzed constructor was explicitly called to instantiate an object of the respective class, not implicitly during instantiation of a subclass.<br />
 For that, we need the method's callers:</p>
@@ -309,7 +308,7 @@ Thus, we define a local continuation function to handle any updates to our calle
 <p>It just calls <code>checkCallers</code> again with the updated value.</p>
 <p>Did you notice that the continuation's return type is <code>PropertyComputationResult</code> instead of <code>ProperPropertyComputationResult</code>?<br />
 Indeed, it invokes <code>checkCallers</code> and that can return <code>NoResult</code>.<br />
-However, this is not a problem here, because we use this continuation not for an <code>InterimResult</code>, but for an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/IncrementalResult.html">InterimPartialResult</a>.<br />
+However, this is not a problem here, because we use this continuation not for an <code>InterimResult</code>, but for an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/IncrementalResult.html"><code>InterimPartialResult</code></a>.<br />
 This allows us to register dependencies and a continuation function without binding them to a specific entity/property pair.
 Let's see it in use by completing the <code>checkCallers</code> function:</p>
 <pre><code class="language-scala">def checkCallers(callersProperty: EOptionP[DeclaredMethod, Callers]) = {
@@ -330,8 +329,8 @@ Let's see it in use by completing the <code>checkCallers</code> function:</p>
 Otherwise, we need to specify a continuation function that is called when the set of dependencies (that consists only of the <code>callersProperty</code>) changes.<br />
 The first parameter for the <code>InterimPartialResult</code> allows to give some <code>PartialResult</code>s, but we don't need any here, thus we set it to the empty list <code>Nil</code>.</p>
 <p>This completes our analysis, now we have to provide a scheduler for it.</p>
-<h2>Scheduling the Analysis</h2>
-<p>We use an <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFTriggeredAnalysisScheduler.html">FPCFTriggeredAnalysisScheduler</a><a title="The BasicFPCFTriggeredAnalysisScheduler provides an empty implementation for some rarely used methods."><sup>[note]</sup></a> that allows us to trigger our analysis whenever a method is found to be reachable in the call graph.</p>
+<h2 id="scheduling-the-analysis">Scheduling the Analysis</h2>
+<p>We use an <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFTriggeredAnalysisScheduler.html"><code>FPCFTriggeredAnalysisScheduler</code></a><sup title="The BasicFPCFTriggeredAnalysisScheduler provides an empty implementation for some rarely used methods.">[note]</sup> that allows us to trigger our analysis whenever a method is found to be reachable in the call graph.</p>
 <pre><code class="language-scala">object InstantiatedTypesAnalysisScheduler extends BasicFPCFTriggeredAnalysisScheduler {
     override def requiredProjectInformation: ProjectInformationKeys = Seq(DeclaredMethodsKey)
 
@@ -374,7 +373,7 @@ Note that <code>PropertyBounds.ubs(...)</code> is a shorthand for <code>Set(Prop
 <p>We have to provide the key of the property that triggers our analysis.<br />
 As we specify the <code>Callers.key</code> here, our analysis will be executed for every method that has <em>any</em> callers computed for it, i.e., that is reachable in the call graph.<br />
 In the <code>register</code> method, we have to call the PropertyStore's <code>registerTriggeredComputation</code> method that takes the triggering property key and our analysis method.</p>
-<h2>Running the Analysis</h2>
+<h2 id="running-the-analysis">Running the Analysis</h2>
 <p>As a last step, we implement a simple runner to test our analysis.</p>
 <pre><code class="language-scala">object InstantiatedTypesRunner extends ProjectAnalysisApplication {
     override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () ⇒ Boolean): BasicReport = {
@@ -395,9 +394,8 @@ In the <code>register</code> method, we have to call the PropertyStore's <code>r
 <p>It executes our analysis alongside a class-hierarchy analysis (CHA) call graph and prints the number of instantiated types to the console.<br />
 Note that when querying the property store for the <code>InstantiatedTypes</code> property key, we know that it must be a final result because all analyses have been completed by that point.<br />
 Remember to specify the program that you want to analyze with the &quot;-cp=<some path>&quot; parameter.</p>
-<h2>What next?</h2>
-<p>This concludes our tutorial on the implementation a simple, yet complete collaborative fixed-point analysis in OPAL.<br />
-You can get the complete, runnable source code for this analysis <a href="InstantiatedTypesAnalysis.scala">here</a>.</p>
+<h2 id="what-next">What next?</h2>
+<p>This concludes our tutorial on the implementation a simple, yet complete collaborative fixed-point analysis in OPAL.</p>
 <p>If you want to implement more complex analyses, we suggest you read on what else you can do with <a href="Lattices.html">Lattices</a>, <a href="Schedulers.html">Schedulers</a> and <a href="Results.html">Results</a> in OPAL.</p>
 
                     </div>
@@ -409,60 +407,27 @@ You can get the complete, runnable source code for this analysis <a href="Instan
     	    <div class="container">
     			<div class="row double">
                     <div class="6u">
-                        <div class="row collapse-at-2">
-                            <div class="6u">
-                                <h3>Stay connected and get help!</h3>
-                                <ul class="icons">
-                                    <li><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.opal-project.de%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=TheOpalProject&tw_p=followbutton" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                                    <li><a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="icon fa-users"><span class="label">Gitter</span></a></li>
-                                    <li><a href="https://trello.com/theopalproject" class="icon fa-trello"><span class="label">Trello</span></a></li>
-                                    <li><a href="https://stackoverflow.com/questions/tagged/opal-framework" class="icon fa-stack-overflow"><span class="label">Stackoverflow</span></a></li>
-                                    <li><a href="https://hub.docker.com/r/opalj/sbt_scala_javafx/" class="icon fa-cloud"><span class="label">Docker</span></a></li>
-                                </ul>
-                                <h3>Related</h3>
-                                <ul class="alt">
-                                    <li><a href="https://www.openhub.net/p/OPAL-Project">OPAL on OpenHub</a></li>
-                                </ul>
-                                <h3>Supported By</h3>
-                                <ul class="alt">
-                                    <li><a href="https://www.yourkit.com/"><img src="/images/yklogo.png" width="139", height="33"></a><br>
-                                        YourKit supports open source projects with its full-featured Java Profiler.
-                                        YourKit, LLC is the creator of <a href="https://www.yourkit.com/java/profiler/">YourKit Java Profiler</a>
-                                        an innovative and intelligent tool for profiling Java applications.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="6u">
-                                <h3>Core Papers</h3>
-                                <ul class="alt">
-                                    <li><a href="https://2020.esec-fse.org/details/fse-2020-papers/191">Modular Collaborative Program Analysis in OPAL</a></li>
-                                    <li><a href="https://conf.researchr.org/details/issta-2020/issta-2020-papers/18/A-Programming-Model-for-Semi-implicit-Parallelization-of-Static-Analyses">A Programming Model for Semi-implicit Parallelization of Static Analyses</a></li>
-                                    <li><a href="https://pldi20.sigplan.org/details/SOAP-2020-papers/1">TACAI: An Intermediate Representation based on Abstract Interpretation</a></li>
-                                    <li><a href="https://conf.researchr.org/track/ecoop-issta-2018/SOAP-2018-papers#program">Lattice Based Modularization of Static Analyses</a></li>
-                                    <li><a href="articles/Hermes@SOAP18.pdf">Assessment and Creation of Effective Test Corpora</a></li>
-                                    <li><a href="https://doi.acm.org/10.1145/2950290.2950312">Call Graph Construction for Java Libraries</a></li>
-                                    <li><a href="https://doi.acm.org/10.1145/2614628.2614630">A software product line for static analyses: the OPAL framework</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <h3>Stay connected and get help!</h3>
+                        <ul class="icons">
+                            <li><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.opal-project.de%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=TheOpalProject&tw_p=followbutton" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="icon fa-users"><span class="label">Gitter</span></a></li>
+                            <li><a href="https://trello.com/theopalproject" class="icon fa-trello"><span class="label">Trello</span></a></li>
+                            <li><a href="https://stackoverflow.com/questions/tagged/opal-framework" class="icon fa-stack-overflow"><span class="label">Stackoverflow</span></a></li>
+                            <li><a href="https://hub.docker.com/r/opalj/sbt_scala_javafx/" class="icon fa-cloud"><span class="label">Docker</span></a></li>
+                        </ul>
+                        <h3>Related</h3>
+                        <ul class="alt">
+                            <li><a href="https://www.openhub.net/p/OPAL-Project">OPAL on OpenHub</a></li>
+                        </ul>
                     </div>
                     <div class="6u">
-                        <h3>Research Using OPAL</h3>
-                        <emph>The following papers give you an idea what you can do with OPAL.</emph>
+                        <h3>Supported By</h3>
                         <ul class="alt">
-                            <li><a href="https://dl.acm.org/doi/10.1145/3320269.3384745">Hidden in Plain Sight: Obfuscated Strings Threatening Your Privacy</a></li>
-                            <li><a href="https://conf.researchr.org/details/issta-2019/issta-2019-Technical-Papers/24/Judge-Identifying-Understanding-and-Evaluating-Sources-of-Unsoundness-in-Call-Grap">Judge: Identifying, Understanding, and Evaluating Sources of Unsoundness in Call Graphs</a></li>
-                            <li><a href="https://2018.splashcon.org/event/splash-2018-oopsla-algebraic-effects-for-the-masses">Algebraic Effects for the Masses</a></li>
-                            <li><a href="http://michael-reif.name/publications/JCG.pdf">Systematic Evaluation of the Unsoundness of Call Graph Construction Algorithms for Java</a></li>
-                            <li><a href="https://ieeexplore.ieee.org/abstract/document/9000061">A Unified Lattice Model and Framework for Purity Analyses</a></li>
-                            <li><a href="http://www.st.informatik.tu-darmstadt.de/artifacts/codematch/">CodeMatch: Obfuscation won't Conceal your Repackaged App</a></li>
-                            <li><a href="https://doi.acm.org/10.1145/2786805.2786865">Hidden Truths in Dead Software Paths</a></li>
-                            <li><a href="https://doi.acm.org/10.1145/2786805.2786829">Getting to know you. . . Towards a Capability Model for Java</a></li>
-                        </ul>
-                        <h3>Related Presentations</h3>
-                        <ul class="alt">
-                            <li><a href="/articles/Your_JDK-Entwicklertag2015.pdf">Your JDK 8</a></li>
-                            <li><a href="/articles/FPCF-Slides@SOAP18.pdf">Lattice Based Modularization of Static Analyses</a></li>
+                            <li><a href="https://www.yourkit.com/"><img src="/images/yklogo.png" width="139", height="33"></a><br>
+                                YourKit supports open source projects with its full-featured Java Profiler.
+                                YourKit, LLC is the creator of <a href="https://www.yourkit.com/java/profiler/">YourKit Java Profiler</a>
+                                an innovative and intelligent tool for profiling Java applications.
+                            </li>
                         </ul>
                     </div>
     			</div>

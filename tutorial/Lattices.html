@@ -18,10 +18,10 @@
     </head>
     <body id="top">
         <header id="header" class="skel-layers-fixed">
-            <h1><a href="https://www.opal-project.de"><img src="/OPALLogo.png" width="13" height="13">&nbsp;OPAL Project</a></h1>
+            <h2><a href="/"><img src="/OPALLogo.png" width="13" height="13">&nbsp;OPAL Project</a></h2>
             <nav id="nav">
                 <ul>
-                    <li><a href="/index.html">Getting Started</a></li>
+                    <li><a href="/Publications.html">Publications</a></li>
                     <li><a href="/library/api/SNAPSHOT/org/opalj/index.html">ScalaDoc</a></li>
                     <li><a href="https://github.com/opalj/OPAL">Repository</a></li>
                     <li><a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22de.opal-project%22">Maven Central</a></li>
@@ -36,8 +36,6 @@
                     <div class="3u">
                         <nav>
                                                     
-                                <a href="/index.html">OPAL</a><br>
-                                                                                
                                 <br><b>Getting Started</b><br>
                                                                                 
                                 <a href="/tutorial/FixedPointAnalyses.html">Writing Fixed-Point Analyses</a><br>
@@ -52,17 +50,17 @@
                                                                                 
                                 <br><b>Further Tutorials</b><br>
                                                                                 
-                                <a href="/ReadingClassFiles.html">Reading Class Files</a><br>
+                                <a href="/examples/ReadingClassFiles.html">Reading Class Files</a><br>
                                                                                 
-                                <a href="/Projects.html">Loading Java Projects</a><br>
+                                <a href="/examples/Projects.html">Loading Java Projects</a><br>
                                                                                 
-                                <a href="/ClassHierarchy.html">Using the Class Hierarchy</a><br>
+                                <a href="/examples/ClassHierarchy.html">Using the Class Hierarchy</a><br>
                                                                                 
-                                <a href="/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
+                                <a href="/examples/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
                                                                                 
-                                <a href="/TAC.html">3-Address Code/SSA Code</a><br>
+                                <a href="/examples/TAC.html">3-Address Code/SSA Code</a><br>
                                                                                 
-                                <a href="/WritingAnalyses.html">Writing Analyses</a><br>
+                                <a href="/examples/WritingAnalyses.html">Writing Analyses</a><br>
                                                                                 
                                 <br><b>Tools</b><br>
                                                                                 
@@ -90,16 +88,16 @@
                         </div>
                     </div>
     				<div class="9u">
-                        <h1>Lattices</h1>
+                        <h1 id="lattices">Lattices</h1>
 <p>In OPAL, fixed-point analyses need to represent their results using values from an explicitly defined lattices.<br />
 This article will discuss a few possibilities when defining them.<br />
 You should have read the tutorial on <a href="FixedPointAnalyses.html">Writing Fixed-Point Analyses</a> first that introduces the basic concepts.</p>
 <p>There are two basic kinds of lattices that are typically used in OPAL: <a href="#singleton-based-lattices">singleton-based lattices</a> and <a href="#set-based-lattices">set-based lattices</a>.
 It is also possible to <a href="#combined-lattices">combine them</a>.<br />
 Before discussing each of them individually, let's have a look at what they have in common.</p>
-<h2>Lattices Basics</h2>
+<h2 id="lattices-basics">Lattices Basics</h2>
 <p>A lattice in OPAL consists of three parts.<br />
-The first one is the <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyMetaInformation.html">PropertyMetaInformation</a>:</p>
+The first one is the <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyMetaInformation.html"><code>PropertyMetaInformation</code></a>:</p>
 <pre><code class="language-scala">sealed trait ClassImmutabilityPropertyMetaInformation extends PropertyMetaInformation {
     final type Self = ClassImmutability
 }
@@ -124,7 +122,7 @@ If you have more than one class, you should provide a trait through which the <c
 <p>Implement your lattice using classes that implement this trait.<br />
 If you only need a single class for your lattice, you can of course define the <code>key</code> method there and omit defining a trait.</p>
 <p>You can also use this trait to declare methods that you need for lattice, like <code>meet</code> or <code>join</code> methods or methods to extract data from your lattice values conveniently.</p>
-<h2>Singleton-based Lattices</h2>
+<h2 id="singleton-based-lattices">Singleton-based Lattices</h2>
 <p>Singleton-based lattices are very common in OPAL.<br />
 They consist of a number of case objects each of which represents a singleton value of the lattice:</p>
 <pre><code class="language-scala">case object TransitivelyImmutableClass extends ClassImmutability
@@ -134,7 +132,7 @@ case object NonTransitivelyImmutableClass extends ClassImmutability
 case object MutableClass extends ClassImmutability
 </code></pre>
 <p>Of course, you may need to implement any methods defined in your trait above.</p>
-<h2>Set-based Lattices</h2>
+<h2 id="set-based-lattices">Set-based Lattices</h2>
 <p>The second common type of lattices in OPAL is set-based lattices.
 They typically consist of one (or sometimes several) case classes that hold the set of values:</p>
 <pre><code class="language-scala">case class InstantiatedTypes(classes: UIDSet[ObjectType]) extends InstantiatedTypesPropertyMetaInformation {
@@ -142,7 +140,7 @@ They typically consist of one (or sometimes several) case classes that hold the 
 }
 </code></pre>
 <p>Note that here we extended the <code>PropertyMetaInformation</code> directly without an additional trait as we need only one class.</p>
-<h2>Combined Lattices</h2>
+<h2 id="combined-lattices">Combined Lattices</h2>
 <p>You can combine both concepts in a single lattice if you need to.<br />
 For example, you could extend the above <code>ClassImmutability</code> lattice with this set-based case class:</p>
 <pre><code class="language-scala">case class DependentlyImmutableClass(dependentTypeParameters: Set[String])
@@ -151,9 +149,9 @@ For example, you could extend the above <code>ClassImmutability</code> lattice w
 <pre><code class="language-scala">object NoInstantiatedTypes extends InstantiatedTypes(UIDSet.empty)
 </code></pre>
 <p>However, always take care that what you implement really has the semantics of a lattice (i.e., the values form a partial order and there exist a unique least upper bound and unique greatest lower bound for every two values).</p>
-<h2>Additional Options for Lattices</h2>
+<h2 id="additional-options-for-lattices">Additional Options for Lattices</h2>
 <p>There are two additional classes that you might want to consider when implementing your lattice.</p>
-<p>The first one is <a href="/library/api/SNAPSHOT/org/opalj/fpcf/OrderedProperty.html">OrderedProperty</a>.<br />
+<p>The first one is <a href="/library/api/SNAPSHOT/org/opalj/fpcf/OrderedProperty.html"><code>OrderedProperty</code></a>.<br />
 If your lattice values extend this trait, you get additional checks in the PropertyStore whether your analyses refine their results monotonically with respect to your lattice's partial order.<br />
 <code>OrderedProperty</code> requires that you implement a method <code>checkIsEqualOrBetterThan(e: Entity, other: Self)</code> that should throw an exception if <code>other</code> is greater than the current value with respect to the lattice's partial order.<br />
 If you defined a <code>meet</code> method, you can simply implement it like this:</p>
@@ -164,7 +162,7 @@ If you defined a <code>meet</code> method, you can simply implement it like this
 }
 </code></pre>
 <p>However, it may be better to provide optimized implementations for your individual lattice values if the <code>meet</code> operation is not trivial.</p>
-<p>The second option to consider is <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/properties/AggregatedProperty.html">AggregatedProperty</a>.<br />
+<p>The second option to consider is <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/properties/AggregatedProperty.html"><code>AggregatedProperty</code></a>.<br />
 Some properties really represent an aggregation of another property, e.g., <code>ClassImmutability</code> aggregates the <code>FieldImmutability</code> of a class' instance fields.<br />
 In such cases, one often needs to convert between corresponding values of the two lattices.<br />
 Also, the partial order and thus <code>meet</code> operator are equivalent and need to be defined only once.</p>
@@ -172,8 +170,8 @@ Also, the partial order and thus <code>meet</code> operator are equivalent and n
 The aggregate lattice then has to extend <code>AggregatedProperty[BaseLattice, AggregateLattice]</code>.<br />
 It has to implement the <code>individualProperty</code> method that maps each value to the corresponding value of the base lattice.<br />
 The <code>meet</code> method on the aggregate lattice is provided for you based on the <code>meet</code> operator of the base lattice.</p>
-<h2>Property Keys</h2>
-<p>The <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyKey.html">PropertyKey</a> makes your lattice known to OPAL and gives it a unique identifier.<br />
+<h2 id="property-keys">Property Keys</h2>
+<p>The <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyKey.html"><code>PropertyKey</code></a> makes your lattice known to OPAL and gives it a unique identifier.<br />
 You create it using one of two methods:</p>
 <pre><code class="language-scala">final val classImmutabilityKey: PropertyKey[ClassImmutability] = PropertyKey.create(
     &quot;ClassImmutability&quot;,
@@ -193,7 +191,7 @@ final val instantiatedTypesKey: PropertyKey[InstantiatedTypes] = PropertyKey.cre
 It should be your lattice's bottom element in order to be sound.</p>
 <p>Or you can provide a function to compute the fallback value on demand.<br />
 This has two benefits: First, you can use some information about your entity to compute a sound but more precise fallback value.<br />
-Additionally, as shown above, this function gets a <a href="/library/api/SNAPSHOT/org/opalj/fpcf/FallbackReason.html">FallbackReason</a>.<br />
+Additionally, as shown above, this function gets a <a href="/library/api/SNAPSHOT/org/opalj/fpcf/FallbackReason.html"><code>FallbackReason</code></a>.<br />
 This tells you whether no analysis was executed to compute any values of your lattice at all (<code>PropertyIsNotComputedByAnyAnalysis</code>), in which case you should provide a sound over-approximation as before.<br />
 Or it tells you that an analysis was executed, but it did not provide a result for the respective entity (<code>PropertyIsNotDerivedByPreviouslyExecutedAnalysis</code>), in which case you may be able to provide a precise result, because you know that, e.g., the entity belongs to dead code.</p>
 
@@ -206,60 +204,27 @@ Or it tells you that an analysis was executed, but it did not provide a result f
     	    <div class="container">
     			<div class="row double">
                     <div class="6u">
-                        <div class="row collapse-at-2">
-                            <div class="6u">
-                                <h3>Stay connected and get help!</h3>
-                                <ul class="icons">
-                                    <li><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.opal-project.de%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=TheOpalProject&tw_p=followbutton" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                                    <li><a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="icon fa-users"><span class="label">Gitter</span></a></li>
-                                    <li><a href="https://trello.com/theopalproject" class="icon fa-trello"><span class="label">Trello</span></a></li>
-                                    <li><a href="https://stackoverflow.com/questions/tagged/opal-framework" class="icon fa-stack-overflow"><span class="label">Stackoverflow</span></a></li>
-                                    <li><a href="https://hub.docker.com/r/opalj/sbt_scala_javafx/" class="icon fa-cloud"><span class="label">Docker</span></a></li>
-                                </ul>
-                                <h3>Related</h3>
-                                <ul class="alt">
-                                    <li><a href="https://www.openhub.net/p/OPAL-Project">OPAL on OpenHub</a></li>
-                                </ul>
-                                <h3>Supported By</h3>
-                                <ul class="alt">
-                                    <li><a href="https://www.yourkit.com/"><img src="/images/yklogo.png" width="139", height="33"></a><br>
-                                        YourKit supports open source projects with its full-featured Java Profiler.
-                                        YourKit, LLC is the creator of <a href="https://www.yourkit.com/java/profiler/">YourKit Java Profiler</a>
-                                        an innovative and intelligent tool for profiling Java applications.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="6u">
-                                <h3>Core Papers</h3>
-                                <ul class="alt">
-                                    <li><a href="https://2020.esec-fse.org/details/fse-2020-papers/191">Modular Collaborative Program Analysis in OPAL</a></li>
-                                    <li><a href="https://conf.researchr.org/details/issta-2020/issta-2020-papers/18/A-Programming-Model-for-Semi-implicit-Parallelization-of-Static-Analyses">A Programming Model for Semi-implicit Parallelization of Static Analyses</a></li>
-                                    <li><a href="https://pldi20.sigplan.org/details/SOAP-2020-papers/1">TACAI: An Intermediate Representation based on Abstract Interpretation</a></li>
-                                    <li><a href="https://conf.researchr.org/track/ecoop-issta-2018/SOAP-2018-papers#program">Lattice Based Modularization of Static Analyses</a></li>
-                                    <li><a href="articles/Hermes@SOAP18.pdf">Assessment and Creation of Effective Test Corpora</a></li>
-                                    <li><a href="https://doi.acm.org/10.1145/2950290.2950312">Call Graph Construction for Java Libraries</a></li>
-                                    <li><a href="https://doi.acm.org/10.1145/2614628.2614630">A software product line for static analyses: the OPAL framework</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <h3>Stay connected and get help!</h3>
+                        <ul class="icons">
+                            <li><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.opal-project.de%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=TheOpalProject&tw_p=followbutton" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="icon fa-users"><span class="label">Gitter</span></a></li>
+                            <li><a href="https://trello.com/theopalproject" class="icon fa-trello"><span class="label">Trello</span></a></li>
+                            <li><a href="https://stackoverflow.com/questions/tagged/opal-framework" class="icon fa-stack-overflow"><span class="label">Stackoverflow</span></a></li>
+                            <li><a href="https://hub.docker.com/r/opalj/sbt_scala_javafx/" class="icon fa-cloud"><span class="label">Docker</span></a></li>
+                        </ul>
+                        <h3>Related</h3>
+                        <ul class="alt">
+                            <li><a href="https://www.openhub.net/p/OPAL-Project">OPAL on OpenHub</a></li>
+                        </ul>
                     </div>
                     <div class="6u">
-                        <h3>Research Using OPAL</h3>
-                        <emph>The following papers give you an idea what you can do with OPAL.</emph>
+                        <h3>Supported By</h3>
                         <ul class="alt">
-                            <li><a href="https://dl.acm.org/doi/10.1145/3320269.3384745">Hidden in Plain Sight: Obfuscated Strings Threatening Your Privacy</a></li>
-                            <li><a href="https://conf.researchr.org/details/issta-2019/issta-2019-Technical-Papers/24/Judge-Identifying-Understanding-and-Evaluating-Sources-of-Unsoundness-in-Call-Grap">Judge: Identifying, Understanding, and Evaluating Sources of Unsoundness in Call Graphs</a></li>
-                            <li><a href="https://2018.splashcon.org/event/splash-2018-oopsla-algebraic-effects-for-the-masses">Algebraic Effects for the Masses</a></li>
-                            <li><a href="http://michael-reif.name/publications/JCG.pdf">Systematic Evaluation of the Unsoundness of Call Graph Construction Algorithms for Java</a></li>
-                            <li><a href="https://ieeexplore.ieee.org/abstract/document/9000061">A Unified Lattice Model and Framework for Purity Analyses</a></li>
-                            <li><a href="http://www.st.informatik.tu-darmstadt.de/artifacts/codematch/">CodeMatch: Obfuscation won't Conceal your Repackaged App</a></li>
-                            <li><a href="https://doi.acm.org/10.1145/2786805.2786865">Hidden Truths in Dead Software Paths</a></li>
-                            <li><a href="https://doi.acm.org/10.1145/2786805.2786829">Getting to know you. . . Towards a Capability Model for Java</a></li>
-                        </ul>
-                        <h3>Related Presentations</h3>
-                        <ul class="alt">
-                            <li><a href="/articles/Your_JDK-Entwicklertag2015.pdf">Your JDK 8</a></li>
-                            <li><a href="/articles/FPCF-Slides@SOAP18.pdf">Lattice Based Modularization of Static Analyses</a></li>
+                            <li><a href="https://www.yourkit.com/"><img src="/images/yklogo.png" width="139", height="33"></a><br>
+                                YourKit supports open source projects with its full-featured Java Profiler.
+                                YourKit, LLC is the creator of <a href="https://www.yourkit.com/java/profiler/">YourKit Java Profiler</a>
+                                an innovative and intelligent tool for profiling Java applications.
+                            </li>
                         </ul>
                     </div>
     			</div>
