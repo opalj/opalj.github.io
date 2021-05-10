@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Engineering Java Bytecode</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/skel.min.js"></script>
+        <script src="/js/skel-layers.min.js"></script>
+        <script src="/js/init.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/scala.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css" />
+        <noscript>
+            <link rel="stylesheet" href="/css/skel.css" />
+        	<link rel="stylesheet" href="/css/style.css" />
+        	<link rel="stylesheet" href="/css/style-xlarge.css" />
+        </noscript>
+    </head>
+    <body id="top">
+        <header id="header" class="skel-layers-fixed">
+            <h2><a href="/"><img src="/OPALLogo.png" width="13" height="13">&nbsp;OPAL Project</a></h2>
+            <nav id="nav">
+                <ul>
+                    <li><a href="/Publications.html">Publications</a></li>
+                    <li><a href="/library/api/SNAPSHOT/org/opalj/index.html">ScalaDoc</a></li>
+                    <li><a href="https://github.com/opalj/OPAL">Repository</a></li>
+                    <li><a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22de.opal-project%22">Maven Central</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section id="one" class="wrapper style1">
+            <div class="container">
+    			<div class="row">
+                    <div class="3u">
+                        <nav>
+                                                    
+                                <br><b>Getting Started</b><br>
+                                                                                
+                                <a href="/tutorial/FixedPointAnalyses.html">Writing Fixed-Point Analyses</a><br>
+                                                                                
+                                <a href="/tutorial/CollaborativeAnalyses.html">Collaborative Analyses</a><br>
+                                                                                
+                                <a href="/tutorial/Lattices.html">Lattices</a><br>
+                                                                                
+                                <a href="/tutorial/Results.html">Results</a><br>
+                                                                                
+                                <a href="/tutorial/Schedulers.html">Schedulers</a><br>
+                                                                                
+                                <br><b>Further Tutorials</b><br>
+                                                                                
+                                <a href="/examples/ReadingClassFiles.html">Reading Class Files</a><br>
+                                                                                
+                                <a href="/examples/Projects.html">Loading Java Projects</a><br>
+                                                                                
+                                <a href="/examples/ClassHierarchy.html">Using the Class Hierarchy</a><br>
+                                                                                
+                                <a href="/examples/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
+                                                                                
+                                <a href="/examples/TAC.html">3-Address Code/SSA Code</a><br>
+                                                                                
+                                <a href="/examples/WritingAnalyses.html">Writing Analyses</a><br>
+                                                                                
+                                <br><b>Tools</b><br>
+                                                                                
+                                <a href="/DeveloperTools.html">Supporting OPAL Developers</a><br>
+                                                                                
+                                <a href="/Hermes.html">Hermes</a><br>
+                                                                                
+                                <a href="/Opium.html">OPIUM</a><br>
+                                                                                
+                                <br><b>Showcases</b><br>
+                                                                                
+                                <a href="/UselessBoxing.html">Detecting Useless Boxings</a><br>
+                                                                                
+                                <a href="/JDK8Dependencies.html">Package Dependencies in JDK8</a><br>
+                                                                                
+                                <a href="/JDK8Complexity.html">Complexity of the JDK8</a><br>
+                                                                                
+                                <br><b>Artifacts</b><br>
+                                                                                
+                                <a href="/Artifacts.html">Research Artifacts</a><br>
+                                                                            </nav>
+                        <hr/>
+                        <div class="hide-at-medium">
+                            Please, report issues or problems in the documentation using <a href="https://github.com/opalj/OPAL/issues">OPAL's issue tracker</a>, by going to the <a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link">OPAL gitter chat room</a> or by writing an email to <a href="mailto:opal_at_st.informatik.tu-darmstadt.de">opal(at)st.informatik.tu-darmstadt.de</a>.
+                        </div>
+                    </div>
+    				<div class="9u">
+                        <h1 id="engineering-java-bytecode-using-opal">Engineering Java Bytecode Using OPAL</h1>
+<p>OPAL is a versatile bytecode engineering framework that offers you mulitple mechanisms to create <code>.class</code> files.</p>
+<h2 id="creating-class-files-using-opals-edsl">Creating Class Files using OPAL's eDSL</h2>
+<p><small><em>The following examples can be executed using the Scala console. Start <code>sbt</code> in OPAL's main folder, change to the project <code>project OPAL-DeveloperTools</code> and start the <code>console</code>.</em></small></p>
+<h3 id="overview">Overview</h3>
+<p>The bytecode assembler framework provides a lightweight eDSL to engineer Java class files. It still requires some understanding of Java bytecode (e.g., the name of the constructor is always <code>&lt;init&gt;</code>), but makes the writing of a method's implementation much more trivial since it is no longer necessary to explicitly think about the precise program counters and the precise layout of the code array. Instead of program counters, labels (Scala <code>Symbol</code>s) are used to mark jump targets. Additionally, the code can be annotated and that information is automatically extracted and can later be used.</p>
+<p>The following is a first example, where we create a class called <code>Test</code> which defines a default constructor.</p>
+<pre><code>import org.opalj.ba._; import org.opalj.br._ ; import org.opalj.br.instructions._;
+val cb = CLASS(
+    accessModifiers = PUBLIC SUPER,
+    thisType = &quot;Test&quot;,
+    methods = METHODS(
+        METHOD(PUBLIC, &quot;&lt;init&gt;&quot;, &quot;()V&quot;, CODE(
+            // The following instruction is annotated with some meta information
+            // which can later be used; e.g., to check that some static analysis
+            // produced an expected result when this instruction is reached.
+            ALOAD_0 → &quot;MarkerAnnotation1&quot;,
+            INVOKESPECIAL(&quot;java/lang/Object&quot;, false, &quot;&lt;init&gt;&quot;, &quot;()V&quot;),
+            RETURN → &quot;MarkerAnnotation2&quot;
+        ))
+    )
+)
+</code></pre>
+<p><code>cb</code> is a (reusable) builder for a class file. To actually create the &quot;.class&quot; file, the <code>da.ClassFile</code> object has to be built and then serialized.</p>
+<pre><code>val (daClassFile,codeAnnotations) = cb.toDA()
+val rawClassFile : Array[Byte] = org.opalj.bc.Assembler(daClassFile)
+</code></pre>
+<p>The <code>rawClassFile</code> can then be written to the disk using, e.g., <code>java.nio.file.Files.write(&lt;PATH&gt;,rawClassFile)</code> or (e.g., for testing purposes) can be passed to an in memory class loader (<code>org.opalj.util.InMemoryClassLoader</code>) and immediately be instantiated and executed. The <code>codeAnnotations</code> can then be further processed arbitrarily.</p>
+<blockquote>
+<p>If your class file doesn't define a default constructor, the DSL will automatically add it when required. I.e., the default constructor is created, when you define a regular class - not an interface –, the supertype is specified and no other constructor exists.</p>
+</blockquote>
+<h3 id="creating-a-marker-interface">Creating a Marker interface</h3>
+<p>Creating a marker interface is trivial as shown next:</p>
+<pre><code>val cb = CLASS[Nothing](accessModifiers = ABSTRACT INTERFACE, thisType = &quot;MarkerInterface1&quot;)
+</code></pre>
+<blockquote>
+<p>Do not forget that an interface always has to be <code>ABSTRACT</code> and - if we don't define methods - the returned code annotations have to be explicitly specified as <code>Nothing</code>.</p>
+</blockquote>
+<h3 id="adding-fields">Adding Fields</h3>
+<p>Fields are simply created using <code>FIELD</code> as shown next. The type of a field is defined using a <a href="https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-4.html#jvms-4.3.2">field descriptor</a>.</p>
+<pre><code>val cb = CLASS[Nothing](
+    accessModifiers = SUPER PUBLIC, thisType = &quot;org/example/FieldClass&quot;,
+    fields = FIELDS(
+        FIELD(FINAL PUBLIC, &quot;publicField&quot;, &quot;I&quot;),
+        FIELD(PRIVATE, &quot;privateField&quot;, &quot;Z&quot;)
+    )
+)
+</code></pre>
+<h3 id="creating-control-flow">Creating Control Flow</h3>
+<p>Jump targets are specified using labels directly before the instruction which is the jump target. These labels are then used in branch instructions to identify the branch target.</p>
+<pre><code>val cb = CLASS(
+    accessModifiers = PUBLIC SUPER,   thisType = &quot;TestJump&quot;,
+    methods = METHODS(
+        METHOD(PUBLIC, &quot;returnInt&quot;, &quot;(I)I&quot;, CODE(
+            GOTO('IsZero_?),
+            'Else,
+            ILOAD_1,
+            IRETURN,
+            'IsTwo_?,
+            ILOAD_1,
+            ICONST_2,
+            IF_ICMPNE('Else),
+            ICONST_2,
+            IRETURN,
+            'IsOne_?,
+            ILOAD_1,
+            ICONST_1,
+            IF_ICMPNE('IsTwo_?),
+            ICONST_1,
+            IRETURN,
+            'IsZero_?,
+            ILOAD_1,
+            IFNE('IsOne_?),
+            ICONST_0,
+            IRETURN
+        ))
+    )
+)
+</code></pre>
+<blockquote>
+<p>Making the control-flow graph explicit is possible using the CFGFactory to create the CFG and to then to transform it to an SVG.</p>
+<pre><code>val (br,_) = cb.toBR
+val cfg = org.opalj.br.cfg.CFGFactory(br.methods.tail.head.body.get)
+val svg = org.opalj.graphs.dotToSVG(cfg.toDot)
+org.opalj.io.writeAndOpen(svg,&quot;CFG&quot;,&quot;.svg&quot;)
+</code></pre>
+<p><img src="BytecodeEngineeringCFG.svg" alt="CFG" /></p>
+</blockquote>
+<h3 id="exception-handling">Exception Handling</h3>
+<p>To specify exception handlers use <code>TRY</code>, <code>TRYEND</code> and <code>CATCH</code> in combination with labels.</p>
+<pre><code>val (attributeMethodClass, _) = CLASS(
+    accessModifiers = PUBLIC, thisType = &quot;MethodWithExceptionHandling&quot;,
+    methods = METHODS(
+        METHOD(
+            PUBLIC, &quot;tryCatchFinallyTest&quot;, &quot;(I)I&quot;, CODE(
+                ICONST_1,
+                ISTORE_2,
+                TRY('Try1),
+                TRY('FinallyTry2),
+                TRY('LastPCTry3),
+                ILOAD_1,
+                IFGE('tryEnd),
+                NEW(&quot;java/lang/Exception&quot;),
+                DUP,
+                INVOKESPECIAL(&quot;java/lang/Exception&quot;, false, &quot;&lt;init&gt;&quot;, &quot;()V&quot;),
+                ATHROW,
+                'tryEnd,
+                TRYEND('Try1),
+                GOTO('finally),
+                CATCH('Try1, &quot;java/lang/Exception&quot;),
+                POP,
+                ICONST_0,
+                ISTORE_2,
+                TRYEND('FinallyTry2),
+                GOTO('finally),
+                CATCH('FinallyTry2),
+                CATCH('LastPCTry3),
+                POP,
+                'finally,
+                ILOAD_1,
+                IFLE('return),
+                ICONST_2,
+                ISTORE_2,
+                'return,
+                ILOAD_2,
+                IRETURN,
+                TRYEND('LastPCTry3)
+            )
+        )
+    )
+).toDA()
+</code></pre>
+<h3 id="adding-line-numbers">Adding Line Numbers</h3>
+<p>The eDSL provides explicit support for adding line numbers in line.  Just add a <code>LINENUMBER</code> before the instruction which should be associated with the line number.</p>
+<pre><code>val (attributeMethodClass, _) =  CLASS(
+    accessModifiers = PUBLIC, thisType = &quot;MethodWithLineNumbers&quot;,
+    methods = METHODS( METHOD(
+        PUBLIC, &quot;&lt;init&gt;&quot;, &quot;()V&quot;, CODE(
+            LINENUMBER(0),
+            ALOAD_0,
+            LINENUMBER(1),
+            INVOKESPECIAL(&quot;java/lang/Object&quot;, false, &quot;&lt;init&gt;&quot;, &quot;()V&quot;),
+            'return,
+            LINENUMBER(2),
+            RETURN
+        )
+    ))
+).toDA()
+</code></pre>
+<h3 id="adding-further-attributes">Adding Further attributes</h3>
+<p>The DSL interacts seamlessly with the bytecode representation and all attibutes can always be added to the attributes as expected. For example, the following class file is marked as being <code>Synthetic</code> and the origin is set using <code>SourceFile(&quot;...&quot;)</code>. The method is marked as being <code>Deprecated</code> and as throwing the exceptions <code>java.lang.Exception</code>. In the last case, we use the DSL's <code>EXCEPTIONS</code> table builder. It enables us to just specify the names of the exceptions. Alternatively, it would have been possible to directly create the underlying <code>br.ExceptionsTable</code> using <code>ObjectType</code>s.</p>
+<pre><code>val cb = CLASS(
+    accessModifiers = PUBLIC SUPER,
+    thisType = &quot;SimpleMethodClass&quot;,
+    methods = METHODS(
+        METHOD(
+            FINAL.SYNTHETIC.PUBLIC, &quot;testMethod&quot;, &quot;(Ljava/lang/String;)Ljava/lang/String;&quot;,
+            CODE(ACONST_NULL, ARETURN),
+            Seq(EXCEPTIONS(&quot;java/lang/Exception&quot;), Deprecated)
+        )
+    ),
+    attributes = Seq(SourceFile(&quot;ClassFileBuilderTest.scala&quot;), Synthetic)
+)
+</code></pre>
+<h2 id="creating-class-files-using-opals-default-representation">Creating Class Files Using OPAL's Default Representation</h2>
+<p>Instead of creating a <code>ClassFile</code> using the eDSL it is also possible to directly create the bytecode using the default representation. Every <code>br.ClassFile</code> can be converted to a <code>daClassFile</code> using <code>org.opalj.ba.toDA(&lt;br.ClassFile&gt;)</code> and can then be serialized as shown above.</p>
+<h2 id="creating-class-files-using-the-bare-bones-representation">Creating Class Files Using the Bare Bones Representation</h2>
+<h3 id="basics">Basics</h3>
+<p>This representation gives you full control over every single bit and is extremely fast, but requires a very deep understanding of Java bytecode. Actually, the other approaches use this representation as the target.</p>
+<h3 id="complex-example">Complex Example</h3>
+<p>Defining an interface with a (Java 8) default method which calls another static method.</p>
+<pre><code>import java.nio.file.{Files,Paths}
+import org.opalj.bi._
+import org.opalj.da._
+import org.opalj.bc.Assembler
+val cf = ClassFile(
+    Array[Constant_Pool_Entry](
+        /*  0 */ null, // must be null due to the specification
+        /*  1 */ CONSTANT_Class_info(2),
+        /*  2 */ CONSTANT_Utf8(&quot;mr/MyIntf&quot;),
+        /*  3 */ CONSTANT_Class_info(4),
+        /*  4 */ CONSTANT_Utf8(&quot;java/lang/Object&quot;),
+        /*  5 */ CONSTANT_Class_info(6),
+        /*  6 */ CONSTANT_Utf8(&quot;mr/MyIntf&quot;),
+        /*  7 */ CONSTANT_Utf8(&quot;m&quot;),
+        /*  8 */ CONSTANT_Utf8(&quot;()V&quot;),
+        /*  9 */ CONSTANT_Utf8(&quot;Code&quot;),
+        /* 10 */ CONSTANT_String_info(11),
+        /* 11 */ CONSTANT_Utf8(&quot;MyIntf.m&quot;),
+        /* 12 */ CONSTANT_Methodref_info(13, 15),
+        /* 13 */ CONSTANT_Class_info(14),
+        /* 14 */ CONSTANT_Utf8(&quot;mr/Helper&quot;),
+        /* 15 */ CONSTANT_NameAndType_info(16, 17),
+        /* 16 */ CONSTANT_Utf8(&quot;println&quot;),
+        /* 17 */ CONSTANT_Utf8(&quot;(Ljava/lang/String;)V&quot;)
+    ),
+    minor_version = 0, major_version = 52,
+    access_flags = ACC_INTERFACE.mask | ACC_ABSTRACT.mask,
+    this_class = 1 /*mr/MyIntf*/ , super_class = 3 /*extends java.lang.Object*/ ,
+    // Interfaces.empty,
+    // Fields.empty,
+    methods = IndexedSeq(
+        Method_Info(
+            access_flags = ACC_PUBLIC.mask,
+            name_index = 7, descriptor_index = 8,
+            attributes = IndexedSeq(
+                Code_attribute(
+                    attribute_name_index = 9,
+                    max_stack = 1, max_locals = 1,
+                    code = new Code(Array[Byte](
+                            18,         // ldc
+                            10,         //  -&gt; #10
+                            184.toByte, // invokestatic
+                            0,          //  -&gt; Methodref
+                            12,         //     #12
+                            177.toByte  // return
+)   )   )   )   )   )   )
+
+val assembledMyIntf = Assembler(cf)
+val assembledMyIntfPath = Paths.get(&quot;MyIntf.class&quot;)
+println(&quot;Created class file: &quot;+Files.write(assembledMyIntfPath, assembledMyIntf).toAbsolutePath)
+</code></pre>
+<h3 id="summary">Summary</h3>
+<p>Using this representation is primarily useful for performing simple method and field filterings of existing class files, or for performing simple operations at the method instructions level. Complex transformations or even the creation of new class files requires explicit management/extension of the constant pool and writing the bare bone instructions array. In such cases, using OPAL's default representation – as described next – is highly recommend.</p>
+
+                    </div>
+                </div>
+            </div>
+    	</section>
+
+        <footer id="footer">
+    	    <div class="container">
+    			<div class="row double">
+                    <div class="6u">
+                        <h3>Stay connected and get help!</h3>
+                        <ul class="icons">
+                            <li><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.opal-project.de%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=TheOpalProject&tw_p=followbutton" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="icon fa-users"><span class="label">Gitter</span></a></li>
+                            <li><a href="https://trello.com/theopalproject" class="icon fa-trello"><span class="label">Trello</span></a></li>
+                            <li><a href="https://stackoverflow.com/questions/tagged/opal-framework" class="icon fa-stack-overflow"><span class="label">Stackoverflow</span></a></li>
+                            <li><a href="https://hub.docker.com/r/opalj/sbt_scala_javafx/" class="icon fa-cloud"><span class="label">Docker</span></a></li>
+                        </ul>
+                        <h3>Related</h3>
+                        <ul class="alt">
+                            <li><a href="https://www.openhub.net/p/OPAL-Project">OPAL on OpenHub</a></li>
+                        </ul>
+                    </div>
+                    <div class="6u">
+                        <h3>Supported By</h3>
+                        <ul class="alt">
+                            <li><a href="https://www.yourkit.com/"><img src="/images/yklogo.png" width="139", height="33"></a><br>
+                                YourKit supports open source projects with its full-featured Java Profiler.
+                                YourKit, LLC is the creator of <a href="https://www.yourkit.com/java/profiler/">YourKit Java Profiler</a>
+                                an innovative and intelligent tool for profiling Java applications.
+                            </li>
+                        </ul>
+                    </div>
+    			</div>
+    			<ul class="copyright">
+                    <li>&copy; The OPAL Project. All rights reserved.</li>
+                    <li><a href="https://raw.githubusercontent.com/stg-tud/opal/master/LICENSE">License (BSD 2 Clause)</a></li>
+                    <li><img src="/Athene.png" height="27" style="vertical-align:middle"></li>
+    				<li>Design: <a href="https://templated.co">TEMPLATED</a></li>
+    			</ul>
+    		</div>
+    	</footer>
+
+    </body>
+
+    <script>
+        hljs.configure({
+          tabReplace: '    ', // 4 spaces
+          languages: ["scala","java"]
+        })
+        hljs.initHighlightingOnLoad();
+    </script>
+</html>

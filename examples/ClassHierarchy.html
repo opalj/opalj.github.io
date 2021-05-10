@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Using the Class Hierarchy</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/skel.min.js"></script>
+        <script src="/js/skel-layers.min.js"></script>
+        <script src="/js/init.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/scala.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css" />
+        <noscript>
+            <link rel="stylesheet" href="/css/skel.css" />
+        	<link rel="stylesheet" href="/css/style.css" />
+        	<link rel="stylesheet" href="/css/style-xlarge.css" />
+        </noscript>
+    </head>
+    <body id="top">
+        <header id="header" class="skel-layers-fixed">
+            <h2><a href="/"><img src="/OPALLogo.png" width="13" height="13">&nbsp;OPAL Project</a></h2>
+            <nav id="nav">
+                <ul>
+                    <li><a href="/Publications.html">Publications</a></li>
+                    <li><a href="/library/api/SNAPSHOT/org/opalj/index.html">ScalaDoc</a></li>
+                    <li><a href="https://github.com/opalj/OPAL">Repository</a></li>
+                    <li><a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22de.opal-project%22">Maven Central</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section id="one" class="wrapper style1">
+            <div class="container">
+    			<div class="row">
+                    <div class="3u">
+                        <nav>
+                                                    
+                                <br><b>Getting Started</b><br>
+                                                                                
+                                <a href="/tutorial/FixedPointAnalyses.html">Writing Fixed-Point Analyses</a><br>
+                                                                                
+                                <a href="/tutorial/CollaborativeAnalyses.html">Collaborative Analyses</a><br>
+                                                                                
+                                <a href="/tutorial/Lattices.html">Lattices</a><br>
+                                                                                
+                                <a href="/tutorial/Results.html">Results</a><br>
+                                                                                
+                                <a href="/tutorial/Schedulers.html">Schedulers</a><br>
+                                                                                
+                                <br><b>Further Tutorials</b><br>
+                                                                                
+                                <a href="/examples/ReadingClassFiles.html">Reading Class Files</a><br>
+                                                                                
+                                <a href="/examples/Projects.html">Loading Java Projects</a><br>
+                                                                                
+                                <a href="/examples/ClassHierarchy.html">Using the Class Hierarchy</a><br>
+                                                                                
+                                <a href="/examples/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
+                                                                                
+                                <a href="/examples/TAC.html">3-Address Code/SSA Code</a><br>
+                                                                                
+                                <a href="/examples/WritingAnalyses.html">Writing Analyses</a><br>
+                                                                                
+                                <br><b>Tools</b><br>
+                                                                                
+                                <a href="/DeveloperTools.html">Supporting OPAL Developers</a><br>
+                                                                                
+                                <a href="/Hermes.html">Hermes</a><br>
+                                                                                
+                                <a href="/Opium.html">OPIUM</a><br>
+                                                                                
+                                <br><b>Showcases</b><br>
+                                                                                
+                                <a href="/UselessBoxing.html">Detecting Useless Boxings</a><br>
+                                                                                
+                                <a href="/JDK8Dependencies.html">Package Dependencies in JDK8</a><br>
+                                                                                
+                                <a href="/JDK8Complexity.html">Complexity of the JDK8</a><br>
+                                                                                
+                                <br><b>Artifacts</b><br>
+                                                                                
+                                <a href="/Artifacts.html">Research Artifacts</a><br>
+                                                                            </nav>
+                        <hr/>
+                        <div class="hide-at-medium">
+                            Please, report issues or problems in the documentation using <a href="https://github.com/opalj/OPAL/issues">OPAL's issue tracker</a>, by going to the <a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link">OPAL gitter chat room</a> or by writing an email to <a href="mailto:opal_at_st.informatik.tu-darmstadt.de">opal(at)st.informatik.tu-darmstadt.de</a>.
+                        </div>
+                    </div>
+    				<div class="9u">
+                        <h1 id="querying-the-class-hierarchy">Querying the Class Hierarchy</h1>
+<p>One of the most common tasks when implementing static analyses is to get information about the inheritance relation between different classes, to traverse all super/sub classes/interfaces or to compute the least upper bound given some classes. Support for answering such questions or for processing a project's class hierarchy is directly provided by OPAL's <code>org.opalj.br.ClassHierarchy</code>. The easiest way to get the class hierarchy is to first instantiate a project and then ask the project for the class hierarchy.</p>
+<pre><code>import import org.opalj.br._ ; import org.opalj.br.analyses._ ; import java.io.File
+val projectJAR = &quot;./OPAL/bi/target/scala-2.12/resource_managed/test/method_types.jar&quot;
+implicit val p = Project(new File(projectJAR),org.opalj.bytecode.RTJar)
+val classHierarchy = p.classHierarchy
+</code></pre>
+<p>The class hierarchy, e.g., directly makes the information about a type's super/sub types available:</p>
+<pre><code>def subtypeInformation(ObjectType) : SubtypeInformation 
+def supertypeInformation(ObjectType) : SupertypeInformation 
+</code></pre>
+<p>To get, e.g., all subtypes of <code>java.io.Serializable</code>, it is sufficient to query the subtypes information:</p>
+<pre><code>val subtypesOfSerializable = subtypeInformation(ObjectType(&quot;java/io/Serializable&quot;))
+</code></pre>
+<blockquote>
+<p>Recall that in Java bytecode package names are separated using &quot;/&quot; and not &quot;.&quot; as used in Java/Scala/... source code.</p>
+</blockquote>
+<blockquote>
+<p>OPAL's class hierarchy supports partial class hierarchies and - in case that a class hierarchy is incomplete – generally follows a best-effort approach to determine sub-/supertype relations. In particular, when <code>isSubtypeOf</code> is used, <code>java.lang.Object</code> will always be treated as the supertype and an <strong>interface</strong> will never be the subtype of a class type, even if the supertype hierarchy for the interface is incomplete. As a matter of fact, the standard JDK/rt.jar contains references to classes that are not delivered as part of the JDK and therefore the class hierarchy is basically always incomplete.</p>
+</blockquote>
+<p>If you don't know whether a given type is known to the class hierarchy, you should call the <code>get</code> method to avoid potential <code>NoSuchElementExceptions</code>.</p>
+<pre><code>subtypes.get(ObjectType(&quot;java/io/Serializable&quot;)).foreach{subtypeInformation =&gt; ... }
+</code></pre>
+
+                    </div>
+                </div>
+            </div>
+    	</section>
+
+        <footer id="footer">
+    	    <div class="container">
+    			<div class="row double">
+                    <div class="6u">
+                        <h3>Stay connected and get help!</h3>
+                        <ul class="icons">
+                            <li><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.opal-project.de%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=TheOpalProject&tw_p=followbutton" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="icon fa-users"><span class="label">Gitter</span></a></li>
+                            <li><a href="https://trello.com/theopalproject" class="icon fa-trello"><span class="label">Trello</span></a></li>
+                            <li><a href="https://stackoverflow.com/questions/tagged/opal-framework" class="icon fa-stack-overflow"><span class="label">Stackoverflow</span></a></li>
+                            <li><a href="https://hub.docker.com/r/opalj/sbt_scala_javafx/" class="icon fa-cloud"><span class="label">Docker</span></a></li>
+                        </ul>
+                        <h3>Related</h3>
+                        <ul class="alt">
+                            <li><a href="https://www.openhub.net/p/OPAL-Project">OPAL on OpenHub</a></li>
+                        </ul>
+                    </div>
+                    <div class="6u">
+                        <h3>Supported By</h3>
+                        <ul class="alt">
+                            <li><a href="https://www.yourkit.com/"><img src="/images/yklogo.png" width="139", height="33"></a><br>
+                                YourKit supports open source projects with its full-featured Java Profiler.
+                                YourKit, LLC is the creator of <a href="https://www.yourkit.com/java/profiler/">YourKit Java Profiler</a>
+                                an innovative and intelligent tool for profiling Java applications.
+                            </li>
+                        </ul>
+                    </div>
+    			</div>
+    			<ul class="copyright">
+                    <li>&copy; The OPAL Project. All rights reserved.</li>
+                    <li><a href="https://raw.githubusercontent.com/stg-tud/opal/master/LICENSE">License (BSD 2 Clause)</a></li>
+                    <li><img src="/Athene.png" height="27" style="vertical-align:middle"></li>
+    				<li>Design: <a href="https://templated.co">TEMPLATED</a></li>
+    			</ul>
+    		</div>
+    	</footer>
+
+    </body>
+
+    <script>
+        hljs.configure({
+          tabReplace: '    ', // 4 spaces
+          languages: ["scala","java"]
+        })
+        hljs.initHighlightingOnLoad();
+    </script>
+</html>
