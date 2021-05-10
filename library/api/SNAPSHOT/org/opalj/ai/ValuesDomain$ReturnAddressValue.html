@@ -251,7 +251,7 @@ abstract interpreter.
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Stores a single return address (i.e., a program counter/index into the code array).
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="ValuesDomain.html#DomainReturnAddressValue&lt;:ValuesDomain.this.ReturnAddressValuewithValuesDomain.this.DomainValue" class="extmbr" name="org.opalj.ai.ValuesDomain.DomainReturnAddressValue">DomainReturnAddressValue</a></dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/ai/src/main/scala/org/opalj/ai/ValuesDomain.scala?at=develop" target="_blank">ValuesDomain.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>Though the framework completely handles all aspects related to return address
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="ValuesDomain.html#DomainReturnAddressValue&lt;:ValuesDomain.this.ReturnAddressValuewithValuesDomain.this.DomainValue" class="extmbr" name="org.opalj.ai.ValuesDomain.DomainReturnAddressValue">DomainReturnAddressValue</a></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ai/src/main/scala/org/opalj/ai/ValuesDomain.scala" target="_blank">ValuesDomain.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>Though the framework completely handles all aspects related to return address
      values, it is nevertheless necessary that this class inherits from <code>Value</code>
      as return addresses are stored on the stack/in the registers. However,
      if the <code>Value</code> trait should be refined, all additional methods may – from
@@ -554,7 +554,7 @@ runtime if the analysis time takes too long using a (more) precise domain.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.value.IsReturnAddressValue#computationalType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -677,7 +677,7 @@ impact on functions such as <code>join</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.value.IsReturnAddressValue#hasCategory2ComputationalType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -906,7 +906,7 @@ its computational type and – if so – calls <a href="ValuesDomain$Value.html
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -927,7 +927,7 @@ its computational type and – if so – calls <a href="ValuesDomain$Value.html
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.ai.ValuesDomain.RETValue#summarize" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1117,7 +1117,7 @@ the underlying representation from which it was derived.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1128,9 +1128,7 @@ the underlying representation from which it was derived.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

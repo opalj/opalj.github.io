@@ -233,7 +233,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/cg/PropagationBasedCallGraphKeys.scala?at=develop" target="_blank">PropagationBasedCallGraphKeys.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/cg/PropagationBasedCallGraphKeys.scala" target="_blank">PropagationBasedCallGraphKeys.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -396,7 +396,7 @@ graph.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.cg.AbstractCallGraphKey#compute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -468,7 +468,7 @@ graph.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -489,7 +489,7 @@ graph.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -542,7 +542,7 @@ graph.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -563,9 +563,25 @@ graph.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="org.opalj.tac.cg.AbstractCallGraphKey#registeredAnalyses" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="registeredAnalyses(project:org.opalj.br.analyses.SomeProject):Seq[org.opalj.br.fpcf.FPCFAnalysisScheduler]"></a><a id="registeredAnalyses(SomeProject):Seq[FPCFAnalysisScheduler]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/tac/cg/CTACallGraphKey$.html#registeredAnalyses(project:org.opalj.br.analyses.SomeProject):Seq[org.opalj.br.fpcf.FPCFAnalysisScheduler]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registeredAnalyses</span><span class="params">(<span name="project">project: <a href="../../br/analyses/index.html#SomeProject=org.opalj.br.analyses.Project[_]" class="extmbr" name="org.opalj.br.analyses.SomeProject">SomeProject</a></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="AbstractCallGraphKey.html" class="extype" name="org.opalj.tac.cg.AbstractCallGraphKey">AbstractCallGraphKey</a></dd></dl></div>
     </li><li name="org.opalj.tac.cg.PropagationBasedCallGraphKey#requirements" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="requirements(project:org.opalj.br.analyses.SomeProject):org.opalj.br.analyses.ProjectInformationKeys"></a><a id="requirements(SomeProject):ProjectInformationKeys"></a>
       <span class="permalink">
@@ -741,7 +757,7 @@ is automatically assigned by OPAL and will not change after that.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -752,9 +768,7 @@ is automatically assigned by OPAL and will not change after that.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

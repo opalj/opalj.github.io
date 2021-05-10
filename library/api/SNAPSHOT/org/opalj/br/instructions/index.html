@@ -1070,6 +1070,18 @@ that it facilitates writing analyses that use pattern matching.
                         <a href="INCOMPLETE_INVOKEDYNAMIC$.html" title="Represents an &quot;incomplete&quot; invoke dynamic instruction.">INCOMPLETE_INVOKEDYNAMIC</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
+                        <a class="object" href="INCOMPLETE_LDC$.html" title=""></a>
+                        <a href="INCOMPLETE_LDC$.html" title="">INCOMPLETE_LDC</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="INCOMPLETE_LDC2_W$.html" title=""></a>
+                        <a href="INCOMPLETE_LDC2_W$.html" title="">INCOMPLETE_LDC2_W</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="INCOMPLETE_LDC_W$.html" title=""></a>
+                        <a href="INCOMPLETE_LDC_W$.html" title="">INCOMPLETE_LDC_W</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
                         <a class="object" href="INEG$.html" title="Negate int."></a>
                         <a href="INEG$.html" title="Negate int.">INEG</a>
                       </li><li class="current-entities indented4">
@@ -1268,6 +1280,10 @@ that it facilitates writing analyses that use pattern matching.
                         <span class="separator"></span>
                         <a class="object" href="LDCClass$.html" title=""></a>
                         <a href="LDCClass$.html" title="">LDCClass</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="LDCDynamic$.html" title=""></a>
+                        <a href="LDCDynamic$.html" title="">LDCDynamic</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="object" href="LDCFloat$.html" title=""></a>
@@ -1512,6 +1528,18 @@ that it facilitates writing analyses that use pattern matching.
                         <span class="separator"></span>
                         <a class="class" href="LoadDouble.html" title=""></a>
                         <a href="LoadDouble.html" title="">LoadDouble</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="LoadDynamic.html" title=""></a>
+                        <a href="LoadDynamic.html" title="">LoadDynamic</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="LoadDynamic2_W.html" title=""></a>
+                        <a href="LoadDynamic2_W.html" title="">LoadDynamic2_W</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="LoadDynamic_W.html" title=""></a>
+                        <a href="LoadDynamic_W.html" title="">LoadDynamic_W</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="class" href="LoadFloat.html" title=""></a>
@@ -1838,7 +1866,7 @@ that it facilitates writing analyses that use pattern matching.
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Common instruction sequences.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/instructions/package.scala?at=develop" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/br/src/main/scala/org/opalj/br/instructions/package.scala" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -4653,6 +4681,57 @@ target instruction.</p>
       </span>
       
       
+    </li><li name="org.opalj.br.instructions.LoadDynamic" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LoadDynamicextendsLoadConstantInstruction[Nothing]withLDC[Nothing]withProductwithSerializable"></a><a id="LoadDynamic:LoadDynamic"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/instructions/LoadDynamic.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="LoadDynamic.html"><span class="name">LoadDynamic</span></a><span class="params">(<span name="bootstrapMethod">bootstrapMethod: <a href="../BootstrapMethod.html" class="extype" name="org.opalj.br.BootstrapMethod">BootstrapMethod</a></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <a href="../FieldType.html" class="extype" name="org.opalj.br.FieldType">FieldType</a></span>)</span><span class="result"> extends <a href="LoadConstantInstruction.html" class="extype" name="org.opalj.br.instructions.LoadConstantInstruction">LoadConstantInstruction</a>[<span class="extype" name="scala.Nothing">Nothing</span>] with <a href="LDC.html" class="extype" name="org.opalj.br.instructions.LDC">LDC</a>[<span class="extype" name="scala.Nothing">Nothing</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>To match <a href="LoadDynamic.html" class="extype" name="org.opalj.br.instructions.LoadDynamic">LoadDynamic</a>, <a href="LoadDynamic_W.html" class="extype" name="org.opalj.br.instructions.LoadDynamic_W">LoadDynamic_W</a> and <a href="LoadDynamic2_W.html" class="extype" name="org.opalj.br.instructions.LoadDynamic2_W">LoadDynamic2_W</a> instructions you can use
+      <a href="LDCDynamic$.html" class="extype" name="org.opalj.br.instructions.LDCDynamic">LDCDynamic</a>.</p></span></dd></dl></div>
+    </li><li name="org.opalj.br.instructions.LoadDynamic2_W" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LoadDynamic2_WextendsLDC2_W[Nothing]withProductwithSerializable"></a><a id="LoadDynamic2_W:LoadDynamic2_W"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/instructions/LoadDynamic2_W.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="LoadDynamic2_W.html"><span class="name">LoadDynamic2_W</span></a><span class="params">(<span name="bootstrapMethod">bootstrapMethod: <a href="../BootstrapMethod.html" class="extype" name="org.opalj.br.BootstrapMethod">BootstrapMethod</a></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <a href="../FieldType.html" class="extype" name="org.opalj.br.FieldType">FieldType</a></span>)</span><span class="result"> extends <a href="LDC2_W.html" class="extype" name="org.opalj.br.instructions.LDC2_W">LDC2_W</a>[<span class="extype" name="scala.Nothing">Nothing</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>To match <a href="LoadDynamic.html" class="extype" name="org.opalj.br.instructions.LoadDynamic">LoadDynamic</a>, <a href="LoadDynamic_W.html" class="extype" name="org.opalj.br.instructions.LoadDynamic_W">LoadDynamic_W</a> and <a href="LoadDynamic2_W.html" class="extype" name="org.opalj.br.instructions.LoadDynamic2_W">LoadDynamic2_W</a> instructions you can use
+      <a href="LDCDynamic$.html" class="extype" name="org.opalj.br.instructions.LDCDynamic">LDCDynamic</a>.</p></span></dd></dl></div>
+    </li><li name="org.opalj.br.instructions.LoadDynamic_W" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LoadDynamic_WextendsLDC_W[Nothing]withProductwithSerializable"></a><a id="LoadDynamic_W:LoadDynamic_W"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/instructions/LoadDynamic_W.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="LoadDynamic_W.html"><span class="name">LoadDynamic_W</span></a><span class="params">(<span name="bootstrapMethod">bootstrapMethod: <a href="../BootstrapMethod.html" class="extype" name="org.opalj.br.BootstrapMethod">BootstrapMethod</a></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <a href="../FieldType.html" class="extype" name="org.opalj.br.FieldType">FieldType</a></span>)</span><span class="result"> extends <a href="LDC_W.html" class="extype" name="org.opalj.br.instructions.LDC_W">LDC_W</a>[<span class="extype" name="scala.Nothing">Nothing</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>To match <a href="LoadDynamic.html" class="extype" name="org.opalj.br.instructions.LoadDynamic">LoadDynamic</a>, <a href="LoadDynamic_W.html" class="extype" name="org.opalj.br.instructions.LoadDynamic_W">LoadDynamic_W</a> and <a href="LoadDynamic2_W.html" class="extype" name="org.opalj.br.instructions.LoadDynamic2_W">LoadDynamic2_W</a> instructions you can use
+      <a href="LDCDynamic$.html" class="extype" name="org.opalj.br.instructions.LDCDynamic">LDCDynamic</a>.</p></span></dd></dl></div>
     </li><li name="org.opalj.br.instructions.LoadFloat" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="LoadFloatextendsPrimitiveLDC[Float]withProductwithSerializable"></a><a id="LoadFloat:LoadFloat"></a>
       <span class="permalink">
@@ -7923,6 +8002,54 @@ yet loaded. In case of <code>invokedynamic</code> instructions it is necessary
 to read a class file's attributes which are read in at the very end. This requires
 to resolve INVOKEDYNAMIC instructions in a two step process.
 </p></div></div>
+    </li><li name="org.opalj.br.instructions.INCOMPLETE_LDC" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="INCOMPLETE_LDC"></a><a id="INCOMPLETE_LDC:INCOMPLETE_LDC"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/instructions/INCOMPLETE_LDC$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="INCOMPLETE_LDC$.html"><span class="name">INCOMPLETE_LDC</span></a><span class="result"> extends <a href="LoadConstantInstruction.html" class="extype" name="org.opalj.br.instructions.LoadConstantInstruction">LoadConstantInstruction</a>[<span class="extype" name="scala.Any">Any</span>] with <a href="LDC.html" class="extype" name="org.opalj.br.instructions.LDC">LDC</a>[<span class="extype" name="scala.Any">Any</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.instructions.INCOMPLETE_LDC2_W" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="INCOMPLETE_LDC2_W"></a><a id="INCOMPLETE_LDC2_W:INCOMPLETE_LDC2_W"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/instructions/INCOMPLETE_LDC2_W$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="INCOMPLETE_LDC2_W$.html"><span class="name">INCOMPLETE_LDC2_W</span></a><span class="result"> extends <a href="LDC2_W.html" class="extype" name="org.opalj.br.instructions.LDC2_W">LDC2_W</a>[<span class="extype" name="scala.Any">Any</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.instructions.INCOMPLETE_LDC_W" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="INCOMPLETE_LDC_W"></a><a id="INCOMPLETE_LDC_W:INCOMPLETE_LDC_W"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/instructions/INCOMPLETE_LDC_W$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="INCOMPLETE_LDC_W$.html"><span class="name">INCOMPLETE_LDC_W</span></a><span class="result"> extends <a href="LDC_W.html" class="extype" name="org.opalj.br.instructions.LDC_W">LDC_W</a>[<span class="extype" name="scala.Any">Any</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
     </li><li name="org.opalj.br.instructions.INEG" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="INEG"></a><a id="INEG:INEG"></a>
       <span class="permalink">
@@ -8560,6 +8687,22 @@ to resolve INVOKEDYNAMIC instructions in a two step process.
       </span>
       <span class="symbol">
         <a title="" href="LDCClass$.html"><span class="name">LDCClass</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.instructions.LDCDynamic" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LDCDynamic"></a><a id="LDCDynamic:LDCDynamic"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/instructions/LDCDynamic$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="LDCDynamic$.html"><span class="name">LDCDynamic</span></a>
       </span>
       
       

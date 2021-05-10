@@ -255,6 +255,10 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                         <a href="AbstractIFDSNullFact.html" title="The super type of all null facts.">AbstractIFDSNullFact</a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
+                        <a class="class" href="CallSite.html" title=""></a>
+                        <a href="CallSite.html" title="">CallSite</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
                         <a class="class" href="DefinitionSiteWithoutPutField.html" title="Represents a definition site of an object that is stored into a field (that is being analyzed for locality) where the field write use-site is removed from the set of use-sites."></a>
                         <a href="DefinitionSiteWithoutPutField.html" title="Represents a definition site of an object that is stored into a field (that is being analyzed for locality) where the field write use-site is removed from the set of use-sites.">DefinitionSiteWithoutPutField</a>
                       </li><li class="current-entities indented5">
@@ -405,7 +409,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/L0TACAIAnalysis.scala?at=develop" target="_blank">L0TACAIAnalysis.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/L0TACAIAnalysis.scala" target="_blank">L0TACAIAnalysis.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -749,7 +753,7 @@ after phase setup, but potentially after other analyses' <code>beforeSchedule</c
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.L0TACAIAnalysisScheduler#derivedProperty" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -834,7 +838,7 @@ after phase setup, but potentially after other analyses' <code>beforeSchedule</c
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -855,7 +859,7 @@ after phase setup, but potentially after other analyses' <code>beforeSchedule</c
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.TACAIInitializer#init" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -967,7 +971,7 @@ which implements the underlying analysis.</p><p>The default name is the name of 
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -988,7 +992,7 @@ which implements the underlying analysis.</p><p>The default name is the name of 
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.L0TACAIAnalysisScheduler#requiredProjectInformation" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1216,7 +1220,7 @@ used is not correctly listed, a deadlock will _always_ occur.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1227,9 +1231,7 @@ used is not correctly listed, a deadlock will _always_ occur.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

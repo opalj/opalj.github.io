@@ -180,6 +180,10 @@ that it facilitates writing analyses that use pattern matching.
                         <a href="CONSTANT_Double_info.html" title="Represents a constant double value.">CONSTANT_Double_info</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
+                        <a class="class" href="CONSTANT_Dynamic_info.html" title="Is used by the ldc/ldc_w/ldc2_w instructions to specify a bootstrap method, the dynamic invocation name, the argument and return types of the call, and optionally, a sequence of additional constants called static arguments to the bootstrap method."></a>
+                        <a href="CONSTANT_Dynamic_info.html" title="Is used by the ldc/ldc_w/ldc2_w instructions to specify a bootstrap method, the dynamic invocation name, the argument and return types of the call, and optionally, a sequence of additional constants called static arguments to the bootstrap method.">CONSTANT_Dynamic_info</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
                         <a class="trait" href="CONSTANT_FieldValue_info.html" title="Represents a constant field value."></a>
                         <a href="CONSTANT_FieldValue_info.html" title="Represents a constant field value.">CONSTANT_FieldValue_info</a>
                       </li><li class="current-entities indented4">
@@ -288,7 +292,7 @@ that it facilitates writing analyses that use pattern matching.
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>An immutable view of a created constants pool. The <code>ConstantsPool</code> object is typically
 created using a <a href="ConstantsBuffer.html" class="extype" name="org.opalj.br.cp.ConstantsBuffer">ConstantsBuffer</a>'s <code>build</code> method.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/cp/ConstantsPool.scala?at=develop" target="_blank">ConstantsPool.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/br/src/main/scala/org/opalj/br/cp/ConstantsPool.scala" target="_blank">ConstantsPool.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -450,6 +454,50 @@ created using a <a href="ConstantsBuffer.html" class="extype" name="org.opalj.br
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.br.cp.ConstantsPool">ConstantsPool</a> → <a href="ConstantsPoolLike.html" class="extype" name="org.opalj.br.cp.ConstantsPoolLike">ConstantsPoolLike</a></dd></dl></div>
+    </li><li name="org.opalj.br.cp.ConstantsPool#CPEDynamic" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CPEDynamic(bootstrapMethod:org.opalj.br.BootstrapMethod,name:String,descriptor:org.opalj.br.FieldType,requiresUByteIndex:Boolean):Int"></a><a id="CPEDynamic(BootstrapMethod,String,FieldType,Boolean):Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/cp/ConstantsPool.html#CPEDynamic(bootstrapMethod:org.opalj.br.BootstrapMethod,name:String,descriptor:org.opalj.br.FieldType,requiresUByteIndex:Boolean):Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CPEDynamic</span><span class="params">(<span name="bootstrapMethod">bootstrapMethod: <a href="../BootstrapMethod.html" class="extype" name="org.opalj.br.BootstrapMethod">BootstrapMethod</a></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <a href="../FieldType.html" class="extype" name="org.opalj.br.FieldType">FieldType</a></span>, <span name="requiresUByteIndex">requiresUByteIndex: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.br.cp.ConstantsPool">ConstantsPool</a> → <a href="ConstantsPoolLike.html" class="extype" name="org.opalj.br.cp.ConstantsPoolLike">ConstantsPoolLike</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="scala.this.throws.&lt;init&gt;$default$1[org.opalj.br.cp.ConstantPoolException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.br.cp.ConstantsPool#CPEDynamic" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CPEDynamic(bootstrapMethod:org.opalj.br.BootstrapMethod,name:String,descriptor:String,requiresUByteIndex:Boolean):Int"></a><a id="CPEDynamic(BootstrapMethod,String,String,Boolean):Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/cp/ConstantsPool.html#CPEDynamic(bootstrapMethod:org.opalj.br.BootstrapMethod,name:String,descriptor:String,requiresUByteIndex:Boolean):Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CPEDynamic</span><span class="params">(<span name="bootstrapMethod">bootstrapMethod: <a href="../BootstrapMethod.html" class="extype" name="org.opalj.br.BootstrapMethod">BootstrapMethod</a></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="requiresUByteIndex">requiresUByteIndex: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="scala.this.throws.&lt;init&gt;$default$1[org.opalj.br.cp.ConstantPoolException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
     </li><li name="org.opalj.br.cp.ConstantsPool#CPEFieldRef" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="CPEFieldRef(objectType:org.opalj.br.ObjectType,fieldName:String,fieldType:String):Int"></a><a id="CPEFieldRef(ObjectType,String,String):Int"></a>
       <span class="permalink">
@@ -847,7 +895,7 @@ created using a <a href="ConstantsBuffer.html" class="extype" name="org.opalj.br
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.cp.ConstantsPool#constantPool" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -916,7 +964,7 @@ created using a <a href="ConstantsBuffer.html" class="extype" name="org.opalj.br
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -937,7 +985,7 @@ created using a <a href="ConstantsBuffer.html" class="extype" name="org.opalj.br
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -990,7 +1038,7 @@ created using a <a href="ConstantsBuffer.html" class="extype" name="org.opalj.br
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1011,7 +1059,7 @@ created using a <a href="ConstantsBuffer.html" class="extype" name="org.opalj.br
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1134,7 +1182,7 @@ created using a <a href="ConstantsBuffer.html" class="extype" name="org.opalj.br
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1145,9 +1193,7 @@ created using a <a href="ConstantsBuffer.html" class="extype" name="org.opalj.br
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

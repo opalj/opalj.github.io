@@ -310,7 +310,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Manages the state of each method analyzed by <a href="PropagationBasedCallGraphAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.xta.PropagationBasedCallGraphAnalysis">PropagationBasedCallGraphAnalysis</a>.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/cg/xta/PropagationBasedCGState.scala?at=develop" target="_blank">PropagationBasedCGState.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/cg/xta/PropagationBasedCGState.scala" target="_blank">PropagationBasedCGState.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -451,9 +451,9 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.cg.xta.PropagationBasedCGState">PropagationBasedCGState</a> → <a href="../../TACAIBasedAnalysisState.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIBasedAnalysisState">TACAIBasedAnalysisState</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.cg.xta.PropagationBasedCGState#addVirtualCallSite" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addVirtualCallSite(objectType:org.opalj.br.ObjectType,callSite:org.opalj.tac.fpcf.analyses.cg.CallSiteT):Unit"></a><a id="addVirtualCallSite(ObjectType,CallSiteT):Unit"></a>
+      <a id="addVirtualCallSite(objectType:org.opalj.br.ObjectType,callSite:org.opalj.tac.fpcf.analyses.CallSite):Unit"></a><a id="addVirtualCallSite(ObjectType,CallSite):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../../org/opalj/tac/fpcf/analyses/cg/xta/PropagationBasedCGState.html#addVirtualCallSite(objectType:org.opalj.br.ObjectType,callSite:org.opalj.tac.fpcf.analyses.cg.CallSiteT):Unit" title="Permalink">
+      <a href="../../../../../../../org/opalj/tac/fpcf/analyses/cg/xta/PropagationBasedCGState.html#addVirtualCallSite(objectType:org.opalj.br.ObjectType,callSite:org.opalj.tac.fpcf.analyses.CallSite):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -462,7 +462,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addVirtualCallSite</span><span class="params">(<span name="objectType">objectType: <a href="../../../../../br/ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="callSite">callSite: <a href="../index.html#CallSiteT=(Int,String,org.opalj.br.MethodDescriptor,org.opalj.br.ReferenceType)" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.CallSiteT">CallSiteT</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">addVirtualCallSite</span><span class="params">(<span name="objectType">objectType: <a href="../../../../../br/ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="callSite">callSite: <a href="../../CallSite.html" class="extype" name="org.opalj.tac.fpcf.analyses.CallSite">CallSite</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       
@@ -505,13 +505,13 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.cg.xta.PropagationBasedCGState#dependees" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="dependees:List[org.opalj.fpcf.EOptionP[org.opalj.fpcf.Entity,org.opalj.fpcf.Property]]"></a><a id="dependees:List[EOptionP[Entity,Property]]"></a>
+      <a id="dependees:Set[org.opalj.fpcf.SomeEOptionP]"></a><a id="dependees:Set[SomeEOptionP]"></a>
       <span class="permalink">
-      <a href="../../../../../../../org/opalj/tac/fpcf/analyses/cg/xta/PropagationBasedCGState.html#dependees:List[org.opalj.fpcf.EOptionP[org.opalj.fpcf.Entity,org.opalj.fpcf.Property]]" title="Permalink">
+      <a href="../../../../../../../org/opalj/tac/fpcf/analyses/cg/xta/PropagationBasedCGState.html#dependees:Set[org.opalj.fpcf.SomeEOptionP]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -520,7 +520,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">dependees</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../../../../../fpcf/EOptionP.html" class="extype" name="org.opalj.fpcf.EOptionP">EOptionP</a>[<a href="../../../../../fpcf/index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a>, <a href="../../../../../fpcf/Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a>]]</span>
+        <span class="name">dependees</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../../../fpcf/index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Inherited classes that introduce new dependencies must override this method and call add a
@@ -578,13 +578,13 @@ call to super!
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.cg.xta.PropagationBasedCGState#getVirtualCallSites" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getVirtualCallSites(objectType:org.opalj.br.ObjectType):scala.collection.Set[org.opalj.tac.fpcf.analyses.cg.CallSiteT]"></a><a id="getVirtualCallSites(ObjectType):Set[CallSiteT]"></a>
+      <a id="getVirtualCallSites(objectType:org.opalj.br.ObjectType):scala.collection.Set[org.opalj.tac.fpcf.analyses.CallSite]"></a><a id="getVirtualCallSites(ObjectType):Set[CallSite]"></a>
       <span class="permalink">
-      <a href="../../../../../../../org/opalj/tac/fpcf/analyses/cg/xta/PropagationBasedCGState.html#getVirtualCallSites(objectType:org.opalj.br.ObjectType):scala.collection.Set[org.opalj.tac.fpcf.analyses.cg.CallSiteT]" title="Permalink">
+      <a href="../../../../../../../org/opalj/tac/fpcf/analyses/cg/xta/PropagationBasedCGState.html#getVirtualCallSites(objectType:org.opalj.br.ObjectType):scala.collection.Set[org.opalj.tac.fpcf.analyses.CallSite]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -593,7 +593,7 @@ call to super!
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getVirtualCallSites</span><span class="params">(<span name="objectType">objectType: <a href="../../../../../br/ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.Set">Set</span>[<a href="../index.html#CallSiteT=(Int,String,org.opalj.br.MethodDescriptor,org.opalj.br.ReferenceType)" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.CallSiteT">CallSiteT</a>]</span>
+        <span class="name">getVirtualCallSites</span><span class="params">(<span name="objectType">objectType: <a href="../../../../../br/ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.Set">Set</span>[<a href="../../CallSite.html" class="extype" name="org.opalj.tac.fpcf.analyses.CallSite">CallSite</a>]</span>
       </span>
       
       
@@ -667,7 +667,7 @@ call to super!
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.cg.xta.PropagationBasedCGState#instantiatedTypes" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -784,7 +784,7 @@ call to super!
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -805,7 +805,7 @@ call to super!
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.cg.xta.PropagationBasedCGState#removeCallSite" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -1008,7 +1008,7 @@ call to super!
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1019,9 +1019,7 @@ call to super!
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

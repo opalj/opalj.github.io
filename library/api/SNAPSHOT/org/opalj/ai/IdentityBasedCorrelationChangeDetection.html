@@ -378,6 +378,10 @@ domains that are used to adapt/transfer values should be thread safe
                         <a href="DoubleValuesFactory.html" title="Defines the primary factory methods for Double values.">DoubleValuesFactory</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
+                        <a class="trait" href="DynamicLoadsDomain.html" title="Interface related to the handling of dynamic ldc/ldc_w/ldc2_w instructions."></a>
+                        <a href="DynamicLoadsDomain.html" title="Interface related to the handling of dynamic ldc/ldc_w/ldc2_w instructions.">DynamicLoadsDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
                         <a class="trait" href="ExceptionsFactory.html" title="Defines factory methods for those exceptions that are (also) created by the JVM when the evaluation of a specific bytecode instruction fails (e.g., idiv, checkcast, monitorexit, return...)."></a>
                         <a href="ExceptionsFactory.html" title="Defines factory methods for those exceptions that are (also) created by the JVM when the evaluation of a specific bytecode instruction fails (e.g., idiv, checkcast, monitorexit, return...).">ExceptionsFactory</a>
                       </li><li class="current-entities indented3">
@@ -602,7 +606,7 @@ abstract interpretation is enforced.</p><h4>Concrete Example</h4><pre>static voi
 value as such, but which may influence its <i>correlation information</i>, have to create a
 <a href="MetaInformationUpdate.html" class="extype" name="org.opalj.ai.MetaInformationUpdate">MetaInformationUpdate</a>. Here, correlation means:</p><ul><li>two reference values that refer to the <b>same object</b> are considered aliases</li><li>two local variables that are guaranteed to be identical in all cases, and, hence
    are subject to the same constraints are also correlated.
-</li></ul></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/ai/src/main/scala/org/opalj/ai/domain/IdentityBasedCorrelationChangeDetection.scala?at=develop" target="_blank">IdentityBasedCorrelationChangeDetection.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>Mixing in this trait is strictly necessary when aliases are traced using a
+</li></ul></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ai/src/main/scala/org/opalj/ai/domain/IdentityBasedCorrelationChangeDetection.scala" target="_blank">IdentityBasedCorrelationChangeDetection.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>Mixing in this trait is strictly necessary when aliases are traced using a
         DomainValue's reference.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
@@ -1389,7 +1393,7 @@ to the specified <code>pc</code> is performed.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1570,7 +1574,7 @@ progress and in particular to perform control-flow dependent analyses.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1591,7 +1595,7 @@ progress and in particular to perform control-flow dependent analyses.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.ai.ValuesDomain#isASubtypeOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1787,7 +1791,7 @@ abstracts over both values.</p><p>This operation is commutative.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1808,7 +1812,7 @@ abstracts over both values.</p><p>This operation is commutative.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.ai.ValuesDomain#properties" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2032,7 +2036,7 @@ are returned.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -2043,9 +2047,7 @@ are returned.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

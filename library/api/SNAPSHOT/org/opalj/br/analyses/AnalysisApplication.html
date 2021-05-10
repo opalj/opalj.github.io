@@ -236,8 +236,8 @@ that it facilitates writing analyses that use pattern matching.
                         <a href="MethodAnalysisApplication.html" title="A small framework to implement analyses which should be executed for a given set of methods.">MethodAnalysisApplication</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="MethodDeclarationContext$.html" title="Definition of factory and extractor methods for MethodDeclarationContext objects."></a>
-                        <a class="class" href="MethodDeclarationContext.html" title="Encapsulates the information about a non-abstract, non-private, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets."></a>
-                        <a href="MethodDeclarationContext.html" title="Encapsulates the information about a non-abstract, non-private, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets.">MethodDeclarationContext</a>
+                        <a class="class" href="MethodDeclarationContext.html" title="Encapsulates the information about a non-abstract, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets."></a>
+                        <a href="MethodDeclarationContext.html" title="Encapsulates the information about a non-abstract, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets.">MethodDeclarationContext</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="object" href="package$$MethodDeclarationContextOrdering$.html" title=""></a>
@@ -347,7 +347,7 @@ are loaded using the <code>ClassFileReader</code> for library classes (basically
 bodies are skipped <a href="../reader/Java8LibraryFramework.html" class="extype" name="org.opalj.br.reader.Java8LibraryFramework">org.opalj.br.reader.Java8LibraryFramework</a>).
 The parameter to specify library classes is <code>-libcp=</code>, the parameter to specify
 the &quot;normal&quot; classpath is <code>-cp=</code>.</p><h4>Control Flow</h4><ol class="decimal"><li>The standard parameters are checked.</li><li>The analysis is called to let it verify the analysis specific parameters.</li><li>The <a href="Project.html" class="extype" name="org.opalj.br.analyses.Project">Project</a> is created.</li><li>The <code>analyze</code> method of the <a href="Analysis.html" class="extype" name="org.opalj.br.analyses.Analysis">Analysis</a> is called with the project and the parameters.</li><li>The results are printed.
-</li></ol></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/analyses/AnalysisApplication.scala?at=develop" target="_blank">AnalysisApplication.scala</a></dd></dl><div class="toggleContainer block">
+</li></ol></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/br/src/main/scala/org/opalj/br/analyses/AnalysisApplication.scala" target="_blank">AnalysisApplication.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -557,7 +557,7 @@ The default behavior is to check that there are no additional parameters.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -610,7 +610,7 @@ The default behavior is to check that there are no additional parameters.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.AnalysisApplication#handleParsingExceptions" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -647,7 +647,7 @@ The default behavior is to check that there are no additional parameters.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -716,7 +716,7 @@ The default behavior is to check that there are no additional parameters.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -737,7 +737,7 @@ The default behavior is to check that there are no additional parameters.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.AnalysisApplication#printUsage" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -894,7 +894,7 @@ the set of specified parameters is not valid.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -905,9 +905,7 @@ the set of specified parameters is not valid.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

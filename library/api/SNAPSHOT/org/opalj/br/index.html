@@ -658,6 +658,10 @@ that it facilitates writing analyses that use pattern matching.
                         <a class="object" href="DoubleVariableInfo$.html" title=""></a>
                         <a href="DoubleVariableInfo$.html" title="">DoubleVariableInfo</a>
                       </li><li class="current-entities indented3">
+                        <a class="object" href="DynamicConstant$.html" title=""></a>
+                        <a class="class" href="DynamicConstant.html" title="Represents a dynamic constant."></a>
+                        <a href="DynamicConstant.html" title="Represents a dynamic constant.">DynamicConstant</a>
+                      </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="object" href="ElementReferenceType$.html" title=""></a>
                         <a href="ElementReferenceType$.html" title="">ElementReferenceType</a>
@@ -938,6 +942,14 @@ that it facilitates writing analyses that use pattern matching.
                         <a class="class" href="MultipleDefinedMethods.html" title=""></a>
                         <a href="MultipleDefinedMethods.html" title="">MultipleDefinedMethods</a>
                       </li><li class="current-entities indented3">
+                        <a class="object" href="NestHost$.html" title=""></a>
+                        <a class="class" href="NestHost.html" title="Definition of a Java 11 nest host."></a>
+                        <a href="NestHost.html" title="Definition of a Java 11 nest host.">NestHost</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="NestMembers$.html" title=""></a>
+                        <a class="class" href="NestMembers.html" title="Definition of Java 11 nest members."></a>
+                        <a href="NestMembers.html" title="Definition of Java 11 nest members.">NestMembers</a>
+                      </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="NewInvokeSpecialMethodHandle.html" title=""></a>
                         <a href="NewInvokeSpecialMethodHandle.html" title="">NewInvokeSpecialMethodHandle</a>
@@ -1009,6 +1021,14 @@ that it facilitates writing analyses that use pattern matching.
                         <span class="separator"></span>
                         <a class="class" href="PutStaticMethodHandle.html" title=""></a>
                         <a href="PutStaticMethodHandle.html" title="">PutStaticMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Record$.html" title=""></a>
+                        <a class="class" href="Record.html" title="Representation of a record class."></a>
+                        <a href="Record.html" title="Representation of a record class.">Record</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="RecordComponent.html" title="The description of a record component (Java 16)."></a>
+                        <a href="RecordComponent.html" title="The description of a record component (Java 16).">RecordComponent</a>
                       </li><li class="current-entities indented3">
                         <a class="object" href="ReferenceType$.html" title="Factory to create instances of ReferenceType."></a>
                         <a class="class" href="ReferenceType.html" title=""></a>
@@ -1747,7 +1767,7 @@ references to constant pool entries are resolved and replaced by direct referenc
 representation is called the resolved representation.</p><p>This representation of Java bytecode is considered as OPAL's standard representation
 for writing Scala based analyses. This representation is engineered such
 that it facilitates writing analyses that use pattern matching.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/package.scala?at=develop" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/br/src/main/scala/org/opalj/br/package.scala" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -2424,6 +2444,22 @@ may contain holes. However, the type <code>java.lang.Object</code> is always par
       </span>
       
       
+    </li><li name="org.opalj.br.Classes" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Classes=org.opalj.collection.immutable.RefArray[org.opalj.br.ObjectType]"></a><a id="Classes:Classes"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/index.html#Classes=org.opalj.collection.immutable.RefArray[org.opalj.br.ObjectType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Classes</span><span class="result alias"> = <a href="../collection/immutable/RefArray.html" class="extype" name="org.opalj.collection.immutable.RefArray">RefArray</a>[<a href="ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a>]</span>
+      </span>
+      
+      
     </li><li name="org.opalj.br.Code" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="CodeextendsAttributewithCommonAttributeswithInstructionsContainerwithCodeSequence[org.opalj.br.instructions.Instruction]withFilterMonadic[org.opalj.br.PCAndInstruction,Nothing]"></a><a id="Code:Code"></a>
       <span class="permalink">
@@ -2879,6 +2915,23 @@ class along with a reference to the original declaration.</p>
       </span>
       
       
+    </li><li name="org.opalj.br.DynamicConstant" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DynamicConstantextendsConstantValue[Any]"></a><a id="DynamicConstant:DynamicConstant"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/DynamicConstant.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Represents a dynamic constant." href="DynamicConstant.html"><span class="name">DynamicConstant</span></a><span class="result"> extends <a href="ConstantValue.html" class="extype" name="org.opalj.br.ConstantValue">ConstantValue</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Represents a dynamic constant.</p><div class="fullcomment"><div class="comment cmt"><p>Represents a dynamic constant.</p><p><code>DynamicConstant</code> is used to represent dynamic constant arguments of bootstrap methods.
+</p></div></div>
     </li><li name="org.opalj.br.ElementValue" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="ElementValueextendsAttribute"></a><a id="ElementValue:ElementValue"></a>
       <span class="permalink">
@@ -4145,6 +4198,38 @@ the signatures of all methods of a class file have to be different.</p>
       </span>
       
       
+    </li><li name="org.opalj.br.NestHost" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NestHostextendsAttributewithProductwithSerializable"></a><a id="NestHost:NestHost"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/NestHost.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Definition of a Java 11 nest host." href="NestHost.html"><span class="name">NestHost</span></a><span class="params">(<span name="hostClassType">hostClassType: <a href="ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>)</span><span class="result"> extends <a href="Attribute.html" class="extype" name="org.opalj.br.Attribute">Attribute</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Definition of a Java 11 nest host.</p>
+    </li><li name="org.opalj.br.NestMembers" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NestMembersextendsAttributewithProductwithSerializable"></a><a id="NestMembers:NestMembers"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/NestMembers.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Definition of Java 11 nest members." href="NestMembers.html"><span class="name">NestMembers</span></a><span class="params">(<span name="classes">classes: <a href="#Classes=org.opalj.collection.immutable.RefArray[org.opalj.br.ObjectType]" class="extmbr" name="org.opalj.br.Classes">Classes</a></span>)</span><span class="result"> extends <a href="Attribute.html" class="extype" name="org.opalj.br.Attribute">Attribute</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Definition of Java 11 nest members.</p>
     </li><li name="org.opalj.br.NewInvokeSpecialMethodHandle" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NewInvokeSpecialMethodHandleextendsMethodCallMethodHandlewithProductwithSerializable"></a><a id="NewInvokeSpecialMethodHandle:NewInvokeSpecialMethodHandle"></a>
       <span class="permalink">
@@ -4466,6 +4551,54 @@ by its pc in a method.</p>
       </span>
       <span class="symbol">
         <a title="" href="PutStaticMethodHandle.html"><span class="name">PutStaticMethodHandle</span></a><span class="params">(<span name="declaringClassType">declaringClassType: <a href="ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="fieldType">fieldType: <a href="FieldType.html" class="extype" name="org.opalj.br.FieldType">FieldType</a></span>)</span><span class="result"> extends <a href="FieldWriteAccessMethodHandle.html" class="extype" name="org.opalj.br.FieldWriteAccessMethodHandle">FieldWriteAccessMethodHandle</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.Record" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RecordextendsAttributewithInt=&gt;org.opalj.br.RecordComponentwithProductwithSerializable"></a><a id="Record:Record"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/Record.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Representation of a record class." href="Record.html"><span class="name">Record</span></a><span class="params">(<span name="components">components: <a href="#RecordComponents=org.opalj.collection.immutable.RefArray[org.opalj.br.RecordComponent]" class="extmbr" name="org.opalj.br.RecordComponents">RecordComponents</a></span>)</span><span class="result"> extends <a href="Attribute.html" class="extype" name="org.opalj.br.Attribute">Attribute</a> with (<span class="extype" name="scala.Int">Int</span>) ⇒ <a href="RecordComponent.html" class="extype" name="org.opalj.br.RecordComponent">RecordComponent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Representation of a record class.</p>
+    </li><li name="org.opalj.br.RecordComponent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RecordComponentextendsProductwithSerializable"></a><a id="RecordComponent:RecordComponent"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/RecordComponent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="The description of a record component (Java 16)." href="RecordComponent.html"><span class="name">RecordComponent</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="componentType">componentType: <a href="FieldType.html" class="extype" name="org.opalj.br.FieldType">FieldType</a></span>, <span name="attributes">attributes: <a href="#Attributes=org.opalj.collection.immutable.RefArray[org.opalj.br.Attribute]" class="extmbr" name="org.opalj.br.Attributes">Attributes</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The description of a record component (Java 16).</p>
+    </li><li name="org.opalj.br.RecordComponents" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RecordComponents=org.opalj.collection.immutable.RefArray[org.opalj.br.RecordComponent]"></a><a id="RecordComponents:RecordComponents"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/index.html#RecordComponents=org.opalj.collection.immutable.RefArray[org.opalj.br.RecordComponent]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RecordComponents</span><span class="result alias"> = <a href="../collection/immutable/RefArray.html" class="extype" name="org.opalj.collection.immutable.RefArray">RefArray</a>[<a href="RecordComponent.html" class="extype" name="org.opalj.br.RecordComponent">RecordComponent</a>]</span>
       </span>
       
       
@@ -7439,6 +7572,22 @@ cannot be used to match, e.g., <code>List&lt;List&lt;Integer&gt;&gt;</code>.
       </span>
       
       
+    </li><li name="org.opalj.br.DynamicConstant" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DynamicConstant"></a><a id="DynamicConstant:DynamicConstant"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/DynamicConstant$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="DynamicConstant$.html"><span class="name">DynamicConstant</span></a>
+      </span>
+      
+      
     </li><li name="org.opalj.br.ElementReferenceType" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ElementReferenceType"></a><a id="ElementReferenceType:ElementReferenceType"></a>
       <span class="permalink">
@@ -8094,6 +8243,38 @@ Matching all methods that have a method body:</p><pre><span class="kw">for</span
       </span>
       
       
+    </li><li name="org.opalj.br.NestHost" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NestHost"></a><a id="NestHost:NestHost"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/NestHost$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="NestHost$.html"><span class="name">NestHost</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.NestMembers" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NestMembers"></a><a id="NestMembers:NestMembers"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/NestMembers$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="NestMembers$.html"><span class="name">NestMembers</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
     </li><li name="org.opalj.br.NoArgumentMethodDescriptor" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NoArgumentMethodDescriptor"></a><a id="NoArgumentMethodDescriptor:NoArgumentMethodDescriptor"></a>
       <span class="permalink">
@@ -8244,6 +8425,22 @@ when matching <code>MethodDescriptor</code>s to select all methods that return s
       </span>
       <span class="symbol">
         <a title="" href="ParameterAnnotationTable$.html"><span class="name">ParameterAnnotationTable</span></a>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.Record" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Record"></a><a id="Record:Record"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/br/Record$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Record$.html"><span class="name">Record</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       
       

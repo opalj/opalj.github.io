@@ -558,6 +558,10 @@ that it facilitates writing analyses that use pattern matching.
                         <a class="object" href="DoubleVariableInfo$.html" title=""></a>
                         <a href="DoubleVariableInfo$.html" title="">DoubleVariableInfo</a>
                       </li><li class="current-entities indented3">
+                        <a class="object" href="DynamicConstant$.html" title=""></a>
+                        <a class="class" href="DynamicConstant.html" title="Represents a dynamic constant."></a>
+                        <a href="DynamicConstant.html" title="Represents a dynamic constant.">DynamicConstant</a>
+                      </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="object" href="ElementReferenceType$.html" title=""></a>
                         <a href="ElementReferenceType$.html" title="">ElementReferenceType</a>
@@ -838,6 +842,14 @@ that it facilitates writing analyses that use pattern matching.
                         <a class="class" href="MultipleDefinedMethods.html" title=""></a>
                         <a href="MultipleDefinedMethods.html" title="">MultipleDefinedMethods</a>
                       </li><li class="current-entities indented3">
+                        <a class="object" href="NestHost$.html" title=""></a>
+                        <a class="class" href="NestHost.html" title="Definition of a Java 11 nest host."></a>
+                        <a href="NestHost.html" title="Definition of a Java 11 nest host.">NestHost</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="NestMembers$.html" title=""></a>
+                        <a class="class" href="NestMembers.html" title="Definition of Java 11 nest members."></a>
+                        <a href="NestMembers.html" title="Definition of Java 11 nest members.">NestMembers</a>
+                      </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="NewInvokeSpecialMethodHandle.html" title=""></a>
                         <a href="NewInvokeSpecialMethodHandle.html" title="">NewInvokeSpecialMethodHandle</a>
@@ -909,6 +921,14 @@ that it facilitates writing analyses that use pattern matching.
                         <span class="separator"></span>
                         <a class="class" href="PutStaticMethodHandle.html" title=""></a>
                         <a href="PutStaticMethodHandle.html" title="">PutStaticMethodHandle</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Record$.html" title=""></a>
+                        <a class="class" href="Record.html" title="Representation of a record class."></a>
+                        <a href="Record.html" title="Representation of a record class.">Record</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="RecordComponent.html" title="The description of a record component (Java 16)."></a>
+                        <a href="RecordComponent.html" title="The description of a record component (Java 16).">RecordComponent</a>
                       </li><li class="current-entities indented3">
                         <a class="object" href="ReferenceType$.html" title="Factory to create instances of ReferenceType."></a>
                         <a class="class" href="ReferenceType.html" title=""></a>
@@ -1355,7 +1375,7 @@ that it facilitates writing analyses that use pattern matching.
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/Signature.scala?at=develop" target="_blank">Signature.scala</a></dd><dt>See also</dt><dd><span class="cmt"><p>For matching signatures see <a href="Signature.html" class="extype" name="org.opalj.br.Signature">Signature</a>.</p></span></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/br/src/main/scala/org/opalj/br/Signature.scala" target="_blank">Signature.scala</a></dd><dt>See also</dt><dd><span class="cmt"><p>For matching signatures see <a href="Signature.html" class="extype" name="org.opalj.br.Signature">Signature</a>.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -1534,7 +1554,7 @@ that it facilitates writing analyses that use pattern matching.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1587,7 +1607,7 @@ that it facilitates writing analyses that use pattern matching.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1627,7 +1647,7 @@ LineNumberTable, ...)</p><p>This id can then be used in a switch statement to ef
 attribute.</p><pre>(attribute.id : @scala.annotation.switch) <span class="kw">match</span> {
      <span class="kw">case</span> Signature.Id <span class="kw">=&gt;</span> ...
 }</pre><h4>Associating Unique Id</h4><p>The unique ids are manually associated with the attributes.
-The attributes use the following IDs:</p><ul><li>(-1 <b>Unknown Attribute</b>)</li><li>1-5  The ConstantValue Attribute</li><li>6 The Code Attribute</li><li>7 The StackMapTable Attribute</li><li>8 The Exceptions Attribute</li><li>9 The InnerClasses Attribute</li><li>10 The EnclosingMethod Attribute</li><li>11 The Synthetic Attribute</li><li>12-16 The Signature Attribute</li><li>17 The SourceFile Attribute</li><li>18 The SourceDebugExtension Attribute</li><li>19 The LineNumberTable Attribute</li><li>20 The LocalVariableTable Attribute</li><li>21 The LocalVariableTypeTable Attribute</li><li>22 The Deprecated Attribute</li><li>23 The RuntimeVisibleAnnotations Attribute</li><li>24 The RuntimeInvisibleAnnotations Attribute</li><li>25 The RuntimeVisibleParameterAnnotations Attribute</li><li>26 The RuntimeInvisibleParameterAnnotations Attribute</li><li>27 The RuntimeVisibleTypeAnnotations Attribute</li><li>28 The RuntimeInvisibleTypeAnnotations Attribute</li><li>29-41 The AnnotationDefault Attribute</li><li>42 The BootstrapMethods Attribute</li><li>43 The MethodParameters Attribute</li><li>44 The Module Attribute (Java 9)</li><li>45 The ModuleMainClass Attribute (Java 9)</li><li>46 The ModulePackages Attribute (Java 9)</li><li>1001 OPAL's VirtualTypeFlag Attribute</li><li>1002 OPAL's SynthesizedClassFiles Attribute</li><li>1003 OPAL's TACode Attribute (the 3-Address Code)
+The attributes use the following IDs:</p><ul><li>(-1 <b>Unknown Attribute</b>)</li><li>1-5  The ConstantValue Attribute</li><li>6 The Code Attribute</li><li>7 The StackMapTable Attribute</li><li>8 The Exceptions Attribute</li><li>9 The InnerClasses Attribute</li><li>10 The EnclosingMethod Attribute</li><li>11 The Synthetic Attribute</li><li>12-16 The Signature Attribute</li><li>17 The SourceFile Attribute</li><li>18 The SourceDebugExtension Attribute</li><li>19 The LineNumberTable Attribute</li><li>20 The LocalVariableTable Attribute</li><li>21 The LocalVariableTypeTable Attribute</li><li>22 The Deprecated Attribute</li><li>23 The RuntimeVisibleAnnotations Attribute</li><li>24 The RuntimeInvisibleAnnotations Attribute</li><li>25 The RuntimeVisibleParameterAnnotations Attribute</li><li>26 The RuntimeInvisibleParameterAnnotations Attribute</li><li>27 The RuntimeVisibleTypeAnnotations Attribute</li><li>28 The RuntimeInvisibleTypeAnnotations Attribute</li><li>29-41 The AnnotationDefault Attribute</li><li>42 The BootstrapMethods Attribute</li><li>43 The MethodParameters Attribute</li><li>44 The Module Attribute (Java 9)</li><li>45 The ModuleMainClass Attribute (Java 9)</li><li>46 The ModulePackages Attribute (Java 9)</li><li>47 The NestHost Attribute (Java 11)</li><li>48 The NestMembers Attribute (Java 11)</li><li>49 The Record Attribute (Java 16)</li><li>1001 OPAL's VirtualTypeFlag Attribute</li><li>1002 OPAL's SynthesizedClassFiles Attribute</li><li>1003 OPAL's TACode Attribute (the 3-Address Code)
 </li></ul></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.br.MethodTypeSignature">MethodTypeSignature</a> → <a href="Attribute.html" class="extype" name="org.opalj.br.Attribute">Attribute</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
@@ -1663,7 +1683,7 @@ The attributes use the following IDs:</p><ul><li>(-1 <b>Unknown Attribute</b>)</
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1684,7 +1704,7 @@ The attributes use the following IDs:</p><ul><li>(-1 <b>Unknown Attribute</b>)</
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.MethodTypeSignature#parametersTypeSignatures" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -1877,7 +1897,7 @@ specification for further details.)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1888,9 +1908,7 @@ specification for further details.)
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

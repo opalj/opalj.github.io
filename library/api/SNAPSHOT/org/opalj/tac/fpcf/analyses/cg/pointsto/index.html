@@ -239,8 +239,8 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                         <a href="PointsToBasedThreadRelatedCallsAnalysis.html" title="This analysis handles implicit method invocations related to the java.lang.Thread API.">PointsToBasedThreadRelatedCallsAnalysis</a>
                       </li><li class="current-entities indented7">
                         <span class="separator"></span>
-                        <a class="trait" href="PointsToBasedThreadStartAnalysis.html" title=""></a>
-                        <a href="PointsToBasedThreadStartAnalysis.html" title="">PointsToBasedThreadStartAnalysis</a>
+                        <a class="trait" href="PointsToBasedThreadStartAnalysis.html" title="On calls to Thread.start(), it adds calls to the corresponding run method."></a>
+                        <a href="PointsToBasedThreadStartAnalysis.html" title="On calls to Thread.start(), it adds calls to the corresponding run method.">PointsToBasedThreadStartAnalysis</a>
                       </li><li class="current-entities indented7">
                         <span class="separator"></span>
                         <a class="class" href="TypeBasedPointsToBasedCallGraphAnalysis.html" title=""></a>
@@ -473,8 +473,8 @@ in order to determine the targets of virtual method calls.</p>
 As an example, a call to <code>Thread#start</code> eventual lead to an invocation of the <code>run</code> method of
 the corresponding <code>java.lang.Runnable</code> object.
 </p></div></div>
-    </li><li name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="PointsToBasedThreadStartAnalysisextendsAPIBasedAnalysiswithAbstractPointsToBasedAnalysis"></a><a id="PointsToBasedThreadStartAnalysis:PointsToBasedThreadStartAnalysis"></a>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="PointsToBasedThreadStartAnalysisextendsTACAIBasedAPIBasedAnalysiswithAbstractPointsToBasedAnalysis"></a><a id="PointsToBasedThreadStartAnalysis:PointsToBasedThreadStartAnalysis"></a>
       <span class="permalink">
       <a href="../../../../../../../org/opalj/tac/fpcf/analyses/cg/pointsto/PointsToBasedThreadStartAnalysis.html" title="Permalink">
         <i class="material-icons"></i>
@@ -485,10 +485,12 @@ the corresponding <code>java.lang.Runnable</code> object.
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="PointsToBasedThreadStartAnalysis.html"><span class="name">PointsToBasedThreadStartAnalysis</span></a><span class="result"> extends <a href="../../APIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis">APIBasedAnalysis</a> with <a href="../../pointsto/AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></span>
+        <a title="On calls to Thread.start(), it adds calls to the corresponding run method." href="PointsToBasedThreadStartAnalysis.html"><span class="name">PointsToBasedThreadStartAnalysis</span></a><span class="result"> extends <a href="../../TACAIBasedAPIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIBasedAPIBasedAnalysis">TACAIBasedAPIBasedAnalysis</a> with <a href="../../pointsto/AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">On calls to Thread.start(), it adds calls to the corresponding run method.</p><div class="fullcomment"><div class="comment cmt"><p>On calls to Thread.start(), it adds calls to the corresponding run method.
+The run method is determined using points-to information.
+</p></div></div>
     </li><li name="org.opalj.tac.fpcf.analyses.cg.pointsto.TypeBasedPointsToBasedCallGraphAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="TypeBasedPointsToBasedCallGraphAnalysisextendsAbstractPointsToBasedCallGraphAnalysis[org.opalj.br.fpcf.properties.pointsto.TypeBasedPointsToSet]withTypeBasedAnalysis"></a><a id="TypeBasedPointsToBasedCallGraphAnalysis:TypeBasedPointsToBasedCallGraphAnalysis"></a>
       <span class="permalink">

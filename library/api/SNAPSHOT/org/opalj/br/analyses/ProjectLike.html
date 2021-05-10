@@ -236,8 +236,8 @@ that it facilitates writing analyses that use pattern matching.
                         <a href="MethodAnalysisApplication.html" title="A small framework to implement analyses which should be executed for a given set of methods.">MethodAnalysisApplication</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="MethodDeclarationContext$.html" title="Definition of factory and extractor methods for MethodDeclarationContext objects."></a>
-                        <a class="class" href="MethodDeclarationContext.html" title="Encapsulates the information about a non-abstract, non-private, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets."></a>
-                        <a href="MethodDeclarationContext.html" title="Encapsulates the information about a non-abstract, non-private, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets.">MethodDeclarationContext</a>
+                        <a class="class" href="MethodDeclarationContext.html" title="Encapsulates the information about a non-abstract, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets."></a>
+                        <a href="MethodDeclarationContext.html" title="Encapsulates the information about a non-abstract, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets.">MethodDeclarationContext</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="object" href="package$$MethodDeclarationContextOrdering$.html" title=""></a>
@@ -342,7 +342,7 @@ that it facilitates writing analyses that use pattern matching.
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Enables project wide lookups of methods and fields as required to determine the target(s) of an
 invoke or field access instruction.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.br.analyses.ProjectLike">ProjectLike</a></dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/analyses/ProjectLike.scala?at=develop" target="_blank">ProjectLike.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>The current implementation is based on the <b>correct project assumption</b>;
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.br.analyses.ProjectLike">ProjectLike</a></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/br/src/main/scala/org/opalj/br/analyses/ProjectLike.scala" target="_blank">ProjectLike.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>The current implementation is based on the <b>correct project assumption</b>;
          i.e., if the bytecode of the project as a whole is not valid, the result is generally
          undefined.
          Just one example of a violation of the assumption would be,
@@ -459,8 +459,8 @@ invoke or field access instruction.
         <span class="name">MethodHandleSubtypes</span><span class="result">: <span class="extype" name="scala.collection.Set">Set</span>[<a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a>]</span>
       </span>
       
-      <p class="shortcomment cmt">The set of all subtypes of <code>java.lang.invoke.MethodHandle</code>; in particular required to
-resolve signature polymorphic method calls.</p>
+      <p class="shortcomment cmt">The set of all subtypes of <code>java.lang.invoke.MethodHandle</code>; in particular required to resolve
+signature polymorphic method calls.</p>
     </li><li name="org.opalj.br.analyses.ProjectLike#ObjectClassFile" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="ObjectClassFile:Option[org.opalj.br.ClassFile]"></a><a id="ObjectClassFile:Option[ClassFile]"></a>
       <span class="permalink">
@@ -477,6 +477,55 @@ resolve signature polymorphic method calls.</p>
       </span>
       
       <p class="shortcomment cmt">The class file of <code>java.lang.Object</code>, if available.</p>
+    </li><li name="org.opalj.br.analyses.ProjectLike#VarHandleClassFile" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="VarHandleClassFile:Option[org.opalj.br.ClassFile]"></a><a id="VarHandleClassFile:Option[ClassFile]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#VarHandleClassFile:Option[org.opalj.br.ClassFile]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">VarHandleClassFile</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../ClassFile.html" class="extype" name="org.opalj.br.ClassFile">ClassFile</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The class file of <code>java.lang.invoke.VarHandle</code>, if available.</p>
+    </li><li name="org.opalj.br.analyses.ProjectLike#VarHandleSubtypes" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="VarHandleSubtypes:scala.collection.Set[org.opalj.br.ObjectType]"></a><a id="VarHandleSubtypes:Set[ObjectType]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#VarHandleSubtypes:scala.collection.Set[org.opalj.br.ObjectType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">VarHandleSubtypes</span><span class="result">: <span class="extype" name="scala.collection.Set">Set</span>[<a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The set of all subtypes of <code>java.lang.invoke.VarHandle</code>; in particular required to resolve
+signature polymorphic method calls.</p>
+    </li><li name="org.opalj.br.analyses.ProjectLike#allClassFiles" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="allClassFiles:Iterable[org.opalj.br.ClassFile]"></a><a id="allClassFiles:Iterable[ClassFile]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#allClassFiles:Iterable[org.opalj.br.ClassFile]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">allClassFiles</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../ClassFile.html" class="extype" name="org.opalj.br.ClassFile">ClassFile</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd></dl></div>
     </li><li name="org.opalj.br.ClassFileRepository#classFile" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="classFile(objectType:org.opalj.br.ObjectType):Option[org.opalj.br.ClassFile]"></a><a id="classFile(ObjectType):Option[ClassFile]"></a>
       <span class="permalink">
@@ -506,6 +555,22 @@ resolve signature polymorphic method calls.</p>
       </span>
       <span class="symbol">
         <span class="name">classHierarchy</span><span class="result">: <a href="../ClassHierarchy.html" class="extype" name="org.opalj.br.ClassHierarchy">ClassHierarchy</a></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.br.analyses.ProjectLike#config" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="config:com.typesafe.config.Config"></a><a id="config:Config"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#config:com.typesafe.config.Config" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">config</span><span class="result">: <span class="extype" name="com.typesafe.config.Config">Config</span></span>
       </span>
       
       
@@ -552,6 +617,25 @@ enable fast look-up of the target method. (See <a href="MethodDeclarationContext
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../ClassFileRepository.html" class="extype" name="org.opalj.br.ClassFileRepository">ClassFileRepository</a></dd></dl></div>
+    </li><li name="org.opalj.br.analyses.ProjectLike#nests" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="nests:scala.collection.Map[org.opalj.br.ObjectType,org.opalj.br.ObjectType]"></a><a id="nests:Map[ObjectType,ObjectType]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#nests:scala.collection.Map[org.opalj.br.ObjectType,org.opalj.br.ObjectType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nests</span><span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[<a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a>, <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the nest host (see JVM 11 Spec.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the nest host (see JVM 11 Spec. 5.4.4) for the given type, if explicitly given. For
+classes without an explicit NestHost or NestMembers attribute, the type itself is the nest
+host, but this is NOT recorded in this map.
+</p></div></div>
     </li><li name="org.opalj.br.analyses.ProjectLike#overridingMethods" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="overridingMethods:scala.collection.Map[org.opalj.br.Method,scala.collection.Set[org.opalj.br.Method]]"></a><a id="overridingMethods:Map[Method,Set[Method]]"></a>
       <span class="permalink">
@@ -665,7 +749,7 @@ included in the set of <code>overridingMethods</code>.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -761,7 +845,7 @@ given name and descriptor.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectLike#hasVirtualMethod" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -808,7 +892,7 @@ sub type of the declaring type of <code>method</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectLike#instanceCall" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -842,9 +926,9 @@ descriptor of the retuned methods may not be equal to the given method descripto
          visibility. (Note that this - in general - does not replace the need to perform an
          accessibility check.)</p></dd><dt class="param">receiverType</dt><dd class="cmt"><p>A class type or an array type; never an interface type.</p></dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectLike#interfaceCall" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="interfaceCall(declaringClass:org.opalj.br.ObjectType,name:String,descriptor:org.opalj.br.MethodDescriptor):Set[org.opalj.br.Method]"></a><a id="interfaceCall(ObjectType,String,MethodDescriptor):Set[Method]"></a>
+      <a id="interfaceCall(callerType:org.opalj.br.ObjectType,declaringClass:org.opalj.br.ObjectType,name:String,descriptor:org.opalj.br.MethodDescriptor):Set[org.opalj.br.Method]"></a><a id="interfaceCall(ObjectType,ObjectType,String,MethodDescriptor):Set[Method]"></a>
       <span class="permalink">
-      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#interfaceCall(declaringClass:org.opalj.br.ObjectType,name:String,descriptor:org.opalj.br.MethodDescriptor):Set[org.opalj.br.Method]" title="Permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#interfaceCall(callerType:org.opalj.br.ObjectType,declaringClass:org.opalj.br.ObjectType,name:String,descriptor:org.opalj.br.MethodDescriptor):Set[org.opalj.br.Method]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -853,7 +937,7 @@ descriptor of the retuned methods may not be equal to the given method descripto
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">interfaceCall</span><span class="params">(<span name="declaringClass">declaringClass: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <a href="../MethodDescriptor.html" class="extype" name="org.opalj.br.MethodDescriptor">MethodDescriptor</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a>]</span>
+        <span class="name">interfaceCall</span><span class="params">(<span name="callerType">callerType: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="declaringClass">declaringClass: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <a href="../MethodDescriptor.html" class="extype" name="org.opalj.br.MethodDescriptor">MethodDescriptor</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Returns the methods that may be called by an <a href="../instructions/INVOKEINTERFACE.html" class="extype" name="org.opalj.br.instructions.INVOKEINTERFACE">org.opalj.br.instructions.INVOKEINTERFACE</a>
@@ -871,9 +955,9 @@ interface I { void m(); }
          can contain methods (here, <code>X.m</code>) defined by classes which are not subtypes
          of the given interface type!</p></span></dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectLike#interfaceCall" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="interfaceCall(i:org.opalj.br.instructions.INVOKEINTERFACE):Set[org.opalj.br.Method]"></a><a id="interfaceCall(INVOKEINTERFACE):Set[Method]"></a>
+      <a id="interfaceCall(callerType:org.opalj.br.ObjectType,i:org.opalj.br.instructions.INVOKEINTERFACE):Set[org.opalj.br.Method]"></a><a id="interfaceCall(ObjectType,INVOKEINTERFACE):Set[Method]"></a>
       <span class="permalink">
-      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#interfaceCall(i:org.opalj.br.instructions.INVOKEINTERFACE):Set[org.opalj.br.Method]" title="Permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#interfaceCall(callerType:org.opalj.br.ObjectType,i:org.opalj.br.instructions.INVOKEINTERFACE):Set[org.opalj.br.Method]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -882,7 +966,7 @@ interface I { void m(); }
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">interfaceCall</span><span class="params">(<span name="i">i: <a href="../instructions/INVOKEINTERFACE.html" class="extype" name="org.opalj.br.instructions.INVOKEINTERFACE">INVOKEINTERFACE</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a>]</span>
+        <span class="name">interfaceCall</span><span class="params">(<span name="callerType">callerType: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="i">i: <a href="../instructions/INVOKEINTERFACE.html" class="extype" name="org.opalj.br.instructions.INVOKEINTERFACE">INVOKEINTERFACE</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a>]</span>
       </span>
       
       
@@ -903,6 +987,42 @@ interface I { void m(); }
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectLike#isSignaturePolymorphic" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isSignaturePolymorphic(definingClassType:org.opalj.br.ObjectType,name:String,descriptor:org.opalj.br.MethodDescriptor):Boolean"></a><a id="isSignaturePolymorphic(ObjectType,String,MethodDescriptor):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#isSignaturePolymorphic(definingClassType:org.opalj.br.ObjectType,name:String,descriptor:org.opalj.br.MethodDescriptor):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSignaturePolymorphic</span><span class="params">(<span name="definingClassType">definingClassType: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <a href="../MethodDescriptor.html" class="extype" name="org.opalj.br.MethodDescriptor">MethodDescriptor</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns true if the signature is a signature polymorphic method for the given class type.</p><div class="fullcomment"><div class="comment cmt"><p>Returns true if the signature is a signature polymorphic method for the given class type.
+(See JVM 9 Spec. for details.)
+</p></div></div>
+    </li><li name="org.opalj.br.analyses.ProjectLike#isSignaturePolymorphic" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isSignaturePolymorphic(definingClassType:org.opalj.br.ObjectType,descriptor:org.opalj.br.MethodDescriptor):Boolean"></a><a id="isSignaturePolymorphic(ObjectType,MethodDescriptor):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#isSignaturePolymorphic(definingClassType:org.opalj.br.ObjectType,descriptor:org.opalj.br.MethodDescriptor):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSignaturePolymorphic</span><span class="params">(<span name="definingClassType">definingClassType: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="descriptor">descriptor: <a href="../MethodDescriptor.html" class="extype" name="org.opalj.br.MethodDescriptor">MethodDescriptor</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns true if the descriptor is a signature polymorphic method for the given class type.</p><div class="fullcomment"><div class="comment cmt"><p>Returns true if the descriptor is a signature polymorphic method for the given class type.
+(See JVM 9 Spec. for details.)
+</p></div></div>
+    </li><li name="org.opalj.br.analyses.ProjectLike#isSignaturePolymorphic" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isSignaturePolymorphic(definingClassType:org.opalj.br.ObjectType,method:org.opalj.br.Method):Boolean"></a><a id="isSignaturePolymorphic(ObjectType,Method):Boolean"></a>
       <span class="permalink">
       <a href="../../../../org/opalj/br/analyses/ProjectLike.html#isSignaturePolymorphic(definingClassType:org.opalj.br.ObjectType,method:org.opalj.br.Method):Boolean" title="Permalink">
@@ -919,7 +1039,7 @@ interface I { void m(); }
       
       <p class="shortcomment cmt">Returns true if the method defined by the given class type is a signature polymorphic
 method.</p><div class="fullcomment"><div class="comment cmt"><p>Returns true if the method defined by the given class type is a signature polymorphic
-method. (See JVM 8 Spec. for details.) //TODO JAVA 8+
+method. (See JVM 9 Spec. for details.)
 </p></div></div>
     </li><li name="org.opalj.br.analyses.ProjectLike#lookupVirtualMethod" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="lookupVirtualMethod(callingContextType:org.opalj.br.ObjectType,receiverType:org.opalj.br.ObjectType,name:String,descriptor:org.opalj.br.MethodDescriptor):org.opalj.Result[org.opalj.br.analyses.MethodDeclarationContext]"></a><a id="lookupVirtualMethod(ObjectType,ObjectType,String,MethodDescriptor):Result[MethodDeclarationContext]"></a>
@@ -997,7 +1117,7 @@ in this case it is checked whether the caller belongs to the same context.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1018,7 +1138,7 @@ in this case it is checked whether the caller belongs to the same context.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectLike#overriddenBy" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1048,6 +1168,23 @@ interface Y { default void m(){ System.out.println(<span class="lit">"Y.m"</span
  <span class="cmt">// returned by this function. To also identify X.m() you have to combine the results</span>
  <span class="cmt">// of overridenBy and instanceMethods(!).</span>
 }</pre></div></div>
+    </li><li name="org.opalj.br.analyses.ProjectLike#requiredJVMVersion" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="requiredJVMVersion:Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#requiredJVMVersion:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">requiredJVMVersion</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the minimum version number of the JVM required to run the code of the project, i.e.,
+the maximum class file major version number of any class file in the project.</p>
     </li><li name="org.opalj.br.analyses.ProjectLike#resolveAllMethodReferences" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="resolveAllMethodReferences(declaringClassType:org.opalj.br.ReferenceType,name:String,descriptor:org.opalj.br.MethodDescriptor):Set[org.opalj.br.Method]"></a><a id="resolveAllMethodReferences(ReferenceType,String,MethodDescriptor):Set[Method]"></a>
       <span class="permalink">
@@ -1257,8 +1394,8 @@ additional processing is necessary on the client side.
       <p class="shortcomment cmt">Returns the instance method/initializer which is called by an invokespecial instruction.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the instance method/initializer which is called by an invokespecial instruction.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>One of the following three values:</p><ul><li><a href="../../Success.html" class="extype" name="org.opalj.Success">org.opalj.Success</a> <code>(method)</code> if the method was found;</li><li><code>Failure</code> if the project is inconsistent; i.e., the target class file is found,
             but the method cannot be found. <code>Failure</code> is returned on a best effort basis.</li><li><code>Empty</code>.</li></ul></dd></dl><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>Virtual method call resolution is not necessary; the call target is
-         either a constructor, a private method or a super method/constructor. However, in
-         the first and last case it may be possible that we can't find the method
+         either a constructor, a method in the given class or a super method/constructor.
+         However, in the first and last case it may be possible that we can't find the method
          because of an inconsistent or incomplete project.</p></span></dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectLike#specialCall" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="specialCall(callerClassType:org.opalj.br.ObjectType,i:org.opalj.br.instructions.INVOKESPECIAL):org.opalj.Result[org.opalj.br.Method]"></a><a id="specialCall(ObjectType,INVOKESPECIAL):Result[Method]"></a>
@@ -1277,9 +1414,9 @@ additional processing is necessary on the client side.
       
       
     </li><li name="org.opalj.br.analyses.ProjectLike#staticCall" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="staticCall(declaringClassType:org.opalj.br.ObjectType,isInterface:Boolean,name:String,descriptor:org.opalj.br.MethodDescriptor):org.opalj.Result[org.opalj.br.Method]"></a><a id="staticCall(ObjectType,Boolean,String,MethodDescriptor):Result[Method]"></a>
+      <a id="staticCall(callerClassType:org.opalj.br.ObjectType,declaringClassType:org.opalj.br.ObjectType,isInterface:Boolean,name:String,descriptor:org.opalj.br.MethodDescriptor):org.opalj.Result[org.opalj.br.Method]"></a><a id="staticCall(ObjectType,ObjectType,Boolean,String,MethodDescriptor):Result[Method]"></a>
       <span class="permalink">
-      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#staticCall(declaringClassType:org.opalj.br.ObjectType,isInterface:Boolean,name:String,descriptor:org.opalj.br.MethodDescriptor):org.opalj.Result[org.opalj.br.Method]" title="Permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#staticCall(callerClassType:org.opalj.br.ObjectType,declaringClassType:org.opalj.br.ObjectType,isInterface:Boolean,name:String,descriptor:org.opalj.br.MethodDescriptor):org.opalj.Result[org.opalj.br.Method]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1288,19 +1425,18 @@ additional processing is necessary on the client side.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">staticCall</span><span class="params">(<span name="declaringClassType">declaringClassType: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="isInterface">isInterface: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <a href="../MethodDescriptor.html" class="extype" name="org.opalj.br.MethodDescriptor">MethodDescriptor</a></span>)</span><span class="result">: <a href="../../Result.html" class="extype" name="org.opalj.Result">Result</a>[<a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a>]</span>
+        <span class="name">staticCall</span><span class="params">(<span name="callerClassType">callerClassType: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="declaringClassType">declaringClassType: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="isInterface">isInterface: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <a href="../MethodDescriptor.html" class="extype" name="org.opalj.br.MethodDescriptor">MethodDescriptor</a></span>)</span><span class="result">: <a href="../../Result.html" class="extype" name="org.opalj.Result">Result</a>[<a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Returns the method that will be called by the respective invokestatic call.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the method that will be called by the respective invokestatic call.
-(The client may require to perform additional checks such as validating the visibility!)
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><a href="../../Success.html" class="extype" name="org.opalj.Success">org.opalj.Success</a> <code>(method)</code> if the method was found;
          <code>Failure</code> if the project is inconsistent.
          <code>Empty</code> if the method could not be found in the available classes (i.e., the
          project is incomplete).</p></dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectLike#staticCall" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="staticCall(i:org.opalj.br.instructions.INVOKESTATIC):org.opalj.Result[org.opalj.br.Method]"></a><a id="staticCall(INVOKESTATIC):Result[Method]"></a>
+      <a id="staticCall(callerClassType:org.opalj.br.ObjectType,i:org.opalj.br.instructions.INVOKESTATIC):org.opalj.Result[org.opalj.br.Method]"></a><a id="staticCall(ObjectType,INVOKESTATIC):Result[Method]"></a>
       <span class="permalink">
-      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#staticCall(i:org.opalj.br.instructions.INVOKESTATIC):org.opalj.Result[org.opalj.br.Method]" title="Permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#staticCall(callerClassType:org.opalj.br.ObjectType,i:org.opalj.br.instructions.INVOKESTATIC):org.opalj.Result[org.opalj.br.Method]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1309,7 +1445,7 @@ additional processing is necessary on the client side.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">staticCall</span><span class="params">(<span name="i">i: <a href="../instructions/INVOKESTATIC.html" class="extype" name="org.opalj.br.instructions.INVOKESTATIC">INVOKESTATIC</a></span>)</span><span class="result">: <a href="../../Result.html" class="extype" name="org.opalj.Result">Result</a>[<a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a>]</span>
+        <span class="name">staticCall</span><span class="params">(<span name="callerClassType">callerClassType: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="i">i: <a href="../instructions/INVOKESTATIC.html" class="extype" name="org.opalj.br.instructions.INVOKESTATIC">INVOKESTATIC</a></span>)</span><span class="result">: <a href="../../Result.html" class="extype" name="org.opalj.Result">Result</a>[<a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Returns the method which will be called by the respective
@@ -1347,9 +1483,9 @@ additional processing is necessary on the client side.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectLike#virtualCall" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="virtualCall(callerPackageName:String,declaringType:org.opalj.br.ReferenceType,name:String,descriptor:org.opalj.br.MethodDescriptor):scala.collection.Set[org.opalj.br.Method]"></a><a id="virtualCall(String,ReferenceType,String,MethodDescriptor):Set[Method]"></a>
+      <a id="virtualCall(callerType:org.opalj.br.ObjectType,declaringType:org.opalj.br.ReferenceType,name:String,descriptor:org.opalj.br.MethodDescriptor):scala.collection.Set[org.opalj.br.Method]"></a><a id="virtualCall(ObjectType,ReferenceType,String,MethodDescriptor):Set[Method]"></a>
       <span class="permalink">
-      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#virtualCall(callerPackageName:String,declaringType:org.opalj.br.ReferenceType,name:String,descriptor:org.opalj.br.MethodDescriptor):scala.collection.Set[org.opalj.br.Method]" title="Permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#virtualCall(callerType:org.opalj.br.ObjectType,declaringType:org.opalj.br.ReferenceType,name:String,descriptor:org.opalj.br.MethodDescriptor):scala.collection.Set[org.opalj.br.Method]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1358,7 +1494,7 @@ additional processing is necessary on the client side.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">virtualCall</span><span class="params">(<span name="callerPackageName">callerPackageName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="declaringType">declaringType: <a href="../ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <a href="../MethodDescriptor.html" class="extype" name="org.opalj.br.MethodDescriptor">MethodDescriptor</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.Set">Set</span>[<a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a>]</span>
+        <span class="name">virtualCall</span><span class="params">(<span name="callerType">callerType: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="declaringType">declaringType: <a href="../ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <a href="../MethodDescriptor.html" class="extype" name="org.opalj.br.MethodDescriptor">MethodDescriptor</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.Set">Set</span>[<a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Returns the set of methods that may be called by an invokevirtual call, if
@@ -1369,9 +1505,9 @@ is recommended to use <a href="#instanceCall(callerClassType:org.opalj.br.Object
 </p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>As in case of instance call, the returned method may have a different
          descriptor if we have a signature polymorphic call!</p></span></dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectLike#virtualCall" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="virtualCall(callerPackageName:String,i:org.opalj.br.instructions.INVOKEVIRTUAL):scala.collection.Set[org.opalj.br.Method]"></a><a id="virtualCall(String,INVOKEVIRTUAL):Set[Method]"></a>
+      <a id="virtualCall(callerType:org.opalj.br.ObjectType,i:org.opalj.br.instructions.INVOKEVIRTUAL):scala.collection.Set[org.opalj.br.Method]"></a><a id="virtualCall(ObjectType,INVOKEVIRTUAL):Set[Method]"></a>
       <span class="permalink">
-      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#virtualCall(callerPackageName:String,i:org.opalj.br.instructions.INVOKEVIRTUAL):scala.collection.Set[org.opalj.br.Method]" title="Permalink">
+      <a href="../../../../org/opalj/br/analyses/ProjectLike.html#virtualCall(callerType:org.opalj.br.ObjectType,i:org.opalj.br.instructions.INVOKEVIRTUAL):scala.collection.Set[org.opalj.br.Method]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1380,10 +1516,10 @@ is recommended to use <a href="#instanceCall(callerClassType:org.opalj.br.Object
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">virtualCall</span><span class="params">(<span name="callerPackageName">callerPackageName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="i">i: <a href="../instructions/INVOKEVIRTUAL.html" class="extype" name="org.opalj.br.instructions.INVOKEVIRTUAL">INVOKEVIRTUAL</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.Set">Set</span>[<a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a>]</span>
+        <span class="name">virtualCall</span><span class="params">(<span name="callerType">callerType: <a href="../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="i">i: <a href="../instructions/INVOKEVIRTUAL.html" class="extype" name="org.opalj.br.instructions.INVOKEVIRTUAL">INVOKEVIRTUAL</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.Set">Set</span>[<a href="../Method.html" class="extype" name="org.opalj.br.Method">Method</a>]</span>
       </span>
       
-      <p class="shortcomment cmt">Convience method; see <code>virtualCall(callerPackageName:String,declaringType:ReferenceType*</code>
+      <p class="shortcomment cmt">Convenience method; see <code>virtualCall(callerPackageName:String,declaringType:ReferenceType*</code>
 for details.</p>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
@@ -1473,7 +1609,7 @@ for details.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1484,9 +1620,7 @@ for details.</p>
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

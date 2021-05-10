@@ -988,6 +988,18 @@ that it facilitates writing analyses that use pattern matching.
                         <a href="INCOMPLETE_INVOKEDYNAMIC$.html" title="Represents an &quot;incomplete&quot; invoke dynamic instruction.">INCOMPLETE_INVOKEDYNAMIC</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
+                        <a class="object" href="INCOMPLETE_LDC$.html" title=""></a>
+                        <a href="INCOMPLETE_LDC$.html" title="">INCOMPLETE_LDC</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="INCOMPLETE_LDC2_W$.html" title=""></a>
+                        <a href="INCOMPLETE_LDC2_W$.html" title="">INCOMPLETE_LDC2_W</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="INCOMPLETE_LDC_W$.html" title=""></a>
+                        <a href="INCOMPLETE_LDC_W$.html" title="">INCOMPLETE_LDC_W</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
                         <a class="object" href="INEG$.html" title="Negate int."></a>
                         <a href="INEG$.html" title="Negate int.">INEG</a>
                       </li><li class="current-entities indented4">
@@ -1186,6 +1198,10 @@ that it facilitates writing analyses that use pattern matching.
                         <span class="separator"></span>
                         <a class="object" href="LDCClass$.html" title=""></a>
                         <a href="LDCClass$.html" title="">LDCClass</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="LDCDynamic$.html" title=""></a>
+                        <a href="LDCDynamic$.html" title="">LDCDynamic</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="object" href="LDCFloat$.html" title=""></a>
@@ -1430,6 +1446,18 @@ that it facilitates writing analyses that use pattern matching.
                         <span class="separator"></span>
                         <a class="class" href="LoadDouble.html" title=""></a>
                         <a href="LoadDouble.html" title="">LoadDouble</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="LoadDynamic.html" title=""></a>
+                        <a href="LoadDynamic.html" title="">LoadDynamic</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="LoadDynamic2_W.html" title=""></a>
+                        <a href="LoadDynamic2_W.html" title="">LoadDynamic2_W</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="LoadDynamic_W.html" title=""></a>
+                        <a href="LoadDynamic_W.html" title="">LoadDynamic_W</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="class" href="LoadFloat.html" title=""></a>
@@ -1738,7 +1766,7 @@ that it facilitates writing analyses that use pattern matching.
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A load constant instruction which never fails.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/instructions/LDC.scala?at=develop" target="_blank">LDC.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A load constant instruction which never fails.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/br/src/main/scala/org/opalj/br/instructions/LDC.scala" target="_blank">LDC.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -2300,7 +2328,7 @@ that it facilitates writing analyses that use pattern matching.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2376,7 +2404,7 @@ stack and the registers is not considered to be an expression.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2397,7 +2425,7 @@ stack and the registers is not considered to be an expression.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.instructions.ConstantLengthInstruction#indexOfNextInstruction" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2943,7 +2971,7 @@ is potentially different when the target instruction is reached.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2964,7 +2992,7 @@ is potentially different when the target instruction is reached.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.instructions.LoadConstantInstruction#numberOfPoppedOperands" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -3284,7 +3312,7 @@ given absolute address.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -3295,9 +3323,7 @@ given absolute address.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

@@ -241,7 +241,7 @@ The key values always have to be larger than or equal to 0 and are ideally conti
 (0,1,2,3,...). The values are stored in a plain array to enable true O(1) retrieval.
 Furthermore, the array is only as large as it has to be to keep the value associated
 with the largest key.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.collection.mutable.ArrayMap">ArrayMap</a>[<span class="extype" name="org.opalj.collection.mutable.ArrayMap.T">T</span>]</dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/common/src/main/scala/org/opalj/collection/mutable/ArrayMap.scala?at=develop" target="_blank">ArrayMap.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This data structure is not thread safe.</p></span></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.collection.mutable.ArrayMap">ArrayMap</a>[<span class="extype" name="org.opalj.collection.mutable.ArrayMap.T">T</span>]</dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/common/src/main/scala/org/opalj/collection/mutable/ArrayMap.scala" target="_blank">ArrayMap.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This data structure is not thread safe.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -424,7 +424,7 @@ with the largest key.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.collection.mutable.ArrayMap#entries" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -557,7 +557,7 @@ with the largest key.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.collection.mutable.ArrayMap#getOrElse" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -690,7 +690,7 @@ with the largest key.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -711,7 +711,7 @@ with the largest key.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.collection.mutable.ArrayMap#remove" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -891,7 +891,7 @@ it possible to store the new value.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -902,9 +902,7 @@ it possible to store the new value.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

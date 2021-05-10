@@ -197,7 +197,7 @@ concurrent computations.
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Executes the given function <code>process</code> for each submitted value of type <code>T</code>.
 The <code>process</code> function can add further values that should be processed.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.concurrent.ConcurrentTasks">ConcurrentTasks</a>[<span class="extype" name="org.opalj.concurrent.ConcurrentTasks.T">T</span>]</dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/common/src/main/scala/org/opalj/concurrent/Tasks.scala?at=develop" target="_blank">Tasks.scala</a></dd><div class="block">Example:
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.concurrent.ConcurrentTasks">ConcurrentTasks</a>[<span class="extype" name="org.opalj.concurrent.ConcurrentTasks.T">T</span>]</dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/common/src/main/scala/org/opalj/concurrent/Tasks.scala" target="_blank">Tasks.scala</a></dd><div class="block">Example:
                <ol><li class="cmt"><p></p><pre><span class="kw">val</span> tasks = Tasks[T] { (tasks : Tasks[T], t : T) ⇒
          <span class="cmt">// do something with t</span>
          <span class="kw">if</span> (&lt;some condition&gt;) { tasks.submit(nextT) }
@@ -399,7 +399,7 @@ The <code>process</code> function can add further values that should be processe
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.concurrent.ConcurrentTasks#currentExceptions" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -500,7 +500,7 @@ The <code>process</code> function can add further values that should be processe
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.concurrent.ConcurrentTasks#hasExceptions" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -537,7 +537,7 @@ The <code>process</code> function can add further values that should be processe
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -609,7 +609,7 @@ that are created while processing tasks have been processed.</p><p><b><code>join
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -630,7 +630,7 @@ that are created while processing tasks have been processed.</p><p><b><code>join
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.concurrent.ConcurrentTasks#process" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -785,7 +785,7 @@ that are created while processing tasks have been processed.</p><p><b><code>join
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -796,9 +796,7 @@ that are created while processing tasks have been processed.</p><p><b><code>join
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

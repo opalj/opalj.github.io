@@ -419,7 +419,7 @@ array is not merged with another array created at a different point in time.
 From that point on, it is no longer possible to track the content of the arrays
 that are merged as well as the &quot;merged array&quot; it self since operations on the
 &quot;merged array&quot; are not reflected in the original arrays.
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Self Type</dt><dd>(<a href="ConcreteArrayValues.html" class="extype" name="org.opalj.ai.domain.l1.ConcreteArrayValues">ConcreteArrayValues</a>.this)#<span class="extype" name="org.opalj.ai.domain.l1.ConcreteArrayValues.DomainConcreteArrayValue">DomainConcreteArrayValue</span></dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/ai/src/main/scala/org/opalj/ai/domain/l1/ConcreteArrayValues.scala?at=develop" target="_blank">ConcreteArrayValues.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Self Type</dt><dd>(<a href="ConcreteArrayValues.html" class="extype" name="org.opalj.ai.domain.l1.ConcreteArrayValues">ConcreteArrayValues</a>.this)#<span class="extype" name="org.opalj.ai.domain.l1.ConcreteArrayValues.DomainConcreteArrayValue">DomainConcreteArrayValue</span></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ai/src/main/scala/org/opalj/ai/domain/l1/ConcreteArrayValues.scala" target="_blank">ConcreteArrayValues.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -866,7 +866,7 @@ from the base values, but still maybe more specific. For example,</p><pre><span 
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.value.IsReferenceValue#computationalType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1169,7 +1169,7 @@ the index is potentially valid.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.value.IsReferenceValue#hasCategory2ComputationalType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1608,7 +1608,7 @@ its computational type and – if so – calls <a href="../../ValuesDomain$Valu
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1629,7 +1629,7 @@ its computational type and – if so – calls <a href="../../ValuesDomain$Valu
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.ai.domain.Origin.SingleOriginValue#origins" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2025,7 +2025,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -2036,9 +2036,7 @@ type.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

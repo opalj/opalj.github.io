@@ -212,6 +212,14 @@ that it facilitates writing analyses that use pattern matching.
                         <a href="ApplicationWithoutJREEntryPointsFinder.html" title="Similar to the ApplicationEntryPointsFinder this trait selects main methods as entry points for standard command line applications.">ApplicationWithoutJREEntryPointsFinder</a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
+                        <a class="object" href="CallBySignatureKey$.html" title="The key object to get the interface methods for which call-by-signature resolution needs to be done."></a>
+                        <a href="CallBySignatureKey$.html" title="The key object to get the interface methods for which call-by-signature resolution needs to be done.">CallBySignatureKey</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="CallBySignatureTargets.html" title=""></a>
+                        <a href="CallBySignatureTargets.html" title="">CallBySignatureTargets</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
                         <a class="class" href="ClassExtensibility.html" title="Determines whether a class or interface is directly extensible by a (yet unknown) client application/library."></a>
                         <a href="ClassExtensibility.html" title="Determines whether a class or interface is directly extensible by a (yet unknown) client application/library.">ClassExtensibility</a>
                       </li><li class="current-entities indented5">
@@ -296,8 +304,8 @@ that it facilitates writing analyses that use pattern matching.
                         <a href="TypeExtensibilityAnalysis.html" title="Determines if a type (class or interface) is further (transitively) extensible by yet unknown types (that is, can be (transitively) inherited from).">TypeExtensibilityAnalysis</a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
-                        <a class="object" href="TypeExtensibilityKey$.html" title="Key to get the function that determines whether a type (i.e., we abstrat over a class/ interface and all its subtypes) is extensible or not. A type is extensible if a developer could define a sub(*)type that is not part of the given application/library."></a>
-                        <a href="TypeExtensibilityKey$.html" title="Key to get the function that determines whether a type (i.e., we abstrat over a class/ interface and all its subtypes) is extensible or not. A type is extensible if a developer could define a sub(*)type that is not part of the given application/library.">TypeExtensibilityKey</a>
+                        <a class="object" href="TypeExtensibilityKey$.html" title="Key to get the function that determines whether a type (i.e., we abstract over a class/ interface and all its subtypes) is extensible or not. A type is extensible if a developer could define a sub(*)type that is not part of the given application/library."></a>
+                        <a href="TypeExtensibilityKey$.html" title="Key to get the function that determines whether a type (i.e., we abstract over a class/ interface and all its subtypes) is extensible or not. A type is extensible if a developer could define a sub(*)type that is not part of the given application/library.">TypeExtensibilityKey</a>
                       </li>
               </ul>
             </div>
@@ -461,6 +469,22 @@ for standard command line applications. It excludes, however, main methods found
 Runtime Environment to prevent analyses of applications where the JRE is included in the project
 from being polluted by these entry points that are not part of the application.
 </p></div></div>
+    </li><li name="org.opalj.br.analyses.cg.CallBySignatureTargets" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CallBySignatureTargetsextendsAnyRef"></a><a id="CallBySignatureTargets:CallBySignatureTargets"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/br/analyses/cg/CallBySignatureTargets.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="CallBySignatureTargets.html"><span class="name">CallBySignatureTargets</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      
     </li><li name="org.opalj.br.analyses.cg.ClassExtensibility" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="ClassExtensibilityextendsorg.opalj.br.ObjectType=&gt;org.opalj.Answer"></a><a id="ClassExtensibility:ClassExtensibility"></a>
       <span class="permalink">
@@ -899,6 +923,26 @@ specifying
       </span>
       
       
+    </li><li name="org.opalj.br.analyses.cg.CallBySignatureKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CallBySignatureKey"></a><a id="CallBySignatureKey:CallBySignatureKey"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/br/analyses/cg/CallBySignatureKey$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="The key object to get the interface methods for which call-by-signature resolution needs to be done." href="CallBySignatureKey$.html"><span class="name">CallBySignatureKey</span></a><span class="result"> extends <a href="../ProjectInformationKey.html" class="extype" name="org.opalj.br.analyses.ProjectInformationKey">ProjectInformationKey</a>[<a href="CallBySignatureTargets.html" class="extype" name="org.opalj.br.analyses.cg.CallBySignatureTargets">CallBySignatureTargets</a>, <span class="extype" name="scala.Nothing">Nothing</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The <i>key</i> object to get the interface methods for which call-by-signature resolution
+needs to be done.</p><div class="fullcomment"><div class="comment cmt"><p>The <i>key</i> object to get the interface methods for which call-by-signature resolution
+needs to be done.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>To get call-by-signature information use the <a href="../Project.html" class="extype" name="org.opalj.br.analyses.Project">org.opalj.br.analyses.Project</a>'s <code>get</code>
+method and pass in <code>this</code> object.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p><span class="extype" name="CallBySignatureResolution">CallBySignatureResolution</span> for further information.</p></span></dd></dl></div>
     </li><li name="org.opalj.br.analyses.cg.ClassExtensibilityKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ClassExtensibilityKey"></a><a id="ClassExtensibilityKey:ClassExtensibilityKey"></a>
       <span class="permalink">
@@ -1115,10 +1159,10 @@ overridden according to the JVM's semantics.
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Key to get the function that determines whether a type (i.e., we abstrat over a class/ interface and all its subtypes) is extensible or not. A type is extensible if a developer could define a sub(*)type that is not part of the given application/library." href="TypeExtensibilityKey$.html"><span class="name">TypeExtensibilityKey</span></a><span class="result"> extends <a href="../ProjectInformationKey.html" class="extype" name="org.opalj.br.analyses.ProjectInformationKey">ProjectInformationKey</a>[(<a href="../../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a>) ⇒ <a href="../../../Answer.html" class="extype" name="org.opalj.Answer">Answer</a>, <span class="extype" name="scala.Nothing">Nothing</span>]</span>
+        <a title="Key to get the function that determines whether a type (i.e., we abstract over a class/ interface and all its subtypes) is extensible or not. A type is extensible if a developer could define a sub(*)type that is not part of the given application/library." href="TypeExtensibilityKey$.html"><span class="name">TypeExtensibilityKey</span></a><span class="result"> extends <a href="../ProjectInformationKey.html" class="extype" name="org.opalj.br.analyses.ProjectInformationKey">ProjectInformationKey</a>[(<a href="../../ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a>) ⇒ <a href="../../../Answer.html" class="extype" name="org.opalj.Answer">Answer</a>, <span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       
-      <p class="shortcomment cmt"><b>Key<i> to get the function that determines whether a type (i.e., we abstrat over a class/
+      <p class="shortcomment cmt"><b>Key<i> to get the function that determines whether a type (i.e., we abstract over a class/
 interface and all its subtypes) is extensible or not.
 A type is extensible if a developer could define a sub(*)type that is not part of the given
 application/library.

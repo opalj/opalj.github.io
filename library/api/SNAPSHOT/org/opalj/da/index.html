@@ -443,6 +443,10 @@ concurrent computations.
                         <a href="CONSTANT_Double_info.html" title="">CONSTANT_Double_info</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
+                        <a class="class" href="CONSTANT_Dynamic_info.html" title=""></a>
+                        <a href="CONSTANT_Dynamic_info.html" title="">CONSTANT_Dynamic_info</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
                         <a class="class" href="CONSTANT_Fieldref_info.html" title=""></a>
                         <a href="CONSTANT_Fieldref_info.html" title="">CONSTANT_Fieldref_info</a>
                       </li><li class="current-entities indented3">
@@ -711,6 +715,14 @@ concurrent computations.
                         <a href="Module_attribute.html" title="Representation of the Module attribute (Java 9).">Module_attribute</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
+                        <a class="class" href="NestHost_attribute.html" title="Java 11's ModuleMainClass attribute."></a>
+                        <a href="NestHost_attribute.html" title="Java 11's ModuleMainClass attribute.">NestHost_attribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NestMembers_attribute.html" title="Represents the NestMembers attribute (Java 11)."></a>
+                        <a href="NestMembers_attribute.html" title="Represents the NestMembers attribute (Java 11).">NestMembers_attribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
                         <a class="object" href="NullVariableInfo$.html" title=""></a>
                         <a href="NullVariableInfo$.html" title="">NullVariableInfo</a>
                       </li><li class="current-entities indented3">
@@ -737,6 +749,14 @@ concurrent computations.
                         <span class="separator"></span>
                         <a class="class" href="ProvidesEntry.html" title=""></a>
                         <a href="ProvidesEntry.html" title="">ProvidesEntry</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="RecordComponent.html" title=""></a>
+                        <a href="RecordComponent.html" title="">RecordComponent</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Record_attribute.html" title="Represents the Record attribute (Java 16)."></a>
+                        <a href="Record_attribute.html" title="Represents the Record attribute (Java 16).">Record_attribute</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="RequiresEntry.html" title=""></a>
@@ -1209,7 +1229,7 @@ results of type <a href="../br/analyses/ReportableAnalysisResult.html" class="ex
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Defines convenience methods related to representing certain class file elements.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/da/src/main/scala/org/opalj/da/package.scala?at=develop" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/da/src/main/scala/org/opalj/da/package.scala" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -1576,6 +1596,22 @@ attribute_info {
       </span>
       
       <p class="shortcomment cmt"></p>
+    </li><li name="org.opalj.da.CONSTANT_Dynamic_info" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CONSTANT_Dynamic_infoextendsConstant_Pool_EntrywithProductwithSerializable"></a><a id="CONSTANT_Dynamic_info:CONSTANT_Dynamic_info"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/da/CONSTANT_Dynamic_info.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="CONSTANT_Dynamic_info.html"><span class="name">CONSTANT_Dynamic_info</span></a><span class="params">(<span name="bootstrap_method_attr_index">bootstrap_method_attr_index: <span class="extype" name="scala.Int">Int</span></span>, <span name="name_and_type_index">name_and_type_index: <a href="#Constant_Pool_Index=org.opalj.da.ClassFileReader.Constant_Pool_Index" class="extmbr" name="org.opalj.da.Constant_Pool_Index">Constant_Pool_Index</a></span>)</span><span class="result"> extends <a href="Constant_Pool_Entry.html" class="extype" name="org.opalj.da.Constant_Pool_Entry">Constant_Pool_Entry</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt"></p>
     </li><li name="org.opalj.da.CONSTANT_Fieldref_info" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="CONSTANT_Fieldref_infoextendsCONSTANT_RefwithProductwithSerializable"></a><a id="CONSTANT_Fieldref_info:CONSTANT_Fieldref_info"></a>
       <span class="permalink">
@@ -1894,6 +1930,22 @@ attribute_info {
       </span>
       <span class="symbol">
         <a title="" href="ClassValue.html"><span class="name">ClassValue</span></a><span class="params">(<span name="class_info_index">class_info_index: <a href="#Constant_Pool_Index=org.opalj.da.ClassFileReader.Constant_Pool_Index" class="extmbr" name="org.opalj.da.Constant_Pool_Index">Constant_Pool_Index</a></span>)</span><span class="result"> extends <a href="ElementValue.html" class="extype" name="org.opalj.da.ElementValue">ElementValue</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.da.ClassesArray" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClassesArray=org.opalj.collection.immutable.IntArray"></a><a id="ClassesArray:ClassesArray"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/da/index.html#ClassesArray=org.opalj.collection.immutable.IntArray" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ClassesArray</span><span class="result alias"> = <a href="../collection/immutable/IntArray.html" class="extype" name="org.opalj.collection.immutable.IntArray">IntArray</a></span>
       </span>
       
       
@@ -2673,6 +2725,38 @@ InnerClasses_attribute {
       </span>
       
       <p class="shortcomment cmt">Representation of the <i>Module</i> attribute (Java 9).</p>
+    </li><li name="org.opalj.da.NestHost_attribute" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NestHost_attributeextendsAttributewithProductwithSerializable"></a><a id="NestHost_attribute:NestHost_attribute"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/da/NestHost_attribute.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Java 11's ModuleMainClass attribute." href="NestHost_attribute.html"><span class="name">NestHost_attribute</span></a><span class="params">(<span name="attribute_name_index">attribute_name_index: <a href="#Constant_Pool_Index=org.opalj.da.ClassFileReader.Constant_Pool_Index" class="extmbr" name="org.opalj.da.Constant_Pool_Index">Constant_Pool_Index</a></span>, <span name="host_class_index">host_class_index: <a href="#Constant_Pool_Index=org.opalj.da.ClassFileReader.Constant_Pool_Index" class="extmbr" name="org.opalj.da.Constant_Pool_Index">Constant_Pool_Index</a></span>)</span><span class="result"> extends <a href="Attribute.html" class="extype" name="org.opalj.da.Attribute">Attribute</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Java 11's <code>ModuleMainClass</code> attribute.</p>
+    </li><li name="org.opalj.da.NestMembers_attribute" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NestMembers_attributeextendsAttributewithProductwithSerializable"></a><a id="NestMembers_attribute:NestMembers_attribute"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/da/NestMembers_attribute.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Represents the NestMembers attribute (Java 11)." href="NestMembers_attribute.html"><span class="name">NestMembers_attribute</span></a><span class="params">(<span name="attribute_name_index">attribute_name_index: <a href="#Constant_Pool_Index=org.opalj.da.ClassFileReader.Constant_Pool_Index" class="extmbr" name="org.opalj.da.Constant_Pool_Index">Constant_Pool_Index</a></span>, <span name="classes_array">classes_array: <a href="#ClassesArray=org.opalj.collection.immutable.IntArray" class="extmbr" name="org.opalj.da.ClassesArray">ClassesArray</a></span>)</span><span class="result"> extends <a href="Attribute.html" class="extype" name="org.opalj.da.Attribute">Attribute</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Represents the <i>NestMembers</i> attribute (Java 11).</p>
     </li><li name="org.opalj.da.ObjectTypeInfo" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ObjectTypeInfoextendsFieldTypeInfowithProductwithSerializable"></a><a id="ObjectTypeInfo:ObjectTypeInfo"></a>
       <span class="permalink">
@@ -2881,6 +2965,54 @@ InnerClasses_attribute {
       </span>
       
       
+    </li><li name="org.opalj.da.RecordComponent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RecordComponentextendsProductwithSerializable"></a><a id="RecordComponent:RecordComponent"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/da/RecordComponent.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="RecordComponent.html"><span class="name">RecordComponent</span></a><span class="params">(<span name="name_index">name_index: <a href="#Constant_Pool_Index=org.opalj.da.ClassFileReader.Constant_Pool_Index" class="extmbr" name="org.opalj.da.Constant_Pool_Index">Constant_Pool_Index</a></span>, <span name="descriptor_index">descriptor_index: <a href="#Constant_Pool_Index=org.opalj.da.ClassFileReader.Constant_Pool_Index" class="extmbr" name="org.opalj.da.Constant_Pool_Index">Constant_Pool_Index</a></span>, <span name="attributes">attributes: <a href="#Attributes=org.opalj.collection.immutable.RefArray[org.opalj.da.Attribute]" class="extmbr" name="org.opalj.da.Attributes">Attributes</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.da.RecordComponents" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RecordComponents=org.opalj.collection.immutable.RefArray[org.opalj.da.RecordComponent]"></a><a id="RecordComponents:RecordComponents"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/da/index.html#RecordComponents=org.opalj.collection.immutable.RefArray[org.opalj.da.RecordComponent]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RecordComponents</span><span class="result alias"> = <a href="../collection/immutable/RefArray.html" class="extype" name="org.opalj.collection.immutable.RefArray">RefArray</a>[<a href="RecordComponent.html" class="extype" name="org.opalj.da.RecordComponent">RecordComponent</a>]</span>
+      </span>
+      
+      
+    </li><li name="org.opalj.da.Record_attribute" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Record_attributeextendsAttributewithProductwithSerializable"></a><a id="Record_attribute:Record_attribute"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/da/Record_attribute.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Represents the Record attribute (Java 16)." href="Record_attribute.html"><span class="name">Record_attribute</span></a><span class="params">(<span name="attribute_name_index">attribute_name_index: <a href="#Constant_Pool_Index=org.opalj.da.ClassFileReader.Constant_Pool_Index" class="extmbr" name="org.opalj.da.Constant_Pool_Index">Constant_Pool_Index</a></span>, <span name="components">components: <a href="#RecordComponents=org.opalj.collection.immutable.RefArray[org.opalj.da.RecordComponent]" class="extmbr" name="org.opalj.da.RecordComponents">RecordComponents</a></span>)</span><span class="result"> extends <a href="Attribute.html" class="extype" name="org.opalj.da.Attribute">Attribute</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Represents the <i>Record</i> attribute (Java 16).</p>
     </li><li name="org.opalj.da.Requires" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Requires=org.opalj.collection.immutable.RefArray[org.opalj.da.RequiresEntry]"></a><a id="Requires:Requires"></a>
       <span class="permalink">
@@ -4366,7 +4498,7 @@ is a base type.</p>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Factory methods to read class files and create ClassFile objects." href="ClassFileReader$.html"><span class="name">ClassFileReader</span></a><span class="result"> extends <a href="Constant_PoolBinding.html" class="extype" name="org.opalj.da.Constant_PoolBinding">Constant_PoolBinding</a> with <a href="../bi/reader/ClassFileReader.html" class="extype" name="org.opalj.bi.reader.ClassFileReader">bi.reader.ClassFileReader</a> with <a href="../bi/reader/FieldsReader.html" class="extype" name="org.opalj.bi.reader.FieldsReader">FieldsReader</a> with <a href="../bi/reader/MethodsReader.html" class="extype" name="org.opalj.bi.reader.MethodsReader">MethodsReader</a> with <a href="../bi/reader/AttributesReader.html" class="extype" name="org.opalj.bi.reader.AttributesReader">AttributesReader</a> with <a href="../bi/reader/Unknown_attributeReader.html" class="extype" name="org.opalj.bi.reader.Unknown_attributeReader">Unknown_attributeReader</a> with <a href="../bi/reader/BootstrapMethods_attributeReader.html" class="extype" name="org.opalj.bi.reader.BootstrapMethods_attributeReader">BootstrapMethods_attributeReader</a> with <a href="../bi/reader/Code_attributeReader.html" class="extype" name="org.opalj.bi.reader.Code_attributeReader">Code_attributeReader</a> with <a href="../bi/reader/CodeReader.html" class="extype" name="org.opalj.bi.reader.CodeReader">CodeReader</a> with <a href="../bi/reader/SourceFile_attributeReader.html" class="extype" name="org.opalj.bi.reader.SourceFile_attributeReader">SourceFile_attributeReader</a> with <a href="../bi/reader/Signature_attributeReader.html" class="extype" name="org.opalj.bi.reader.Signature_attributeReader">Signature_attributeReader</a> with <a href="../bi/reader/ConstantValue_attributeReader.html" class="extype" name="org.opalj.bi.reader.ConstantValue_attributeReader">ConstantValue_attributeReader</a> with <a href="../bi/reader/Synthetic_attributeReader.html" class="extype" name="org.opalj.bi.reader.Synthetic_attributeReader">Synthetic_attributeReader</a> with <a href="../bi/reader/Deprecated_attributeReader.html" class="extype" name="org.opalj.bi.reader.Deprecated_attributeReader">Deprecated_attributeReader</a> with <a href="../bi/reader/SourceDebugExtension_attributeReader.html" class="extype" name="org.opalj.bi.reader.SourceDebugExtension_attributeReader">SourceDebugExtension_attributeReader</a> with <a href="../bi/reader/InnerClasses_attributeReader.html" class="extype" name="org.opalj.bi.reader.InnerClasses_attributeReader">InnerClasses_attributeReader</a> with <a href="../bi/reader/Exceptions_attributeReader.html" class="extype" name="org.opalj.bi.reader.Exceptions_attributeReader">Exceptions_attributeReader</a> with <a href="../bi/reader/EnclosingMethod_attributeReader.html" class="extype" name="org.opalj.bi.reader.EnclosingMethod_attributeReader">EnclosingMethod_attributeReader</a> with <a href="../bi/reader/LineNumberTable_attributeReader.html" class="extype" name="org.opalj.bi.reader.LineNumberTable_attributeReader">LineNumberTable_attributeReader</a> with <a href="../bi/reader/LocalVariableTable_attributeReader.html" class="extype" name="org.opalj.bi.reader.LocalVariableTable_attributeReader">LocalVariableTable_attributeReader</a> with <a href="../bi/reader/LocalVariableTypeTable_attributeReader.html" class="extype" name="org.opalj.bi.reader.LocalVariableTypeTable_attributeReader">LocalVariableTypeTable_attributeReader</a> with <a href="../bi/reader/ElementValuePairsReader.html" class="extype" name="org.opalj.bi.reader.ElementValuePairsReader">ElementValuePairsReader</a> with <a href="../bi/reader/ParametersAnnotationsReader.html" class="extype" name="org.opalj.bi.reader.ParametersAnnotationsReader">ParametersAnnotationsReader</a> with <a href="../bi/reader/MethodParameters_attributeReader.html" class="extype" name="org.opalj.bi.reader.MethodParameters_attributeReader">MethodParameters_attributeReader</a> with <a href="../bi/reader/AnnotationsReader.html" class="extype" name="org.opalj.bi.reader.AnnotationsReader">AnnotationsReader</a> with <a href="../bi/reader/AnnotationDefault_attributeReader.html" class="extype" name="org.opalj.bi.reader.AnnotationDefault_attributeReader">AnnotationDefault_attributeReader</a> with <a href="../bi/reader/RuntimeVisibleAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeVisibleAnnotations_attributeReader">RuntimeVisibleAnnotations_attributeReader</a> with <a href="../bi/reader/RuntimeInvisibleAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeInvisibleAnnotations_attributeReader">RuntimeInvisibleAnnotations_attributeReader</a> with <a href="../bi/reader/RuntimeVisibleParameterAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeVisibleParameterAnnotations_attributeReader">RuntimeVisibleParameterAnnotations_attributeReader</a> with <a href="../bi/reader/RuntimeInvisibleParameterAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeInvisibleParameterAnnotations_attributeReader">RuntimeInvisibleParameterAnnotations_attributeReader</a> with <a href="../bi/reader/VerificationTypeInfoReader.html" class="extype" name="org.opalj.bi.reader.VerificationTypeInfoReader">VerificationTypeInfoReader</a> with <a href="../bi/reader/StackMapTable_attributeReader.html" class="extype" name="org.opalj.bi.reader.StackMapTable_attributeReader">StackMapTable_attributeReader</a> with <a href="../bi/reader/StackMapFrameReader.html" class="extype" name="org.opalj.bi.reader.StackMapFrameReader">StackMapFrameReader</a> with <a href="../bi/reader/TypeAnnotationTargetReader.html" class="extype" name="org.opalj.bi.reader.TypeAnnotationTargetReader">TypeAnnotationTargetReader</a> with <a href="../bi/reader/RuntimeInvisibleTypeAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeInvisibleTypeAnnotations_attributeReader">RuntimeInvisibleTypeAnnotations_attributeReader</a> with <a href="../bi/reader/RuntimeVisibleTypeAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeVisibleTypeAnnotations_attributeReader">RuntimeVisibleTypeAnnotations_attributeReader</a> with <a href="../bi/reader/TypeAnnotationPathReader.html" class="extype" name="org.opalj.bi.reader.TypeAnnotationPathReader">TypeAnnotationPathReader</a> with <a href="../bi/reader/TypeAnnotationsReader.html" class="extype" name="org.opalj.bi.reader.TypeAnnotationsReader">TypeAnnotationsReader</a> with <a href="../bi/reader/Module_attributeReader.html" class="extype" name="org.opalj.bi.reader.Module_attributeReader">Module_attributeReader</a> with <a href="../bi/reader/ModuleMainClass_attributeReader.html" class="extype" name="org.opalj.bi.reader.ModuleMainClass_attributeReader">ModuleMainClass_attributeReader</a> with <a href="../bi/reader/ModulePackages_attributeReader.html" class="extype" name="org.opalj.bi.reader.ModulePackages_attributeReader">ModulePackages_attributeReader</a></span>
+        <a title="Factory methods to read class files and create ClassFile objects." href="ClassFileReader$.html"><span class="name">ClassFileReader</span></a><span class="result"> extends <a href="Constant_PoolBinding.html" class="extype" name="org.opalj.da.Constant_PoolBinding">Constant_PoolBinding</a> with <a href="../bi/reader/ClassFileReader.html" class="extype" name="org.opalj.bi.reader.ClassFileReader">bi.reader.ClassFileReader</a> with <a href="../bi/reader/FieldsReader.html" class="extype" name="org.opalj.bi.reader.FieldsReader">FieldsReader</a> with <a href="../bi/reader/MethodsReader.html" class="extype" name="org.opalj.bi.reader.MethodsReader">MethodsReader</a> with <a href="../bi/reader/AttributesReader.html" class="extype" name="org.opalj.bi.reader.AttributesReader">AttributesReader</a> with <a href="../bi/reader/Unknown_attributeReader.html" class="extype" name="org.opalj.bi.reader.Unknown_attributeReader">Unknown_attributeReader</a> with <a href="../bi/reader/BootstrapMethods_attributeReader.html" class="extype" name="org.opalj.bi.reader.BootstrapMethods_attributeReader">BootstrapMethods_attributeReader</a> with <a href="../bi/reader/Code_attributeReader.html" class="extype" name="org.opalj.bi.reader.Code_attributeReader">Code_attributeReader</a> with <a href="../bi/reader/CodeReader.html" class="extype" name="org.opalj.bi.reader.CodeReader">CodeReader</a> with <a href="../bi/reader/SourceFile_attributeReader.html" class="extype" name="org.opalj.bi.reader.SourceFile_attributeReader">SourceFile_attributeReader</a> with <a href="../bi/reader/Signature_attributeReader.html" class="extype" name="org.opalj.bi.reader.Signature_attributeReader">Signature_attributeReader</a> with <a href="../bi/reader/ConstantValue_attributeReader.html" class="extype" name="org.opalj.bi.reader.ConstantValue_attributeReader">ConstantValue_attributeReader</a> with <a href="../bi/reader/Synthetic_attributeReader.html" class="extype" name="org.opalj.bi.reader.Synthetic_attributeReader">Synthetic_attributeReader</a> with <a href="../bi/reader/Deprecated_attributeReader.html" class="extype" name="org.opalj.bi.reader.Deprecated_attributeReader">Deprecated_attributeReader</a> with <a href="../bi/reader/SourceDebugExtension_attributeReader.html" class="extype" name="org.opalj.bi.reader.SourceDebugExtension_attributeReader">SourceDebugExtension_attributeReader</a> with <a href="../bi/reader/InnerClasses_attributeReader.html" class="extype" name="org.opalj.bi.reader.InnerClasses_attributeReader">InnerClasses_attributeReader</a> with <a href="../bi/reader/Exceptions_attributeReader.html" class="extype" name="org.opalj.bi.reader.Exceptions_attributeReader">Exceptions_attributeReader</a> with <a href="../bi/reader/EnclosingMethod_attributeReader.html" class="extype" name="org.opalj.bi.reader.EnclosingMethod_attributeReader">EnclosingMethod_attributeReader</a> with <a href="../bi/reader/LineNumberTable_attributeReader.html" class="extype" name="org.opalj.bi.reader.LineNumberTable_attributeReader">LineNumberTable_attributeReader</a> with <a href="../bi/reader/LocalVariableTable_attributeReader.html" class="extype" name="org.opalj.bi.reader.LocalVariableTable_attributeReader">LocalVariableTable_attributeReader</a> with <a href="../bi/reader/LocalVariableTypeTable_attributeReader.html" class="extype" name="org.opalj.bi.reader.LocalVariableTypeTable_attributeReader">LocalVariableTypeTable_attributeReader</a> with <a href="../bi/reader/ElementValuePairsReader.html" class="extype" name="org.opalj.bi.reader.ElementValuePairsReader">ElementValuePairsReader</a> with <a href="../bi/reader/ParametersAnnotationsReader.html" class="extype" name="org.opalj.bi.reader.ParametersAnnotationsReader">ParametersAnnotationsReader</a> with <a href="../bi/reader/MethodParameters_attributeReader.html" class="extype" name="org.opalj.bi.reader.MethodParameters_attributeReader">MethodParameters_attributeReader</a> with <a href="../bi/reader/AnnotationsReader.html" class="extype" name="org.opalj.bi.reader.AnnotationsReader">AnnotationsReader</a> with <a href="../bi/reader/AnnotationDefault_attributeReader.html" class="extype" name="org.opalj.bi.reader.AnnotationDefault_attributeReader">AnnotationDefault_attributeReader</a> with <a href="../bi/reader/RuntimeVisibleAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeVisibleAnnotations_attributeReader">RuntimeVisibleAnnotations_attributeReader</a> with <a href="../bi/reader/RuntimeInvisibleAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeInvisibleAnnotations_attributeReader">RuntimeInvisibleAnnotations_attributeReader</a> with <a href="../bi/reader/RuntimeVisibleParameterAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeVisibleParameterAnnotations_attributeReader">RuntimeVisibleParameterAnnotations_attributeReader</a> with <a href="../bi/reader/RuntimeInvisibleParameterAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeInvisibleParameterAnnotations_attributeReader">RuntimeInvisibleParameterAnnotations_attributeReader</a> with <a href="../bi/reader/VerificationTypeInfoReader.html" class="extype" name="org.opalj.bi.reader.VerificationTypeInfoReader">VerificationTypeInfoReader</a> with <a href="../bi/reader/StackMapTable_attributeReader.html" class="extype" name="org.opalj.bi.reader.StackMapTable_attributeReader">StackMapTable_attributeReader</a> with <a href="../bi/reader/StackMapFrameReader.html" class="extype" name="org.opalj.bi.reader.StackMapFrameReader">StackMapFrameReader</a> with <a href="../bi/reader/TypeAnnotationTargetReader.html" class="extype" name="org.opalj.bi.reader.TypeAnnotationTargetReader">TypeAnnotationTargetReader</a> with <a href="../bi/reader/RuntimeInvisibleTypeAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeInvisibleTypeAnnotations_attributeReader">RuntimeInvisibleTypeAnnotations_attributeReader</a> with <a href="../bi/reader/RuntimeVisibleTypeAnnotations_attributeReader.html" class="extype" name="org.opalj.bi.reader.RuntimeVisibleTypeAnnotations_attributeReader">RuntimeVisibleTypeAnnotations_attributeReader</a> with <a href="../bi/reader/TypeAnnotationPathReader.html" class="extype" name="org.opalj.bi.reader.TypeAnnotationPathReader">TypeAnnotationPathReader</a> with <a href="../bi/reader/TypeAnnotationsReader.html" class="extype" name="org.opalj.bi.reader.TypeAnnotationsReader">TypeAnnotationsReader</a> with <a href="../bi/reader/Module_attributeReader.html" class="extype" name="org.opalj.bi.reader.Module_attributeReader">Module_attributeReader</a> with <a href="../bi/reader/ModuleMainClass_attributeReader.html" class="extype" name="org.opalj.bi.reader.ModuleMainClass_attributeReader">ModuleMainClass_attributeReader</a> with <a href="../bi/reader/ModulePackages_attributeReader.html" class="extype" name="org.opalj.bi.reader.ModulePackages_attributeReader">ModulePackages_attributeReader</a> with <a href="../bi/reader/NestHost_attributeReader.html" class="extype" name="org.opalj.bi.reader.NestHost_attributeReader">NestHost_attributeReader</a> with <a href="../bi/reader/NestMembers_attributeReader.html" class="extype" name="org.opalj.bi.reader.NestMembers_attributeReader">NestMembers_attributeReader</a> with <a href="../bi/reader/Record_attributeReader.html" class="extype" name="org.opalj.bi.reader.Record_attributeReader">Record_attributeReader</a></span>
       </span>
       
       <p class="shortcomment cmt">Factory methods to read class files and create <a href="ClassFileReader$.html#ClassFile=org.opalj.da.ClassFile" class="extmbr" name="org.opalj.da.ClassFileReader.ClassFile">ClassFile</a> objects.</p>

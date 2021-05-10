@@ -247,7 +247,7 @@ ensemble is allowed to depend on a specific ensemble.
 annotation.</p><h4>Example Scenario</h4><p>If every element in the ensemble <code>ex</code> should be annotated with <code>ey</code> and the
 source element <code>x</code> which belongs to ensemble <code>ex</code> has no annotation that matches
 <code>ey</code> then a <a href="SpecificationViolation.html" class="extype" name="org.opalj.av.checking.SpecificationViolation">SpecificationViolation</a> is generated.
-</p></div><dl class="paramcmts block"><dt class="param">sourceEnsemble</dt><dd class="cmt"><p>An ensemble containing elements, that should be annotated.</p></dd><dt class="param">annotationPredicates</dt><dd class="cmt"><p>The annotations that should match.</p></dd><dt class="param">property</dt><dd class="cmt"><p>A description of the property that is checked.</p></dd><dt class="param">matchAny</dt><dd class="cmt"><p>true if only one match is needed, false if all annotations should match</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/av/src/main/scala/org/opalj/av/checking/Specification.scala?at=develop" target="_blank">Specification.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="paramcmts block"><dt class="param">sourceEnsemble</dt><dd class="cmt"><p>An ensemble containing elements, that should be annotated.</p></dd><dt class="param">annotationPredicates</dt><dd class="cmt"><p>The annotations that should match.</p></dd><dt class="param">property</dt><dd class="cmt"><p>A description of the property that is checked.</p></dd><dt class="param">matchAny</dt><dd class="cmt"><p>true if only one match is needed, false if all annotations should match</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/av/src/main/scala/org/opalj/av/checking/Specification.scala" target="_blank">Specification.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -442,7 +442,7 @@ source element <code>x</code> which belongs to ensemble <code>ex</code> has no a
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.av.checking.Specification.LocalOutgoingAnnotatedWithConstraint#ensembles" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -495,7 +495,7 @@ source element <code>x</code> which belongs to ensemble <code>ex</code> has no a
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -564,7 +564,7 @@ source element <code>x</code> which belongs to ensemble <code>ex</code> has no a
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -585,7 +585,7 @@ source element <code>x</code> which belongs to ensemble <code>ex</code> has no a
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.av.checking.Specification.LocalOutgoingAnnotatedWithConstraint#property" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -757,7 +757,7 @@ source element <code>x</code> which belongs to ensemble <code>ex</code> has no a
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -768,9 +768,7 @@ source element <code>x</code> which belongs to ensemble <code>ex</code> has no a
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

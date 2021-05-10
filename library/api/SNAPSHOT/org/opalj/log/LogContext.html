@@ -236,7 +236,7 @@ Before using a <code>LogContext</code> it has to be registered with the <a href=
      computations.</li><li>The log context associated with <a href="../br/analyses/Project.html" class="extype" name="org.opalj.br.analyses.Project">org.opalj.br.analyses.Project</a>s to log
      project related information (e.g., such as project related results or
      configuration issues.)
-</li></ol></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/common/src/main/scala/org/opalj/log/LogContext.scala?at=develop" target="_blank">LogContext.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>The registration of the <code>LogContext</code> with the <code>OPALLogger</code> does not prevent
+</li></ol></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/common/src/main/scala/org/opalj/log/LogContext.scala" target="_blank">LogContext.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>The registration of the <code>LogContext</code> with the <code>OPALLogger</code> does not prevent
      the garbage collection of the <code>LogContext</code> unless a logged message explicitly
      references its log context. This is – however – discouraged! If no message
      explicitly reference the log context it is then possible to unregister the log
@@ -408,7 +408,7 @@ Before using a <code>LogContext</code> it has to be registered with the <a href=
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -461,7 +461,7 @@ Before using a <code>LogContext</code> it has to be registered with the <a href=
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -482,7 +482,7 @@ Before using a <code>LogContext</code> it has to be registered with the <a href=
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.log.LogContext#incrementAndGetCount" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -569,7 +569,7 @@ when it is registered with the OPALLogger. This id will not change afterwards.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -590,7 +590,7 @@ when it is registered with the OPALLogger. This id will not change afterwards.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.log.LogContext#successor" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -601,7 +601,7 @@ when it is registered with the OPALLogger. This id will not change afterwards.
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
@@ -730,7 +730,7 @@ automatically be associated with the same logger as this <code>LogContext</code>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -741,9 +741,7 @@ automatically be associated with the same logger as this <code>LogContext</code>
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

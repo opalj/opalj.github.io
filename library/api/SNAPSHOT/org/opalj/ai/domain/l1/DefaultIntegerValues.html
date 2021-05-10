@@ -389,7 +389,7 @@ domains that are used to adapt/transfer values should be thread safe
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This domain implements the tracking of simple integer values.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.ai.domain.l1.DefaultIntegerValues">DefaultIntegerValues</a> with <a href="../../Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a> with <a href="../../ExceptionsFactory.html" class="extype" name="org.opalj.ai.ExceptionsFactory">ExceptionsFactory</a></dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/ai/src/main/scala/org/opalj/ai/domain/l1/DefaultIntegerValues.scala?at=develop" target="_blank">DefaultIntegerValues.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This domain uses a single object to represent some integer. I.e., this
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.ai.domain.l1.DefaultIntegerValues">DefaultIntegerValues</a> with <a href="../../Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a> with <a href="../../ExceptionsFactory.html" class="extype" name="org.opalj.ai.ExceptionsFactory">ExceptionsFactory</a></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ai/src/main/scala/org/opalj/ai/domain/l1/DefaultIntegerValues.scala" target="_blank">DefaultIntegerValues.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This domain uses a single object to represent some integer. I.e., this
         domain does not support the identification of values that may be equal.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p><a href="IntegerValues.html" class="extype" name="org.opalj.ai.domain.l1.IntegerValues">IntegerValues</a> for more details.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
@@ -1388,7 +1388,7 @@ be used and, hence, continuing the interpretation is meaningless.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1441,7 +1441,7 @@ be used and, hence, continuing the interpretation is meaningless.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1462,7 +1462,7 @@ be used and, hence, continuing the interpretation is meaningless.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.ai.domain.l1.IntegerValues#i2b" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2253,7 +2253,7 @@ abstracts over both values.</p><p>This operation is commutative.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2274,7 +2274,7 @@ abstracts over both values.</p><p>This operation is commutative.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.ai.ValuesDomain#properties" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2474,7 +2474,7 @@ regarding the calculation of a summary see <code>Value.summarize(...)</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -2485,9 +2485,7 @@ regarding the calculation of a summary see <code>Value.summarize(...)</code>.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

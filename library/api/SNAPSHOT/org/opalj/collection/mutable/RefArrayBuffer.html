@@ -241,7 +241,7 @@ In general, this buffer should only be used to reference objects which outlive t
 of the buffer AND where the buffer is only used locally. To foster a local usage only, we do
 not inherit from any standard collection classes. One use case is for example the usage
 as the backing data-structure for work list algorithms.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.collection.mutable.RefArrayBuffer">RefArrayBuffer</a>[<span class="extype" name="org.opalj.collection.mutable.RefArrayBuffer.N">N</span>]</dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/common/src/main/scala/org/opalj/collection/mutable/RefArrayBuffer.scala?at=develop" target="_blank">RefArrayBuffer.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This data structure is not thread safe.</p></span></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.collection.mutable.RefArrayBuffer">RefArrayBuffer</a>[<span class="extype" name="org.opalj.collection.mutable.RefArrayBuffer.N">N</span>]</dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/common/src/main/scala/org/opalj/collection/mutable/RefArrayBuffer.scala" target="_blank">RefArrayBuffer.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This data structure is not thread safe.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -519,7 +519,7 @@ full; otherwise a new array which just contains the valid entries is returned.</
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.collection.mutable.RefArrayBuffer#ensureAdditionalCapacity" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -604,7 +604,7 @@ full; otherwise a new array which just contains the valid entries is returned.</
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -625,7 +625,7 @@ full; otherwise a new array which just contains the valid entries is returned.</
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.collection.mutable.RefArrayBuffer#head" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -797,7 +797,7 @@ at the given <code>startIndex</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -818,7 +818,7 @@ at the given <code>startIndex</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.collection.mutable.RefArrayBuffer#size" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -1006,7 +1006,7 @@ at the given <code>startIndex</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1017,9 +1017,7 @@ at the given <code>startIndex</code>.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

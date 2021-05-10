@@ -180,6 +180,10 @@ that it facilitates writing analyses that use pattern matching.
                         <a href="CONSTANT_Double_info.html" title="Represents a constant double value.">CONSTANT_Double_info</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
+                        <a class="class" href="CONSTANT_Dynamic_info.html" title="Is used by the ldc/ldc_w/ldc2_w instructions to specify a bootstrap method, the dynamic invocation name, the argument and return types of the call, and optionally, a sequence of additional constants called static arguments to the bootstrap method."></a>
+                        <a href="CONSTANT_Dynamic_info.html" title="Is used by the ldc/ldc_w/ldc2_w instructions to specify a bootstrap method, the dynamic invocation name, the argument and return types of the call, and optionally, a sequence of additional constants called static arguments to the bootstrap method.">CONSTANT_Dynamic_info</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
                         <a class="trait" href="CONSTANT_FieldValue_info.html" title="Represents a constant field value."></a>
                         <a href="CONSTANT_FieldValue_info.html" title="Represents a constant field value.">CONSTANT_FieldValue_info</a>
                       </li><li class="current-entities indented4">
@@ -287,7 +291,7 @@ that it facilitates writing analyses that use pattern matching.
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Represents a method type.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/cp/CONSTANT_MethodType_info.scala?at=develop" target="_blank">CONSTANT_MethodType_info.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/br/src/main/scala/org/opalj/br/cp/CONSTANT_MethodType_info.scala" target="_blank">CONSTANT_MethodType_info.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -459,6 +463,22 @@ that it facilitates writing analyses that use pattern matching.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.br.cp.CONSTANT_MethodType_info">CONSTANT_MethodType_info</a> → <a href="Constant_Pool_Entry.html" class="extype" name="org.opalj.br.cp.Constant_Pool_Entry">Constant_Pool_Entry</a></dd></dl></div>
+    </li><li name="org.opalj.br.cp.Constant_Pool_Entry#asDynamic" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asDynamic:org.opalj.br.cp.CONSTANT_Dynamic_info"></a><a id="asDynamic:CONSTANT_Dynamic_info"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/cp/CONSTANT_MethodType_info.html#asDynamic:org.opalj.br.cp.CONSTANT_Dynamic_info" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asDynamic</span><span class="result">: <a href="CONSTANT_Dynamic_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Dynamic_info">CONSTANT_Dynamic_info</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Constant_Pool_Entry.html" class="extype" name="org.opalj.br.cp.Constant_Pool_Entry">Constant_Pool_Entry</a></dd></dl></div>
     </li><li name="org.opalj.br.cp.Constant_Pool_Entry#asFieldType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asFieldType:org.opalj.br.FieldType"></a><a id="asFieldType:FieldType"></a>
       <span class="permalink">
@@ -722,7 +742,7 @@ that it facilitates writing analyses that use pattern matching.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.cp.CONSTANT_MethodType_info#descriptorIndex" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -775,9 +795,25 @@ that it facilitates writing analyses that use pattern matching.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="org.opalj.br.cp.Constant_Pool_Entry#isDynamic" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDynamic:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/cp/CONSTANT_MethodType_info.html#isDynamic:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDynamic</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Constant_Pool_Entry.html" class="extype" name="org.opalj.br.cp.Constant_Pool_Entry">Constant_Pool_Entry</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
@@ -844,7 +880,7 @@ that it facilitates writing analyses that use pattern matching.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -865,7 +901,7 @@ that it facilitates writing analyses that use pattern matching.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -988,7 +1024,7 @@ that it facilitates writing analyses that use pattern matching.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -999,9 +1035,7 @@ that it facilitates writing analyses that use pattern matching.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

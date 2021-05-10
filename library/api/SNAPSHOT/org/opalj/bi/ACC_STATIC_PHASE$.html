@@ -343,6 +343,14 @@ is found in the <a href="../da/index.html" class="extype" name="org.opalj.da">or
                         <a class="object" href="ModulePackagesAttribute$.html" title=""></a>
                         <a href="ModulePackagesAttribute$.html" title="">ModulePackagesAttribute</a>
                       </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="NestHostAttribute$.html" title=""></a>
+                        <a href="NestHostAttribute$.html" title="">NestHostAttribute</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="NestMembersAttribute$.html" title=""></a>
+                        <a href="NestMembersAttribute$.html" title="">NestMembersAttribute</a>
+                      </li><li class="current-entities indented3">
                         <a class="object" href="PrimitiveAccessFlagsMatcher$.html" title="Extractor for the bitmask used by a PrimitiveAccessFlagsMatcher."></a>
                         <a class="trait" href="PrimitiveAccessFlagsMatcher.html" title=""></a>
                         <a href="PrimitiveAccessFlagsMatcher.html" title="">PrimitiveAccessFlagsMatcher</a>
@@ -382,6 +390,10 @@ is found in the <a href="../da/index.html" class="extype" name="org.opalj.da">or
                         <span class="separator"></span>
                         <a class="object" href="REF_putStatic$.html" title=""></a>
                         <a href="REF_putStatic$.html" title="">REF_putStatic</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="RecordAttribute$.html" title=""></a>
+                        <a href="RecordAttribute$.html" title="">RecordAttribute</a>
                       </li><li class="current-entities indented3">
                         <a class="object" href="ReferenceKind$.html" title="Factory for ReferenceKind objects."></a>
                         <a class="class" href="ReferenceKind.html" title="Common super class of the reference_kinds used by the constant pool's CONSTANT_MethodHandle_info structure."></a>
@@ -462,7 +474,7 @@ is found in the <a href="../da/index.html" class="extype" name="org.opalj.da">or
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/bi/src/main/scala/org/opalj/bi/AccessFlag.scala?at=develop" target="_blank">AccessFlag.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>From the JVM 9 specification: &quot;Indicates that this [inter-module] dependence is
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/bi/src/main/scala/org/opalj/bi/AccessFlag.scala" target="_blank">AccessFlag.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>From the JVM 9 specification: &quot;Indicates that this [inter-module] dependence is
       mandatory in the static phase, i.e., at compile time, but is optional in the
       dynamic phase, i.e., at run time.&quot;</p></span>, <span class="cmt"><p>Only used in combination with Java 9 modules.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
@@ -627,7 +639,7 @@ defined by this matcher and the given matcher have to be defined.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -680,7 +692,7 @@ defined by this matcher and the given matcher have to be defined.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -701,7 +713,7 @@ defined by this matcher and the given matcher have to be defined.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -806,7 +818,7 @@ Some(&quot;native&quot;), etc.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -827,7 +839,7 @@ Some(&quot;native&quot;), etc.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1002,7 +1014,7 @@ accessFlags specified by the given matcher.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1013,9 +1025,7 @@ accessFlags specified by the given matcher.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

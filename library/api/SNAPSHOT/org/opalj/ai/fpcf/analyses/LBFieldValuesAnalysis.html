@@ -259,7 +259,7 @@ call-graph information and also don't track the origin of values, we can't track
 the overall nullness property of the values stored in a field. E.g., even if we always
 see that a field is only written in the constructor we still don't know if that happens w.r.t.
 <code>this</code> or some other instance and whether the field was actually read before that!
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.ai.fpcf.analyses.LBFieldValuesAnalysis">LBFieldValuesAnalysis</a></dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/ai/src/main/scala/org/opalj/ai/fpcf/analyses/LBFieldValuesAnalysis.scala?at=develop" target="_blank">LBFieldValuesAnalysis.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This is a very, very shallow analysis and improvements w.r.t. the
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.ai.fpcf.analyses.LBFieldValuesAnalysis">LBFieldValuesAnalysis</a></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ai/src/main/scala/org/opalj/ai/fpcf/analyses/LBFieldValuesAnalysis.scala" target="_blank">LBFieldValuesAnalysis.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This is a very, very shallow analysis and improvements w.r.t. the
       precision are easily imaginable.</p></span>, <span class="cmt"><p>
 ADDITIONALLY, WE HAVE TO IGNORE THOSE FIELDS WHICH SEEMS TO BE ALWAYS NULL BECAUSE  THESE
 FIELDS ARE OFTEN INITIALZED - AT RUNTIME - BY SOME CODE OUTSIDE THE SCOPE OF &quot;PURE&quot; JAVA BASED
@@ -320,7 +320,7 @@ The reason/purpose is not 100% clear:</li><li>[OK] javax.swing.JList.AccessibleJ
         <div id="types" class="types members">
               <h3>Type Members</h3>
               <ol><li name="org.opalj.ai.fpcf.analyses.LBFieldValuesAnalysis.FieldValuesAnalysisDomain" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="FieldValuesAnalysisDomainextendsCorrelationalDomainwithTheProjectwithTheCodewithDefaultSpecialDomainValuesBindingwithThrowAllPotentialExceptionsConfigurationwithDefaultIntegerValueswithDefaultTypeLevelLongValueswithDefaultTypeLevelFloatValueswithDefaultTypeLevelDoubleValueswithTypeLevelPrimitiveValuesConversionswithTypeLevelLongValuesShiftOperatorswithTypeLevelFieldAccessInstructionswithTypeLevelInvokeInstructionswithDefaultReferenceValuesBindingwithDefaultHandlingOfMethodResultswithIgnoreSynchronizationwithRefinedTypeLevelFieldAccessInstructions"></a><a id="FieldValuesAnalysisDomain:FieldValuesAnalysisDomain"></a>
+      <a id="FieldValuesAnalysisDomainextendsCorrelationalDomainwithTheProjectwithTheCodewithDefaultSpecialDomainValuesBindingwithThrowAllPotentialExceptionsConfigurationwithDefaultIntegerValueswithDefaultTypeLevelLongValueswithDefaultTypeLevelFloatValueswithDefaultTypeLevelDoubleValueswithTypeLevelPrimitiveValuesConversionswithTypeLevelLongValuesShiftOperatorswithTypeLevelFieldAccessInstructionswithTypeLevelInvokeInstructionswithTypeLevelDynamicLoadswithDefaultReferenceValuesBindingwithDefaultHandlingOfMethodResultswithIgnoreSynchronizationwithRefinedTypeLevelFieldAccessInstructions"></a><a id="FieldValuesAnalysisDomain:FieldValuesAnalysisDomain"></a>
       <span class="permalink">
       <a href="../../../../../org/opalj/ai/fpcf/analyses/LBFieldValuesAnalysis$FieldValuesAnalysisDomain.html" title="Permalink">
         <i class="material-icons"></i>
@@ -331,7 +331,7 @@ The reason/purpose is not 100% clear:</li><li>[OK] javax.swing.JList.AccessibleJ
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="The domain used for analyzing the values stored in a field." href="LBFieldValuesAnalysis$FieldValuesAnalysisDomain.html"><span class="name">FieldValuesAnalysisDomain</span></a><span class="result"> extends <a href="../../CorrelationalDomain.html" class="extype" name="org.opalj.ai.CorrelationalDomain">CorrelationalDomain</a> with <a href="../../domain/TheProject.html" class="extype" name="org.opalj.ai.domain.TheProject">TheProject</a> with <a href="../../domain/TheCode.html" class="extype" name="org.opalj.ai.domain.TheCode">TheCode</a> with <a href="../../domain/DefaultSpecialDomainValuesBinding.html" class="extype" name="org.opalj.ai.domain.DefaultSpecialDomainValuesBinding">DefaultSpecialDomainValuesBinding</a> with <a href="../../domain/ThrowAllPotentialExceptionsConfiguration.html" class="extype" name="org.opalj.ai.domain.ThrowAllPotentialExceptionsConfiguration">ThrowAllPotentialExceptionsConfiguration</a> with <a href="../../domain/l1/DefaultIntegerValues.html" class="extype" name="org.opalj.ai.domain.l1.DefaultIntegerValues">DefaultIntegerValues</a> with <a href="../../domain/l0/DefaultTypeLevelLongValues.html" class="extype" name="org.opalj.ai.domain.l0.DefaultTypeLevelLongValues">DefaultTypeLevelLongValues</a> with <a href="../../domain/l0/DefaultTypeLevelFloatValues.html" class="extype" name="org.opalj.ai.domain.l0.DefaultTypeLevelFloatValues">DefaultTypeLevelFloatValues</a> with <a href="../../domain/l0/DefaultTypeLevelDoubleValues.html" class="extype" name="org.opalj.ai.domain.l0.DefaultTypeLevelDoubleValues">DefaultTypeLevelDoubleValues</a> with <a href="../../domain/l0/TypeLevelPrimitiveValuesConversions.html" class="extype" name="org.opalj.ai.domain.l0.TypeLevelPrimitiveValuesConversions">TypeLevelPrimitiveValuesConversions</a> with <a href="../../domain/l0/TypeLevelLongValuesShiftOperators.html" class="extype" name="org.opalj.ai.domain.l0.TypeLevelLongValuesShiftOperators">TypeLevelLongValuesShiftOperators</a> with <a href="../../domain/l0/TypeLevelFieldAccessInstructions.html" class="extype" name="org.opalj.ai.domain.l0.TypeLevelFieldAccessInstructions">TypeLevelFieldAccessInstructions</a> with <a href="../../domain/l0/TypeLevelInvokeInstructions.html" class="extype" name="org.opalj.ai.domain.l0.TypeLevelInvokeInstructions">TypeLevelInvokeInstructions</a> with <a href="../../domain/l0/DefaultReferenceValuesBinding.html" class="extype" name="org.opalj.ai.domain.l0.DefaultReferenceValuesBinding">DefaultReferenceValuesBinding</a> with <a href="../../domain/DefaultHandlingOfMethodResults.html" class="extype" name="org.opalj.ai.domain.DefaultHandlingOfMethodResults">DefaultHandlingOfMethodResults</a> with <a href="../../domain/IgnoreSynchronization.html" class="extype" name="org.opalj.ai.domain.IgnoreSynchronization">IgnoreSynchronization</a> with <a href="../domain/RefinedTypeLevelFieldAccessInstructions.html" class="extype" name="org.opalj.ai.fpcf.domain.RefinedTypeLevelFieldAccessInstructions">RefinedTypeLevelFieldAccessInstructions</a></span>
+        <a title="The domain used for analyzing the values stored in a field." href="LBFieldValuesAnalysis$FieldValuesAnalysisDomain.html"><span class="name">FieldValuesAnalysisDomain</span></a><span class="result"> extends <a href="../../CorrelationalDomain.html" class="extype" name="org.opalj.ai.CorrelationalDomain">CorrelationalDomain</a> with <a href="../../domain/TheProject.html" class="extype" name="org.opalj.ai.domain.TheProject">TheProject</a> with <a href="../../domain/TheCode.html" class="extype" name="org.opalj.ai.domain.TheCode">TheCode</a> with <a href="../../domain/DefaultSpecialDomainValuesBinding.html" class="extype" name="org.opalj.ai.domain.DefaultSpecialDomainValuesBinding">DefaultSpecialDomainValuesBinding</a> with <a href="../../domain/ThrowAllPotentialExceptionsConfiguration.html" class="extype" name="org.opalj.ai.domain.ThrowAllPotentialExceptionsConfiguration">ThrowAllPotentialExceptionsConfiguration</a> with <a href="../../domain/l1/DefaultIntegerValues.html" class="extype" name="org.opalj.ai.domain.l1.DefaultIntegerValues">DefaultIntegerValues</a> with <a href="../../domain/l0/DefaultTypeLevelLongValues.html" class="extype" name="org.opalj.ai.domain.l0.DefaultTypeLevelLongValues">DefaultTypeLevelLongValues</a> with <a href="../../domain/l0/DefaultTypeLevelFloatValues.html" class="extype" name="org.opalj.ai.domain.l0.DefaultTypeLevelFloatValues">DefaultTypeLevelFloatValues</a> with <a href="../../domain/l0/DefaultTypeLevelDoubleValues.html" class="extype" name="org.opalj.ai.domain.l0.DefaultTypeLevelDoubleValues">DefaultTypeLevelDoubleValues</a> with <a href="../../domain/l0/TypeLevelPrimitiveValuesConversions.html" class="extype" name="org.opalj.ai.domain.l0.TypeLevelPrimitiveValuesConversions">TypeLevelPrimitiveValuesConversions</a> with <a href="../../domain/l0/TypeLevelLongValuesShiftOperators.html" class="extype" name="org.opalj.ai.domain.l0.TypeLevelLongValuesShiftOperators">TypeLevelLongValuesShiftOperators</a> with <a href="../../domain/l0/TypeLevelFieldAccessInstructions.html" class="extype" name="org.opalj.ai.domain.l0.TypeLevelFieldAccessInstructions">TypeLevelFieldAccessInstructions</a> with <a href="../../domain/l0/TypeLevelInvokeInstructions.html" class="extype" name="org.opalj.ai.domain.l0.TypeLevelInvokeInstructions">TypeLevelInvokeInstructions</a> with <a href="../../domain/l0/TypeLevelDynamicLoads.html" class="extype" name="org.opalj.ai.domain.l0.TypeLevelDynamicLoads">TypeLevelDynamicLoads</a> with <a href="../../domain/l0/DefaultReferenceValuesBinding.html" class="extype" name="org.opalj.ai.domain.l0.DefaultReferenceValuesBinding">DefaultReferenceValuesBinding</a> with <a href="../../domain/DefaultHandlingOfMethodResults.html" class="extype" name="org.opalj.ai.domain.DefaultHandlingOfMethodResults">DefaultHandlingOfMethodResults</a> with <a href="../../domain/IgnoreSynchronization.html" class="extype" name="org.opalj.ai.domain.IgnoreSynchronization">IgnoreSynchronization</a> with <a href="../domain/RefinedTypeLevelFieldAccessInstructions.html" class="extype" name="org.opalj.ai.fpcf.domain.RefinedTypeLevelFieldAccessInstructions">RefinedTypeLevelFieldAccessInstructions</a></span>
       </span>
       
       <p class="shortcomment cmt">The domain used for analyzing the values stored in a field.</p><div class="fullcomment"><div class="comment cmt"><p>The domain used for analyzing the values stored in a field.</p><p>One instance of this domain is used to analyze all methods of the respective
@@ -465,7 +465,7 @@ class. Only after the analysis of all methods, the information returned by
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -534,7 +534,7 @@ class. Only after the analysis of all methods, the information returned by
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -555,7 +555,7 @@ class. Only after the analysis of all methods, the information returned by
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -624,7 +624,7 @@ class. Only after the analysis of all methods, the information returned by
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -645,7 +645,7 @@ class. Only after the analysis of all methods, the information returned by
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectBasedAnalysis#p" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -849,7 +849,7 @@ class. Only after the analysis of all methods, the information returned by
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -860,9 +860,7 @@ class. Only after the analysis of all methods, the information returned by
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

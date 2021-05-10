@@ -238,7 +238,7 @@ that facilitate the conversion from Scala collection classes to OPAL collection 
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>An array based implementation of a mutable stack of <code>int</code> values which has a
 given initial size. If the stack is non-empty, the index of the top value is <code>0</code> and the
 index of the bottom value is (<code>length-1</code>).
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.collection.mutable.IntArrayStack">IntArrayStack</a></dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/common/src/main/scala/org/opalj/collection/mutable/IntArrayStack.scala?at=develop" target="_blank">IntArrayStack.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.collection.mutable.IntArrayStack">IntArrayStack</a></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/common/src/main/scala/org/opalj/collection/mutable/IntArrayStack.scala" target="_blank">IntArrayStack.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -480,22 +480,6 @@ index of the bottom value is (<code>length-1</code>).
       </span>
       
       <p class="shortcomment cmt">The same as push but additionally returns <code>this</code>.</p>
-    </li><li name="scala.collection.TraversableOnce#/:" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="/:[B](z:B)(op:(B,A)=&gt;B):B"></a><a id="/:[B](B)((B,Int)⇒B):B"></a>
-      <span class="permalink">
-      <a href="../../../../org/opalj/collection/mutable/IntArrayStack.html#/:[B](z:B)(op:(B,A)=&gt;B):B" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $div$colon" class="name">/:</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="z">z: <span class="extype" name="scala.collection.TraversableOnce./:.B">B</span></span>)</span><span class="params">(<span name="op">op: (<span class="extype" name="scala.collection.TraversableOnce./:.B">B</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.collection.TraversableOnce./:.B">B</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.TraversableOnce./:.B">B</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>TraversableOnce → GenTraversableOnce</dd></dl></div>
     </li><li name="scala.collection.SeqLike#:+" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id=":+[B&gt;:A,That](elem:B)(implicitbf:scala.collection.generic.CanBuildFrom[Repr,B,That]):That"></a><a id=":+[B&gt;:Int,That](B)(CanBuildFrom[IntArrayStack,B,That]):That"></a>
       <span class="permalink">
@@ -512,22 +496,6 @@ index of the bottom value is (<code>length-1</code>).
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SeqLike → GenSeqLike</dd></dl></div>
-    </li><li name="scala.collection.TraversableOnce#:\" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id=":\[B](z:B)(op:(A,B)=&gt;B):B"></a><a id=":\[B](B)((Int,B)⇒B):B"></a>
-      <span class="permalink">
-      <a href="../../../../org/opalj/collection/mutable/IntArrayStack.html#:\[B](z:B)(op:(A,B)=&gt;B):B" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $colon$bslash" class="name">:\</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="z">z: <span class="extype" name="scala.collection.TraversableOnce.:\.B">B</span></span>)</span><span class="params">(<span name="op">op: (<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.collection.TraversableOnce.:\.B">B</span>) ⇒ <span class="extype" name="scala.collection.TraversableOnce.:\.B">B</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.TraversableOnce.:\.B">B</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>TraversableOnce → GenTraversableOnce</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
       <span class="permalink">
@@ -1269,7 +1237,7 @@ index of the bottom value is (<code>length-1</code>).
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.collection.TraversableLike#groupBy" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1983,7 +1951,7 @@ of the supertype is called.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2004,7 +1972,7 @@ of the supertype is called.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.PartialFunction#orElse" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -3410,7 +3378,45 @@ then the resulting stack will contain the values <code>[1|2|3|4...</code>.
 
         <div class="values members">
               <h3>Deprecated Value Members</h3>
-              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+              <ol><li name="scala.collection.TraversableOnce#/:" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="/:[B](z:B)(op:(B,A)=&gt;B):B"></a><a id="/:[B](B)((B,Int)⇒B):B"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/mutable/IntArrayStack.html#/:[B](z:B)(op:(B,A)=&gt;B):B" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $div$colon. Deprecated: (Since version 2.12.10) Use foldLeft instead of /:" class="name deprecated">/:</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="z">z: <span class="extype" name="scala.collection.TraversableOnce./:.B">B</span></span>)</span><span class="params">(<span name="op">op: (<span class="extype" name="scala.collection.TraversableOnce./:.B">B</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.collection.TraversableOnce./:.B">B</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.TraversableOnce./:.B">B</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>TraversableOnce → GenTraversableOnce</dd><dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.12.10)</i> Use foldLeft instead of /:</p></dd></dl></div>
+    </li><li name="scala.collection.TraversableOnce#:\" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id=":\[B](z:B)(op:(A,B)=&gt;B):B"></a><a id=":\[B](B)((Int,B)⇒B):B"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/collection/mutable/IntArrayStack.html#:\[B](z:B)(op:(A,B)=&gt;B):B" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $colon$bslash. Deprecated: (Since version 2.12.10) Use foldRight instead of :\" class="name deprecated">:\</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="z">z: <span class="extype" name="scala.collection.TraversableOnce.:\.B">B</span></span>)</span><span class="params">(<span name="op">op: (<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.collection.TraversableOnce.:\.B">B</span>) ⇒ <span class="extype" name="scala.collection.TraversableOnce.:\.B">B</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.TraversableOnce.:\.B">B</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>TraversableOnce → GenTraversableOnce</dd><dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.12.10)</i> Use foldRight instead of :\</p></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <span class="permalink">
       <a href="../../../../org/opalj/collection/mutable/IntArrayStack.html#finalize():Unit" title="Permalink">
@@ -3422,7 +3428,7 @@ then the resulting stack will contain the values <code>[1|2|3|4...</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -3433,9 +3439,7 @@ then the resulting stack will contain the values <code>[1|2|3|4...</code>.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

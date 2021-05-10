@@ -270,6 +270,10 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                         <a class="class" href="DoubleConst.html" title=""></a>
                         <a href="DoubleConst.html" title="">DoubleConst</a>
                       </li><li class="current-entities indented3">
+                        <a class="object" href="DynamicConst$.html" title=""></a>
+                        <a class="class" href="DynamicConst.html" title=""></a>
+                        <a href="DynamicConst.html" title="">DynamicConst</a>
+                      </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="object" href="EagerDetachedTACAIKey$.html" title="Key to get the 3-address based code of a method computed using the configured domain/data-flow analysis."></a>
                         <a href="EagerDetachedTACAIKey$.html" title="Key to get the 3-address based code of a method computed using the configured domain/data-flow analysis.">EagerDetachedTACAIKey</a>
@@ -617,7 +621,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Call of an instance method for which no virtual method call resolution has to happen.
 I.e., it is either a super-call, a private instance method call or a constructor call.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/Stmt.scala?at=develop" target="_blank">Stmt.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/Stmt.scala" target="_blank">Stmt.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -1249,7 +1253,7 @@ to do a switch over all nodes.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.NonVirtualMethodCall#declaringClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1334,7 +1338,7 @@ to do a switch over all nodes.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.Stmt#isAssignment" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1350,6 +1354,22 @@ to do a switch over all nodes.
       </span>
       <span class="symbol">
         <span class="name">isAssignment</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Stmt.html" class="extype" name="org.opalj.tac.Stmt">Stmt</a></dd></dl></div>
+    </li><li name="org.opalj.tac.Stmt#isCaughtException" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isCaughtException:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/tac/NonVirtualMethodCall.html#isCaughtException:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isCaughtException</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Stmt.html" class="extype" name="org.opalj.tac.Stmt">Stmt</a></dd></dl></div>
@@ -1532,7 +1552,7 @@ if the index is valid.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1553,7 +1573,7 @@ if the index is valid.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.NonVirtualMethodCall#params" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1798,7 +1818,7 @@ always required.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1809,9 +1829,7 @@ always required.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

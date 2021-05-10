@@ -428,7 +428,7 @@ that facilitate the conversion from Scala collection classes to OPAL collection 
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Encapsulates a pair of values that is intended to be used as a key in Maps.
 Compared to a standard pair (Tuple2), however, comparison of two <code>IdentityPair</code>
 objects is done by doing a reference-based comparison of the stored values.
-</p></div><dl class="paramcmts block"><dt class="param">_1</dt><dd class="cmt"><p>A reference value (can be <code>null</code>).</p></dd><dt class="param">_2</dt><dd class="cmt"><p>A reference value (can be <code>null</code>).</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/common/src/main/scala/org/opalj/collection/immutable/IdentityPair.scala?at=develop" target="_blank">IdentityPair.scala</a></dd><div class="block">Example:
+</p></div><dl class="paramcmts block"><dt class="param">_1</dt><dd class="cmt"><p>A reference value (can be <code>null</code>).</p></dd><dt class="param">_2</dt><dd class="cmt"><p>A reference value (can be <code>null</code>).</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/common/src/main/scala/org/opalj/collection/immutable/IdentityPair.scala" target="_blank">IdentityPair.scala</a></dd><div class="block">Example:
                <ol><li class="cmt"><p></p><pre><span class="kw">val</span> a = <span class="kw">new</span> <span class="std">String</span>(<span class="lit">"fooBar"</span>)
 <span class="kw">val</span> b = <span class="lit">"foo"</span>+<span class="lit">"Bar"</span>
 <span class="kw">val</span> p1 = <span class="kw">new</span> IdentityPair(a,b) <span class="cmt">// #1</span>
@@ -647,7 +647,7 @@ p1 == p3 <span class="cmt">// =&gt; true</span></pre></li></ol>
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -700,7 +700,7 @@ p1 == p3 <span class="cmt">// =&gt; true</span></pre></li></ol>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.collection.immutable.IdentityPair#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -769,7 +769,7 @@ p1 == p3 <span class="cmt">// =&gt; true</span></pre></li></ol>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -790,7 +790,7 @@ p1 == p3 <span class="cmt">// =&gt; true</span></pre></li></ol>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Product2#productArity" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -935,7 +935,7 @@ p1 == p3 <span class="cmt">// =&gt; true</span></pre></li></ol>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -946,9 +946,7 @@ p1 == p3 <span class="cmt">// =&gt; true</span></pre></li></ol>
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

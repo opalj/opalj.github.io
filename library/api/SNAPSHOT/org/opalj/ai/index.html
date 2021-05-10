@@ -377,6 +377,10 @@ domains that are used to adapt/transfer values should be thread safe
                         <a href="DoubleValuesFactory.html" title="Defines the primary factory methods for Double values.">DoubleValuesFactory</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
+                        <a class="trait" href="DynamicLoadsDomain.html" title="Interface related to the handling of dynamic ldc/ldc_w/ldc2_w instructions."></a>
+                        <a href="DynamicLoadsDomain.html" title="Interface related to the handling of dynamic ldc/ldc_w/ldc2_w instructions.">DynamicLoadsDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
                         <a class="trait" href="ExceptionsFactory.html" title="Defines factory methods for those exceptions that are (also) created by the JVM when the evaluation of a specific bytecode instruction fails (e.g., idiv, checkcast, monitorexit, return...)."></a>
                         <a href="ExceptionsFactory.html" title="Defines factory methods for those exceptions that are (also) created by the JVM when the evaluation of a specific bytecode instruction fails (e.g., idiv, checkcast, monitorexit, return...).">ExceptionsFactory</a>
                       </li><li class="current-entities indented3">
@@ -958,7 +962,7 @@ results of type <a href="../br/analyses/ReportableAnalysisResult.html" class="ex
 defined in this package (<code>ai</code>). The classes and traits defined in the sub-packages
 (in particular in <code>domain</code>) are not considered to be part of the core of OPAL/the
 abstract interpreter.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/ai/src/main/scala/org/opalj/ai/package.scala?at=develop" target="_blank">package.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This framework assumes that the analyzed bytecode is valid; i.e., the JVM's
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ai/src/main/scala/org/opalj/ai/package.scala" target="_blank">package.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This framework assumes that the analyzed bytecode is valid; i.e., the JVM's
      bytecode verifier would be able to verify the code. Furthermore, load-time errors
      (e.g., <code>LinkageErrors</code>) are – by default – completely ignored to facilitate the
      analysis of parts of a project. In general, if the presented bytecode is not valid,
@@ -1461,7 +1465,7 @@ started/continued. I.e., this makes it potentially possible to reuse a <a href="
 for the interpretation of multiple methods.
 </p></div></div>
     </li><li name="org.opalj.ai.Domain" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="DomainextendsCoreDomainFunctionalitywithIntegerValuesDomainwithLongValuesDomainwithFloatValuesDomainwithDoubleValuesDomainwithReferenceValuesDomainwithFieldAccessesDomainwithMethodCallsDomainwithMonitorInstructionsDomainwithReturnInstructionsDomainwithPrimitiveValuesConversionsDomainwithTypedValuesFactorywithConfiguration"></a><a id="Domain:Domain"></a>
+      <a id="DomainextendsCoreDomainFunctionalitywithIntegerValuesDomainwithLongValuesDomainwithFloatValuesDomainwithDoubleValuesDomainwithReferenceValuesDomainwithFieldAccessesDomainwithMethodCallsDomainwithMonitorInstructionsDomainwithReturnInstructionsDomainwithDynamicLoadsDomainwithPrimitiveValuesConversionsDomainwithTypedValuesFactorywithConfiguration"></a><a id="Domain:Domain"></a>
       <span class="permalink">
       <a href="../../../org/opalj/ai/Domain.html" title="Permalink">
         <i class="material-icons"></i>
@@ -1472,7 +1476,7 @@ for the interpretation of multiple methods.
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="A domain is the fundamental abstraction mechanism in OPAL that enables the customization of the abstract interpretation framework towards the needs of a specific analysis." href="Domain.html"><span class="name">Domain</span></a><span class="result"> extends <a href="CoreDomainFunctionality.html" class="extype" name="org.opalj.ai.CoreDomainFunctionality">CoreDomainFunctionality</a> with <a href="IntegerValuesDomain.html" class="extype" name="org.opalj.ai.IntegerValuesDomain">IntegerValuesDomain</a> with <a href="LongValuesDomain.html" class="extype" name="org.opalj.ai.LongValuesDomain">LongValuesDomain</a> with <a href="FloatValuesDomain.html" class="extype" name="org.opalj.ai.FloatValuesDomain">FloatValuesDomain</a> with <a href="DoubleValuesDomain.html" class="extype" name="org.opalj.ai.DoubleValuesDomain">DoubleValuesDomain</a> with <a href="ReferenceValuesDomain.html" class="extype" name="org.opalj.ai.ReferenceValuesDomain">ReferenceValuesDomain</a> with <a href="FieldAccessesDomain.html" class="extype" name="org.opalj.ai.FieldAccessesDomain">FieldAccessesDomain</a> with <a href="MethodCallsDomain.html" class="extype" name="org.opalj.ai.MethodCallsDomain">MethodCallsDomain</a> with <a href="MonitorInstructionsDomain.html" class="extype" name="org.opalj.ai.MonitorInstructionsDomain">MonitorInstructionsDomain</a> with <a href="ReturnInstructionsDomain.html" class="extype" name="org.opalj.ai.ReturnInstructionsDomain">ReturnInstructionsDomain</a> with <a href="PrimitiveValuesConversionsDomain.html" class="extype" name="org.opalj.ai.PrimitiveValuesConversionsDomain">PrimitiveValuesConversionsDomain</a> with <a href="TypedValuesFactory.html" class="extype" name="org.opalj.ai.TypedValuesFactory">TypedValuesFactory</a> with <a href="Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a></span>
+        <a title="A domain is the fundamental abstraction mechanism in OPAL that enables the customization of the abstract interpretation framework towards the needs of a specific analysis." href="Domain.html"><span class="name">Domain</span></a><span class="result"> extends <a href="CoreDomainFunctionality.html" class="extype" name="org.opalj.ai.CoreDomainFunctionality">CoreDomainFunctionality</a> with <a href="IntegerValuesDomain.html" class="extype" name="org.opalj.ai.IntegerValuesDomain">IntegerValuesDomain</a> with <a href="LongValuesDomain.html" class="extype" name="org.opalj.ai.LongValuesDomain">LongValuesDomain</a> with <a href="FloatValuesDomain.html" class="extype" name="org.opalj.ai.FloatValuesDomain">FloatValuesDomain</a> with <a href="DoubleValuesDomain.html" class="extype" name="org.opalj.ai.DoubleValuesDomain">DoubleValuesDomain</a> with <a href="ReferenceValuesDomain.html" class="extype" name="org.opalj.ai.ReferenceValuesDomain">ReferenceValuesDomain</a> with <a href="FieldAccessesDomain.html" class="extype" name="org.opalj.ai.FieldAccessesDomain">FieldAccessesDomain</a> with <a href="MethodCallsDomain.html" class="extype" name="org.opalj.ai.MethodCallsDomain">MethodCallsDomain</a> with <a href="MonitorInstructionsDomain.html" class="extype" name="org.opalj.ai.MonitorInstructionsDomain">MonitorInstructionsDomain</a> with <a href="ReturnInstructionsDomain.html" class="extype" name="org.opalj.ai.ReturnInstructionsDomain">ReturnInstructionsDomain</a> with <a href="DynamicLoadsDomain.html" class="extype" name="org.opalj.ai.DynamicLoadsDomain">DynamicLoadsDomain</a> with <a href="PrimitiveValuesConversionsDomain.html" class="extype" name="org.opalj.ai.PrimitiveValuesConversionsDomain">PrimitiveValuesConversionsDomain</a> with <a href="TypedValuesFactory.html" class="extype" name="org.opalj.ai.TypedValuesFactory">TypedValuesFactory</a> with <a href="Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a></span>
       </span>
       
       <p class="shortcomment cmt">A domain is the fundamental abstraction mechanism in OPAL that enables the customization
@@ -1557,6 +1561,22 @@ that implements the functionality related to the handling of <code>double</code>
       </span>
       
       <p class="shortcomment cmt">Defines the primary factory methods for Double values.</p>
+    </li><li name="org.opalj.ai.DynamicLoadsDomain" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DynamicLoadsDomainextendsAnyRef"></a><a id="DynamicLoadsDomain:DynamicLoadsDomain"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/ai/DynamicLoadsDomain.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Interface related to the handling of dynamic ldc/ldc_w/ldc2_w instructions." href="DynamicLoadsDomain.html"><span class="name">DynamicLoadsDomain</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Interface related to the handling of dynamic ldc/ldc_w/ldc2_w instructions.</p>
     </li><li name="org.opalj.ai.ExceptionsFactory" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="ExceptionsFactoryextendsValuesDomain"></a><a id="ExceptionsFactory:ExceptionsFactory"></a>
       <span class="permalink">

@@ -446,7 +446,7 @@ It uses the AI information of the three-address code to get the most precise inf
 virtual calls.
 <code>handleImpreciseCall</code> will be invoked for each virtual call, that could not be resolved
 precisely.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/cg/AbstractCallGraphAnalysis.scala?at=develop" target="_blank">AbstractCallGraphAnalysis.scala</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="CHACallGraphAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.CHACallGraphAnalysis">org.opalj.tac.fpcf.analyses.cg.CHACallGraphAnalysis</a> or
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/cg/AbstractCallGraphAnalysis.scala" target="_blank">AbstractCallGraphAnalysis.scala</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="CHACallGraphAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.CHACallGraphAnalysis">org.opalj.tac.fpcf.analyses.cg.CHACallGraphAnalysis</a> or
     <a href="rta/RTACallGraphAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.rta.RTACallGraphAnalysis">org.opalj.tac.fpcf.analyses.cg.rta.RTACallGraphAnalysis</a> for example analyses.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
@@ -525,7 +525,27 @@ precisely.
 
         <div class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="org.opalj.tac.fpcf.analyses.cg.AbstractCallGraphAnalysis#createInitialState" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="org.opalj.tac.fpcf.analyses.cg.AbstractCallGraphAnalysis#canResolveCall" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="canResolveCall(implicitstate:AbstractCallGraphAnalysis.this.State):org.opalj.br.ObjectType=&gt;Boolean"></a><a id="canResolveCall(State):(ObjectType)⇒Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/AbstractCallGraphAnalysis.html#canResolveCall(implicitstate:AbstractCallGraphAnalysis.this.State):org.opalj.br.ObjectType=&gt;Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canResolveCall</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State&lt;:org.opalj.tac.fpcf.analyses.cg.CGState" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.AbstractCallGraphAnalysis.State">State</a></span>)</span><span class="result">: (<a href="../../../../br/ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Decides whether this call graph implementation can resolve this call immediately.</p><div class="fullcomment"><div class="comment cmt"><p>Decides whether this call graph implementation can resolve this call immediately.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.AbstractCallGraphAnalysis#createInitialState" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="createInitialState(definedMethod:org.opalj.br.DefinedMethod,tacEP:org.opalj.fpcf.EPS[org.opalj.br.Method,org.opalj.tac.fpcf.properties.TACAI]):AbstractCallGraphAnalysis.this.State"></a><a id="createInitialState(DefinedMethod,EPS[Method,properties.TACAI]):State"></a>
       <span class="permalink">
       <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/AbstractCallGraphAnalysis.html#createInitialState(definedMethod:org.opalj.br.DefinedMethod,tacEP:org.opalj.fpcf.EPS[org.opalj.br.Method,org.opalj.tac.fpcf.properties.TACAI]):AbstractCallGraphAnalysis.this.State" title="Permalink">
@@ -541,10 +561,10 @@ precisely.
       </span>
       
       
-    </li><li name="org.opalj.tac.fpcf.analyses.cg.AbstractCallGraphAnalysis#doHandleImpreciseCall" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="doHandleImpreciseCall(caller:org.opalj.br.DefinedMethod,call:org.opalj.tac.Call[org.opalj.tac.fpcf.analyses.cg.V]withorg.opalj.tac.VirtualCall[org.opalj.tac.fpcf.analyses.cg.V],pc:Int,specializedDeclaringClassType:org.opalj.br.ReferenceType,potentialTargets:org.opalj.collection.ForeachRefIterator[org.opalj.br.ObjectType],calleesAndCallers:org.opalj.tac.fpcf.analyses.cg.DirectCalls)(implicitstate:AbstractCallGraphAnalysis.this.State):Unit"></a><a id="doHandleImpreciseCall(DefinedMethod,Call[V]withVirtualCall[V],Int,ReferenceType,ForeachRefIterator[ObjectType],DirectCalls)(State):Unit"></a>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.AbstractCallGraphAnalysis#handleUnresolvedCall" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="handleUnresolvedCall(possibleTgtType:org.opalj.br.ObjectType,call:org.opalj.tac.Call[org.opalj.tac.fpcf.analyses.cg.V]withorg.opalj.tac.VirtualCall[org.opalj.tac.fpcf.analyses.cg.V],pc:Int)(implicitstate:AbstractCallGraphAnalysis.this.State):Unit"></a><a id="handleUnresolvedCall(ObjectType,Call[V]withVirtualCall[V],Int)(State):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/AbstractCallGraphAnalysis.html#doHandleImpreciseCall(caller:org.opalj.br.DefinedMethod,call:org.opalj.tac.Call[org.opalj.tac.fpcf.analyses.cg.V]withorg.opalj.tac.VirtualCall[org.opalj.tac.fpcf.analyses.cg.V],pc:Int,specializedDeclaringClassType:org.opalj.br.ReferenceType,potentialTargets:org.opalj.collection.ForeachRefIterator[org.opalj.br.ObjectType],calleesAndCallers:org.opalj.tac.fpcf.analyses.cg.DirectCalls)(implicitstate:AbstractCallGraphAnalysis.this.State):Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/AbstractCallGraphAnalysis.html#handleUnresolvedCall(possibleTgtType:org.opalj.br.ObjectType,call:org.opalj.tac.Call[org.opalj.tac.fpcf.analyses.cg.V]withorg.opalj.tac.VirtualCall[org.opalj.tac.fpcf.analyses.cg.V],pc:Int)(implicitstate:AbstractCallGraphAnalysis.this.State):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -553,10 +573,14 @@ precisely.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">doHandleImpreciseCall</span><span class="params">(<span name="caller">caller: <a href="../../../../br/DefinedMethod.html" class="extype" name="org.opalj.br.DefinedMethod">DefinedMethod</a></span>, <span name="call">call: <a href="../../../Call.html" class="extype" name="org.opalj.tac.Call">Call</a>[<a href="index.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.V">V</a>] with <a href="../../../VirtualCall.html" class="extype" name="org.opalj.tac.VirtualCall">VirtualCall</a>[<a href="index.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.V">V</a>]</span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="specializedDeclaringClassType">specializedDeclaringClassType: <a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a></span>, <span name="potentialTargets">potentialTargets: <a href="../../../../collection/ForeachRefIterator.html" class="extype" name="org.opalj.collection.ForeachRefIterator">ForeachRefIterator</a>[<a href="../../../../br/ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a>]</span>, <span name="calleesAndCallers">calleesAndCallers: <a href="DirectCalls.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.DirectCalls">DirectCalls</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State&lt;:org.opalj.tac.fpcf.analyses.cg.CGState" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.AbstractCallGraphAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">handleUnresolvedCall</span><span class="params">(<span name="possibleTgtType">possibleTgtType: <a href="../../../../br/ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a></span>, <span name="call">call: <a href="../../../Call.html" class="extype" name="org.opalj.tac.Call">Call</a>[<a href="index.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.V">V</a>] with <a href="../../../VirtualCall.html" class="extype" name="org.opalj.tac.VirtualCall">VirtualCall</a>[<a href="index.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.V">V</a>]</span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State&lt;:org.opalj.tac.fpcf.analyses.cg.CGState" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.AbstractCallGraphAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd></dl></div>
+      <p class="shortcomment cmt">Handles a call that is not immediately resolved by this call graph implementation.</p><div class="fullcomment"><div class="comment cmt"><p>Handles a call that is not immediately resolved by this call graph implementation.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectBasedAnalysis#project" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="project:org.opalj.br.analyses.SomeProject"></a><a id="project:SomeProject"></a>
       <span class="permalink">
@@ -677,7 +701,7 @@ precisely.
       <p class="shortcomment cmt">Handles updates for the three-address code.</p><div class="fullcomment"><div class="comment cmt"><p>Handles updates for the three-address code.
 Subclasses that might have other dependencies must override this method and should call
 <code>super.c(...)</code> for updates of other property kinds then the new one.
-</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="rta/RTACallGraphAnalysis.html#c(state:org.opalj.tac.fpcf.analyses.cg.rta.RTAState)(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.rta.RTACallGraphAnalysis#c">org.opalj.tac.fpcf.analyses.cg.rta.RTACallGraphAnalysis.c*</a> for an example.</p></span></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="rta/RTACallGraphAnalysis.html#c(state:org.opalj.tac.fpcf.analyses.cg.rta.RTAState)(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.rta.RTACallGraphAnalysis#c">org.opalj.tac.fpcf.analyses.cg.rta.RTACallGraphAnalysis.c</a> for an example.</p></span></dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectBasedAnalysis#ch" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ch:org.opalj.br.ClassHierarchy"></a><a id="ch:ClassHierarchy"></a>
       <span class="permalink">
@@ -733,7 +757,7 @@ Subclasses that might have other dependencies must override this method and shou
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.cg.ReachableMethodAnalysis#continuationForTAC" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -768,6 +792,22 @@ Subclasses that might have other dependencies must override this method and shou
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="ReachableMethodAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.ReachableMethodAnalysis">ReachableMethodAnalysis</a></dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.AbstractCallGraphAnalysis#doHandleImpreciseCall" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doHandleImpreciseCall(caller:org.opalj.br.DefinedMethod,call:org.opalj.tac.Call[org.opalj.tac.fpcf.analyses.cg.V]withorg.opalj.tac.VirtualCall[org.opalj.tac.fpcf.analyses.cg.V],pc:Int,specializedDeclaringClassType:org.opalj.br.ReferenceType,potentialTargets:org.opalj.collection.ForeachRefIterator[org.opalj.br.ObjectType],calleesAndCallers:org.opalj.tac.fpcf.analyses.cg.DirectCalls)(implicitstate:AbstractCallGraphAnalysis.this.State):Unit"></a><a id="doHandleImpreciseCall(DefinedMethod,Call[V]withVirtualCall[V],Int,ReferenceType,ForeachRefIterator[ObjectType],DirectCalls)(State):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/AbstractCallGraphAnalysis.html#doHandleImpreciseCall(caller:org.opalj.br.DefinedMethod,call:org.opalj.tac.Call[org.opalj.tac.fpcf.analyses.cg.V]withorg.opalj.tac.VirtualCall[org.opalj.tac.fpcf.analyses.cg.V],pc:Int,specializedDeclaringClassType:org.opalj.br.ReferenceType,potentialTargets:org.opalj.collection.ForeachRefIterator[org.opalj.br.ObjectType],calleesAndCallers:org.opalj.tac.fpcf.analyses.cg.DirectCalls)(implicitstate:AbstractCallGraphAnalysis.this.State):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doHandleImpreciseCall</span><span class="params">(<span name="caller">caller: <a href="../../../../br/DefinedMethod.html" class="extype" name="org.opalj.br.DefinedMethod">DefinedMethod</a></span>, <span name="call">call: <a href="../../../Call.html" class="extype" name="org.opalj.tac.Call">Call</a>[<a href="index.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.V">V</a>] with <a href="../../../VirtualCall.html" class="extype" name="org.opalj.tac.VirtualCall">VirtualCall</a>[<a href="index.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.V">V</a>]</span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="specializedDeclaringClassType">specializedDeclaringClassType: <a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a></span>, <span name="potentialTargets">potentialTargets: <a href="../../../../collection/ForeachRefIterator.html" class="extype" name="org.opalj.collection.ForeachRefIterator">ForeachRefIterator</a>[<a href="../../../../br/ObjectType.html" class="extype" name="org.opalj.br.ObjectType">ObjectType</a>]</span>, <span name="calleesAndCallers">calleesAndCallers: <a href="DirectCalls.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.DirectCalls">DirectCalls</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State&lt;:org.opalj.tac.fpcf.analyses.cg.CGState" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.AbstractCallGraphAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -818,7 +858,7 @@ Subclasses that might have other dependencies must override this method and shou
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.cg.AbstractCallGraphAnalysis#handleCall" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -887,7 +927,7 @@ Subclasses that might have other dependencies must override this method and shou
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -956,7 +996,7 @@ Subclasses that might have other dependencies must override this method and shou
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -977,7 +1017,7 @@ Subclasses that might have other dependencies must override this method and shou
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectBasedAnalysis#p" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1212,7 +1252,7 @@ Subclasses that might have other dependencies must override this method and shou
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1223,9 +1263,7 @@ Subclasses that might have other dependencies must override this method and shou
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

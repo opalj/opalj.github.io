@@ -524,7 +524,7 @@ about the return types of methods, which however may depend on the refined field
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Encapsulates an intermediate result of the computation of a property.</p><p>Intermediate results are to be used if further refinements are possible.
 Hence, if a property of any of the dependees changes (outgoing dependencies),
 the given continuation <code>c</code> is invoked.</p><p>All current computations that depend on the property of the entity will be invoked.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.fpcf.InterimResult">InterimResult</a>[<span class="extype" name="org.opalj.fpcf.InterimResult.P">P</span>]</dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/si/src/main/scala/org/opalj/fpcf/PropertyComputationResult.scala?at=develop" target="_blank">PropertyComputationResult.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>All elements on which the result declares to be dependent on must have been queried
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.fpcf.InterimResult">InterimResult</a>[<span class="extype" name="org.opalj.fpcf.InterimResult.P">P</span>]</dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/si/src/main/scala/org/opalj/fpcf/PropertyComputationResult.scala" target="_blank">PropertyComputationResult.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>All elements on which the result declares to be dependent on must have been queried
      before (using one of the <code>apply</code> functions of the property store.)</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
@@ -685,13 +685,13 @@ the given continuation <code>c</code> is invoked.</p><p>All current computations
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.fpcf.InterimResult#dependees" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="dependees:Traversable[org.opalj.fpcf.SomeEOptionP]"></a><a id="dependees:Traversable[SomeEOptionP]"></a>
+      <a id="dependees:Set[org.opalj.fpcf.SomeEOptionP]"></a><a id="dependees:Set[SomeEOptionP]"></a>
       <span class="permalink">
-      <a href="../../../org/opalj/fpcf/InterimResult.html#dependees:Traversable[org.opalj.fpcf.SomeEOptionP]" title="Permalink">
+      <a href="../../../org/opalj/fpcf/InterimResult.html#dependees:Set[org.opalj.fpcf.SomeEOptionP]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -700,7 +700,7 @@ the given continuation <code>c</code> is invoked.</p><p>All current computations
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">dependees</span><span class="result">: <span class="extype" name="scala.Traversable">Traversable</span>[<a href="index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>]</span>
+        <span class="name">dependees</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>]</span>
       </span>
       
       
@@ -770,7 +770,7 @@ the given continuation <code>c</code> is invoked.</p><p>All current computations
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.fpcf.InterimResult#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -855,7 +855,7 @@ the given continuation <code>c</code> is invoked.</p><p>All current computations
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -876,7 +876,7 @@ the given continuation <code>c</code> is invoked.</p><p>All current computations
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -999,7 +999,7 @@ the given continuation <code>c</code> is invoked.</p><p>All current computations
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1010,9 +1010,7 @@ the given continuation <code>c</code> is invoked.</p><p>All current computations
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

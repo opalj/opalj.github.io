@@ -284,8 +284,20 @@ is found in the <a href="../../da/index.html" class="extype" name="org.opalj.da"
                         <a href="Module_attributeReader.html" title="Generic parser for the Module attribute (Java 9).">Module_attributeReader</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
+                        <a class="trait" href="NestHost_attributeReader.html" title="Generic parser for the NestHost attribute (Java 11)."></a>
+                        <a href="NestHost_attributeReader.html" title="Generic parser for the NestHost attribute (Java 11).">NestHost_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="NestMembers_attributeReader.html" title="Generic parser for the NestMembers attribute (Java 11)."></a>
+                        <a href="NestMembers_attributeReader.html" title="Generic parser for the NestMembers attribute (Java 11).">NestMembers_attributeReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
                         <a class="trait" href="ParametersAnnotationsReader.html" title="Generic parser for a method parameter's visible or invisible annotations."></a>
                         <a href="ParametersAnnotationsReader.html" title="Generic parser for a method parameter's visible or invisible annotations.">ParametersAnnotationsReader</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="Record_attributeReader.html" title="Generic parser for the Record attribute (Java 16)."></a>
+                        <a href="Record_attributeReader.html" title="Generic parser for the Record attribute (Java 16).">Record_attributeReader</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="trait" href="RuntimeInvisibleAnnotations_attributeReader.html" title="Generic parser for the RuntimeInvisibleAnnotations attribute."></a>
@@ -395,7 +407,7 @@ is found in the <a href="../../da/index.html" class="extype" name="org.opalj.da"
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Common interface of all entries in the constant pool.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/bi/src/main/scala/org/opalj/bi/reader/ConstantPoolEntry.scala?at=develop" target="_blank">ConstantPoolEntry.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/bi/src/main/scala/org/opalj/bi/reader/ConstantPoolEntry.scala" target="_blank">ConstantPoolEntry.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -404,7 +416,7 @@ is found in the <a href="../../da/index.html" class="extype" name="org.opalj.da"
             <span class="toggle">
               Known Subclasses
             </span>
-            <div class="subClasses hiddenContent"><a href="../../br/cp/AsMethodref.html" class="extype" name="org.opalj.br.cp.AsMethodref">AsMethodref</a>, <a href="../../br/cp/CONSTANT_Class_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Class_info">CONSTANT_Class_info</a>, <a href="../../br/cp/CONSTANT_Double_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Double_info">CONSTANT_Double_info</a>, <a href="../../br/cp/CONSTANT_FieldValue_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_FieldValue_info">CONSTANT_FieldValue_info</a>, <a href="../../br/cp/CONSTANT_Fieldref_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Fieldref_info">CONSTANT_Fieldref_info</a>, <a href="../../br/cp/CONSTANT_Float_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Float_info">CONSTANT_Float_info</a>, <a href="../../br/cp/CONSTANT_Integer_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Integer_info">CONSTANT_Integer_info</a>, <a href="../../br/cp/CONSTANT_InterfaceMethodref_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_InterfaceMethodref_info">CONSTANT_InterfaceMethodref_info</a>, <a href="../../br/cp/CONSTANT_InvokeDynamic_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_InvokeDynamic_info">CONSTANT_InvokeDynamic_info</a>, <a href="../../br/cp/CONSTANT_Long_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Long_info">CONSTANT_Long_info</a>, <a href="../../br/cp/CONSTANT_MethodHandle_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_MethodHandle_info">CONSTANT_MethodHandle_info</a>, <a href="../../br/cp/CONSTANT_MethodType_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_MethodType_info">CONSTANT_MethodType_info</a>, <a href="../../br/cp/CONSTANT_Methodref_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Methodref_info">CONSTANT_Methodref_info</a>, <a href="../../br/cp/CONSTANT_Module_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Module_info">CONSTANT_Module_info</a>, <a href="../../br/cp/CONSTANT_NameAndType_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_NameAndType_info">CONSTANT_NameAndType_info</a>, <a href="../../br/cp/CONSTANT_Package_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Package_info">CONSTANT_Package_info</a>, <a href="../../br/cp/CONSTANT_String_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_String_info">CONSTANT_String_info</a>, <a href="../../br/cp/CONSTANT_Utf8_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Utf8_info">CONSTANT_Utf8_info</a>, <a href="../../br/cp/Constant_Pool_Entry.html" class="extype" name="org.opalj.br.cp.Constant_Pool_Entry">Constant_Pool_Entry</a>, <a href="../../da/CONSTANT_Class_info.html" class="extype" name="org.opalj.da.CONSTANT_Class_info">CONSTANT_Class_info</a>, <a href="../../da/CONSTANT_Double_info.html" class="extype" name="org.opalj.da.CONSTANT_Double_info">CONSTANT_Double_info</a>, <a href="../../da/CONSTANT_Fieldref_info.html" class="extype" name="org.opalj.da.CONSTANT_Fieldref_info">CONSTANT_Fieldref_info</a>, <a href="../../da/CONSTANT_Float_info.html" class="extype" name="org.opalj.da.CONSTANT_Float_info">CONSTANT_Float_info</a>, <a href="../../da/CONSTANT_Integer_info.html" class="extype" name="org.opalj.da.CONSTANT_Integer_info">CONSTANT_Integer_info</a>, <a href="../../da/CONSTANT_InterfaceMethodref_info.html" class="extype" name="org.opalj.da.CONSTANT_InterfaceMethodref_info">CONSTANT_InterfaceMethodref_info</a>, <a href="../../da/CONSTANT_InvokeDynamic_info.html" class="extype" name="org.opalj.da.CONSTANT_InvokeDynamic_info">CONSTANT_InvokeDynamic_info</a>, <a href="../../da/CONSTANT_Long_info.html" class="extype" name="org.opalj.da.CONSTANT_Long_info">CONSTANT_Long_info</a>, <a href="../../da/CONSTANT_MethodHandle_info.html" class="extype" name="org.opalj.da.CONSTANT_MethodHandle_info">CONSTANT_MethodHandle_info</a>, <a href="../../da/CONSTANT_MethodType_info.html" class="extype" name="org.opalj.da.CONSTANT_MethodType_info">CONSTANT_MethodType_info</a>, <a href="../../da/CONSTANT_Methodref_info.html" class="extype" name="org.opalj.da.CONSTANT_Methodref_info">CONSTANT_Methodref_info</a>, <a href="../../da/CONSTANT_Module_info.html" class="extype" name="org.opalj.da.CONSTANT_Module_info">CONSTANT_Module_info</a>, <a href="../../da/CONSTANT_NameAndType_info.html" class="extype" name="org.opalj.da.CONSTANT_NameAndType_info">CONSTANT_NameAndType_info</a>, <a href="../../da/CONSTANT_Package_info.html" class="extype" name="org.opalj.da.CONSTANT_Package_info">CONSTANT_Package_info</a>, <a href="../../da/CONSTANT_Ref.html" class="extype" name="org.opalj.da.CONSTANT_Ref">CONSTANT_Ref</a>, <a href="../../da/CONSTANT_String_info.html" class="extype" name="org.opalj.da.CONSTANT_String_info">CONSTANT_String_info</a>, <a href="../../da/CONSTANT_Utf8_info.html" class="extype" name="org.opalj.da.CONSTANT_Utf8_info">CONSTANT_Utf8_info</a>, <a href="../../da/Constant_Pool_Entry.html" class="extype" name="org.opalj.da.Constant_Pool_Entry">Constant_Pool_Entry</a></div>
+            <div class="subClasses hiddenContent"><a href="../../br/cp/AsMethodref.html" class="extype" name="org.opalj.br.cp.AsMethodref">AsMethodref</a>, <a href="../../br/cp/CONSTANT_Class_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Class_info">CONSTANT_Class_info</a>, <a href="../../br/cp/CONSTANT_Double_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Double_info">CONSTANT_Double_info</a>, <a href="../../br/cp/CONSTANT_Dynamic_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Dynamic_info">CONSTANT_Dynamic_info</a>, <a href="../../br/cp/CONSTANT_FieldValue_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_FieldValue_info">CONSTANT_FieldValue_info</a>, <a href="../../br/cp/CONSTANT_Fieldref_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Fieldref_info">CONSTANT_Fieldref_info</a>, <a href="../../br/cp/CONSTANT_Float_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Float_info">CONSTANT_Float_info</a>, <a href="../../br/cp/CONSTANT_Integer_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Integer_info">CONSTANT_Integer_info</a>, <a href="../../br/cp/CONSTANT_InterfaceMethodref_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_InterfaceMethodref_info">CONSTANT_InterfaceMethodref_info</a>, <a href="../../br/cp/CONSTANT_InvokeDynamic_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_InvokeDynamic_info">CONSTANT_InvokeDynamic_info</a>, <a href="../../br/cp/CONSTANT_Long_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Long_info">CONSTANT_Long_info</a>, <a href="../../br/cp/CONSTANT_MethodHandle_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_MethodHandle_info">CONSTANT_MethodHandle_info</a>, <a href="../../br/cp/CONSTANT_MethodType_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_MethodType_info">CONSTANT_MethodType_info</a>, <a href="../../br/cp/CONSTANT_Methodref_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Methodref_info">CONSTANT_Methodref_info</a>, <a href="../../br/cp/CONSTANT_Module_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Module_info">CONSTANT_Module_info</a>, <a href="../../br/cp/CONSTANT_NameAndType_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_NameAndType_info">CONSTANT_NameAndType_info</a>, <a href="../../br/cp/CONSTANT_Package_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Package_info">CONSTANT_Package_info</a>, <a href="../../br/cp/CONSTANT_String_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_String_info">CONSTANT_String_info</a>, <a href="../../br/cp/CONSTANT_Utf8_info.html" class="extype" name="org.opalj.br.cp.CONSTANT_Utf8_info">CONSTANT_Utf8_info</a>, <a href="../../br/cp/Constant_Pool_Entry.html" class="extype" name="org.opalj.br.cp.Constant_Pool_Entry">Constant_Pool_Entry</a>, <a href="../../da/CONSTANT_Class_info.html" class="extype" name="org.opalj.da.CONSTANT_Class_info">CONSTANT_Class_info</a>, <a href="../../da/CONSTANT_Double_info.html" class="extype" name="org.opalj.da.CONSTANT_Double_info">CONSTANT_Double_info</a>, <a href="../../da/CONSTANT_Dynamic_info.html" class="extype" name="org.opalj.da.CONSTANT_Dynamic_info">CONSTANT_Dynamic_info</a>, <a href="../../da/CONSTANT_Fieldref_info.html" class="extype" name="org.opalj.da.CONSTANT_Fieldref_info">CONSTANT_Fieldref_info</a>, <a href="../../da/CONSTANT_Float_info.html" class="extype" name="org.opalj.da.CONSTANT_Float_info">CONSTANT_Float_info</a>, <a href="../../da/CONSTANT_Integer_info.html" class="extype" name="org.opalj.da.CONSTANT_Integer_info">CONSTANT_Integer_info</a>, <a href="../../da/CONSTANT_InterfaceMethodref_info.html" class="extype" name="org.opalj.da.CONSTANT_InterfaceMethodref_info">CONSTANT_InterfaceMethodref_info</a>, <a href="../../da/CONSTANT_InvokeDynamic_info.html" class="extype" name="org.opalj.da.CONSTANT_InvokeDynamic_info">CONSTANT_InvokeDynamic_info</a>, <a href="../../da/CONSTANT_Long_info.html" class="extype" name="org.opalj.da.CONSTANT_Long_info">CONSTANT_Long_info</a>, <a href="../../da/CONSTANT_MethodHandle_info.html" class="extype" name="org.opalj.da.CONSTANT_MethodHandle_info">CONSTANT_MethodHandle_info</a>, <a href="../../da/CONSTANT_MethodType_info.html" class="extype" name="org.opalj.da.CONSTANT_MethodType_info">CONSTANT_MethodType_info</a>, <a href="../../da/CONSTANT_Methodref_info.html" class="extype" name="org.opalj.da.CONSTANT_Methodref_info">CONSTANT_Methodref_info</a>, <a href="../../da/CONSTANT_Module_info.html" class="extype" name="org.opalj.da.CONSTANT_Module_info">CONSTANT_Module_info</a>, <a href="../../da/CONSTANT_NameAndType_info.html" class="extype" name="org.opalj.da.CONSTANT_NameAndType_info">CONSTANT_NameAndType_info</a>, <a href="../../da/CONSTANT_Package_info.html" class="extype" name="org.opalj.da.CONSTANT_Package_info">CONSTANT_Package_info</a>, <a href="../../da/CONSTANT_Ref.html" class="extype" name="org.opalj.da.CONSTANT_Ref">CONSTANT_Ref</a>, <a href="../../da/CONSTANT_String_info.html" class="extype" name="org.opalj.da.CONSTANT_String_info">CONSTANT_String_info</a>, <a href="../../da/CONSTANT_Utf8_info.html" class="extype" name="org.opalj.da.CONSTANT_Utf8_info">CONSTANT_Utf8_info</a>, <a href="../../da/Constant_Pool_Entry.html" class="extype" name="org.opalj.da.Constant_Pool_Entry">Constant_Pool_Entry</a></div>
           </div></div>
         
 
@@ -563,7 +575,7 @@ is found in the <a href="../../da/index.html" class="extype" name="org.opalj.da"
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -616,7 +628,7 @@ is found in the <a href="../../da/index.html" class="extype" name="org.opalj.da"
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -637,7 +649,7 @@ is found in the <a href="../../da/index.html" class="extype" name="org.opalj.da"
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -690,7 +702,7 @@ is found in the <a href="../../da/index.html" class="extype" name="org.opalj.da"
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -711,7 +723,7 @@ is found in the <a href="../../da/index.html" class="extype" name="org.opalj.da"
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -834,7 +846,7 @@ is found in the <a href="../../da/index.html" class="extype" name="org.opalj.da"
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -845,9 +857,7 @@ is found in the <a href="../../da/index.html" class="extype" name="org.opalj.da"
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

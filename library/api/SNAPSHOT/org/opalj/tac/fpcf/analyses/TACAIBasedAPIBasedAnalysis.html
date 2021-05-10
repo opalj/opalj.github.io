@@ -255,6 +255,10 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                         <a href="AbstractIFDSNullFact.html" title="The super type of all null facts.">AbstractIFDSNullFact</a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
+                        <a class="class" href="CallSite.html" title=""></a>
+                        <a href="CallSite.html" title="">CallSite</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
                         <a class="class" href="DefinitionSiteWithoutPutField.html" title="Represents a definition site of an object that is stored into a field (that is being analyzed for locality) where the field write use-site is removed from the set of use-sites."></a>
                         <a href="DefinitionSiteWithoutPutField.html" title="Represents a definition site of an object that is stored into a field (that is being analyzed for locality) where the field write use-site is removed from the set of use-sites.">DefinitionSiteWithoutPutField</a>
                       </li><li class="current-entities indented5">
@@ -410,7 +414,7 @@ some (interim) version of the three-address code is available in the property st
 For each update of <a href="../properties/TACAI.html" class="extype" name="org.opalj.tac.fpcf.properties.TACAI">org.opalj.tac.fpcf.properties.TACAI</a> that actually contains a three-address
 code, <code>processNewCaller</code> is invoked, i.e., it might be called multiple times for the same caller.
 Due to monotonicity required for all results, this is still sound.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/TACAIBasedAPIBasedAnalysis.scala?at=develop" target="_blank">TACAIBasedAPIBasedAnalysis.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/TACAIBasedAPIBasedAnalysis.scala" target="_blank">TACAIBasedAPIBasedAnalysis.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -419,7 +423,7 @@ Due to monotonicity required for all results, this is still sound.
             <span class="toggle">
               Known Subclasses
             </span>
-            <div class="subClasses hiddenContent"><a href="cg/AbstractDoPrivilegedPointsToCGAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.AbstractDoPrivilegedPointsToCGAnalysis">AbstractDoPrivilegedPointsToCGAnalysis</a>, <a href="cg/OISReadObjectAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.OISReadObjectAnalysis">OISReadObjectAnalysis</a>, <a href="cg/OOSWriteObjectAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.OOSWriteObjectAnalysis">OOSWriteObjectAnalysis</a>, <a href="cg/ThreadStartAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.ThreadStartAnalysis">ThreadStartAnalysis</a>, <a href="cg/UncaughtExceptionHandlerAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.UncaughtExceptionHandlerAnalysis">UncaughtExceptionHandlerAnalysis</a>, <a href="cg/reflection/ClassForNameAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.ClassForNameAnalysis">ClassForNameAnalysis</a>, <a href="cg/reflection/ClassNewInstanceAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.ClassNewInstanceAnalysis">ClassNewInstanceAnalysis</a>, <a href="cg/reflection/ConstructorNewInstanceAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.ConstructorNewInstanceAnalysis">ConstructorNewInstanceAnalysis</a>, <a href="cg/reflection/MethodHandleInvokeAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.MethodHandleInvokeAnalysis">MethodHandleInvokeAnalysis</a>, <a href="cg/reflection/MethodInvokeAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.MethodInvokeAnalysis">MethodInvokeAnalysis</a>, <a href="cg/reflection/TamiFlexMethodInvokeAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.TamiFlexMethodInvokeAnalysis">TamiFlexMethodInvokeAnalysis</a>, <a href="cg/reflection/TypeAndStringMagic.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.TypeAndStringMagic">TypeAndStringMagic</a>, <a href="pointsto/ArraycopyPointsToAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.ArraycopyPointsToAnalysis">ArraycopyPointsToAnalysis</a>, <a href="pointsto/TamiFlexPointsToArrayGetAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToArrayGetAnalysis">TamiFlexPointsToArrayGetAnalysis</a>, <a href="pointsto/TamiFlexPointsToArraySetAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToArraySetAnalysis">TamiFlexPointsToArraySetAnalysis</a>, <a href="pointsto/TamiFlexPointsToFieldGetAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToFieldGetAnalysis">TamiFlexPointsToFieldGetAnalysis</a>, <a href="pointsto/TamiFlexPointsToFieldSetAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToFieldSetAnalysis">TamiFlexPointsToFieldSetAnalysis</a>, <a href="pointsto/UnsafeGetPointsToAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.UnsafeGetPointsToAnalysis">UnsafeGetPointsToAnalysis</a>, <a href="pointsto/UnsafePutPointsToAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.UnsafePutPointsToAnalysis">UnsafePutPointsToAnalysis</a></div>
+            <div class="subClasses hiddenContent"><a href="cg/AbstractDoPrivilegedPointsToCGAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.AbstractDoPrivilegedPointsToCGAnalysis">AbstractDoPrivilegedPointsToCGAnalysis</a>, <a href="cg/OISReadObjectAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.OISReadObjectAnalysis">OISReadObjectAnalysis</a>, <a href="cg/OOSWriteObjectAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.OOSWriteObjectAnalysis">OOSWriteObjectAnalysis</a>, <a href="cg/ThreadStartAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.ThreadStartAnalysis">ThreadStartAnalysis</a>, <a href="cg/UncaughtExceptionHandlerAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.UncaughtExceptionHandlerAnalysis">UncaughtExceptionHandlerAnalysis</a>, <a href="cg/pointsto/AllocationSiteBasedPointsToBasedThreadStartAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.pointsto.AllocationSiteBasedPointsToBasedThreadStartAnalysis">AllocationSiteBasedPointsToBasedThreadStartAnalysis</a>, <a href="cg/pointsto/PointsToBasedThreadStartAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis">PointsToBasedThreadStartAnalysis</a>, <a href="cg/pointsto/TypeBasedPointsToBasedThreadStartAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.pointsto.TypeBasedPointsToBasedThreadStartAnalysis">TypeBasedPointsToBasedThreadStartAnalysis</a>, <a href="cg/reflection/ClassForNameAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.ClassForNameAnalysis">ClassForNameAnalysis</a>, <a href="cg/reflection/ClassNewInstanceAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.ClassNewInstanceAnalysis">ClassNewInstanceAnalysis</a>, <a href="cg/reflection/ConstructorNewInstanceAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.ConstructorNewInstanceAnalysis">ConstructorNewInstanceAnalysis</a>, <a href="cg/reflection/MethodHandleInvokeAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.MethodHandleInvokeAnalysis">MethodHandleInvokeAnalysis</a>, <a href="cg/reflection/MethodInvokeAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.MethodInvokeAnalysis">MethodInvokeAnalysis</a>, <a href="cg/reflection/TamiFlexMethodInvokeAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.TamiFlexMethodInvokeAnalysis">TamiFlexMethodInvokeAnalysis</a>, <a href="cg/reflection/TypeAndStringMagic.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.reflection.TypeAndStringMagic">TypeAndStringMagic</a>, <a href="pointsto/ArraycopyPointsToAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.ArraycopyPointsToAnalysis">ArraycopyPointsToAnalysis</a>, <a href="pointsto/TamiFlexPointsToArrayGetAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToArrayGetAnalysis">TamiFlexPointsToArrayGetAnalysis</a>, <a href="pointsto/TamiFlexPointsToArraySetAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToArraySetAnalysis">TamiFlexPointsToArraySetAnalysis</a>, <a href="pointsto/TamiFlexPointsToFieldGetAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToFieldGetAnalysis">TamiFlexPointsToFieldGetAnalysis</a>, <a href="pointsto/TamiFlexPointsToFieldSetAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToFieldSetAnalysis">TamiFlexPointsToFieldSetAnalysis</a>, <a href="pointsto/UnsafeGetPointsToAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.UnsafeGetPointsToAnalysis">UnsafeGetPointsToAnalysis</a>, <a href="pointsto/UnsafePutPointsToAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.UnsafePutPointsToAnalysis">UnsafePutPointsToAnalysis</a></div>
           </div></div>
         
 
@@ -642,7 +646,7 @@ Due to monotonicity required for all results, this is still sound.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis#declaredMethods" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -711,7 +715,7 @@ Due to monotonicity required for all results, this is still sound.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.TACAIBasedAPIBasedAnalysis#handleNewCaller" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -748,7 +752,7 @@ Due to monotonicity required for all results, this is still sound.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -817,7 +821,7 @@ Due to monotonicity required for all results, this is still sound.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -838,7 +842,7 @@ Due to monotonicity required for all results, this is still sound.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectBasedAnalysis#p" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1025,7 +1029,7 @@ Due to monotonicity required for all results, this is still sound.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1036,9 +1040,7 @@ Due to monotonicity required for all results, this is still sound.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

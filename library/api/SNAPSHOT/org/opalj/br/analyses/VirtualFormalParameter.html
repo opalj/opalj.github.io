@@ -236,8 +236,8 @@ that it facilitates writing analyses that use pattern matching.
                         <a href="MethodAnalysisApplication.html" title="A small framework to implement analyses which should be executed for a given set of methods.">MethodAnalysisApplication</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="MethodDeclarationContext$.html" title="Definition of factory and extractor methods for MethodDeclarationContext objects."></a>
-                        <a class="class" href="MethodDeclarationContext.html" title="Encapsulates the information about a non-abstract, non-private, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets."></a>
-                        <a href="MethodDeclarationContext.html" title="Encapsulates the information about a non-abstract, non-private, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets.">MethodDeclarationContext</a>
+                        <a class="class" href="MethodDeclarationContext.html" title="Encapsulates the information about a non-abstract, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets."></a>
+                        <a href="MethodDeclarationContext.html" title="Encapsulates the information about a non-abstract, non-static method which is not an initializer (&lt;(cl)init&gt;) and which is required when determining potential call targets.">MethodDeclarationContext</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="object" href="package$$MethodDeclarationContextOrdering$.html" title=""></a>
@@ -345,7 +345,7 @@ property store and to compute properties for it.</p><p>The first parameter expli
 will have the origin <code>-3</code> and so on.
 That is, the origin of an explicitly declared parameter is always <code>-(parameter_index + 2)</code>.
 The origin of the <code>this</code> parameter is <code>-1</code>.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/analyses/VirtualFormalParameter.scala?at=develop" target="_blank">VirtualFormalParameter.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>The computational type category of the parameters is ignored to ease the mapping.</p></span>, <span class="cmt"><p>This encoding is also used by the default three address code representation
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/br/src/main/scala/org/opalj/br/analyses/VirtualFormalParameter.scala" target="_blank">VirtualFormalParameter.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>The computational type category of the parameters is ignored to ease the mapping.</p></span>, <span class="cmt"><p>This encoding is also used by the default three address code representation
       generated using a local data-flow analysis (see <a href="../../tac/TACAI$.html" class="extype" name="org.opalj.tac.TACAI">org.opalj.tac.TACAI</a>).
       <b>In case of the bytecode based data-flow analysis the origin used by the analysis
       reflects the position of the parameter value on the tac; see
@@ -513,7 +513,7 @@ The origin of the <code>this</code> parameter is <code>-1</code>.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -566,7 +566,7 @@ The origin of the <code>this</code> parameter is <code>-1</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.VirtualFormalParameter#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -651,7 +651,7 @@ The origin of the <code>this</code> parameter is <code>-1</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -672,7 +672,7 @@ The origin of the <code>this</code> parameter is <code>-1</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.VirtualFormalParameter#origin" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -828,7 +828,7 @@ The origin of the <code>this</code> parameter is <code>-1</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -839,9 +839,7 @@ The origin of the <code>this</code> parameter is <code>-1</code>.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

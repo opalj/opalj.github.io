@@ -516,7 +516,7 @@ about the return types of methods, which however may depend on the refined field
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">InterimPartialResult</span><span class="tparams">[<span name="SE">SE &gt;: <span class="extype" name="scala.Null">Null</span> &lt;: <a href="Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="us">us: <span class="extype" name="scala.Traversable">Traversable</span>[<a href="index.html#SomePartialResult=org.opalj.fpcf.PartialResult[_&gt;:Null&lt;:org.opalj.fpcf.package.Entity,_&gt;:Null&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomePartialResult">SomePartialResult</a>]</span>, <span name="dependees">dependees: <span class="extype" name="scala.Traversable">Traversable</span>[<a href="index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>]</span>, <span name="c">c: <a href="index.html#OnUpdateContinuation=org.opalj.fpcf.package.SomeEPS=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.OnUpdateContinuation">OnUpdateContinuation</a></span>)</span><span class="result"> extends <a href="PropertyComputationResult.html" class="extype" name="org.opalj.fpcf.PropertyComputationResult">PropertyComputationResult</a> with <a href="ProperPropertyComputationResult.html" class="extype" name="org.opalj.fpcf.ProperPropertyComputationResult">ProperPropertyComputationResult</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">InterimPartialResult</span><span class="tparams">[<span name="SE">SE &gt;: <span class="extype" name="scala.Null">Null</span> &lt;: <a href="Property.html" class="extype" name="org.opalj.fpcf.Property">Property</a></span>]</span><span class="params">(<span name="us">us: <span class="extype" name="scala.Traversable">Traversable</span>[<a href="index.html#SomePartialResult=org.opalj.fpcf.PartialResult[_&gt;:Null&lt;:org.opalj.fpcf.package.Entity,_&gt;:Null&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomePartialResult">SomePartialResult</a>]</span>, <span name="dependees">dependees: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>]</span>, <span name="c">c: <a href="index.html#OnUpdateContinuation=org.opalj.fpcf.package.SomeEPS=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.OnUpdateContinuation">OnUpdateContinuation</a></span>)</span><span class="result"> extends <a href="PropertyComputationResult.html" class="extype" name="org.opalj.fpcf.PropertyComputationResult">PropertyComputationResult</a> with <a href="ProperPropertyComputationResult.html" class="extype" name="org.opalj.fpcf.ProperPropertyComputationResult">ProperPropertyComputationResult</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
 
@@ -525,7 +525,7 @@ about the return types of methods, which however may depend on the refined field
 collaboratively where the individual contribution to the final result depends on the
 given dependees. For example an analysis which analyzes a method to determine the set
 of all instantiated types will use an <code>InterimPartialResult</code> to commit those results.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/si/src/main/scala/org/opalj/fpcf/PropertyComputationResult.scala?at=develop" target="_blank">PropertyComputationResult.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/si/src/main/scala/org/opalj/fpcf/PropertyComputationResult.scala" target="_blank">PropertyComputationResult.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -576,9 +576,9 @@ of all instantiated types will use an <code>InterimPartialResult</code> to commi
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.opalj.fpcf.InterimPartialResult#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(us:Traversable[org.opalj.fpcf.SomePartialResult],dependees:Traversable[org.opalj.fpcf.SomeEOptionP],c:org.opalj.fpcf.OnUpdateContinuation):org.opalj.fpcf.InterimPartialResult[SE]"></a><a id="&lt;init&gt;:InterimPartialResult[SE]"></a>
+      <a id="&lt;init&gt;(us:Traversable[org.opalj.fpcf.SomePartialResult],dependees:Set[org.opalj.fpcf.SomeEOptionP],c:org.opalj.fpcf.OnUpdateContinuation):org.opalj.fpcf.InterimPartialResult[SE]"></a><a id="&lt;init&gt;:InterimPartialResult[SE]"></a>
       <span class="permalink">
-      <a href="../../../org/opalj/fpcf/InterimPartialResult.html#&lt;init&gt;(us:Traversable[org.opalj.fpcf.SomePartialResult],dependees:Traversable[org.opalj.fpcf.SomeEOptionP],c:org.opalj.fpcf.OnUpdateContinuation):org.opalj.fpcf.InterimPartialResult[SE]" title="Permalink">
+      <a href="../../../org/opalj/fpcf/InterimPartialResult.html#&lt;init&gt;(us:Traversable[org.opalj.fpcf.SomePartialResult],dependees:Set[org.opalj.fpcf.SomeEOptionP],c:org.opalj.fpcf.OnUpdateContinuation):org.opalj.fpcf.InterimPartialResult[SE]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -587,7 +587,7 @@ of all instantiated types will use an <code>InterimPartialResult</code> to commi
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">InterimPartialResult</span><span class="params">(<span name="us">us: <span class="extype" name="scala.Traversable">Traversable</span>[<a href="index.html#SomePartialResult=org.opalj.fpcf.PartialResult[_&gt;:Null&lt;:org.opalj.fpcf.package.Entity,_&gt;:Null&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomePartialResult">SomePartialResult</a>]</span>, <span name="dependees">dependees: <span class="extype" name="scala.Traversable">Traversable</span>[<a href="index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>]</span>, <span name="c">c: <a href="index.html#OnUpdateContinuation=org.opalj.fpcf.package.SomeEPS=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.OnUpdateContinuation">OnUpdateContinuation</a></span>)</span>
+        <span class="name">InterimPartialResult</span><span class="params">(<span name="us">us: <span class="extype" name="scala.Traversable">Traversable</span>[<a href="index.html#SomePartialResult=org.opalj.fpcf.PartialResult[_&gt;:Null&lt;:org.opalj.fpcf.package.Entity,_&gt;:Null&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomePartialResult">SomePartialResult</a>]</span>, <span name="dependees">dependees: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>]</span>, <span name="c">c: <a href="index.html#OnUpdateContinuation=org.opalj.fpcf.package.SomeEPS=&gt;org.opalj.fpcf.PropertyComputationResult" class="extmbr" name="org.opalj.fpcf.OnUpdateContinuation">OnUpdateContinuation</a></span>)</span>
       </span>
       
       
@@ -704,13 +704,13 @@ of all instantiated types will use an <code>InterimPartialResult</code> to commi
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.fpcf.InterimPartialResult#dependees" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="dependees:Traversable[org.opalj.fpcf.SomeEOptionP]"></a><a id="dependees:Traversable[SomeEOptionP]"></a>
+      <a id="dependees:Set[org.opalj.fpcf.SomeEOptionP]"></a><a id="dependees:Set[SomeEOptionP]"></a>
       <span class="permalink">
-      <a href="../../../org/opalj/fpcf/InterimPartialResult.html#dependees:Traversable[org.opalj.fpcf.SomeEOptionP]" title="Permalink">
+      <a href="../../../org/opalj/fpcf/InterimPartialResult.html#dependees:Set[org.opalj.fpcf.SomeEOptionP]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -719,7 +719,7 @@ of all instantiated types will use an <code>InterimPartialResult</code> to commi
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">dependees</span><span class="result">: <span class="extype" name="scala.Traversable">Traversable</span>[<a href="index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>]</span>
+        <span class="name">dependees</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>]</span>
       </span>
       
       
@@ -757,7 +757,7 @@ of all instantiated types will use an <code>InterimPartialResult</code> to commi
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -810,7 +810,7 @@ of all instantiated types will use an <code>InterimPartialResult</code> to commi
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -831,7 +831,7 @@ of all instantiated types will use an <code>InterimPartialResult</code> to commi
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -954,7 +954,7 @@ of all instantiated types will use an <code>InterimPartialResult</code> to commi
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -965,9 +965,7 @@ of all instantiated types will use an <code>InterimPartialResult</code> to commi
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

@@ -635,6 +635,10 @@ results of type <a href="../br/analyses/ReportableAnalysisResult.html" class="ex
                         <a class="class" href="DoubleConst.html" title=""></a>
                         <a href="DoubleConst.html" title="">DoubleConst</a>
                       </li><li class="current-entities indented3">
+                        <a class="object" href="DynamicConst$.html" title=""></a>
+                        <a class="class" href="DynamicConst.html" title=""></a>
+                        <a href="DynamicConst.html" title="">DynamicConst</a>
+                      </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="object" href="EagerDetachedTACAIKey$.html" title="Key to get the 3-address based code of a method computed using the configured domain/data-flow analysis."></a>
                         <a href="EagerDetachedTACAIKey$.html" title="Key to get the 3-address based code of a method computed using the configured domain/data-flow analysis.">EagerDetachedTACAIKey</a>
@@ -1013,7 +1017,7 @@ results of type <a href="../br/analyses/ReportableAnalysisResult.html" class="ex
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Common definitions related to the definition and processing of three address code.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/package.scala?at=develop" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/package.scala" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -1359,6 +1363,22 @@ has the given origin. Initially, the pc of the underlying bytecode instruction i
       </span>
       <span class="symbol">
         <a title="" href="DoubleConst.html"><span class="name">DoubleConst</span></a><span class="params">(<span name="pc">pc: <a href="../br/index.html#PC=org.opalj.bytecode.PC" class="extmbr" name="org.opalj.br.PC">PC</a></span>, <span name="value">value: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <a href="SimpleValueConst.html" class="extype" name="org.opalj.tac.SimpleValueConst">SimpleValueConst</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.DynamicConst" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DynamicConstextendsSimpleValueConstwithProductwithSerializable"></a><a id="DynamicConst:DynamicConst"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/tac/DynamicConst.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="DynamicConst.html"><span class="name">DynamicConst</span></a><span class="params">(<span name="pc">pc: <a href="../br/index.html#PC=org.opalj.bytecode.PC" class="extmbr" name="org.opalj.br.PC">PC</a></span>, <span name="bootstrapMethod">bootstrapMethod: <a href="../br/BootstrapMethod.html" class="extype" name="org.opalj.br.BootstrapMethod">BootstrapMethod</a></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="descriptor">descriptor: <a href="../br/FieldType.html" class="extype" name="org.opalj.br.FieldType">FieldType</a></span>)</span><span class="result"> extends <a href="SimpleValueConst.html" class="extype" name="org.opalj.tac.SimpleValueConst">SimpleValueConst</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       
       
@@ -2865,7 +2885,7 @@ if you want to transform every method at most once.
       
       <p class="shortcomment cmt">Extractor to get the definition site of an expression's/statement's value.</p><div class="fullcomment"><div class="comment cmt"><p>Extractor to get the definition site of an expression's/statement's value.</p><p>This extractor may fail (i.e., throw an exception), when the expr is not a <a href="DVar.html" class="extype" name="org.opalj.tac.DVar">DVar</a> or
 a <a href="Const.html" class="extype" name="org.opalj.tac.Const">Const</a>; this decision was made to capture programming failures as early as possible
-(<a href="http://www.opal-project.de/TAC.html" target="_blank">flat</a>).
+(<a href="https://www.opal-project.de/TAC.html" target="_blank">flat</a>).
 </p></div><dl class="attributes block"> <div class="block">Example:
                <ol><li class="cmt"><p>
          To get a return value's definition sites (unless the value is constant).</p><pre><span class="kw">val</span> tac.ReturnValue(pc,tac.DefSites(defSites)) = code.stmts(<span class="num">5</span>)</pre></li></ol>
@@ -2883,6 +2903,22 @@ a <a href="Const.html" class="extype" name="org.opalj.tac.Const">Const</a>; this
       </span>
       <span class="symbol">
         <a title="" href="DoubleConst$.html"><span class="name">DoubleConst</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      
+      
+    </li><li name="org.opalj.tac.DynamicConst" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DynamicConst"></a><a id="DynamicConst:DynamicConst"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/tac/DynamicConst$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="DynamicConst$.html"><span class="name">DynamicConst</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       
       

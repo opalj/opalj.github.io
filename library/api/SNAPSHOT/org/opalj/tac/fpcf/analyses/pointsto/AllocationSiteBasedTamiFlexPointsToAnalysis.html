@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis</title>
-          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis" />
-          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis" />
+          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis</title>
+          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis" />
+          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       
@@ -223,6 +223,10 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                         <a href="AllocationSiteBasedPointsToAnalysisScheduler$.html" title="">AllocationSiteBasedPointsToAnalysisScheduler</a>
                       </li><li class="current-entities indented6">
                         <span class="separator"></span>
+                        <a class="class" href="" title="Handles the effect of tamiflex logs for the points-to sets."></a>
+                        <a href="" title="Handles the effect of tamiflex logs for the points-to sets.">AllocationSiteBasedTamiFlexPointsToAnalysis</a>
+                      </li><li class="current-entities indented6">
+                        <span class="separator"></span>
                         <a class="object" href="AllocationSiteBasedTamiFlexPointsToAnalysisScheduler$.html" title=""></a>
                         <a href="AllocationSiteBasedTamiFlexPointsToAnalysisScheduler$.html" title="">AllocationSiteBasedTamiFlexPointsToAnalysisScheduler</a>
                       </li><li class="current-entities indented6">
@@ -310,9 +314,9 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                         <a class="class" href="TamiFlexLogData.html" title="Container class, to represent a tamiflex log: https://github.com/secure-software-engineering/tamiflex"></a>
                         <a href="TamiFlexLogData.html" title="Container class, to represent a tamiflex log: https://github.com/secure-software-engineering/tamiflex">TamiFlexLogData</a>
                       </li><li class="current-entities indented6">
+                        <span class="separator"></span>
                         <a class="object" href="TamiFlexPointsToAnalysis$.html" title=""></a>
-                        <a class="class" href="" title="Handles the effect of tamiflex logs for the points-to sets."></a>
-                        <a href="" title="Handles the effect of tamiflex logs for the points-to sets.">TamiFlexPointsToAnalysis</a>
+                        <a href="TamiFlexPointsToAnalysis$.html" title="">TamiFlexPointsToAnalysis</a>
                       </li><li class="current-entities indented6">
                         <span class="separator"></span>
                         <a class="class" href="TamiFlexPointsToArrayGetAnalysis.html" title=""></a>
@@ -392,16 +396,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
           <div id="content">
             <body class="class type">
       <div id="definition">
-        <a href="TamiFlexPointsToAnalysis$.html" title="See companion object"><div class="big-circle class-companion-object">c</div></a>
+        <div class="big-circle class">c</div>
         <p id="owner"><a href="../../../../../index.html" class="extype" name="org">org</a>.<a href="../../../../index.html" class="extype" name="org.opalj">opalj</a>.<a href="../../../index.html" class="extype" name="org.opalj.tac">tac</a>.<a href="../../index.html" class="extype" name="org.opalj.tac.fpcf">fpcf</a>.<a href="../index.html" class="extype" name="org.opalj.tac.fpcf.analyses">analyses</a>.<a href="index.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto">pointsto</a></p>
-        <h1><a href="TamiFlexPointsToAnalysis$.html" title="See companion object">TamiFlexPointsToAnalysis</a><span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html" title="Permalink">
+        <h1>AllocationSiteBasedTamiFlexPointsToAnalysis<span class="permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span></h1>
-        <h3><span class="morelinks"><div>
-            Companion <a href="TamiFlexPointsToAnalysis$.html" title="See companion object">object TamiFlexPointsToAnalysis</a>
-          </div></span></h3>
+        <h3><span class="morelinks"></span></h3>
       </div>
 
       <h4 id="signature" class="signature">
@@ -410,13 +412,13 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">TamiFlexPointsToAnalysis</span><span class="result"> extends <a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></span>
+        <span class="name">AllocationSiteBasedTamiFlexPointsToAnalysis</span><span class="result"> extends <a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></span>
       </span>
       </h4>
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Handles the effect of tamiflex logs for the points-to sets.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis">TamiFlexPointsToAnalysis</a></dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.scala?at=develop" target="_blank">TamiFlexPointsToAnalysis.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis">AllocationSiteBasedTamiFlexPointsToAnalysis</a></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.scala" target="_blank">TamiFlexPointsToAnalysis.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -446,7 +448,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis"><span>TamiFlexPointsToAnalysis</span></li><li class="in" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase"><span>PointsToAnalysisBase</span></li><li class="in" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis"><span>AbstractPointsToBasedAnalysis</span></li><li class="in" name="org.opalj.br.fpcf.FPCFAnalysis"><span>FPCFAnalysis</span></li><li class="in" name="org.opalj.br.analyses.ProjectBasedAnalysis"><span>ProjectBasedAnalysis</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis"><span>AllocationSiteBasedTamiFlexPointsToAnalysis</span></li><li class="in" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase"><span>PointsToAnalysisBase</span></li><li class="in" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis"><span>AbstractPointsToBasedAnalysis</span></li><li class="in" name="org.opalj.br.fpcf.FPCFAnalysis"><span>FPCFAnalysis</span></li><li class="in" name="org.opalj.br.analyses.ProjectBasedAnalysis"><span>ProjectBasedAnalysis</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -471,7 +473,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
               <ol><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase.DependerType" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="DependerType=org.opalj.fpcf.Entity"></a><a id="DependerType:DependerType"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#DependerType=org.opalj.fpcf.Entity" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#DependerType=org.opalj.fpcf.Entity" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -487,7 +489,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis.ElementType" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="ElementType"></a><a id="ElementType:ElementType"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#ElementType" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#ElementType" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -500,10 +502,10 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd></dl></div>
-    </li><li name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToBase" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToBase" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="PointsToBaseextendsAbstractPointsToBasedAnalysis"></a><a id="PointsToBase:PointsToBase"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis$PointsToBase.html" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis$PointsToBase.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -512,14 +514,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="TamiFlexPointsToAnalysis$PointsToBase.html"><span class="name">PointsToBase</span></a><span class="result"> extends <a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></span>
+        <a title="" href="AllocationSiteBasedTamiFlexPointsToAnalysis$PointsToBase.html"><span class="name">PointsToBase</span></a><span class="result"> extends <a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></span>
       </span>
       
       
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis.PointsToSet" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]"></a><a id="PointsToSet:PointsToSet"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -528,14 +530,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">PointsToSet</span><span class="result"> &gt;: <span class="extype" name="scala.Null">Null</span> &lt;: <a href="../../../../br/fpcf/properties/pointsto/PointsToSetLike.html" class="extype" name="org.opalj.br.fpcf.properties.pointsto.PointsToSetLike">PointsToSetLike</a>[<a href="#ElementType" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.ElementType">ElementType</a>, _, <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a>]</span>
+        <span class="name">PointsToSet</span><span class="result"> &gt;: <span class="extype" name="scala.Null">Null</span> &lt;: <a href="../../../../br/fpcf/properties/pointsto/PointsToSetLike.html" class="extype" name="org.opalj.br.fpcf.properties.pointsto.PointsToSetLike">PointsToSetLike</a>[<a href="#ElementType" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.ElementType">ElementType</a>, _, <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase.State" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]"></a><a id="State:State"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -544,7 +546,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">State</span><span class="result alias"> = <a href="PointsToAnalysisState.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState">PointsToAnalysisState</a>[<a href="#ElementType" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.ElementType">ElementType</a>, <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a>]</span>
+        <span class="name">State</span><span class="result alias"> = <a href="PointsToAnalysisState.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState">PointsToAnalysisState</a>[<a href="#ElementType" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.ElementType">ElementType</a>, <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a> → <a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd></dl></div>
@@ -556,7 +558,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
               <ol><li name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis#createPointsToSet" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="createPointsToSet(pc:Int,declaredMethod:org.opalj.br.DeclaredMethod,allocatedType:org.opalj.br.ReferenceType,isConstant:Boolean,isEmptyArray:Boolean):AbstractPointsToBasedAnalysis.this.PointsToSet"></a><a id="createPointsToSet(Int,DeclaredMethod,ReferenceType,Boolean,Boolean):PointsToSet"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#createPointsToSet(pc:Int,declaredMethod:org.opalj.br.DeclaredMethod,allocatedType:org.opalj.br.ReferenceType,isConstant:Boolean,isEmptyArray:Boolean):AbstractPointsToBasedAnalysis.this.PointsToSet" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#createPointsToSet(pc:Int,declaredMethod:org.opalj.br.DeclaredMethod,allocatedType:org.opalj.br.ReferenceType,isConstant:Boolean,isEmptyArray:Boolean):AbstractPointsToBasedAnalysis.this.PointsToSet" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -565,14 +567,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">createPointsToSet</span><span class="params">(<span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="declaredMethod">declaredMethod: <a href="../../../../br/DeclaredMethod.html" class="extype" name="org.opalj.br.DeclaredMethod">DeclaredMethod</a></span>, <span name="allocatedType">allocatedType: <a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a></span>, <span name="isConstant">isConstant: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="isEmptyArray">isEmptyArray: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>
+        <span class="name">createPointsToSet</span><span class="params">(<span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="declaredMethod">declaredMethod: <a href="../../../../br/DeclaredMethod.html" class="extype" name="org.opalj.br.DeclaredMethod">DeclaredMethod</a></span>, <span name="allocatedType">allocatedType: <a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a></span>, <span name="isConstant">isConstant: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="isEmptyArray">isEmptyArray: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis#emptyPointsToSet" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="emptyPointsToSet:AbstractPointsToBasedAnalysis.this.PointsToSet"></a><a id="emptyPointsToSet:PointsToSet"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#emptyPointsToSet:AbstractPointsToBasedAnalysis.this.PointsToSet" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#emptyPointsToSet:AbstractPointsToBasedAnalysis.this.PointsToSet" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -581,14 +583,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">emptyPointsToSet</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>
+        <span class="name">emptyPointsToSet</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis#getTypeOf" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="getTypeOf(element:AbstractPointsToBasedAnalysis.this.ElementType):org.opalj.br.ReferenceType"></a><a id="getTypeOf(ElementType):ReferenceType"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#getTypeOf(element:AbstractPointsToBasedAnalysis.this.ElementType):org.opalj.br.ReferenceType" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#getTypeOf(element:AbstractPointsToBasedAnalysis.this.ElementType):org.opalj.br.ReferenceType" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -597,14 +599,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getTypeOf</span><span class="params">(<span name="element">element: <a href="#ElementType" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.ElementType">ElementType</a></span>)</span><span class="result">: <a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a></span>
+        <span class="name">getTypeOf</span><span class="params">(<span name="element">element: <a href="#ElementType" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.ElementType">ElementType</a></span>)</span><span class="result">: <a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis#pointsToPropertyKey" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="pointsToPropertyKey:org.opalj.fpcf.PropertyKey[AbstractPointsToBasedAnalysis.this.PointsToSet]"></a><a id="pointsToPropertyKey:PropertyKey[PointsToSet]"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#pointsToPropertyKey:org.opalj.fpcf.PropertyKey[AbstractPointsToBasedAnalysis.this.PointsToSet]" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#pointsToPropertyKey:org.opalj.fpcf.PropertyKey[AbstractPointsToBasedAnalysis.this.PointsToSet]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -613,7 +615,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">pointsToPropertyKey</span><span class="result">: <a href="../../../../fpcf/PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a>]</span>
+        <span class="name">pointsToPropertyKey</span><span class="result">: <a href="../../../../fpcf/PropertyKey.html" class="extype" name="org.opalj.fpcf.PropertyKey">PropertyKey</a>[<a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd></dl></div>
@@ -626,7 +628,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#!=(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#!=(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -642,7 +644,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html###():Int" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html###():Int" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -658,7 +660,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#==(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#==(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -674,7 +676,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#asInstanceOf[T0]:T0" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#asInstanceOf[T0]:T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -690,7 +692,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.br.analyses.ProjectBasedAnalysis#ch" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ch:org.opalj.br.ClassHierarchy"></a><a id="ch:ClassHierarchy"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#ch:org.opalj.br.ClassHierarchy" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#ch:org.opalj.br.ClassHierarchy" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -706,7 +708,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.br.analyses.ProjectBasedAnalysis#classHierarchy" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="classHierarchy:org.opalj.br.ClassHierarchy"></a><a id="classHierarchy:ClassHierarchy"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#classHierarchy:org.opalj.br.ClassHierarchy" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#classHierarchy:org.opalj.br.ClassHierarchy" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -722,7 +724,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#clone():Object" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#clone():Object" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -742,13 +744,13 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#continuationForNewAllocationSitesAtArrayLoad" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="continuationForNewAllocationSitesAtArrayLoad(defSiteObject:org.opalj.tac.common.DefinitionSite,arrayType:org.opalj.br.ArrayType,filter:org.opalj.br.ReferenceType=&gt;Boolean,dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult"></a><a id="continuationForNewAllocationSitesAtArrayLoad(DefinitionSite,ArrayType,(ReferenceType)⇒Boolean,Map[SomeEPK,(SomeEOptionP,(ReferenceType)⇒Boolean)])(SomeEPS):ProperPropertyComputationResult"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#continuationForNewAllocationSitesAtArrayLoad(defSiteObject:org.opalj.tac.common.DefinitionSite,arrayType:org.opalj.br.ArrayType,filter:org.opalj.br.ReferenceType=&gt;Boolean,dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#continuationForNewAllocationSitesAtArrayLoad(defSiteObject:org.opalj.tac.common.DefinitionSite,arrayType:org.opalj.br.ArrayType,filter:org.opalj.br.ReferenceType=&gt;Boolean,dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -764,7 +766,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#continuationForNewAllocationSitesAtArrayStore" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="continuationForNewAllocationSitesAtArrayStore(knownPointsTo:PointsToAnalysisBase.this.PointsToSet,rhsDefSitesEPS:Map[org.opalj.fpcf.SomeEPK,org.opalj.fpcf.SomeEOptionP],arrayType:org.opalj.br.ArrayType,dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult"></a><a id="continuationForNewAllocationSitesAtArrayStore(PointsToSet,Map[SomeEPK,SomeEOptionP],ArrayType,Map[SomeEPK,(SomeEOptionP,(ReferenceType)⇒Boolean)])(SomeEPS):ProperPropertyComputationResult"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#continuationForNewAllocationSitesAtArrayStore(knownPointsTo:PointsToAnalysisBase.this.PointsToSet,rhsDefSitesEPS:Map[org.opalj.fpcf.SomeEPK,org.opalj.fpcf.SomeEOptionP],arrayType:org.opalj.br.ArrayType,dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#continuationForNewAllocationSitesAtArrayStore(knownPointsTo:PointsToAnalysisBase.this.PointsToSet,rhsDefSitesEPS:Map[org.opalj.fpcf.SomeEPK,org.opalj.fpcf.SomeEOptionP],arrayType:org.opalj.br.ArrayType,dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -773,14 +775,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">continuationForNewAllocationSitesAtArrayStore</span><span class="params">(<span name="knownPointsTo">knownPointsTo: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>, <span name="rhsDefSitesEPS">rhsDefSitesEPS: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../../../../fpcf/index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a>, <a href="../../../../fpcf/index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>]</span>, <span name="arrayType">arrayType: <a href="../../../../br/ArrayType.html" class="extype" name="org.opalj.br.ArrayType">ArrayType</a></span>, <span name="dependees">dependees: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../../../../fpcf/index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a>, (<a href="../../../../fpcf/index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>, (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span>)]</span>)</span><span class="params">(<span name="eps">eps: <a href="../../../../fpcf/index.html#SomeEPS=org.opalj.fpcf.EPS[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPS">SomeEPS</a></span>)</span><span class="result">: <a href="../../../../fpcf/ProperPropertyComputationResult.html" class="extype" name="org.opalj.fpcf.ProperPropertyComputationResult">ProperPropertyComputationResult</a></span>
+        <span class="name">continuationForNewAllocationSitesAtArrayStore</span><span class="params">(<span name="knownPointsTo">knownPointsTo: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>, <span name="rhsDefSitesEPS">rhsDefSitesEPS: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../../../../fpcf/index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a>, <a href="../../../../fpcf/index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>]</span>, <span name="arrayType">arrayType: <a href="../../../../br/ArrayType.html" class="extype" name="org.opalj.br.ArrayType">ArrayType</a></span>, <span name="dependees">dependees: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../../../../fpcf/index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a>, (<a href="../../../../fpcf/index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>, (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span>)]</span>)</span><span class="params">(<span name="eps">eps: <a href="../../../../fpcf/index.html#SomeEPS=org.opalj.fpcf.EPS[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPS">SomeEPS</a></span>)</span><span class="result">: <a href="../../../../fpcf/ProperPropertyComputationResult.html" class="extype" name="org.opalj.fpcf.ProperPropertyComputationResult">ProperPropertyComputationResult</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#continuationForNewAllocationSitesAtGetField" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="continuationForNewAllocationSitesAtGetField(defSiteObject:org.opalj.tac.common.DefinitionSite,fieldOpt:Option[org.opalj.br.Field],filter:org.opalj.br.ReferenceType=&gt;Boolean,dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult"></a><a id="continuationForNewAllocationSitesAtGetField(DefinitionSite,Option[Field],(ReferenceType)⇒Boolean,Map[SomeEPK,(SomeEOptionP,(ReferenceType)⇒Boolean)])(SomeEPS):ProperPropertyComputationResult"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#continuationForNewAllocationSitesAtGetField(defSiteObject:org.opalj.tac.common.DefinitionSite,fieldOpt:Option[org.opalj.br.Field],filter:org.opalj.br.ReferenceType=&gt;Boolean,dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#continuationForNewAllocationSitesAtGetField(defSiteObject:org.opalj.tac.common.DefinitionSite,fieldOpt:Option[org.opalj.br.Field],filter:org.opalj.br.ReferenceType=&gt;Boolean,dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -796,7 +798,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#continuationForNewAllocationSitesAtPutField" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="continuationForNewAllocationSitesAtPutField(knownPointsTo:PointsToAnalysisBase.this.PointsToSet,rhsDefSitesEPS:Map[org.opalj.fpcf.SomeEPK,org.opalj.fpcf.SomeEOptionP],fieldOpt:Option[org.opalj.br.Field],dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult"></a><a id="continuationForNewAllocationSitesAtPutField(PointsToSet,Map[SomeEPK,SomeEOptionP],Option[Field],Map[SomeEPK,(SomeEOptionP,(ReferenceType)⇒Boolean)])(SomeEPS):ProperPropertyComputationResult"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#continuationForNewAllocationSitesAtPutField(knownPointsTo:PointsToAnalysisBase.this.PointsToSet,rhsDefSitesEPS:Map[org.opalj.fpcf.SomeEPK,org.opalj.fpcf.SomeEOptionP],fieldOpt:Option[org.opalj.br.Field],dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#continuationForNewAllocationSitesAtPutField(knownPointsTo:PointsToAnalysisBase.this.PointsToSet,rhsDefSitesEPS:Map[org.opalj.fpcf.SomeEPK,org.opalj.fpcf.SomeEOptionP],fieldOpt:Option[org.opalj.br.Field],dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -805,14 +807,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">continuationForNewAllocationSitesAtPutField</span><span class="params">(<span name="knownPointsTo">knownPointsTo: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>, <span name="rhsDefSitesEPS">rhsDefSitesEPS: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../../../../fpcf/index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a>, <a href="../../../../fpcf/index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>]</span>, <span name="fieldOpt">fieldOpt: <span class="extype" name="scala.Option">Option</span>[<a href="../../../../br/Field.html" class="extype" name="org.opalj.br.Field">Field</a>]</span>, <span name="dependees">dependees: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../../../../fpcf/index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a>, (<a href="../../../../fpcf/index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>, (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span>)]</span>)</span><span class="params">(<span name="eps">eps: <a href="../../../../fpcf/index.html#SomeEPS=org.opalj.fpcf.EPS[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPS">SomeEPS</a></span>)</span><span class="result">: <a href="../../../../fpcf/ProperPropertyComputationResult.html" class="extype" name="org.opalj.fpcf.ProperPropertyComputationResult">ProperPropertyComputationResult</a></span>
+        <span class="name">continuationForNewAllocationSitesAtPutField</span><span class="params">(<span name="knownPointsTo">knownPointsTo: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>, <span name="rhsDefSitesEPS">rhsDefSitesEPS: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../../../../fpcf/index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a>, <a href="../../../../fpcf/index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>]</span>, <span name="fieldOpt">fieldOpt: <span class="extype" name="scala.Option">Option</span>[<a href="../../../../br/Field.html" class="extype" name="org.opalj.br.Field">Field</a>]</span>, <span name="dependees">dependees: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../../../../fpcf/index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a>, (<a href="../../../../fpcf/index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>, (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span>)]</span>)</span><span class="params">(<span name="eps">eps: <a href="../../../../fpcf/index.html#SomeEPS=org.opalj.fpcf.EPS[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPS">SomeEPS</a></span>)</span><span class="result">: <a href="../../../../fpcf/ProperPropertyComputationResult.html" class="extype" name="org.opalj.fpcf.ProperPropertyComputationResult">ProperPropertyComputationResult</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#continuationForShared" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="continuationForShared(e:org.opalj.fpcf.Entity,dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult"></a><a id="continuationForShared(Entity,Map[SomeEPK,(SomeEOptionP,(ReferenceType)⇒Boolean)])(SomeEPS):ProperPropertyComputationResult"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#continuationForShared(e:org.opalj.fpcf.Entity,dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#continuationForShared(e:org.opalj.fpcf.Entity,dependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)])(eps:org.opalj.fpcf.SomeEPS):org.opalj.fpcf.ProperPropertyComputationResult" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -828,7 +830,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#createPartialResults" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="createPartialResults(e:org.opalj.fpcf.Entity,newPointsToSet:PointsToAnalysisBase.this.PointsToSet,newDependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)],updatePointsTo:PointsToAnalysisBase.this.PointsToSet=&gt;PointsToAnalysisBase.this.PointsToSet,isUpdate:Boolean):Seq[org.opalj.fpcf.ProperPropertyComputationResult]"></a><a id="createPartialResults(Entity,PointsToSet,Map[SomeEPK,(SomeEOptionP,(ReferenceType)⇒Boolean)],(PointsToSet)⇒PointsToSet,Boolean):Seq[ProperPropertyComputationResult]"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#createPartialResults(e:org.opalj.fpcf.Entity,newPointsToSet:PointsToAnalysisBase.this.PointsToSet,newDependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)],updatePointsTo:PointsToAnalysisBase.this.PointsToSet=&gt;PointsToAnalysisBase.this.PointsToSet,isUpdate:Boolean):Seq[org.opalj.fpcf.ProperPropertyComputationResult]" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#createPartialResults(e:org.opalj.fpcf.Entity,newPointsToSet:PointsToAnalysisBase.this.PointsToSet,newDependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)],updatePointsTo:PointsToAnalysisBase.this.PointsToSet=&gt;PointsToAnalysisBase.this.PointsToSet,isUpdate:Boolean):Seq[org.opalj.fpcf.ProperPropertyComputationResult]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -837,7 +839,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">createPartialResults</span><span class="params">(<span name="e">e: <a href="../../../../fpcf/index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="newPointsToSet">newPointsToSet: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>, <span name="newDependees">newDependees: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../../../../fpcf/index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a>, (<a href="../../../../fpcf/index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>, (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span>)]</span>, <span name="updatePointsTo">updatePointsTo: (<a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a>) ⇒ <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>, <span name="isUpdate">isUpdate: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../../../../fpcf/ProperPropertyComputationResult.html" class="extype" name="org.opalj.fpcf.ProperPropertyComputationResult">ProperPropertyComputationResult</a>]</span>
+        <span class="name">createPartialResults</span><span class="params">(<span name="e">e: <a href="../../../../fpcf/index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="newPointsToSet">newPointsToSet: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>, <span name="newDependees">newDependees: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../../../../fpcf/index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a>, (<a href="../../../../fpcf/index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>, (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span>)]</span>, <span name="updatePointsTo">updatePointsTo: (<a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a>) ⇒ <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>, <span name="isUpdate">isUpdate: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../../../../fpcf/ProperPropertyComputationResult.html" class="extype" name="org.opalj.fpcf.ProperPropertyComputationResult">ProperPropertyComputationResult</a>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></dd><dt>Annotations</dt><dd>
@@ -847,7 +849,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#createResults" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="createResults(state:PointsToAnalysisBase.this.State):scala.collection.mutable.ArrayBuffer[org.opalj.fpcf.ProperPropertyComputationResult]"></a><a id="createResults(State):ArrayBuffer[ProperPropertyComputationResult]"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#createResults(state:PointsToAnalysisBase.this.State):scala.collection.mutable.ArrayBuffer[org.opalj.fpcf.ProperPropertyComputationResult]" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#createResults(state:PointsToAnalysisBase.this.State):scala.collection.mutable.ArrayBuffer[org.opalj.fpcf.ProperPropertyComputationResult]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -856,14 +858,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">createResults</span><span class="params">(<span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.ArrayBuffer">ArrayBuffer</span>[<a href="../../../../fpcf/ProperPropertyComputationResult.html" class="extype" name="org.opalj.fpcf.ProperPropertyComputationResult">ProperPropertyComputationResult</a>]</span>
+        <span class="name">createResults</span><span class="params">(<span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.ArrayBuffer">ArrayBuffer</span>[<a href="../../../../fpcf/ProperPropertyComputationResult.html" class="extype" name="org.opalj.fpcf.ProperPropertyComputationResult">ProperPropertyComputationResult</a>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#currentPointsTo" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="currentPointsTo(depender:org.opalj.fpcf.Entity,dependee:org.opalj.fpcf.Entity,typeFilter:org.opalj.br.ReferenceType=&gt;Boolean)(implicitstate:PointsToAnalysisBase.this.State):PointsToAnalysisBase.this.PointsToSet"></a><a id="currentPointsTo(Entity,Entity,(ReferenceType)⇒Boolean)(State):PointsToSet"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#currentPointsTo(depender:org.opalj.fpcf.Entity,dependee:org.opalj.fpcf.Entity,typeFilter:org.opalj.br.ReferenceType=&gt;Boolean)(implicitstate:PointsToAnalysisBase.this.State):PointsToAnalysisBase.this.PointsToSet" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#currentPointsTo(depender:org.opalj.fpcf.Entity,dependee:org.opalj.fpcf.Entity,typeFilter:org.opalj.br.ReferenceType=&gt;Boolean)(implicitstate:PointsToAnalysisBase.this.State):PointsToAnalysisBase.this.PointsToSet" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -872,7 +874,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">currentPointsTo</span><span class="params">(<span name="depender">depender: <a href="../../../../fpcf/index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="dependee">dependee: <a href="../../../../fpcf/index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="typeFilter">typeFilter: (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>
+        <span class="name">currentPointsTo</span><span class="params">(<span name="depender">depender: <a href="../../../../fpcf/index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="dependee">dependee: <a href="../../../../fpcf/index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="typeFilter">typeFilter: (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a> → <a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd><dt>Annotations</dt><dd>
@@ -882,7 +884,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis#currentPointsToOfDefSite" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="currentPointsToOfDefSite(depender:AbstractPointsToBasedAnalysis.this.DependerType,dependeeDefSite:Int,typeFilter:org.opalj.br.ReferenceType=&gt;Boolean)(implicitstate:AbstractPointsToBasedAnalysis.this.State):AbstractPointsToBasedAnalysis.this.PointsToSet"></a><a id="currentPointsToOfDefSite(DependerType,Int,(ReferenceType)⇒Boolean)(State):PointsToSet"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#currentPointsToOfDefSite(depender:AbstractPointsToBasedAnalysis.this.DependerType,dependeeDefSite:Int,typeFilter:org.opalj.br.ReferenceType=&gt;Boolean)(implicitstate:AbstractPointsToBasedAnalysis.this.State):AbstractPointsToBasedAnalysis.this.PointsToSet" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#currentPointsToOfDefSite(depender:AbstractPointsToBasedAnalysis.this.DependerType,dependeeDefSite:Int,typeFilter:org.opalj.br.ReferenceType=&gt;Boolean)(implicitstate:AbstractPointsToBasedAnalysis.this.State):AbstractPointsToBasedAnalysis.this.PointsToSet" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -891,7 +893,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">currentPointsToOfDefSite</span><span class="params">(<span name="depender">depender: <a href="#DependerType=org.opalj.fpcf.Entity" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.DependerType">DependerType</a></span>, <span name="dependeeDefSite">dependeeDefSite: <span class="extype" name="scala.Int">Int</span></span>, <span name="typeFilter">typeFilter: (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol"><span class="name"><a href="../../../../../index.html">PointsToSetLike.noFilter</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>
+        <span class="name">currentPointsToOfDefSite</span><span class="params">(<span name="depender">depender: <a href="#DependerType=org.opalj.fpcf.Entity" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.DependerType">DependerType</a></span>, <span name="dependeeDefSite">dependeeDefSite: <span class="extype" name="scala.Int">Int</span></span>, <span name="typeFilter">typeFilter: (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol"><span class="name"><a href="../../../../../index.html">PointsToSetLike.noFilter</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd><dt>Annotations</dt><dd>
@@ -901,7 +903,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis#currentPointsToOfDefSites" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="currentPointsToOfDefSites(depender:AbstractPointsToBasedAnalysis.this.DependerType,defSites:org.opalj.collection.immutable.IntTrieSet,typeFilter:org.opalj.br.ReferenceType=&gt;Boolean)(implicitstate:AbstractPointsToBasedAnalysis.this.State):Iterator[AbstractPointsToBasedAnalysis.this.PointsToSet]"></a><a id="currentPointsToOfDefSites(DependerType,IntTrieSet,(ReferenceType)⇒Boolean)(State):Iterator[PointsToSet]"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#currentPointsToOfDefSites(depender:AbstractPointsToBasedAnalysis.this.DependerType,defSites:org.opalj.collection.immutable.IntTrieSet,typeFilter:org.opalj.br.ReferenceType=&gt;Boolean)(implicitstate:AbstractPointsToBasedAnalysis.this.State):Iterator[AbstractPointsToBasedAnalysis.this.PointsToSet]" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#currentPointsToOfDefSites(depender:AbstractPointsToBasedAnalysis.this.DependerType,defSites:org.opalj.collection.immutable.IntTrieSet,typeFilter:org.opalj.br.ReferenceType=&gt;Boolean)(implicitstate:AbstractPointsToBasedAnalysis.this.State):Iterator[AbstractPointsToBasedAnalysis.this.PointsToSet]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -910,17 +912,17 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">currentPointsToOfDefSites</span><span class="params">(<span name="depender">depender: <a href="#DependerType=org.opalj.fpcf.Entity" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.DependerType">DependerType</a></span>, <span name="defSites">defSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="typeFilter">typeFilter: (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol"><span class="name"><a href="../../../../../index.html">PointsToSetLike.noFilter</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a>]</span>
+        <span class="name">currentPointsToOfDefSites</span><span class="params">(<span name="depender">depender: <a href="#DependerType=org.opalj.fpcf.Entity" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.DependerType">DependerType</a></span>, <span name="defSites">defSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="typeFilter">typeFilter: (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol"><span class="name"><a href="../../../../../index.html">PointsToSetLike.noFilter</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis#declaredMethods" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis#declaredMethods" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="declaredMethods:org.opalj.br.analyses.DeclaredMethods"></a><a id="declaredMethods:DeclaredMethods"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#declaredMethods:org.opalj.br.analyses.DeclaredMethods" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#declaredMethods:org.opalj.br.analyses.DeclaredMethods" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -936,7 +938,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis#definitionSites" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="definitionSites:org.opalj.tac.common.DefinitionSites"></a><a id="definitionSites:DefinitionSites"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#definitionSites:org.opalj.tac.common.DefinitionSites" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#definitionSites:org.opalj.tac.common.DefinitionSites" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -952,7 +954,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#eq(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -968,7 +970,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#equals(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#equals(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -984,7 +986,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis#formalParameters" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="formalParameters:org.opalj.br.analyses.VirtualFormalParameters"></a><a id="formalParameters:VirtualFormalParameters"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#formalParameters:org.opalj.br.analyses.VirtualFormalParameters" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#formalParameters:org.opalj.br.analyses.VirtualFormalParameters" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1000,7 +1002,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#getClass():Class[_]" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#getClass():Class[_]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1015,13 +1017,13 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#handleArrayLoad" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="handleArrayLoad(arrayType:org.opalj.br.ArrayType,pc:Int,arrayDefSites:org.opalj.collection.immutable.IntTrieSet,checkForCast:Boolean)(implicitstate:PointsToAnalysisBase.this.State):Unit"></a><a id="handleArrayLoad(ArrayType,Int,IntTrieSet,Boolean)(State):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#handleArrayLoad(arrayType:org.opalj.br.ArrayType,pc:Int,arrayDefSites:org.opalj.collection.immutable.IntTrieSet,checkForCast:Boolean)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#handleArrayLoad(arrayType:org.opalj.br.ArrayType,pc:Int,arrayDefSites:org.opalj.collection.immutable.IntTrieSet,checkForCast:Boolean)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1030,14 +1032,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">handleArrayLoad</span><span class="params">(<span name="arrayType">arrayType: <a href="../../../../br/ArrayType.html" class="extype" name="org.opalj.br.ArrayType">ArrayType</a></span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="arrayDefSites">arrayDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="checkForCast">checkForCast: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">handleArrayLoad</span><span class="params">(<span name="arrayType">arrayType: <a href="../../../../br/ArrayType.html" class="extype" name="org.opalj.br.ArrayType">ArrayType</a></span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="arrayDefSites">arrayDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="checkForCast">checkForCast: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#handleArrayStore" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="handleArrayStore(arrayType:org.opalj.br.ArrayType,arrayDefSites:org.opalj.collection.immutable.IntTrieSet,rhsDefSites:org.opalj.collection.immutable.IntTrieSet)(implicitstate:PointsToAnalysisBase.this.State):Unit"></a><a id="handleArrayStore(ArrayType,IntTrieSet,IntTrieSet)(State):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#handleArrayStore(arrayType:org.opalj.br.ArrayType,arrayDefSites:org.opalj.collection.immutable.IntTrieSet,rhsDefSites:org.opalj.collection.immutable.IntTrieSet)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#handleArrayStore(arrayType:org.opalj.br.ArrayType,arrayDefSites:org.opalj.collection.immutable.IntTrieSet,rhsDefSites:org.opalj.collection.immutable.IntTrieSet)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1046,14 +1048,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">handleArrayStore</span><span class="params">(<span name="arrayType">arrayType: <a href="../../../../br/ArrayType.html" class="extype" name="org.opalj.br.ArrayType">ArrayType</a></span>, <span name="arrayDefSites">arrayDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="rhsDefSites">rhsDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">handleArrayStore</span><span class="params">(<span name="arrayType">arrayType: <a href="../../../../br/ArrayType.html" class="extype" name="org.opalj.br.ArrayType">ArrayType</a></span>, <span name="arrayDefSites">arrayDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="rhsDefSites">rhsDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#handleCallParameter" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="handleCallParameter(paramDefSites:org.opalj.collection.immutable.IntTrieSet,paramIndex:Int,target:org.opalj.br.DeclaredMethod)(implicitstate:PointsToAnalysisBase.this.State):Unit"></a><a id="handleCallParameter(IntTrieSet,Int,DeclaredMethod)(State):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#handleCallParameter(paramDefSites:org.opalj.collection.immutable.IntTrieSet,paramIndex:Int,target:org.opalj.br.DeclaredMethod)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#handleCallParameter(paramDefSites:org.opalj.collection.immutable.IntTrieSet,paramIndex:Int,target:org.opalj.br.DeclaredMethod)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1062,14 +1064,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">handleCallParameter</span><span class="params">(<span name="paramDefSites">paramDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="paramIndex">paramIndex: <span class="extype" name="scala.Int">Int</span></span>, <span name="target">target: <a href="../../../../br/DeclaredMethod.html" class="extype" name="org.opalj.br.DeclaredMethod">DeclaredMethod</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">handleCallParameter</span><span class="params">(<span name="paramDefSites">paramDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="paramIndex">paramIndex: <span class="extype" name="scala.Int">Int</span></span>, <span name="target">target: <a href="../../../../br/DeclaredMethod.html" class="extype" name="org.opalj.br.DeclaredMethod">DeclaredMethod</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#handleCallReceiver" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="handleCallReceiver(receiverDefSites:org.opalj.collection.immutable.IntTrieSet,target:org.opalj.br.DeclaredMethod,isNonVirtualCall:Boolean)(implicitstate:PointsToAnalysisBase.this.State):Unit"></a><a id="handleCallReceiver(IntTrieSet,DeclaredMethod,Boolean)(State):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#handleCallReceiver(receiverDefSites:org.opalj.collection.immutable.IntTrieSet,target:org.opalj.br.DeclaredMethod,isNonVirtualCall:Boolean)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#handleCallReceiver(receiverDefSites:org.opalj.collection.immutable.IntTrieSet,target:org.opalj.br.DeclaredMethod,isNonVirtualCall:Boolean)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1078,14 +1080,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">handleCallReceiver</span><span class="params">(<span name="receiverDefSites">receiverDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="target">target: <a href="../../../../br/DeclaredMethod.html" class="extype" name="org.opalj.br.DeclaredMethod">DeclaredMethod</a></span>, <span name="isNonVirtualCall">isNonVirtualCall: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">handleCallReceiver</span><span class="params">(<span name="receiverDefSites">receiverDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="target">target: <a href="../../../../br/DeclaredMethod.html" class="extype" name="org.opalj.br.DeclaredMethod">DeclaredMethod</a></span>, <span name="isNonVirtualCall">isNonVirtualCall: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#handleGetField" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="handleGetField(fieldOpt:Option[org.opalj.br.Field],pc:Int,objRefDefSites:org.opalj.collection.immutable.IntTrieSet,checkForCast:Boolean)(implicitstate:PointsToAnalysisBase.this.State):Unit"></a><a id="handleGetField(Option[Field],Int,IntTrieSet,Boolean)(State):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#handleGetField(fieldOpt:Option[org.opalj.br.Field],pc:Int,objRefDefSites:org.opalj.collection.immutable.IntTrieSet,checkForCast:Boolean)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#handleGetField(fieldOpt:Option[org.opalj.br.Field],pc:Int,objRefDefSites:org.opalj.collection.immutable.IntTrieSet,checkForCast:Boolean)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1094,14 +1096,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">handleGetField</span><span class="params">(<span name="fieldOpt">fieldOpt: <span class="extype" name="scala.Option">Option</span>[<a href="../../../../br/Field.html" class="extype" name="org.opalj.br.Field">Field</a>]</span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="objRefDefSites">objRefDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="checkForCast">checkForCast: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">handleGetField</span><span class="params">(<span name="fieldOpt">fieldOpt: <span class="extype" name="scala.Option">Option</span>[<a href="../../../../br/Field.html" class="extype" name="org.opalj.br.Field">Field</a>]</span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="objRefDefSites">objRefDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="checkForCast">checkForCast: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#handleGetStatic" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="handleGetStatic(field:org.opalj.br.Field,pc:Int,checkForCast:Boolean)(implicitstate:PointsToAnalysisBase.this.State):Unit"></a><a id="handleGetStatic(Field,Int,Boolean)(State):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#handleGetStatic(field:org.opalj.br.Field,pc:Int,checkForCast:Boolean)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#handleGetStatic(field:org.opalj.br.Field,pc:Int,checkForCast:Boolean)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1110,14 +1112,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">handleGetStatic</span><span class="params">(<span name="field">field: <a href="../../../../br/Field.html" class="extype" name="org.opalj.br.Field">Field</a></span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="checkForCast">checkForCast: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">handleGetStatic</span><span class="params">(<span name="field">field: <a href="../../../../br/Field.html" class="extype" name="org.opalj.br.Field">Field</a></span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="checkForCast">checkForCast: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#handlePutField" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="handlePutField(fieldOpt:Option[org.opalj.br.Field],objRefDefSites:org.opalj.collection.immutable.IntTrieSet,rhsDefSites:org.opalj.collection.immutable.IntTrieSet)(implicitstate:PointsToAnalysisBase.this.State):Unit"></a><a id="handlePutField(Option[Field],IntTrieSet,IntTrieSet)(State):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#handlePutField(fieldOpt:Option[org.opalj.br.Field],objRefDefSites:org.opalj.collection.immutable.IntTrieSet,rhsDefSites:org.opalj.collection.immutable.IntTrieSet)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#handlePutField(fieldOpt:Option[org.opalj.br.Field],objRefDefSites:org.opalj.collection.immutable.IntTrieSet,rhsDefSites:org.opalj.collection.immutable.IntTrieSet)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1126,14 +1128,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">handlePutField</span><span class="params">(<span name="fieldOpt">fieldOpt: <span class="extype" name="scala.Option">Option</span>[<a href="../../../../br/Field.html" class="extype" name="org.opalj.br.Field">Field</a>]</span>, <span name="objRefDefSites">objRefDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="rhsDefSites">rhsDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">handlePutField</span><span class="params">(<span name="fieldOpt">fieldOpt: <span class="extype" name="scala.Option">Option</span>[<a href="../../../../br/Field.html" class="extype" name="org.opalj.br.Field">Field</a>]</span>, <span name="objRefDefSites">objRefDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="rhsDefSites">rhsDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#handlePutStatic" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="handlePutStatic(field:org.opalj.br.Field,rhsDefSites:org.opalj.collection.immutable.IntTrieSet)(implicitstate:PointsToAnalysisBase.this.State):Unit"></a><a id="handlePutStatic(Field,IntTrieSet)(State):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#handlePutStatic(field:org.opalj.br.Field,rhsDefSites:org.opalj.collection.immutable.IntTrieSet)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#handlePutStatic(field:org.opalj.br.Field,rhsDefSites:org.opalj.collection.immutable.IntTrieSet)(implicitstate:PointsToAnalysisBase.this.State):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1142,14 +1144,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">handlePutStatic</span><span class="params">(<span name="field">field: <a href="../../../../br/Field.html" class="extype" name="org.opalj.br.Field">Field</a></span>, <span name="rhsDefSites">rhsDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">handlePutStatic</span><span class="params">(<span name="field">field: <a href="../../../../br/Field.html" class="extype" name="org.opalj.br.Field">Field</a></span>, <span name="rhsDefSites">rhsDefSites: <a href="../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#hashCode():Int" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#hashCode():Int" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1164,13 +1166,13 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#isInstanceOf[T0]:Boolean" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#isInstanceOf[T0]:Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1186,7 +1188,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.br.analyses.ProjectBasedAnalysis#logContext" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="logContext:org.opalj.log.LogContext"></a><a id="logContext:LogContext"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#logContext:org.opalj.log.LogContext" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#logContext:org.opalj.log.LogContext" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1202,7 +1204,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#ne(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1218,7 +1220,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#notify():Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#notify():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1233,13 +1235,13 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#notifyAll():Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#notifyAll():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1254,13 +1256,13 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectBasedAnalysis#p" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="p:org.opalj.br.analyses.SomeProject"></a><a id="p:SomeProject"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#p:org.opalj.br.analyses.SomeProject" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#p:org.opalj.br.analyses.SomeProject" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1276,7 +1278,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis#pointsToUB" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="pointsToUB(eOptP:org.opalj.fpcf.EOptionP[org.opalj.fpcf.Entity,AbstractPointsToBasedAnalysis.this.PointsToSet]):AbstractPointsToBasedAnalysis.this.PointsToSet"></a><a id="pointsToUB(EOptionP[Entity,PointsToSet]):PointsToSet"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#pointsToUB(eOptP:org.opalj.fpcf.EOptionP[org.opalj.fpcf.Entity,AbstractPointsToBasedAnalysis.this.PointsToSet]):AbstractPointsToBasedAnalysis.this.PointsToSet" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#pointsToUB(eOptP:org.opalj.fpcf.EOptionP[org.opalj.fpcf.Entity,AbstractPointsToBasedAnalysis.this.PointsToSet]):AbstractPointsToBasedAnalysis.this.PointsToSet" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1285,17 +1287,17 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">pointsToUB</span><span class="params">(<span name="eOptP">eOptP: <a href="../../../../fpcf/EOptionP.html" class="extype" name="org.opalj.fpcf.EOptionP">EOptionP</a>[<a href="../../../../fpcf/index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a>, <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a>]</span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>
+        <span class="name">pointsToUB</span><span class="params">(<span name="eOptP">eOptP: <a href="../../../../fpcf/EOptionP.html" class="extype" name="org.opalj.fpcf.EOptionP">EOptionP</a>[<a href="../../../../fpcf/index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a>, <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a>]</span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis#process" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis#process" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="process(p:org.opalj.br.analyses.SomeProject):org.opalj.fpcf.PropertyComputationResult"></a><a id="process(SomeProject):PropertyComputationResult"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#process(p:org.opalj.br.analyses.SomeProject):org.opalj.fpcf.PropertyComputationResult" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#process(p:org.opalj.br.analyses.SomeProject):org.opalj.fpcf.PropertyComputationResult" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1308,10 +1310,10 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       </span>
       
       
-    </li><li name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis#project" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis#project" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="project:org.opalj.br.analyses.SomeProject"></a><a id="project:SomeProject"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#project:org.opalj.br.analyses.SomeProject" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#project:org.opalj.br.analyses.SomeProject" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1323,11 +1325,11 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="name">project</span><span class="result">: <a href="../../../../br/analyses/index.html#SomeProject=org.opalj.br.analyses.Project[_]" class="extmbr" name="org.opalj.br.analyses.SomeProject">SomeProject</a></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis">TamiFlexPointsToAnalysis</a> → <a href="../../../../br/analyses/ProjectBasedAnalysis.html" class="extype" name="org.opalj.br.analyses.ProjectBasedAnalysis">ProjectBasedAnalysis</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis">AllocationSiteBasedTamiFlexPointsToAnalysis</a> → <a href="../../../../br/analyses/ProjectBasedAnalysis.html" class="extype" name="org.opalj.br.analyses.ProjectBasedAnalysis">ProjectBasedAnalysis</a></dd></dl></div>
     </li><li name="org.opalj.br.fpcf.FPCFAnalysis#propertyStore" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="propertyStore:org.opalj.fpcf.PropertyStore"></a><a id="propertyStore:PropertyStore"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#propertyStore:org.opalj.fpcf.PropertyStore" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#propertyStore:org.opalj.fpcf.PropertyStore" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1343,7 +1345,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.br.fpcf.FPCFAnalysis#ps" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ps:org.opalj.fpcf.PropertyStore"></a><a id="ps:PropertyStore"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#ps:org.opalj.fpcf.PropertyStore" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#ps:org.opalj.fpcf.PropertyStore" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1359,7 +1361,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1375,7 +1377,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis#toEntity" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toEntity(defSite:Int)(implicitstate:AbstractPointsToBasedAnalysis.this.State):org.opalj.fpcf.Entity"></a><a id="toEntity(Int)(State):Entity"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#toEntity(defSite:Int)(implicitstate:AbstractPointsToBasedAnalysis.this.State):org.opalj.fpcf.Entity" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#toEntity(defSite:Int)(implicitstate:AbstractPointsToBasedAnalysis.this.State):org.opalj.fpcf.Entity" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1384,7 +1386,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toEntity</span><span class="params">(<span name="defSite">defSite: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <a href="../../../../fpcf/index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>
+        <span class="name">toEntity</span><span class="params">(<span name="defSite">defSite: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisState[PointsToAnalysisBase.this.ElementType,PointsToAnalysisBase.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.State">State</a></span>)</span><span class="result">: <a href="../../../../fpcf/index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd><dt>Annotations</dt><dd>
@@ -1394,7 +1396,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#toString():String" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#toString():String" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1410,7 +1412,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#updatedDependees" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="updatedDependees(eps:org.opalj.fpcf.SomeEPS,oldDependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)]):Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)]"></a><a id="updatedDependees(SomeEPS,Map[SomeEPK,(SomeEOptionP,(ReferenceType)⇒Boolean)]):Map[SomeEPK,(SomeEOptionP,(ReferenceType)⇒Boolean)]"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#updatedDependees(eps:org.opalj.fpcf.SomeEPS,oldDependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)]):Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)]" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#updatedDependees(eps:org.opalj.fpcf.SomeEPS,oldDependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)]):Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1429,7 +1431,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase#updatedPointsToSet" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="updatedPointsToSet(oldPointsToSet:PointsToAnalysisBase.this.PointsToSet,newDependeePointsToSet:PointsToAnalysisBase.this.PointsToSet,dependee:org.opalj.fpcf.SomeEPS,oldDependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)]):PointsToAnalysisBase.this.PointsToSet"></a><a id="updatedPointsToSet(PointsToSet,PointsToSet,SomeEPS,Map[SomeEPK,(SomeEOptionP,(ReferenceType)⇒Boolean)]):PointsToSet"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#updatedPointsToSet(oldPointsToSet:PointsToAnalysisBase.this.PointsToSet,newDependeePointsToSet:PointsToAnalysisBase.this.PointsToSet,dependee:org.opalj.fpcf.SomeEPS,oldDependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)]):PointsToAnalysisBase.this.PointsToSet" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#updatedPointsToSet(oldPointsToSet:PointsToAnalysisBase.this.PointsToSet,newDependeePointsToSet:PointsToAnalysisBase.this.PointsToSet,dependee:org.opalj.fpcf.SomeEPS,oldDependees:Map[org.opalj.fpcf.SomeEPK,(org.opalj.fpcf.SomeEOptionP,org.opalj.br.ReferenceType=&gt;Boolean)]):PointsToAnalysisBase.this.PointsToSet" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1438,7 +1440,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">updatedPointsToSet</span><span class="params">(<span name="oldPointsToSet">oldPointsToSet: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>, <span name="newDependeePointsToSet">newDependeePointsToSet: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>, <span name="dependee">dependee: <a href="../../../../fpcf/index.html#SomeEPS=org.opalj.fpcf.EPS[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPS">SomeEPS</a></span>, <span name="oldDependees">oldDependees: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../../../../fpcf/index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a>, (<a href="../../../../fpcf/index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>, (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span>)]</span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.TamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>
+        <span class="name">updatedPointsToSet</span><span class="params">(<span name="oldPointsToSet">oldPointsToSet: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>, <span name="newDependeePointsToSet">newDependeePointsToSet: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>, <span name="dependee">dependee: <a href="../../../../fpcf/index.html#SomeEPS=org.opalj.fpcf.EPS[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPS">SomeEPS</a></span>, <span name="oldDependees">oldDependees: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../../../../fpcf/index.html#SomeEPK=org.opalj.fpcf.EPK[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEPK">SomeEPK</a>, (<a href="../../../../fpcf/index.html#SomeEOptionP=org.opalj.fpcf.EOptionP[_&lt;:org.opalj.fpcf.package.Entity,_&lt;:org.opalj.fpcf.Property]" class="extmbr" name="org.opalj.fpcf.SomeEOptionP">SomeEOptionP</a>, (<a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span>)]</span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.pointsto.AllocationSiteBasedTamiFlexPointsToAnalysis.PointsToSet">PointsToSet</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="PointsToAnalysisBase.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.PointsToAnalysisBase">PointsToAnalysisBase</a></dd><dt>Annotations</dt><dd>
@@ -1448,7 +1450,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1470,7 +1472,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#wait(x$1:Long):Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#wait(x$1:Long):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1494,7 +1496,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#wait():Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#wait():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1524,7 +1526,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
               <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/TamiFlexPointsToAnalysis.html#finalize():Unit" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/pointsto/AllocationSiteBasedTamiFlexPointsToAnalysis.html#finalize():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1533,7 +1535,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1544,9 +1546,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

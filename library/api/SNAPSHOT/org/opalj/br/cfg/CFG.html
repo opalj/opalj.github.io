@@ -227,7 +227,7 @@ that it facilitates writing analyses that use pattern matching.
          to never throw an exception, this node will not have any predecessors.</p></dd><dt class="param">catchNodes</dt><dd class="cmt"><p>List of all catch nodes. (Usually, we have one <a href="CatchNode.html" class="extype" name="org.opalj.br.cfg.CatchNode">CatchNode</a> per
          <a href="../ExceptionHandler.html" class="extype" name="org.opalj.br.ExceptionHandler">org.opalj.br.ExceptionHandler</a>, but if an exception handler does not catch
          anything, no <a href="CatchNode.html" class="extype" name="org.opalj.br.cfg.CatchNode">CatchNode</a> is created.)</p></dd><dt class="param">basicBlocks</dt><dd class="cmt"><p>An implicit map between a program counter and its associated
-         <a href="BasicBlock.html" class="extype" name="org.opalj.br.cfg.BasicBlock">BasicBlock</a>; it may be a sparse array!</p></dd></dl><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.br.cfg.CFG">CFG</a>[<span class="extype" name="org.opalj.br.cfg.CFG.I">I</span>, <span class="extype" name="org.opalj.br.cfg.CFG.C">C</span>]</dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/cfg/CFG.scala?at=develop" target="_blank">CFG.scala</a></dd></dl><div class="toggleContainer block">
+         <a href="BasicBlock.html" class="extype" name="org.opalj.br.cfg.BasicBlock">BasicBlock</a>; it may be a sparse array!</p></dd></dl><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.br.cfg.CFG">CFG</a>[<span class="extype" name="org.opalj.br.cfg.CFG.I">I</span>, <span class="extype" name="org.opalj.br.cfg.CFG.C">C</span>]</dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/br/src/main/scala/org/opalj/br/cfg/CFG.scala" target="_blank">CFG.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -481,7 +481,7 @@ not returned.) Always returns the basic block containing the first instruction f
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.cfg.CFG#code" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -612,7 +612,7 @@ same way.)
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -715,7 +715,7 @@ in {0,pcToIndex(0)} is created if necessary.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -736,7 +736,7 @@ in {0,pcToIndex(0)} is created if necessary.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.cfg.CFG#performBackwardDataFlowAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1014,7 +1014,7 @@ a handler of the respective method.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1025,9 +1025,7 @@ a handler of the respective method.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

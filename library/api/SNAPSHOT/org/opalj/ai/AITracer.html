@@ -378,6 +378,10 @@ domains that are used to adapt/transfer values should be thread safe
                         <a href="DoubleValuesFactory.html" title="Defines the primary factory methods for Double values.">DoubleValuesFactory</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
+                        <a class="trait" href="DynamicLoadsDomain.html" title="Interface related to the handling of dynamic ldc/ldc_w/ldc2_w instructions."></a>
+                        <a href="DynamicLoadsDomain.html" title="Interface related to the handling of dynamic ldc/ldc_w/ldc2_w instructions.">DynamicLoadsDomain</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
                         <a class="trait" href="ExceptionsFactory.html" title="Defines factory methods for those exceptions that are (also) created by the JVM when the evaluation of a specific bytecode instruction fails (e.g., idiv, checkcast, monitorexit, return...)."></a>
                         <a href="ExceptionsFactory.html" title="Defines factory methods for those exceptions that are (also) created by the JVM when the evaluation of a specific bytecode instruction fails (e.g., idiv, checkcast, monitorexit, return...).">ExceptionsFactory</a>
                       </li><li class="current-entities indented3">
@@ -573,7 +577,7 @@ debugging the interpreter's progress. In general, a tracer is first registered w
 abstract interpreter. After that, when a method is analyzed, the <a href="AI.html" class="extype" name="org.opalj.ai.AI">AI</a> calls the
 tracer's methods at the respective points in time.</p><p>A tracer is registered with an abstract interpreter by creating a new subclass of
 <a href="AI.html" class="extype" name="org.opalj.ai.AI">AI</a> and overriding the method <a href="AI.html#tracer:Option[org.opalj.ai.AITracer]" class="extmbr" name="org.opalj.ai.AI#tracer">AI.tracer</a>.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/ai/src/main/scala/org/opalj/ai/AITracer.scala?at=develop" target="_blank">AITracer.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p><b>All data structures passed to the tracer are the original data structures
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ai/src/main/scala/org/opalj/ai/AITracer.scala" target="_blank">AITracer.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p><b>All data structures passed to the tracer are the original data structures
      used by the abstract interpreter.</b> Hence, if a value is mutated (e.g., for
      debugging purposes) it has to be guaranteed that the state remains meaningful.
      Hence, using the <a href="" class="extype" name="org.opalj.ai.AITracer">AITracer</a> it is possible to develop a debugger for OPAL and
@@ -1043,7 +1047,7 @@ I.e., all possible paths are analyzed and the fixpoint is reached.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1096,7 +1100,7 @@ I.e., all possible paths are analyzed and the fixpoint is reached.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1117,7 +1121,7 @@ I.e., all possible paths are analyzed and the fixpoint is reached.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1170,7 +1174,7 @@ I.e., all possible paths are analyzed and the fixpoint is reached.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1191,7 +1195,7 @@ I.e., all possible paths are analyzed and the fixpoint is reached.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1314,7 +1318,7 @@ I.e., all possible paths are analyzed and the fixpoint is reached.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1325,9 +1329,7 @@ I.e., all possible paths are analyzed and the fixpoint is reached.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

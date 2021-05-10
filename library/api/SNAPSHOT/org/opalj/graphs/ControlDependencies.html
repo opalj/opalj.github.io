@@ -233,7 +233,7 @@ instruction that may throw an exception) if the value of the predicate
 controls the execution of the instruction.</p><p>Note that the classical definition:</p><p>    Let G be a control flow graph; Let X and Y be nodes in G; Y is control dependent on X iff
     there exists a directed path P from X to Y with any Z in P \ X is not post-dominated by Y.</p><p>Is not well suited for methods with potentially infinite loops, exceptions and multiple exit
 points. (See <a href="PostDominatorTree$.html#apply(uniqueExitNode:Option[Int],isExitNode:Int=&gt;Boolean,additionalExitNodes:org.opalj.collection.immutable.IntTrieSet,foreachExitNode:(Int=&gt;Unit)=&gt;Unit,foreachSuccessorOf:Int=&gt;((Int=&gt;Unit)=&gt;Unit),foreachPredecessorOf:Int=&gt;((Int=&gt;Unit)=&gt;Unit),maxNode:Int):org.opalj.graphs.PostDominatorTree" class="extmbr" name="org.opalj.graphs.PostDominatorTree#apply">PostDominatorTree$.apply</a> for further information.)
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/common/src/main/scala/org/opalj/graphs/ControlDependencies.scala?at=develop" target="_blank">ControlDependencies.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>In the context of static analysis an instruction (e.g., invoke, idiv,...) that
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/common/src/main/scala/org/opalj/graphs/ControlDependencies.scala" target="_blank">ControlDependencies.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>In the context of static analysis an instruction (e.g., invoke, idiv,...) that
          may throw an exception that results in a different control-flow, is also a <code>predicate</code>
          additionally to all ifs and switches.</p></span>, <span class="cmt"><p>If the underlying method/CFG contains infinite loops then it is expected that the
          dominance frontiers are already <code>corrected</code> if the used post dominator tree was
@@ -427,7 +427,7 @@ dependent on.</p>
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -480,7 +480,7 @@ dependent on.</p>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -501,7 +501,7 @@ dependent on.</p>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -554,7 +554,7 @@ dependent on.</p>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -575,7 +575,7 @@ dependent on.</p>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -698,7 +698,7 @@ dependent on.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -709,9 +709,7 @@ dependent on.</p>
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

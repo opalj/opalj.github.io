@@ -295,7 +295,7 @@ that it facilitates writing analyses that use pattern matching.
  triggered analysis, an eager analysis or a transformer; in the latter case the
  transformer's source property must not depend (neither directly nor indirectly) on
  a lazy analysis.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/fpcf/FPCFTriggeredAnalysisScheduler.scala?at=develop" target="_blank">FPCFTriggeredAnalysisScheduler.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/br/src/main/scala/org/opalj/br/fpcf/FPCFTriggeredAnalysisScheduler.scala" target="_blank">FPCFTriggeredAnalysisScheduler.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -496,6 +496,25 @@ with the property store using <a href="../../fpcf/PropertyStore.html#registerTri
 This method is typically called by the <a href="FPCFAnalysesManager.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysesManager">org.opalj.br.fpcf.FPCFAnalysesManager</a>.
 </p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>This analysis must not call <code>registerLazyPropertyComputation</code> or a variant of
       <code>scheduleEagerComputationForEntity</code>.</p></span></dd></dl></div>
+    </li><li name="org.opalj.br.fpcf.FPCFAnalysisScheduler#requiredProjectInformation" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="requiredProjectInformation:org.opalj.br.analyses.ProjectInformationKeys"></a><a id="requiredProjectInformation:ProjectInformationKeys"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/br/fpcf/FPCFTriggeredAnalysisScheduler.html#requiredProjectInformation:org.opalj.br.analyses.ProjectInformationKeys" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">requiredProjectInformation</span><span class="result">: <a href="../analyses/index.html#ProjectInformationKeys=Seq[org.opalj.br.analyses.ProjectInformationKey[_&lt;:AnyRef,_&lt;:AnyRef]]" class="extmbr" name="org.opalj.br.analyses.ProjectInformationKeys">ProjectInformationKeys</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns all <a href="../analyses/ProjectInformationKey.html" class="extype" name="org.opalj.br.analyses.ProjectInformationKey">org.opalj.br.analyses.ProjectInformationKey</a>s required by the analyses.</p><div class="fullcomment"><div class="comment cmt"><p>Returns all <a href="../analyses/ProjectInformationKey.html" class="extype" name="org.opalj.br.analyses.ProjectInformationKey">org.opalj.br.analyses.ProjectInformationKey</a>s required by the analyses.</p><p>This information is in particular required by keys which - when the key is computed - make use of
+other keys which are not statically known at compile time. If a single key that is (transitively)
+used is not correctly listed, a deadlock will _always_ occur.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></dd></dl></div>
     </li><li name="org.opalj.br.fpcf.FPCFTriggeredAnalysisScheduler#triggeredBy" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="triggeredBy:org.opalj.fpcf.PropertyKind"></a><a id="triggeredBy:PropertyKind"></a>
       <span class="permalink">
@@ -656,7 +675,7 @@ after phase setup, but potentially after other analyses' <code>beforeSchedule</c
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.fpcf.FPCFTriggeredAnalysisScheduler#computationType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -760,7 +779,7 @@ way the analysis is allowed to interact with the property store/other analyses.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -781,7 +800,7 @@ way the analysis is allowed to interact with the property store/other analyses.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.fpcf.FPCFAnalysisScheduler#init" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -877,7 +896,7 @@ which implements the underlying analysis.</p><p>The default name is the name of 
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -898,7 +917,7 @@ which implements the underlying analysis.</p><p>The default name is the name of 
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.fpcf.FPCFTriggeredAnalysisScheduler#register" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -917,25 +936,6 @@ which implements the underlying analysis.</p><p>The default name is the name of 
       </span>
       
       
-    </li><li name="org.opalj.br.fpcf.FPCFAnalysisScheduler#requiredProjectInformation" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="requiredProjectInformation:org.opalj.br.analyses.ProjectInformationKeys"></a><a id="requiredProjectInformation:ProjectInformationKeys"></a>
-      <span class="permalink">
-      <a href="../../../../org/opalj/br/fpcf/FPCFTriggeredAnalysisScheduler.html#requiredProjectInformation:org.opalj.br.analyses.ProjectInformationKeys" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">requiredProjectInformation</span><span class="result">: <a href="../analyses/index.html#ProjectInformationKeys=Seq[org.opalj.br.analyses.ProjectInformationKey[_&lt;:AnyRef,_&lt;:AnyRef]]" class="extmbr" name="org.opalj.br.analyses.ProjectInformationKeys">ProjectInformationKeys</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Returns all <a href="../analyses/ProjectInformationKey.html" class="extype" name="org.opalj.br.analyses.ProjectInformationKey">org.opalj.br.analyses.ProjectInformationKey</a>s required by the analyses.</p><div class="fullcomment"><div class="comment cmt"><p>Returns all <a href="../analyses/ProjectInformationKey.html" class="extype" name="org.opalj.br.analyses.ProjectInformationKey">org.opalj.br.analyses.ProjectInformationKey</a>s required by the analyses.</p><p>This information is in particular required by keys which - when the key is computed - make use of
-other keys which are not statically known at compile time. If a single key that is (transitively)
-used is not correctly listed, a deadlock will _always_ occur.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a></dd></dl></div>
     </li><li name="org.opalj.br.fpcf.FPCFTriggeredAnalysisScheduler#schedule" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="schedule(ps:org.opalj.fpcf.PropertyStore,i:FPCFTriggeredAnalysisScheduler.this.InitializationData):org.opalj.br.fpcf.FPCFAnalysis"></a><a id="schedule(PropertyStore,InitializationData):FPCFAnalysis"></a>
       <span class="permalink">
@@ -1143,7 +1143,7 @@ used is not correctly listed, a deadlock will _always_ occur.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1154,9 +1154,7 @@ used is not correctly listed, a deadlock will _always_ occur.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

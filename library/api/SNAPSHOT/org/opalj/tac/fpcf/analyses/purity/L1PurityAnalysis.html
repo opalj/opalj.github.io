@@ -288,7 +288,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>An inter-procedural analysis to determine a method's purity.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/purity/L1PurityAnalysis.scala?at=develop" target="_blank">L1PurityAnalysis.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This analysis is sound only up to the usual standards, i.e. it does not cope with
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/purity/L1PurityAnalysis.scala" target="_blank">L1PurityAnalysis.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This analysis is sound only up to the usual standards, i.e. it does not cope with
       VirtualMachineErrors and may be unsound in the presence of native code, reflection or
       <code>sun.misc.Unsafe</code>. Calls to native methods are generally handled soundly as they are
       considered <a href="../../../../br/fpcf/properties/ImpureByAnalysis$.html" class="extype" name="org.opalj.br.fpcf.properties.ImpureByAnalysis">org.opalj.br.fpcf.properties.ImpureByAnalysis</a>. There are no soundness
@@ -766,7 +766,7 @@ purity.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.purity.AbstractPurityAnalysis#configuredPurity" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -901,9 +901,9 @@ Dependees may be</p><ul><li>methods called (for their purity)</li><li>fields rea
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.purity.AbstractPurityAnalysis#getCall" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getCall(stmt:org.opalj.tac.Stmt[AbstractPurityAnalysis.this.V])(implicitstate:AbstractPurityAnalysis.this.StateType):org.opalj.tac.Call[AbstractPurityAnalysis.this.V]"></a><a id="getCall(Stmt[V])(StateType):Call[V]"></a>
+      <a id="getCall(stmt:org.opalj.tac.Stmt[AbstractPurityAnalysis.this.V]):org.opalj.tac.Call[AbstractPurityAnalysis.this.V]"></a><a id="getCall(Stmt[V]):Call[V]"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/purity/L1PurityAnalysis.html#getCall(stmt:org.opalj.tac.Stmt[AbstractPurityAnalysis.this.V])(implicitstate:AbstractPurityAnalysis.this.StateType):org.opalj.tac.Call[AbstractPurityAnalysis.this.V]" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/purity/L1PurityAnalysis.html#getCall(stmt:org.opalj.tac.Stmt[AbstractPurityAnalysis.this.V]):org.opalj.tac.Call[AbstractPurityAnalysis.this.V]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -912,7 +912,7 @@ Dependees may be</p><ul><li>methods called (for their purity)</li><li>fields rea
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getCall</span><span class="params">(<span name="stmt">stmt: <a href="../../../Stmt.html" class="extype" name="org.opalj.tac.Stmt">Stmt</a>[<a href="#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.purity.L1PurityAnalysis.V">V</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#StateType=L1PurityAnalysis.this.State" class="extmbr" name="org.opalj.tac.fpcf.analyses.purity.L1PurityAnalysis.StateType">StateType</a></span>)</span><span class="result">: <a href="../../../Call.html" class="extype" name="org.opalj.tac.Call">Call</a>[<a href="#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.purity.L1PurityAnalysis.V">V</a>]</span>
+        <span class="name">getCall</span><span class="params">(<span name="stmt">stmt: <a href="../../../Stmt.html" class="extype" name="org.opalj.tac.Stmt">Stmt</a>[<a href="#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.purity.L1PurityAnalysis.V">V</a>]</span>)</span><span class="result">: <a href="../../../Call.html" class="extype" name="org.opalj.tac.Call">Call</a>[<a href="#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.purity.L1PurityAnalysis.V">V</a>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractPurityAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.purity.AbstractPurityAnalysis">AbstractPurityAnalysis</a></dd></dl></div>
@@ -934,7 +934,7 @@ Dependees may be</p><ul><li>methods called (for their purity)</li><li>fields rea
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.purity.AbstractPurityAnalysis#getTACAI" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1044,7 +1044,7 @@ not known yet.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.purity.AbstractPurityAnalysis#isDomainSpecificCall" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1175,7 +1175,7 @@ whether it may be an immediate exception or not.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1196,7 +1196,7 @@ whether it may be an immediate exception or not.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectBasedAnalysis#p" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1448,7 +1448,7 @@ whether it may be an immediate exception or not.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1459,9 +1459,7 @@ whether it may be an immediate exception or not.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

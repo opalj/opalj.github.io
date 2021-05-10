@@ -239,8 +239,8 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                         <a href="PointsToBasedThreadRelatedCallsAnalysis.html" title="This analysis handles implicit method invocations related to the java.lang.Thread API.">PointsToBasedThreadRelatedCallsAnalysis</a>
                       </li><li class="current-entities indented7">
                         <span class="separator"></span>
-                        <a class="trait" href="" title=""></a>
-                        <a href="" title="">PointsToBasedThreadStartAnalysis</a>
+                        <a class="trait" href="" title="On calls to Thread.start(), it adds calls to the corresponding run method."></a>
+                        <a href="" title="On calls to Thread.start(), it adds calls to the corresponding run method.">PointsToBasedThreadStartAnalysis</a>
                       </li><li class="current-entities indented7">
                         <span class="separator"></span>
                         <a class="class" href="TypeBasedPointsToBasedCallGraphAnalysis.html" title=""></a>
@@ -284,16 +284,18 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">PointsToBasedThreadStartAnalysis</span><span class="result"> extends <a href="../../APIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis">APIBasedAnalysis</a> with <a href="../../pointsto/AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></span>
+        <span class="name">PointsToBasedThreadStartAnalysis</span><span class="result"> extends <a href="../../TACAIBasedAPIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIBasedAPIBasedAnalysis">TACAIBasedAPIBasedAnalysis</a> with <a href="../../pointsto/AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/cg/pointsto/PointsToBasedThreadRelatedCallsAnalysisScheduler.scala?at=develop" target="_blank">PointsToBasedThreadRelatedCallsAnalysisScheduler.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>On calls to Thread.start(), it adds calls to the corresponding run method.
+The run method is determined using points-to information.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/cg/pointsto/PointsToBasedThreadRelatedCallsAnalysisScheduler.scala" target="_blank">PointsToBasedThreadRelatedCallsAnalysisScheduler.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="../../pointsto/AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a>, <a href="../../APIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis">APIBasedAnalysis</a>, <a href="../../../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a>, <a href="../../../../../br/analyses/ProjectBasedAnalysis.html" class="extype" name="org.opalj.br.analyses.ProjectBasedAnalysis">ProjectBasedAnalysis</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../../pointsto/AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a>, <a href="../../TACAIBasedAPIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIBasedAPIBasedAnalysis">TACAIBasedAPIBasedAnalysis</a>, <a href="../../APIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis">APIBasedAnalysis</a>, <a href="../../../../../br/fpcf/FPCFAnalysis.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysis">FPCFAnalysis</a>, <a href="../../../../../br/analyses/ProjectBasedAnalysis.html" class="extype" name="org.opalj.br.analyses.ProjectBasedAnalysis">ProjectBasedAnalysis</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">
               Known Subclasses
@@ -324,7 +326,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis"><span>PointsToBasedThreadStartAnalysis</span></li><li class="in" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis"><span>AbstractPointsToBasedAnalysis</span></li><li class="in" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis"><span>APIBasedAnalysis</span></li><li class="in" name="org.opalj.br.fpcf.FPCFAnalysis"><span>FPCFAnalysis</span></li><li class="in" name="org.opalj.br.analyses.ProjectBasedAnalysis"><span>ProjectBasedAnalysis</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis"><span>PointsToBasedThreadStartAnalysis</span></li><li class="in" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis"><span>AbstractPointsToBasedAnalysis</span></li><li class="in" name="org.opalj.tac.fpcf.analyses.TACAIBasedAPIBasedAnalysis"><span>TACAIBasedAPIBasedAnalysis</span></li><li class="in" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis"><span>APIBasedAnalysis</span></li><li class="in" name="org.opalj.br.fpcf.FPCFAnalysis"><span>FPCFAnalysis</span></li><li class="in" name="org.opalj.br.analyses.ProjectBasedAnalysis"><span>ProjectBasedAnalysis</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -347,9 +349,9 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <div id="types" class="types members">
               <h3>Type Members</h3>
               <ol><li name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.DependerType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="DependerType=org.opalj.tac.fpcf.analyses.cg.CallSiteT"></a><a id="DependerType:DependerType"></a>
+      <a id="DependerType=org.opalj.tac.fpcf.analyses.CallSite"></a><a id="DependerType:DependerType"></a>
       <span class="permalink">
-      <a href="../../../../../../../org/opalj/tac/fpcf/analyses/cg/pointsto/PointsToBasedThreadStartAnalysis.html#DependerType=org.opalj.tac.fpcf.analyses.cg.CallSiteT" title="Permalink">
+      <a href="../../../../../../../org/opalj/tac/fpcf/analyses/cg/pointsto/PointsToBasedThreadStartAnalysis.html#DependerType=org.opalj.tac.fpcf.analyses.CallSite" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -358,7 +360,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">DependerType</span><span class="result alias"> = (<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>, <a href="../../../../../br/MethodDescriptor.html" class="extype" name="org.opalj.br.MethodDescriptor">MethodDescriptor</a>, <a href="../../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>)</span>
+        <span class="name">DependerType</span><span class="result alias"> = <a href="../../CallSite.html" class="extype" name="org.opalj.tac.fpcf.analyses.CallSite">CallSite</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis">PointsToBasedThreadStartAnalysis</a> → <a href="../../pointsto/AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd></dl></div>
@@ -668,13 +670,13 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis#currentPointsTo" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="currentPointsTo(depender:org.opalj.tac.fpcf.analyses.cg.CallSiteT,dependee:org.opalj.fpcf.Entity,typeFilter:org.opalj.br.ReferenceType=&gt;Boolean)(implicitstate:PointsToBasedThreadStartAnalysis.this.State):PointsToBasedThreadStartAnalysis.this.PointsToSet"></a><a id="currentPointsTo(CallSiteT,Entity,(ReferenceType)⇒Boolean)(State):PointsToSet"></a>
+      <a id="currentPointsTo(depender:org.opalj.tac.fpcf.analyses.CallSite,dependee:org.opalj.fpcf.Entity,typeFilter:org.opalj.br.ReferenceType=&gt;Boolean)(implicitstate:PointsToBasedThreadStartAnalysis.this.State):PointsToBasedThreadStartAnalysis.this.PointsToSet"></a><a id="currentPointsTo(CallSite,Entity,(ReferenceType)⇒Boolean)(State):PointsToSet"></a>
       <span class="permalink">
-      <a href="../../../../../../../org/opalj/tac/fpcf/analyses/cg/pointsto/PointsToBasedThreadStartAnalysis.html#currentPointsTo(depender:org.opalj.tac.fpcf.analyses.cg.CallSiteT,dependee:org.opalj.fpcf.Entity,typeFilter:org.opalj.br.ReferenceType=&gt;Boolean)(implicitstate:PointsToBasedThreadStartAnalysis.this.State):PointsToBasedThreadStartAnalysis.this.PointsToSet" title="Permalink">
+      <a href="../../../../../../../org/opalj/tac/fpcf/analyses/cg/pointsto/PointsToBasedThreadStartAnalysis.html#currentPointsTo(depender:org.opalj.tac.fpcf.analyses.CallSite,dependee:org.opalj.fpcf.Entity,typeFilter:org.opalj.br.ReferenceType=&gt;Boolean)(implicitstate:PointsToBasedThreadStartAnalysis.this.State):PointsToBasedThreadStartAnalysis.this.PointsToSet" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -683,7 +685,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">currentPointsTo</span><span class="params">(<span name="depender">depender: <a href="../index.html#CallSiteT=(Int,String,org.opalj.br.MethodDescriptor,org.opalj.br.ReferenceType)" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.CallSiteT">CallSiteT</a></span>, <span name="dependee">dependee: <a href="../../../../../fpcf/index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="typeFilter">typeFilter: (<a href="../../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol"><span class="name"><a href="../../../../../../index.html">PointsToSetLike.noFilter</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedCGState[PointsToBasedThreadStartAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.State">State</a></span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.PointsToSet">PointsToSet</a></span>
+        <span class="name">currentPointsTo</span><span class="params">(<span name="depender">depender: <a href="../../CallSite.html" class="extype" name="org.opalj.tac.fpcf.analyses.CallSite">CallSite</a></span>, <span name="dependee">dependee: <a href="../../../../../fpcf/index.html#Entity=AnyRef" class="extmbr" name="org.opalj.fpcf.Entity">Entity</a></span>, <span name="typeFilter">typeFilter: (<a href="../../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol"><span class="name"><a href="../../../../../../index.html">PointsToSetLike.noFilter</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedCGState[PointsToBasedThreadStartAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.State">State</a></span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.PointsToSet">PointsToSet</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis">PointsToBasedThreadStartAnalysis</a> → <a href="../../pointsto/AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd><dt>Annotations</dt><dd>
@@ -702,7 +704,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">currentPointsToOfDefSite</span><span class="params">(<span name="depender">depender: <a href="#DependerType=org.opalj.tac.fpcf.analyses.cg.CallSiteT" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.DependerType">DependerType</a></span>, <span name="dependeeDefSite">dependeeDefSite: <span class="extype" name="scala.Int">Int</span></span>, <span name="typeFilter">typeFilter: (<a href="../../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol"><span class="name"><a href="../../../../../../index.html">PointsToSetLike.noFilter</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedCGState[PointsToBasedThreadStartAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.State">State</a></span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.PointsToSet">PointsToSet</a></span>
+        <span class="name">currentPointsToOfDefSite</span><span class="params">(<span name="depender">depender: <a href="#DependerType=org.opalj.tac.fpcf.analyses.CallSite" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.DependerType">DependerType</a></span>, <span name="dependeeDefSite">dependeeDefSite: <span class="extype" name="scala.Int">Int</span></span>, <span name="typeFilter">typeFilter: (<a href="../../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol"><span class="name"><a href="../../../../../../index.html">PointsToSetLike.noFilter</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedCGState[PointsToBasedThreadStartAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.State">State</a></span>)</span><span class="result">: <a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.PointsToSet">PointsToSet</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../../pointsto/AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd><dt>Annotations</dt><dd>
@@ -721,7 +723,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">currentPointsToOfDefSites</span><span class="params">(<span name="depender">depender: <a href="#DependerType=org.opalj.tac.fpcf.analyses.cg.CallSiteT" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.DependerType">DependerType</a></span>, <span name="defSites">defSites: <a href="../../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="typeFilter">typeFilter: (<a href="../../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol"><span class="name"><a href="../../../../../../index.html">PointsToSetLike.noFilter</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedCGState[PointsToBasedThreadStartAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.PointsToSet">PointsToSet</a>]</span>
+        <span class="name">currentPointsToOfDefSites</span><span class="params">(<span name="depender">depender: <a href="#DependerType=org.opalj.tac.fpcf.analyses.CallSite" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.DependerType">DependerType</a></span>, <span name="defSites">defSites: <a href="../../../../../collection/immutable/IntTrieSet.html" class="extype" name="org.opalj.collection.immutable.IntTrieSet">IntTrieSet</a></span>, <span name="typeFilter">typeFilter: (<a href="../../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol"><span class="name"><a href="../../../../../../index.html">PointsToSetLike.noFilter</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="#State=org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedCGState[PointsToBasedThreadStartAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<a href="#PointsToSet&gt;:Null&lt;:org.opalj.br.fpcf.properties.pointsto.PointsToSetLike[AbstractPointsToBasedAnalysis.this.ElementType,_,AbstractPointsToBasedAnalysis.this.PointsToSet]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis.PointsToSet">PointsToSet</a>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../../pointsto/AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></dd><dt>Annotations</dt><dd>
@@ -826,10 +828,10 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis#handleNewCaller" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="org.opalj.tac.fpcf.analyses.TACAIBasedAPIBasedAnalysis#handleNewCaller" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="handleNewCaller(caller:org.opalj.br.DefinedMethod,pc:Int,isDirect:Boolean):org.opalj.fpcf.ProperPropertyComputationResult"></a><a id="handleNewCaller(DefinedMethod,Int,Boolean):ProperPropertyComputationResult"></a>
       <span class="permalink">
       <a href="../../../../../../../org/opalj/tac/fpcf/analyses/cg/pointsto/PointsToBasedThreadStartAnalysis.html#handleNewCaller(caller:org.opalj.br.DefinedMethod,pc:Int,isDirect:Boolean):org.opalj.fpcf.ProperPropertyComputationResult" title="Permalink">
@@ -837,14 +839,14 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier"></span>
+        <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">handleNewCaller</span><span class="params">(<span name="caller">caller: <a href="../../../../../br/DefinedMethod.html" class="extype" name="org.opalj.br.DefinedMethod">DefinedMethod</a></span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="isDirect">isDirect: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="../../../../../fpcf/ProperPropertyComputationResult.html" class="extype" name="org.opalj.fpcf.ProperPropertyComputationResult">ProperPropertyComputationResult</a></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis">PointsToBasedThreadStartAnalysis</a> → <a href="../../APIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis">APIBasedAnalysis</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../TACAIBasedAPIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIBasedAPIBasedAnalysis">TACAIBasedAPIBasedAnalysis</a> → <a href="../../APIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis">APIBasedAnalysis</a></dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <span class="permalink">
@@ -863,7 +865,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -932,7 +934,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -953,7 +955,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectBasedAnalysis#p" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -991,6 +993,22 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                 <span class="name">@inline</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis#processNewCaller" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="processNewCaller(caller:org.opalj.br.DefinedMethod,pc:Int,tac:org.opalj.tac.TACode[org.opalj.tac.TACMethodParameter,org.opalj.tac.fpcf.analyses.cg.V],receiverOption:Option[org.opalj.tac.Expr[org.opalj.tac.fpcf.analyses.cg.V]],params:Seq[Option[org.opalj.tac.Expr[org.opalj.tac.fpcf.analyses.cg.V]]],targetVarOption:Option[org.opalj.tac.fpcf.analyses.cg.V],isDirect:Boolean):org.opalj.fpcf.ProperPropertyComputationResult"></a><a id="processNewCaller(DefinedMethod,Int,TACode[TACMethodParameter,V],Option[Expr[V]],Seq[Option[Expr[V]]],Option[V],Boolean):ProperPropertyComputationResult"></a>
+      <span class="permalink">
+      <a href="../../../../../../../org/opalj/tac/fpcf/analyses/cg/pointsto/PointsToBasedThreadStartAnalysis.html#processNewCaller(caller:org.opalj.br.DefinedMethod,pc:Int,tac:org.opalj.tac.TACode[org.opalj.tac.TACMethodParameter,org.opalj.tac.fpcf.analyses.cg.V],receiverOption:Option[org.opalj.tac.Expr[org.opalj.tac.fpcf.analyses.cg.V]],params:Seq[Option[org.opalj.tac.Expr[org.opalj.tac.fpcf.analyses.cg.V]]],targetVarOption:Option[org.opalj.tac.fpcf.analyses.cg.V],isDirect:Boolean):org.opalj.fpcf.ProperPropertyComputationResult" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">processNewCaller</span><span class="params">(<span name="caller">caller: <a href="../../../../../br/DefinedMethod.html" class="extype" name="org.opalj.br.DefinedMethod">DefinedMethod</a></span>, <span name="pc">pc: <span class="extype" name="scala.Int">Int</span></span>, <span name="tac">tac: <a href="../../../../TACode.html" class="extype" name="org.opalj.tac.TACode">TACode</a>[<a href="../../../../TACMethodParameter.html" class="extype" name="org.opalj.tac.TACMethodParameter">TACMethodParameter</a>, <a href="../index.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.V">V</a>]</span>, <span name="receiverOption">receiverOption: <span class="extype" name="scala.Option">Option</span>[<a href="../../../../Expr.html" class="extype" name="org.opalj.tac.Expr">Expr</a>[<a href="../index.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.V">V</a>]]</span>, <span name="params">params: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Option">Option</span>[<a href="../../../../Expr.html" class="extype" name="org.opalj.tac.Expr">Expr</a>[<a href="../index.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.V">V</a>]]]</span>, <span name="targetVarOption">targetVarOption: <span class="extype" name="scala.Option">Option</span>[<a href="../index.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.V">V</a>]</span>, <span name="isDirect">isDirect: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="../../../../../fpcf/ProperPropertyComputationResult.html" class="extype" name="org.opalj.fpcf.ProperPropertyComputationResult">ProperPropertyComputationResult</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.fpcf.analyses.cg.pointsto.PointsToBasedThreadStartAnalysis">PointsToBasedThreadStartAnalysis</a> → <a href="../../TACAIBasedAPIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIBasedAPIBasedAnalysis">TACAIBasedAPIBasedAnalysis</a></dd></dl></div>
     </li><li name="org.opalj.br.fpcf.FPCFAnalysis#propertyStore" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="propertyStore:org.opalj.fpcf.PropertyStore"></a><a id="propertyStore:PropertyStore"></a>
       <span class="permalink">
@@ -1194,7 +1212,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1205,9 +1223,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>
@@ -1215,6 +1231,8 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
         <div id="inheritedMembers">
         <div class="parent" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">
               <h3>Inherited from <a href="../../pointsto/AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></h3>
+            </div><div class="parent" name="org.opalj.tac.fpcf.analyses.TACAIBasedAPIBasedAnalysis">
+              <h3>Inherited from <a href="../../TACAIBasedAPIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIBasedAPIBasedAnalysis">TACAIBasedAPIBasedAnalysis</a></h3>
             </div><div class="parent" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis">
               <h3>Inherited from <a href="../../APIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.APIBasedAnalysis">APIBasedAnalysis</a></h3>
             </div><div class="parent" name="org.opalj.br.fpcf.FPCFAnalysis">

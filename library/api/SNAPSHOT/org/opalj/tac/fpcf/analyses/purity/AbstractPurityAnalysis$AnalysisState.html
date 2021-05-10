@@ -248,7 +248,7 @@ ubPurity - The current maximum purity level for the method
 method - The currently analyzed method
 declClass - The declaring class of the currently analyzed method
 code - The code of the currently analyzed method
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/purity/AbstractPurityAnalysis.scala?at=develop" target="_blank">AbstractPurityAnalysis.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/purity/AbstractPurityAnalysis.scala" target="_blank">AbstractPurityAnalysis.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -307,23 +307,7 @@ code - The code of the currently analyzed method
 
         <div class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="org.opalj.tac.fpcf.analyses.purity.AbstractPurityAnalysis.AnalysisState#code" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="code:Array[org.opalj.tac.Stmt[AbstractPurityAnalysis.this.V]]"></a><a id="code:Array[Stmt[V]]"></a>
-      <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/purity/AbstractPurityAnalysis$AnalysisState.html#code:Array[org.opalj.tac.Stmt[AbstractPurityAnalysis.this.V]]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">code</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<a href="../../../Stmt.html" class="extype" name="org.opalj.tac.Stmt">Stmt</a>[<a href="AbstractPurityAnalysis.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.purity.AbstractPurityAnalysis.V">V</a>]]</span>
-      </span>
-      
-      
-    </li><li name="org.opalj.tac.fpcf.analyses.purity.AbstractPurityAnalysis.AnalysisState#declClass" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="org.opalj.tac.fpcf.analyses.purity.AbstractPurityAnalysis.AnalysisState#declClass" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="declClass:org.opalj.br.ObjectType"></a><a id="declClass:ObjectType"></a>
       <span class="permalink">
       <a href="../../../../../../org/opalj/tac/fpcf/analyses/purity/AbstractPurityAnalysis$AnalysisState.html#declClass:org.opalj.br.ObjectType" title="Permalink">
@@ -387,10 +371,10 @@ code - The code of the currently analyzed method
       </span>
       
       
-    </li><li name="org.opalj.tac.fpcf.analyses.purity.AbstractPurityAnalysis.AnalysisState#pcToIndex" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="pcToIndex:Array[Int]"></a>
+    </li><li name="org.opalj.tac.fpcf.analyses.purity.AbstractPurityAnalysis.AnalysisState#tac" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="tac:org.opalj.tac.TACode[org.opalj.tac.TACMethodParameter,AbstractPurityAnalysis.this.V]"></a><a id="tac:TACode[TACMethodParameter,V]"></a>
       <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/purity/AbstractPurityAnalysis$AnalysisState.html#pcToIndex:Array[Int]" title="Permalink">
+      <a href="../../../../../../org/opalj/tac/fpcf/analyses/purity/AbstractPurityAnalysis$AnalysisState.html#tac:org.opalj.tac.TACode[org.opalj.tac.TACMethodParameter,AbstractPurityAnalysis.this.V]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -399,7 +383,7 @@ code - The code of the currently analyzed method
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">pcToIndex</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>
+        <span class="name">tac</span><span class="result">: <a href="../../../TACode.html" class="extype" name="org.opalj.tac.TACode">TACode</a>[<a href="../../../TACMethodParameter.html" class="extype" name="org.opalj.tac.TACMethodParameter">TACMethodParameter</a>, <a href="AbstractPurityAnalysis.html#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.purity.AbstractPurityAnalysis.V">V</a>]</span>
       </span>
       
       
@@ -512,7 +496,7 @@ code - The code of the currently analyzed method
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -565,7 +549,7 @@ code - The code of the currently analyzed method
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -586,7 +570,7 @@ code - The code of the currently analyzed method
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -639,7 +623,7 @@ code - The code of the currently analyzed method
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -660,7 +644,7 @@ code - The code of the currently analyzed method
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -783,7 +767,7 @@ code - The code of the currently analyzed method
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -794,9 +778,7 @@ code - The code of the currently analyzed method
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

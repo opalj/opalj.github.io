@@ -296,7 +296,7 @@ class type is (initially) set to <code>java.lang.Object</code> as required by th
         in the table. Furthermore, it is possible to use negative numbers to ensure that a
         (custom) handler has precedence over all <i>handlers</i> found in the initial code;
         the initial handlers will have ids in the range [0...(number of exception handler)).</p></dd><dt class="param">handlerType</dt><dd class="cmt"><p>The type of the handled exception or <code>None</code> if all exceptions are handled
-        (finally handler).</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/ba/src/main/scala/org/opalj/ba/ExceptionHandlerElement.scala?at=develop" target="_blank">ExceptionHandlerElement.scala</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="ExceptionHandlerElement.html" class="extype" name="org.opalj.ba.ExceptionHandlerElement">ExceptionHandlerElement</a></p></span></dd></dl><div class="toggleContainer block">
+        (finally handler).</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ba/src/main/scala/org/opalj/ba/ExceptionHandlerElement.scala" target="_blank">ExceptionHandlerElement.scala</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="ExceptionHandlerElement.html" class="extype" name="org.opalj.ba.ExceptionHandlerElement">ExceptionHandlerElement</a></p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -499,7 +499,7 @@ class type is (initially) set to <code>java.lang.Object</code> as required by th
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -536,7 +536,7 @@ class type is (initially) set to <code>java.lang.Object</code> as required by th
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.ba.CATCH#handlerType" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -733,7 +733,7 @@ class type is (initially) set to <code>java.lang.Object</code> as required by th
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -754,7 +754,7 @@ class type is (initially) set to <code>java.lang.Object</code> as required by th
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.ba.CATCH#position" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -877,7 +877,7 @@ class type is (initially) set to <code>java.lang.Object</code> as required by th
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -888,9 +888,7 @@ class type is (initially) set to <code>java.lang.Object</code> as required by th
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

@@ -499,7 +499,7 @@ domains that are used to adapt/transfer values should be thread safe
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Provides information about the underlying project.</p><h4>Usage</h4><p>If a (partial-) domain needs information about the project declare a corresponding
 self-type dependency.</p><pre><span class="kw">trait</span> MyIntegerValuesDomain <span class="kw">extends</span> IntegerValues { <span class="kw">this</span> : TheProject <span class="kw">=&gt;</span></pre><h4>Providing Information about a Project</h4><p>A domain that provides information about the currently analyzed project should inherit
 from this trait and implement the respective method.</p><h4>Core Properties</h4><ul><li>Defines the public interface.</li><li>Makes the analyzed <a href="../../br/analyses/Project.html" class="extype" name="org.opalj.br.analyses.Project">org.opalj.br.analyses.Project</a> available.</li><li>Thread safe.
-</li></ul></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/ai/src/main/scala/org/opalj/ai/domain/TheProject.scala?at=develop" target="_blank">TheProject.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p><b>It is recommended that the domain that provides the project information
+</li></ul></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ai/src/main/scala/org/opalj/ai/domain/TheProject.scala" target="_blank">TheProject.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p><b>It is recommended that the domain that provides the project information
      does not use the <code>override</code> access flag.</b>
      This way the compiler will issue a warning if two implementations are used
      to create a final domain.</p></span></dd></dl><div class="toggleContainer block">
@@ -690,7 +690,7 @@ from this trait and implement the respective method.</p><h4>Core Properties</h4>
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -743,7 +743,7 @@ from this trait and implement the respective method.</p><h4>Core Properties</h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -764,7 +764,7 @@ from this trait and implement the respective method.</p><h4>Core Properties</h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -833,7 +833,7 @@ from this trait and implement the respective method.</p><h4>Core Properties</h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -854,7 +854,7 @@ from this trait and implement the respective method.</p><h4>Core Properties</h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.ai.domain.TheProject#propertyStore" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -993,7 +993,7 @@ from this trait and implement the respective method.</p><h4>Core Properties</h4>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1004,9 +1004,7 @@ from this trait and implement the respective method.</p><h4>Core Properties</h4>
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

@@ -521,7 +521,7 @@ about the return types of methods, which however may depend on the refined field
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The fallback is used, because the property was queried/is required, but the property was
 not computed for the specific entity though an analysis is scheduled/executed.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/si/src/main/scala/org/opalj/fpcf/FallbackReason.scala?at=develop" target="_blank">FallbackReason.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This may happen for properties associated with dead code/code that is no used by the
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/si/src/main/scala/org/opalj/fpcf/FallbackReason.scala" target="_blank">FallbackReason.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This may happen for properties associated with dead code/code that is no used by the
       current project. E.g., the callers property of an unused library method is most
       likely not computed. If it is queried, then this is the Property that should be returned.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
@@ -667,7 +667,7 @@ not computed for the specific entity though an analysis is scheduled/executed.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -720,7 +720,7 @@ not computed for the specific entity though an analysis is scheduled/executed.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -773,7 +773,7 @@ not computed for the specific entity though an analysis is scheduled/executed.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -794,7 +794,7 @@ not computed for the specific entity though an analysis is scheduled/executed.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.fpcf.PropertyIsNotDerivedByPreviouslyExecutedAnalysis#propertyIsNotComputedByAnyAnalysis" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -933,7 +933,7 @@ not computed for the specific entity though an analysis is scheduled/executed.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -944,9 +944,7 @@ not computed for the specific entity though an analysis is scheduled/executed.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

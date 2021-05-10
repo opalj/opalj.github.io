@@ -255,6 +255,10 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                         <a href="AbstractIFDSNullFact.html" title="The super type of all null facts.">AbstractIFDSNullFact</a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
+                        <a class="class" href="CallSite.html" title=""></a>
+                        <a href="CallSite.html" title="">CallSite</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
                         <a class="class" href="DefinitionSiteWithoutPutField.html" title="Represents a definition site of an object that is stored into a field (that is being analyzed for locality) where the field write use-site is removed from the set of use-sites."></a>
                         <a href="DefinitionSiteWithoutPutField.html" title="Represents a definition site of an object that is stored into a field (that is being analyzed for locality) where the field write use-site is removed from the set of use-sites.">DefinitionSiteWithoutPutField</a>
                       </li><li class="current-entities indented5">
@@ -407,7 +411,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Simple analysis that checks if a private (static or instance) field is always initialized at
 most once or if a field is or can be mutated after (lazy) initialization.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/L2FieldMutabilityAnalysis.scala?at=develop" target="_blank">L2FieldMutabilityAnalysis.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>Requires that the 3-address code's expressions are not deeply nested.</p></span></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/L2FieldMutabilityAnalysis.scala" target="_blank">L2FieldMutabilityAnalysis.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>Requires that the 3-address code's expressions are not deeply nested.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -631,9 +635,9 @@ the written value (possibly loaded by another field read).</p>
       <p class="shortcomment cmt">Checks that a field read is only executed if the field did not have its default value or
 after the (single) field write.</p>
     </li><li name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis#checkReads" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="checkReads(reads:Seq[(org.opalj.br.Method,org.opalj.br.PCs)],readIndex:Int,guardedIndex:Int,writeIndex:Int,cfg:org.opalj.br.cfg.CFG[org.opalj.tac.Stmt[L2FieldMutabilityAnalysis.this.V],org.opalj.tac.TACStmts[L2FieldMutabilityAnalysis.this.V]],pcToIndex:Array[Int]):Boolean"></a><a id="checkReads(Seq[(Method,PCs)],Int,Int,Int,CFG[Stmt[V],TACStmts[V]],Array[Int]):Boolean"></a>
+      <a id="checkReads(reads:Seq[(org.opalj.br.Method,org.opalj.br.PCs)],readIndex:Int,guardedIndex:Int,writeIndex:Int,tac:org.opalj.tac.TACode[org.opalj.tac.TACMethodParameter,L2FieldMutabilityAnalysis.this.V]):Boolean"></a><a id="checkReads(Seq[(Method,PCs)],Int,Int,Int,TACode[TACMethodParameter,V]):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../../org/opalj/tac/fpcf/analyses/L2FieldMutabilityAnalysis.html#checkReads(reads:Seq[(org.opalj.br.Method,org.opalj.br.PCs)],readIndex:Int,guardedIndex:Int,writeIndex:Int,cfg:org.opalj.br.cfg.CFG[org.opalj.tac.Stmt[L2FieldMutabilityAnalysis.this.V],org.opalj.tac.TACStmts[L2FieldMutabilityAnalysis.this.V]],pcToIndex:Array[Int]):Boolean" title="Permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/L2FieldMutabilityAnalysis.html#checkReads(reads:Seq[(org.opalj.br.Method,org.opalj.br.PCs)],readIndex:Int,guardedIndex:Int,writeIndex:Int,tac:org.opalj.tac.TACode[org.opalj.tac.TACMethodParameter,L2FieldMutabilityAnalysis.this.V]):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -642,7 +646,7 @@ after the (single) field write.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">checkReads</span><span class="params">(<span name="reads">reads: <span class="extype" name="scala.Seq">Seq</span>[(<a href="../../../br/Method.html" class="extype" name="org.opalj.br.Method">Method</a>, <a href="../../../br/index.html#PCs=org.opalj.collection.immutable.IntTrieSet" class="extmbr" name="org.opalj.br.PCs">PCs</a>)]</span>, <span name="readIndex">readIndex: <span class="extype" name="scala.Int">Int</span></span>, <span name="guardedIndex">guardedIndex: <span class="extype" name="scala.Int">Int</span></span>, <span name="writeIndex">writeIndex: <span class="extype" name="scala.Int">Int</span></span>, <span name="cfg">cfg: <a href="../../../br/cfg/CFG.html" class="extype" name="org.opalj.br.cfg.CFG">CFG</a>[<a href="../../Stmt.html" class="extype" name="org.opalj.tac.Stmt">Stmt</a>[<a href="#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis.V">V</a>], <a href="../../TACStmts.html" class="extype" name="org.opalj.tac.TACStmts">TACStmts</a>[<a href="#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis.V">V</a>]]</span>, <span name="pcToIndex">pcToIndex: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">checkReads</span><span class="params">(<span name="reads">reads: <span class="extype" name="scala.Seq">Seq</span>[(<a href="../../../br/Method.html" class="extype" name="org.opalj.br.Method">Method</a>, <a href="../../../br/index.html#PCs=org.opalj.collection.immutable.IntTrieSet" class="extmbr" name="org.opalj.br.PCs">PCs</a>)]</span>, <span name="readIndex">readIndex: <span class="extype" name="scala.Int">Int</span></span>, <span name="guardedIndex">guardedIndex: <span class="extype" name="scala.Int">Int</span></span>, <span name="writeIndex">writeIndex: <span class="extype" name="scala.Int">Int</span></span>, <span name="tac">tac: <a href="../../TACode.html" class="extype" name="org.opalj.tac.TACode">TACode</a>[<a href="../../TACMethodParameter.html" class="extype" name="org.opalj.tac.TACMethodParameter">TACMethodParameter</a>, <a href="#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis.V">V</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       
       <p class="shortcomment cmt">Checks that all non-dead field reads that are not used for the guarding if-Statement of a
@@ -742,7 +746,7 @@ and the field write.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis#closedPackages" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -910,7 +914,7 @@ field read used for the guard.</p>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis#getDefaultValue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -1028,7 +1032,7 @@ values.</p>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis#isFinalField" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -1083,9 +1087,9 @@ the current field to the default value.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis#isLazyInitialization" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isLazyInitialization(writeIndex:Int,defaultValue:Any,method:org.opalj.br.Method,code:Array[org.opalj.tac.Stmt[L2FieldMutabilityAnalysis.this.V]],cfg:org.opalj.br.cfg.CFG[org.opalj.tac.Stmt[L2FieldMutabilityAnalysis.this.V],org.opalj.tac.TACStmts[L2FieldMutabilityAnalysis.this.V]],pcToIndex:Array[Int])(implicitstate:L2FieldMutabilityAnalysis.this.State):Boolean"></a><a id="isLazyInitialization(Int,Any,Method,Array[Stmt[V]],CFG[Stmt[V],TACStmts[V]],Array[Int])(State):Boolean"></a>
+      <a id="isLazyInitialization(writeIndex:Int,defaultValue:Any,method:org.opalj.br.Method,tac:org.opalj.tac.TACode[org.opalj.tac.TACMethodParameter,L2FieldMutabilityAnalysis.this.V])(implicitstate:L2FieldMutabilityAnalysis.this.State):Boolean"></a><a id="isLazyInitialization(Int,Any,Method,TACode[TACMethodParameter,V])(State):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../../org/opalj/tac/fpcf/analyses/L2FieldMutabilityAnalysis.html#isLazyInitialization(writeIndex:Int,defaultValue:Any,method:org.opalj.br.Method,code:Array[org.opalj.tac.Stmt[L2FieldMutabilityAnalysis.this.V]],cfg:org.opalj.br.cfg.CFG[org.opalj.tac.Stmt[L2FieldMutabilityAnalysis.this.V],org.opalj.tac.TACStmts[L2FieldMutabilityAnalysis.this.V]],pcToIndex:Array[Int])(implicitstate:L2FieldMutabilityAnalysis.this.State):Boolean" title="Permalink">
+      <a href="../../../../../org/opalj/tac/fpcf/analyses/L2FieldMutabilityAnalysis.html#isLazyInitialization(writeIndex:Int,defaultValue:Any,method:org.opalj.br.Method,tac:org.opalj.tac.TACode[org.opalj.tac.TACMethodParameter,L2FieldMutabilityAnalysis.this.V])(implicitstate:L2FieldMutabilityAnalysis.this.State):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1094,7 +1098,7 @@ the current field to the default value.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isLazyInitialization</span><span class="params">(<span name="writeIndex">writeIndex: <span class="extype" name="scala.Int">Int</span></span>, <span name="defaultValue">defaultValue: <span class="extype" name="scala.Any">Any</span></span>, <span name="method">method: <a href="../../../br/Method.html" class="extype" name="org.opalj.br.Method">Method</a></span>, <span name="code">code: <span class="extype" name="scala.Array">Array</span>[<a href="../../Stmt.html" class="extype" name="org.opalj.tac.Stmt">Stmt</a>[<a href="#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis.V">V</a>]]</span>, <span name="cfg">cfg: <a href="../../../br/cfg/CFG.html" class="extype" name="org.opalj.br.cfg.CFG">CFG</a>[<a href="../../Stmt.html" class="extype" name="org.opalj.tac.Stmt">Stmt</a>[<a href="#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis.V">V</a>], <a href="../../TACStmts.html" class="extype" name="org.opalj.tac.TACStmts">TACStmts</a>[<a href="#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis.V">V</a>]]</span>, <span name="pcToIndex">pcToIndex: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="L2FieldMutabilityAnalysis$State.html" class="extype" name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isLazyInitialization</span><span class="params">(<span name="writeIndex">writeIndex: <span class="extype" name="scala.Int">Int</span></span>, <span name="defaultValue">defaultValue: <span class="extype" name="scala.Any">Any</span></span>, <span name="method">method: <a href="../../../br/Method.html" class="extype" name="org.opalj.br.Method">Method</a></span>, <span name="tac">tac: <a href="../../TACode.html" class="extype" name="org.opalj.tac.TACode">TACode</a>[<a href="../../TACMethodParameter.html" class="extype" name="org.opalj.tac.TACMethodParameter">TACMethodParameter</a>, <a href="#V=org.opalj.tac.DUVar[org.opalj.value.ValueInformation]" class="extmbr" name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis.V">V</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="state">state: <a href="L2FieldMutabilityAnalysis$State.html" class="extype" name="org.opalj.tac.fpcf.analyses.L2FieldMutabilityAnalysis.State">State</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       
       <p class="shortcomment cmt">Checks whether a field write may be a lazy initialization.</p><div class="fullcomment"><div class="comment cmt"><p>Checks whether a field write may be a lazy initialization.</p><p>We only consider simple cases of lazy initialization where the single field write is guarded
@@ -1240,7 +1244,7 @@ effectively final and true otherwise.</p>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1261,7 +1265,7 @@ effectively final and true otherwise.</p>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.ProjectBasedAnalysis#p" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1480,7 +1484,7 @@ effectively final and true otherwise.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1491,9 +1495,7 @@ effectively final and true otherwise.</p>
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

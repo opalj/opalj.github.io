@@ -281,6 +281,10 @@ domains that are used to adapt/transfer values should be thread safe
                         <a href="TypeLevelDoubleValues.html" title="This partial Domain performs all computations related to primitive double values at the type level.">TypeLevelDoubleValues</a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
+                        <a class="trait" href="TypeLevelDynamicLoads.html" title="Implements the handling of dynamic ldc/ldc_w/ldc2_w instructions at the type level."></a>
+                        <a href="TypeLevelDynamicLoads.html" title="Implements the handling of dynamic ldc/ldc_w/ldc2_w instructions at the type level.">TypeLevelDynamicLoads</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
                         <a class="trait" href="TypeLevelFieldAccessInstructions.html" title="Implements the handling of field access instructions at the type level."></a>
                         <a href="TypeLevelFieldAccessInstructions.html" title="Implements the handling of field access instructions at the type level.">TypeLevelFieldAccessInstructions</a>
                       </li><li class="current-entities indented5">
@@ -345,7 +349,7 @@ domains that are used to adapt/transfer values should be thread safe
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This partial <code>Domain</code> performs all computations related to primitive float
 values at the type level.</p><p>This domain can be used as a foundation to build more complex domains.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.ai.domain.l0.TypeLevelFloatValues">TypeLevelFloatValues</a> with <a href="../../IntegerValuesFactory.html" class="extype" name="org.opalj.ai.IntegerValuesFactory">IntegerValuesFactory</a></dd><dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/ai/src/main/scala/org/opalj/ai/domain/l0/TypeLevelFloatValues.scala?at=develop" target="_blank">TypeLevelFloatValues.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.ai.domain.l0.TypeLevelFloatValues">TypeLevelFloatValues</a> with <a href="../../IntegerValuesFactory.html" class="extype" name="org.opalj.ai.IntegerValuesFactory">IntegerValuesFactory</a></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ai/src/main/scala/org/opalj/ai/domain/l0/TypeLevelFloatValues.scala" target="_blank">TypeLevelFloatValues.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -1099,7 +1103,7 @@ be used and, hence, continuing the interpretation is meaningless.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1280,7 +1284,7 @@ be used and, hence, continuing the interpretation is meaningless.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1301,7 +1305,7 @@ be used and, hence, continuing the interpretation is meaningless.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.ai.ValuesDomain#isASubtypeOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1413,7 +1417,7 @@ abstracts over both values.</p><p>This operation is commutative.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1434,7 +1438,7 @@ abstracts over both values.</p><p>This operation is commutative.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.ai.ValuesDomain#properties" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1602,7 +1606,7 @@ regarding the calculation of a summary see <code>Value.summarize(...)</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1613,9 +1617,7 @@ regarding the calculation of a summary see <code>Value.summarize(...)</code>.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

@@ -270,6 +270,10 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                         <a class="class" href="DoubleConst.html" title=""></a>
                         <a href="DoubleConst.html" title="">DoubleConst</a>
                       </li><li class="current-entities indented3">
+                        <a class="object" href="DynamicConst$.html" title=""></a>
+                        <a class="class" href="DynamicConst.html" title=""></a>
+                        <a href="DynamicConst.html" title="">DynamicConst</a>
+                      </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="object" href="EagerDetachedTACAIKey$.html" title="Key to get the 3-address based code of a method computed using the configured domain/data-flow analysis."></a>
                         <a href="EagerDetachedTACAIKey$.html" title="Key to get the 3-address based code of a method computed using the configured domain/data-flow analysis.">EagerDetachedTACAIKey</a>
@@ -615,7 +619,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Creates the three-address representation for some method(s) and prints it to <code>std out</code> or writes
 it to a file.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/TAC.scala?at=develop" target="_blank">TAC.scala</a></dd><div class="block">Example:
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/TAC.scala" target="_blank">TAC.scala</a></dd><div class="block">Example:
                <ol><li class="cmt"><p>To convert all files of a project to the AI based three-address code, you can use:</p><pre><span class="kw">import</span> org.opalj.io.write
 <span class="kw">import</span> org.opalj.util.PerformanceEvaluation.time
 <span class="kw">import</span> org.opalj.tac._
@@ -777,7 +781,7 @@ it to a file.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -846,7 +850,7 @@ it to a file.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.TAC#handleError" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -883,7 +887,7 @@ it to a file.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -952,7 +956,7 @@ it to a file.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -973,7 +977,7 @@ it to a file.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1112,7 +1116,7 @@ it to a file.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1123,9 +1127,7 @@ it to a file.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

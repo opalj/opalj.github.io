@@ -234,7 +234,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A <a href="../../br/analyses/ProjectInformationKey.html" class="extype" name="org.opalj.br.analyses.ProjectInformationKey">org.opalj.br.analyses.ProjectInformationKey</a> to compute a <a href="CallGraph.html" class="extype" name="org.opalj.tac.cg.CallGraph">CallGraph</a> based on
-the points-to analysis.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/cg/AllocationSiteBasedPointsToCallGraphKey.scala?at=develop" target="_blank">AllocationSiteBasedPointsToCallGraphKey.scala</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="AbstractCallGraphKey.html" class="extype" name="org.opalj.tac.cg.AbstractCallGraphKey">AbstractCallGraphKey</a> for further details.</p></span></dd></dl><div class="toggleContainer block">
+the points-to analysis.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/cg/AllocationSiteBasedPointsToCallGraphKey.scala" target="_blank">AllocationSiteBasedPointsToCallGraphKey.scala</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="AbstractCallGraphKey.html" class="extype" name="org.opalj.tac.cg.AbstractCallGraphKey">AbstractCallGraphKey</a> for further details.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -397,7 +397,7 @@ graph.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.cg.AbstractCallGraphKey#compute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -469,7 +469,7 @@ graph.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -490,7 +490,7 @@ graph.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -543,7 +543,7 @@ graph.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -564,10 +564,26 @@ graph.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="org.opalj.tac.cg.AbstractCallGraphKey#requirements" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="org.opalj.tac.cg.AllocationSiteBasedPointsToCallGraphKey#registeredAnalyses" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="registeredAnalyses(project:org.opalj.br.analyses.SomeProject):Seq[org.opalj.br.fpcf.FPCFAnalysisScheduler]"></a><a id="registeredAnalyses(SomeProject):Seq[FPCFAnalysisScheduler]"></a>
+      <span class="permalink">
+      <a href="../../../../org/opalj/tac/cg/AllocationSiteBasedPointsToCallGraphKey$.html#registeredAnalyses(project:org.opalj.br.analyses.SomeProject):Seq[org.opalj.br.fpcf.FPCFAnalysisScheduler]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registeredAnalyses</span><span class="params">(<span name="project">project: <a href="../../br/analyses/index.html#SomeProject=org.opalj.br.analyses.Project[_]" class="extmbr" name="org.opalj.br.analyses.SomeProject">SomeProject</a></span>)</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../../br/fpcf/FPCFAnalysisScheduler.html" class="extype" name="org.opalj.br.fpcf.FPCFAnalysisScheduler">FPCFAnalysisScheduler</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.cg.AllocationSiteBasedPointsToCallGraphKey">AllocationSiteBasedPointsToCallGraphKey</a> → <a href="AbstractCallGraphKey.html" class="extype" name="org.opalj.tac.cg.AbstractCallGraphKey">AbstractCallGraphKey</a></dd></dl></div>
+    </li><li name="org.opalj.tac.cg.AllocationSiteBasedPointsToCallGraphKey#requirements" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="requirements(project:org.opalj.br.analyses.SomeProject):org.opalj.br.analyses.ProjectInformationKeys"></a><a id="requirements(SomeProject):ProjectInformationKeys"></a>
       <span class="permalink">
       <a href="../../../../org/opalj/tac/cg/AllocationSiteBasedPointsToCallGraphKey$.html#requirements(project:org.opalj.br.analyses.SomeProject):org.opalj.br.analyses.ProjectInformationKeys" title="Permalink">
@@ -585,7 +601,7 @@ graph.
       <p class="shortcomment cmt">Returns the information which other project information need to be available
 before this analysis can be performed.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the information which other project information need to be available
 before this analysis can be performed.</p><p>If the analysis has no special requirements <code>Nil</code> can be returned.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractCallGraphKey.html" class="extype" name="org.opalj.tac.cg.AbstractCallGraphKey">AbstractCallGraphKey</a> → <a href="../../br/analyses/ProjectInformationKey.html" class="extype" name="org.opalj.br.analyses.ProjectInformationKey">ProjectInformationKey</a></dd><dt>Note</dt><dd><span class="cmt"><p><b>All requirements must be listed; failing to specify a requirement can
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.opalj.tac.cg.AllocationSiteBasedPointsToCallGraphKey">AllocationSiteBasedPointsToCallGraphKey</a> → <a href="AbstractCallGraphKey.html" class="extype" name="org.opalj.tac.cg.AbstractCallGraphKey">AbstractCallGraphKey</a> → <a href="../../br/analyses/ProjectInformationKey.html" class="extype" name="org.opalj.br.analyses.ProjectInformationKey">ProjectInformationKey</a></dd><dt>Note</dt><dd><span class="cmt"><p><b>All requirements must be listed; failing to specify a requirement can
         result in a deadlock.</b></p></span>, <span class="cmt"><p>Classes/Objects that implement this trait should not make the method <code>public</code>
         to avoid that this method is called accidentally by regular user code.</p></span></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -726,7 +742,7 @@ is automatically assigned by OPAL and will not change after that.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -737,9 +753,7 @@ is automatically assigned by OPAL and will not change after that.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

@@ -522,7 +522,7 @@ about the return types of methods, which however may depend on the refined field
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Specification of the properties and the life-cycle methods of a fixpoint computation
 (FPC) which are required when computing the correct scheduling order and actually executing
 the fixpoint computation.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/si/src/main/scala/org/opalj/fpcf/ComputationSpecification.scala?at=develop" target="_blank">ComputationSpecification.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>The <a href="PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a> can be used without using <a href="" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a>s and
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/si/src/main/scala/org/opalj/fpcf/ComputationSpecification.scala" target="_blank">ComputationSpecification.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>The <a href="PropertyStore.html" class="extype" name="org.opalj.fpcf.PropertyStore">PropertyStore</a> can be used without using <a href="" class="extype" name="org.opalj.fpcf.ComputationSpecification">ComputationSpecification</a>s and
       <a href="AnalysisScenario.html" class="extype" name="org.opalj.fpcf.AnalysisScenario">AnalysisScenario</a>s; both latter classes just provide convenience functionality
       that ensures that common issues are identified early on/are avoided.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
@@ -875,7 +875,7 @@ the methods <code>apply</code>, <code>schedule*</code>, <code>register*</code> o
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.fpcf.ComputationSpecification#derives" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -944,7 +944,7 @@ the methods <code>apply</code>, <code>schedule*</code>, <code>register*</code> o
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -965,7 +965,7 @@ the methods <code>apply</code>, <code>schedule*</code>, <code>register*</code> o
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1037,7 +1037,7 @@ which implements the underlying analysis.</p><p>The default name is the name of 
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1058,7 +1058,7 @@ which implements the underlying analysis.</p><p>The default name is the name of 
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1197,7 +1197,7 @@ which implements the underlying analysis.</p><p>The default name is the name of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1208,9 +1208,7 @@ which implements the underlying analysis.</p><p>The default name is the name of 
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

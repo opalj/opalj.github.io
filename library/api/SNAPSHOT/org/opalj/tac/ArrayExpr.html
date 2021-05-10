@@ -270,6 +270,10 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                         <a class="class" href="DoubleConst.html" title=""></a>
                         <a href="DoubleConst.html" title="">DoubleConst</a>
                       </li><li class="current-entities indented3">
+                        <a class="object" href="DynamicConst$.html" title=""></a>
+                        <a class="class" href="DynamicConst.html" title=""></a>
+                        <a href="DynamicConst.html" title="">DynamicConst</a>
+                      </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="object" href="EagerDetachedTACAIKey$.html" title="Key to get the 3-address based code of a method computed using the configured domain/data-flow analysis."></a>
                         <a href="EagerDetachedTACAIKey$.html" title="Key to get the 3-address based code of a method computed using the configured domain/data-flow analysis.">EagerDetachedTACAIKey</a>
@@ -613,7 +617,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/Expr.scala?at=develop" target="_blank">Expr.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/Expr.scala" target="_blank">Expr.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -967,6 +971,22 @@ two and a method has as many as explicit and implicit (<code>this</code>) parame
       </span>
       <span class="symbol">
         <span class="name">asDoubleConst</span><span class="result">: <a href="DoubleConst.html" class="extype" name="org.opalj.tac.DoubleConst">DoubleConst</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Expr.html" class="extype" name="org.opalj.tac.Expr">Expr</a></dd></dl></div>
+    </li><li name="org.opalj.tac.Expr#asDynamicConst" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asDynamicConst:org.opalj.tac.DynamicConst"></a><a id="asDynamicConst:DynamicConst"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/tac/ArrayExpr.html#asDynamicConst:org.opalj.tac.DynamicConst" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asDynamicConst</span><span class="result">: <a href="DynamicConst.html" class="extype" name="org.opalj.tac.DynamicConst">DynamicConst</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Expr.html" class="extype" name="org.opalj.tac.Expr">Expr</a></dd></dl></div>
@@ -1377,7 +1397,7 @@ two and a method has as many as explicit and implicit (<code>this</code>) parame
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1430,7 +1450,7 @@ two and a method has as many as explicit and implicit (<code>this</code>) parame
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1451,7 +1471,7 @@ two and a method has as many as explicit and implicit (<code>this</code>) parame
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.Expr#isClassConst" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1499,6 +1519,22 @@ two and a method has as many as explicit and implicit (<code>this</code>) parame
       </span>
       <span class="symbol">
         <span class="name">isDoubleConst</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Expr.html" class="extype" name="org.opalj.tac.Expr">Expr</a></dd></dl></div>
+    </li><li name="org.opalj.tac.Expr#isDynamicConst" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDynamicConst:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/tac/ArrayExpr.html#isDynamicConst:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDynamicConst</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Expr.html" class="extype" name="org.opalj.tac.Expr">Expr</a></dd></dl></div>
@@ -1808,7 +1844,7 @@ two and a method has as many as explicit and implicit (<code>this</code>) parame
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1829,7 +1865,7 @@ two and a method has as many as explicit and implicit (<code>this</code>) parame
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1952,7 +1988,7 @@ two and a method has as many as explicit and implicit (<code>this</code>) parame
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1963,9 +1999,7 @@ two and a method has as many as explicit and implicit (<code>this</code>) parame
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

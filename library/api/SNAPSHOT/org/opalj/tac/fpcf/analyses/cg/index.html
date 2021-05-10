@@ -489,7 +489,7 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/cg/package.scala?at=develop" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/fpcf/analyses/cg/package.scala" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -578,7 +578,7 @@ precisely.
         <a title="Models the behavior for java.security.AccessController.doPrivileged*." href="AbstractDoPrivilegedPointsToCGAnalysis.html"><span class="name">AbstractDoPrivilegedPointsToCGAnalysis</span></a><span class="result"> extends <a href="../TACAIBasedAPIBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.TACAIBasedAPIBasedAnalysis">TACAIBasedAPIBasedAnalysis</a> with <a href="../pointsto/AbstractPointsToBasedAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.pointsto.AbstractPointsToBasedAnalysis">AbstractPointsToBasedAnalysis</a></span>
       </span>
       
-      <p class="shortcomment cmt">Models the behavior for <span class="extype" name="java.security.AccessController.doPrivileged*">java.security.AccessController.doPrivileged*</span>.</p><div class="fullcomment"><div class="comment cmt"><p>Models the behavior for <span class="extype" name="java.security.AccessController.doPrivileged*">java.security.AccessController.doPrivileged*</span>.</p><p>On each call of the concrete <a href="AbstractDoPrivilegedPointsToCGAnalysis.html#doPrivilegedMethod:org.opalj.br.DeclaredMethod" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.AbstractDoPrivilegedPointsToCGAnalysis#doPrivilegedMethod">doPrivilegedMethod</a> method it will call the
+      <p class="shortcomment cmt">Models the behavior for <code>java.security.AccessController.doPrivileged*</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Models the behavior for <code>java.security.AccessController.doPrivileged*</code>.</p><p>On each call of the concrete <a href="AbstractDoPrivilegedPointsToCGAnalysis.html#doPrivilegedMethod:org.opalj.br.DeclaredMethod" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.AbstractDoPrivilegedPointsToCGAnalysis#doPrivilegedMethod">doPrivilegedMethod</a> method it will call the
 <a href="AbstractDoPrivilegedPointsToCGAnalysis.html#declaredRunMethod:org.opalj.br.DeclaredMethod" class="extmbr" name="org.opalj.tac.fpcf.analyses.cg.AbstractDoPrivilegedPointsToCGAnalysis#declaredRunMethod">declaredRunMethod</a> upon its first parameter and returns the result of this call.</p><p>For each such call, the analysis will add an indirect call to the call graph, such that
 the <a href="pointsto/AbstractPointsToBasedCallGraphAnalysis.html" class="extype" name="org.opalj.tac.fpcf.analyses.cg.pointsto.AbstractPointsToBasedCallGraphAnalysis">org.opalj.tac.fpcf.analyses.cg.pointsto.AbstractPointsToBasedCallGraphAnalysis</a> will
 map the points-to sets accordingly.</p><p>TODO: This analysis is very specific to the points-to analysis. It should also work for the other
@@ -685,22 +685,6 @@ call. Type information from abstract interpretation is taken into account, howev
       
       <p class="shortcomment cmt">A call site has a <code>declaredTarget</code> method, is associated with a line number (-1 if unknown) and
 contains the set of computed target methods (<code>targets</code>).</p>
-    </li><li name="org.opalj.tac.fpcf.analyses.cg.CallSiteT" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="CallSiteT=(Int,String,org.opalj.br.MethodDescriptor,org.opalj.br.ReferenceType)"></a><a id="CallSiteT:CallSiteT"></a>
-      <span class="permalink">
-      <a href="../../../../../../org/opalj/tac/fpcf/analyses/cg/index.html#CallSiteT=(Int,String,org.opalj.br.MethodDescriptor,org.opalj.br.ReferenceType)" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">CallSiteT</span><span class="result alias"> = (<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>, <a href="../../../../br/MethodDescriptor.html" class="extype" name="org.opalj.br.MethodDescriptor">MethodDescriptor</a>, <a href="../../../../br/ReferenceType.html" class="extype" name="org.opalj.br.ReferenceType">ReferenceType</a>)</span>
-      </span>
-      
-      
     </li><li name="org.opalj.tac.fpcf.analyses.cg.CalleesAndCallers" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="CalleesAndCallersextendsAnyRef"></a><a id="CalleesAndCallers:CalleesAndCallers"></a>
       <span class="permalink">

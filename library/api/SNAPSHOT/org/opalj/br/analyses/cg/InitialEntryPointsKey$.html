@@ -212,6 +212,14 @@ that it facilitates writing analyses that use pattern matching.
                         <a href="ApplicationWithoutJREEntryPointsFinder.html" title="Similar to the ApplicationEntryPointsFinder this trait selects main methods as entry points for standard command line applications.">ApplicationWithoutJREEntryPointsFinder</a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
+                        <a class="object" href="CallBySignatureKey$.html" title="The key object to get the interface methods for which call-by-signature resolution needs to be done."></a>
+                        <a href="CallBySignatureKey$.html" title="The key object to get the interface methods for which call-by-signature resolution needs to be done.">CallBySignatureKey</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
+                        <a class="class" href="CallBySignatureTargets.html" title=""></a>
+                        <a href="CallBySignatureTargets.html" title="">CallBySignatureTargets</a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
                         <a class="class" href="ClassExtensibility.html" title="Determines whether a class or interface is directly extensible by a (yet unknown) client application/library."></a>
                         <a href="ClassExtensibility.html" title="Determines whether a class or interface is directly extensible by a (yet unknown) client application/library.">ClassExtensibility</a>
                       </li><li class="current-entities indented5">
@@ -296,8 +304,8 @@ that it facilitates writing analyses that use pattern matching.
                         <a href="TypeExtensibilityAnalysis.html" title="Determines if a type (class or interface) is further (transitively) extensible by yet unknown types (that is, can be (transitively) inherited from).">TypeExtensibilityAnalysis</a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
-                        <a class="object" href="TypeExtensibilityKey$.html" title="Key to get the function that determines whether a type (i.e., we abstrat over a class/ interface and all its subtypes) is extensible or not. A type is extensible if a developer could define a sub(*)type that is not part of the given application/library."></a>
-                        <a href="TypeExtensibilityKey$.html" title="Key to get the function that determines whether a type (i.e., we abstrat over a class/ interface and all its subtypes) is extensible or not. A type is extensible if a developer could define a sub(*)type that is not part of the given application/library.">TypeExtensibilityKey</a>
+                        <a class="object" href="TypeExtensibilityKey$.html" title="Key to get the function that determines whether a type (i.e., we abstract over a class/ interface and all its subtypes) is extensible or not. A type is extensible if a developer could define a sub(*)type that is not part of the given application/library."></a>
+                        <a href="TypeExtensibilityKey$.html" title="Key to get the function that determines whether a type (i.e., we abstract over a class/ interface and all its subtypes) is extensible or not. A type is extensible if a developer could define a sub(*)type that is not part of the given application/library.">TypeExtensibilityKey</a>
                       </li>
               </ul>
             </div>
@@ -332,7 +340,7 @@ See <a href="" class="extype" name="org.opalj.br.analyses.cg.InitialEntryPointsK
 The respective analysis has to extend the trait <a href="" class="extype" name="org.opalj.br.analyses.cg.InitialEntryPointsKey">InitialEntryPointsKey</a> class.</p><p>To configure which analysis is used use the key
 <code>org.opalj.br.analyses.cg.InitialEntryPointKey.analysis</code> to specify the name of the class which
 implements the analysis.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/br/src/main/scala/org/opalj/br/analyses/cg/InitialEntryPointsKey.scala?at=develop" target="_blank">InitialEntryPointsKey.scala</a></dd><div class="block">Example:
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/br/src/main/scala/org/opalj/br/analyses/cg/InitialEntryPointsKey.scala" target="_blank">InitialEntryPointsKey.scala</a></dd><div class="block">Example:
                <ol><li class="cmt"><p></p><pre>org.opalj.br.analyses.cg {
     InitialEntryPointKey {
         analysis = <span class="lit">"org.opalj.br.analyses.cg.ApplicationEntryPointFinder"</span>
@@ -444,6 +452,22 @@ implements the analysis.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.opalj.br.analyses.cg.InitialEntryPointsKey#ConfigKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConfigKey:String"></a>
+      <span class="permalink">
+      <a href="../../../../../org/opalj/br/analyses/cg/InitialEntryPointsKey$.html#ConfigKey:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ConfigKey</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
     </li><li name="org.opalj.br.analyses.cg.InitialEntryPointsKey#ConfigKeyPrefix" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ConfigKeyPrefix:String(&quot;org.opalj.br.analyses.cg.InitialEntryPointsKey.&quot;)"></a>
       <span class="permalink">
@@ -499,7 +523,7 @@ implements the analysis.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.cg.InitialEntryPointsKey#compute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -571,7 +595,7 @@ constructor parameterized over a Project.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -592,7 +616,7 @@ constructor parameterized over a Project.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -645,7 +669,7 @@ constructor parameterized over a Project.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -666,7 +690,7 @@ constructor parameterized over a Project.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.br.analyses.cg.InitialEntryPointsKey#requirements" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -828,7 +852,7 @@ is automatically assigned by OPAL and will not change after that.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -839,9 +863,7 @@ is automatically assigned by OPAL and will not change after that.
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>

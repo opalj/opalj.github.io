@@ -270,6 +270,10 @@ highly recommend to build OPAL again using <code>-Xdisable-assertions</code>.
                         <a class="class" href="DoubleConst.html" title=""></a>
                         <a href="DoubleConst.html" title="">DoubleConst</a>
                       </li><li class="current-entities indented3">
+                        <a class="object" href="DynamicConst$.html" title=""></a>
+                        <a class="class" href="DynamicConst.html" title=""></a>
+                        <a href="DynamicConst.html" title="">DynamicConst</a>
+                      </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="object" href="EagerDetachedTACAIKey$.html" title="Key to get the 3-address based code of a method computed using the configured domain/data-flow analysis."></a>
                         <a href="EagerDetachedTACAIKey$.html" title="Key to get the 3-address based code of a method computed using the configured domain/data-flow analysis.">EagerDetachedTACAIKey</a>
@@ -620,7 +624,7 @@ words the target method is either directly found in the specified class or a sup
 class thereof. (Basically corresponds to an invokespecial at bytecode level.)
 </p></div><dl class="paramcmts block"><dt class="tparam">V</dt><dd class="cmt"><p>The type of the Var used by this representation.</p></dd><dt class="param">pc</dt><dd class="cmt"><p>The pc of the underlying, original bytecode instruction. Primarily useful to
           do a lookup in the line-/local-variable tables.</p></dd><dt class="param">declaringClass</dt><dd class="cmt"><p>The declaring class of the target method.</p></dd><dt class="param">isInterface</dt><dd class="cmt"><p><code>true</code> if the declaring class defines an interface type.
-                  (Required since Java 8.)</p></dd><dt class="param">name</dt><dd class="cmt"><p>The name of the target method.</p></dd><dt class="param">descriptor</dt><dd class="cmt"><p>The descriptor.</p></dd><dt class="param">receiver</dt><dd class="cmt"><p>The receiver object.</p></dd><dt class="param">params</dt><dd class="cmt"><p>The parameters of the method call (including the implicit <code>this</code> reference.)</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://bitbucket.org/delors/opal/src/HEAD/OPAL/tac/src/main/scala/org/opalj/tac/Expr.scala?at=develop" target="_blank">Expr.scala</a></dd></dl><div class="toggleContainer block">
+                  (Required since Java 8.)</p></dd><dt class="param">name</dt><dd class="cmt"><p>The name of the target method.</p></dd><dt class="param">descriptor</dt><dd class="cmt"><p>The descriptor.</p></dd><dt class="param">receiver</dt><dd class="cmt"><p>The receiver object.</p></dd><dt class="param">params</dt><dd class="cmt"><p>The parameters of the method call (including the implicit <code>this</code> reference.)</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/tac/src/main/scala/org/opalj/tac/Expr.scala" target="_blank">Expr.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -857,6 +861,22 @@ class thereof. (Basically corresponds to an invokespecial at bytecode level.)
       </span>
       <span class="symbol">
         <span class="name">asDoubleConst</span><span class="result">: <a href="DoubleConst.html" class="extype" name="org.opalj.tac.DoubleConst">DoubleConst</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Expr.html" class="extype" name="org.opalj.tac.Expr">Expr</a></dd></dl></div>
+    </li><li name="org.opalj.tac.Expr#asDynamicConst" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asDynamicConst:org.opalj.tac.DynamicConst"></a><a id="asDynamicConst:DynamicConst"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/tac/NonVirtualFunctionCall.html#asDynamicConst:org.opalj.tac.DynamicConst" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asDynamicConst</span><span class="result">: <a href="DynamicConst.html" class="extype" name="org.opalj.tac.DynamicConst">DynamicConst</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Expr.html" class="extype" name="org.opalj.tac.Expr">Expr</a></dd></dl></div>
@@ -1305,7 +1325,7 @@ depends on the number of pre-/post-processing steps that are done.
               
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.NonVirtualFunctionCall#declaringClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1396,7 +1416,7 @@ done by the predicate!
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.NonVirtualFunctionCall#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1460,6 +1480,22 @@ done by the predicate!
       </span>
       <span class="symbol">
         <span class="name">isDoubleConst</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Expr.html" class="extype" name="org.opalj.tac.Expr">Expr</a></dd></dl></div>
+    </li><li name="org.opalj.tac.Expr#isDynamicConst" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDynamicConst:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../org/opalj/tac/NonVirtualFunctionCall.html#isDynamicConst:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDynamicConst</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Expr.html" class="extype" name="org.opalj.tac.Expr">Expr</a></dd></dl></div>
@@ -1834,7 +1870,7 @@ if the index is valid.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1855,7 +1891,7 @@ if the index is valid.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+                <span class="name">@IntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.opalj.tac.NonVirtualFunctionCall#params" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2136,7 +2172,7 @@ two and a method has as many as explicit and implicit (<code>this</code>) parame
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: ">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -2147,9 +2183,7 @@ two and a method has as many as explicit and implicit (<code>this</code>) parame
               
                 <span class="name">@Deprecated</span>
               
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
     </li></ol>
             </div>
         </div>
