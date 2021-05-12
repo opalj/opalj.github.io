@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.ai.AITracer</title>
-          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.ai.AITracer" />
-          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.ai.AITracer" />
+          <title>The OPAL Framework 4.0.0 - org.opalj.ai.AITracer</title>
+          <meta name="description" content="The OPAL Framework 4.0.0 - org.opalj.ai.AITracer" />
+          <meta name="keywords" content="The OPAL Framework 4.0.0 org.opalj.ai.AITracer" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span id="doc-title">The OPAL Framework<span id="doc-version">4.0.0</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -577,7 +577,7 @@ debugging the interpreter's progress. In general, a tracer is first registered w
 abstract interpreter. After that, when a method is analyzed, the <a href="AI.html" class="extype" name="org.opalj.ai.AI">AI</a> calls the
 tracer's methods at the respective points in time.</p><p>A tracer is registered with an abstract interpreter by creating a new subclass of
 <a href="AI.html" class="extype" name="org.opalj.ai.AI">AI</a> and overriding the method <a href="AI.html#tracer:Option[org.opalj.ai.AITracer]" class="extmbr" name="org.opalj.ai.AI#tracer">AI.tracer</a>.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ai/src/main/scala/org/opalj/ai/AITracer.scala" target="_blank">AITracer.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p><b>All data structures passed to the tracer are the original data structures
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/master//OPAL/ai/src/main/scala/org/opalj/ai/AITracer.scala" target="_blank">AITracer.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p><b>All data structures passed to the tracer are the original data structures
      used by the abstract interpreter.</b> Hence, if a value is mutated (e.g., for
      debugging purposes) it has to be guaranteed that the state remains meaningful.
      Hence, using the <a href="" class="extype" name="org.opalj.ai.AITracer">AITracer</a> it is possible to develop a debugger for OPAL and

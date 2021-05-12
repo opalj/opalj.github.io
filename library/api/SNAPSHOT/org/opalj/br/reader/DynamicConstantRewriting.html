@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.br.reader.DynamicConstantRewriting</title>
-          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.br.reader.DynamicConstantRewriting" />
-          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.br.reader.DynamicConstantRewriting" />
+          <title>The OPAL Framework 4.0.0 - org.opalj.br.reader.DynamicConstantRewriting</title>
+          <meta name="description" content="The OPAL Framework 4.0.0 - org.opalj.br.reader.DynamicConstantRewriting" />
+          <meta name="keywords" content="The OPAL Framework 4.0.0 org.opalj.br.reader.DynamicConstantRewriting" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span id="doc-title">The OPAL Framework<span id="doc-version">4.0.0</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -461,7 +461,7 @@ This trait should be mixed in alongside a <a href="BytecodeReaderAndBinding.html
 basic dynamic constant information from the <a href="../BootstrapMethodTable.html" class="extype" name="org.opalj.br.BootstrapMethodTable">BootstrapMethodTable</a>.</p><p>Specifically, whenever an <code>ldc</code>, <code>ldc_w</code> or <code>ldc2_w</code> instruction is encountered that loads a
 dynamic constant, this trait tries to rewrite it to a simpler expression providing the same
 constant or an invocation of a method providing the constant from a lazily-initialized field.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.br.reader.DynamicConstantRewriting">DynamicConstantRewriting</a> with <a href="ClassFileBinding.html" class="extype" name="org.opalj.br.reader.ClassFileBinding">ClassFileBinding</a></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/br/src/main/scala/org/opalj/br/reader/DynamicConstantRewriting.scala" target="_blank">DynamicConstantRewriting.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This rewriting is best-effort only. As <code>ldc</code> instructions take only two bytes, they cannot
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.br.reader.DynamicConstantRewriting">DynamicConstantRewriting</a> with <a href="ClassFileBinding.html" class="extype" name="org.opalj.br.reader.ClassFileBinding">ClassFileBinding</a></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/master//OPAL/br/src/main/scala/org/opalj/br/reader/DynamicConstantRewriting.scala" target="_blank">DynamicConstantRewriting.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This rewriting is best-effort only. As <code>ldc</code> instructions take only two bytes, they cannot
       easily be rewritten to invocations, etc. <code>ldc_w</code> and <code>ldc2_w</code> instructions, however, are
       rewritten more aggressively.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://www.javacodegeeks.com/2018/08/hands-on-java-constantdynamic.html" target="_blank">Hands on Java 11's constantdynamic</a>
      for further information.</p></span></dd></dl><div class="toggleContainer block">

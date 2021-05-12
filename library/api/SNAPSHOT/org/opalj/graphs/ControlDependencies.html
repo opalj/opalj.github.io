@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.graphs.ControlDependencies</title>
-          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.graphs.ControlDependencies" />
-          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.graphs.ControlDependencies" />
+          <title>The OPAL Framework 4.0.0 - org.opalj.graphs.ControlDependencies</title>
+          <meta name="description" content="The OPAL Framework 4.0.0 - org.opalj.graphs.ControlDependencies" />
+          <meta name="keywords" content="The OPAL Framework 4.0.0 org.opalj.graphs.ControlDependencies" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span id="doc-title">The OPAL Framework<span id="doc-version">4.0.0</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -233,7 +233,7 @@ instruction that may throw an exception) if the value of the predicate
 controls the execution of the instruction.</p><p>Note that the classical definition:</p><p>    Let G be a control flow graph; Let X and Y be nodes in G; Y is control dependent on X iff
     there exists a directed path P from X to Y with any Z in P \ X is not post-dominated by Y.</p><p>Is not well suited for methods with potentially infinite loops, exceptions and multiple exit
 points. (See <a href="PostDominatorTree$.html#apply(uniqueExitNode:Option[Int],isExitNode:Int=&gt;Boolean,additionalExitNodes:org.opalj.collection.immutable.IntTrieSet,foreachExitNode:(Int=&gt;Unit)=&gt;Unit,foreachSuccessorOf:Int=&gt;((Int=&gt;Unit)=&gt;Unit),foreachPredecessorOf:Int=&gt;((Int=&gt;Unit)=&gt;Unit),maxNode:Int):org.opalj.graphs.PostDominatorTree" class="extmbr" name="org.opalj.graphs.PostDominatorTree#apply">PostDominatorTree$.apply</a> for further information.)
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/common/src/main/scala/org/opalj/graphs/ControlDependencies.scala" target="_blank">ControlDependencies.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>In the context of static analysis an instruction (e.g., invoke, idiv,...) that
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/master//OPAL/common/src/main/scala/org/opalj/graphs/ControlDependencies.scala" target="_blank">ControlDependencies.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>In the context of static analysis an instruction (e.g., invoke, idiv,...) that
          may throw an exception that results in a different control-flow, is also a <code>predicate</code>
          additionally to all ifs and switches.</p></span>, <span class="cmt"><p>If the underlying method/CFG contains infinite loops then it is expected that the
          dominance frontiers are already <code>corrected</code> if the used post dominator tree was

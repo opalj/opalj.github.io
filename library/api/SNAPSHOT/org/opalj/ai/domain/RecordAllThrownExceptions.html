@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.ai.domain.RecordAllThrownExceptions</title>
-          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.ai.domain.RecordAllThrownExceptions" />
-          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.ai.domain.RecordAllThrownExceptions" />
+          <title>The OPAL Framework 4.0.0 - org.opalj.ai.domain.RecordAllThrownExceptions</title>
+          <meta name="description" content="The OPAL Framework 4.0.0 - org.opalj.ai.domain.RecordAllThrownExceptions" />
+          <meta name="keywords" content="The OPAL Framework 4.0.0 org.opalj.ai.domain.RecordAllThrownExceptions" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span id="doc-title">The OPAL Framework<span id="doc-version">4.0.0</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -498,7 +498,7 @@ domains that are used to adapt/transfer values should be thread safe
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Records <b>all</b> exceptions thrown by a method. I.e., for each instruction that
 throws an exception (or multiple exceptions) all exceptions are recorded.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.ai.domain.RecordAllThrownExceptions">RecordAllThrownExceptions</a> with <a href="../ValuesDomain.html" class="extype" name="org.opalj.ai.ValuesDomain">ValuesDomain</a> with <a href="../Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a> with <a href="../ExceptionsFactory.html" class="extype" name="org.opalj.ai.ExceptionsFactory">ExceptionsFactory</a></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ai/src/main/scala/org/opalj/ai/domain/RecordAllThrownExceptions.scala" target="_blank">RecordAllThrownExceptions.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This domain requires that <code>DomainValue</code>s that represent thrown exceptions
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.opalj.ai.domain.RecordAllThrownExceptions">RecordAllThrownExceptions</a> with <a href="../ValuesDomain.html" class="extype" name="org.opalj.ai.ValuesDomain">ValuesDomain</a> with <a href="../Configuration.html" class="extype" name="org.opalj.ai.Configuration">Configuration</a> with <a href="../ExceptionsFactory.html" class="extype" name="org.opalj.ai.ExceptionsFactory">ExceptionsFactory</a></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/master//OPAL/ai/src/main/scala/org/opalj/ai/domain/RecordAllThrownExceptions.scala" target="_blank">RecordAllThrownExceptions.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>This domain requires that <code>DomainValue</code>s that represent thrown exceptions
      have meaningful <code>equals</code> and <code>hashCode</code> methods. (Depending on the purpose
      of the abstract interpretation, reference equality may be sufficient.)</p></span>, <span class="cmt"><p>This domain is only effective if the calculation of joins is fast. Otherwise
      it can significantly hamper overall performance!</p></span></dd></dl><div class="toggleContainer block">

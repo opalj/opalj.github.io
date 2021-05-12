@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.ai.JoinStabilization</title>
-          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.ai.JoinStabilization" />
-          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.ai.JoinStabilization" />
+          <title>The OPAL Framework 4.0.0 - org.opalj.ai.JoinStabilization</title>
+          <meta name="description" content="The OPAL Framework 4.0.0 - org.opalj.ai.JoinStabilization" />
+          <meta name="keywords" content="The OPAL Framework 4.0.0 org.opalj.ai.JoinStabilization" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span id="doc-title">The OPAL Framework<span id="doc-version">4.0.0</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -576,7 +576,7 @@ domains that are used to adapt/transfer values should be thread safe
 pair of domain values. This ensures that the relation between the values remains the same.</p><p>For example, given the following two stacks:</p><ul><li><code>AnIntegerValue[#1]</code> &lt;- <code>AnIntegerValue[#1]</code> &lt;- <code>IntRange(lb=0,ub=10)[#2]</code> &lt;- ...</li><li><code>AnIntegerValue[#3]</code> &lt;- <code>AnIntegerValue[#3]</code> &lt;- <code>IntRange(lb=0,ub=10)[#2]</code> &lt;- ...</li></ul><p>The result will be (assuming that the result of joining <code>AnIntegerValue[#<b>1</b>]</code> with
  <code>AnIntegerValue[#<b>3</b>]</code> creates a new value, e.g., <code>AnIntegerValue[#<b>4</b>]</code>):</p><ul><li><code>AnIntegerValue[#<b>4</b>]</code> &lt;- <code>AnIntegerValue[#<b>4</b>]</code> &lt;- <code>IntRange(lb=0,ub=10)[#2]</code> &lt;- ...</li></ul><p>Without this trait each pair of values is joined again. In this case the result would be:</p><ul><li><code>AnIntegerValue[#<b>4</b>]</code> &lt;- <code>AnIntegerValue[#<b>5</b>]</code> &lt;- <code>IntRange(lb=0,ub=10)[#2]</code> &lt;- ...</li></ul><p>Using join stabilization is necessary if constraints are propagated
 or (makes sense) if the merge of domain values is expensive.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ai/src/main/scala/org/opalj/ai/domain/JoinStabilization.scala" target="_blank">JoinStabilization.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>Join stabilization is always done for all domain values once this trait is mixed in.</p></span></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/master//OPAL/ai/src/main/scala/org/opalj/ai/domain/JoinStabilization.scala" target="_blank">JoinStabilization.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>Join stabilization is always done for all domain values once this trait is mixed in.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>

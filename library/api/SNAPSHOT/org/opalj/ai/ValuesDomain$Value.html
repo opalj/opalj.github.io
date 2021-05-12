@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>The OPAL Framework 3.0.0-SNAPSHOT - org.opalj.ai.ValuesDomain.Value</title>
-          <meta name="description" content="The OPAL Framework 3.0.0 - SNAPSHOT - org.opalj.ai.ValuesDomain.Value" />
-          <meta name="keywords" content="The OPAL Framework 3.0.0 SNAPSHOT org.opalj.ai.ValuesDomain.Value" />
+          <title>The OPAL Framework 4.0.0 - org.opalj.ai.ValuesDomain.Value</title>
+          <meta name="description" content="The OPAL Framework 4.0.0 - org.opalj.ai.ValuesDomain.Value" />
+          <meta name="keywords" content="The OPAL Framework 4.0.0 org.opalj.ai.ValuesDomain.Value" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">The OPAL Framework<span id="doc-version">3.0.0-SNAPSHOT</span></span>
+        <span id="doc-title">The OPAL Framework<span id="doc-version">4.0.0</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -267,7 +267,7 @@ In general, the implementation should try to avoid creating new instances of
 values unless strictly required to model the domain's semantics. This will greatly
 improve the overall performance as this framework heavily uses reference-based
 equality checks to speed up the evaluation.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="ValuesDomain.html#DomainValue&gt;:Null&lt;:ValuesDomain.this.Value" class="extmbr" name="org.opalj.ai.ValuesDomain.DomainValue">DomainValue</a></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/develop//OPAL/ai/src/main/scala/org/opalj/ai/ValuesDomain.scala" target="_blank">ValuesDomain.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>OPAL does not rely on any special equality semantics w.r.t. values and
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="ValuesDomain.html#DomainValue&gt;:Null&lt;:ValuesDomain.this.Value" class="extmbr" name="org.opalj.ai.ValuesDomain.DomainValue">DomainValue</a></dd><dt>Source</dt><dd><a href="https://raw.githubusercontent.com/stg-tud/opal/master//OPAL/ai/src/main/scala/org/opalj/ai/ValuesDomain.scala" target="_blank">ValuesDomain.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>OPAL does not rely on any special equality semantics w.r.t. values and
      never directly or indirectly calls a <code>Value</code>'s <code>equals</code> method. Hence,
      a domain can encode equality such that it best fits its need.
      However, some of the provided domains rely on the following semantics for equals:
