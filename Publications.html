@@ -29,60 +29,52 @@
         </header>
 
         
+
         <section id="one" class="wrapper style1">
             <div class="container">
     			<div class="row">
                     <div class="3u">
                         <nav>
-                                                    
-                                <a href="/UsingOPAL.html">Using OPAL</a><br>
-                                                                                
-                                <br><b>Getting Started</b><br>
-                                                                                
-                                <a href="/tutorial/FixedPointAnalyses.html">Writing Fixed-Point Analyses</a><br>
-                                                                                
-                                <a href="/tutorial/CollaborativeAnalyses.html">Collaborative Analyses</a><br>
-                                                                                
-                                <a href="/tutorial/Lattices.html">Lattices</a><br>
-                                                                                
-                                <a href="/tutorial/Results.html">Results</a><br>
-                                                                                
-                                <a href="/tutorial/Schedulers.html">Schedulers</a><br>
-                                                                                
-                                <br><b>Further Tutorials</b><br>
-                                                                                
-                                <a href="/examples/ReadingClassFiles.html">Reading Class Files</a><br>
-                                                                                
-                                <a href="/examples/Projects.html">Loading Java Projects</a><br>
-                                                                                
-                                <a href="/examples/ClassHierarchy.html">Using the Class Hierarchy</a><br>
-                                                                                
-                                <a href="/examples/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
-                                                                                
-                                <a href="/examples/TAC.html">3-Address Code/SSA Code</a><br>
-                                                                                
-                                <a href="/examples/WritingAnalyses.html">Writing Analyses</a><br>
-                                                                                
-                                <br><b>Tools</b><br>
-                                                                                
-                                <a href="/DeveloperTools.html">Developers Tools</a><br>
-                                                                                
-                                <a href="/Hermes.html">Hermes</a><br>
-                                                                                
-                                <a href="/Opium.html">OPIUM</a><br>
-                                                                                
-                                <br><b>Showcases</b><br>
-                                                                                
-                                <a href="/UselessBoxing.html">Detecting Useless Boxings</a><br>
-                                                                                
-                                <a href="/JDK8Dependencies.html">Package Dependencies in JDK8</a><br>
-                                                                                
-                                <a href="/JDK8Complexity.html">Complexity of the JDK8</a><br>
-                                                                                
-                                <br><b>Artifacts</b><br>
-                                                                                
-                                <a href="/Artifacts.html">Research Artifacts</a><br>
-                                                                            </nav>
+                         
+                            <a href="/UsingOPAL.html">Using OPAL</a><br>
+                            <br><b>Getting Started</b><br>   
+                            <a href="/tutorial/FixedPointAnalyses.html">Writing Fixed-Point Analyses</a><br>
+                          
+                            <a href="/tutorial/CollaborativeAnalyses.html">Collaborative Analyses</a><br>
+                          
+                            <a href="/tutorial/Lattices.html">Lattices</a><br>
+                          
+                            <a href="/tutorial/Results.html">Results</a><br>
+                          
+                            <a href="/tutorial/Schedulers.html">Schedulers</a><br>
+                            <br><b>Further Tutorials</b><br>   
+                            <a href="/examples/ReadingClassFiles.html">Reading Class Files</a><br>
+                          
+                            <a href="/examples/Projects.html">Loading Java Projects</a><br>
+                          
+                            <a href="/examples/ClassHierarchy.html">Using the Class Hierarchy</a><br>
+                          
+                            <a href="/examples/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
+                          
+                            <a href="/examples/TAC.html">3-Address Code/SSA Code</a><br>
+                          
+                            <a href="/examples/WritingAnalyses.html">Writing Analyses</a><br>
+                            <br><b>Tools</b><br>   
+                            <a href="/DeveloperTools.html">Developers Tools</a><br>
+                          
+                            <a href="/Hermes.html">Hermes</a><br>
+                          
+                            <a href="/Opium.html">OPIUM</a><br>
+                            <br><b>Showcases</b><br>   
+                            <a href="/UselessBoxing.html">Detecting Useless Boxings</a><br>
+                          
+                            <a href="/JDK8Dependencies.html">Package Dependencies in JDK8</a><br>
+                          
+                            <a href="/JDK8Complexity.html">Complexity of the JDK8</a><br>
+                            <br><b>Artifacts</b><br>   
+                            <a href="/Artifacts.html">Research Artifacts</a><br>
+                         
+                        </nav>
                         <hr/>
                         <div class="hide-at-medium">
                             Please, report issues or problems in the documentation using <a href="https://github.com/opalj/OPAL/issues">OPAL's issue tracker</a>, by going to the <a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link">OPAL gitter chat room</a> or by writing an email to <a href="mailto:opal_at_st.informatik.tu-darmstadt.de">opal(at)st.informatik.tu-darmstadt.de</a>.
@@ -184,6 +176,20 @@ Furthermore, we also discuss an implementation of an SPL for static analyses -- 
 We present OPAL and show how a design based on software produce line engineering benefits the implementation of static analyses with the framework.</details></p>
 </blockquote>
 <h2 id="research-using-opal">Research Using OPAL</h2>
+<blockquote>
+<p><a href="https://ieeexplore.ieee.org/document/9678903"><strong>CiFi: Versatile Analysis of Class and Field Immutability</strong></a><br />
+ASE 2021<br />
+<em>Tobias Roth, Dominik Helm, Michael Reif, Mira Mezini</em></p>
+<details><summary>Abstract</summary>
+Reasoning about immutability is important for pre-venting bugs, e.g., in multi-threaded software.
+So far, static analysis to infer immutability properties has mostly focused on individual objects and references.
+Reasoning about fields and entire classes, while significantly simpler, has gained less attention.
+Even a consistently used terminology is missing, which makes it difficult to implement analyses that rely on immutability information.
+We propose a model for class and field immutability that unifies terminology for immutability flavors considered by previous work and covers new levels of immutability to handle lazy initialization and immutability dependent on generic type parameters.
+Using the OPAL static analysis framework, we implement CiFi, a set of modular, collaborating analyses for different flavors of immutability, inferring the properties defined in our model.
+Additionally, we propose a benchmark of representative test cases for class and field immutability.
+We use the benchmark to showcase CiFi’s precision and recall in comparison to state of the art and use CiFi to study the prevalence of immutability in real-world libraries, showcasing the practical quality and relevance of our model.</details>
+</blockquote>
 <blockquote>
 <p><a href="https://dl.acm.org/doi/10.1145/3320269.3384745"><strong>Hidden in Plain Sight: Obfuscated Strings Threatening Your Privacy</strong></a><br />
 ASIA-CCS 2020<br />

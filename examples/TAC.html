@@ -29,60 +29,52 @@
         </header>
 
         
+
         <section id="one" class="wrapper style1">
             <div class="container">
     			<div class="row">
                     <div class="3u">
                         <nav>
-                                                    
-                                <a href="/UsingOPAL.html">Using OPAL</a><br>
-                                                                                
-                                <br><b>Getting Started</b><br>
-                                                                                
-                                <a href="/tutorial/FixedPointAnalyses.html">Writing Fixed-Point Analyses</a><br>
-                                                                                
-                                <a href="/tutorial/CollaborativeAnalyses.html">Collaborative Analyses</a><br>
-                                                                                
-                                <a href="/tutorial/Lattices.html">Lattices</a><br>
-                                                                                
-                                <a href="/tutorial/Results.html">Results</a><br>
-                                                                                
-                                <a href="/tutorial/Schedulers.html">Schedulers</a><br>
-                                                                                
-                                <br><b>Further Tutorials</b><br>
-                                                                                
-                                <a href="/examples/ReadingClassFiles.html">Reading Class Files</a><br>
-                                                                                
-                                <a href="/examples/Projects.html">Loading Java Projects</a><br>
-                                                                                
-                                <a href="/examples/ClassHierarchy.html">Using the Class Hierarchy</a><br>
-                                                                                
-                                <a href="/examples/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
-                                                                                
-                                <a href="/examples/TAC.html">3-Address Code/SSA Code</a><br>
-                                                                                
-                                <a href="/examples/WritingAnalyses.html">Writing Analyses</a><br>
-                                                                                
-                                <br><b>Tools</b><br>
-                                                                                
-                                <a href="/DeveloperTools.html">Developers Tools</a><br>
-                                                                                
-                                <a href="/Hermes.html">Hermes</a><br>
-                                                                                
-                                <a href="/Opium.html">OPIUM</a><br>
-                                                                                
-                                <br><b>Showcases</b><br>
-                                                                                
-                                <a href="/UselessBoxing.html">Detecting Useless Boxings</a><br>
-                                                                                
-                                <a href="/JDK8Dependencies.html">Package Dependencies in JDK8</a><br>
-                                                                                
-                                <a href="/JDK8Complexity.html">Complexity of the JDK8</a><br>
-                                                                                
-                                <br><b>Artifacts</b><br>
-                                                                                
-                                <a href="/Artifacts.html">Research Artifacts</a><br>
-                                                                            </nav>
+                         
+                            <a href="/UsingOPAL.html">Using OPAL</a><br>
+                            <br><b>Getting Started</b><br>   
+                            <a href="/tutorial/FixedPointAnalyses.html">Writing Fixed-Point Analyses</a><br>
+                          
+                            <a href="/tutorial/CollaborativeAnalyses.html">Collaborative Analyses</a><br>
+                          
+                            <a href="/tutorial/Lattices.html">Lattices</a><br>
+                          
+                            <a href="/tutorial/Results.html">Results</a><br>
+                          
+                            <a href="/tutorial/Schedulers.html">Schedulers</a><br>
+                            <br><b>Further Tutorials</b><br>   
+                            <a href="/examples/ReadingClassFiles.html">Reading Class Files</a><br>
+                          
+                            <a href="/examples/Projects.html">Loading Java Projects</a><br>
+                          
+                            <a href="/examples/ClassHierarchy.html">Using the Class Hierarchy</a><br>
+                          
+                            <a href="/examples/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
+                          
+                            <a href="/examples/TAC.html">3-Address Code/SSA Code</a><br>
+                          
+                            <a href="/examples/WritingAnalyses.html">Writing Analyses</a><br>
+                            <br><b>Tools</b><br>   
+                            <a href="/DeveloperTools.html">Developers Tools</a><br>
+                          
+                            <a href="/Hermes.html">Hermes</a><br>
+                          
+                            <a href="/Opium.html">OPIUM</a><br>
+                            <br><b>Showcases</b><br>   
+                            <a href="/UselessBoxing.html">Detecting Useless Boxings</a><br>
+                          
+                            <a href="/JDK8Dependencies.html">Package Dependencies in JDK8</a><br>
+                          
+                            <a href="/JDK8Complexity.html">Complexity of the JDK8</a><br>
+                            <br><b>Artifacts</b><br>   
+                            <a href="/Artifacts.html">Research Artifacts</a><br>
+                         
+                        </nav>
                         <hr/>
                         <div class="hide-at-medium">
                             Please, report issues or problems in the documentation using <a href="https://github.com/opalj/OPAL/issues">OPAL's issue tracker</a>, by going to the <a href="https://gitter.im/OPAL-Project/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link">OPAL gitter chat room</a> or by writing an email to <a href="mailto:opal_at_st.informatik.tu-darmstadt.de">opal(at)st.informatik.tu-darmstadt.de</a>.
@@ -109,16 +101,19 @@ Alternatively, you can download a pre-packaged jar containing the TAC tool from 
 <pre><code>implicit val p = Project(new java.io.File(&quot;OPAL/bi/target/scala-2.12/resource_managed/test/ai.jar&quot;),org.opalj.bytecode.RTJar)
 </code></pre>
 <p><em>Step 2</em> - Tell the project that it should make the 3-address code of the method available, when required:</p>
-<pre><code>val tac = p.get(SimpleTACAIKey)
+<pre><code>val tac = p.get(ComputeACAIKey)
 </code></pre>
 <p><em>Step 3</em> - To get the TAC of a specific method with a body just look it up:</p>
 <pre><code>val cf = p.classFile(ObjectType(&quot;ai/domain/IntegerValuesFrenzy&quot;)).get
 val m = cf.findMethod(&quot;someSwitch&quot;).head
 val taCode = tac(m)
 </code></pre>
-<p>In some cases it is desirable to exchange the underlying data-flow analysis that is used as a foundation for creating the TAC. This can easily be done by updating <code>SimpleTACAIKey</code>'s <code>domain factory</code>. The latter is used when computing the TAC and can be changed <em><strong>before</strong></em> the key (<code>SimpleTACAIKey</code>) is passed to the project (<code>&lt;Project&gt;.get(SimpleTACAIKey)</code>).
+<p>In some cases it is desirable to exchange the underlying data-flow analysis that is used as a foundation for creating the TAC. This can easily be done by updating the project's <code>AIDomainFactoryKey</code>. The latter is used when computing the TAC and can be changed <em><strong>before</strong></em> the key (<code>ComputeTACAIKey</code>) is passed to the project (<code>&lt;Project&gt;.get(ComputeTACAIKey)</code>).
 E.g., to set the domain to the simplest/most basic supported domain, you can use:</p>
-<pre><code>SimpleTACAIKey.domainFactory = (p :SomeProject, cf : ClassFile,m : Method) =&gt; new domain.l0.BaseDomainWithDefUse(p,cf,m)
+<pre><code>p.updateProjectInformationKeyInitializationData(AIDomainFactoryKey) {
+  case None               ⇒ Set(classOf[domain.l0.BaseDomainWithDefUse[_]])
+  case Some(requirements) ⇒ requirements + classOf[domain.l0.BaseDomainWithDefUse[_]]
+}
 </code></pre>
 <p>For example, creating the TAC using the simplest domain – and a production build of OPAL – takes roughly one third of the time of using the default domain. However, the default domain provides much more information and is therefore the recommended base analysis. To be more precise, on a Core i7 (4 Cores - Sandy Bridge, 2011) generating the standard TAC for the rt.jar of the JDK 8u121 using the simplest possible domain takes 13 seconds and for the default domain 33 seconds.</p>
 <h2 id="examples">Examples</h2>
@@ -205,7 +200,7 @@ E.g., to set the domain to the simplest/most basic supported domain, you can use
 <p>We can get the 3-address code (using, e.g., the <code>sbt console</code>) as follows (the method is part of OPAL's test suite):</p>
 <pre><code>import org.opalj._
 val p = br.analyses.Project(new java.io.File(&quot;OPAL/bi/target/scala-2.12/resource_managed/test/ai.jar&quot;))
-val tacAIKey = p.get(tac.DefaultTACAIKey)
+val tacAIKey = p.get(tac.ComputeTACAIKey)
 val code = tacAIKey(p.classFile(br.ObjectType(&quot;ai/MethodsWithTypeChecks&quot;)).get.findMethod(&quot;requiredCast&quot;).head)
 </code></pre>
 <p>The 3-address code of the above method is shown next:</p>
