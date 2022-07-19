@@ -94,7 +94,7 @@
 <pre><code>import java.io.{DataInputStream, FileInputStream}
 import org.opalj.io.process
 import org.opalj.da.ClassFile
-val classFileName = &quot;OPAL/ai/target/scala-2.12/classes/org/opalj/ai/AI.class&quot;
+val classFileName = &quot;OPAL/ai/target/scala-2.13/classes/org/opalj/ai/AI.class&quot;
 val cfs : List[ClassFile] =
     process(new DataInputStream(new FileInputStream(classFileName))){ in =&gt;
         org.opalj.da.ClassFileReader.ClassFile(in)
@@ -107,7 +107,7 @@ val cfs : List[ClassFile] =
 <pre><code>import java.io.{DataInputStream, FileInputStream}
 import org.opalj.io.process
 import org.opalj.br.ClassFile // &quot;br&quot; instead of &quot;da&quot;
-val classFileName = &quot;OPAL/ai/target/scala-2.12/classes/org/opalj/ai/AI.class&quot;
+val classFileName = &quot;OPAL/ai/target/scala-2.13/classes/org/opalj/ai/AI.class&quot;
 val cfs : List[ClassFile] =
     process(new DataInputStream(new FileInputStream(classFileName))){ in =&gt;
         org.opalj.br.reader.Java8Framework.ClassFile(in)

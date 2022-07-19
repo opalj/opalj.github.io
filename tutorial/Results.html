@@ -129,13 +129,13 @@ Use it with an eager analysis that you don't start for all entities, but only fo
 <p><a href="/library/api/SNAPSHOT/org/opalj/fpcf/IncrementalResult.html"><code>PartialResult</code></a> allows several analyses to collaboratively compute a single property (see the tutorial on <a href="CollaborativeAnalyses.html">Collaborative Analyses</a>).
 A <code>PartialResult</code> is different from the other result types in that it does not take a property value, but, in addition to analyzed entity, the kind of property (identified by the <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyKey.html"><code>PropertyKey</code></a>) and a function that is applied to whatever value that entity/property kind pair currently has:</p>
 <pre><code class="language-scala">PartialResult[DeclaredMethod, Callers](method, Callers.key, {
-    case InterimUBP(ub: Callers) ⇒
+    case InterimUBP(ub: Callers) =&gt;
         if (!ub.hasVMLevelCallers)
             Some(InterimEUBP(method, ub.updatedWithVMLevelCall()))
         else None
-    case _: EPK[_, _] ⇒
+    case _: EPK[_, _] =&gt;
         Some(InterimEUBP(method, OnlyVMLevelCallers))
-    case r ⇒
+    case r =&gt;
         throw new IllegalStateException(s&quot;unexpected previous result $r&quot;)
 })
 </code></pre>

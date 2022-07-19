@@ -84,7 +84,7 @@
                         <h1 id="querying-the-class-hierarchy">Querying the Class Hierarchy</h1>
 <p>One of the most common tasks when implementing static analyses is to get information about the inheritance relation between different classes, to traverse all super/sub classes/interfaces or to compute the least upper bound given some classes. Support for answering such questions or for processing a project's class hierarchy is directly provided by OPAL's <code>org.opalj.br.ClassHierarchy</code>. The easiest way to get the class hierarchy is to first instantiate a project and then ask the project for the class hierarchy.</p>
 <pre><code>import org.opalj.br._ ; import org.opalj.br.analyses._ ; import java.io.File
-val projectJAR = &quot;./OPAL/bi/target/scala-2.12/resource_managed/test/method_types.jar&quot;
+val projectJAR = &quot;./OPAL/bi/target/scala-2.13/resource_managed/test/method_types.jar&quot;
 implicit val p = Project(new File(projectJAR),org.opalj.bytecode.RTJar)
 val classHierarchy = p.classHierarchy
 </code></pre>

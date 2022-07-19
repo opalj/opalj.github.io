@@ -97,9 +97,9 @@ val cb = CLASS(
             // The following instruction is annotated with some meta information
             // which can later be used; e.g., to check that some static analysis
             // produced an expected result when this instruction is reached.
-            ALOAD_0 → &quot;MarkerAnnotation1&quot;,
+            ALOAD_0 -&gt; &quot;MarkerAnnotation1&quot;,
             INVOKESPECIAL(&quot;java/lang/Object&quot;, false, &quot;&lt;init&gt;&quot;, &quot;()V&quot;),
-            RETURN → &quot;MarkerAnnotation2&quot;
+            RETURN -&gt; &quot;MarkerAnnotation2&quot;
         ))
     )
 )
@@ -239,10 +239,10 @@ org.opalj.io.writeAndOpen(svg,&quot;CFG&quot;,&quot;.svg&quot;)
         METHOD(
             FINAL.SYNTHETIC.PUBLIC, &quot;testMethod&quot;, &quot;(Ljava/lang/String;)Ljava/lang/String;&quot;,
             CODE(ACONST_NULL, ARETURN),
-            RefArray(EXCEPTIONS(&quot;java/lang/Exception&quot;), Deprecated)
+            ArraySeq(EXCEPTIONS(&quot;java/lang/Exception&quot;), Deprecated)
         )
     ),
-    attributes = RefArray(SourceFile(&quot;ClassFileBuilderTest.scala&quot;), Synthetic)
+    attributes = ArraySeq(SourceFile(&quot;ClassFileBuilderTest.scala&quot;), Synthetic)
 )
 </code></pre>
 <h2 id="creating-class-files-using-opals-default-representation">Creating Class Files Using OPAL's Default Representation</h2>

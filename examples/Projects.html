@@ -89,7 +89,7 @@
 <p>Reading in a project is generally straight forward using <a href="http://www.opal-project.de/library/api/SNAPSHOT/#org.opalj.br.analyses.Project$"><code>org.oalj.br.analyses.Project</code></a>'s factory methods.</p>
 <pre><code>import org.opalj.br.analyses.Project
 
-val projectJAR = &quot;OPAL/bi/target/scala-2.12/resource_managed/test/method_types.jar&quot;
+val projectJAR = &quot;OPAL/bi/target/scala-2.13/resource_managed/test/method_types.jar&quot;
 implicit val p = Project(
     new java.io.File(projectJAR), // path to the JAR files/directories containing the project
     org.opalj.bytecode.RTJar // predefined path(s) to the used libraries

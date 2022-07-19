@@ -100,7 +100,7 @@ The lattice for our class immutability analysis consists of several parts:</p>
 
     override def checkIsEqualOrBetterThan(e: Entity, other: ClassImmutability): Unit = {
         if (meet(other) != other) {
-            throw new IllegalArgumentException(s&quot;$e: impossible refinement: $other ⇒ $this&quot;)
+            throw new IllegalArgumentException(s&quot;$e: impossible refinement: $other =&gt; $this&quot;)
         }
     }
 
@@ -126,10 +126,10 @@ Check <a href="/tutorial/Lattices.html">here</a> for more information on what el
 <p>Now we can implement the <code>meet</code> function that we defined earlier:</p>
 <pre><code class="language-scala">def meet(other: ClassImmutability): ClassImmutability = {
     (this, other) match {
-        case (TransitivelyImmutableClass, _)       ⇒ other
-        case (_, TransitivelyImmutableClass)       ⇒ this
-        case (MutableClass, _) | (_, MutableClass) ⇒ MutableClass
-        case (_, _)                                ⇒ this
+        case (TransitivelyImmutableClass, _)       =&gt; other
+        case (_, TransitivelyImmutableClass)       =&gt; this
+        case (MutableClass, _) | (_, MutableClass) =&gt; MutableClass
+        case (_, _)                                =&gt; this
     }
 }
 </code></pre>
@@ -231,7 +231,9 @@ Finally, we use our previously defined <code>checkSuperclass</code> function to 
         if(value.hasUBP)
             value.ub match {
                 case TransitivelyImmutableField    =&gt; /* Nothing to do here */
-                case NonTransitivelyImmutableField =&gt; immutability = NonTransitivelyImmutableClass
+                case NonTransitivelyImmutableField =&gt; 
+                    if(immutability != MutableClass)
+                        immutability = NonTransitivelyImmutableClass
                 case MutableField                  =&gt; immutability = MutableClass
             }
         if(value.isRefinable)
@@ -247,7 +249,7 @@ Finally, we use our previously defined <code>checkSuperclass</code> function to 
 </code></pre>
 <p>The <code>checkField</code> function is similar to <code>checkSuperclass</code>.<br />
 We assume that a lattice <code>FieldImmutability</code> exists that is essentially identical to the one defined above for class immutability.<br />
-Instead of using a predefined <code>meet</code> meh, here we check the possible values explicitly.
+Instead of using a predefined <code>meet</code> method, here we check the possible values explicitly.
 We could of course have defined a function to incorporate a <code>FieldImmutability</code> into a <code>ClassImmutability</code> in the class immutability lattice to make our life easier here.</p>
 <p>In order to get the immutability properties of the class' instance fields, we filter the classfile's fields for those that aren't static, then we use a second form of the property store's <code>apply</code> method to query several properties at once and finally pass each of the results to <code>checkField</code>.</p>
 <p>Now we have queried all information that we need, but as you have seen, the property store may return <code>EOptionP</code> values that have no upper bound yet for the property we're interested in, or values that aren't be final yet.<br />
@@ -371,11 +373,11 @@ As before, we finally have to return the analysis.</p>
 <p>Finally it is time to try our analysis.<br />
 To do so easily, we extend <a href="">ProjectAnalysisApplication</a> which provides us with an implicit <code>main</code> method that parses parameters for us, most importantly the &quot;-cp=<some path>&quot; parameter that lets users specify the path to a project that they want to analyze.</p>
 <pre><code class="language-scala">object ClassImmutabilityRunner extends ProjectAnalysisApplication { 
-    override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () ⇒ Boolean): BasicReport = { [...] }
+    override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () =&gt; Boolean): BasicReport = { [...] }
 }
 </code></pre>
 <p>There is only on method that we need to implement, and that is <code>doAnalyze</code>:</p>
-<pre><code class="language-scala">override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () ⇒ Boolean): BasicReport = {
+<pre><code class="language-scala">override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () =&gt; Boolean): BasicReport = {
     val (propertyStore, _) = project.get(FPCFAnalysesManagerKey).runAll(
         EagerClassImmutabilityAnalysis,
         LazyFieldImmutabilityAnalysis
@@ -389,7 +391,7 @@ We just pass all analyses that we want to execute to the <code>runAll</code> met
 Note that we assume that a <code>LazyFieldImmutabilityAnalysis</code> has been implemented as well.<br />
 As long as that doesn't exist, you can remove that line and OPAL will use the fallback value of the <code>FieldImmutability</code> lattice whenever a field immutability is queried.</p>
 <p>The <code>runAll</code> method returns the property store that we can then use to query the results of our analyses:</p>
-<pre><code class="language-scala">override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () ⇒ Boolean): BasicReport = {
+<pre><code class="language-scala">override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () =&gt; Boolean): BasicReport = {
     [...]
 
     val transitivelyImmutableClasses    = propertyStore.finalEntities(TransitivelyImmutableClass).size
@@ -402,7 +404,7 @@ As long as that doesn't exist, you can remove that line and OPAL will use the fa
 <p>The <a href="/library/api/SNAPSHOT/org/opalj/fpcf/PropertyStore.html"><code>PropertyStore</code></a> provides several methods to inspect the results.<br />
 Here we use <code>finalEntities</code> to get all entities that have the given final property, then we count those.</p>
 <p>Finally, the <code>doAnalyze</code> method requires us to return a <a href="/library/api/SNAPSHOT/org/opalj/br/analyses/BasicReport.html"><code>BasicReport</code></a>, which is a simple way to return some string that will ultimate be printed to the console:</p>
-<pre><code class="language-scala">override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () ⇒ Boolean): BasicReport = {
+<pre><code class="language-scala">override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () =&gt; Boolean): BasicReport = {
     [...]
 
     BasicReport(

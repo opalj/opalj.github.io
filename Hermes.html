@@ -142,7 +142,7 @@ object NativeMethods extends FeatureQuery {
 
         for {
             // Let's iterate over all class files belonging to the project.
-            (classFile, source) ← project.projectClassFilesWithSources
+            (classFile, source) &lt;- project.projectClassFilesWithSources
 
             // It is highly recommended to regularly check if the query should be aborted;
             // if so, the reported (intermediate/partial) results will always be thrown away.
@@ -152,7 +152,7 @@ object NativeMethods extends FeatureQuery {
             // is generally meaningful to always create instances of location information,
             // which may be shared, as soon as possible.
             classLocation = ClassFileLocation(source, classFile)
-            m ← classFile.methods
+            m &lt;- classFile.methods
             if m.isNative // basically &quot;the query&quot;
         } {
             // The current method is native and is added to the set of native methods..

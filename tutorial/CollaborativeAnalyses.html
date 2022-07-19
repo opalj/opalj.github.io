@@ -106,9 +106,9 @@ case class InstantiatedTypes(classes: UIDSet[ObjectType]) extends InstantiatedTy
 object InstantiatedTypes extends InstantiatedTypesPropertyMetaInformation {
     final val key: PropertyKey[InstantiatedTypes] = PropertyKey.create(
         &quot;InstantiatedTypes&quot;,
-        (_: PropertyStore, reason: FallbackReason, _: Entity) ⇒ reason match {
-            case PropertyIsNotDerivedByPreviouslyExecutedAnalysis ⇒ InstantiatedTypes(UIDSet.empty)
-            case _ ⇒ throw new IllegalStateException(s&quot;No analysis is scheduled for property InstantiatedTypes&quot;)
+        (_: PropertyStore, reason: FallbackReason, _: Entity) =&gt; reason match {
+            case PropertyIsNotDerivedByPreviouslyExecutedAnalysis =&gt; InstantiatedTypes(UIDSet.empty)
+            case _ =&gt; throw new IllegalStateException(s&quot;No analysis is scheduled for property InstantiatedTypes&quot;)
         }
     )
 }
@@ -159,17 +159,17 @@ Note that unlike most analyses, we will however <em>not</em> compute a result ju
         PartialResult[SomeProject, InstantiatedTypes](
             project,
             InstantiatedTypes.key,
-            (current: EOptionP[SomeProject, InstantiatedTypes]) ⇒ current match {
-                case InterimUBP(ub: InstantiatedTypes) ⇒
+            (current: EOptionP[SomeProject, InstantiatedTypes]) =&gt; current match {
+                case InterimUBP(ub: InstantiatedTypes) =&gt;
                     if (ub.classes.contains(instantiatedType))
                         None
                     else
                         Some(InterimEUBP(project, InstantiatedTypes(ub.classes + instantiatedType)))
 
-                case _: EPK[_, _] ⇒
+                case _: EPK[_, _] =&gt;
                     Some(InterimEUBP(project, InstantiatedTypes(UIDSet(instantiatedType))))
 
-                case r ⇒ throw new IllegalStateException(s&quot;unexpected previous result $r&quot;)
+                case r =&gt; throw new IllegalStateException(s&quot;unexpected previous result $r&quot;)
             }
         )
     }
@@ -205,12 +205,12 @@ For that, we need the method's callers:</p>
 <p>Let's start implementing it:</p>
 <pre><code class="language-scala">def checkCallers(callersProperty: EOptionP[DeclaredMethod, Callers]): PropertyComputationResult = {
     val callers: Callers = callersProperty match {
-        case FinalP(NoCallers) ⇒
+        case FinalP(NoCallers) =&gt;
             return NoResult
 
-        case UBP(v) ⇒ v
+        case UBP(v) =&gt; v
 
-        case r ⇒ throw new IllegalStateException(s&quot;unexpected result for callers $r&quot;)
+        case r =&gt; throw new IllegalStateException(s&quot;unexpected result for callers $r&quot;)
     }
 
     [...]
@@ -231,7 +231,7 @@ The <code>callers</code> method implicitly requires the <code>DeclaredMethods</c
 <pre><code class="language-scala">def checkCallers(callersProperty: EOptionP[DeclaredMethod, Callers]): PropertyComputationResult = {
     [...]
 
-    for((caller, _, isDirect) ← callers.callers) {
+    for((caller, _, isDirect) &lt;- callers.callers) {
         if (!isDirect)
             return result()
 
@@ -249,7 +249,7 @@ If it is, the analyzed constructor has been called explicitly, thus its class is
 Second, we check whether the caller could be a subclass' constructor by checking whether it is a constructor at all.<br />
 If it isn't, again the constructor must have been called explicitly.</p>
 <p>If the caller is a constructor, we now check whether it belongs to a direct subclass:</p>
-<pre><code class="language-scala">for((caller, _, isDirect) ← callers.callers){
+<pre><code class="language-scala">for((caller, _, isDirect) &lt;- callers.callers){
     [...]
 
     val callerClass = project.classFile(caller.declaringClassType)
@@ -264,7 +264,7 @@ If it isn't, again the constructor must have been called explicitly.</p>
 The same is true if we know the class, but it has no superclass (this mainly concerns <code>java.lang.Object</code>), in which case it can't be a subclass, or if it has a superclass but it is not the class of the analyzed constructor.</p>
 <p>If we didn't return a result yet, we have established that the caller is a constructor of a direct subclass.<br />
 However, it may still have an explicit call to the analyzed constructor, thus we have to look for such call in its instructions:</p>
-<pre><code class="language-scala">for((caller, _, isDirect) ← callers.callers){
+<pre><code class="language-scala">for((caller, _, isDirect) &lt;- callers.callers){
     [...]
 
     val body = caller.definedMethod.body.get
@@ -277,10 +277,10 @@ Note that here, we neither check whether the method actually has an actual metho
 This is because we know that the classfile is available and thus its methods are as well and also constructors are always unambiguous.<br />
 Finally, they also can't be abstract or implemented by a native method, thus they always have a body.</p>
 <p>Now we can look for explicit instantiations of the analyzed constructor's class:</p>
-<pre><code class="language-scala">for((caller, _, isDirect) ← callers.callers){
+<pre><code class="language-scala">for((caller, _, isDirect) &lt;- callers.callers){
     [...]
 
-    if(body.exists((_, instruction) ⇒ instruction == NEW(instantiatedType)))
+    if(body.exists((_, instruction) =&gt; instruction == NEW(instantiatedType)))
         return result()
 }
 </code></pre>
@@ -369,7 +369,7 @@ In the <code>register</code> method, we have to call the PropertyStore's <code>r
 <h2 id="running-the-analysis">Running the Analysis</h2>
 <p>As a last step, we implement a simple runner to test our analysis.</p>
 <pre><code class="language-scala">object InstantiatedTypesRunner extends ProjectAnalysisApplication {
-    override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () ⇒ Boolean): BasicReport = {
+    override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () =&gt; Boolean): BasicReport = {
         val (propertyStore, _) = project.get(FPCFAnalysesManagerKey).runAll(
             CHACallGraphAnalysisScheduler,
             InstantiatedTypesAnalysisScheduler

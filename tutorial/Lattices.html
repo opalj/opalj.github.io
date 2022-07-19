@@ -150,7 +150,7 @@ If your lattice values extend this trait, you get additional checks in the Prope
 If you defined a <code>meet</code> method, you can simply implement it like this:</p>
 <pre><code class="language-scala">override def checkIsEqualOrBetterThan(e: Entity, other: ClassImmutability): Unit = {
     if (meet(other) != other) {
-        throw new IllegalArgumentException(s&quot;$e: impossible refinement: $other ⇒ $this&quot;)
+        throw new IllegalArgumentException(s&quot;$e: impossible refinement: $other =&gt; $this&quot;)
     }
 }
 </code></pre>
@@ -173,9 +173,9 @@ You create it using one of two methods:</p>
 
 final val instantiatedTypesKey: PropertyKey[InstantiatedTypes] = PropertyKey.create(
     &quot;InstantiatedTypes&quot;,
-    (_: PropertyStore, reason: FallbackReason, _: Entity) ⇒ reason match {
-        case PropertyIsNotDerivedByPreviouslyExecutedAnalysis ⇒ InstantiatedTypes(UIDSet.empty)
-        case _                                                ⇒ throw new IllegalStateException(s&quot;No analysis is scheduled for property InstantiatedTypes&quot;)
+    (_: PropertyStore, reason: FallbackReason, _: Entity) =&gt; reason match {
+        case PropertyIsNotDerivedByPreviouslyExecutedAnalysis =&gt; InstantiatedTypes(UIDSet.empty)
+        case _                                                =&gt; throw new IllegalStateException(s&quot;No analysis is scheduled for property InstantiatedTypes&quot;)
     }
 )
 </code></pre>
