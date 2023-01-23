@@ -96,35 +96,35 @@
 <p>OPAL consists of multiple sub projects and tools which are described in the following.</p>
 <h3 id="framework">Framework</h3>
 <p>Combines all of OPAL's subproject for ease of use.</p>
-<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;framework_2.12&quot; % &quot;4.0.0&quot;
+<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;framework_2.13&quot; % &quot;5.0.0&quot;
 </code></pre>
 <h3 id="common">Common</h3>
 <p>Contains general data structures and algorithms particular useful in the context of static analysis. E.g., graph algorithms, such as
 an implementation of Tarjan's algorithm for finding strongly connected components. The implementations are designed with scalability in mind and should be able to process millions of nodes.</p>
-<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;common_2.12&quot; % &quot;4.0.0&quot;
+<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;common_2.13&quot; % &quot;5.0.0&quot;
 </code></pre>
 <h3 id="static-analysis-framework">Static Analysis Framework</h3>
 <p>The static analysis framework is a generally useful framework for developing static analyses. The framework has wide ranging support for very different types of static analyses and automatically parallels their execution. The framework only depends on <code>Common</code> and can be flexibly combined with other static analyses frameworks (e.g., BCEL, SOOT, Wala, ASM,... )</p>
-<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;static-analysis-infrastructure_2.12&quot; % &quot;4.0.0&quot;
+<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;static-analysis-infrastructure_2.13&quot; % &quot;5.0.0&quot;
 </code></pre>
 <h3 id="bytecode-representation">Bytecode Representation</h3>
 <p>The bytecode toolkit implements a generic infrastructure for parsing Java class files. Additionally,
 it provides a default representation for Java bytecode that can be used to analyze class files. That
 representation provides extensive support for pattern matching on Java bytecode to facilitate writing
 basic analyses.</p>
-<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;bytecode-representation_2.12&quot; % &quot;4.0.0&quot;
+<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;bytecode-representation_2.13&quot; % &quot;5.0.0&quot;
 </code></pre>
 <h3 id="abstract-interpretation-framework">Abstract Interpretation Framework</h3>
 <p>The abstract interpretation framework is a highly-customizable framework for the lightweight abstract interpretation of the Java bytecode. The framework was designed with ease of use and customizability in mind.</p>
-<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;abstract-interpretation-framework_2.12&quot; % &quot;4.0.0&quot;
+<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;abstract-interpretation-framework_2.13&quot; % &quot;5.0.0&quot;
 </code></pre>
 <h3 id="three-address-code">Three-Address Code</h3>
 <p>The three-address-code toolkit provides a more human readable representation of the bytecode that includes additional information derived by the abstract interpretation framework.</p>
-<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;three-address-code_2.12&quot; % &quot;4.0.0&quot;
+<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;three-address-code_2.13&quot; % &quot;5.0.0&quot;
 </code></pre>
 <h3 id="architecture-validation-framework">Architecture Validation Framework</h3>
 <p>The architecture validation framework facilitates the development of tools for specifying and validating software architectures.</p>
-<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;architecture-validation_2.12&quot; % &quot;4.0.0&quot;
+<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;architecture-validation_2.13&quot; % &quot;5.0.0&quot;
 </code></pre>
 
                     </div>
