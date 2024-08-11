@@ -17,7 +17,7 @@
     </head>
     <body id="top">
         <header id="header" class="skel-layers-fixed">
-            <h2><a href="/"><img src="/OPALLogo.png" width="13" height="13">&nbsp;OPAL Project</a></h2>
+            <h2><a href="/"><img src="/OPALLogo.png" width="25" height="25">&nbsp;OPAL Project</a></h2>
             <nav id="nav">
                 <ul>
                     <li><a href="/Publications.html">Publications</a></li>
@@ -37,43 +37,43 @@
                         <nav>
                          
                             <a href="/UsingOPAL.html">Using OPAL</a><br>
-                            <br><b>Getting Started</b><br>   
+                           <br><b>Getting Started</b><br>  
                             <a href="/tutorial/FixedPointAnalyses.html">Writing Fixed-Point Analyses</a><br>
-                          
-                            <a href="/tutorial/CollaborativeAnalyses.html">Collaborative Analyses</a><br>
-                          
-                            <a href="/tutorial/Lattices.html">Lattices</a><br>
-                          
-                            <a href="/tutorial/Results.html">Results</a><br>
-                          
-                            <a href="/tutorial/Schedulers.html">Schedulers</a><br>
-                            <br><b>Further Tutorials</b><br>   
-                            <a href="/examples/ReadingClassFiles.html">Reading Class Files</a><br>
-                          
-                            <a href="/examples/Projects.html">Loading Java Projects</a><br>
-                          
-                            <a href="/examples/ClassHierarchy.html">Using the Class Hierarchy</a><br>
-                          
-                            <a href="/examples/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
-                          
-                            <a href="/examples/TAC.html">3-Address Code/SSA Code</a><br>
-                          
-                            <a href="/examples/WritingAnalyses.html">Writing Analyses</a><br>
-                            <br><b>Tools</b><br>   
-                            <a href="/DeveloperTools.html">Developers Tools</a><br>
-                          
-                            <a href="/Hermes.html">Hermes</a><br>
-                          
-                            <a href="/Opium.html">OPIUM</a><br>
-                            <br><b>Showcases</b><br>   
-                            <a href="/UselessBoxing.html">Detecting Useless Boxings</a><br>
-                          
-                            <a href="/JDK8Dependencies.html">Package Dependencies in JDK8</a><br>
-                          
-                            <a href="/JDK8Complexity.html">Complexity of the JDK8</a><br>
-                            <br><b>Artifacts</b><br>   
-                            <a href="/Artifacts.html">Research Artifacts</a><br>
                          
+                            <a href="/tutorial/CollaborativeAnalyses.html">Collaborative Analyses</a><br>
+                         
+                            <a href="/tutorial/Lattices.html">Lattices</a><br>
+                         
+                            <a href="/tutorial/Results.html">Results</a><br>
+                         
+                            <a href="/tutorial/Schedulers.html">Schedulers</a><br>
+                           <br><b>Further Tutorials</b><br>  
+                            <a href="/examples/ReadingClassFiles.html">Reading Class Files</a><br>
+                         
+                            <a href="/examples/Projects.html">Loading Java Projects</a><br>
+                         
+                            <a href="/examples/ClassHierarchy.html">Using the Class Hierarchy</a><br>
+                         
+                            <a href="/examples/BytecodeEngineering.html">Engineering Java Bytecode</a><br>
+                         
+                            <a href="/examples/TAC.html">3-Address Code/SSA Code</a><br>
+                         
+                            <a href="/examples/WritingAnalyses.html">Writing Analyses</a><br>
+                           <br><b>Tools</b><br>  
+                            <a href="/DeveloperTools.html">Developers Tools</a><br>
+                         
+                            <a href="/Hermes.html">Hermes</a><br>
+                         
+                            <a href="/Opium.html">OPIUM</a><br>
+                           <br><b>Showcases</b><br>  
+                            <a href="/UselessBoxing.html">Detecting Useless Boxings</a><br>
+                         
+                            <a href="/JDK8Dependencies.html">Package Dependencies in JDK8</a><br>
+                         
+                            <a href="/JDK8Complexity.html">Complexity of the JDK8</a><br>
+                           <br><b>Artifacts</b><br>  
+                            <a href="/Artifacts.html">Research Artifacts</a><br>
+                        
                         </nav>
                         <hr/>
                         <div class="hide-at-medium">
@@ -125,6 +125,14 @@ basic analyses.</p>
 <h3 id="architecture-validation-framework">Architecture Validation Framework</h3>
 <p>The architecture validation framework facilitates the development of tools for specifying and validating software architectures.</p>
 <pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;architecture-validation_2.13&quot; % &quot;5.0.0&quot;
+</code></pre>
+<h3 id="llvm">LLVM</h3>
+<p>Provides support for the analysis of LLVM IR.</p>
+<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;llvm_2.13&quot; % &quot;5.0.0&quot;
+</code></pre>
+<h3 id="apk">APK</h3>
+<p>Provides support for the analyis of APKs, with automatic conversion from dalvik to java byte code.</p>
+<pre><code>libraryDependencies += &quot;de.opal-project&quot; % &quot;apk_2.13&quot; % &quot;5.0.0&quot;
 </code></pre>
 
                     </div>
