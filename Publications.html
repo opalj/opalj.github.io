@@ -84,7 +84,49 @@
                         <h1 id="publications">Publications</h1>
 <p>This page lists publications around OPAL, both <a href="#core-papers">core contributions</a> to the framework as well as <a href="#research-using-opal">further research</a> that uses OPAL.
 There are also links to <a href="#related-presentations">related presentations</a> below.</p>
+<h2 id="citing-opal">Citing OPAL</h2>
+<p>If you are using OPAL for your research, please cite</p>
+<blockquote>
+<p><a href="https://2020.esec-fse.org/details/fse-2020-papers/191"><strong>Modular Collaborative Program Analysis in OPAL</strong></a><br />
+ESEC/FSE 2020<br />
+<em>Dominik Helm, Florian Kübler, Michael Reif, Michael Eichberg, Mira Mezini</em></p>
+</blockquote>
+<p>If you are using OPAL's call graphs, you can also cite</p>
+<blockquote>
+<p><a href="/articles/Unimocg@ISSTA24.pdf"><strong>Unimocg: Modular Call-Graph Algorithms for Consistent Handling of Language Features</strong></a><br />
+ISSTA 2024<br />
+<em>Dominik Helm, Tobias Roth, Sven Keidel, Michael Reif, Mira Mezini</em></p>
+</blockquote>
+<p>You can cite this older publication if you are relying on OPAL's bytecode parsing, instrumentation, and generation capabilities</p>
+<blockquote>
+<p><a href="https://doi.acm.org/10.1145/2614628.2614630"><strong>A software product line for static analyses: the OPAL framework</strong></a><br />
+SOAP 2014<br />
+<em>Michael Eichberg, Ben Hermann</em></p>
+</blockquote>
+<p>And this one if you particularly rely on the Three-Address Code</p>
+<blockquote>
+<p><a href="https://pldi20.sigplan.org/details/SOAP-2020-papers/1"><strong>TACAI: An Intermediate Representation based on Abstract Interpretation</strong></a><br />
+SOAP 2020<br />
+<em>Michael Reif, Florian Kübler, Dominik Helm, Ben Hermann, Michael Eichberg, Mira Mezini</em></p>
+</blockquote>
 <h2 id="core-papers">Core Papers</h2>
+<blockquote>
+<p><a href="/articles/Unimocg@ISSTA24.pdf"><strong>Unimocg: Modular Call-Graph Algorithms for Consistent Handling of Language Features</strong></a><br />
+ISSTA 2024<br />
+<em>Dominik Helm, Tobias Roth, Sven Keidel, Michael Reif, Mira Mezini</em></p>
+<details><summary>Abstract</summary>
+Traditional call-graph construction algorithms conflate the computation of possible runtime types with the actual resolution of (virtual) calls.
+This tangled design impedes supporting complex language features and APIs and making systematic trade-offs between precision, soundness, and scalability.
+It also impedes implementation of precise downstream analyses that rely on type information.
+<p>To address the problem, we propose Unimocg, a modular architecture for call-graph construction that decouples the computation of type information from resolving calls.
+Due to its modular design, Unimocg can combine a wide range of different call-graph algorithms with algorithm-agnostic modules to support individual language features.
+Moreover, these modules operate at the same precision as the chosen call-graph algorithm with no further effort.
+Additionally, Unimocg allows other analyses to easily reuse type information from the call-graph construction at full precision.</p>
+<p>We demonstrate how Unimocg enables a framework of call-graph algorithms with different precision, soundness, and scalability trade-offs from reusable modules.
+Unimocg currently supports ten call-graph algorithms from vastly different families, such as CHA, RTA, XTA, and <em>k</em>-<em>l</em>-CFA.
+These algorithms show consistent soundness without sacrificing precision or performance.
+We also show how an immutability analysis is improved using Unimocg.</details></p>
+</blockquote>
 <blockquote>
 <p><a href="https://link.springer.com/chapter/10.1007/978-3-031-57267-8_14"><strong>A Modular Soundness Theory for the Blackboard Analysis Architecture</strong></a><br />
 ESOP 2024<br />
@@ -108,7 +150,6 @@ We evaluate our theory by proving soundness of four analyses: a pointer and call
 <p><a href="https://2020.esec-fse.org/details/fse-2020-papers/191"><strong>Modular Collaborative Program Analysis in OPAL</strong></a><br />
 ESEC/FSE 2020<br />
 <em>Dominik Helm, Florian Kübler, Michael Reif, Michael Eichberg, Mira Mezini</em></p>
-<p><strong>If you use OPAL, please cite this publication!</strong></p>
 <details><summary>Abstract</summary>
 Current approaches combining multiple static analyses deriving different, independent properties focus either on modularity or performance.
 Whereas declarative approaches facilitate modularity and automated, analysis-independent optimizations, imperative approaches foster manual, analysis-specific optimizations.
@@ -210,23 +251,6 @@ We use manual extension and coverage-guided fuzzing for creating suitable input 
 <p>With these dynamic baselines, we study call-graph quality of multiple algorithms and implementations using four real-world Java programs.
 We find that our methodology provides valuable insights into call-graph quality and how to measure it.
 With this work, we provide a novel methodology to advance the field of static program analysis as we assess the computation of one of its core data structures—the call graph.</details></p>
-</blockquote>
-<blockquote>
-<p><a href="/articles/Unimocg@ISSTA24.pdf"><strong>Unimocg: Modular Call-Graph Algorithms for Consistent Handling of Language Features</strong></a><br />
-ISSTA 2024<br />
-<em>Dominik Helm, Tobias Roth, Sven Keidel, Michael Reif, Mira Mezini</em></p>
-<details><summary>Abstract</summary>
-Traditional call-graph construction algorithms conflate the computation of possible runtime types with the actual resolution of (virtual) calls.
-This tangled design impedes supporting complex language features and APIs and making systematic trade-offs between precision, soundness, and scalability.
-It also impedes implementation of precise downstream analyses that rely on type information.
-<p>To address the problem, we propose Unimocg, a modular architecture for call-graph construction that decouples the computation of type information from resolving calls.
-Due to its modular design, Unimocg can combine a wide range of different call-graph algorithms with algorithm-agnostic modules to support individual language features.
-Moreover, these modules operate at the same precision as the chosen call-graph algorithm with no further effort.
-Additionally, Unimocg allows other analyses to easily reuse type information from the call-graph construction at full precision.</p>
-<p>We demonstrate how Unimocg enables a framework of call-graph algorithms with different precision, soundness, and scalability trade-offs from reusable modules.
-Unimocg currently supports ten call-graph algorithms from vastly different families, such as CHA, RTA, XTA, and <em>k</em>-<em>l</em>-CFA.
-These algorithms show consistent soundness without sacrificing precision or performance.
-We also show how an immutability analysis is improved using Unimocg.</details></p>
 </blockquote>
 <blockquote>
 <p><a href="/articles/AXA@ASE24.pdf"><strong>AXA: Cross-Language Analysis through Integration of Single-Language Analyses</strong></a><br />
