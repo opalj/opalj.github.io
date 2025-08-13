@@ -125,12 +125,12 @@ Thus, we raise an error here to point the user to the fact that he may want to r
 <p>Now, let's implement the (simplified) analysis.<br />
 As usual, we start by creating an analysis class with an analysis function:</p>
 <pre><code class="language-scala">class InstantiatedTypesAnalysis(val project: SomeProject) extends FPCFAnalysis {
-    implicit private val declaredMethods: DeclaredMethods = project.get(DeclaredMethodsKey)
+    implicit private val contextProvider: ContextProvider = project.get(ContextProviderKey)
 
     def analyzeMethod(method: DeclaredMethod): PropertyComputationResult = { [...] }
 }
 </code></pre>
-<p>We need a <a href="/library/api/SNAPSHOT/org/opalj/br/analyses/ProjectInformationKey.html"><code>ProjectInformationKey</code></a> here, namely the <code>DeclaredMethodsKey</code>, as this will later be needed implicitly to resolve calls with the call graph.<br />
+<p>We need a <a href="/library/api/SNAPSHOT/org/opalj/br/analyses/ProjectInformationKey.html"><code>ProjectInformationKey</code></a> here, namely the <code>ContextProviderKey</code>, as this will later be needed implicitly to resolve calls with the call graph.<br />
 The analysis function takes a <a href="/library/api/SNAPSHOT/org/opalj/br/DeclaredMethod.html"><code>DeclaredMethod</code></a> (a representation of a method in the context of its class) as the entity to be analyzed as we want to find all classes instantiated by methods that potentially called (i.e., that are not <em>dead</em>).<br />
 Note that unlike most analyses, we will however <em>not</em> compute a result just for this entity, we just use it to compute its effect on the set of instantiated classes <em>anywhere</em> in the analyzed program.</p>
 <p>We will later configure our analysis function to be called once for every method that is potentially called, but classes are instantiated only by constructors (named <code>&lt;init&gt;</code> in the Java Virtual Machine), thus we first check whether the analyzed method actually is a constructor:</p>
@@ -181,7 +181,7 @@ Note that unlike most analyses, we will however <em>not</em> compute a result ju
 The partial result takes the entity (we use <code>project</code> here, since the set of instantiated classes is global to the whole program that is analyzed) and the key of the property that we compute.<br />
 Finally, it takes a function that will get the current value of that property and computes an update to it.<br />
 To do so, we check whether there already is a property present and extract its upper bound.<br />
-If that upper bound already contains our class, we return <code>None</code> to signal that no update is necessary, otherwise we create an updated result, which is an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/InterimEUBP.html"><code>InterimEUBP</code></a>, i.e., a not yet final result consisting of an entity (<code>project</code>) and its property, which is the old set of instantiated classes extended by the class type of the analyzed constructor.<br />
+If that upper bound already contains our class, we return <code>None</code> to signal that no update is necessary, otherwise we create an updated result, which is an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/InterimEUBP.html"><code>InterimEUBP</code></a>, i.e., a not yet final result consisting of an entity (E; <code>project</code>) and and upper bound (UB) for its property (P), which is the old set of instantiated classes extended by the class type of the analyzed constructor.<br />
 If, on the other hand, no property has been computed so far, the update function will be called with an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/EPK.html"><code>EPK</code></a>, i.e., a tuple of the entity and the key of the property.
 In that case, we return property that contains just the class type of the analyzed constructor.</p>
 <p>Next, we should check whether the analyzed constructor was explicitly called to instantiate an object of the respective class, not implicitly during instantiation of a subclass.<br />
@@ -227,11 +227,12 @@ For that, we need the method's callers:</p>
     [...]
 </code></pre>
 <p>Now we can iterate over all callers known so far (the second part of the tuple, the actual program counter of the call is irrelevant here).
-The <code>callers</code> method implicitly requires the <code>DeclaredMethods</code>, which is why we got that at the beginning of our analysis class.</p>
+The <code>callers</code> method takes the callee method (the entity <code>e</code> of our callers property) to properly resolve calls.
+It also implicitly requires the <code>ContextProvider</code>, which is why we got that at the beginning of our analysis class.</p>
 <pre><code class="language-scala">def checkCallers(callersProperty: EOptionP[DeclaredMethod, Callers]): PropertyComputationResult = {
     [...]
 
-    for((caller, _, isDirect) &lt;- callers.callers) {
+    for((caller, _, isDirect) &lt;- callers.callers(callersProperty.e)) {
         if (!isDirect)
             return result()
 
@@ -249,7 +250,7 @@ If it is, the analyzed constructor has been called explicitly, thus its class is
 Second, we check whether the caller could be a subclass' constructor by checking whether it is a constructor at all.<br />
 If it isn't, again the constructor must have been called explicitly.</p>
 <p>If the caller is a constructor, we now check whether it belongs to a direct subclass:</p>
-<pre><code class="language-scala">for((caller, _, isDirect) &lt;- callers.callers){
+<pre><code class="language-scala">for((caller, _, isDirect) &lt;- callers.callers(callersProperty.e)){
     [...]
 
     val callerClass = project.classFile(caller.declaringClassType)
@@ -264,7 +265,7 @@ If it isn't, again the constructor must have been called explicitly.</p>
 The same is true if we know the class, but it has no superclass (this mainly concerns <code>java.lang.Object</code>), in which case it can't be a subclass, or if it has a superclass but it is not the class of the analyzed constructor.</p>
 <p>If we didn't return a result yet, we have established that the caller is a constructor of a direct subclass.<br />
 However, it may still have an explicit call to the analyzed constructor, thus we have to look for such call in its instructions:</p>
-<pre><code class="language-scala">for((caller, _, isDirect) &lt;- callers.callers){
+<pre><code class="language-scala">for((caller, _, isDirect) &lt;- callers.callers(callersProperty.e)){
     [...]
 
     val body = caller.definedMethod.body.get
@@ -277,14 +278,15 @@ Note that here, we neither check whether the method actually has an actual metho
 This is because we know that the classfile is available and thus its methods are as well and also constructors are always unambiguous.<br />
 Finally, they also can't be abstract or implemented by a native method, thus they always have a body.</p>
 <p>Now we can look for explicit instantiations of the analyzed constructor's class:</p>
-<pre><code class="language-scala">for((caller, _, isDirect) &lt;- callers.callers){
+<pre><code class="language-scala">for((caller, _, isDirect) &lt;- callers.callers(callersProperty.e)){
     [...]
 
-    if(body.exists((_, instruction) =&gt; instruction == NEW(instantiatedType)))
+    if (body.exists(_.instruction == NEW(instantiatedType)))
         return result()
 }
 </code></pre>
-<p>If there is a <code>NEW</code> instruction for that class, that is an explicit instantiation and we return a respective result.
+<p>If there is a <code>NEW</code> instruction for that class, that is an explicit instantiation.
+Thus, we return a respective result.
 Otherwise, we now know that this caller is a constructor of a direct subclass that only calls the analyzed constructor as part of its own initialization and thus, it doesn't actually instantiate the class of the analyzed constructor.</p>
 <p>If we didn't find any caller that caused an explicit instantiation, there still might be more callers that we just don't know yet.<br />
 Thus, we define a local continuation function to handle any updates to our callers property:</p>
@@ -325,7 +327,7 @@ The first parameter for the <code>InterimPartialResult</code> allows to give som
 <h2 id="scheduling-the-analysis">Scheduling the Analysis</h2>
 <p>We use an <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFTriggeredAnalysisScheduler.html"><code>FPCFTriggeredAnalysisScheduler</code></a><sup title="The BasicFPCFTriggeredAnalysisScheduler provides an empty implementation for some rarely used methods.">[note]</sup> that allows us to trigger our analysis whenever a method is found to be reachable in the call graph.</p>
 <pre><code class="language-scala">object InstantiatedTypesAnalysisScheduler extends BasicFPCFTriggeredAnalysisScheduler {
-    override def requiredProjectInformation: ProjectInformationKeys = Seq(DeclaredMethodsKey)
+    override def requiredProjectInformation: ProjectInformationKeys = Seq(ContextProviderKey)
 
     override def uses: Set[PropertyBounds] = PropertyBounds.ubs(InstantiatedTypes, Callers)
 
@@ -333,7 +335,7 @@ The first parameter for the <code>InterimPartialResult</code> allows to give som
 }
 </code></pre>
 <p>As usual, we first have to provide the used <code>ProjectInformationKeys</code> and fixed-point properties.<br />
-Remember we used the <code>DeclaredMethodsKey</code> in our analysis, so we have to specify it here.
+Remember we used the <code>ContextProviderKey</code> in our analysis, so we have to specify it here.
 Also, we use upper bounds from the <code>InstantiatedTypes</code> and <code>Callers</code> lattices.<br />
 Note that <code>PropertyBounds.ubs(...)</code> is a shorthand for <code>Set(PropertyBounds.ub(...), ...)</code>.</p>
 <p>Next, we specify the derived properties:</p>
@@ -371,7 +373,7 @@ In the <code>register</code> method, we have to call the PropertyStore's <code>r
 <pre><code class="language-scala">object InstantiatedTypesRunner extends ProjectAnalysisApplication {
     override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () =&gt; Boolean): BasicReport = {
         val (propertyStore, _) = project.get(FPCFAnalysesManagerKey).runAll(
-            CHACallGraphAnalysisScheduler,
+            CallGraphAnalysisScheduler,
             InstantiatedTypesAnalysisScheduler
         )
 
@@ -384,7 +386,8 @@ In the <code>register</code> method, we have to call the PropertyStore's <code>r
     }
 }
 </code></pre>
-<p>It executes our analysis alongside a class-hierarchy analysis (CHA) call graph and prints the number of instantiated types to the console.<br />
+<p>It executes our analysis alongside a call-graph analysis and prints the number of instantiated types to the console.
+The kind of call-graph analysis executed actually depends on the <code>ContextProviderKey</code> (or rather its <code>TypeIterator</code> special case), which we didn't set up here, so it defaults to a class-hierarchy analysis (CHA).
 Note that when querying the property store for the <code>InstantiatedTypes</code> property key, we know that it must be a final result because all analyses have been completed by that point.<br />
 Remember to specify the program that you want to analyze with the &quot;-cp=<some path>&quot; parameter.</p>
 <h2 id="what-next">What next?</h2>
