@@ -196,7 +196,7 @@ Finally, if the value is refinable, i.e., it is not yet final, we (re-)add it to
 
     val superclassType = classFile.superclassType
 
-    if(superclassType.isDefined &amp;&amp; superclassType.get != ObjectType.Object) {
+    if(superclassType.isDefined &amp;&amp; superclassType.get != ClassType.Object) {
         [...]
     }
 
@@ -205,9 +205,9 @@ Finally, if the value is refinable, i.e., it is not yet final, we (re-)add it to
 </code></pre>
 <p>First, we get the type of the superclass from our classfile.<br />
 Note that some classes, in particular <code>java.lang.Object</code>, do not have superclasses, in which case we can't (and don't have to) check any superclass' immutability.<br />
-We also don't have to check the immutability of <code>java.lang.Object</code> (represented by <code>ObjectType.Object</code>) as we know it is transitively immutable because it has no fields.<br />
+We also don't have to check the immutability of <code>java.lang.Object</code> (represented by <code>ClassType.Object</code>) as we know it is transitively immutable because it has no fields.<br />
 Checking whether the superclass is <code>java.lang.Object</code> not only allows us to skip checking the superclass, but also allows to get useful results even when the JDK is not part of our analyzed software and thus the classfile for <code>java.lang.Object</code> is not available.</p>
-<pre><code class="language-scala">    if(superclassType.isDefined &amp;&amp; superclassType.get != ObjectType.Object) {
+<pre><code class="language-scala">    if(superclassType.isDefined &amp;&amp; superclassType.get != ClassType.Object) {
         val superclass = project.classFile(superclassType.get)
         if(superclass.isEmpty)
             return Result(classFile, MutableClass)

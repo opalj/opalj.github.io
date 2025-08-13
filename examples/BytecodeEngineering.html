@@ -231,7 +231,7 @@ org.opalj.io.writeAndOpen(svg,&quot;CFG&quot;,&quot;.svg&quot;)
 ).toDA()
 </code></pre>
 <h3 id="adding-further-attributes">Adding Further attributes</h3>
-<p>The DSL interacts seamlessly with the bytecode representation and all attibutes can always be added to the attributes as expected. For example, the following class file is marked as being <code>Synthetic</code> and the origin is set using <code>SourceFile(&quot;...&quot;)</code>. The method is marked as being <code>Deprecated</code> and as throwing the exceptions <code>java.lang.Exception</code>. In the last case, we use the DSL's <code>EXCEPTIONS</code> table builder. It enables us to just specify the names of the exceptions. Alternatively, it would have been possible to directly create the underlying <code>br.ExceptionsTable</code> using <code>ObjectType</code>s.</p>
+<p>The DSL interacts seamlessly with the bytecode representation and all attibutes can always be added to the attributes as expected. For example, the following class file is marked as being <code>Synthetic</code> and the origin is set using <code>SourceFile(&quot;...&quot;)</code>. The method is marked as being <code>Deprecated</code> and as throwing the exceptions <code>java.lang.Exception</code>. In the last case, we use the DSL's <code>EXCEPTIONS</code> table builder. It enables us to just specify the names of the exceptions. Alternatively, it would have been possible to directly create the underlying <code>br.ExceptionsTable</code> using <code>ClassType</code>s.</p>
 <pre><code>val cb = CLASS(
     accessModifiers = PUBLIC SUPER,
     thisType = &quot;SimpleMethodClass&quot;,

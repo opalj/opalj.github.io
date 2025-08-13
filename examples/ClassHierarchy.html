@@ -89,11 +89,11 @@ implicit val p = Project(new File(projectJAR),org.opalj.bytecode.RTJar)
 val classHierarchy = p.classHierarchy
 </code></pre>
 <p>The class hierarchy, e.g., directly makes the information about a type's super/sub types available:</p>
-<pre><code>def subtypeInformation(ObjectType) : SubtypeInformation 
-def supertypeInformation(ObjectType) : SupertypeInformation 
+<pre><code>def subtypeInformation(ClassType) : SubtypeInformation 
+def supertypeInformation(ClassType) : SupertypeInformation 
 </code></pre>
 <p>To get, e.g., all subtypes of <code>java.io.Serializable</code>, it is sufficient to query the subtypes information:</p>
-<pre><code>val subtypesOfSerializable = classHierarchy.subtypeInformation(ObjectType(&quot;java/io/Serializable&quot;))
+<pre><code>val subtypesOfSerializable = classHierarchy.subtypeInformation(ClassType(&quot;java/io/Serializable&quot;))
 </code></pre>
 <blockquote>
 <p>Recall that in Java bytecode package names are separated using &quot;/&quot; and not &quot;.&quot; as used in Java/Scala/... source code.</p>
@@ -102,7 +102,7 @@ def supertypeInformation(ObjectType) : SupertypeInformation
 <p>OPAL's class hierarchy supports partial class hierarchies and - in case that a class hierarchy is incomplete – generally follows a best-effort approach to determine sub-/supertype relations. In particular, when <code>isSubtypeOf</code> is used, <code>java.lang.Object</code> will always be treated as the supertype and an <strong>interface</strong> will never be the subtype of a class type, even if the supertype hierarchy for the interface is incomplete. As a matter of fact, the standard JDK/rt.jar contains references to classes that are not delivered as part of the JDK and therefore the class hierarchy is basically always incomplete.</p>
 </blockquote>
 <p>If you don't know whether a given type is known to the class hierarchy, you should call the <code>get</code> method to avoid potential <code>NoSuchElementExceptions</code>.</p>
-<pre><code>classHierarchy.subtypeInformation.get(ObjectType(&quot;java/io/Serializable&quot;)).foreach{subtypeInformation =&gt; ... }
+<pre><code>classHierarchy.subtypeInformation.get(ClassType(&quot;java/io/Serializable&quot;)).foreach{subtypeInformation =&gt; ... }
 </code></pre>
 
                     </div>

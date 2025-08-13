@@ -104,7 +104,7 @@ Alternatively, you can download a pre-packaged jar containing the TAC tool from 
 <pre><code>val tac = p.get(ComputeACAIKey)
 </code></pre>
 <p><em>Step 3</em> - To get the TAC of a specific method with a body just look it up:</p>
-<pre><code>val cf = p.classFile(ObjectType(&quot;ai/domain/IntegerValuesFrenzy&quot;)).get
+<pre><code>val cf = p.classFile(ClassType(&quot;ai/domain/IntegerValuesFrenzy&quot;)).get
 val m = cf.findMethod(&quot;someSwitch&quot;).head
 val taCode = tac(m)
 </code></pre>
@@ -201,7 +201,7 @@ E.g., to set the domain to the simplest/most basic supported domain, you can use
 <pre><code>import org.opalj._
 val p = br.analyses.Project(new java.io.File(&quot;OPAL/bi/target/scala-2.13/resource_managed/test/ai.jar&quot;))
 val tacAIKey = p.get(tac.ComputeTACAIKey)
-val code = tacAIKey(p.classFile(br.ObjectType(&quot;ai/MethodsWithTypeChecks&quot;)).get.findMethod(&quot;requiredCast&quot;).head)
+val code = tacAIKey(p.classFile(br.ClassType(&quot;ai/MethodsWithTypeChecks&quot;)).get.findMethod(&quot;requiredCast&quot;).head)
 </code></pre>
 <p>The 3-address code of the above method is shown next:</p>
 <pre><code>static java.io.FileNotFoundException requiredCast(java.lang.Cloneable){

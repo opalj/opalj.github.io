@@ -128,7 +128,7 @@ case object MutableClass extends ClassImmutability
 <h2 id="set-based-lattices">Set-based Lattices</h2>
 <p>The second common type of lattices in OPAL is set-based lattices.
 They typically consist of one (or sometimes several) case classes that hold the set of values:</p>
-<pre><code class="language-scala">case class InstantiatedTypes(classes: UIDSet[ObjectType]) extends InstantiatedTypesPropertyMetaInformation {
+<pre><code class="language-scala">case class InstantiatedTypes(classes: UIDSet[ClassType]) extends InstantiatedTypesPropertyMetaInformation {
     final def key: PropertyKey[InstantiatedTypes] = InstantiatedTypes.key
 }
 </code></pre>
