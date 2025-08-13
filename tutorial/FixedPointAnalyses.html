@@ -386,7 +386,7 @@ To do so easily, we extend <a href="/library/api/SNAPSHOT/org/opalj/br/analyses/
     [...]
 }
 </code></pre>
-<p>We use the <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFAnalysesManagerKey$.html"><code>FPCFAnalysisManagerKey</code></a> to get an <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFAnalysesManager.html"><code>FPCFAnalysisManager</code></a> that will run our analyses.<br />
+<p>We use the <a href="/library/api/SNAPSHOT/org/opalj/fpcf/FPCFAnalysesManagerKey$.html"><code>FPCFAnalysesManagerKey</code></a> to get an <a href="/library/api/SNAPSHOT/org/opalj/fpcf/FPCFAnalysesManager.html"><code>FPCFAnalysesManager</code></a> that will run our analyses.<br />
 We just pass all analyses that we want to execute to the <code>runAll</code> method.<br />
 Note that we assume that a <code>LazyFieldImmutabilityAnalysis</code> has been implemented as well.<br />
 As long as that doesn't exist, you can remove that line and OPAL will use the fallback value of the <code>FieldImmutability</code> lattice whenever a field immutability is queried.</p>

@@ -13,7 +13,6 @@ import org.opalj.br.fpcf.properties.cg.Callers
 import org.opalj.br.fpcf.properties.cg.NoCallers
 import org.opalj.br.fpcf.BasicFPCFTriggeredAnalysisScheduler
 import org.opalj.br.fpcf.ContextProviderKey
-import org.opalj.br.fpcf.FPCFAnalysesManagerKey
 import org.opalj.br.fpcf.analyses.ContextProvider
 import org.opalj.br.instructions.NEW
 import org.opalj.fpcf.Entity
@@ -21,6 +20,7 @@ import org.opalj.fpcf.EOptionP
 import org.opalj.fpcf.EPK
 import org.opalj.fpcf.FallbackReason
 import org.opalj.fpcf.FinalP
+import org.opalj.fpcf.FPCFAnalysesManagerKey
 import org.opalj.fpcf.InterimEUBP
 import org.opalj.fpcf.InterimPartialResult
 import org.opalj.fpcf.InterimUBP
