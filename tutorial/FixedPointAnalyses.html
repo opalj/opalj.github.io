@@ -353,7 +353,7 @@ However, we need a small additional method in our analysis to do so:</p>
 <p>Because OPAL doesn't know in advance that we will only ever query the property store for the class immutability of classfiles, the parameter type of <code>analyzeClassImmutability</code> is too specific.<br />
 Thus, we provide a second entry point to our analysis, <code>lazilyAnalyzeClassImmutability</code>, that takes any type of entity and, if it is a classfile, analyzes it.<br />
 We just throw an exception if the entity is not a classfile, as we can only process classfiles.</p>
-<p>Now we are ready to implement a <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFLazyAnalysisScheduler.html"><code>FPCFLazyAnalysisScheduler</code></a>:</p>
+<p>Now we are ready to implement an <a href="/library/api/SNAPSHOT/org/opalj/br/fpcf/FPCFLazyAnalysisScheduler.html"><code>FPCFLazyAnalysisScheduler</code></a>:</p>
 <pre><code class="language-scala">object LazyClassImmutabilityAnalysis extends ClassImmutabilityAnalysisScheduler with BasicFPCFLazyAnalysisScheduler {
 
     override def derivesLazily: Some[PropertyBounds] = Some(derivedProperty)
@@ -371,7 +371,7 @@ Again, like in the eager scheduler, we create a new analysis, but this time, we 
 As before, we finally have to return the analysis.</p>
 <h2 id="running-the-analysis">Running the Analysis</h2>
 <p>Finally it is time to try our analysis.<br />
-To do so easily, we extend <a href="">ProjectAnalysisApplication</a> which provides us with an implicit <code>main</code> method that parses parameters for us, most importantly the &quot;-cp=<some path>&quot; parameter that lets users specify the path to a project that they want to analyze.</p>
+To do so easily, we extend <a href="/library/api/SNAPSHOT/org/opalj/br/analyses/ProjectAnalysisApplication.html">ProjectAnalysisApplication</a> which provides us with an implicit <code>main</code> method that parses parameters for us, most importantly the &quot;-cp=<some path>&quot; parameter that lets users specify the path to a project that they want to analyze.</p>
 <pre><code class="language-scala">object ClassImmutabilityRunner extends ProjectAnalysisApplication { 
     override def doAnalyze(project: Project[URL], parameters: Seq[String], isInterrupted: () =&gt; Boolean): BasicReport = { [...] }
 }
